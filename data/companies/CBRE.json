@@ -4,7 +4,7 @@
   "company_name": "CBRE GROUP, INC.",
   "sector": "Real Estate",
   "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001138118.json",
-  "fetched_at_utc": "2026-10-24T02:39:26.350943+00:00",
+  "fetched_at_utc": "2026-10-24T02:51:10.878170+00:00",
   "financials": {
     "diluted_shares": {
       "value": 300751541,
@@ -16,6 +16,17 @@
       "method": "annual_diluted_weighted_average",
       "review_required": true
     },
+    "accounts_receivable": {
+      "value": 9048000000,
+      "unit": "USD",
+      "period_end": "2026-09-30",
+      "filed": "2026-10-22",
+      "tag": "AccountsReceivableNetCurrent",
+      "form": "10-Q",
+      "method": "latest_reported_balance"
+    },
+    "inventory": null,
+    "accounts_payable": null,
     "operating_income": {
       "value": 2059000000,
       "unit": "USD",
@@ -111,6 +122,8 @@
   },
   "review_required": true,
   "warnings": [
+    "Missing field: inventory",
+    "Missing field: accounts_payable",
     "Missing field: depreciation_amortization",
     "Operating cash flow minus CapEx is not unlevered FCFF",
     "Shares outstanding are not necessarily diluted shares",

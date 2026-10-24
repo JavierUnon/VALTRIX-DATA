@@ -4,9 +4,28 @@
   "company_name": "Baker Hughes Company",
   "sector": "Energy",
   "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001701605.json",
-  "fetched_at_utc": "2026-10-24T02:38:56.901261+00:00",
+  "fetched_at_utc": "2026-10-24T02:50:34.023305+00:00",
   "financials": {
     "diluted_shares": null,
+    "accounts_receivable": null,
+    "inventory": {
+      "value": 4961000000,
+      "unit": "USD",
+      "period_end": "2026-06-30",
+      "filed": "2026-07-27",
+      "tag": "InventoryNet",
+      "form": "10-Q",
+      "method": "latest_reported_balance"
+    },
+    "accounts_payable": {
+      "value": 4509000000,
+      "unit": "USD",
+      "period_end": "2026-06-30",
+      "filed": "2026-07-27",
+      "tag": "AccountsPayableCurrent",
+      "form": "10-Q",
+      "method": "latest_reported_balance"
+    },
     "operating_income": {
       "value": 3081000000,
       "unit": "USD",
@@ -101,6 +120,7 @@
   },
   "review_required": true,
   "warnings": [
+    "Missing field: accounts_receivable",
     "Missing field: capital_expenditure",
     "Operating cash flow minus CapEx is not unlevered FCFF",
     "Shares outstanding are not necessarily diluted shares",

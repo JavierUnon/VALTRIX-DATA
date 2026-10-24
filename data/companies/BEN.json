@@ -4,7 +4,7 @@
   "company_name": "FRANKLIN RESOURCES INC",
   "sector": "Financials",
   "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000038777.json",
-  "fetched_at_utc": "2026-10-24T02:41:06.929455+00:00",
+  "fetched_at_utc": "2026-10-24T02:53:14.920738+00:00",
   "financials": {
     "diluted_shares": {
       "value": 517400000,
@@ -16,6 +16,9 @@
       "method": "annual_diluted_weighted_average",
       "review_required": true
     },
+    "accounts_receivable": null,
+    "inventory": null,
+    "accounts_payable": null,
     "operating_income": {
       "value": 905500000,
       "unit": "USD",
@@ -121,6 +124,9 @@
   },
   "review_required": true,
   "warnings": [
+    "Missing field: accounts_receivable",
+    "Missing field: inventory",
+    "Missing field: accounts_payable",
     "Operating cash flow minus CapEx is not unlevered FCFF",
     "Shares outstanding are not necessarily diluted shares",
     "Debt and cash require classification and date checks",

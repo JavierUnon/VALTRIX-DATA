@@ -4,7 +4,7 @@
   "company_name": "PINNACLE WEST CAPITAL CORP",
   "sector": "Utilities",
   "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000764622.json",
-  "fetched_at_utc": "2026-10-24T02:43:08.533344+00:00",
+  "fetched_at_utc": "2026-10-24T02:56:04.854826+00:00",
   "financials": {
     "diluted_shares": {
       "value": 121971000,
@@ -15,6 +15,17 @@
       "form": "10-K",
       "method": "annual_diluted_weighted_average",
       "review_required": true
+    },
+    "accounts_receivable": null,
+    "inventory": null,
+    "accounts_payable": {
+      "value": 641564000,
+      "unit": "USD",
+      "period_end": "2026-06-30",
+      "filed": "2026-08-04",
+      "tag": "AccountsPayableCurrent",
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     },
     "operating_income": {
       "value": 1139702000,
@@ -103,6 +114,8 @@
   },
   "review_required": true,
   "warnings": [
+    "Missing field: accounts_receivable",
+    "Missing field: inventory",
     "Missing field: capital_expenditure",
     "Missing field: shares_outstanding",
     "Operating cash flow minus CapEx is not unlevered FCFF",

@@ -4,7 +4,7 @@
   "company_name": "PEPSICO INC",
   "sector": "Consumer Staples",
   "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000077476.json",
-  "fetched_at_utc": "2026-10-24T02:43:04.647275+00:00",
+  "fetched_at_utc": "2026-10-24T02:55:59.723885+00:00",
   "financials": {
     "diluted_shares": {
       "value": 1373000000,
@@ -15,6 +15,25 @@
       "form": "10-K",
       "method": "annual_diluted_weighted_average",
       "review_required": true
+    },
+    "accounts_receivable": null,
+    "inventory": {
+      "value": 6434000000,
+      "unit": "USD",
+      "period_end": "2026-09-05",
+      "filed": "2026-10-08",
+      "tag": "InventoryNet",
+      "form": "10-Q",
+      "method": "latest_reported_balance"
+    },
+    "accounts_payable": {
+      "value": 11704000000,
+      "unit": "USD",
+      "period_end": "2025-12-27",
+      "filed": "2026-02-03",
+      "tag": "AccountsPayableCurrent",
+      "form": "10-K",
+      "method": "latest_reported_balance"
     },
     "operating_income": {
       "value": 15053000000,
@@ -103,6 +122,7 @@
   },
   "review_required": true,
   "warnings": [
+    "Missing field: accounts_receivable",
     "Missing field: capital_expenditure",
     "Missing field: shares_outstanding",
     "Operating cash flow minus CapEx is not unlevered FCFF",

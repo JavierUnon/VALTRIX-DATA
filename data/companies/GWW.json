@@ -4,7 +4,7 @@
   "company_name": "W.W. Grainger, Inc.",
   "sector": "Industrials",
   "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000277135.json",
-  "fetched_at_utc": "2026-10-24T02:45:20.353133+00:00",
+  "fetched_at_utc": "2026-10-24T02:57:57.167098+00:00",
   "financials": {
     "diluted_shares": {
       "value": 48000000,
@@ -16,6 +16,25 @@
       "method": "annual_diluted_weighted_average",
       "review_required": true
     },
+    "accounts_receivable": {
+      "value": 2825000000,
+      "unit": "USD",
+      "period_end": "2026-06-30",
+      "filed": "2026-08-04",
+      "tag": "AccountsReceivableNetCurrent",
+      "form": "10-Q",
+      "method": "latest_reported_balance"
+    },
+    "inventory": {
+      "value": 2371000000,
+      "unit": "USD",
+      "period_end": "2026-06-30",
+      "filed": "2026-08-04",
+      "tag": "InventoryNet",
+      "form": "10-Q",
+      "method": "latest_reported_balance"
+    },
+    "accounts_payable": null,
     "operating_income": {
       "value": 2745000000,
       "unit": "USD",
@@ -113,6 +132,7 @@
   },
   "review_required": true,
   "warnings": [
+    "Missing field: accounts_payable",
     "Missing field: shares_outstanding",
     "Operating cash flow minus CapEx is not unlevered FCFF",
     "Shares outstanding are not necessarily diluted shares",

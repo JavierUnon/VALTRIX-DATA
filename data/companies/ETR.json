@@ -4,7 +4,7 @@
   "company_name": "ENTERGY CORP /DE/",
   "sector": "Utilities",
   "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000065984.json",
-  "fetched_at_utc": "2026-10-24T02:40:33.150596+00:00",
+  "fetched_at_utc": "2026-10-24T02:52:33.545383+00:00",
   "financials": {
     "diluted_shares": {
       "value": 450151884,
@@ -15,6 +15,25 @@
       "form": "10-K",
       "method": "annual_diluted_weighted_average",
       "review_required": true
+    },
+    "accounts_receivable": {
+      "value": 1581009000,
+      "unit": "USD",
+      "period_end": "2024-06-30",
+      "filed": "2024-08-02",
+      "tag": "AccountsReceivableNetCurrent",
+      "form": "10-Q",
+      "method": "latest_reported_balance"
+    },
+    "inventory": null,
+    "accounts_payable": {
+      "value": 2748819000,
+      "unit": "USD",
+      "period_end": "2026-03-31",
+      "filed": "2026-05-01",
+      "tag": "AccountsPayableCurrent",
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     },
     "operating_income": {
       "value": 3074396000,
@@ -113,6 +132,7 @@
   },
   "review_required": true,
   "warnings": [
+    "Missing field: inventory",
     "Missing field: shares_outstanding",
     "Operating cash flow minus CapEx is not unlevered FCFF",
     "Shares outstanding are not necessarily diluted shares",

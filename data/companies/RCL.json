@@ -4,7 +4,7 @@
   "company_name": "ROYAL CARIBBEAN CRUISES LTD",
   "sector": "Consumer Discretionary",
   "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000884887.json",
-  "fetched_at_utc": "2026-10-24T02:43:39.409159+00:00",
+  "fetched_at_utc": "2026-10-24T02:56:38.651426+00:00",
   "financials": {
     "diluted_shares": {
       "value": 274000000,
@@ -15,6 +15,25 @@
       "form": "10-K",
       "method": "annual_diluted_weighted_average",
       "review_required": true
+    },
+    "accounts_receivable": null,
+    "inventory": {
+      "value": 267000000,
+      "unit": "USD",
+      "period_end": "2026-06-30",
+      "filed": "2026-07-28",
+      "tag": "InventoryNet",
+      "form": "10-Q",
+      "method": "latest_reported_balance"
+    },
+    "accounts_payable": {
+      "value": 1093000000,
+      "unit": "USD",
+      "period_end": "2026-06-30",
+      "filed": "2026-07-28",
+      "tag": "AccountsPayableCurrent",
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     },
     "operating_income": {
       "value": 5104000000,
@@ -103,6 +122,7 @@
   },
   "review_required": true,
   "warnings": [
+    "Missing field: accounts_receivable",
     "Missing field: depreciation_amortization",
     "Missing field: shares_outstanding",
     "Operating cash flow minus CapEx is not unlevered FCFF",

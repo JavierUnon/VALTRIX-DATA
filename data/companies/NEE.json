@@ -4,7 +4,7 @@
   "company_name": "NEXTERA ENERGY INC",
   "sector": "Utilities",
   "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000753308.json",
-  "fetched_at_utc": "2026-10-24T02:42:38.867709+00:00",
+  "fetched_at_utc": "2026-10-24T02:55:30.047888+00:00",
   "financials": {
     "diluted_shares": {
       "value": 2070600000,
@@ -16,6 +16,25 @@
       "method": "annual_diluted_weighted_average",
       "review_required": true
     },
+    "accounts_receivable": {
+      "value": 4131000000,
+      "unit": "USD",
+      "period_end": "2026-03-31",
+      "filed": "2026-04-23",
+      "tag": "AccountsReceivableNetCurrent",
+      "form": "10-Q",
+      "method": "latest_reported_balance"
+    },
+    "inventory": {
+      "value": 2577000000,
+      "unit": "USD",
+      "period_end": "2026-03-31",
+      "filed": "2026-04-23",
+      "tag": "InventoryNet",
+      "form": "10-Q",
+      "method": "latest_reported_balance"
+    },
+    "accounts_payable": null,
     "operating_income": {
       "value": 8232000000,
       "unit": "USD",
@@ -101,6 +120,7 @@
   },
   "review_required": true,
   "warnings": [
+    "Missing field: accounts_payable",
     "Missing field: depreciation_amortization",
     "Missing field: capital_expenditure",
     "Operating cash flow minus CapEx is not unlevered FCFF",

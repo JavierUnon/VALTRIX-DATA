@@ -4,7 +4,7 @@
   "company_name": "WILLIAMS COMPANIES, INC.",
   "sector": "Energy",
   "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000107263.json",
-  "fetched_at_utc": "2026-10-24T02:45:30.964634+00:00",
+  "fetched_at_utc": "2026-10-24T02:58:12.379609+00:00",
   "financials": {
     "diluted_shares": {
       "value": 1225000000,
@@ -15,6 +15,25 @@
       "form": "10-K",
       "method": "annual_diluted_weighted_average",
       "review_required": true
+    },
+    "accounts_receivable": null,
+    "inventory": {
+      "value": 335000000,
+      "unit": "USD",
+      "period_end": "2026-06-30",
+      "filed": "2026-08-03",
+      "tag": "InventoryNet",
+      "form": "10-Q",
+      "method": "latest_reported_balance"
+    },
+    "accounts_payable": {
+      "value": 2220000000,
+      "unit": "USD",
+      "period_end": "2026-06-30",
+      "filed": "2026-08-03",
+      "tag": "AccountsPayableCurrent",
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     },
     "operating_income": {
       "value": 4660000000,
@@ -113,6 +132,7 @@
   },
   "review_required": true,
   "warnings": [
+    "Missing field: accounts_receivable",
     "Missing field: shares_outstanding",
     "Operating cash flow minus CapEx is not unlevered FCFF",
     "Shares outstanding are not necessarily diluted shares",

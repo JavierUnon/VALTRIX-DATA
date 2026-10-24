@@ -4,7 +4,7 @@
   "company_name": "AppLovin Corporation",
   "sector": "Communication Services",
   "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001751008.json",
-  "fetched_at_utc": "2026-10-24T02:38:44.517152+00:00",
+  "fetched_at_utc": "2026-10-24T02:50:17.324804+00:00",
   "financials": {
     "diluted_shares": {
       "value": 341970000,
@@ -15,6 +15,25 @@
       "form": "10-K",
       "method": "annual_diluted_weighted_average",
       "review_required": true
+    },
+    "accounts_receivable": {
+      "value": 2171017000,
+      "unit": "USD",
+      "period_end": "2026-06-30",
+      "filed": "2026-08-05",
+      "tag": "AccountsReceivableNetCurrent",
+      "form": "10-Q",
+      "method": "latest_reported_balance"
+    },
+    "inventory": null,
+    "accounts_payable": {
+      "value": 778942000,
+      "unit": "USD",
+      "period_end": "2026-06-30",
+      "filed": "2026-08-05",
+      "tag": "AccountsPayableCurrent",
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     },
     "operating_income": {
       "value": 5288460000,
@@ -120,6 +139,7 @@
   },
   "review_required": true,
   "warnings": [
+    "Missing field: inventory",
     "Operating cash flow minus CapEx is not unlevered FCFF",
     "Shares outstanding are not necessarily diluted shares",
     "Debt and cash require classification and date checks"

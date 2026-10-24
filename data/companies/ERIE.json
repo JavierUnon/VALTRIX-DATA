@@ -4,9 +4,28 @@
   "company_name": "ERIE INDEMNITY COMPANY",
   "sector": "Financials",
   "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000922621.json",
-  "fetched_at_utc": "2026-10-24T02:40:38.224735+00:00",
+  "fetched_at_utc": "2026-10-24T02:52:39.738841+00:00",
   "financials": {
     "diluted_shares": null,
+    "accounts_receivable": {
+      "value": 753245000,
+      "unit": "USD",
+      "period_end": "2026-06-30",
+      "filed": "2026-07-30",
+      "tag": "AccountsReceivableNetCurrent",
+      "form": "10-Q",
+      "method": "latest_reported_balance"
+    },
+    "inventory": null,
+    "accounts_payable": {
+      "value": 46526000,
+      "unit": "USD",
+      "period_end": "2015-12-31",
+      "filed": "2016-02-25",
+      "tag": "AccountsPayableCurrent",
+      "form": "10-K",
+      "method": "latest_reported_balance"
+    },
     "operating_income": {
       "value": 737545000,
       "unit": "USD",
@@ -93,6 +112,7 @@
   },
   "review_required": true,
   "warnings": [
+    "Missing field: inventory",
     "Missing field: capital_expenditure",
     "Missing field: shares_outstanding",
     "Operating cash flow minus CapEx is not unlevered FCFF",

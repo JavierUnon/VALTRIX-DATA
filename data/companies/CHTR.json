@@ -4,7 +4,7 @@
   "company_name": "Charter Communications, Inc.",
   "sector": "Communication Services",
   "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001091667.json",
-  "fetched_at_utc": "2026-10-24T02:39:34.343367+00:00",
+  "fetched_at_utc": "2026-10-24T02:51:20.215557+00:00",
   "financials": {
     "diluted_shares": {
       "value": 137743676,
@@ -16,6 +16,17 @@
       "method": "annual_diluted_weighted_average",
       "review_required": true
     },
+    "accounts_receivable": {
+      "value": 3651000000,
+      "unit": "USD",
+      "period_end": "2026-06-30",
+      "filed": "2026-07-24",
+      "tag": "AccountsReceivableNetCurrent",
+      "form": "10-Q",
+      "method": "latest_reported_balance"
+    },
+    "inventory": null,
+    "accounts_payable": null,
     "operating_income": {
       "value": 12663000000,
       "unit": "USD",
@@ -113,6 +124,8 @@
   },
   "review_required": true,
   "warnings": [
+    "Missing field: inventory",
+    "Missing field: accounts_payable",
     "TTM unavailable: revenue",
     "Missing field: shares_outstanding",
     "Operating cash flow minus CapEx is not unlevered FCFF",

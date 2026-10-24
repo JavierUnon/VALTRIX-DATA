@@ -4,7 +4,7 @@
   "company_name": "DEERE & CO",
   "sector": "Industrials",
   "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000315189.json",
-  "fetched_at_utc": "2026-10-24T02:40:10.554051+00:00",
+  "fetched_at_utc": "2026-10-24T02:52:05.206948+00:00",
   "financials": {
     "diluted_shares": {
       "value": 271700000,
@@ -16,6 +16,17 @@
       "method": "annual_diluted_weighted_average",
       "review_required": true
     },
+    "accounts_receivable": null,
+    "inventory": {
+      "value": 7811000000,
+      "unit": "USD",
+      "period_end": "2026-08-02",
+      "filed": "2026-08-27",
+      "tag": "InventoryNet",
+      "form": "10-Q",
+      "method": "latest_reported_balance"
+    },
+    "accounts_payable": null,
     "operating_income": {
       "value": 9039000000,
       "unit": "USD",
@@ -112,6 +123,8 @@
   },
   "review_required": true,
   "warnings": [
+    "Missing field: accounts_receivable",
+    "Missing field: accounts_payable",
     "Missing field: debt_current",
     "Operating cash flow minus CapEx is not unlevered FCFF",
     "Shares outstanding are not necessarily diluted shares",

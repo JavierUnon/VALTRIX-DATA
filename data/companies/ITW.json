@@ -4,7 +4,7 @@
   "company_name": "ILLINOIS TOOL WORKS INC",
   "sector": "Industrials",
   "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000049826.json",
-  "fetched_at_utc": "2026-10-24T02:41:36.299636+00:00",
+  "fetched_at_utc": "2026-10-24T02:53:58.767703+00:00",
   "financials": {
     "diluted_shares": {
       "value": 292300000,
@@ -15,6 +15,25 @@
       "form": "10-K",
       "method": "annual_diluted_weighted_average",
       "review_required": true
+    },
+    "accounts_receivable": null,
+    "inventory": {
+      "value": 1756000000,
+      "unit": "USD",
+      "period_end": "2026-06-30",
+      "filed": "2026-08-06",
+      "tag": "InventoryNet",
+      "form": "10-Q",
+      "method": "latest_reported_balance"
+    },
+    "accounts_payable": {
+      "value": 636000000,
+      "unit": "USD",
+      "period_end": "2026-06-30",
+      "filed": "2026-08-06",
+      "tag": "AccountsPayableCurrent",
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     },
     "operating_income": {
       "value": 4364000000,
@@ -111,6 +130,7 @@
   },
   "review_required": true,
   "warnings": [
+    "Missing field: accounts_receivable",
     "Missing field: depreciation_amortization",
     "Operating cash flow minus CapEx is not unlevered FCFF",
     "Shares outstanding are not necessarily diluted shares",

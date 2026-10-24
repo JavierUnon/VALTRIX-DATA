@@ -4,7 +4,7 @@
   "company_name": "PACCAR Inc",
   "sector": "Industrials",
   "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-  "fetched_at_utc": "2026-10-24T02:42:55.182615+00:00",
+  "fetched_at_utc": "2026-10-24T02:55:52.059690+00:00",
   "financials": {
     "diluted_shares": {
       "value": 526800000,
@@ -16,6 +16,17 @@
       "method": "annual_diluted_weighted_average",
       "review_required": true
     },
+    "accounts_receivable": null,
+    "inventory": {
+      "value": 1976000000,
+      "unit": "USD",
+      "period_end": "2021-12-31",
+      "filed": "2022-10-28",
+      "tag": "InventoryNet",
+      "form": "10-Q",
+      "method": "latest_reported_balance"
+    },
+    "accounts_payable": null,
     "operating_income": null,
     "depreciation_amortization": {
       "value": 409300000,
@@ -87,6 +98,8 @@
   },
   "review_required": true,
   "warnings": [
+    "Missing field: accounts_receivable",
+    "Missing field: accounts_payable",
     "Missing field: operating_income",
     "Missing field: debt_current",
     "Missing field: debt_noncurrent",

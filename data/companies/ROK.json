@@ -4,7 +4,7 @@
   "company_name": "Rockwell Automation, Inc.",
   "sector": "Industrials",
   "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001024478.json",
-  "fetched_at_utc": "2026-10-24T02:43:35.985075+00:00",
+  "fetched_at_utc": "2026-10-24T02:56:34.880221+00:00",
   "financials": {
     "diluted_shares": {
       "value": 113100000,
@@ -15,6 +15,25 @@
       "form": "10-K",
       "method": "annual_diluted_weighted_average",
       "review_required": true
+    },
+    "accounts_receivable": null,
+    "inventory": {
+      "value": 1243000000,
+      "unit": "USD",
+      "period_end": "2026-06-30",
+      "filed": "2026-08-04",
+      "tag": "InventoryNet",
+      "form": "10-Q",
+      "method": "latest_reported_balance"
+    },
+    "accounts_payable": {
+      "value": 935000000,
+      "unit": "USD",
+      "period_end": "2026-06-30",
+      "filed": "2026-08-04",
+      "tag": "AccountsPayableCurrent",
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     },
     "operating_income": {
       "value": 2035000000,
@@ -121,6 +140,7 @@
   },
   "review_required": true,
   "warnings": [
+    "Missing field: accounts_receivable",
     "TTM unavailable: capital_expenditure",
     "Operating cash flow minus CapEx is not unlevered FCFF",
     "Shares outstanding are not necessarily diluted shares",

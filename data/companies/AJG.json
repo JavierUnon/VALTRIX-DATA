@@ -4,9 +4,20 @@
   "company_name": "ARTHUR J. GALLAGHER & CO.",
   "sector": "Financials",
   "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000354190.json",
-  "fetched_at_utc": "2026-10-24T02:38:49.249582+00:00",
+  "fetched_at_utc": "2026-10-24T02:50:23.673649+00:00",
   "financials": {
     "diluted_shares": null,
+    "accounts_receivable": {
+      "value": 6076000000,
+      "unit": "USD",
+      "period_end": "2026-06-30",
+      "filed": "2026-08-05",
+      "tag": "AccountsReceivableNetCurrent",
+      "form": "10-Q",
+      "method": "latest_reported_balance"
+    },
+    "inventory": null,
+    "accounts_payable": null,
     "operating_income": null,
     "depreciation_amortization": {
       "value": 1334000000,
@@ -94,6 +105,8 @@
   },
   "review_required": true,
   "warnings": [
+    "Missing field: inventory",
+    "Missing field: accounts_payable",
     "Missing field: operating_income",
     "Missing field: debt_current",
     "Operating cash flow minus CapEx is not unlevered FCFF",

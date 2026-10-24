@@ -4,7 +4,7 @@
   "company_name": "CASEY\u2019S GENERAL STORES, INC.",
   "sector": "Consumer Staples",
   "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000726958.json",
-  "fetched_at_utc": "2026-10-24T02:39:23.616542+00:00",
+  "fetched_at_utc": "2026-10-24T02:51:07.424702+00:00",
   "financials": {
     "diluted_shares": {
       "value": 37281653,
@@ -15,6 +15,25 @@
       "form": "10-K",
       "method": "annual_diluted_weighted_average",
       "review_required": true
+    },
+    "accounts_receivable": null,
+    "inventory": {
+      "value": 557968000,
+      "unit": "USD",
+      "period_end": "2026-07-31",
+      "filed": "2026-09-08",
+      "tag": "InventoryNet",
+      "form": "10-Q",
+      "method": "latest_reported_balance"
+    },
+    "accounts_payable": {
+      "value": 853659000,
+      "unit": "USD",
+      "period_end": "2026-07-31",
+      "filed": "2026-09-08",
+      "tag": "AccountsPayableCurrent",
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     },
     "operating_income": null,
     "depreciation_amortization": null,
@@ -101,6 +120,7 @@
   },
   "review_required": true,
   "warnings": [
+    "Missing field: accounts_receivable",
     "Missing field: operating_income",
     "Missing field: depreciation_amortization",
     "Operating cash flow minus CapEx is not unlevered FCFF",

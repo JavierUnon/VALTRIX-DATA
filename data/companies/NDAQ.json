@@ -4,7 +4,7 @@
   "company_name": "Nasdaq, Inc.",
   "sector": "Financials",
   "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001120193.json",
-  "fetched_at_utc": "2026-10-24T02:42:34.982140+00:00",
+  "fetched_at_utc": "2026-10-24T02:55:24.164275+00:00",
   "financials": {
     "diluted_shares": {
       "value": 578597687,
@@ -16,6 +16,9 @@
       "method": "annual_diluted_weighted_average",
       "review_required": true
     },
+    "accounts_receivable": null,
+    "inventory": null,
+    "accounts_payable": null,
     "operating_income": {
       "value": 2730000000,
       "unit": "USD",
@@ -120,6 +123,9 @@
   },
   "review_required": true,
   "warnings": [
+    "Missing field: accounts_receivable",
+    "Missing field: inventory",
+    "Missing field: accounts_payable",
     "Operating cash flow minus CapEx is not unlevered FCFF",
     "Shares outstanding are not necessarily diluted shares",
     "Debt and cash require classification and date checks",

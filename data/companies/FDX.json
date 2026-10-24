@@ -4,7 +4,7 @@
   "company_name": "FEDEX CORP",
   "sector": "Industrials",
   "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001048911.json",
-  "fetched_at_utc": "2026-10-24T02:40:56.458738+00:00",
+  "fetched_at_utc": "2026-10-24T02:53:00.533906+00:00",
   "financials": {
     "diluted_shares": {
       "value": 239000000,
@@ -15,6 +15,17 @@
       "form": "10-K",
       "method": "annual_diluted_weighted_average",
       "review_required": true
+    },
+    "accounts_receivable": null,
+    "inventory": null,
+    "accounts_payable": {
+      "value": 4327000000,
+      "unit": "USD",
+      "period_end": "2026-05-31",
+      "filed": "2026-07-20",
+      "tag": "AccountsPayableCurrent",
+      "form": "10-K",
+      "method": "latest_reported_balance"
     },
     "operating_income": {
       "value": 5463000000,
@@ -98,6 +109,8 @@
   },
   "review_required": true,
   "warnings": [
+    "Missing field: accounts_receivable",
+    "Missing field: inventory",
     "Missing field: capital_expenditure",
     "Missing field: shares_outstanding",
     "Operating cash flow minus CapEx is not unlevered FCFF",

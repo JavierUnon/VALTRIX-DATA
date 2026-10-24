@@ -4,7 +4,7 @@
   "company_name": "Intercontinental Exchange, Inc.",
   "sector": "Financials",
   "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001571949.json",
-  "fetched_at_utc": "2026-10-24T02:41:40.576619+00:00",
+  "fetched_at_utc": "2026-10-24T02:54:06.118960+00:00",
   "financials": {
     "diluted_shares": {
       "value": 575000000,
@@ -16,6 +16,17 @@
       "method": "annual_diluted_weighted_average",
       "review_required": true
     },
+    "accounts_receivable": {
+      "value": 1869000000,
+      "unit": "USD",
+      "period_end": "2026-06-30",
+      "filed": "2026-07-30",
+      "tag": "AccountsReceivableNetCurrent",
+      "form": "10-Q",
+      "method": "latest_reported_balance"
+    },
+    "inventory": null,
+    "accounts_payable": null,
     "operating_income": {
       "value": 5467000000,
       "unit": "USD",
@@ -111,6 +122,8 @@
   },
   "review_required": true,
   "warnings": [
+    "Missing field: inventory",
+    "Missing field: accounts_payable",
     "Missing field: depreciation_amortization",
     "Operating cash flow minus CapEx is not unlevered FCFF",
     "Shares outstanding are not necessarily diluted shares",

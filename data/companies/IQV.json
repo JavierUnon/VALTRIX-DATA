@@ -4,7 +4,7 @@
   "company_name": "IQVIA HOLDINGS INC.",
   "sector": "Health Care",
   "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001478242.json",
-  "fetched_at_utc": "2026-10-24T02:41:45.468588+00:00",
+  "fetched_at_utc": "2026-10-24T02:54:13.912153+00:00",
   "financials": {
     "diluted_shares": {
       "value": 173500000,
@@ -15,6 +15,17 @@
       "form": "10-K",
       "method": "annual_diluted_weighted_average",
       "review_required": true
+    },
+    "accounts_receivable": null,
+    "inventory": null,
+    "accounts_payable": {
+      "value": 437000000,
+      "unit": "USD",
+      "period_end": "2018-12-31",
+      "filed": "2019-02-19",
+      "tag": "AccountsPayableCurrent",
+      "form": "10-K",
+      "method": "latest_reported_balance"
     },
     "operating_income": {
       "value": 2200000000,
@@ -111,6 +122,8 @@
   },
   "review_required": true,
   "warnings": [
+    "Missing field: accounts_receivable",
+    "Missing field: inventory",
     "Missing field: capital_expenditure",
     "Operating cash flow minus CapEx is not unlevered FCFF",
     "Shares outstanding are not necessarily diluted shares",

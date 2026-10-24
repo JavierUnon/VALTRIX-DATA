@@ -4,7 +4,7 @@
   "company_name": "YUM! BRANDS, INC.",
   "sector": "Consumer Discretionary",
   "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001041061.json",
-  "fetched_at_utc": "2026-10-24T02:45:35.478022+00:00",
+  "fetched_at_utc": "2026-10-24T02:58:19.350721+00:00",
   "financials": {
     "diluted_shares": {
       "value": 281000000,
@@ -15,6 +15,25 @@
       "form": "10-K",
       "method": "annual_diluted_weighted_average",
       "review_required": true
+    },
+    "accounts_receivable": null,
+    "inventory": {
+      "value": 15000000,
+      "unit": "USD",
+      "period_end": "2017-09-30",
+      "filed": "2017-11-08",
+      "tag": "InventoryNet",
+      "form": "10-Q",
+      "method": "latest_reported_balance"
+    },
+    "accounts_payable": {
+      "value": 173000000,
+      "unit": "USD",
+      "period_end": "2019-12-31",
+      "filed": "2020-02-20",
+      "tag": "AccountsPayableCurrent",
+      "form": "10-K",
+      "method": "latest_reported_balance"
     },
     "operating_income": {
       "value": 2703000000,
@@ -113,6 +132,7 @@
   },
   "review_required": true,
   "warnings": [
+    "Missing field: accounts_receivable",
     "Missing field: shares_outstanding",
     "Operating cash flow minus CapEx is not unlevered FCFF",
     "Shares outstanding are not necessarily diluted shares",

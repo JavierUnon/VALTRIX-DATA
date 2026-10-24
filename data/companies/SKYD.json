@@ -4,7 +4,7 @@
   "company_name": "Skydance Corp",
   "sector": "Communication Services",
   "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0002041610.json",
-  "fetched_at_utc": "2026-10-24T02:44:06.584009+00:00",
+  "fetched_at_utc": "2026-10-24T02:56:48.925537+00:00",
   "financials": {
     "diluted_shares": {
       "value": 664000000,
@@ -15,6 +15,25 @@
       "form": "10-K",
       "method": "annual_diluted_weighted_average",
       "review_required": true
+    },
+    "accounts_receivable": {
+      "value": 6178000000,
+      "unit": "USD",
+      "period_end": "2026-06-30",
+      "filed": "2026-08-04",
+      "tag": "AccountsReceivableNetCurrent",
+      "form": "10-Q",
+      "method": "latest_reported_balance"
+    },
+    "inventory": null,
+    "accounts_payable": {
+      "value": 511000000,
+      "unit": "USD",
+      "period_end": "2026-06-30",
+      "filed": "2026-08-04",
+      "tag": "AccountsPayableCurrent",
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     },
     "operating_income": {
       "value": -5269000000,
@@ -111,6 +130,7 @@
   },
   "review_required": true,
   "warnings": [
+    "Missing field: inventory",
     "TTM unavailable: operating_income",
     "Missing field: depreciation_amortization",
     "TTM unavailable: income_tax_expense",

@@ -4,9 +4,28 @@
   "company_name": "VISA INC.",
   "sector": "Financials",
   "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001403161.json",
-  "fetched_at_utc": "2026-10-24T02:45:15.360366+00:00",
+  "fetched_at_utc": "2026-10-24T02:57:50.983265+00:00",
   "financials": {
     "diluted_shares": null,
+    "accounts_receivable": {
+      "value": 3405000000,
+      "unit": "USD",
+      "period_end": "2026-03-31",
+      "filed": "2026-04-29",
+      "tag": "AccountsReceivableNetCurrent",
+      "form": "10-Q",
+      "method": "latest_reported_balance"
+    },
+    "inventory": null,
+    "accounts_payable": {
+      "value": 557000000,
+      "unit": "USD",
+      "period_end": "2026-03-31",
+      "filed": "2026-04-29",
+      "tag": "AccountsPayableCurrent",
+      "form": "10-Q",
+      "method": "latest_reported_balance"
+    },
     "operating_income": {
       "value": 26296000000,
       "unit": "USD",
@@ -84,6 +103,7 @@
   },
   "review_required": true,
   "warnings": [
+    "Missing field: inventory",
     "Missing field: depreciation_amortization",
     "Missing field: capital_expenditure",
     "Missing field: shares_outstanding",

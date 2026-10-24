@@ -4,7 +4,7 @@
   "company_name": "Sysco Corporation",
   "sector": "Consumer Staples",
   "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000096021.json",
-  "fetched_at_utc": "2026-10-24T02:44:19.490750+00:00",
+  "fetched_at_utc": "2026-10-24T02:57:04.883650+00:00",
   "financials": {
     "diluted_shares": {
       "value": 480612203,
@@ -15,6 +15,25 @@
       "form": "10-K",
       "method": "annual_diluted_weighted_average",
       "review_required": true
+    },
+    "accounts_receivable": null,
+    "inventory": {
+      "value": 2073766000,
+      "unit": "USD",
+      "period_end": "2011-07-02",
+      "filed": "2011-08-30",
+      "tag": "InventoryNet",
+      "form": "10-K",
+      "method": "latest_reported_balance"
+    },
+    "accounts_payable": {
+      "value": 6640000000,
+      "unit": "USD",
+      "period_end": "2026-06-27",
+      "filed": "2026-08-21",
+      "tag": "AccountsPayableCurrent",
+      "form": "10-K",
+      "method": "latest_reported_balance"
     },
     "operating_income": {
       "value": 3095000000,
@@ -99,6 +118,7 @@
   },
   "review_required": true,
   "warnings": [
+    "Missing field: accounts_receivable",
     "Missing field: capital_expenditure",
     "Missing field: shares_outstanding",
     "Operating cash flow minus CapEx is not unlevered FCFF",

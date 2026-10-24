@@ -4,7 +4,7 @@
   "company_name": "Diamondback Energy, Inc.",
   "sector": "Energy",
   "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001539838.json",
-  "fetched_at_utc": "2026-10-24T02:40:15.013478+00:00",
+  "fetched_at_utc": "2026-10-24T02:52:10.580911+00:00",
   "financials": {
     "diluted_shares": {
       "value": 289079000,
@@ -16,6 +16,25 @@
       "method": "annual_diluted_weighted_average",
       "review_required": true
     },
+    "accounts_receivable": {
+      "value": 1669000000,
+      "unit": "USD",
+      "period_end": "2026-06-30",
+      "filed": "2026-08-05",
+      "tag": "AccountsReceivableNetCurrent",
+      "form": "10-Q",
+      "method": "latest_reported_balance"
+    },
+    "inventory": {
+      "value": 67000000,
+      "unit": "USD",
+      "period_end": "2026-06-30",
+      "filed": "2026-08-05",
+      "tag": "InventoryNet",
+      "form": "10-Q",
+      "method": "latest_reported_balance"
+    },
+    "accounts_payable": null,
     "operating_income": {
       "value": 1082000000,
       "unit": "USD",
@@ -111,6 +130,7 @@
   },
   "review_required": true,
   "warnings": [
+    "Missing field: accounts_payable",
     "Missing field: capital_expenditure",
     "Operating cash flow minus CapEx is not unlevered FCFF",
     "Shares outstanding are not necessarily diluted shares",

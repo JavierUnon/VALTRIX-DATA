@@ -4,7 +4,7 @@
   "company_name": "ATMOS ENERGY CORP",
   "sector": "Utilities",
   "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000731802.json",
-  "fetched_at_utc": "2026-10-24T02:38:52.423071+00:00",
+  "fetched_at_utc": "2026-10-24T02:50:26.809542+00:00",
   "financials": {
     "diluted_shares": {
       "value": 160573000,
@@ -16,6 +16,17 @@
       "method": "annual_diluted_weighted_average",
       "review_required": true
     },
+    "accounts_receivable": {
+      "value": 469455000,
+      "unit": "USD",
+      "period_end": "2026-06-30",
+      "filed": "2026-08-05",
+      "tag": "AccountsReceivableNetCurrent",
+      "form": "10-Q",
+      "method": "latest_reported_balance"
+    },
+    "inventory": null,
+    "accounts_payable": null,
     "operating_income": {
       "value": 1819467000,
       "unit": "USD",
@@ -111,6 +122,8 @@
   },
   "review_required": true,
   "warnings": [
+    "Missing field: inventory",
+    "Missing field: accounts_payable",
     "Missing field: capital_expenditure",
     "Operating cash flow minus CapEx is not unlevered FCFF",
     "Shares outstanding are not necessarily diluted shares",

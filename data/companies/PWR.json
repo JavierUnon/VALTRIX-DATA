@@ -4,7 +4,7 @@
   "company_name": "QUANTA SERVICES, INC.",
   "sector": "Industrials",
   "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001050915.json",
-  "fetched_at_utc": "2026-10-24T02:43:22.144353+00:00",
+  "fetched_at_utc": "2026-10-24T02:56:19.973799+00:00",
   "financials": {
     "diluted_shares": {
       "value": 151291000,
@@ -16,6 +16,25 @@
       "method": "annual_diluted_weighted_average",
       "review_required": true
     },
+    "accounts_receivable": {
+      "value": 8532311000,
+      "unit": "USD",
+      "period_end": "2026-06-30",
+      "filed": "2026-07-30",
+      "tag": "AccountsReceivableNetCurrent",
+      "form": "10-Q",
+      "method": "latest_reported_balance"
+    },
+    "inventory": {
+      "value": 469865000,
+      "unit": "USD",
+      "period_end": "2026-06-30",
+      "filed": "2026-07-30",
+      "tag": "InventoryNet",
+      "form": "10-Q",
+      "method": "latest_reported_balance"
+    },
+    "accounts_payable": null,
     "operating_income": {
       "value": 2035759000,
       "unit": "USD",
@@ -111,6 +130,7 @@
   },
   "review_required": true,
   "warnings": [
+    "Missing field: accounts_payable",
     "Missing field: depreciation_amortization",
     "Operating cash flow minus CapEx is not unlevered FCFF",
     "Shares outstanding are not necessarily diluted shares",

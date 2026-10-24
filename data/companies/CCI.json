@@ -4,7 +4,7 @@
   "company_name": "CROWN CASTLE INC.",
   "sector": "Real Estate",
   "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001051470.json",
-  "fetched_at_utc": "2026-10-24T02:40:03.533245+00:00",
+  "fetched_at_utc": "2026-10-24T02:51:54.942933+00:00",
   "financials": {
     "diluted_shares": {
       "value": 437000000,
@@ -15,6 +15,25 @@
       "form": "10-K",
       "method": "annual_diluted_weighted_average",
       "review_required": true
+    },
+    "accounts_receivable": {
+      "value": 179000000,
+      "unit": "USD",
+      "period_end": "2026-06-30",
+      "filed": "2026-08-05",
+      "tag": "AccountsReceivableNetCurrent",
+      "form": "10-Q",
+      "method": "latest_reported_balance"
+    },
+    "inventory": null,
+    "accounts_payable": {
+      "value": 90000000,
+      "unit": "USD",
+      "period_end": "2026-06-30",
+      "filed": "2026-08-05",
+      "tag": "AccountsPayableCurrent",
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     },
     "operating_income": {
       "value": 1983000000,
@@ -111,6 +130,7 @@
   },
   "review_required": true,
   "warnings": [
+    "Missing field: inventory",
     "Missing field: capital_expenditure",
     "Operating cash flow minus CapEx is not unlevered FCFF",
     "Shares outstanding are not necessarily diluted shares",

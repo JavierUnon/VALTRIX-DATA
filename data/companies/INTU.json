@@ -4,7 +4,7 @@
   "company_name": "INTUIT INC.",
   "sector": "Information Technology",
   "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000896878.json",
-  "fetched_at_utc": "2026-10-24T02:41:42.930847+00:00",
+  "fetched_at_utc": "2026-10-24T02:54:09.662106+00:00",
   "financials": {
     "diluted_shares": {
       "value": 277000000,
@@ -15,6 +15,25 @@
       "form": "10-K",
       "method": "annual_diluted_weighted_average",
       "review_required": true
+    },
+    "accounts_receivable": {
+      "value": 625000000,
+      "unit": "USD",
+      "period_end": "2026-07-31",
+      "filed": "2026-09-09",
+      "tag": "AccountsReceivableNetCurrent",
+      "form": "10-K",
+      "method": "latest_reported_balance"
+    },
+    "inventory": null,
+    "accounts_payable": {
+      "value": 873000000,
+      "unit": "USD",
+      "period_end": "2026-07-31",
+      "filed": "2026-09-09",
+      "tag": "AccountsPayableCurrent",
+      "form": "10-K",
+      "method": "latest_reported_balance"
     },
     "operating_income": {
       "value": 5884000000,
@@ -106,6 +125,7 @@
   },
   "review_required": true,
   "warnings": [
+    "Missing field: inventory",
     "Missing field: depreciation_amortization",
     "Operating cash flow minus CapEx is not unlevered FCFF",
     "Shares outstanding are not necessarily diluted shares",

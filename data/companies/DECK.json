@@ -4,7 +4,7 @@
   "company_name": "DECKERS OUTDOOR CORP",
   "sector": "Consumer Discretionary",
   "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000910521.json",
-  "fetched_at_utc": "2026-10-24T02:40:09.820750+00:00",
+  "fetched_at_utc": "2026-10-24T02:52:04.194025+00:00",
   "financials": {
     "diluted_shares": {
       "value": 145805000,
@@ -16,6 +16,25 @@
       "method": "annual_diluted_weighted_average",
       "review_required": true
     },
+    "accounts_receivable": {
+      "value": 378348000,
+      "unit": "USD",
+      "period_end": "2026-06-30",
+      "filed": "2026-07-30",
+      "tag": "AccountsReceivableNetCurrent",
+      "form": "10-Q",
+      "method": "latest_reported_balance"
+    },
+    "inventory": {
+      "value": 807580000,
+      "unit": "USD",
+      "period_end": "2026-06-30",
+      "filed": "2026-07-30",
+      "tag": "InventoryNet",
+      "form": "10-Q",
+      "method": "latest_reported_balance"
+    },
+    "accounts_payable": null,
     "operating_income": {
       "value": 1252917000,
       "unit": "USD",
@@ -105,6 +124,7 @@
   },
   "review_required": true,
   "warnings": [
+    "Missing field: accounts_payable",
     "Missing field: debt_current",
     "Missing field: debt_noncurrent",
     "Operating cash flow minus CapEx is not unlevered FCFF",

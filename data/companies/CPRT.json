@@ -4,7 +4,7 @@
   "company_name": "COPART, INC.",
   "sector": "Industrials",
   "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000900075.json",
-  "fetched_at_utc": "2026-10-24T02:39:57.449225+00:00",
+  "fetched_at_utc": "2026-10-24T02:51:48.277253+00:00",
   "financials": {
     "diluted_shares": {
       "value": 956860000,
@@ -16,6 +16,25 @@
       "method": "annual_diluted_weighted_average",
       "review_required": true
     },
+    "accounts_receivable": {
+      "value": 809247000,
+      "unit": "USD",
+      "period_end": "2026-07-31",
+      "filed": "2026-09-29",
+      "tag": "AccountsReceivableNetCurrent",
+      "form": "10-K",
+      "method": "latest_reported_balance"
+    },
+    "inventory": {
+      "value": 51382000,
+      "unit": "USD",
+      "period_end": "2026-07-31",
+      "filed": "2026-09-29",
+      "tag": "InventoryNet",
+      "form": "10-K",
+      "method": "latest_reported_balance"
+    },
+    "accounts_payable": null,
     "operating_income": {
       "value": 1652590000,
       "unit": "USD",
@@ -115,6 +134,7 @@
   },
   "review_required": true,
   "warnings": [
+    "Missing field: accounts_payable",
     "Operating cash flow minus CapEx is not unlevered FCFF",
     "Shares outstanding are not necessarily diluted shares",
     "Debt and cash require classification and date checks"

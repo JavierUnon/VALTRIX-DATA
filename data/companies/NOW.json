@@ -4,7 +4,7 @@
   "company_name": "ServiceNow, Inc.",
   "sector": "Information Technology",
   "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001373715.json",
-  "fetched_at_utc": "2026-10-24T02:44:04.532218+00:00",
+  "fetched_at_utc": "2026-10-24T02:56:46.275468+00:00",
   "financials": {
     "diluted_shares": {
       "value": 1046691000,
@@ -15,6 +15,25 @@
       "form": "10-K",
       "method": "annual_diluted_weighted_average",
       "review_required": true
+    },
+    "accounts_receivable": {
+      "value": 2201000000,
+      "unit": "USD",
+      "period_end": "2026-06-30",
+      "filed": "2026-07-23",
+      "tag": "AccountsReceivableNetCurrent",
+      "form": "10-Q",
+      "method": "latest_reported_balance"
+    },
+    "inventory": null,
+    "accounts_payable": {
+      "value": 162000000,
+      "unit": "USD",
+      "period_end": "2026-06-30",
+      "filed": "2026-07-23",
+      "tag": "AccountsPayableCurrent",
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     },
     "operating_income": {
       "value": 1680000000,
@@ -121,6 +140,7 @@
   },
   "review_required": true,
   "warnings": [
+    "Missing field: inventory",
     "Operating cash flow minus CapEx is not unlevered FCFF",
     "Shares outstanding are not necessarily diluted shares",
     "Debt and cash require classification and date checks"

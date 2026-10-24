@@ -4,7 +4,7 @@
   "company_name": "PPG INDUSTRIES INC",
   "sector": "Materials",
   "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000079879.json",
-  "fetched_at_utc": "2026-10-24T02:43:10.263670+00:00",
+  "fetched_at_utc": "2026-10-24T02:56:07.586722+00:00",
   "financials": {
     "diluted_shares": {
       "value": 227100000,
@@ -16,6 +16,25 @@
       "method": "annual_diluted_weighted_average",
       "review_required": true
     },
+    "accounts_receivable": {
+      "value": 2783000000,
+      "unit": "USD",
+      "period_end": "2025-12-31",
+      "filed": "2026-02-19",
+      "tag": "AccountsReceivableNetCurrent",
+      "form": "10-K",
+      "method": "latest_reported_balance"
+    },
+    "inventory": {
+      "value": 2162000000,
+      "unit": "USD",
+      "period_end": "2026-03-31",
+      "filed": "2026-04-29",
+      "tag": "InventoryNet",
+      "form": "10-Q",
+      "method": "latest_reported_balance"
+    },
+    "accounts_payable": null,
     "operating_income": {
       "value": 2675000000,
       "unit": "USD",
@@ -111,6 +130,7 @@
   },
   "review_required": true,
   "warnings": [
+    "Missing field: accounts_payable",
     "TTM unavailable: operating_income",
     "Missing field: depreciation_amortization",
     "Operating cash flow minus CapEx is not unlevered FCFF",

@@ -4,7 +4,7 @@
   "company_name": "DEVON ENERGY CORP/DE",
   "sector": "Energy",
   "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001090012.json",
-  "fetched_at_utc": "2026-10-24T02:40:13.280887+00:00",
+  "fetched_at_utc": "2026-10-24T02:52:08.136087+00:00",
   "financials": {
     "diluted_shares": {
       "value": 633000000,
@@ -16,6 +16,25 @@
       "method": "annual_diluted_weighted_average",
       "review_required": true
     },
+    "accounts_receivable": {
+      "value": 3162000000,
+      "unit": "USD",
+      "period_end": "2026-06-30",
+      "filed": "2026-08-05",
+      "tag": "AccountsReceivableNetCurrent",
+      "form": "10-Q",
+      "method": "latest_reported_balance"
+    },
+    "inventory": {
+      "value": 356000000,
+      "unit": "USD",
+      "period_end": "2026-06-30",
+      "filed": "2026-08-05",
+      "tag": "InventoryNet",
+      "form": "10-Q",
+      "method": "latest_reported_balance"
+    },
+    "accounts_payable": null,
     "operating_income": {
       "value": 2211000000,
       "unit": "USD",
@@ -113,6 +132,7 @@
   },
   "review_required": true,
   "warnings": [
+    "Missing field: accounts_payable",
     "TTM unavailable: capital_expenditure",
     "Missing field: shares_outstanding",
     "Operating cash flow minus CapEx is not unlevered FCFF",

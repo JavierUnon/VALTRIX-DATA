@@ -4,7 +4,7 @@
   "company_name": "ABBOTT LABORATORIES",
   "sector": "Health Care",
   "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000001800.json",
-  "fetched_at_utc": "2026-10-24T02:38:12.861241+00:00",
+  "fetched_at_utc": "2026-10-24T02:49:37.225728+00:00",
   "financials": {
     "diluted_shares": {
       "value": 1748000000,
@@ -16,6 +16,25 @@
       "method": "annual_diluted_weighted_average",
       "review_required": true
     },
+    "accounts_receivable": {
+      "value": 8210000000,
+      "unit": "USD",
+      "period_end": "2026-03-31",
+      "filed": "2026-04-29",
+      "tag": "AccountsReceivableNetCurrent",
+      "form": "10-Q",
+      "method": "latest_reported_balance"
+    },
+    "inventory": {
+      "value": 6989000000,
+      "unit": "USD",
+      "period_end": "2026-03-31",
+      "filed": "2026-04-29",
+      "tag": "InventoryNet",
+      "form": "10-Q",
+      "method": "latest_reported_balance"
+    },
+    "accounts_payable": null,
     "operating_income": {
       "value": 7705000000,
       "unit": "USD",
@@ -103,6 +122,7 @@
   },
   "review_required": true,
   "warnings": [
+    "Missing field: accounts_payable",
     "Missing field: depreciation_amortization",
     "Missing field: shares_outstanding",
     "Operating cash flow minus CapEx is not unlevered FCFF",

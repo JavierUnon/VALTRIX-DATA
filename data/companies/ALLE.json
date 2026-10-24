@@ -4,7 +4,7 @@
   "company_name": "Allegion plc",
   "sector": "Industrials",
   "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001579241.json",
-  "fetched_at_utc": "2026-10-24T02:38:24.824430+00:00",
+  "fetched_at_utc": "2026-10-24T02:49:52.403054+00:00",
   "financials": {
     "diluted_shares": {
       "value": 86600000,
@@ -15,6 +15,25 @@
       "form": "10-K",
       "method": "annual_diluted_weighted_average",
       "review_required": true
+    },
+    "accounts_receivable": null,
+    "inventory": {
+      "value": 539400000,
+      "unit": "USD",
+      "period_end": "2026-09-30",
+      "filed": "2026-10-22",
+      "tag": "InventoryNet",
+      "form": "10-Q",
+      "method": "latest_reported_balance"
+    },
+    "accounts_payable": {
+      "value": 283200000,
+      "unit": "USD",
+      "period_end": "2026-09-30",
+      "filed": "2026-10-22",
+      "tag": "AccountsPayableCurrent",
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     },
     "operating_income": {
       "value": 944200000,
@@ -120,6 +139,7 @@
   },
   "review_required": true,
   "warnings": [
+    "Missing field: accounts_receivable",
     "TTM unavailable: depreciation_amortization",
     "Operating cash flow minus CapEx is not unlevered FCFF",
     "Shares outstanding are not necessarily diluted shares",
