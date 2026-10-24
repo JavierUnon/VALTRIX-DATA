@@ -4,27 +4,29 @@
   "company_name": "WILLIS TOWERS WATSON PLC",
   "sector": "Financials",
   "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001140536.json",
-  "fetched_at_utc": "2026-10-24T01:34:43.836554+00:00",
+  "fetched_at_utc": "2026-10-24T02:14:09.156969+00:00",
   "financials": {
     "revenue": {
-      "value": 9516000000,
+      "value": 9912000000,
       "unit": "USD",
-      "period_start": "2025-01-01",
-      "period_end": "2025-12-31",
-      "filed": "2026-02-25",
-      "accession": "0001193125-26-069307",
+      "period_end": "2026-06-30",
+      "filed": "2026-07-30",
       "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
     },
     "operating_cash_flow": {
-      "value": 1775000000,
+      "value": 1923000000,
       "unit": "USD",
-      "period_start": "2025-01-01",
-      "period_end": "2025-12-31",
-      "filed": "2026-02-25",
-      "accession": "0001193125-26-069307",
+      "period_end": "2026-06-30",
+      "filed": "2026-07-30",
       "tag": "NetCashProvidedByUsedInOperatingActivities",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
     },
     "capital_expenditure": {
       "value": 146000000,
@@ -32,42 +34,45 @@
       "period_start": "2015-01-01",
       "period_end": "2015-12-31",
       "filed": "2016-02-29",
-      "accession": "0001140536-16-000035",
       "tag": "PaymentsToAcquirePropertyPlantAndEquipment",
-      "form": "10-K"
+      "form": "10-K",
+      "method": "annual"
     },
     "cash": {
-      "value": 3132000000,
+      "value": 1627000000,
       "unit": "USD",
-      "period_start": null,
-      "period_end": "2025-12-31",
-      "filed": "2026-02-25",
-      "accession": "0001193125-26-069307",
+      "period_end": "2026-06-30",
+      "filed": "2026-07-30",
       "tag": "CashAndCashEquivalentsAtCarryingValue",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     },
     "debt_current": {
-      "value": 550000000,
+      "value": 749000000,
       "unit": "USD",
-      "period_start": null,
-      "period_end": "2025-12-31",
-      "filed": "2026-02-25",
-      "accession": "0001193125-26-069307",
+      "period_end": "2026-06-30",
+      "filed": "2026-07-30",
       "tag": "LongTermDebtCurrent",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     },
     "debt_noncurrent": {
-      "value": 5756000000,
+      "value": 5781000000,
       "unit": "USD",
-      "period_start": null,
-      "period_end": "2025-12-31",
-      "filed": "2026-02-25",
-      "accession": "0001193125-26-069307",
+      "period_end": "2026-06-30",
+      "filed": "2026-07-30",
       "tag": "LongTermDebtNoncurrent",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     },
     "shares_outstanding": null
   },
   "review_required": true,
-  "note": "SEC reported fields. Different tags and fiscal periods require validation. Operating cash flow minus capex is not automatically unlevered FCFF. Not a completed DCF valuation."
+  "warnings": [
+    "Missing field: shares_outstanding",
+    "Operating cash flow minus CapEx is not unlevered FCFF",
+    "Shares outstanding are not necessarily diluted shares",
+    "Debt and cash require classification and date checks",
+    "Financial company: standard FCFF DCF unsuitable"
+  ]
 }

@@ -4,70 +4,73 @@
   "company_name": "HENRY SCHEIN, INC.",
   "sector": "Health Care",
   "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001000228.json",
-  "fetched_at_utc": "2026-10-24T01:31:48.878193+00:00",
+  "fetched_at_utc": "2026-10-24T02:11:15.078265+00:00",
   "financials": {
     "revenue": {
-      "value": 13184000000,
+      "value": 13602000000,
       "unit": "USD",
-      "period_start": "2024-12-29",
-      "period_end": "2025-12-27",
-      "filed": "2026-02-24",
-      "accession": "0001000228-26-000013",
+      "period_end": "2026-06-27",
+      "filed": "2026-08-04",
       "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-27"
     },
     "operating_cash_flow": {
-      "value": 712000000,
+      "value": 700000000,
       "unit": "USD",
-      "period_start": "2024-12-29",
-      "period_end": "2025-12-27",
-      "filed": "2026-02-24",
-      "accession": "0001000228-26-000013",
+      "period_end": "2026-06-27",
+      "filed": "2026-08-04",
       "tag": "NetCashProvidedByUsedInOperatingActivities",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-27"
     },
     "capital_expenditure": null,
     "cash": {
-      "value": 80209000,
+      "value": 88115000,
       "unit": "USD",
-      "period_start": null,
-      "period_end": "2018-12-29",
-      "filed": "2019-02-20",
-      "accession": "0001000228-19-000015",
+      "period_end": "2019-03-30",
+      "filed": "2019-05-07",
       "tag": "CashAndCashEquivalentsAtCarryingValue",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     },
     "debt_current": {
-      "value": 22819000,
+      "value": 138000000,
       "unit": "USD",
-      "period_start": null,
-      "period_end": "2011-12-31",
-      "filed": "2012-02-15",
-      "accession": "0001000228-12-000009",
-      "tag": "LongTermDebtCurrent",
-      "form": "10-K"
+      "period_end": "2026-06-27",
+      "filed": "2026-08-04",
+      "tag": "LongTermDebtAndCapitalLeaseObligationsCurrent",
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     },
     "debt_noncurrent": {
-      "value": 363524000,
+      "value": 2300000000,
       "unit": "USD",
-      "period_start": null,
-      "period_end": "2011-12-31",
-      "filed": "2012-02-15",
-      "accession": "0001000228-12-000009",
-      "tag": "LongTermDebtNoncurrent",
-      "form": "10-K"
+      "period_end": "2026-06-27",
+      "filed": "2026-08-04",
+      "tag": "LongTermDebtAndCapitalLeaseObligations",
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     },
     "shares_outstanding": {
-      "value": 115771149,
+      "value": 111916222,
       "unit": "shares",
-      "period_start": null,
-      "period_end": "2025-12-27",
-      "filed": "2026-02-24",
-      "accession": "0001000228-26-000013",
+      "period_end": "2026-06-27",
+      "filed": "2026-08-04",
       "tag": "CommonStockSharesOutstanding",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     }
   },
   "review_required": true,
-  "note": "SEC reported fields. Different tags and fiscal periods require validation. Operating cash flow minus capex is not automatically unlevered FCFF. Not a completed DCF valuation."
+  "warnings": [
+    "Missing field: capital_expenditure",
+    "Operating cash flow minus CapEx is not unlevered FCFF",
+    "Shares outstanding are not necessarily diluted shares",
+    "Debt and cash require classification and date checks"
+  ]
 }

@@ -4,7 +4,7 @@
   "company_name": "JACK HENRY & ASSOCIATES, INC.",
   "sector": "Financials",
   "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000779152.json",
-  "fetched_at_utc": "2026-10-24T01:32:13.487112+00:00",
+  "fetched_at_utc": "2026-10-24T02:11:37.846559+00:00",
   "financials": {
     "revenue": {
       "value": 2544339000,
@@ -12,9 +12,9 @@
       "period_start": "2025-07-01",
       "period_end": "2026-06-30",
       "filed": "2026-08-28",
-      "accession": "0000779152-26-000067",
       "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
-      "form": "10-K"
+      "form": "10-K",
+      "method": "annual"
     },
     "operating_cash_flow": {
       "value": 761960000,
@@ -22,9 +22,9 @@
       "period_start": "2025-07-01",
       "period_end": "2026-06-30",
       "filed": "2026-08-28",
-      "accession": "0000779152-26-000067",
       "tag": "NetCashProvidedByUsedInOperatingActivities",
-      "form": "10-K"
+      "form": "10-K",
+      "method": "annual"
     },
     "capital_expenditure": {
       "value": 67103000,
@@ -32,42 +32,45 @@
       "period_start": "2025-07-01",
       "period_end": "2026-06-30",
       "filed": "2026-08-28",
-      "accession": "0000779152-26-000067",
       "tag": "PaymentsToAcquirePropertyPlantAndEquipment",
-      "form": "10-K"
+      "form": "10-K",
+      "method": "annual"
     },
     "cash": {
-      "value": 50992000,
+      "value": 20573000,
       "unit": "USD",
-      "period_start": null,
-      "period_end": "2021-06-30",
-      "filed": "2021-08-25",
-      "accession": "0000779152-21-000073",
+      "period_end": "2026-03-31",
+      "filed": "2026-05-07",
       "tag": "CashAndCashEquivalentsAtCarryingValue",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     },
     "debt_current": {
       "value": 0,
       "unit": "USD",
-      "period_start": null,
       "period_end": "2025-06-30",
       "filed": "2025-08-25",
-      "accession": "0000779152-25-000055",
       "tag": "LongTermDebtCurrent",
-      "form": "10-K"
+      "form": "10-K",
+      "method": "latest_reported_balance"
     },
     "debt_noncurrent": {
-      "value": 0,
+      "value": 90000000,
       "unit": "USD",
-      "period_start": null,
-      "period_end": "2025-06-30",
-      "filed": "2025-08-25",
-      "accession": "0000779152-25-000055",
+      "period_end": "2026-03-31",
+      "filed": "2026-05-07",
       "tag": "LongTermDebtNoncurrent",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     },
     "shares_outstanding": null
   },
   "review_required": true,
-  "note": "SEC reported fields. Different tags and fiscal periods require validation. Operating cash flow minus capex is not automatically unlevered FCFF. Not a completed DCF valuation."
+  "warnings": [
+    "Missing field: shares_outstanding",
+    "Operating cash flow minus CapEx is not unlevered FCFF",
+    "Shares outstanding are not necessarily diluted shares",
+    "Debt and cash require classification and date checks",
+    "Financial company: standard FCFF DCF unsuitable"
+  ]
 }

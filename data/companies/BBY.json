@@ -4,79 +4,82 @@
   "company_name": "Best Buy Co., Inc.",
   "sector": "Consumer Discretionary",
   "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000764478.json",
-  "fetched_at_utc": "2026-10-24T01:29:32.894128+00:00",
+  "fetched_at_utc": "2026-10-24T02:09:14.491668+00:00",
   "financials": {
     "revenue": {
-      "value": 41691000000,
+      "value": 42201000000,
       "unit": "USD",
-      "period_start": "2025-02-02",
-      "period_end": "2026-01-31",
-      "filed": "2026-03-18",
-      "accession": "0000764478-26-000009",
+      "period_end": "2026-08-01",
+      "filed": "2026-09-04",
       "tag": "RevenueFromContractWithCustomerIncludingAssessedTax",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2026-01-31"
     },
     "operating_cash_flow": {
-      "value": 1962000000,
+      "value": 2475000000,
       "unit": "USD",
-      "period_start": "2025-02-02",
-      "period_end": "2026-01-31",
-      "filed": "2026-03-18",
-      "accession": "0000764478-26-000009",
+      "period_end": "2026-08-01",
+      "filed": "2026-09-04",
       "tag": "NetCashProvidedByUsedInOperatingActivities",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2026-01-31"
     },
     "capital_expenditure": {
-      "value": 704000000,
+      "value": 707000000,
       "unit": "USD",
-      "period_start": "2025-02-02",
-      "period_end": "2026-01-31",
-      "filed": "2026-03-18",
-      "accession": "0000764478-26-000009",
+      "period_end": "2026-08-01",
+      "filed": "2026-09-04",
       "tag": "PaymentsToAcquirePropertyPlantAndEquipment",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2026-01-31"
     },
     "cash": {
-      "value": 1738000000,
+      "value": 2255000000,
       "unit": "USD",
-      "period_start": null,
-      "period_end": "2026-01-31",
-      "filed": "2026-03-18",
-      "accession": "0000764478-26-000009",
+      "period_end": "2026-08-01",
+      "filed": "2026-09-04",
       "tag": "CashAndCashEquivalentsAtCarryingValue",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     },
     "debt_current": {
-      "value": 10000000,
+      "value": 11000000,
       "unit": "USD",
-      "period_start": null,
-      "period_end": "2025-02-01",
-      "filed": "2025-03-19",
-      "accession": "0000764478-25-000007",
-      "tag": "LongTermDebtCurrent",
-      "form": "10-K"
+      "period_end": "2026-08-01",
+      "filed": "2026-09-04",
+      "tag": "LongTermDebtAndCapitalLeaseObligationsCurrent",
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     },
     "debt_noncurrent": {
-      "value": 1144000000,
+      "value": 1158000000,
       "unit": "USD",
-      "period_start": null,
-      "period_end": "2025-02-01",
-      "filed": "2025-03-19",
-      "accession": "0000764478-25-000007",
-      "tag": "LongTermDebtNoncurrent",
-      "form": "10-K"
+      "period_end": "2026-08-01",
+      "filed": "2026-09-04",
+      "tag": "LongTermDebtAndCapitalLeaseObligations",
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     },
     "shares_outstanding": {
-      "value": 209100000,
+      "value": 210400000,
       "unit": "shares",
-      "period_start": null,
-      "period_end": "2026-01-31",
-      "filed": "2026-03-18",
-      "accession": "0000764478-26-000009",
+      "period_end": "2026-08-01",
+      "filed": "2026-09-04",
       "tag": "CommonStockSharesOutstanding",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     }
   },
   "review_required": true,
-  "note": "SEC reported fields. Different tags and fiscal periods require validation. Operating cash flow minus capex is not automatically unlevered FCFF. Not a completed DCF valuation."
+  "warnings": [
+    "Operating cash flow minus CapEx is not unlevered FCFF",
+    "Shares outstanding are not necessarily diluted shares",
+    "Debt and cash require classification and date checks"
+  ]
 }

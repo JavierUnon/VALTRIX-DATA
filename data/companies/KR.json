@@ -4,61 +4,66 @@
   "company_name": "KROGER CO",
   "sector": "Consumer Staples",
   "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000056873.json",
-  "fetched_at_utc": "2026-10-24T01:32:23.585357+00:00",
+  "fetched_at_utc": "2026-10-24T02:11:47.776611+00:00",
   "financials": {
     "revenue": {
-      "value": 147642000000,
+      "value": 149326000000,
       "unit": "USD",
-      "period_start": "2025-02-02",
-      "period_end": "2026-01-31",
-      "filed": "2026-03-31",
-      "accession": "0001104659-26-037723",
+      "period_end": "2026-08-15",
+      "filed": "2026-09-18",
       "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2026-01-31"
     },
     "operating_cash_flow": {
-      "value": 7311000000,
+      "value": 6708000000,
       "unit": "USD",
-      "period_start": "2025-02-02",
-      "period_end": "2026-01-31",
-      "filed": "2026-03-31",
-      "accession": "0001104659-26-037723",
+      "period_end": "2026-08-15",
+      "filed": "2026-09-18",
       "tag": "NetCashProvidedByUsedInOperatingActivities",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2026-01-31"
     },
     "capital_expenditure": null,
     "cash": {
-      "value": 3334000000,
+      "value": 1676000000,
       "unit": "USD",
-      "period_start": null,
-      "period_end": "2026-01-31",
-      "filed": "2026-03-31",
-      "accession": "0001104659-26-037723",
+      "period_end": "2026-08-15",
+      "filed": "2026-09-18",
       "tag": "CashAndCashEquivalentsAtCarryingValue",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     },
     "debt_current": {
-      "value": 1366000000,
+      "value": 1452000000,
       "unit": "USD",
-      "period_start": null,
-      "period_end": "2026-01-31",
-      "filed": "2026-03-31",
-      "accession": "0001104659-26-037723",
+      "period_end": "2026-08-15",
+      "filed": "2026-09-18",
       "tag": "LongTermDebtCurrent",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     },
     "debt_noncurrent": {
-      "value": 14509000000,
+      "value": 13915000000,
       "unit": "USD",
-      "period_start": null,
-      "period_end": "2026-01-31",
-      "filed": "2026-03-31",
-      "accession": "0001104659-26-037723",
+      "period_end": "2026-08-15",
+      "filed": "2026-09-18",
       "tag": "LongTermDebtNoncurrent",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     },
     "shares_outstanding": null
   },
   "review_required": true,
-  "note": "SEC reported fields. Different tags and fiscal periods require validation. Operating cash flow minus capex is not automatically unlevered FCFF. Not a completed DCF valuation."
+  "warnings": [
+    "Missing field: capital_expenditure",
+    "Missing field: shares_outstanding",
+    "Operating cash flow minus CapEx is not unlevered FCFF",
+    "Shares outstanding are not necessarily diluted shares",
+    "Debt and cash require classification and date checks"
+  ]
 }

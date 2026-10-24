@@ -4,61 +4,66 @@
   "company_name": "Phillips 66",
   "sector": "Energy",
   "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001534701.json",
-  "fetched_at_utc": "2026-10-24T01:33:20.250629+00:00",
+  "fetched_at_utc": "2026-10-24T02:12:42.791937+00:00",
   "financials": {
     "revenue": {
-      "value": 132376000000,
+      "value": 152167000000,
       "unit": "USD",
-      "period_start": "2025-01-01",
-      "period_end": "2025-12-31",
-      "filed": "2026-02-20",
-      "accession": "0001534701-26-000006",
+      "period_end": "2026-06-30",
+      "filed": "2026-08-05",
       "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
     },
     "operating_cash_flow": {
-      "value": 4962000000,
+      "value": 8925000000,
       "unit": "USD",
-      "period_start": "2025-01-01",
-      "period_end": "2025-12-31",
-      "filed": "2026-02-20",
-      "accession": "0001534701-26-000006",
+      "period_end": "2026-06-30",
+      "filed": "2026-08-05",
       "tag": "NetCashProvidedByUsedInOperatingActivities",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
     },
     "capital_expenditure": null,
     "cash": {
-      "value": 1116000000,
+      "value": 4099000000,
       "unit": "USD",
-      "period_start": null,
-      "period_end": "2025-12-31",
-      "filed": "2026-02-20",
-      "accession": "0001534701-26-000006",
+      "period_end": "2026-06-30",
+      "filed": "2026-08-05",
       "tag": "CashAndCashEquivalentsAtCarryingValue",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     },
     "debt_current": {
       "value": 1000000000,
       "unit": "USD",
-      "period_start": null,
       "period_end": "2016-12-31",
       "filed": "2017-02-17",
-      "accession": "0001534701-17-000051",
       "tag": "LongTermDebtCurrent",
-      "form": "10-K"
+      "form": "10-K",
+      "method": "latest_reported_balance"
     },
     "debt_noncurrent": {
-      "value": 18678000000,
+      "value": 18768000000,
       "unit": "USD",
-      "period_start": null,
-      "period_end": "2025-12-31",
-      "filed": "2026-02-20",
-      "accession": "0001534701-26-000006",
+      "period_end": "2026-06-30",
+      "filed": "2026-08-05",
       "tag": "LongTermDebtAndCapitalLeaseObligations",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     },
     "shares_outstanding": null
   },
   "review_required": true,
-  "note": "SEC reported fields. Different tags and fiscal periods require validation. Operating cash flow minus capex is not automatically unlevered FCFF. Not a completed DCF valuation."
+  "warnings": [
+    "Missing field: capital_expenditure",
+    "Missing field: shares_outstanding",
+    "Operating cash flow minus CapEx is not unlevered FCFF",
+    "Shares outstanding are not necessarily diluted shares",
+    "Debt and cash require classification and date checks"
+  ]
 }

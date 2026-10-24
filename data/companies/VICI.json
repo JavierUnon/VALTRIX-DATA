@@ -4,27 +4,29 @@
   "company_name": "VICI Properties Inc.",
   "sector": "Real Estate",
   "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001705696.json",
-  "fetched_at_utc": "2026-10-24T01:34:29.668721+00:00",
+  "fetched_at_utc": "2026-10-24T02:13:54.825743+00:00",
   "financials": {
     "revenue": {
-      "value": 4006116000,
+      "value": 4097604000,
       "unit": "USD",
-      "period_start": "2025-01-01",
-      "period_end": "2025-12-31",
-      "filed": "2026-02-25",
-      "accession": "0001705696-26-000034",
+      "period_end": "2026-06-30",
+      "filed": "2026-07-29",
       "tag": "Revenues",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
     },
     "operating_cash_flow": {
-      "value": 2509991000,
+      "value": 2638275000,
       "unit": "USD",
-      "period_start": "2025-01-01",
-      "period_end": "2025-12-31",
-      "filed": "2026-02-25",
-      "accession": "0001705696-26-000034",
+      "period_end": "2026-06-30",
+      "filed": "2026-07-29",
       "tag": "NetCashProvidedByUsedInOperatingActivities",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
     },
     "capital_expenditure": {
       "value": 2724000,
@@ -32,33 +34,37 @@
       "period_start": "2019-01-01",
       "period_end": "2019-12-31",
       "filed": "2020-02-20",
-      "accession": "0001705696-20-000048",
       "tag": "PaymentsToAcquirePropertyPlantAndEquipment",
-      "form": "10-K"
+      "form": "10-K",
+      "method": "annual"
     },
     "cash": {
-      "value": 563479000,
+      "value": 288063000,
       "unit": "USD",
-      "period_start": null,
-      "period_end": "2025-12-31",
-      "filed": "2026-02-25",
-      "accession": "0001705696-26-000034",
+      "period_end": "2026-06-30",
+      "filed": "2026-07-29",
       "tag": "CashAndCashEquivalentsAtCarryingValue",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     },
     "debt_current": null,
     "debt_noncurrent": null,
     "shares_outstanding": {
-      "value": 1068811371,
+      "value": 1101074906,
       "unit": "shares",
-      "period_start": null,
-      "period_end": "2025-12-31",
-      "filed": "2026-02-25",
-      "accession": "0001705696-26-000034",
+      "period_end": "2026-06-30",
+      "filed": "2026-07-29",
       "tag": "CommonStockSharesOutstanding",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     }
   },
   "review_required": true,
-  "note": "SEC reported fields. Different tags and fiscal periods require validation. Operating cash flow minus capex is not automatically unlevered FCFF. Not a completed DCF valuation."
+  "warnings": [
+    "Missing field: debt_current",
+    "Missing field: debt_noncurrent",
+    "Operating cash flow minus CapEx is not unlevered FCFF",
+    "Shares outstanding are not necessarily diluted shares",
+    "Debt and cash require classification and date checks"
+  ]
 }

@@ -4,61 +4,68 @@
   "company_name": "Datadog, Inc.",
   "sector": "Information Technology",
   "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001561550.json",
-  "fetched_at_utc": "2026-10-24T01:30:24.896691+00:00",
+  "fetched_at_utc": "2026-10-24T02:10:15.837881+00:00",
   "financials": {
     "revenue": {
-      "value": 3427158000,
+      "value": 3966725000,
       "unit": "USD",
-      "period_start": "2025-01-01",
-      "period_end": "2025-12-31",
-      "filed": "2026-02-18",
-      "accession": "0001628280-26-008819",
+      "period_end": "2026-06-30",
+      "filed": "2026-08-06",
       "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
     },
     "operating_cash_flow": {
-      "value": 1050135000,
+      "value": 1229034000,
       "unit": "USD",
-      "period_start": "2025-01-01",
-      "period_end": "2025-12-31",
-      "filed": "2026-02-18",
-      "accession": "0001628280-26-008819",
+      "period_end": "2026-06-30",
+      "filed": "2026-08-06",
       "tag": "NetCashProvidedByUsedInOperatingActivities",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
     },
     "capital_expenditure": {
-      "value": 49578000,
+      "value": 46925000,
       "unit": "USD",
-      "period_start": "2025-01-01",
-      "period_end": "2025-12-31",
-      "filed": "2026-02-18",
-      "accession": "0001628280-26-008819",
+      "period_end": "2026-06-30",
+      "filed": "2026-08-06",
       "tag": "PaymentsToAcquirePropertyPlantAndEquipment",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
     },
     "cash": {
-      "value": 401305000,
+      "value": 434957000,
       "unit": "USD",
-      "period_start": null,
-      "period_end": "2025-12-31",
-      "filed": "2026-02-18",
-      "accession": "0001628280-26-008819",
+      "period_end": "2026-06-30",
+      "filed": "2026-08-06",
       "tag": "CashAndCashEquivalentsAtCarryingValue",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     },
     "debt_current": null,
     "debt_noncurrent": null,
     "shares_outstanding": {
       "value": 0,
       "unit": "shares",
-      "period_start": null,
       "period_end": "2019-12-31",
       "filed": "2020-02-25",
-      "accession": "0001564590-20-006422",
       "tag": "CommonStockSharesOutstanding",
-      "form": "10-K"
+      "form": "10-K",
+      "method": "latest_reported_balance"
     }
   },
   "review_required": true,
-  "note": "SEC reported fields. Different tags and fiscal periods require validation. Operating cash flow minus capex is not automatically unlevered FCFF. Not a completed DCF valuation."
+  "warnings": [
+    "Missing field: debt_current",
+    "Missing field: debt_noncurrent",
+    "Operating cash flow minus CapEx is not unlevered FCFF",
+    "Shares outstanding are not necessarily diluted shares",
+    "Debt and cash require classification and date checks"
+  ]
 }

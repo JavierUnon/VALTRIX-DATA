@@ -4,7 +4,7 @@
   "company_name": "Super Micro Computer, Inc.",
   "sector": "Information Technology",
   "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001375365.json",
-  "fetched_at_utc": "2026-10-24T01:33:58.080557+00:00",
+  "fetched_at_utc": "2026-10-24T02:13:21.896165+00:00",
   "financials": {
     "revenue": {
       "value": 39063072000,
@@ -12,9 +12,9 @@
       "period_start": "2025-07-01",
       "period_end": "2026-06-30",
       "filed": "2026-08-31",
-      "accession": "0001375365-26-000022",
       "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
-      "form": "10-K"
+      "form": "10-K",
+      "method": "annual"
     },
     "operating_cash_flow": {
       "value": -6809886000,
@@ -22,9 +22,9 @@
       "period_start": "2025-07-01",
       "period_end": "2026-06-30",
       "filed": "2026-08-31",
-      "accession": "0001375365-26-000022",
       "tag": "NetCashProvidedByUsedInOperatingActivities",
-      "form": "10-K"
+      "form": "10-K",
+      "method": "annual"
     },
     "capital_expenditure": {
       "value": 161999000,
@@ -32,51 +32,51 @@
       "period_start": "2025-07-01",
       "period_end": "2026-06-30",
       "filed": "2026-08-31",
-      "accession": "0001375365-26-000022",
       "tag": "PaymentsToAcquirePropertyPlantAndEquipment",
-      "form": "10-K"
+      "form": "10-K",
+      "method": "annual"
     },
     "cash": {
       "value": 7521474000,
       "unit": "USD",
-      "period_start": null,
       "period_end": "2026-06-30",
       "filed": "2026-08-31",
-      "accession": "0001375365-26-000022",
       "tag": "CashAndCashEquivalentsAtCarryingValue",
-      "form": "10-K"
+      "form": "10-K",
+      "method": "latest_reported_balance"
     },
     "debt_current": {
-      "value": 42554000,
+      "value": 33459000,
       "unit": "USD",
-      "period_start": null,
-      "period_end": "2014-06-30",
-      "filed": "2014-09-15",
-      "accession": "0001445305-14-003958",
+      "period_end": "2014-12-31",
+      "filed": "2015-02-09",
       "tag": "LongTermDebtCurrent",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     },
     "debt_noncurrent": {
-      "value": 120179000,
+      "value": 85646000,
       "unit": "USD",
-      "period_start": null,
-      "period_end": "2023-06-30",
-      "filed": "2023-08-28",
-      "accession": "0001375365-23-000036",
+      "period_end": "2024-03-31",
+      "filed": "2024-05-06",
       "tag": "LongTermDebtNoncurrent",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     },
     "shares_outstanding": {
       "value": 656882000,
       "unit": "shares",
-      "period_start": null,
       "period_end": "2026-06-30",
       "filed": "2026-08-31",
-      "accession": "0001375365-26-000022",
       "tag": "CommonStockSharesOutstanding",
-      "form": "10-K"
+      "form": "10-K",
+      "method": "latest_reported_balance"
     }
   },
   "review_required": true,
-  "note": "SEC reported fields. Different tags and fiscal periods require validation. Operating cash flow minus capex is not automatically unlevered FCFF. Not a completed DCF valuation."
+  "warnings": [
+    "Operating cash flow minus CapEx is not unlevered FCFF",
+    "Shares outstanding are not necessarily diluted shares",
+    "Debt and cash require classification and date checks"
+  ]
 }

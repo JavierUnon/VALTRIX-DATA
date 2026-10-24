@@ -4,27 +4,29 @@
   "company_name": "APTIV PLC",
   "sector": "Consumer Discretionary",
   "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001521332.json",
-  "fetched_at_utc": "2026-10-24T01:29:19.180082+00:00",
+  "fetched_at_utc": "2026-10-24T02:09:01.137112+00:00",
   "financials": {
     "revenue": {
-      "value": 20398000000,
+      "value": 20518000000,
       "unit": "USD",
-      "period_start": "2025-01-01",
-      "period_end": "2025-12-31",
-      "filed": "2026-02-06",
-      "accession": "0001521332-26-000009",
+      "period_end": "2026-06-30",
+      "filed": "2026-08-04",
       "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
     },
     "operating_cash_flow": {
-      "value": 2185000000,
+      "value": 1351000000,
       "unit": "USD",
-      "period_start": "2025-01-01",
-      "period_end": "2025-12-31",
-      "filed": "2026-02-06",
-      "accession": "0001521332-26-000009",
+      "period_end": "2026-06-30",
+      "filed": "2026-08-04",
       "tag": "NetCashProvidedByUsedInOperatingActivities",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
     },
     "capital_expenditure": {
       "value": 844000000,
@@ -32,51 +34,51 @@
       "period_start": "2022-01-01",
       "period_end": "2022-12-31",
       "filed": "2023-02-08",
-      "accession": "0001521332-23-000013",
       "tag": "PaymentsToAcquirePropertyPlantAndEquipment",
-      "form": "10-K"
+      "form": "10-K",
+      "method": "annual"
     },
     "cash": {
-      "value": 1851000000,
+      "value": 761000000,
       "unit": "USD",
-      "period_start": null,
-      "period_end": "2025-12-31",
-      "filed": "2026-02-06",
-      "accession": "0001521332-26-000009",
+      "period_end": "2026-06-30",
+      "filed": "2026-08-04",
       "tag": "CashAndCashEquivalentsAtCarryingValue",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     },
     "debt_current": {
-      "value": 81000000,
+      "value": 23000000,
       "unit": "USD",
-      "period_start": null,
-      "period_end": "2025-12-31",
-      "filed": "2026-02-06",
-      "accession": "0001521332-26-000009",
+      "period_end": "2026-06-30",
+      "filed": "2026-08-04",
       "tag": "LongTermDebtAndCapitalLeaseObligationsCurrent",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     },
     "debt_noncurrent": {
-      "value": 7470000000,
+      "value": 5331000000,
       "unit": "USD",
-      "period_start": null,
-      "period_end": "2025-12-31",
-      "filed": "2026-02-06",
-      "accession": "0001521332-26-000009",
+      "period_end": "2026-06-30",
+      "filed": "2026-08-04",
       "tag": "LongTermDebtNoncurrent",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     },
     "shares_outstanding": {
-      "value": 212746899,
+      "value": 208365500,
       "unit": "shares",
-      "period_start": null,
-      "period_end": "2025-12-31",
-      "filed": "2026-02-06",
-      "accession": "0001521332-26-000009",
+      "period_end": "2026-06-30",
+      "filed": "2026-08-04",
       "tag": "CommonStockSharesOutstanding",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     }
   },
   "review_required": true,
-  "note": "SEC reported fields. Different tags and fiscal periods require validation. Operating cash flow minus capex is not automatically unlevered FCFF. Not a completed DCF valuation."
+  "warnings": [
+    "Operating cash flow minus CapEx is not unlevered FCFF",
+    "Shares outstanding are not necessarily diluted shares",
+    "Debt and cash require classification and date checks"
+  ]
 }

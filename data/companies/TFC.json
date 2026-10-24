@@ -4,18 +4,19 @@
   "company_name": "TRUIST FINANCIAL CORPORATION",
   "sector": "Financials",
   "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000092230.json",
-  "fetched_at_utc": "2026-10-24T01:34:14.317125+00:00",
+  "fetched_at_utc": "2026-10-24T02:13:38.139785+00:00",
   "financials": {
     "revenue": null,
     "operating_cash_flow": {
-      "value": 5739000000,
+      "value": 5797000000,
       "unit": "USD",
-      "period_start": "2025-01-01",
-      "period_end": "2025-12-31",
-      "filed": "2026-02-24",
-      "accession": "0000092230-26-000030",
+      "period_end": "2026-06-30",
+      "filed": "2026-07-31",
       "tag": "NetCashProvidedByUsedInOperatingActivities",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
     },
     "capital_expenditure": {
       "value": 564000000,
@@ -23,33 +24,39 @@
       "period_start": "2022-01-01",
       "period_end": "2022-12-31",
       "filed": "2023-02-28",
-      "accession": "0000092230-23-000034",
       "tag": "PaymentsToAcquirePropertyPlantAndEquipment",
-      "form": "10-K"
+      "form": "10-K",
+      "method": "annual"
     },
     "cash": {
       "value": 20295000000,
       "unit": "USD",
-      "period_start": null,
       "period_end": "2021-12-31",
       "filed": "2022-02-23",
-      "accession": "0000092230-22-000008",
       "tag": "CashAndCashEquivalentsAtCarryingValue",
-      "form": "10-K"
+      "form": "10-K",
+      "method": "latest_reported_balance"
     },
     "debt_current": null,
     "debt_noncurrent": null,
     "shares_outstanding": {
-      "value": 1262470000,
+      "value": 1221626000,
       "unit": "shares",
-      "period_start": null,
-      "period_end": "2025-12-31",
-      "filed": "2026-02-24",
-      "accession": "0000092230-26-000030",
+      "period_end": "2026-06-30",
+      "filed": "2026-07-31",
       "tag": "CommonStockSharesOutstanding",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     }
   },
   "review_required": true,
-  "note": "SEC reported fields. Different tags and fiscal periods require validation. Operating cash flow minus capex is not automatically unlevered FCFF. Not a completed DCF valuation."
+  "warnings": [
+    "Missing field: revenue",
+    "Missing field: debt_current",
+    "Missing field: debt_noncurrent",
+    "Operating cash flow minus CapEx is not unlevered FCFF",
+    "Shares outstanding are not necessarily diluted shares",
+    "Debt and cash require classification and date checks",
+    "Financial company: standard FCFF DCF unsuitable"
+  ]
 }

@@ -4,70 +4,75 @@
   "company_name": "PROCTER & GAMBLE CO",
   "sector": "Consumer Staples",
   "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000080424.json",
-  "fetched_at_utc": "2026-10-24T01:33:24.383134+00:00",
+  "fetched_at_utc": "2026-10-24T02:12:46.799037+00:00",
   "financials": {
     "revenue": {
-      "value": 87032000000,
+      "value": 87922000000,
       "unit": "USD",
-      "period_start": "2025-07-01",
-      "period_end": "2026-06-30",
-      "filed": "2026-08-04",
-      "accession": "0000080424-26-000103",
+      "period_end": "2026-09-30",
+      "filed": "2026-10-22",
       "tag": "Revenues",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2026-06-30"
     },
     "operating_cash_flow": {
-      "value": 19556000000,
+      "value": 19915000000,
       "unit": "USD",
-      "period_start": "2025-07-01",
-      "period_end": "2026-06-30",
-      "filed": "2026-08-04",
-      "accession": "0000080424-26-000103",
+      "period_end": "2026-09-30",
+      "filed": "2026-10-22",
       "tag": "NetCashProvidedByUsedInOperatingActivities",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2026-06-30"
     },
     "capital_expenditure": {
-      "value": 4409000000,
+      "value": 4575000000,
       "unit": "USD",
-      "period_start": "2025-07-01",
-      "period_end": "2026-06-30",
-      "filed": "2026-08-04",
-      "accession": "0000080424-26-000103",
+      "period_end": "2026-09-30",
+      "filed": "2026-10-22",
       "tag": "PaymentsToAcquirePropertyPlantAndEquipment",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2026-06-30"
     },
     "cash": {
-      "value": 4239000000,
+      "value": 9304000000,
       "unit": "USD",
-      "period_start": null,
-      "period_end": "2019-06-30",
-      "filed": "2019-08-06",
-      "accession": "0000080424-19-000050",
+      "period_end": "2019-09-30",
+      "filed": "2019-10-22",
       "tag": "CashAndCashEquivalentsAtCarryingValue",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     },
     "debt_current": {
       "value": 6457000000,
       "unit": "USD",
-      "period_start": null,
       "period_end": "2026-06-30",
       "filed": "2026-08-04",
-      "accession": "0000080424-26-000103",
       "tag": "LongTermDebtCurrent",
-      "form": "10-K"
+      "form": "10-K",
+      "method": "latest_reported_balance"
     },
     "debt_noncurrent": {
-      "value": 22842000000,
+      "value": 21897000000,
       "unit": "USD",
-      "period_start": null,
-      "period_end": "2026-06-30",
-      "filed": "2026-08-04",
-      "accession": "0000080424-26-000103",
+      "period_end": "2026-09-30",
+      "filed": "2026-10-22",
       "tag": "LongTermDebtNoncurrent",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     },
     "shares_outstanding": null
   },
   "review_required": true,
-  "note": "SEC reported fields. Different tags and fiscal periods require validation. Operating cash flow minus capex is not automatically unlevered FCFF. Not a completed DCF valuation."
+  "warnings": [
+    "Missing field: shares_outstanding",
+    "Operating cash flow minus CapEx is not unlevered FCFF",
+    "Shares outstanding are not necessarily diluted shares",
+    "Debt and cash require classification and date checks"
+  ]
 }

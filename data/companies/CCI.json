@@ -4,61 +4,73 @@
   "company_name": "CROWN CASTLE INC.",
   "sector": "Real Estate",
   "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001051470.json",
-  "fetched_at_utc": "2026-10-24T01:30:20.795633+00:00",
+  "fetched_at_utc": "2026-10-24T02:10:10.946071+00:00",
   "financials": {
     "revenue": {
-      "value": 215000000,
+      "value": 203000000,
       "unit": "USD",
-      "period_start": "2025-01-01",
-      "period_end": "2025-12-31",
-      "filed": "2026-02-23",
-      "accession": "0001051470-26-000016",
+      "period_end": "2026-06-30",
+      "filed": "2026-08-05",
       "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
     },
     "operating_cash_flow": {
-      "value": 3057000000,
+      "value": 2624000000,
       "unit": "USD",
-      "period_start": "2025-01-01",
-      "period_end": "2025-12-31",
-      "filed": "2026-02-23",
-      "accession": "0001051470-26-000016",
+      "period_end": "2026-06-30",
+      "filed": "2026-08-05",
       "tag": "NetCashProvidedByUsedInOperatingActivities",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
     },
     "capital_expenditure": null,
     "cash": {
-      "value": 99000000,
+      "value": 1042000000,
       "unit": "USD",
-      "period_start": null,
-      "period_end": "2025-12-31",
-      "filed": "2026-02-23",
-      "accession": "0001051470-26-000016",
+      "period_end": "2026-06-30",
+      "filed": "2026-08-05",
       "tag": "CashAndCashEquivalentsAtCarryingValue",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     },
-    "debt_current": null,
-    "debt_noncurrent": {
-      "value": 21554000000,
+    "debt_current": {
+      "value": 30708000,
       "unit": "USD",
-      "period_start": null,
-      "period_end": "2025-12-31",
-      "filed": "2026-02-23",
-      "accession": "0001051470-26-000016",
+      "period_end": "2011-06-30",
+      "filed": "2011-08-05",
+      "tag": "LongTermDebtAndCapitalLeaseObligationsCurrent",
+      "form": "10-Q",
+      "method": "latest_reported_balance"
+    },
+    "debt_noncurrent": {
+      "value": 15979000000,
+      "unit": "USD",
+      "period_end": "2026-06-30",
+      "filed": "2026-08-05",
       "tag": "LongTermDebtAndCapitalLeaseObligations",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     },
     "shares_outstanding": {
-      "value": 435000000,
+      "value": 426000000,
       "unit": "shares",
-      "period_start": null,
-      "period_end": "2025-12-31",
-      "filed": "2026-02-23",
-      "accession": "0001051470-26-000016",
+      "period_end": "2026-06-30",
+      "filed": "2026-08-05",
       "tag": "CommonStockSharesOutstanding",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     }
   },
   "review_required": true,
-  "note": "SEC reported fields. Different tags and fiscal periods require validation. Operating cash flow minus capex is not automatically unlevered FCFF. Not a completed DCF valuation."
+  "warnings": [
+    "Missing field: capital_expenditure",
+    "Operating cash flow minus CapEx is not unlevered FCFF",
+    "Shares outstanding are not necessarily diluted shares",
+    "Debt and cash require classification and date checks"
+  ]
 }

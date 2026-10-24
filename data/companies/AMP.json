@@ -4,43 +4,60 @@
   "company_name": "AMERIPRISE FINANCIAL, INC.",
   "sector": "Financials",
   "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000820027.json",
-  "fetched_at_utc": "2026-10-24T01:29:11.652448+00:00",
+  "fetched_at_utc": "2026-10-24T02:08:54.145898+00:00",
   "financials": {
     "revenue": {
-      "value": 18911000000,
+      "value": 19839000000,
       "unit": "USD",
-      "period_start": "2025-01-01",
-      "period_end": "2025-12-31",
-      "filed": "2026-02-19",
-      "accession": "0000820027-26-000011",
+      "period_end": "2026-06-30",
+      "filed": "2026-08-04",
       "tag": "Revenues",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
     },
     "operating_cash_flow": {
-      "value": 8323000000,
+      "value": 8218000000,
       "unit": "USD",
-      "period_start": "2025-01-01",
-      "period_end": "2025-12-31",
-      "filed": "2026-02-19",
-      "accession": "0000820027-26-000011",
+      "period_end": "2026-06-30",
+      "filed": "2026-08-04",
       "tag": "NetCashProvidedByUsedInOperatingActivities",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
     },
     "capital_expenditure": null,
     "cash": {
       "value": 2318000000,
       "unit": "USD",
-      "period_start": null,
       "period_end": "2016-12-31",
       "filed": "2017-02-23",
-      "accession": "0000820027-17-000007",
       "tag": "CashAndCashEquivalentsAtCarryingValue",
-      "form": "10-K"
+      "form": "10-K",
+      "method": "latest_reported_balance"
     },
     "debt_current": null,
     "debt_noncurrent": null,
-    "shares_outstanding": null
+    "shares_outstanding": {
+      "value": 120607501,
+      "unit": "shares",
+      "period_end": "2020-06-30",
+      "filed": "2020-08-10",
+      "tag": "CommonStockSharesOutstanding",
+      "form": "10-Q",
+      "method": "latest_reported_balance"
+    }
   },
   "review_required": true,
-  "note": "SEC reported fields. Different tags and fiscal periods require validation. Operating cash flow minus capex is not automatically unlevered FCFF. Not a completed DCF valuation."
+  "warnings": [
+    "Missing field: capital_expenditure",
+    "Missing field: debt_current",
+    "Missing field: debt_noncurrent",
+    "Operating cash flow minus CapEx is not unlevered FCFF",
+    "Shares outstanding are not necessarily diluted shares",
+    "Debt and cash require classification and date checks",
+    "Financial company: standard FCFF DCF unsuitable"
+  ]
 }

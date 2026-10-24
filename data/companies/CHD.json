@@ -4,70 +4,75 @@
   "company_name": "CHURCH & DWIGHT CO., INC.",
   "sector": "Consumer Staples",
   "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000313927.json",
-  "fetched_at_utc": "2026-10-24T01:30:00.003245+00:00",
+  "fetched_at_utc": "2026-10-24T02:09:48.431399+00:00",
   "financials": {
     "revenue": {
-      "value": 6203200000,
+      "value": 6229100000,
       "unit": "USD",
-      "period_start": "2025-01-01",
-      "period_end": "2025-12-31",
-      "filed": "2026-02-12",
-      "accession": "0001193125-26-048139",
+      "period_end": "2026-06-30",
+      "filed": "2026-07-31",
       "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
     },
     "operating_cash_flow": {
-      "value": 1215400000,
+      "value": 1260500000,
       "unit": "USD",
-      "period_start": "2025-01-01",
-      "period_end": "2025-12-31",
-      "filed": "2026-02-12",
-      "accession": "0001193125-26-048139",
+      "period_end": "2026-06-30",
+      "filed": "2026-07-31",
       "tag": "NetCashProvidedByUsedInOperatingActivities",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
     },
     "capital_expenditure": {
-      "value": 122400000,
+      "value": 145200000,
       "unit": "USD",
-      "period_start": "2025-01-01",
-      "period_end": "2025-12-31",
-      "filed": "2026-02-12",
-      "accession": "0001193125-26-048139",
+      "period_end": "2026-06-30",
+      "filed": "2026-07-31",
       "tag": "PaymentsToAcquirePropertyPlantAndEquipment",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
     },
     "cash": {
-      "value": 409000000,
+      "value": 254800000,
       "unit": "USD",
-      "period_start": null,
-      "period_end": "2025-12-31",
-      "filed": "2026-02-12",
-      "accession": "0001193125-26-048139",
+      "period_end": "2026-06-30",
+      "filed": "2026-07-31",
       "tag": "CashAndCashEquivalentsAtCarryingValue",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     },
     "debt_current": {
       "value": 0,
       "unit": "USD",
-      "period_start": null,
       "period_end": "2024-12-31",
       "filed": "2025-02-13",
-      "accession": "0000950170-25-019801",
       "tag": "LongTermDebtCurrent",
-      "form": "10-K"
+      "form": "10-K",
+      "method": "latest_reported_balance"
     },
     "debt_noncurrent": {
-      "value": 2205100000,
+      "value": 2206300000,
       "unit": "USD",
-      "period_start": null,
-      "period_end": "2025-12-31",
-      "filed": "2026-02-12",
-      "accession": "0001193125-26-048139",
+      "period_end": "2026-06-30",
+      "filed": "2026-07-31",
       "tag": "LongTermDebtNoncurrent",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     },
     "shares_outstanding": null
   },
   "review_required": true,
-  "note": "SEC reported fields. Different tags and fiscal periods require validation. Operating cash flow minus capex is not automatically unlevered FCFF. Not a completed DCF valuation."
+  "warnings": [
+    "Missing field: shares_outstanding",
+    "Operating cash flow minus CapEx is not unlevered FCFF",
+    "Shares outstanding are not necessarily diluted shares",
+    "Debt and cash require classification and date checks"
+  ]
 }

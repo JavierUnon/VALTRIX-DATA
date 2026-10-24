@@ -4,52 +4,59 @@
   "company_name": "FEDERAL REALTY INVESTMENT TRUST",
   "sector": "Real Estate",
   "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000034903.json",
-  "fetched_at_utc": "2026-10-24T01:30:58.563937+00:00",
+  "fetched_at_utc": "2026-10-24T02:10:50.296550+00:00",
   "financials": {
     "revenue": {
-      "value": 1278975000,
+      "value": 1310905000,
       "unit": "USD",
-      "period_start": "2025-01-01",
-      "period_end": "2025-12-31",
-      "filed": "2026-02-12",
-      "accession": "0000034903-26-000017",
+      "period_end": "2026-03-31",
+      "filed": "2026-05-01",
       "tag": "Revenues",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
     },
     "operating_cash_flow": {
-      "value": 622378000,
+      "value": 627928000,
       "unit": "USD",
-      "period_start": "2025-01-01",
-      "period_end": "2025-12-31",
-      "filed": "2026-02-12",
-      "accession": "0000034903-26-000017",
+      "period_end": "2026-03-31",
+      "filed": "2026-05-01",
       "tag": "NetCashProvidedByUsedInOperatingActivities",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
     },
     "capital_expenditure": null,
     "cash": {
-      "value": 107415000,
+      "value": 115633000,
       "unit": "USD",
-      "period_start": null,
-      "period_end": "2025-12-31",
-      "filed": "2026-02-12",
-      "accession": "0000034903-26-000017",
+      "period_end": "2026-03-31",
+      "filed": "2026-05-01",
       "tag": "CashAndCashEquivalentsAtCarryingValue",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     },
     "debt_current": null,
     "debt_noncurrent": null,
     "shares_outstanding": {
-      "value": 86266009,
+      "value": 86386687,
       "unit": "shares",
-      "period_start": null,
-      "period_end": "2025-12-31",
-      "filed": "2026-02-12",
-      "accession": "0000034903-26-000017",
+      "period_end": "2026-03-31",
+      "filed": "2026-05-01",
       "tag": "CommonStockSharesOutstanding",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     }
   },
   "review_required": true,
-  "note": "SEC reported fields. Different tags and fiscal periods require validation. Operating cash flow minus capex is not automatically unlevered FCFF. Not a completed DCF valuation."
+  "warnings": [
+    "Missing field: capital_expenditure",
+    "Missing field: debt_current",
+    "Missing field: debt_noncurrent",
+    "Operating cash flow minus CapEx is not unlevered FCFF",
+    "Shares outstanding are not necessarily diluted shares",
+    "Debt and cash require classification and date checks"
+  ]
 }

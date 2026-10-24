@@ -4,70 +4,73 @@
   "company_name": "DTE ENERGY CO",
   "sector": "Utilities",
   "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000936340.json",
-  "fetched_at_utc": "2026-10-24T01:30:36.355105+00:00",
+  "fetched_at_utc": "2026-10-24T02:10:28.198890+00:00",
   "financials": {
     "revenue": {
-      "value": 12607000000,
+      "value": 13124000000,
       "unit": "USD",
-      "period_start": "2017-01-01",
-      "period_end": "2017-12-31",
-      "filed": "2018-02-16",
-      "accession": "0000936340-18-000082",
+      "period_end": "2018-03-31",
+      "filed": "2018-04-25",
       "tag": "Revenues",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2017-12-31"
     },
     "operating_cash_flow": {
-      "value": 3409000000,
+      "value": 3295000000,
       "unit": "USD",
-      "period_start": "2025-01-01",
-      "period_end": "2025-12-31",
-      "filed": "2026-02-17",
-      "accession": "0000936340-26-000054",
+      "period_end": "2026-03-31",
+      "filed": "2026-04-30",
       "tag": "NetCashProvidedByUsedInOperatingActivities",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
     },
     "capital_expenditure": null,
     "cash": {
-      "value": 208000000,
+      "value": 238000000,
       "unit": "USD",
-      "period_start": null,
-      "period_end": "2025-12-31",
-      "filed": "2026-02-17",
-      "accession": "0000936340-26-000054",
+      "period_end": "2026-03-31",
+      "filed": "2026-04-30",
       "tag": "CashAndCashEquivalentsAtCarryingValue",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     },
     "debt_current": {
-      "value": -765000000,
+      "value": 1507000000,
       "unit": "USD",
-      "period_start": null,
-      "period_end": "2010-12-31",
-      "filed": "2011-02-18",
-      "accession": "0000950123-11-015771",
-      "tag": "LongTermDebtCurrent",
-      "form": "10-K"
+      "period_end": "2026-03-31",
+      "filed": "2026-04-30",
+      "tag": "LongTermDebtAndCapitalLeaseObligationsCurrent",
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     },
     "debt_noncurrent": {
-      "value": 10982000000,
+      "value": 25204000000,
       "unit": "USD",
-      "period_start": null,
-      "period_end": "2018-12-31",
-      "filed": "2019-02-07",
-      "accession": "0000936340-19-000086",
-      "tag": "LongTermDebtNoncurrent",
-      "form": "10-K"
+      "period_end": "2026-03-31",
+      "filed": "2026-04-30",
+      "tag": "LongTermDebtAndCapitalLeaseObligations",
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     },
     "shares_outstanding": {
-      "value": 207745154,
+      "value": 208028313,
       "unit": "shares",
-      "period_start": null,
-      "period_end": "2025-12-31",
-      "filed": "2026-02-17",
-      "accession": "0000936340-26-000054",
+      "period_end": "2026-03-31",
+      "filed": "2026-04-30",
       "tag": "CommonStockSharesOutstanding",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     }
   },
   "review_required": true,
-  "note": "SEC reported fields. Different tags and fiscal periods require validation. Operating cash flow minus capex is not automatically unlevered FCFF. Not a completed DCF valuation."
+  "warnings": [
+    "Missing field: capital_expenditure",
+    "Operating cash flow minus CapEx is not unlevered FCFF",
+    "Shares outstanding are not necessarily diluted shares",
+    "Debt and cash require classification and date checks"
+  ]
 }

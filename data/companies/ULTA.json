@@ -4,61 +4,75 @@
   "company_name": "ULTA BEAUTY, INC.",
   "sector": "Consumer Discretionary",
   "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001403568.json",
-  "fetched_at_utc": "2026-10-24T01:34:18.946993+00:00",
+  "fetched_at_utc": "2026-10-24T02:13:43.689843+00:00",
   "financials": {
     "revenue": {
-      "value": 12392820000,
+      "value": 12955517000,
       "unit": "USD",
-      "period_start": "2025-02-02",
-      "period_end": "2026-01-31",
-      "filed": "2026-03-26",
-      "accession": "0001104659-26-035243",
+      "period_end": "2026-08-01",
+      "filed": "2026-08-27",
       "tag": "Revenues",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2026-01-31"
     },
     "operating_cash_flow": {
-      "value": 1502780000,
+      "value": 1567827000,
       "unit": "USD",
-      "period_start": "2025-02-02",
-      "period_end": "2026-01-31",
-      "filed": "2026-03-26",
-      "accession": "0001104659-26-035243",
+      "period_end": "2026-08-01",
+      "filed": "2026-08-27",
       "tag": "NetCashProvidedByUsedInOperatingActivities",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2026-01-31"
     },
     "capital_expenditure": {
-      "value": 434829000,
+      "value": 418375000,
       "unit": "USD",
-      "period_start": "2025-02-02",
-      "period_end": "2026-01-31",
-      "filed": "2026-03-26",
-      "accession": "0001104659-26-035243",
+      "period_end": "2026-08-01",
+      "filed": "2026-08-27",
       "tag": "PaymentsToAcquirePropertyPlantAndEquipment",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2026-01-31"
     },
     "cash": {
-      "value": 424243000,
+      "value": 158451000,
       "unit": "USD",
-      "period_start": null,
-      "period_end": "2026-01-31",
-      "filed": "2026-03-26",
-      "accession": "0001104659-26-035243",
+      "period_end": "2026-08-01",
+      "filed": "2026-08-27",
       "tag": "CashAndCashEquivalentsAtCarryingValue",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     },
     "debt_current": null,
-    "debt_noncurrent": null,
+    "debt_noncurrent": {
+      "value": 800000000,
+      "unit": "USD",
+      "period_end": "2020-08-01",
+      "filed": "2021-08-25",
+      "tag": "LongTermDebtNoncurrent",
+      "form": "10-Q",
+      "method": "latest_reported_balance"
+    },
     "shares_outstanding": {
-      "value": 44166000,
+      "value": 42805000,
       "unit": "shares",
-      "period_start": null,
-      "period_end": "2026-01-31",
-      "filed": "2026-03-26",
-      "accession": "0001104659-26-035243",
+      "period_end": "2026-08-01",
+      "filed": "2026-08-27",
       "tag": "CommonStockSharesOutstanding",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     }
   },
   "review_required": true,
-  "note": "SEC reported fields. Different tags and fiscal periods require validation. Operating cash flow minus capex is not automatically unlevered FCFF. Not a completed DCF valuation."
+  "warnings": [
+    "Missing field: debt_current",
+    "Operating cash flow minus CapEx is not unlevered FCFF",
+    "Shares outstanding are not necessarily diluted shares",
+    "Debt and cash require classification and date checks"
+  ]
 }

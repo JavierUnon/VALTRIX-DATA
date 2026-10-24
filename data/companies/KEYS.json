@@ -4,7 +4,7 @@
   "company_name": "KEYSIGHT TECHNOLOGIES,\u00a0INC.",
   "sector": "Information Technology",
   "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001601046.json",
-  "fetched_at_utc": "2026-10-24T01:32:18.890584+00:00",
+  "fetched_at_utc": "2026-10-24T02:11:43.076033+00:00",
   "financials": {
     "revenue": {
       "value": 5375000000,
@@ -12,71 +12,75 @@
       "period_start": "2024-11-01",
       "period_end": "2025-10-31",
       "filed": "2025-12-17",
-      "accession": "0001601046-25-000127",
       "tag": "RevenueFromContractWithCustomerIncludingAssessedTax",
-      "form": "10-K"
+      "form": "10-K",
+      "method": "annual_fallback",
+      "warning": "TTM unavailable; annual data used"
     },
     "operating_cash_flow": {
-      "value": 1409000000,
+      "value": 1604000000,
       "unit": "USD",
-      "period_start": "2024-11-01",
-      "period_end": "2025-10-31",
-      "filed": "2025-12-17",
-      "accession": "0001601046-25-000127",
+      "period_end": "2026-07-31",
+      "filed": "2026-09-02",
       "tag": "NetCashProvidedByUsedInOperatingActivities",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-10-31"
     },
     "capital_expenditure": {
-      "value": 128000000,
+      "value": 135000000,
       "unit": "USD",
-      "period_start": "2024-11-01",
-      "period_end": "2025-10-31",
-      "filed": "2025-12-17",
-      "accession": "0001601046-25-000127",
+      "period_end": "2026-07-31",
+      "filed": "2026-09-02",
       "tag": "PaymentsToAcquirePropertyPlantAndEquipment",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-10-31"
     },
     "cash": {
-      "value": 1873000000,
+      "value": 2605000000,
       "unit": "USD",
-      "period_start": null,
-      "period_end": "2025-10-31",
-      "filed": "2025-12-17",
-      "accession": "0001601046-25-000127",
+      "period_end": "2026-07-31",
+      "filed": "2026-09-02",
       "tag": "CashAndCashEquivalentsAtCarryingValue",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     },
     "debt_current": {
-      "value": 0,
+      "value": 700000000,
       "unit": "USD",
-      "period_start": null,
-      "period_end": "2024-10-31",
-      "filed": "2024-12-17",
-      "accession": "0001601046-24-000159",
+      "period_end": "2026-07-31",
+      "filed": "2026-09-02",
       "tag": "LongTermDebtCurrent",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     },
     "debt_noncurrent": {
-      "value": 2534000000,
+      "value": 1817000000,
       "unit": "USD",
-      "period_start": null,
-      "period_end": "2025-10-31",
-      "filed": "2025-12-17",
-      "accession": "0001601046-25-000127",
+      "period_end": "2026-07-31",
+      "filed": "2026-09-02",
       "tag": "LongTermDebtNoncurrent",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     },
     "shares_outstanding": {
-      "value": 170000000,
+      "value": 171000000,
       "unit": "shares",
-      "period_start": null,
-      "period_end": "2015-10-31",
-      "filed": "2015-12-21",
-      "accession": "0001601046-15-000044",
+      "period_end": "2016-01-31",
+      "filed": "2016-03-04",
       "tag": "CommonStockSharesOutstanding",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     }
   },
   "review_required": true,
-  "note": "SEC reported fields. Different tags and fiscal periods require validation. Operating cash flow minus capex is not automatically unlevered FCFF. Not a completed DCF valuation."
+  "warnings": [
+    "TTM unavailable: revenue",
+    "Operating cash flow minus CapEx is not unlevered FCFF",
+    "Shares outstanding are not necessarily diluted shares",
+    "Debt and cash require classification and date checks"
+  ]
 }

@@ -4,79 +4,83 @@
   "company_name": "Corpay, Inc",
   "sector": "Financials",
   "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001175454.json",
-  "fetched_at_utc": "2026-10-24T01:30:17.838320+00:00",
+  "fetched_at_utc": "2026-10-24T02:10:07.912452+00:00",
   "financials": {
     "revenue": {
-      "value": 4528403000,
+      "value": 5020502000,
       "unit": "USD",
-      "period_start": "2025-01-01",
-      "period_end": "2025-12-31",
-      "filed": "2026-02-27",
-      "accession": "0001175454-26-000018",
+      "period_end": "2026-06-30",
+      "filed": "2026-08-10",
       "tag": "Revenues",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
     },
     "operating_cash_flow": {
-      "value": 1499901000,
+      "value": 1847284000,
       "unit": "USD",
-      "period_start": "2025-01-01",
-      "period_end": "2025-12-31",
-      "filed": "2026-02-27",
-      "accession": "0001175454-26-000018",
+      "period_end": "2026-06-30",
+      "filed": "2026-08-10",
       "tag": "NetCashProvidedByUsedInOperatingActivities",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
     },
     "capital_expenditure": {
-      "value": 200756000,
+      "value": 208878000,
       "unit": "USD",
-      "period_start": "2025-01-01",
-      "period_end": "2025-12-31",
-      "filed": "2026-02-27",
-      "accession": "0001175454-26-000018",
+      "period_end": "2026-06-30",
+      "filed": "2026-08-10",
       "tag": "PaymentsToAcquirePropertyPlantAndEquipment",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
     },
     "cash": {
-      "value": 2408097000,
+      "value": 3163539000,
       "unit": "USD",
-      "period_start": null,
-      "period_end": "2025-12-31",
-      "filed": "2026-02-27",
-      "accession": "0001175454-26-000018",
+      "period_end": "2026-06-30",
+      "filed": "2026-08-10",
       "tag": "CashAndCashEquivalentsAtCarryingValue",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     },
     "debt_current": {
-      "value": 3345530000,
+      "value": 4525389000,
       "unit": "USD",
-      "period_start": null,
-      "period_end": "2025-12-31",
-      "filed": "2026-02-27",
-      "accession": "0001175454-26-000018",
+      "period_end": "2026-06-30",
+      "filed": "2026-08-10",
       "tag": "LongTermDebtCurrent",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     },
     "debt_noncurrent": {
-      "value": 474939000,
+      "value": 459916000,
       "unit": "USD",
-      "period_start": null,
-      "period_end": "2013-12-31",
-      "filed": "2014-03-03",
-      "accession": "0001193125-14-080429",
+      "period_end": "2014-03-31",
+      "filed": "2014-05-12",
       "tag": "LongTermDebtNoncurrent",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     },
     "shares_outstanding": {
-      "value": 68362289,
+      "value": 65655113,
       "unit": "shares",
-      "period_start": null,
-      "period_end": "2025-12-31",
-      "filed": "2026-02-27",
-      "accession": "0001175454-26-000018",
+      "period_end": "2026-06-30",
+      "filed": "2026-08-10",
       "tag": "CommonStockSharesOutstanding",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     }
   },
   "review_required": true,
-  "note": "SEC reported fields. Different tags and fiscal periods require validation. Operating cash flow minus capex is not automatically unlevered FCFF. Not a completed DCF valuation."
+  "warnings": [
+    "Operating cash flow minus CapEx is not unlevered FCFF",
+    "Shares outstanding are not necessarily diluted shares",
+    "Debt and cash require classification and date checks",
+    "Financial company: standard FCFF DCF unsuitable"
+  ]
 }

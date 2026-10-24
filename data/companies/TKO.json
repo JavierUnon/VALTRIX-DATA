@@ -4,61 +4,66 @@
   "company_name": "TKO GROUP HOLDINGS, INC.",
   "sector": "Communication Services",
   "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001973266.json",
-  "fetched_at_utc": "2026-10-24T01:34:10.201572+00:00",
+  "fetched_at_utc": "2026-10-24T02:13:34.112351+00:00",
   "financials": {
     "revenue": {
-      "value": 4735151000,
+      "value": 5301863000,
       "unit": "USD",
-      "period_start": "2025-01-01",
-      "period_end": "2025-12-31",
-      "filed": "2026-02-25",
-      "accession": "0001193125-26-071651",
+      "period_end": "2026-06-30",
+      "filed": "2026-08-03",
       "tag": "Revenues",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
     },
     "operating_cash_flow": {
-      "value": 1285725000,
+      "value": 1795136000,
       "unit": "USD",
-      "period_start": "2025-01-01",
-      "period_end": "2025-12-31",
-      "filed": "2026-02-25",
-      "accession": "0001193125-26-071651",
+      "period_end": "2026-06-30",
+      "filed": "2026-08-03",
       "tag": "NetCashProvidedByUsedInOperatingActivities",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
     },
     "capital_expenditure": null,
     "cash": {
-      "value": 831100000,
+      "value": 592485000,
       "unit": "USD",
-      "period_start": null,
-      "period_end": "2025-12-31",
-      "filed": "2026-02-25",
-      "accession": "0001193125-26-071651",
+      "period_end": "2026-06-30",
+      "filed": "2026-08-03",
       "tag": "CashAndCashEquivalentsAtCarryingValue",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     },
     "debt_current": {
-      "value": 38061000,
+      "value": 45501000,
       "unit": "USD",
-      "period_start": null,
-      "period_end": "2025-12-31",
-      "filed": "2026-02-25",
-      "accession": "0001193125-26-071651",
+      "period_end": "2026-06-30",
+      "filed": "2026-08-03",
       "tag": "LongTermDebtCurrent",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     },
     "debt_noncurrent": {
-      "value": 3724063000,
+      "value": 4583724000,
       "unit": "USD",
-      "period_start": null,
-      "period_end": "2025-12-31",
-      "filed": "2026-02-25",
-      "accession": "0001193125-26-071651",
+      "period_end": "2026-06-30",
+      "filed": "2026-08-03",
       "tag": "LongTermDebtNoncurrent",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     },
     "shares_outstanding": null
   },
   "review_required": true,
-  "note": "SEC reported fields. Different tags and fiscal periods require validation. Operating cash flow minus capex is not automatically unlevered FCFF. Not a completed DCF valuation."
+  "warnings": [
+    "Missing field: capital_expenditure",
+    "Missing field: shares_outstanding",
+    "Operating cash flow minus CapEx is not unlevered FCFF",
+    "Shares outstanding are not necessarily diluted shares",
+    "Debt and cash require classification and date checks"
+  ]
 }

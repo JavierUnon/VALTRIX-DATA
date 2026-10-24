@@ -4,79 +4,82 @@
   "company_name": "REVVITY, INC",
   "sector": "Health Care",
   "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000031791.json",
-  "fetched_at_utc": "2026-10-24T01:33:38.543542+00:00",
+  "fetched_at_utc": "2026-10-24T02:13:01.756329+00:00",
   "financials": {
     "revenue": {
-      "value": 2856051000,
+      "value": 2911811000,
       "unit": "USD",
-      "period_start": "2024-12-30",
-      "period_end": "2025-12-28",
-      "filed": "2026-02-24",
-      "accession": "0000031791-26-000012",
+      "period_end": "2026-07-05",
+      "filed": "2026-08-11",
       "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-28"
     },
     "operating_cash_flow": {
-      "value": 582933000,
+      "value": 627633000,
       "unit": "USD",
-      "period_start": "2024-12-30",
-      "period_end": "2025-12-28",
-      "filed": "2026-02-24",
-      "accession": "0000031791-26-000012",
+      "period_end": "2026-07-05",
+      "filed": "2026-08-11",
       "tag": "NetCashProvidedByUsedInOperatingActivities",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-28"
     },
     "capital_expenditure": {
-      "value": 73522000,
+      "value": 69520000,
       "unit": "USD",
-      "period_start": "2024-12-30",
-      "period_end": "2025-12-28",
-      "filed": "2026-02-24",
-      "accession": "0000031791-26-000012",
+      "period_end": "2026-07-05",
+      "filed": "2026-08-11",
       "tag": "PaymentsToAcquirePropertyPlantAndEquipment",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-28"
     },
     "cash": {
-      "value": 919860000,
+      "value": 1022943000,
       "unit": "USD",
-      "period_start": null,
-      "period_end": "2025-12-28",
-      "filed": "2026-02-24",
-      "accession": "0000031791-26-000012",
+      "period_end": "2026-07-05",
+      "filed": "2026-08-11",
       "tag": "CashAndCashEquivalentsAtCarryingValue",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     },
     "debt_current": {
-      "value": 588828000,
+      "value": 572156000,
       "unit": "USD",
-      "period_start": null,
-      "period_end": "2025-12-28",
-      "filed": "2026-02-24",
-      "accession": "0000031791-26-000012",
+      "period_end": "2026-07-05",
+      "filed": "2026-08-11",
       "tag": "LongTermDebtCurrent",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     },
     "debt_noncurrent": {
-      "value": 2631236000,
+      "value": 2633094000,
       "unit": "USD",
-      "period_start": null,
-      "period_end": "2025-12-28",
-      "filed": "2026-02-24",
-      "accession": "0000031791-26-000012",
+      "period_end": "2026-07-05",
+      "filed": "2026-08-11",
       "tag": "LongTermDebtNoncurrent",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     },
     "shares_outstanding": {
-      "value": 112281000,
+      "value": 111584000,
       "unit": "shares",
-      "period_start": null,
-      "period_end": "2025-12-28",
-      "filed": "2026-02-24",
-      "accession": "0000031791-26-000012",
+      "period_end": "2026-07-05",
+      "filed": "2026-08-11",
       "tag": "CommonStockSharesOutstanding",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     }
   },
   "review_required": true,
-  "note": "SEC reported fields. Different tags and fiscal periods require validation. Operating cash flow minus capex is not automatically unlevered FCFF. Not a completed DCF valuation."
+  "warnings": [
+    "Operating cash flow minus CapEx is not unlevered FCFF",
+    "Shares outstanding are not necessarily diluted shares",
+    "Debt and cash require classification and date checks"
+  ]
 }

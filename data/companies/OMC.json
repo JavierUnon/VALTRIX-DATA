@@ -4,70 +4,75 @@
   "company_name": "OMNICOM GROUP INC.",
   "sector": "Communication Services",
   "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000029989.json",
-  "fetched_at_utc": "2026-10-24T01:33:09.282556+00:00",
+  "fetched_at_utc": "2026-10-24T02:12:32.074182+00:00",
   "financials": {
     "revenue": {
-      "value": 17271900000,
+      "value": 24757000000,
       "unit": "USD",
-      "period_start": "2025-01-01",
-      "period_end": "2025-12-31",
-      "filed": "2026-02-20",
-      "accession": "0000029989-26-000006",
+      "period_end": "2026-09-30",
+      "filed": "2026-10-23",
       "tag": "Revenues",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
     },
     "operating_cash_flow": {
-      "value": 2938200000,
+      "value": 3075200000,
       "unit": "USD",
-      "period_start": "2025-01-01",
-      "period_end": "2025-12-31",
-      "filed": "2026-02-20",
-      "accession": "0000029989-26-000006",
+      "period_end": "2026-09-30",
+      "filed": "2026-10-23",
       "tag": "NetCashProvidedByUsedInOperatingActivities",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
     },
     "capital_expenditure": {
-      "value": 149800000,
+      "value": 211900000,
       "unit": "USD",
-      "period_start": "2025-01-01",
-      "period_end": "2025-12-31",
-      "filed": "2026-02-20",
-      "accession": "0000029989-26-000006",
+      "period_end": "2026-09-30",
+      "filed": "2026-10-23",
       "tag": "PaymentsToAcquirePropertyPlantAndEquipment",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
     },
     "cash": {
       "value": 5316800000,
       "unit": "USD",
-      "period_start": null,
       "period_end": "2021-12-31",
       "filed": "2022-02-09",
-      "accession": "0000029989-22-000012",
       "tag": "CashAndCashEquivalentsAtCarryingValue",
-      "form": "10-K"
+      "form": "10-K",
+      "method": "latest_reported_balance"
     },
     "debt_current": {
-      "value": 499600000,
+      "value": 499800000,
       "unit": "USD",
-      "period_start": null,
-      "period_end": "2018-12-31",
-      "filed": "2019-02-12",
-      "accession": "0000029989-19-000007",
+      "period_end": "2019-03-31",
+      "filed": "2019-04-16",
       "tag": "LongTermDebtCurrent",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     },
     "debt_noncurrent": null,
     "shares_outstanding": {
       "value": 313100000,
       "unit": "shares",
-      "period_start": null,
       "period_end": "2025-12-31",
       "filed": "2026-02-20",
-      "accession": "0000029989-26-000006",
       "tag": "CommonStockSharesOutstanding",
-      "form": "10-K"
+      "form": "10-K",
+      "method": "latest_reported_balance"
     }
   },
   "review_required": true,
-  "note": "SEC reported fields. Different tags and fiscal periods require validation. Operating cash flow minus capex is not automatically unlevered FCFF. Not a completed DCF valuation."
+  "warnings": [
+    "Missing field: debt_noncurrent",
+    "Operating cash flow minus CapEx is not unlevered FCFF",
+    "Shares outstanding are not necessarily diluted shares",
+    "Debt and cash require classification and date checks"
+  ]
 }

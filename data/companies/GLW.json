@@ -4,61 +4,66 @@
   "company_name": "CORNING INC /NY",
   "sector": "Information Technology",
   "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000024741.json",
-  "fetched_at_utc": "2026-10-24T01:30:17.255617+00:00",
+  "fetched_at_utc": "2026-10-24T02:10:07.172210+00:00",
   "financials": {
     "revenue": {
-      "value": 15629000000,
+      "value": 16964000000,
       "unit": "USD",
-      "period_start": "2025-01-01",
-      "period_end": "2025-12-31",
-      "filed": "2026-02-12",
-      "accession": "0000024741-26-000124",
+      "period_end": "2026-06-30",
+      "filed": "2026-07-29",
       "tag": "Revenues",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
     },
     "operating_cash_flow": {
-      "value": 2695000000,
+      "value": 3915000000,
       "unit": "USD",
-      "period_start": "2025-01-01",
-      "period_end": "2025-12-31",
-      "filed": "2026-02-12",
-      "accession": "0000024741-26-000124",
+      "period_end": "2026-06-30",
+      "filed": "2026-07-29",
       "tag": "NetCashProvidedByUsedInOperatingActivities",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
     },
     "capital_expenditure": null,
     "cash": {
-      "value": 1526000000,
+      "value": 2504000000,
       "unit": "USD",
-      "period_start": null,
-      "period_end": "2025-12-31",
-      "filed": "2026-02-12",
-      "accession": "0000024741-26-000124",
+      "period_end": "2026-06-30",
+      "filed": "2026-07-29",
       "tag": "CashAndCashEquivalentsAtCarryingValue",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     },
     "debt_current": {
-      "value": 27000000,
+      "value": 795000000,
       "unit": "USD",
-      "period_start": null,
-      "period_end": "2011-12-31",
-      "filed": "2012-02-13",
-      "accession": "0001193125-12-056163",
-      "tag": "LongTermDebtCurrent",
-      "form": "10-K"
-    },
-    "debt_noncurrent": {
-      "value": 7630000000,
-      "unit": "USD",
-      "period_start": null,
       "period_end": "2025-12-31",
       "filed": "2026-02-12",
-      "accession": "0000024741-26-000124",
+      "tag": "LongTermDebtAndCapitalLeaseObligationsCurrent",
+      "form": "10-K",
+      "method": "latest_reported_balance"
+    },
+    "debt_noncurrent": {
+      "value": 7756000000,
+      "unit": "USD",
+      "period_end": "2026-06-30",
+      "filed": "2026-07-29",
       "tag": "LongTermDebtAndCapitalLeaseObligations",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     },
     "shares_outstanding": null
   },
   "review_required": true,
-  "note": "SEC reported fields. Different tags and fiscal periods require validation. Operating cash flow minus capex is not automatically unlevered FCFF. Not a completed DCF valuation."
+  "warnings": [
+    "Missing field: capital_expenditure",
+    "Missing field: shares_outstanding",
+    "Operating cash flow minus CapEx is not unlevered FCFF",
+    "Shares outstanding are not necessarily diluted shares",
+    "Debt and cash require classification and date checks"
+  ]
 }

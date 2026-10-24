@@ -4,52 +4,59 @@
   "company_name": "Vivmark Residential",
   "sector": "Real Estate",
   "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000906107.json",
-  "fetched_at_utc": "2026-10-24T01:34:31.586030+00:00",
+  "fetched_at_utc": "2026-10-24T02:13:56.810257+00:00",
   "financials": {
     "revenue": {
-      "value": 384000,
+      "value": 216000,
       "unit": "USD",
-      "period_start": "2019-01-01",
-      "period_end": "2019-12-31",
-      "filed": "2020-02-20",
-      "accession": "0001564590-20-005562",
+      "period_end": "2020-03-31",
+      "filed": "2020-05-07",
       "tag": "RevenueFromContractWithCustomerIncludingAssessedTax",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2019-12-31"
     },
     "operating_cash_flow": {
-      "value": 1648763000,
+      "value": 1566091000,
       "unit": "USD",
-      "period_start": "2025-01-01",
-      "period_end": "2025-12-31",
-      "filed": "2026-02-13",
-      "accession": "0001193125-26-051433",
+      "period_end": "2026-06-30",
+      "filed": "2026-07-30",
       "tag": "NetCashProvidedByUsedInOperatingActivities",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
     },
     "capital_expenditure": null,
     "cash": {
-      "value": 55904000,
+      "value": 36405000,
       "unit": "USD",
-      "period_start": null,
-      "period_end": "2025-12-31",
-      "filed": "2026-02-13",
-      "accession": "0001193125-26-051433",
+      "period_end": "2026-06-30",
+      "filed": "2026-07-30",
       "tag": "CashAndCashEquivalentsAtCarryingValue",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     },
     "debt_current": null,
     "debt_noncurrent": null,
     "shares_outstanding": {
-      "value": 377806173,
+      "value": 374893890,
       "unit": "shares",
-      "period_start": null,
-      "period_end": "2025-12-31",
-      "filed": "2026-02-13",
-      "accession": "0001193125-26-051433",
+      "period_end": "2026-06-30",
+      "filed": "2026-07-30",
       "tag": "CommonStockSharesOutstanding",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     }
   },
   "review_required": true,
-  "note": "SEC reported fields. Different tags and fiscal periods require validation. Operating cash flow minus capex is not automatically unlevered FCFF. Not a completed DCF valuation."
+  "warnings": [
+    "Missing field: capital_expenditure",
+    "Missing field: debt_current",
+    "Missing field: debt_noncurrent",
+    "Operating cash flow minus CapEx is not unlevered FCFF",
+    "Shares outstanding are not necessarily diluted shares",
+    "Debt and cash require classification and date checks"
+  ]
 }

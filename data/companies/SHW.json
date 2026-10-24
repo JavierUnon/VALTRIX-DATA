@@ -4,79 +4,82 @@
   "company_name": "THE SHERWIN-WILLIAMS COMPANY",
   "sector": "Materials",
   "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000089800.json",
-  "fetched_at_utc": "2026-10-24T01:33:47.984636+00:00",
+  "fetched_at_utc": "2026-10-24T02:13:11.348755+00:00",
   "financials": {
     "revenue": {
-      "value": 23574300000,
+      "value": 24410300000,
       "unit": "USD",
-      "period_start": "2025-01-01",
-      "period_end": "2025-12-31",
-      "filed": "2026-02-19",
-      "accession": "0000089800-26-000008",
+      "period_end": "2026-06-30",
+      "filed": "2026-07-28",
       "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
     },
     "operating_cash_flow": {
-      "value": 3451600000,
+      "value": 3886700000,
       "unit": "USD",
-      "period_start": "2025-01-01",
-      "period_end": "2025-12-31",
-      "filed": "2026-02-19",
-      "accession": "0000089800-26-000008",
+      "period_end": "2026-06-30",
+      "filed": "2026-07-28",
       "tag": "NetCashProvidedByUsedInOperatingActivities",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
     },
     "capital_expenditure": {
-      "value": 125162000,
+      "value": 146638000,
       "unit": "USD",
-      "period_start": "2010-01-01",
-      "period_end": "2010-12-31",
-      "filed": "2011-02-23",
-      "accession": "0000950123-11-017092",
+      "period_end": "2011-06-30",
+      "filed": "2011-07-27",
       "tag": "PaymentsToAcquirePropertyPlantAndEquipment",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2010-12-31"
     },
     "cash": {
-      "value": 207200000,
+      "value": 293500000,
       "unit": "USD",
-      "period_start": null,
-      "period_end": "2025-12-31",
-      "filed": "2026-02-19",
-      "accession": "0000089800-26-000008",
+      "period_end": "2026-06-30",
+      "filed": "2026-07-28",
       "tag": "CashAndCashEquivalentsAtCarryingValue",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     },
     "debt_current": {
-      "value": 350100000,
+      "value": 1498400000,
       "unit": "USD",
-      "period_start": null,
-      "period_end": "2025-12-31",
-      "filed": "2026-02-19",
-      "accession": "0000089800-26-000008",
+      "period_end": "2026-06-30",
+      "filed": "2026-07-28",
       "tag": "LongTermDebtCurrent",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     },
     "debt_noncurrent": {
-      "value": 9320700000,
+      "value": 8327300000,
       "unit": "USD",
-      "period_start": null,
-      "period_end": "2025-12-31",
-      "filed": "2026-02-19",
-      "accession": "0000089800-26-000008",
+      "period_end": "2026-06-30",
+      "filed": "2026-07-28",
       "tag": "LongTermDebtNoncurrent",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     },
     "shares_outstanding": {
-      "value": 247700000,
+      "value": 242800000,
       "unit": "shares",
-      "period_start": null,
-      "period_end": "2025-12-31",
-      "filed": "2026-02-19",
-      "accession": "0000089800-26-000008",
+      "period_end": "2026-06-30",
+      "filed": "2026-07-28",
       "tag": "CommonStockSharesOutstanding",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     }
   },
   "review_required": true,
-  "note": "SEC reported fields. Different tags and fiscal periods require validation. Operating cash flow minus capex is not automatically unlevered FCFF. Not a completed DCF valuation."
+  "warnings": [
+    "Operating cash flow minus CapEx is not unlevered FCFF",
+    "Shares outstanding are not necessarily diluted shares",
+    "Debt and cash require classification and date checks"
+  ]
 }

@@ -4,70 +4,75 @@
   "company_name": "Booking Holdings Inc.",
   "sector": "Consumer Discretionary",
   "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001075531.json",
-  "fetched_at_utc": "2026-10-24T01:29:39.149828+00:00",
+  "fetched_at_utc": "2026-10-24T02:09:24.956622+00:00",
   "financials": {
     "revenue": {
-      "value": 26917000000,
+      "value": 28241000000,
       "unit": "USD",
-      "period_start": "2025-01-01",
-      "period_end": "2025-12-31",
-      "filed": "2026-02-18",
-      "accession": "0001075531-26-000009",
+      "period_end": "2026-06-30",
+      "filed": "2026-08-04",
       "tag": "Revenues",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
     },
     "operating_cash_flow": {
-      "value": 9409000000,
+      "value": 9859000000,
       "unit": "USD",
-      "period_start": "2025-01-01",
-      "period_end": "2025-12-31",
-      "filed": "2026-02-18",
-      "accession": "0001075531-26-000009",
+      "period_end": "2026-06-30",
+      "filed": "2026-08-04",
       "tag": "NetCashProvidedByUsedInOperatingActivities",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
     },
     "capital_expenditure": {
-      "value": 322000000,
+      "value": 320000000,
       "unit": "USD",
-      "period_start": "2025-01-01",
-      "period_end": "2025-12-31",
-      "filed": "2026-02-18",
-      "accession": "0001075531-26-000009",
+      "period_end": "2026-06-30",
+      "filed": "2026-08-04",
       "tag": "PaymentsToAcquirePropertyPlantAndEquipment",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
     },
     "cash": {
-      "value": 17203000000,
+      "value": 17214000000,
       "unit": "USD",
-      "period_start": null,
-      "period_end": "2025-12-31",
-      "filed": "2026-02-18",
-      "accession": "0001075531-26-000009",
+      "period_end": "2026-06-30",
+      "filed": "2026-08-04",
       "tag": "CashAndCashEquivalentsAtCarryingValue",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     },
     "debt_current": {
-      "value": 1880000000,
+      "value": 2000000000,
       "unit": "USD",
-      "period_start": null,
-      "period_end": "2025-12-31",
-      "filed": "2026-02-18",
-      "accession": "0001075531-26-000009",
+      "period_end": "2026-06-30",
+      "filed": "2026-08-04",
       "tag": "LongTermDebtCurrent",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     },
     "debt_noncurrent": {
-      "value": 16856000000,
+      "value": 18180000000,
       "unit": "USD",
-      "period_start": null,
-      "period_end": "2025-12-31",
-      "filed": "2026-02-18",
-      "accession": "0001075531-26-000009",
+      "period_end": "2026-06-30",
+      "filed": "2026-08-04",
       "tag": "LongTermDebtNoncurrent",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     },
     "shares_outstanding": null
   },
   "review_required": true,
-  "note": "SEC reported fields. Different tags and fiscal periods require validation. Operating cash flow minus capex is not automatically unlevered FCFF. Not a completed DCF valuation."
+  "warnings": [
+    "Missing field: shares_outstanding",
+    "Operating cash flow minus CapEx is not unlevered FCFF",
+    "Shares outstanding are not necessarily diluted shares",
+    "Debt and cash require classification and date checks"
+  ]
 }

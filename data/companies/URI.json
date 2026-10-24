@@ -4,79 +4,82 @@
   "company_name": "United Rentals, Inc.",
   "sector": "Industrials",
   "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001067701.json",
-  "fetched_at_utc": "2026-10-24T01:34:21.260967+00:00",
+  "fetched_at_utc": "2026-10-24T02:13:46.378251+00:00",
   "financials": {
     "revenue": {
-      "value": 3695000000,
+      "value": 3983000000,
       "unit": "USD",
-      "period_start": "2025-01-01",
-      "period_end": "2025-12-31",
-      "filed": "2026-01-28",
-      "accession": "0001067701-26-000007",
+      "period_end": "2026-09-30",
+      "filed": "2026-10-21",
       "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
     },
     "operating_cash_flow": {
-      "value": 5190000000,
+      "value": 6190000000,
       "unit": "USD",
-      "period_start": "2025-01-01",
-      "period_end": "2025-12-31",
-      "filed": "2026-01-28",
-      "accession": "0001067701-26-000007",
+      "period_end": "2026-09-30",
+      "filed": "2026-10-21",
       "tag": "NetCashProvidedByUsedInOperatingActivities",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
     },
     "capital_expenditure": {
-      "value": 197000000,
+      "value": 148000000,
       "unit": "USD",
-      "period_start": "2020-01-01",
-      "period_end": "2020-12-31",
-      "filed": "2021-01-27",
-      "accession": "0001067701-21-000008",
+      "period_end": "2021-06-30",
+      "filed": "2021-07-28",
       "tag": "PaymentsToAcquirePropertyPlantAndEquipment",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2020-12-31"
     },
     "cash": {
-      "value": 459000000,
+      "value": 153000000,
       "unit": "USD",
-      "period_start": null,
-      "period_end": "2025-12-31",
-      "filed": "2026-01-28",
-      "accession": "0001067701-26-000007",
+      "period_end": "2026-09-30",
+      "filed": "2026-10-21",
       "tag": "CashAndCashEquivalentsAtCarryingValue",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     },
     "debt_current": {
       "value": 604000000,
       "unit": "USD",
-      "period_start": null,
       "period_end": "2013-12-31",
       "filed": "2014-01-22",
-      "accession": "0001067701-14-000004",
       "tag": "LongTermDebtAndCapitalLeaseObligationsCurrent",
-      "form": "10-K"
+      "form": "10-K",
+      "method": "latest_reported_balance"
     },
     "debt_noncurrent": {
-      "value": 12652000000,
+      "value": 13064000000,
       "unit": "USD",
-      "period_start": null,
-      "period_end": "2025-12-31",
-      "filed": "2026-01-28",
-      "accession": "0001067701-26-000007",
+      "period_end": "2026-09-30",
+      "filed": "2026-10-21",
       "tag": "LongTermDebtAndCapitalLeaseObligations",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     },
     "shares_outstanding": {
-      "value": 63095970,
+      "value": 61990795,
       "unit": "shares",
-      "period_start": null,
-      "period_end": "2025-12-31",
-      "filed": "2026-01-28",
-      "accession": "0001067701-26-000007",
+      "period_end": "2026-09-30",
+      "filed": "2026-10-21",
       "tag": "CommonStockSharesOutstanding",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     }
   },
   "review_required": true,
-  "note": "SEC reported fields. Different tags and fiscal periods require validation. Operating cash flow minus capex is not automatically unlevered FCFF. Not a completed DCF valuation."
+  "warnings": [
+    "Operating cash flow minus CapEx is not unlevered FCFF",
+    "Shares outstanding are not necessarily diluted shares",
+    "Debt and cash require classification and date checks"
+  ]
 }

@@ -4,79 +4,82 @@
   "company_name": "AUTOZONE INC",
   "sector": "Consumer Discretionary",
   "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000866787.json",
-  "fetched_at_utc": "2026-10-24T01:29:26.582558+00:00",
+  "fetched_at_utc": "2026-10-24T02:09:08.695873+00:00",
   "financials": {
     "revenue": {
-      "value": 18938717000,
+      "value": 19986403000,
       "unit": "USD",
-      "period_start": "2024-09-01",
-      "period_end": "2025-08-30",
-      "filed": "2025-10-27",
-      "accession": "0001104659-25-102611",
+      "period_end": "2026-05-09",
+      "filed": "2026-06-12",
       "tag": "Revenues",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-08-30"
     },
     "operating_cash_flow": {
-      "value": 3117337000,
+      "value": 3072342000,
       "unit": "USD",
-      "period_start": "2024-09-01",
-      "period_end": "2025-08-30",
-      "filed": "2025-10-27",
-      "accession": "0001104659-25-102611",
+      "period_end": "2026-05-09",
+      "filed": "2026-06-12",
       "tag": "NetCashProvidedByUsedInOperatingActivities",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-08-30"
     },
     "capital_expenditure": {
-      "value": 1327257000,
+      "value": 1439120000,
       "unit": "USD",
-      "period_start": "2024-09-01",
-      "period_end": "2025-08-30",
-      "filed": "2025-10-27",
-      "accession": "0001104659-25-102611",
+      "period_end": "2026-05-09",
+      "filed": "2026-06-12",
       "tag": "PaymentsToAcquirePropertyPlantAndEquipment",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-08-30"
     },
     "cash": {
-      "value": 271803000,
+      "value": 253729000,
       "unit": "USD",
-      "period_start": null,
-      "period_end": "2025-08-30",
-      "filed": "2025-10-27",
-      "accession": "0001104659-25-102611",
+      "period_end": "2026-05-09",
+      "filed": "2026-06-12",
       "tag": "CashAndCashEquivalentsAtCarryingValue",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     },
     "debt_current": {
-      "value": 180910000,
+      "value": 500000000,
       "unit": "USD",
-      "period_start": null,
-      "period_end": "2014-08-30",
-      "filed": "2015-10-26",
-      "accession": "0001193125-15-353476",
+      "period_end": "2024-05-04",
+      "filed": "2024-06-07",
       "tag": "LongTermDebtCurrent",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     },
     "debt_noncurrent": {
-      "value": 8799775000,
+      "value": 9016477000,
       "unit": "USD",
-      "period_start": null,
-      "period_end": "2025-08-30",
-      "filed": "2025-10-27",
-      "accession": "0001104659-25-102611",
+      "period_end": "2026-05-09",
+      "filed": "2026-06-12",
       "tag": "LongTermDebtNoncurrent",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     },
     "shares_outstanding": {
-      "value": 25742000,
+      "value": 24611000,
       "unit": "shares",
-      "period_start": null,
-      "period_end": "2018-08-25",
-      "filed": "2018-10-24",
-      "accession": "0001193125-18-306452",
+      "period_end": "2019-05-04",
+      "filed": "2019-06-07",
       "tag": "CommonStockSharesOutstanding",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     }
   },
   "review_required": true,
-  "note": "SEC reported fields. Different tags and fiscal periods require validation. Operating cash flow minus capex is not automatically unlevered FCFF. Not a completed DCF valuation."
+  "warnings": [
+    "Operating cash flow minus CapEx is not unlevered FCFF",
+    "Shares outstanding are not necessarily diluted shares",
+    "Debt and cash require classification and date checks"
+  ]
 }

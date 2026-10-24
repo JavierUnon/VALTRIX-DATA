@@ -4,27 +4,29 @@
   "company_name": "INTERNATIONAL PAPER COMPANY",
   "sector": "Materials",
   "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000051434.json",
-  "fetched_at_utc": "2026-10-24T01:32:07.617239+00:00",
+  "fetched_at_utc": "2026-10-24T02:11:32.235230+00:00",
   "financials": {
     "revenue": {
-      "value": 23634000000,
+      "value": 24203000000,
       "unit": "USD",
-      "period_start": "2025-01-01",
-      "period_end": "2025-12-31",
-      "filed": "2026-02-27",
-      "accession": "0000051434-26-000055",
+      "period_end": "2026-06-30",
+      "filed": "2026-08-05",
       "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
     },
     "operating_cash_flow": {
-      "value": 1698000000,
+      "value": 2647000000,
       "unit": "USD",
-      "period_start": "2025-01-01",
-      "period_end": "2025-12-31",
-      "filed": "2026-02-27",
-      "accession": "0000051434-26-000055",
+      "period_end": "2026-06-30",
+      "filed": "2026-08-05",
       "tag": "NetCashProvidedByUsedInOperatingActivities",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
     },
     "capital_expenditure": {
       "value": 534000000,
@@ -32,51 +34,51 @@
       "period_start": "2009-01-01",
       "period_end": "2009-12-31",
       "filed": "2010-02-25",
-      "accession": "0001193125-10-040916",
       "tag": "PaymentsToAcquirePropertyPlantAndEquipment",
-      "form": "10-K"
+      "form": "10-K",
+      "method": "annual"
     },
     "cash": {
-      "value": 1145000000,
+      "value": 726000000,
       "unit": "USD",
-      "period_start": null,
-      "period_end": "2025-12-31",
-      "filed": "2026-02-27",
-      "accession": "0000051434-26-000055",
+      "period_end": "2026-06-30",
+      "filed": "2026-08-05",
       "tag": "CashAndCashEquivalentsAtCarryingValue",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     },
     "debt_current": {
       "value": 992000000,
       "unit": "USD",
-      "period_start": null,
       "period_end": "2025-12-31",
       "filed": "2026-02-27",
-      "accession": "0000051434-26-000055",
       "tag": "LongTermDebtCurrent",
-      "form": "10-K"
+      "form": "10-K",
+      "method": "latest_reported_balance"
     },
     "debt_noncurrent": {
-      "value": 8839000000,
+      "value": 8215000000,
       "unit": "USD",
-      "period_start": null,
-      "period_end": "2025-12-31",
-      "filed": "2026-02-27",
-      "accession": "0000051434-26-000055",
-      "tag": "LongTermDebtNoncurrent",
-      "form": "10-K"
+      "period_end": "2026-06-30",
+      "filed": "2026-08-05",
+      "tag": "LongTermDebtAndCapitalLeaseObligations",
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     },
     "shares_outstanding": {
       "value": 627000000,
       "unit": "shares",
-      "period_start": null,
-      "period_end": "2025-12-31",
-      "filed": "2026-02-27",
-      "accession": "0000051434-26-000055",
+      "period_end": "2026-06-30",
+      "filed": "2026-08-05",
       "tag": "CommonStockSharesOutstanding",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     }
   },
   "review_required": true,
-  "note": "SEC reported fields. Different tags and fiscal periods require validation. Operating cash flow minus capex is not automatically unlevered FCFF. Not a completed DCF valuation."
+  "warnings": [
+    "Operating cash flow minus CapEx is not unlevered FCFF",
+    "Shares outstanding are not necessarily diluted shares",
+    "Debt and cash require classification and date checks"
+  ]
 }

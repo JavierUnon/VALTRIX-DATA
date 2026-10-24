@@ -4,70 +4,75 @@
   "company_name": "HASBRO, INC.",
   "sector": "Consumer Discretionary",
   "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000046080.json",
-  "fetched_at_utc": "2026-10-24T01:31:46.623253+00:00",
+  "fetched_at_utc": "2026-10-24T02:11:12.559171+00:00",
   "financials": {
     "revenue": {
-      "value": 4701300000,
+      "value": 4973200000,
       "unit": "USD",
-      "period_start": "2024-12-30",
-      "period_end": "2025-12-28",
-      "filed": "2026-02-25",
-      "accession": "0000046080-26-000011",
+      "period_end": "2026-06-28",
+      "filed": "2026-07-30",
       "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-28"
     },
     "operating_cash_flow": {
-      "value": 893200000,
+      "value": 1288200000,
       "unit": "USD",
-      "period_start": "2024-12-30",
-      "period_end": "2025-12-28",
-      "filed": "2026-02-25",
-      "accession": "0000046080-26-000011",
+      "period_end": "2026-06-28",
+      "filed": "2026-07-30",
       "tag": "NetCashProvidedByUsedInOperatingActivities",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-28"
     },
     "capital_expenditure": {
-      "value": 63300000,
+      "value": 74600000,
       "unit": "USD",
-      "period_start": "2024-12-30",
-      "period_end": "2025-12-28",
-      "filed": "2026-02-25",
-      "accession": "0000046080-26-000011",
+      "period_end": "2026-06-28",
+      "filed": "2026-07-30",
       "tag": "PaymentsToAcquirePropertyPlantAndEquipment",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-28"
     },
     "cash": {
-      "value": 4580369000,
+      "value": 1181200000,
       "unit": "USD",
-      "period_start": null,
-      "period_end": "2019-12-29",
-      "filed": "2020-02-27",
-      "accession": "0000046080-20-000028",
+      "period_end": "2021-09-26",
+      "filed": "2021-10-27",
       "tag": "CashAndCashEquivalentsAtCarryingValue",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     },
     "debt_current": {
       "value": 497000000,
       "unit": "USD",
-      "period_start": null,
-      "period_end": "2025-12-28",
-      "filed": "2026-02-25",
-      "accession": "0000046080-26-000011",
+      "period_end": "2026-06-28",
+      "filed": "2026-07-30",
       "tag": "LongTermDebtCurrent",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     },
     "debt_noncurrent": {
-      "value": 2767900000,
+      "value": 3041200000,
       "unit": "USD",
-      "period_start": null,
-      "period_end": "2025-12-28",
-      "filed": "2026-02-25",
-      "accession": "0000046080-26-000011",
+      "period_end": "2026-06-28",
+      "filed": "2026-07-30",
       "tag": "LongTermDebtNoncurrent",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     },
     "shares_outstanding": null
   },
   "review_required": true,
-  "note": "SEC reported fields. Different tags and fiscal periods require validation. Operating cash flow minus capex is not automatically unlevered FCFF. Not a completed DCF valuation."
+  "warnings": [
+    "Missing field: shares_outstanding",
+    "Operating cash flow minus CapEx is not unlevered FCFF",
+    "Shares outstanding are not necessarily diluted shares",
+    "Debt and cash require classification and date checks"
+  ]
 }

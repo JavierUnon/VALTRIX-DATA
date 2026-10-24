@@ -4,70 +4,75 @@
   "company_name": "Dell Technologies Inc.",
   "sector": "Information Technology",
   "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001571996.json",
-  "fetched_at_utc": "2026-10-24T01:30:27.317089+00:00",
+  "fetched_at_utc": "2026-10-24T02:10:19.355438+00:00",
   "financials": {
     "revenue": {
-      "value": 113538000000,
+      "value": 151197000000,
       "unit": "USD",
-      "period_start": "2025-02-01",
-      "period_end": "2026-01-30",
-      "filed": "2026-03-16",
-      "accession": "0001571996-26-000008",
+      "period_end": "2026-07-31",
+      "filed": "2026-09-08",
       "tag": "Revenues",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2026-01-30"
     },
     "operating_cash_flow": {
-      "value": 11185000000,
+      "value": 12152000000,
       "unit": "USD",
-      "period_start": "2025-02-01",
-      "period_end": "2026-01-30",
-      "filed": "2026-03-16",
-      "accession": "0001571996-26-000008",
+      "period_end": "2026-07-31",
+      "filed": "2026-09-08",
       "tag": "NetCashProvidedByUsedInOperatingActivities",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2026-01-30"
     },
     "capital_expenditure": {
-      "value": 2633000000,
+      "value": 3592000000,
       "unit": "USD",
-      "period_start": "2025-02-01",
-      "period_end": "2026-01-30",
-      "filed": "2026-03-16",
-      "accession": "0001571996-26-000008",
+      "period_end": "2026-07-31",
+      "filed": "2026-09-08",
       "tag": "PaymentsToAcquirePropertyPlantAndEquipment",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2026-01-30"
     },
     "cash": {
-      "value": 11528000000,
+      "value": 11569000000,
       "unit": "USD",
-      "period_start": null,
-      "period_end": "2026-01-30",
-      "filed": "2026-03-16",
-      "accession": "0001571996-26-000008",
+      "period_end": "2026-07-31",
+      "filed": "2026-09-08",
       "tag": "CashAndCashEquivalentsAtCarryingValue",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     },
     "debt_current": null,
     "debt_noncurrent": {
-      "value": 23513000000,
+      "value": 25985000000,
       "unit": "USD",
-      "period_start": null,
-      "period_end": "2026-01-30",
-      "filed": "2026-03-16",
-      "accession": "0001571996-26-000008",
+      "period_end": "2026-07-31",
+      "filed": "2026-09-08",
       "tag": "LongTermDebtNoncurrent",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     },
     "shares_outstanding": {
-      "value": 652000000,
+      "value": 640000000,
       "unit": "shares",
-      "period_start": null,
-      "period_end": "2026-01-30",
-      "filed": "2026-03-16",
-      "accession": "0001571996-26-000008",
+      "period_end": "2026-07-31",
+      "filed": "2026-09-08",
       "tag": "CommonStockSharesOutstanding",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     }
   },
   "review_required": true,
-  "note": "SEC reported fields. Different tags and fiscal periods require validation. Operating cash flow minus capex is not automatically unlevered FCFF. Not a completed DCF valuation."
+  "warnings": [
+    "Missing field: debt_current",
+    "Operating cash flow minus CapEx is not unlevered FCFF",
+    "Shares outstanding are not necessarily diluted shares",
+    "Debt and cash require classification and date checks"
+  ]
 }

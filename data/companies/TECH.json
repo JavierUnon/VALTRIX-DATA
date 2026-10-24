@@ -4,7 +4,7 @@
   "company_name": "BIO-TECHNE Corp",
   "sector": "Health Care",
   "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000842023.json",
-  "fetched_at_utc": "2026-10-24T01:29:33.456413+00:00",
+  "fetched_at_utc": "2026-10-24T02:09:15.051292+00:00",
   "financials": {
     "revenue": {
       "value": 1215039000,
@@ -12,9 +12,9 @@
       "period_start": "2025-07-01",
       "period_end": "2026-06-30",
       "filed": "2026-08-24",
-      "accession": "0001104659-26-100322",
       "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
-      "form": "10-K"
+      "form": "10-K",
+      "method": "annual"
     },
     "operating_cash_flow": {
       "value": 292073000,
@@ -22,9 +22,9 @@
       "period_start": "2025-07-01",
       "period_end": "2026-06-30",
       "filed": "2026-08-24",
-      "accession": "0001104659-26-100322",
       "tag": "NetCashProvidedByUsedInOperatingActivities",
-      "form": "10-K"
+      "form": "10-K",
+      "method": "annual"
     },
     "capital_expenditure": {
       "value": 28850000,
@@ -32,51 +32,51 @@
       "period_start": "2025-07-01",
       "period_end": "2026-06-30",
       "filed": "2026-08-24",
-      "accession": "0001104659-26-100322",
       "tag": "PaymentsToAcquirePropertyPlantAndEquipment",
-      "form": "10-K"
+      "form": "10-K",
+      "method": "annual"
     },
     "cash": {
       "value": 264712000,
       "unit": "USD",
-      "period_start": null,
       "period_end": "2026-06-30",
       "filed": "2026-08-24",
-      "accession": "0001104659-26-100322",
       "tag": "CashAndCashEquivalentsAtCarryingValue",
-      "form": "10-K"
+      "form": "10-K",
+      "method": "latest_reported_balance"
     },
     "debt_current": {
       "value": 12500000,
       "unit": "USD",
-      "period_start": null,
       "period_end": "2022-06-30",
       "filed": "2023-08-23",
-      "accession": "0001558370-23-015226",
       "tag": "LongTermDebtCurrent",
-      "form": "10-K"
+      "form": "10-K",
+      "method": "latest_reported_balance"
     },
     "debt_noncurrent": {
       "value": 200000000,
       "unit": "USD",
-      "period_start": null,
       "period_end": "2026-06-30",
       "filed": "2026-08-24",
-      "accession": "0001104659-26-100322",
       "tag": "LongTermDebtAndCapitalLeaseObligations",
-      "form": "10-K"
+      "form": "10-K",
+      "method": "latest_reported_balance"
     },
     "shares_outstanding": {
       "value": 156095113,
       "unit": "shares",
-      "period_start": null,
       "period_end": "2026-06-30",
       "filed": "2026-08-24",
-      "accession": "0001104659-26-100322",
       "tag": "CommonStockSharesOutstanding",
-      "form": "10-K"
+      "form": "10-K",
+      "method": "latest_reported_balance"
     }
   },
   "review_required": true,
-  "note": "SEC reported fields. Different tags and fiscal periods require validation. Operating cash flow minus capex is not automatically unlevered FCFF. Not a completed DCF valuation."
+  "warnings": [
+    "Operating cash flow minus CapEx is not unlevered FCFF",
+    "Shares outstanding are not necessarily diluted shares",
+    "Debt and cash require classification and date checks"
+  ]
 }

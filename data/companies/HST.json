@@ -4,27 +4,29 @@
   "company_name": "HOST HOTELS & RESORTS, INC.",
   "sector": "Real Estate",
   "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001070750.json",
-  "fetched_at_utc": "2026-10-24T01:31:54.094704+00:00",
+  "fetched_at_utc": "2026-10-24T02:11:19.937576+00:00",
   "financials": {
     "revenue": {
-      "value": 6114000000,
+      "value": 6219000000,
       "unit": "USD",
-      "period_start": "2025-01-01",
-      "period_end": "2025-12-31",
-      "filed": "2026-02-25",
-      "accession": "0001070750-26-000054",
+      "period_end": "2026-06-30",
+      "filed": "2026-08-07",
       "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
     },
     "operating_cash_flow": {
-      "value": 1510000000,
+      "value": 1606000000,
       "unit": "USD",
-      "period_start": "2025-01-01",
-      "period_end": "2025-12-31",
-      "filed": "2026-02-25",
-      "accession": "0001070750-26-000054",
+      "period_end": "2026-06-30",
+      "filed": "2026-08-07",
       "tag": "NetCashProvidedByUsedInOperatingActivities",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
     },
     "capital_expenditure": {
       "value": 0,
@@ -32,33 +34,37 @@
       "period_start": "2009-01-01",
       "period_end": "2009-12-31",
       "filed": "2010-03-01",
-      "accession": "0001193125-10-044002",
       "tag": "PaymentsToAcquirePropertyPlantAndEquipment",
-      "form": "10-K"
+      "form": "10-K",
+      "method": "annual"
     },
     "cash": {
-      "value": 768000000,
+      "value": 1953000000,
       "unit": "USD",
-      "period_start": null,
-      "period_end": "2025-12-31",
-      "filed": "2026-02-25",
-      "accession": "0001070750-26-000054",
+      "period_end": "2026-06-30",
+      "filed": "2026-08-07",
       "tag": "CashAndCashEquivalentsAtCarryingValue",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     },
     "debt_current": null,
     "debt_noncurrent": null,
     "shares_outstanding": {
-      "value": 687800000,
+      "value": 685000000,
       "unit": "shares",
-      "period_start": null,
-      "period_end": "2025-12-31",
-      "filed": "2026-02-25",
-      "accession": "0001070750-26-000054",
+      "period_end": "2026-06-30",
+      "filed": "2026-08-07",
       "tag": "CommonStockSharesOutstanding",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     }
   },
   "review_required": true,
-  "note": "SEC reported fields. Different tags and fiscal periods require validation. Operating cash flow minus capex is not automatically unlevered FCFF. Not a completed DCF valuation."
+  "warnings": [
+    "Missing field: debt_current",
+    "Missing field: debt_noncurrent",
+    "Operating cash flow minus CapEx is not unlevered FCFF",
+    "Shares outstanding are not necessarily diluted shares",
+    "Debt and cash require classification and date checks"
+  ]
 }

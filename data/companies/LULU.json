@@ -4,61 +4,68 @@
   "company_name": "lululemon athletica inc.",
   "sector": "Consumer Discretionary",
   "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001397187.json",
-  "fetched_at_utc": "2026-10-24T01:32:33.120419+00:00",
+  "fetched_at_utc": "2026-10-24T02:11:56.580236+00:00",
   "financials": {
     "revenue": {
-      "value": 11102600000,
+      "value": 11093955000,
       "unit": "USD",
-      "period_start": "2025-02-03",
-      "period_end": "2026-02-01",
-      "filed": "2026-03-17",
-      "accession": "0001397187-26-000020",
+      "period_end": "2026-08-02",
+      "filed": "2026-09-03",
       "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2026-02-01"
     },
     "operating_cash_flow": {
-      "value": 1602477000,
+      "value": 1982033000,
       "unit": "USD",
-      "period_start": "2025-02-03",
-      "period_end": "2026-02-01",
-      "filed": "2026-03-17",
-      "accession": "0001397187-26-000020",
+      "period_end": "2026-08-02",
+      "filed": "2026-09-03",
       "tag": "NetCashProvidedByUsedInOperatingActivities",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2026-02-01"
     },
     "capital_expenditure": {
-      "value": 680802000,
+      "value": 627697000,
       "unit": "USD",
-      "period_start": "2025-02-03",
-      "period_end": "2026-02-01",
-      "filed": "2026-03-17",
-      "accession": "0001397187-26-000020",
+      "period_end": "2026-08-02",
+      "filed": "2026-09-03",
       "tag": "PaymentsToAcquirePropertyPlantAndEquipment",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2026-02-01"
     },
     "cash": {
       "value": 881320000,
       "unit": "USD",
-      "period_start": null,
       "period_end": "2019-02-03",
       "filed": "2019-03-27",
-      "accession": "0001397187-19-000011",
       "tag": "CashAndCashEquivalentsAtCarryingValue",
-      "form": "10-K"
+      "form": "10-K",
+      "method": "latest_reported_balance"
     },
     "debt_current": null,
     "debt_noncurrent": null,
     "shares_outstanding": {
-      "value": 111380000,
+      "value": 106566000,
       "unit": "shares",
-      "period_start": null,
-      "period_end": "2026-02-01",
-      "filed": "2026-03-17",
-      "accession": "0001397187-26-000020",
+      "period_end": "2026-08-02",
+      "filed": "2026-09-03",
       "tag": "CommonStockSharesOutstanding",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     }
   },
   "review_required": true,
-  "note": "SEC reported fields. Different tags and fiscal periods require validation. Operating cash flow minus capex is not automatically unlevered FCFF. Not a completed DCF valuation."
+  "warnings": [
+    "Missing field: debt_current",
+    "Missing field: debt_noncurrent",
+    "Operating cash flow minus CapEx is not unlevered FCFF",
+    "Shares outstanding are not necessarily diluted shares",
+    "Debt and cash require classification and date checks"
+  ]
 }

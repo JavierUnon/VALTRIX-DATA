@@ -4,27 +4,29 @@
   "company_name": "EQUINIX, INC.",
   "sector": "Real Estate",
   "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001101239.json",
-  "fetched_at_utc": "2026-10-24T01:30:46.963578+00:00",
+  "fetched_at_utc": "2026-10-24T02:10:38.520208+00:00",
   "financials": {
     "revenue": {
-      "value": 9217000000,
+      "value": 9805000000,
       "unit": "USD",
-      "period_start": "2025-01-01",
-      "period_end": "2025-12-31",
-      "filed": "2026-02-11",
-      "accession": "0001101239-26-000032",
+      "period_end": "2026-06-30",
+      "filed": "2026-07-29",
       "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
     },
     "operating_cash_flow": {
-      "value": 3911000000,
+      "value": 3942000000,
       "unit": "USD",
-      "period_start": "2025-01-01",
-      "period_end": "2025-12-31",
-      "filed": "2026-02-11",
-      "accession": "0001101239-26-000032",
+      "period_end": "2026-06-30",
+      "filed": "2026-07-29",
       "tag": "NetCashProvidedByUsedInOperatingActivities",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
     },
     "capital_expenditure": {
       "value": 14861000,
@@ -32,42 +34,46 @@
       "period_start": "2010-01-01",
       "period_end": "2010-12-31",
       "filed": "2011-02-25",
-      "accession": "0001193125-11-047157",
       "tag": "PaymentsToAcquirePropertyPlantAndEquipment",
-      "form": "10-K"
+      "form": "10-K",
+      "method": "annual_fallback",
+      "warning": "TTM unavailable; annual data used"
     },
     "cash": {
-      "value": 1727000000,
+      "value": 979000000,
       "unit": "USD",
-      "period_start": null,
-      "period_end": "2025-12-31",
-      "filed": "2026-02-11",
-      "accession": "0001101239-26-000032",
+      "period_end": "2026-06-30",
+      "filed": "2026-07-29",
       "tag": "CashAndCashEquivalentsAtCarryingValue",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     },
     "debt_current": {
       "value": 1299000000,
       "unit": "USD",
-      "period_start": null,
       "period_end": "2025-12-31",
       "filed": "2026-02-11",
-      "accession": "0001101239-26-000032",
       "tag": "LongTermDebtCurrent",
-      "form": "10-K"
+      "form": "10-K",
+      "method": "latest_reported_balance"
     },
     "debt_noncurrent": null,
     "shares_outstanding": {
-      "value": 98226000,
+      "value": 98671000,
       "unit": "shares",
-      "period_start": null,
-      "period_end": "2025-12-31",
-      "filed": "2026-02-11",
-      "accession": "0001101239-26-000032",
+      "period_end": "2026-06-30",
+      "filed": "2026-07-29",
       "tag": "CommonStockSharesOutstanding",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     }
   },
   "review_required": true,
-  "note": "SEC reported fields. Different tags and fiscal periods require validation. Operating cash flow minus capex is not automatically unlevered FCFF. Not a completed DCF valuation."
+  "warnings": [
+    "TTM unavailable: capital_expenditure",
+    "Missing field: debt_noncurrent",
+    "Operating cash flow minus CapEx is not unlevered FCFF",
+    "Shares outstanding are not necessarily diluted shares",
+    "Debt and cash require classification and date checks"
+  ]
 }

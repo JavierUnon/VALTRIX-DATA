@@ -4,70 +4,75 @@
   "company_name": "Palantir Technologies Inc.",
   "sector": "Information Technology",
   "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001321655.json",
-  "fetched_at_utc": "2026-10-24T01:33:13.728818+00:00",
+  "fetched_at_utc": "2026-10-24T02:12:36.051534+00:00",
   "financials": {
     "revenue": {
-      "value": 4475446000,
+      "value": 6155941000,
       "unit": "USD",
-      "period_start": "2025-01-01",
-      "period_end": "2025-12-31",
-      "filed": "2026-02-17",
-      "accession": "0001321655-26-000011",
+      "period_end": "2026-06-30",
+      "filed": "2026-08-04",
       "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
     },
     "operating_cash_flow": {
-      "value": 2134473000,
+      "value": 3400291000,
       "unit": "USD",
-      "period_start": "2025-01-01",
-      "period_end": "2025-12-31",
-      "filed": "2026-02-17",
-      "accession": "0001321655-26-000011",
+      "period_end": "2026-06-30",
+      "filed": "2026-08-04",
       "tag": "NetCashProvidedByUsedInOperatingActivities",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
     },
     "capital_expenditure": {
-      "value": 33882000,
+      "value": 42019000,
       "unit": "USD",
-      "period_start": "2025-01-01",
-      "period_end": "2025-12-31",
-      "filed": "2026-02-17",
-      "accession": "0001321655-26-000011",
+      "period_end": "2026-06-30",
+      "filed": "2026-08-04",
       "tag": "PaymentsToAcquirePropertyPlantAndEquipment",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
     },
     "cash": {
-      "value": 1423796000,
+      "value": 2030047000,
       "unit": "USD",
-      "period_start": null,
-      "period_end": "2025-12-31",
-      "filed": "2026-02-17",
-      "accession": "0001321655-26-000011",
+      "period_end": "2026-06-30",
+      "filed": "2026-08-04",
       "tag": "CashAndCashEquivalentsAtCarryingValue",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     },
     "debt_current": null,
     "debt_noncurrent": {
       "value": 0,
       "unit": "USD",
-      "period_start": null,
       "period_end": "2021-12-31",
       "filed": "2022-02-24",
-      "accession": "0001193125-22-050913",
       "tag": "LongTermDebtNoncurrent",
-      "form": "10-K"
+      "form": "10-K",
+      "method": "latest_reported_balance"
     },
     "shares_outstanding": {
-      "value": 2391192000,
+      "value": 2402897000,
       "unit": "shares",
-      "period_start": null,
-      "period_end": "2025-12-31",
-      "filed": "2026-02-17",
-      "accession": "0001321655-26-000011",
+      "period_end": "2026-06-30",
+      "filed": "2026-08-04",
       "tag": "CommonStockSharesOutstanding",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     }
   },
   "review_required": true,
-  "note": "SEC reported fields. Different tags and fiscal periods require validation. Operating cash flow minus capex is not automatically unlevered FCFF. Not a completed DCF valuation."
+  "warnings": [
+    "Missing field: debt_current",
+    "Operating cash flow minus CapEx is not unlevered FCFF",
+    "Shares outstanding are not necessarily diluted shares",
+    "Debt and cash require classification and date checks"
+  ]
 }

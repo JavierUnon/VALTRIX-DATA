@@ -4,70 +4,75 @@
   "company_name": "GENERAL MILLS, INC.",
   "sector": "Consumer Staples",
   "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000040704.json",
-  "fetched_at_utc": "2026-10-24T01:31:39.227880+00:00",
+  "fetched_at_utc": "2026-10-24T02:11:06.279116+00:00",
   "financials": {
     "revenue": {
-      "value": 18424600000,
+      "value": 18296600000,
       "unit": "USD",
-      "period_start": "2025-05-26",
-      "period_end": "2026-05-31",
-      "filed": "2026-07-01",
-      "accession": "0001628280-26-046466",
+      "period_end": "2026-08-30",
+      "filed": "2026-09-23",
       "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2026-05-31"
     },
     "operating_cash_flow": {
-      "value": 2166200000,
+      "value": 2067000000,
       "unit": "USD",
-      "period_start": "2025-05-26",
-      "period_end": "2026-05-31",
-      "filed": "2026-07-01",
-      "accession": "0001628280-26-046466",
+      "period_end": "2026-08-30",
+      "filed": "2026-09-23",
       "tag": "NetCashProvidedByUsedInOperatingActivities",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2026-05-31"
     },
     "capital_expenditure": {
-      "value": 539900000,
+      "value": 520900000,
       "unit": "USD",
-      "period_start": "2025-05-26",
-      "period_end": "2026-05-31",
-      "filed": "2026-07-01",
-      "accession": "0001628280-26-046466",
+      "period_end": "2026-08-30",
+      "filed": "2026-09-23",
       "tag": "PaymentsToAcquirePropertyPlantAndEquipment",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2026-05-31"
     },
     "cash": {
-      "value": 453800000,
+      "value": 433100000,
       "unit": "USD",
-      "period_start": null,
-      "period_end": "2026-05-31",
-      "filed": "2026-07-01",
-      "accession": "0001628280-26-046466",
+      "period_end": "2026-08-30",
+      "filed": "2026-09-23",
       "tag": "CashAndCashEquivalentsAtCarryingValue",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     },
     "debt_current": {
-      "value": 1053600000,
+      "value": 1046800000,
       "unit": "USD",
-      "period_start": null,
-      "period_end": "2026-05-31",
-      "filed": "2026-07-01",
-      "accession": "0001628280-26-046466",
-      "tag": "LongTermDebtCurrent",
-      "form": "10-K"
+      "period_end": "2026-08-30",
+      "filed": "2026-09-23",
+      "tag": "LongTermDebtAndCapitalLeaseObligationsCurrent",
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     },
     "debt_noncurrent": {
-      "value": 12416000000,
+      "value": 12367200000,
       "unit": "USD",
-      "period_start": null,
-      "period_end": "2026-05-31",
-      "filed": "2026-07-01",
-      "accession": "0001628280-26-046466",
-      "tag": "LongTermDebtNoncurrent",
-      "form": "10-K"
+      "period_end": "2026-08-30",
+      "filed": "2026-09-23",
+      "tag": "LongTermDebtAndCapitalLeaseObligations",
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     },
     "shares_outstanding": null
   },
   "review_required": true,
-  "note": "SEC reported fields. Different tags and fiscal periods require validation. Operating cash flow minus capex is not automatically unlevered FCFF. Not a completed DCF valuation."
+  "warnings": [
+    "Missing field: shares_outstanding",
+    "Operating cash flow minus CapEx is not unlevered FCFF",
+    "Shares outstanding are not necessarily diluted shares",
+    "Debt and cash require classification and date checks"
+  ]
 }

@@ -4,70 +4,73 @@
   "company_name": "ATMOS ENERGY CORP",
   "sector": "Utilities",
   "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000731802.json",
-  "fetched_at_utc": "2026-10-24T01:29:24.718689+00:00",
+  "fetched_at_utc": "2026-10-24T02:09:06.844672+00:00",
   "financials": {
     "revenue": {
-      "value": 4702755000,
+      "value": 4921526000,
       "unit": "USD",
-      "period_start": "2024-10-01",
-      "period_end": "2025-09-30",
-      "filed": "2025-11-14",
-      "accession": "0000731802-25-000056",
+      "period_end": "2026-06-30",
+      "filed": "2026-08-05",
       "tag": "Revenues",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-09-30"
     },
     "operating_cash_flow": {
-      "value": 2049456000,
+      "value": 2019590000,
       "unit": "USD",
-      "period_start": "2024-10-01",
-      "period_end": "2025-09-30",
-      "filed": "2025-11-14",
-      "accession": "0000731802-25-000056",
+      "period_end": "2026-06-30",
+      "filed": "2026-08-05",
       "tag": "NetCashProvidedByUsedInOperatingActivities",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-09-30"
     },
     "capital_expenditure": null,
     "cash": {
-      "value": 202687000,
+      "value": 520953000,
       "unit": "USD",
-      "period_start": null,
-      "period_end": "2025-09-30",
-      "filed": "2025-11-14",
-      "accession": "0000731802-25-000056",
+      "period_end": "2026-06-30",
+      "filed": "2026-08-05",
       "tag": "CashAndCashEquivalentsAtCarryingValue",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     },
     "debt_current": {
-      "value": 0,
+      "value": 502542000,
       "unit": "USD",
-      "period_start": null,
-      "period_end": "2019-09-30",
-      "filed": "2019-11-12",
-      "accession": "0000731802-19-000037",
-      "tag": "LongTermDebtCurrent",
-      "form": "10-K"
+      "period_end": "2026-06-30",
+      "filed": "2026-08-05",
+      "tag": "LongTermDebtAndCapitalLeaseObligationsCurrent",
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     },
     "debt_noncurrent": {
-      "value": 3529452000,
+      "value": 9748716000,
       "unit": "USD",
-      "period_start": null,
-      "period_end": "2019-09-30",
-      "filed": "2019-11-12",
-      "accession": "0000731802-19-000037",
-      "tag": "LongTermDebtNoncurrent",
-      "form": "10-K"
+      "period_end": "2026-06-30",
+      "filed": "2026-08-05",
+      "tag": "LongTermDebtAndCapitalLeaseObligations",
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     },
     "shares_outstanding": {
-      "value": 161568384,
+      "value": 168986249,
       "unit": "shares",
-      "period_start": null,
-      "period_end": "2025-09-30",
-      "filed": "2025-11-14",
-      "accession": "0000731802-25-000056",
+      "period_end": "2026-06-30",
+      "filed": "2026-08-05",
       "tag": "CommonStockSharesOutstanding",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     }
   },
   "review_required": true,
-  "note": "SEC reported fields. Different tags and fiscal periods require validation. Operating cash flow minus capex is not automatically unlevered FCFF. Not a completed DCF valuation."
+  "warnings": [
+    "Missing field: capital_expenditure",
+    "Operating cash flow minus CapEx is not unlevered FCFF",
+    "Shares outstanding are not necessarily diluted shares",
+    "Debt and cash require classification and date checks"
+  ]
 }

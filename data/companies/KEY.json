@@ -4,37 +4,40 @@
   "company_name": "KeyCorp",
   "sector": "Financials",
   "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000091576.json",
-  "fetched_at_utc": "2026-10-24T01:32:18.329335+00:00",
+  "fetched_at_utc": "2026-10-24T02:11:42.395258+00:00",
   "financials": {
     "revenue": {
-      "value": 1749000000,
+      "value": 1822000000,
       "unit": "USD",
-      "period_start": "2025-01-01",
-      "period_end": "2025-12-31",
-      "filed": "2026-02-23",
-      "accession": "0001628280-26-010546",
+      "period_end": "2026-06-30",
+      "filed": "2026-08-04",
       "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
     },
     "operating_cash_flow": {
-      "value": 2208000000,
+      "value": 1311000000,
       "unit": "USD",
-      "period_start": "2025-01-01",
-      "period_end": "2025-12-31",
-      "filed": "2026-02-23",
-      "accession": "0001628280-26-010546",
+      "period_end": "2026-06-30",
+      "filed": "2026-08-04",
       "tag": "NetCashProvidedByUsedInOperatingActivities",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
     },
     "capital_expenditure": {
-      "value": 152000000,
+      "value": 111000000,
       "unit": "USD",
-      "period_start": "2012-01-01",
-      "period_end": "2012-12-31",
-      "filed": "2013-02-26",
-      "accession": "0001193125-13-076993",
+      "period_end": "2013-09-30",
+      "filed": "2013-10-31",
       "tag": "PaymentsToAcquirePropertyPlantAndEquipment",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2012-12-31"
     },
     "cash": null,
     "debt_current": null,
@@ -42,5 +45,14 @@
     "shares_outstanding": null
   },
   "review_required": true,
-  "note": "SEC reported fields. Different tags and fiscal periods require validation. Operating cash flow minus capex is not automatically unlevered FCFF. Not a completed DCF valuation."
+  "warnings": [
+    "Missing field: cash",
+    "Missing field: debt_current",
+    "Missing field: debt_noncurrent",
+    "Missing field: shares_outstanding",
+    "Operating cash flow minus CapEx is not unlevered FCFF",
+    "Shares outstanding are not necessarily diluted shares",
+    "Debt and cash require classification and date checks",
+    "Financial company: standard FCFF DCF unsuitable"
+  ]
 }

@@ -4,61 +4,68 @@
   "company_name": "VALERO ENERGY CORP/TX",
   "sector": "Energy",
   "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001035002.json",
-  "fetched_at_utc": "2026-10-24T01:34:23.261825+00:00",
+  "fetched_at_utc": "2026-10-24T02:13:48.331377+00:00",
   "financials": {
     "revenue": {
-      "value": 122687000000,
+      "value": 139397000000,
       "unit": "USD",
-      "period_start": "2025-01-01",
-      "period_end": "2025-12-31",
-      "filed": "2026-02-25",
-      "accession": "0001628280-26-011499",
+      "period_end": "2026-06-30",
+      "filed": "2026-07-30",
       "tag": "RevenueFromContractWithCustomerIncludingAssessedTax",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
     },
     "operating_cash_flow": {
-      "value": 5826000000,
+      "value": 10908000000,
       "unit": "USD",
-      "period_start": "2025-01-01",
-      "period_end": "2025-12-31",
-      "filed": "2026-02-25",
-      "accession": "0001628280-26-011499",
+      "period_end": "2026-06-30",
+      "filed": "2026-07-30",
       "tag": "NetCashProvidedByUsedInOperatingActivities",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
     },
     "capital_expenditure": {
-      "value": 1353000000,
+      "value": 1608000000,
       "unit": "USD",
-      "period_start": "2017-01-01",
-      "period_end": "2017-12-31",
-      "filed": "2018-02-28",
-      "accession": "0001035002-18-000010",
+      "period_end": "2018-09-30",
+      "filed": "2018-11-06",
       "tag": "PaymentsToAcquirePropertyPlantAndEquipment",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2017-12-31"
     },
     "cash": {
-      "value": 4688000000,
+      "value": 7874000000,
       "unit": "USD",
-      "period_start": null,
-      "period_end": "2025-12-31",
-      "filed": "2026-02-25",
-      "accession": "0001628280-26-011499",
+      "period_end": "2026-06-30",
+      "filed": "2026-07-30",
       "tag": "CashAndCashEquivalentsAtCarryingValue",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     },
     "debt_current": null,
     "debt_noncurrent": {
-      "value": 9670000000,
+      "value": 10422000000,
       "unit": "USD",
-      "period_start": null,
-      "period_end": "2025-12-31",
-      "filed": "2026-02-25",
-      "accession": "0001628280-26-011499",
+      "period_end": "2026-06-30",
+      "filed": "2026-07-30",
       "tag": "LongTermDebtAndCapitalLeaseObligations",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     },
     "shares_outstanding": null
   },
   "review_required": true,
-  "note": "SEC reported fields. Different tags and fiscal periods require validation. Operating cash flow minus capex is not automatically unlevered FCFF. Not a completed DCF valuation."
+  "warnings": [
+    "Missing field: debt_current",
+    "Missing field: shares_outstanding",
+    "Operating cash flow minus CapEx is not unlevered FCFF",
+    "Shares outstanding are not necessarily diluted shares",
+    "Debt and cash require classification and date checks"
+  ]
 }

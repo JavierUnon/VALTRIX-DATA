@@ -4,7 +4,7 @@
   "company_name": "FEDEX CORP",
   "sector": "Industrials",
   "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001048911.json",
-  "fetched_at_utc": "2026-10-24T01:30:59.097062+00:00",
+  "fetched_at_utc": "2026-10-24T02:10:50.984865+00:00",
   "financials": {
     "revenue": {
       "value": 94720000000,
@@ -12,9 +12,9 @@
       "period_start": "2025-06-01",
       "period_end": "2026-05-31",
       "filed": "2026-07-20",
-      "accession": "0001048911-26-000105",
       "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
-      "form": "10-K"
+      "form": "10-K",
+      "method": "annual"
     },
     "operating_cash_flow": {
       "value": 8925000000,
@@ -22,43 +22,46 @@
       "period_start": "2025-06-01",
       "period_end": "2026-05-31",
       "filed": "2026-07-20",
-      "accession": "0001048911-26-000105",
       "tag": "NetCashProvidedByUsedInOperatingActivities",
-      "form": "10-K"
+      "form": "10-K",
+      "method": "annual"
     },
     "capital_expenditure": null,
     "cash": {
       "value": 13311000000,
       "unit": "USD",
-      "period_start": null,
       "period_end": "2026-05-31",
       "filed": "2026-07-20",
-      "accession": "0001048911-26-000105",
       "tag": "CashAndCashEquivalentsAtCarryingValue",
-      "form": "10-K"
+      "form": "10-K",
+      "method": "latest_reported_balance"
     },
     "debt_current": {
       "value": 1676000000,
       "unit": "USD",
-      "period_start": null,
       "period_end": "2026-05-31",
       "filed": "2026-07-20",
-      "accession": "0001048911-26-000105",
       "tag": "LongTermDebtAndCapitalLeaseObligationsCurrent",
-      "form": "10-K"
+      "form": "10-K",
+      "method": "latest_reported_balance"
     },
     "debt_noncurrent": {
       "value": 23293000000,
       "unit": "USD",
-      "period_start": null,
       "period_end": "2026-05-31",
       "filed": "2026-07-20",
-      "accession": "0001048911-26-000105",
       "tag": "LongTermDebtNoncurrent",
-      "form": "10-K"
+      "form": "10-K",
+      "method": "latest_reported_balance"
     },
     "shares_outstanding": null
   },
   "review_required": true,
-  "note": "SEC reported fields. Different tags and fiscal periods require validation. Operating cash flow minus capex is not automatically unlevered FCFF. Not a completed DCF valuation."
+  "warnings": [
+    "Missing field: capital_expenditure",
+    "Missing field: shares_outstanding",
+    "Operating cash flow minus CapEx is not unlevered FCFF",
+    "Shares outstanding are not necessarily diluted shares",
+    "Debt and cash require classification and date checks"
+  ]
 }

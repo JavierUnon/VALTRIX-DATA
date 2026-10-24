@@ -4,70 +4,73 @@
   "company_name": "FIRSTENERGY CORP",
   "sector": "Utilities",
   "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001031296.json",
-  "fetched_at_utc": "2026-10-24T01:31:03.056463+00:00",
+  "fetched_at_utc": "2026-10-24T02:10:55.083721+00:00",
   "financials": {
     "revenue": {
-      "value": 11112000000,
+      "value": 15527000000,
       "unit": "USD",
-      "period_start": "2021-01-01",
-      "period_end": "2021-12-31",
-      "filed": "2022-02-16",
-      "accession": "0001031296-22-000013",
-      "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
-      "form": "10-K"
+      "period_end": "2026-03-31",
+      "filed": "2026-04-28",
+      "tag": "Revenues",
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
     },
     "operating_cash_flow": {
-      "value": 3700000000,
+      "value": 3211000000,
       "unit": "USD",
-      "period_start": "2025-01-01",
-      "period_end": "2025-12-31",
-      "filed": "2026-02-18",
-      "accession": "0001031296-26-000046",
+      "period_end": "2026-03-31",
+      "filed": "2026-04-28",
       "tag": "NetCashProvidedByUsedInOperatingActivities",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
     },
     "capital_expenditure": null,
     "cash": {
-      "value": 57000000,
+      "value": 52000000,
       "unit": "USD",
-      "period_start": null,
-      "period_end": "2025-12-31",
-      "filed": "2026-02-18",
-      "accession": "0001031296-26-000046",
+      "period_end": "2026-03-31",
+      "filed": "2026-04-28",
       "tag": "CashAndCashEquivalentsAtCarryingValue",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     },
     "debt_current": {
-      "value": 723000000,
+      "value": 424000000,
       "unit": "USD",
-      "period_start": null,
-      "period_end": "2025-12-31",
-      "filed": "2026-02-18",
-      "accession": "0001031296-26-000046",
-      "tag": "LongTermDebtCurrent",
-      "form": "10-K"
+      "period_end": "2026-03-31",
+      "filed": "2026-04-28",
+      "tag": "LongTermDebtAndCapitalLeaseObligationsCurrent",
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     },
     "debt_noncurrent": {
-      "value": 25508000000,
+      "value": 26331000000,
       "unit": "USD",
-      "period_start": null,
-      "period_end": "2025-12-31",
-      "filed": "2026-02-18",
-      "accession": "0001031296-26-000046",
+      "period_end": "2026-03-31",
+      "filed": "2026-04-28",
       "tag": "LongTermDebtAndCapitalLeaseObligations",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     },
     "shares_outstanding": {
-      "value": 577851052,
+      "value": 578431175,
       "unit": "shares",
-      "period_start": null,
-      "period_end": "2025-12-31",
-      "filed": "2026-02-18",
-      "accession": "0001031296-26-000046",
+      "period_end": "2026-03-31",
+      "filed": "2026-04-28",
       "tag": "CommonStockSharesOutstanding",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     }
   },
   "review_required": true,
-  "note": "SEC reported fields. Different tags and fiscal periods require validation. Operating cash flow minus capex is not automatically unlevered FCFF. Not a completed DCF valuation."
+  "warnings": [
+    "Missing field: capital_expenditure",
+    "Operating cash flow minus CapEx is not unlevered FCFF",
+    "Shares outstanding are not necessarily diluted shares",
+    "Debt and cash require classification and date checks"
+  ]
 }

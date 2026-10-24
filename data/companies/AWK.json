@@ -4,79 +4,82 @@
   "company_name": "AMERICAN WATER WORKS COMPANY, INC.",
   "sector": "Utilities",
   "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001410636.json",
-  "fetched_at_utc": "2026-10-24T01:29:11.113386+00:00",
+  "fetched_at_utc": "2026-10-24T02:08:53.578731+00:00",
   "financials": {
     "revenue": {
-      "value": 5121000000,
+      "value": 5268000000,
       "unit": "USD",
-      "period_start": "2025-01-01",
-      "period_end": "2025-12-31",
-      "filed": "2026-02-18",
-      "accession": "0001410636-26-000034",
+      "period_end": "2026-06-30",
+      "filed": "2026-07-29",
       "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
     },
     "operating_cash_flow": {
-      "value": 2059000000,
+      "value": 2334000000,
       "unit": "USD",
-      "period_start": "2025-01-01",
-      "period_end": "2025-12-31",
-      "filed": "2026-02-18",
-      "accession": "0001410636-26-000034",
+      "period_end": "2026-06-30",
+      "filed": "2026-07-29",
       "tag": "NetCashProvidedByUsedInOperatingActivities",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
     },
     "capital_expenditure": {
-      "value": 3126000000,
+      "value": 3364000000,
       "unit": "USD",
-      "period_start": "2025-01-01",
-      "period_end": "2025-12-31",
-      "filed": "2026-02-18",
-      "accession": "0001410636-26-000034",
+      "period_end": "2026-06-30",
+      "filed": "2026-07-29",
       "tag": "PaymentsToAcquirePropertyPlantAndEquipment",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
     },
     "cash": {
-      "value": 98000000,
+      "value": 191000000,
       "unit": "USD",
-      "period_start": null,
-      "period_end": "2025-12-31",
-      "filed": "2026-02-18",
-      "accession": "0001410636-26-000034",
+      "period_end": "2026-06-30",
+      "filed": "2026-07-29",
       "tag": "CashAndCashEquivalentsAtCarryingValue",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     },
     "debt_current": {
-      "value": 14174000,
+      "value": 446000000,
       "unit": "USD",
-      "period_start": null,
-      "period_end": "2013-12-31",
-      "filed": "2014-02-27",
-      "accession": "0001564590-14-000381",
-      "tag": "LongTermDebtCurrent",
-      "form": "10-K"
+      "period_end": "2026-06-30",
+      "filed": "2026-07-29",
+      "tag": "LongTermDebtAndCapitalLeaseObligationsCurrent",
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     },
     "debt_noncurrent": {
-      "value": 5212881000,
+      "value": 14043000000,
       "unit": "USD",
-      "period_start": null,
-      "period_end": "2013-12-31",
-      "filed": "2014-02-27",
-      "accession": "0001564590-14-000381",
-      "tag": "LongTermDebtNoncurrent",
-      "form": "10-K"
+      "period_end": "2026-06-30",
+      "filed": "2026-07-29",
+      "tag": "LongTermDebtAndCapitalLeaseObligations",
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     },
     "shares_outstanding": {
-      "value": 179462000,
+      "value": 181620003,
       "unit": "shares",
-      "period_start": null,
-      "period_end": "2014-12-31",
-      "filed": "2015-02-25",
-      "accession": "0001564590-15-000905",
+      "period_end": "2016-06-30",
+      "filed": "2016-08-03",
       "tag": "CommonStockSharesOutstanding",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     }
   },
   "review_required": true,
-  "note": "SEC reported fields. Different tags and fiscal periods require validation. Operating cash flow minus capex is not automatically unlevered FCFF. Not a completed DCF valuation."
+  "warnings": [
+    "Operating cash flow minus CapEx is not unlevered FCFF",
+    "Shares outstanding are not necessarily diluted shares",
+    "Debt and cash require classification and date checks"
+  ]
 }

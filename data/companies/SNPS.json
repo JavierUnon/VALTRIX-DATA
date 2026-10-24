@@ -4,79 +4,82 @@
   "company_name": "SYNOPSYS INC",
   "sector": "Information Technology",
   "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000883241.json",
-  "fetched_at_utc": "2026-10-24T01:33:59.350690+00:00",
+  "fetched_at_utc": "2026-10-24T02:13:23.008811+00:00",
   "financials": {
     "revenue": {
-      "value": 7054178000,
+      "value": 9416465000,
       "unit": "USD",
-      "period_start": "2024-11-01",
-      "period_end": "2025-10-31",
-      "filed": "2025-12-22",
-      "accession": "0000883241-25-000028",
+      "period_end": "2026-07-31",
+      "filed": "2026-08-26",
       "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-10-31"
     },
     "operating_cash_flow": {
-      "value": 1518608000,
+      "value": 2938341000,
       "unit": "USD",
-      "period_start": "2024-11-01",
-      "period_end": "2025-10-31",
-      "filed": "2025-12-22",
-      "accession": "0000883241-25-000028",
+      "period_end": "2026-07-31",
+      "filed": "2026-08-26",
       "tag": "NetCashProvidedByUsedInOperatingActivities",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-10-31"
     },
     "capital_expenditure": {
-      "value": 169454000,
+      "value": 190635000,
       "unit": "USD",
-      "period_start": "2024-11-01",
-      "period_end": "2025-10-31",
-      "filed": "2025-12-22",
-      "accession": "0000883241-25-000028",
+      "period_end": "2026-07-31",
+      "filed": "2026-08-26",
       "tag": "PaymentsToAcquirePropertyPlantAndEquipment",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-10-31"
     },
     "cash": {
-      "value": 2888030000,
+      "value": 3606286000,
       "unit": "USD",
-      "period_start": null,
-      "period_end": "2025-10-31",
-      "filed": "2025-12-22",
-      "accession": "0000883241-25-000028",
+      "period_end": "2026-07-31",
+      "filed": "2026-08-26",
       "tag": "CashAndCashEquivalentsAtCarryingValue",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     },
     "debt_current": {
-      "value": 22117000,
+      "value": 1020247000,
       "unit": "USD",
-      "period_start": null,
-      "period_end": "2025-10-31",
-      "filed": "2025-12-22",
-      "accession": "0000883241-25-000028",
+      "period_end": "2026-07-31",
+      "filed": "2026-08-26",
       "tag": "LongTermDebtCurrent",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     },
     "debt_noncurrent": {
-      "value": 13462398000,
+      "value": 9017113000,
       "unit": "USD",
-      "period_start": null,
-      "period_end": "2025-10-31",
-      "filed": "2025-12-22",
-      "accession": "0000883241-25-000028",
+      "period_end": "2026-07-31",
+      "filed": "2026-08-26",
       "tag": "LongTermDebtNoncurrent",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     },
     "shares_outstanding": {
-      "value": 185994000,
+      "value": 191605000,
       "unit": "shares",
-      "period_start": null,
-      "period_end": "2025-10-31",
-      "filed": "2025-12-22",
-      "accession": "0000883241-25-000028",
+      "period_end": "2026-07-31",
+      "filed": "2026-08-26",
       "tag": "CommonStockSharesOutstanding",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     }
   },
   "review_required": true,
-  "note": "SEC reported fields. Different tags and fiscal periods require validation. Operating cash flow minus capex is not automatically unlevered FCFF. Not a completed DCF valuation."
+  "warnings": [
+    "Operating cash flow minus CapEx is not unlevered FCFF",
+    "Shares outstanding are not necessarily diluted shares",
+    "Debt and cash require classification and date checks"
+  ]
 }

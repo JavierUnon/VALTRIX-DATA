@@ -4,52 +4,61 @@
   "company_name": "LENNAR CORP /NEW/",
   "sector": "Consumer Discretionary",
   "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000920760.json",
-  "fetched_at_utc": "2026-10-24T01:32:27.943974+00:00",
+  "fetched_at_utc": "2026-10-24T02:11:51.544784+00:00",
   "financials": {
     "revenue": {
-      "value": 34186934000,
+      "value": 31973076000,
       "unit": "USD",
-      "period_start": "2024-12-01",
-      "period_end": "2025-11-30",
-      "filed": "2026-01-28",
-      "accession": "0001628280-26-003870",
+      "period_end": "2026-08-31",
+      "filed": "2026-10-02",
       "tag": "Revenues",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-11-30"
     },
     "operating_cash_flow": {
-      "value": 216812000,
+      "value": 937303000,
       "unit": "USD",
-      "period_start": "2024-12-01",
-      "period_end": "2025-11-30",
-      "filed": "2026-01-28",
-      "accession": "0001628280-26-003870",
+      "period_end": "2026-08-31",
+      "filed": "2026-10-02",
       "tag": "NetCashProvidedByUsedInOperatingActivities",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-11-30"
     },
     "capital_expenditure": {
-      "value": 188629000,
+      "value": 126034000,
       "unit": "USD",
-      "period_start": "2024-12-01",
-      "period_end": "2025-11-30",
-      "filed": "2026-01-28",
-      "accession": "0001628280-26-003870",
+      "period_end": "2026-08-31",
+      "filed": "2026-10-02",
       "tag": "PaymentsToAcquirePropertyPlantAndEquipment",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-11-30"
     },
     "cash": {
       "value": 3756305000,
       "unit": "USD",
-      "period_start": null,
       "period_end": "2025-11-30",
       "filed": "2026-01-28",
-      "accession": "0001628280-26-003870",
       "tag": "CashAndCashEquivalentsAtCarryingValue",
-      "form": "10-K"
+      "form": "10-K",
+      "method": "latest_reported_balance"
     },
     "debt_current": null,
     "debt_noncurrent": null,
     "shares_outstanding": null
   },
   "review_required": true,
-  "note": "SEC reported fields. Different tags and fiscal periods require validation. Operating cash flow minus capex is not automatically unlevered FCFF. Not a completed DCF valuation."
+  "warnings": [
+    "Missing field: debt_current",
+    "Missing field: debt_noncurrent",
+    "Missing field: shares_outstanding",
+    "Operating cash flow minus CapEx is not unlevered FCFF",
+    "Shares outstanding are not necessarily diluted shares",
+    "Debt and cash require classification and date checks"
+  ]
 }

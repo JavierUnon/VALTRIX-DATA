@@ -4,7 +4,7 @@
   "company_name": "Micron Technology, Inc.",
   "sector": "Information Technology",
   "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000723125.json",
-  "fetched_at_utc": "2026-10-24T01:32:47.069753+00:00",
+  "fetched_at_utc": "2026-10-24T02:12:10.125801+00:00",
   "financials": {
     "revenue": {
       "value": 133188000000,
@@ -12,9 +12,9 @@
       "period_start": "2025-08-29",
       "period_end": "2026-09-03",
       "filed": "2026-10-09",
-      "accession": "0000723125-26-000023",
       "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
-      "form": "10-K"
+      "form": "10-K",
+      "method": "annual"
     },
     "operating_cash_flow": {
       "value": 89675000000,
@@ -22,9 +22,9 @@
       "period_start": "2025-08-29",
       "period_end": "2026-09-03",
       "filed": "2026-10-09",
-      "accession": "0000723125-26-000023",
       "tag": "NetCashProvidedByUsedInOperatingActivities",
-      "form": "10-K"
+      "form": "10-K",
+      "method": "annual"
     },
     "capital_expenditure": {
       "value": 30712000000,
@@ -32,51 +32,51 @@
       "period_start": "2025-08-29",
       "period_end": "2026-09-03",
       "filed": "2026-10-09",
-      "accession": "0000723125-26-000023",
       "tag": "PaymentsToAcquirePropertyPlantAndEquipment",
-      "form": "10-K"
+      "form": "10-K",
+      "method": "annual"
     },
     "cash": {
       "value": 38364000000,
       "unit": "USD",
-      "period_start": null,
       "period_end": "2026-09-03",
       "filed": "2026-10-09",
-      "accession": "0000723125-26-000023",
       "tag": "CashAndCashEquivalentsAtCarryingValue",
-      "form": "10-K"
+      "form": "10-K",
+      "method": "latest_reported_balance"
     },
     "debt_current": {
-      "value": 224000000,
+      "value": 357000000,
       "unit": "USD",
-      "period_start": null,
-      "period_end": "2012-08-30",
-      "filed": "2012-10-29",
-      "accession": "0000723125-12-000156",
+      "period_end": "2013-05-30",
+      "filed": "2013-07-08",
       "tag": "LongTermDebtCurrent",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     },
     "debt_noncurrent": {
-      "value": 3038000000,
+      "value": 4688000000,
       "unit": "USD",
-      "period_start": null,
-      "period_end": "2012-08-30",
-      "filed": "2012-10-29",
-      "accession": "0000723125-12-000156",
-      "tag": "LongTermDebtNoncurrent",
-      "form": "10-K"
+      "period_end": "2026-09-03",
+      "filed": "2026-10-09",
+      "tag": "LongTermDebtAndCapitalLeaseObligations",
+      "form": "10-K",
+      "method": "latest_reported_balance"
     },
     "shares_outstanding": {
       "value": 1131000000,
       "unit": "shares",
-      "period_start": null,
       "period_end": "2026-09-03",
       "filed": "2026-10-09",
-      "accession": "0000723125-26-000023",
       "tag": "CommonStockSharesOutstanding",
-      "form": "10-K"
+      "form": "10-K",
+      "method": "latest_reported_balance"
     }
   },
   "review_required": true,
-  "note": "SEC reported fields. Different tags and fiscal periods require validation. Operating cash flow minus capex is not automatically unlevered FCFF. Not a completed DCF valuation."
+  "warnings": [
+    "Operating cash flow minus CapEx is not unlevered FCFF",
+    "Shares outstanding are not necessarily diluted shares",
+    "Debt and cash require classification and date checks"
+  ]
 }

@@ -4,70 +4,82 @@
   "company_name": "EchoStar Corporation",
   "sector": "Communication Services",
   "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001415404.json",
-  "fetched_at_utc": "2026-10-24T01:30:39.664209+00:00",
+  "fetched_at_utc": "2026-10-24T02:10:31.331769+00:00",
   "financials": {
     "revenue": {
-      "value": 15004989000,
+      "value": 14653925000,
       "unit": "USD",
-      "period_start": "2025-01-01",
-      "period_end": "2025-12-31",
-      "filed": "2026-03-02",
-      "accession": "0001104659-26-021817",
+      "period_end": "2026-06-30",
+      "filed": "2026-08-03",
       "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
     },
     "operating_cash_flow": {
-      "value": -99374000,
+      "value": -85317000,
       "unit": "USD",
-      "period_start": "2025-01-01",
-      "period_end": "2025-12-31",
-      "filed": "2026-03-02",
-      "accession": "0001104659-26-021817",
+      "period_end": "2026-06-30",
+      "filed": "2026-08-03",
       "tag": "NetCashProvidedByUsedInOperatingActivities",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
     },
     "capital_expenditure": {
-      "value": 965730000,
+      "value": 639864000,
       "unit": "USD",
-      "period_start": "2025-01-01",
-      "period_end": "2025-12-31",
-      "filed": "2026-03-02",
-      "accession": "0001104659-26-021817",
+      "period_end": "2026-06-30",
+      "filed": "2026-08-03",
       "tag": "PaymentsToAcquirePropertyPlantAndEquipment",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
     },
     "cash": {
-      "value": 1883074000,
+      "value": 439988000,
       "unit": "USD",
-      "period_start": null,
-      "period_end": "2025-12-31",
-      "filed": "2026-03-02",
-      "accession": "0001104659-26-021817",
+      "period_end": "2026-06-30",
+      "filed": "2026-08-03",
       "tag": "CashAndCashEquivalentsAtCarryingValue",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     },
     "debt_current": {
-      "value": 0,
+      "value": 1446316000,
       "unit": "USD",
-      "period_start": null,
-      "period_end": "2021-12-31",
-      "filed": "2022-02-24",
-      "accession": "0001415404-22-000005",
-      "tag": "LongTermDebtCurrent",
-      "form": "10-K"
+      "period_end": "2026-06-30",
+      "filed": "2026-08-03",
+      "tag": "LongTermDebtAndCapitalLeaseObligationsCurrent",
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     },
     "debt_noncurrent": {
-      "value": 1495994000,
+      "value": 15985387000,
       "unit": "USD",
-      "period_start": null,
-      "period_end": "2021-12-31",
-      "filed": "2022-02-24",
-      "accession": "0001415404-22-000005",
-      "tag": "LongTermDebtNoncurrent",
-      "form": "10-K"
+      "period_end": "2026-06-30",
+      "filed": "2026-08-03",
+      "tag": "LongTermDebtAndCapitalLeaseObligations",
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     },
-    "shares_outstanding": null
+    "shares_outstanding": {
+      "value": 47687039,
+      "unit": "shares",
+      "period_end": "2020-09-30",
+      "filed": "2020-11-05",
+      "tag": "CommonStockSharesOutstanding",
+      "form": "10-Q",
+      "method": "latest_reported_balance"
+    }
   },
   "review_required": true,
-  "note": "SEC reported fields. Different tags and fiscal periods require validation. Operating cash flow minus capex is not automatically unlevered FCFF. Not a completed DCF valuation."
+  "warnings": [
+    "Operating cash flow minus CapEx is not unlevered FCFF",
+    "Shares outstanding are not necessarily diluted shares",
+    "Debt and cash require classification and date checks"
+  ]
 }

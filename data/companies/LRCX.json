@@ -4,70 +4,73 @@
   "company_name": "LAM RESEARCH CORPORATION",
   "sector": "Information Technology",
   "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000707549.json",
-  "fetched_at_utc": "2026-10-24T01:32:25.683740+00:00",
+  "fetched_at_utc": "2026-10-24T02:11:49.738904+00:00",
   "financials": {
     "revenue": {
-      "value": 23232690000,
+      "value": 26127935000,
       "unit": "USD",
-      "period_start": "2025-06-30",
-      "period_end": "2026-06-28",
-      "filed": "2026-08-07",
-      "accession": "0000707549-26-000037",
+      "period_end": "2026-09-27",
+      "filed": "2026-10-22",
       "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2026-06-28"
     },
     "operating_cash_flow": {
-      "value": 5857657000,
+      "value": 7576345000,
       "unit": "USD",
-      "period_start": "2025-06-30",
-      "period_end": "2026-06-28",
-      "filed": "2026-08-07",
-      "accession": "0000707549-26-000037",
+      "period_end": "2026-09-27",
+      "filed": "2026-10-22",
       "tag": "NetCashProvidedByUsedInOperatingActivities",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2026-06-28"
     },
     "capital_expenditure": null,
     "cash": {
-      "value": 5579171000,
+      "value": 7437384000,
       "unit": "USD",
-      "period_start": null,
-      "period_end": "2026-06-28",
-      "filed": "2026-08-07",
-      "accession": "0000707549-26-000037",
+      "period_end": "2026-09-27",
+      "filed": "2026-10-22",
       "tag": "CashAndCashEquivalentsAtCarryingValue",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     },
     "debt_current": {
-      "value": 147000,
+      "value": 3486000,
       "unit": "USD",
-      "period_start": null,
-      "period_end": "2026-06-28",
-      "filed": "2026-08-07",
-      "accession": "0000707549-26-000037",
-      "tag": "LongTermDebtCurrent",
-      "form": "10-K"
+      "period_end": "2026-09-27",
+      "filed": "2026-10-22",
+      "tag": "LongTermDebtAndCapitalLeaseObligationsCurrent",
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     },
     "debt_noncurrent": {
-      "value": 3721914000,
+      "value": 3731958000,
       "unit": "USD",
-      "period_start": null,
-      "period_end": "2026-06-28",
-      "filed": "2026-08-07",
-      "accession": "0000707549-26-000037",
-      "tag": "LongTermDebtNoncurrent",
-      "form": "10-K"
+      "period_end": "2026-09-27",
+      "filed": "2026-10-22",
+      "tag": "LongTermDebtAndCapitalLeaseObligations",
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     },
     "shares_outstanding": {
-      "value": 1251278000,
+      "value": 1249145000,
       "unit": "shares",
-      "period_start": null,
-      "period_end": "2026-06-28",
-      "filed": "2026-08-07",
-      "accession": "0000707549-26-000037",
+      "period_end": "2026-09-27",
+      "filed": "2026-10-22",
       "tag": "CommonStockSharesOutstanding",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     }
   },
   "review_required": true,
-  "note": "SEC reported fields. Different tags and fiscal periods require validation. Operating cash flow minus capex is not automatically unlevered FCFF. Not a completed DCF valuation."
+  "warnings": [
+    "Missing field: capital_expenditure",
+    "Operating cash flow minus CapEx is not unlevered FCFF",
+    "Shares outstanding are not necessarily diluted shares",
+    "Debt and cash require classification and date checks"
+  ]
 }

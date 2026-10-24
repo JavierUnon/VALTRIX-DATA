@@ -4,7 +4,7 @@
   "company_name": "CUMMINS INC.",
   "sector": "Industrials",
   "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000026172.json",
-  "fetched_at_utc": "2026-10-24T01:30:22.272067+00:00",
+  "fetched_at_utc": "2026-10-24T02:10:12.211972+00:00",
   "financials": {
     "revenue": {
       "value": 33670000000,
@@ -12,62 +12,68 @@
       "period_start": "2025-01-01",
       "period_end": "2025-12-31",
       "filed": "2026-02-10",
-      "accession": "0000026172-26-000009",
       "tag": "Revenues",
-      "form": "10-K"
+      "form": "10-K",
+      "method": "annual_fallback",
+      "warning": "TTM unavailable; annual data used"
     },
     "operating_cash_flow": {
-      "value": 3621000000,
+      "value": 4647000000,
       "unit": "USD",
-      "period_start": "2025-01-01",
-      "period_end": "2025-12-31",
-      "filed": "2026-02-10",
-      "accession": "0000026172-26-000009",
+      "period_end": "2026-06-30",
+      "filed": "2026-08-04",
       "tag": "NetCashProvidedByUsedInOperatingActivities",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
     },
     "capital_expenditure": {
-      "value": 1235000000,
+      "value": 1280000000,
       "unit": "USD",
-      "period_start": "2025-01-01",
-      "period_end": "2025-12-31",
-      "filed": "2026-02-10",
-      "accession": "0000026172-26-000009",
+      "period_end": "2026-06-30",
+      "filed": "2026-08-04",
       "tag": "PaymentsToAcquirePropertyPlantAndEquipment",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
     },
     "cash": {
-      "value": 2101000000,
+      "value": 3179000000,
       "unit": "USD",
-      "period_start": null,
-      "period_end": "2022-12-31",
-      "filed": "2023-02-14",
-      "accession": "0000026172-23-000005",
+      "period_end": "2026-06-30",
+      "filed": "2026-08-04",
       "tag": "CashAndCashEquivalentsAtCarryingValue",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     },
     "debt_current": {
-      "value": 94000000,
+      "value": 151000000,
       "unit": "USD",
-      "period_start": null,
-      "period_end": "2025-12-31",
-      "filed": "2026-02-10",
-      "accession": "0000026172-26-000009",
+      "period_end": "2026-06-30",
+      "filed": "2026-08-04",
       "tag": "LongTermDebtCurrent",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     },
     "debt_noncurrent": {
-      "value": 6792000000,
+      "value": 6737000000,
       "unit": "USD",
-      "period_start": null,
-      "period_end": "2025-12-31",
-      "filed": "2026-02-10",
-      "accession": "0000026172-26-000009",
+      "period_end": "2026-06-30",
+      "filed": "2026-08-04",
       "tag": "LongTermDebtAndCapitalLeaseObligations",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     },
     "shares_outstanding": null
   },
   "review_required": true,
-  "note": "SEC reported fields. Different tags and fiscal periods require validation. Operating cash flow minus capex is not automatically unlevered FCFF. Not a completed DCF valuation."
+  "warnings": [
+    "TTM unavailable: revenue",
+    "Missing field: shares_outstanding",
+    "Operating cash flow minus CapEx is not unlevered FCFF",
+    "Shares outstanding are not necessarily diluted shares",
+    "Debt and cash require classification and date checks"
+  ]
 }

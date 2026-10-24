@@ -4,70 +4,75 @@
   "company_name": "McDONALD\u2019S CORPORATION",
   "sector": "Consumer Discretionary",
   "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000063908.json",
-  "fetched_at_utc": "2026-10-24T01:32:41.139308+00:00",
+  "fetched_at_utc": "2026-10-24T02:12:04.325431+00:00",
   "financials": {
     "revenue": {
-      "value": 26885000000,
+      "value": 27702000000,
       "unit": "USD",
-      "period_start": "2025-01-01",
-      "period_end": "2025-12-31",
-      "filed": "2026-02-24",
-      "accession": "0000063908-26-000035",
+      "period_end": "2026-06-30",
+      "filed": "2026-08-07",
       "tag": "Revenues",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
     },
     "operating_cash_flow": {
-      "value": 10551000000,
+      "value": 11347000000,
       "unit": "USD",
-      "period_start": "2025-01-01",
-      "period_end": "2025-12-31",
-      "filed": "2026-02-24",
-      "accession": "0000063908-26-000035",
+      "period_end": "2026-06-30",
+      "filed": "2026-08-07",
       "tag": "NetCashProvidedByUsedInOperatingActivities",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
     },
     "capital_expenditure": {
-      "value": 3365000000,
+      "value": 3586000000,
       "unit": "USD",
-      "period_start": "2025-01-01",
-      "period_end": "2025-12-31",
-      "filed": "2026-02-24",
-      "accession": "0000063908-26-000035",
+      "period_end": "2026-06-30",
+      "filed": "2026-08-07",
       "tag": "PaymentsToAcquirePropertyPlantAndEquipment",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
     },
     "cash": {
-      "value": 774000000,
+      "value": 822000000,
       "unit": "USD",
-      "period_start": null,
-      "period_end": "2025-12-31",
-      "filed": "2026-02-24",
-      "accession": "0000063908-26-000035",
+      "period_end": "2026-06-30",
+      "filed": "2026-08-07",
       "tag": "CashAndCashEquivalentsAtCarryingValue",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     },
     "debt_current": {
       "value": 725000000,
       "unit": "USD",
-      "period_start": null,
       "period_end": "2025-12-31",
       "filed": "2026-02-24",
-      "accession": "0000063908-26-000035",
       "tag": "LongTermDebtCurrent",
-      "form": "10-K"
+      "form": "10-K",
+      "method": "latest_reported_balance"
     },
     "debt_noncurrent": {
-      "value": 39973000000,
+      "value": 39863000000,
       "unit": "USD",
-      "period_start": null,
-      "period_end": "2025-12-31",
-      "filed": "2026-02-24",
-      "accession": "0000063908-26-000035",
+      "period_end": "2026-06-30",
+      "filed": "2026-08-07",
       "tag": "LongTermDebtNoncurrent",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     },
     "shares_outstanding": null
   },
   "review_required": true,
-  "note": "SEC reported fields. Different tags and fiscal periods require validation. Operating cash flow minus capex is not automatically unlevered FCFF. Not a completed DCF valuation."
+  "warnings": [
+    "Missing field: shares_outstanding",
+    "Operating cash flow minus CapEx is not unlevered FCFF",
+    "Shares outstanding are not necessarily diluted shares",
+    "Debt and cash require classification and date checks"
+  ]
 }

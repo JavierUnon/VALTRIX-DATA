@@ -4,61 +4,68 @@
   "company_name": "TWILIO INC.",
   "sector": "Information Technology",
   "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001447669.json",
-  "fetched_at_utc": "2026-10-24T01:34:14.942041+00:00",
+  "fetched_at_utc": "2026-10-24T02:13:38.841721+00:00",
   "financials": {
     "revenue": {
-      "value": 5067220000,
+      "value": 5572328000,
       "unit": "USD",
-      "period_start": "2025-01-01",
-      "period_end": "2025-12-31",
-      "filed": "2026-02-24",
-      "accession": "0001447669-26-000021",
+      "period_end": "2026-06-30",
+      "filed": "2026-08-07",
       "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
     },
     "operating_cash_flow": {
-      "value": 1003244000,
+      "value": 1060709000,
       "unit": "USD",
-      "period_start": "2025-01-01",
-      "period_end": "2025-12-31",
-      "filed": "2026-02-24",
-      "accession": "0001447669-26-000021",
+      "period_end": "2026-06-30",
+      "filed": "2026-08-07",
       "tag": "NetCashProvidedByUsedInOperatingActivities",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
     },
     "capital_expenditure": {
-      "value": 46048000,
+      "value": 41107000,
       "unit": "USD",
-      "period_start": "2021-01-01",
-      "period_end": "2021-12-31",
-      "filed": "2022-02-22",
-      "accession": "0001447669-22-000049",
+      "period_end": "2022-09-30",
+      "filed": "2022-11-04",
       "tag": "PaymentsToAcquirePropertyPlantAndEquipment",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2021-12-31"
     },
     "cash": {
-      "value": 682335000,
+      "value": 823261000,
       "unit": "USD",
-      "period_start": null,
-      "period_end": "2025-12-31",
-      "filed": "2026-02-24",
-      "accession": "0001447669-26-000021",
+      "period_end": "2026-06-30",
+      "filed": "2026-08-07",
       "tag": "CashAndCashEquivalentsAtCarryingValue",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     },
     "debt_current": null,
     "debt_noncurrent": null,
     "shares_outstanding": {
       "value": 152411346,
       "unit": "shares",
-      "period_start": null,
       "period_end": "2025-12-31",
       "filed": "2026-02-24",
-      "accession": "0001447669-26-000021",
       "tag": "CommonStockSharesOutstanding",
-      "form": "10-K"
+      "form": "10-K",
+      "method": "latest_reported_balance"
     }
   },
   "review_required": true,
-  "note": "SEC reported fields. Different tags and fiscal periods require validation. Operating cash flow minus capex is not automatically unlevered FCFF. Not a completed DCF valuation."
+  "warnings": [
+    "Missing field: debt_current",
+    "Missing field: debt_noncurrent",
+    "Operating cash flow minus CapEx is not unlevered FCFF",
+    "Shares outstanding are not necessarily diluted shares",
+    "Debt and cash require classification and date checks"
+  ]
 }

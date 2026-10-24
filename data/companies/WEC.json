@@ -4,27 +4,29 @@
   "company_name": "WEC ENERGY GROUP, INC.",
   "sector": "Utilities",
   "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000783325.json",
-  "fetched_at_utc": "2026-10-24T01:34:38.197344+00:00",
+  "fetched_at_utc": "2026-10-24T02:14:03.092896+00:00",
   "financials": {
     "revenue": {
-      "value": 9800100000,
+      "value": 10137400000,
       "unit": "USD",
-      "period_start": "2025-01-01",
-      "period_end": "2025-12-31",
-      "filed": "2026-02-20",
-      "accession": "0000783325-26-000018",
+      "period_end": "2026-06-30",
+      "filed": "2026-08-04",
       "tag": "Revenues",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
     },
     "operating_cash_flow": {
-      "value": 3379400000,
+      "value": 3574200000,
       "unit": "USD",
-      "period_start": "2025-01-01",
-      "period_end": "2025-12-31",
-      "filed": "2026-02-20",
-      "accession": "0000783325-26-000018",
+      "period_end": "2026-06-30",
+      "filed": "2026-08-04",
       "tag": "NetCashProvidedByUsedInOperatingActivities",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
     },
     "capital_expenditure": {
       "value": 2696900000,
@@ -32,51 +34,53 @@
       "period_start": "2022-01-01",
       "period_end": "2022-12-31",
       "filed": "2023-02-23",
-      "accession": "0000107815-23-000100",
       "tag": "PaymentsToAcquirePropertyPlantAndEquipment",
-      "form": "10-K"
+      "form": "10-K",
+      "method": "annual_fallback",
+      "warning": "TTM unavailable; annual data used"
     },
     "cash": {
-      "value": 27600000,
+      "value": 50000000,
       "unit": "USD",
-      "period_start": null,
-      "period_end": "2025-12-31",
-      "filed": "2026-02-20",
-      "accession": "0000783325-26-000018",
+      "period_end": "2026-06-30",
+      "filed": "2026-08-04",
       "tag": "CashAndCashEquivalentsAtCarryingValue",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     },
     "debt_current": {
-      "value": 1519400000,
+      "value": 1413500000,
       "unit": "USD",
-      "period_start": null,
-      "period_end": "2025-12-31",
-      "filed": "2026-02-20",
-      "accession": "0000783325-26-000018",
+      "period_end": "2026-06-30",
+      "filed": "2026-08-04",
       "tag": "LongTermDebtCurrent",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     },
     "debt_noncurrent": {
-      "value": 18498100000,
+      "value": 19216300000,
       "unit": "USD",
-      "period_start": null,
-      "period_end": "2025-12-31",
-      "filed": "2026-02-20",
-      "accession": "0000783325-26-000018",
+      "period_end": "2026-06-30",
+      "filed": "2026-08-04",
       "tag": "LongTermDebtNoncurrent",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     },
     "shares_outstanding": {
-      "value": 325461519,
+      "value": 325849383,
       "unit": "shares",
-      "period_start": null,
-      "period_end": "2025-12-31",
-      "filed": "2026-02-20",
-      "accession": "0000783325-26-000018",
+      "period_end": "2026-06-30",
+      "filed": "2026-08-04",
       "tag": "CommonStockSharesOutstanding",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     }
   },
   "review_required": true,
-  "note": "SEC reported fields. Different tags and fiscal periods require validation. Operating cash flow minus capex is not automatically unlevered FCFF. Not a completed DCF valuation."
+  "warnings": [
+    "TTM unavailable: capital_expenditure",
+    "Operating cash flow minus CapEx is not unlevered FCFF",
+    "Shares outstanding are not necessarily diluted shares",
+    "Debt and cash require classification and date checks"
+  ]
 }

@@ -4,17 +4,18 @@
   "company_name": "JOHNSON CONTROLS INTERNATIONAL PLC",
   "sector": "Industrials",
   "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000833444.json",
-  "fetched_at_utc": "2026-10-24T01:32:15.575847+00:00",
+  "fetched_at_utc": "2026-10-24T02:11:39.712642+00:00",
   "financials": {
     "revenue": {
-      "value": 23596000000,
+      "value": 24433000000,
       "unit": "USD",
-      "period_start": "2024-10-01",
-      "period_end": "2025-09-30",
-      "filed": "2025-11-14",
-      "accession": "0000833444-25-000097",
+      "period_end": "2026-03-31",
+      "filed": "2026-05-06",
       "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-09-30"
     },
     "operating_cash_flow": {
       "value": 2551000000,
@@ -22,52 +23,55 @@
       "period_start": "2020-10-01",
       "period_end": "2021-09-30",
       "filed": "2021-11-15",
-      "accession": "0000833444-21-000046",
       "tag": "NetCashProvidedByUsedInOperatingActivities",
-      "form": "10-K"
+      "form": "10-K",
+      "method": "annual_fallback",
+      "warning": "TTM unavailable; annual data used"
     },
     "capital_expenditure": null,
     "cash": {
-      "value": 379000000,
+      "value": 698000000,
       "unit": "USD",
-      "period_start": null,
-      "period_end": "2025-09-30",
-      "filed": "2025-11-14",
-      "accession": "0000833444-25-000097",
+      "period_end": "2026-03-31",
+      "filed": "2026-05-06",
       "tag": "CashAndCashEquivalentsAtCarryingValue",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     },
     "debt_current": {
-      "value": 566000000,
+      "value": 28000000,
       "unit": "USD",
-      "period_start": null,
-      "period_end": "2025-09-30",
-      "filed": "2025-11-14",
-      "accession": "0000833444-25-000097",
+      "period_end": "2026-03-31",
+      "filed": "2026-05-06",
       "tag": "LongTermDebtAndCapitalLeaseObligationsCurrent",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     },
     "debt_noncurrent": {
-      "value": 8591000000,
+      "value": 8613000000,
       "unit": "USD",
-      "period_start": null,
-      "period_end": "2025-09-30",
-      "filed": "2025-11-14",
-      "accession": "0000833444-25-000097",
+      "period_end": "2026-03-31",
+      "filed": "2026-05-06",
       "tag": "LongTermDebtAndCapitalLeaseObligations",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     },
     "shares_outstanding": {
       "value": 935500000,
       "unit": "shares",
-      "period_start": null,
       "period_end": "2016-09-02",
       "filed": "2018-11-20",
-      "accession": "0000833444-18-000053",
       "tag": "CommonStockSharesOutstanding",
-      "form": "10-K"
+      "form": "10-K",
+      "method": "latest_reported_balance"
     }
   },
   "review_required": true,
-  "note": "SEC reported fields. Different tags and fiscal periods require validation. Operating cash flow minus capex is not automatically unlevered FCFF. Not a completed DCF valuation."
+  "warnings": [
+    "TTM unavailable: operating_cash_flow",
+    "Missing field: capital_expenditure",
+    "Operating cash flow minus CapEx is not unlevered FCFF",
+    "Shares outstanding are not necessarily diluted shares",
+    "Debt and cash require classification and date checks"
+  ]
 }

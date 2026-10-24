@@ -4,7 +4,7 @@
   "company_name": "Automatic Data Processing, Inc.",
   "sector": "Industrials",
   "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000008670.json",
-  "fetched_at_utc": "2026-10-24T01:29:25.843379+00:00",
+  "fetched_at_utc": "2026-10-24T02:09:08.142503+00:00",
   "financials": {
     "revenue": {
       "value": 21947400000,
@@ -12,9 +12,9 @@
       "period_start": "2025-07-01",
       "period_end": "2026-06-30",
       "filed": "2026-08-05",
-      "accession": "0000008670-26-000030",
       "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
-      "form": "10-K"
+      "form": "10-K",
+      "method": "annual"
     },
     "operating_cash_flow": {
       "value": 5441200000,
@@ -22,52 +22,53 @@
       "period_start": "2025-07-01",
       "period_end": "2026-06-30",
       "filed": "2026-08-05",
-      "accession": "0000008670-26-000030",
       "tag": "NetCashProvidedByUsedInOperatingActivities",
-      "form": "10-K"
+      "form": "10-K",
+      "method": "annual"
     },
     "capital_expenditure": null,
     "cash": {
       "value": 4230100000,
       "unit": "USD",
-      "period_start": null,
       "period_end": "2026-06-30",
       "filed": "2026-08-05",
-      "accession": "0000008670-26-000030",
       "tag": "CashAndCashEquivalentsAtCarryingValue",
-      "form": "10-K"
+      "form": "10-K",
+      "method": "latest_reported_balance"
     },
     "debt_current": {
-      "value": -2800000,
+      "value": 18200000,
       "unit": "USD",
-      "period_start": null,
-      "period_end": "2011-06-30",
-      "filed": "2011-08-24",
-      "accession": "0001206774-11-001935",
+      "period_end": "2012-03-31",
+      "filed": "2012-05-04",
       "tag": "LongTermDebtCurrent",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     },
     "debt_noncurrent": {
       "value": 4964100000,
       "unit": "USD",
-      "period_start": null,
       "period_end": "2026-06-30",
       "filed": "2026-08-05",
-      "accession": "0000008670-26-000030",
       "tag": "LongTermDebtNoncurrent",
-      "form": "10-K"
+      "form": "10-K",
+      "method": "latest_reported_balance"
     },
     "shares_outstanding": {
       "value": 397800000,
       "unit": "shares",
-      "period_start": null,
       "period_end": "2026-06-30",
       "filed": "2026-08-05",
-      "accession": "0000008670-26-000030",
       "tag": "CommonStockSharesOutstanding",
-      "form": "10-K"
+      "form": "10-K",
+      "method": "latest_reported_balance"
     }
   },
   "review_required": true,
-  "note": "SEC reported fields. Different tags and fiscal periods require validation. Operating cash flow minus capex is not automatically unlevered FCFF. Not a completed DCF valuation."
+  "warnings": [
+    "Missing field: capital_expenditure",
+    "Operating cash flow minus CapEx is not unlevered FCFF",
+    "Shares outstanding are not necessarily diluted shares",
+    "Debt and cash require classification and date checks"
+  ]
 }

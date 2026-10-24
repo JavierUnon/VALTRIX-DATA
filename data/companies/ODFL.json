@@ -4,70 +4,73 @@
   "company_name": "OLD DOMINION FREIGHT LINE, INC.",
   "sector": "Industrials",
   "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000878927.json",
-  "fetched_at_utc": "2026-10-24T01:33:08.768622+00:00",
+  "fetched_at_utc": "2026-10-24T02:12:31.366459+00:00",
   "financials": {
     "revenue": {
-      "value": 5496389000,
+      "value": 5602507000,
       "unit": "USD",
-      "period_start": "2025-01-01",
-      "period_end": "2025-12-31",
-      "filed": "2026-02-24",
-      "accession": "0001193125-26-067161",
+      "period_end": "2026-06-30",
+      "filed": "2026-08-05",
       "tag": "RevenueFromContractWithCustomerIncludingAssessedTax",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
     },
     "operating_cash_flow": {
-      "value": 1370133000,
+      "value": 1394102000,
       "unit": "USD",
-      "period_start": "2025-01-01",
-      "period_end": "2025-12-31",
-      "filed": "2026-02-24",
-      "accession": "0001193125-26-067161",
+      "period_end": "2026-06-30",
+      "filed": "2026-08-05",
       "tag": "NetCashProvidedByUsedInOperatingActivities",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
     },
     "capital_expenditure": null,
     "cash": {
-      "value": 120091000,
+      "value": 283939000,
       "unit": "USD",
-      "period_start": null,
-      "period_end": "2025-12-31",
-      "filed": "2026-02-24",
-      "accession": "0001193125-26-067161",
+      "period_end": "2026-06-30",
+      "filed": "2026-08-05",
       "tag": "CashAndCashEquivalentsAtCarryingValue",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     },
     "debt_current": {
-      "value": 20000000,
+      "value": 19997000,
       "unit": "USD",
-      "period_start": null,
-      "period_end": "2025-12-31",
-      "filed": "2026-02-24",
-      "accession": "0001193125-26-067161",
+      "period_end": "2026-06-30",
+      "filed": "2026-08-05",
       "tag": "LongTermDebtCurrent",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     },
     "debt_noncurrent": {
-      "value": 19995000,
+      "value": 0,
       "unit": "USD",
-      "period_start": null,
-      "period_end": "2025-12-31",
-      "filed": "2026-02-24",
-      "accession": "0001193125-26-067161",
-      "tag": "LongTermDebtAndCapitalLeaseObligations",
-      "form": "10-K"
+      "period_end": "2026-06-30",
+      "filed": "2026-08-05",
+      "tag": "LongTermDebtNoncurrent",
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     },
     "shares_outstanding": {
-      "value": 208556788,
+      "value": 207471296,
       "unit": "shares",
-      "period_start": null,
-      "period_end": "2025-12-31",
-      "filed": "2026-02-24",
-      "accession": "0001193125-26-067161",
+      "period_end": "2026-06-30",
+      "filed": "2026-08-05",
       "tag": "CommonStockSharesOutstanding",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     }
   },
   "review_required": true,
-  "note": "SEC reported fields. Different tags and fiscal periods require validation. Operating cash flow minus capex is not automatically unlevered FCFF. Not a completed DCF valuation."
+  "warnings": [
+    "Missing field: capital_expenditure",
+    "Operating cash flow minus CapEx is not unlevered FCFF",
+    "Shares outstanding are not necessarily diluted shares",
+    "Debt and cash require classification and date checks"
+  ]
 }

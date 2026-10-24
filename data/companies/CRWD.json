@@ -4,70 +4,75 @@
   "company_name": "CrowdStrike Holdings, Inc.",
   "sector": "Information Technology",
   "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001535527.json",
-  "fetched_at_utc": "2026-10-24T01:30:20.091669+00:00",
+  "fetched_at_utc": "2026-10-24T02:10:10.253946+00:00",
   "financials": {
     "revenue": {
-      "value": 4812005000,
+      "value": 5396145000,
       "unit": "USD",
-      "period_start": "2025-02-01",
-      "period_end": "2026-01-31",
-      "filed": "2026-03-05",
-      "accession": "0001535527-26-000010",
+      "period_end": "2026-07-31",
+      "filed": "2026-08-27",
       "tag": "RevenueFromContractWithCustomerIncludingAssessedTax",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2026-01-31"
     },
     "operating_cash_flow": {
-      "value": 1612349000,
+      "value": 2016615000,
       "unit": "USD",
-      "period_start": "2025-02-01",
-      "period_end": "2026-01-31",
-      "filed": "2026-03-05",
-      "accession": "0001535527-26-000010",
+      "period_end": "2026-07-31",
+      "filed": "2026-08-27",
       "tag": "NetCashProvidedByUsedInOperatingActivities",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2026-01-31"
     },
     "capital_expenditure": {
-      "value": 302108000,
+      "value": 407897000,
       "unit": "USD",
-      "period_start": "2025-02-01",
-      "period_end": "2026-01-31",
-      "filed": "2026-03-05",
-      "accession": "0001535527-26-000010",
+      "period_end": "2026-07-31",
+      "filed": "2026-08-27",
       "tag": "PaymentsToAcquirePropertyPlantAndEquipment",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2026-01-31"
     },
     "cash": {
-      "value": 5230125000,
+      "value": 5013847000,
       "unit": "USD",
-      "period_start": null,
-      "period_end": "2026-01-31",
-      "filed": "2026-03-05",
-      "accession": "0001535527-26-000010",
+      "period_end": "2026-07-31",
+      "filed": "2026-08-27",
       "tag": "CashAndCashEquivalentsAtCarryingValue",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     },
     "debt_current": null,
     "debt_noncurrent": {
-      "value": 745471000,
+      "value": 746216000,
       "unit": "USD",
-      "period_start": null,
-      "period_end": "2026-01-31",
-      "filed": "2026-03-05",
-      "accession": "0001535527-26-000010",
+      "period_end": "2026-07-31",
+      "filed": "2026-08-27",
       "tag": "LongTermDebtNoncurrent",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     },
     "shares_outstanding": {
       "value": 0,
       "unit": "shares",
-      "period_start": null,
       "period_end": "2020-01-31",
       "filed": "2020-03-23",
-      "accession": "0001535527-20-000006",
       "tag": "CommonStockSharesOutstanding",
-      "form": "10-K"
+      "form": "10-K",
+      "method": "latest_reported_balance"
     }
   },
   "review_required": true,
-  "note": "SEC reported fields. Different tags and fiscal periods require validation. Operating cash flow minus capex is not automatically unlevered FCFF. Not a completed DCF valuation."
+  "warnings": [
+    "Missing field: debt_current",
+    "Operating cash flow minus CapEx is not unlevered FCFF",
+    "Shares outstanding are not necessarily diluted shares",
+    "Debt and cash require classification and date checks"
+  ]
 }

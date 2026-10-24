@@ -4,79 +4,82 @@
   "company_name": "Norwegian Cruise Line Holdings Ltd.",
   "sector": "Consumer Discretionary",
   "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001513761.json",
-  "fetched_at_utc": "2026-10-24T01:33:03.694535+00:00",
+  "fetched_at_utc": "2026-10-24T02:12:26.265254+00:00",
   "financials": {
     "revenue": {
-      "value": 9827592000,
+      "value": 10154307000,
       "unit": "USD",
-      "period_start": "2025-01-01",
-      "period_end": "2025-12-31",
-      "filed": "2026-03-02",
-      "accession": "0001104659-26-022067",
+      "period_end": "2026-06-30",
+      "filed": "2026-08-03",
       "tag": "RevenueFromContractWithCustomerIncludingAssessedTax",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
     },
     "operating_cash_flow": {
-      "value": 2089746000,
+      "value": 2109712000,
       "unit": "USD",
-      "period_start": "2025-01-01",
-      "period_end": "2025-12-31",
-      "filed": "2026-03-02",
-      "accession": "0001104659-26-022067",
+      "period_end": "2026-06-30",
+      "filed": "2026-08-03",
       "tag": "NetCashProvidedByUsedInOperatingActivities",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
     },
     "capital_expenditure": {
-      "value": 3259606000,
+      "value": 3295106000,
       "unit": "USD",
-      "period_start": "2025-01-01",
-      "period_end": "2025-12-31",
-      "filed": "2026-03-02",
-      "accession": "0001104659-26-022067",
+      "period_end": "2026-06-30",
+      "filed": "2026-08-03",
       "tag": "PaymentsToAcquirePropertyPlantAndEquipment",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
     },
     "cash": {
-      "value": 209893000,
+      "value": 218100000,
       "unit": "USD",
-      "period_start": null,
-      "period_end": "2025-12-31",
-      "filed": "2026-03-02",
-      "accession": "0001104659-26-022067",
+      "period_end": "2026-06-30",
+      "filed": "2026-08-03",
       "tag": "CashAndCashEquivalentsAtCarryingValue",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     },
     "debt_current": {
-      "value": 875899000,
+      "value": 1141370000,
       "unit": "USD",
-      "period_start": null,
-      "period_end": "2025-12-31",
-      "filed": "2026-03-02",
-      "accession": "0001104659-26-022067",
+      "period_end": "2026-06-30",
+      "filed": "2026-08-03",
       "tag": "LongTermDebtAndCapitalLeaseObligationsCurrent",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     },
     "debt_noncurrent": {
-      "value": 13730277000,
+      "value": 13893415000,
       "unit": "USD",
-      "period_start": null,
-      "period_end": "2025-12-31",
-      "filed": "2026-03-02",
-      "accession": "0001104659-26-022067",
+      "period_end": "2026-06-30",
+      "filed": "2026-08-03",
       "tag": "LongTermDebtAndCapitalLeaseObligations",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     },
     "shares_outstanding": {
-      "value": 455257489,
+      "value": 459158514,
       "unit": "shares",
-      "period_start": null,
-      "period_end": "2025-12-31",
-      "filed": "2026-03-02",
-      "accession": "0001104659-26-022067",
+      "period_end": "2026-06-30",
+      "filed": "2026-08-03",
       "tag": "CommonStockSharesOutstanding",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     }
   },
   "review_required": true,
-  "note": "SEC reported fields. Different tags and fiscal periods require validation. Operating cash flow minus capex is not automatically unlevered FCFF. Not a completed DCF valuation."
+  "warnings": [
+    "Operating cash flow minus CapEx is not unlevered FCFF",
+    "Shares outstanding are not necessarily diluted shares",
+    "Debt and cash require classification and date checks"
+  ]
 }

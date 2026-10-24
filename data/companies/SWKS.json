@@ -4,61 +4,68 @@
   "company_name": "SKYWORKS SOLUTIONS, INC.",
   "sector": "Information Technology",
   "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000004127.json",
-  "fetched_at_utc": "2026-10-24T01:33:49.633113+00:00",
+  "fetched_at_utc": "2026-10-24T02:13:13.610113+00:00",
   "financials": {
     "revenue": {
-      "value": 4086900000,
+      "value": 4014100000,
       "unit": "USD",
-      "period_start": "2024-09-28",
-      "period_end": "2025-10-03",
-      "filed": "2025-11-07",
-      "accession": "0000004127-25-000085",
+      "period_end": "2026-07-03",
+      "filed": "2026-07-28",
       "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-10-03"
     },
     "operating_cash_flow": {
-      "value": 1300800000,
+      "value": 716200000,
       "unit": "USD",
-      "period_start": "2024-09-28",
-      "period_end": "2025-10-03",
-      "filed": "2025-11-07",
-      "accession": "0000004127-25-000085",
+      "period_end": "2026-07-03",
+      "filed": "2026-07-28",
       "tag": "NetCashProvidedByUsedInOperatingActivities",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-10-03"
     },
     "capital_expenditure": {
-      "value": 195000000,
+      "value": 282000000,
       "unit": "USD",
-      "period_start": "2024-09-28",
-      "period_end": "2025-10-03",
-      "filed": "2025-11-07",
-      "accession": "0000004127-25-000085",
+      "period_end": "2026-07-03",
+      "filed": "2026-07-28",
       "tag": "PaymentsToAcquirePropertyPlantAndEquipment",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-10-03"
     },
     "cash": {
-      "value": 1161300000,
+      "value": 790000000,
       "unit": "USD",
-      "period_start": null,
-      "period_end": "2025-10-03",
-      "filed": "2025-11-07",
-      "accession": "0000004127-25-000085",
+      "period_end": "2026-07-03",
+      "filed": "2026-07-28",
       "tag": "CashAndCashEquivalentsAtCarryingValue",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     },
     "debt_current": null,
     "debt_noncurrent": null,
     "shares_outstanding": {
-      "value": 148700000,
+      "value": 150500000,
       "unit": "shares",
-      "period_start": null,
-      "period_end": "2025-10-03",
-      "filed": "2025-11-07",
-      "accession": "0000004127-25-000085",
+      "period_end": "2026-07-03",
+      "filed": "2026-07-28",
       "tag": "CommonStockSharesOutstanding",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     }
   },
   "review_required": true,
-  "note": "SEC reported fields. Different tags and fiscal periods require validation. Operating cash flow minus capex is not automatically unlevered FCFF. Not a completed DCF valuation."
+  "warnings": [
+    "Missing field: debt_current",
+    "Missing field: debt_noncurrent",
+    "Operating cash flow minus CapEx is not unlevered FCFF",
+    "Shares outstanding are not necessarily diluted shares",
+    "Debt and cash require classification and date checks"
+  ]
 }

@@ -4,70 +4,73 @@
   "company_name": "CHARLES RIVER LABORATORIES INTERNATIONAL,\u00a0INC.",
   "sector": "Health Care",
   "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001100682.json",
-  "fetched_at_utc": "2026-10-24T01:29:55.969222+00:00",
+  "fetched_at_utc": "2026-10-24T02:09:42.205346+00:00",
   "financials": {
     "revenue": {
-      "value": 4015382000,
+      "value": 3998987000,
       "unit": "USD",
-      "period_start": "2024-12-29",
-      "period_end": "2025-12-27",
-      "filed": "2026-02-18",
-      "accession": "0001100682-26-000022",
+      "period_end": "2026-06-27",
+      "filed": "2026-08-05",
       "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-27"
     },
     "operating_cash_flow": {
-      "value": 737646000,
+      "value": 582148000,
       "unit": "USD",
-      "period_start": "2024-12-29",
-      "period_end": "2025-12-27",
-      "filed": "2026-02-18",
-      "accession": "0001100682-26-000022",
+      "period_end": "2026-06-27",
+      "filed": "2026-08-05",
       "tag": "NetCashProvidedByUsedInOperatingActivities",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-27"
     },
     "capital_expenditure": null,
     "cash": {
-      "value": 213770000,
+      "value": 192025000,
       "unit": "USD",
-      "period_start": null,
-      "period_end": "2025-12-27",
-      "filed": "2026-02-18",
-      "accession": "0001100682-26-000022",
+      "period_end": "2026-06-27",
+      "filed": "2026-08-05",
       "tag": "CashAndCashEquivalentsAtCarryingValue",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     },
     "debt_current": {
-      "value": 166000,
+      "value": 5460000,
       "unit": "USD",
-      "period_start": null,
-      "period_end": "2025-12-27",
-      "filed": "2026-02-18",
-      "accession": "0001100682-26-000022",
+      "period_end": "2026-06-27",
+      "filed": "2026-08-05",
       "tag": "LongTermDebtCurrent",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     },
     "debt_noncurrent": {
-      "value": 1626760000,
+      "value": 2619985000,
       "unit": "USD",
-      "period_start": null,
-      "period_end": "2018-12-29",
-      "filed": "2019-02-13",
-      "accession": "0001100682-19-000004",
-      "tag": "LongTermDebtNoncurrent",
-      "form": "10-K"
+      "period_end": "2026-06-27",
+      "filed": "2026-08-05",
+      "tag": "LongTermDebtAndCapitalLeaseObligations",
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     },
     "shares_outstanding": {
-      "value": 49217000,
+      "value": 47728000,
       "unit": "shares",
-      "period_start": null,
-      "period_end": "2025-12-27",
-      "filed": "2026-02-18",
-      "accession": "0001100682-26-000022",
+      "period_end": "2026-06-27",
+      "filed": "2026-08-05",
       "tag": "CommonStockSharesOutstanding",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     }
   },
   "review_required": true,
-  "note": "SEC reported fields. Different tags and fiscal periods require validation. Operating cash flow minus capex is not automatically unlevered FCFF. Not a completed DCF valuation."
+  "warnings": [
+    "Missing field: capital_expenditure",
+    "Operating cash flow minus CapEx is not unlevered FCFF",
+    "Shares outstanding are not necessarily diluted shares",
+    "Debt and cash require classification and date checks"
+  ]
 }

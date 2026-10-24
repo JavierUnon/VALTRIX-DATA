@@ -4,7 +4,7 @@
   "company_name": "Vylor Inc.",
   "sector": "Consumer Staples",
   "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0002128626.json",
-  "fetched_at_utc": "2026-10-24T01:34:32.890470+00:00",
+  "fetched_at_utc": "2026-10-24T02:13:57.926156+00:00",
   "financials": {
     "revenue": null,
     "operating_cash_flow": null,
@@ -15,5 +15,16 @@
     "shares_outstanding": null
   },
   "review_required": true,
-  "note": "SEC reported fields. Different tags and fiscal periods require validation. Operating cash flow minus capex is not automatically unlevered FCFF. Not a completed DCF valuation."
+  "warnings": [
+    "Missing field: revenue",
+    "Missing field: operating_cash_flow",
+    "Missing field: capital_expenditure",
+    "Missing field: cash",
+    "Missing field: debt_current",
+    "Missing field: debt_noncurrent",
+    "Missing field: shares_outstanding",
+    "Operating cash flow minus CapEx is not unlevered FCFF",
+    "Shares outstanding are not necessarily diluted shares",
+    "Debt and cash require classification and date checks"
+  ]
 }

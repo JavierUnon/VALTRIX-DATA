@@ -4,79 +4,82 @@
   "company_name": "Broadcom Inc.",
   "sector": "Information Technology",
   "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001730168.json",
-  "fetched_at_utc": "2026-10-24T01:29:41.009284+00:00",
+  "fetched_at_utc": "2026-10-24T02:09:26.904732+00:00",
   "financials": {
     "revenue": {
-      "value": 63887000000,
+      "value": 89104000000,
       "unit": "USD",
-      "period_start": "2024-11-04",
-      "period_end": "2025-11-02",
-      "filed": "2025-12-18",
-      "accession": "0001730168-25-000121",
+      "period_end": "2026-08-02",
+      "filed": "2026-09-10",
       "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-11-02"
     },
     "operating_cash_flow": {
-      "value": 27537000000,
+      "value": 40653000000,
       "unit": "USD",
-      "period_start": "2024-11-04",
-      "period_end": "2025-11-02",
-      "filed": "2025-12-18",
-      "accession": "0001730168-25-000121",
+      "period_end": "2026-08-02",
+      "filed": "2026-09-10",
       "tag": "NetCashProvidedByUsedInOperatingActivities",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-11-02"
     },
     "capital_expenditure": {
-      "value": 623000000,
+      "value": 1250000000,
       "unit": "USD",
-      "period_start": "2024-11-04",
-      "period_end": "2025-11-02",
-      "filed": "2025-12-18",
-      "accession": "0001730168-25-000121",
+      "period_end": "2026-08-02",
+      "filed": "2026-09-10",
       "tag": "PaymentsToAcquirePropertyPlantAndEquipment",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-11-02"
     },
     "cash": {
-      "value": 16178000000,
+      "value": 23975000000,
       "unit": "USD",
-      "period_start": null,
-      "period_end": "2025-11-02",
-      "filed": "2025-12-18",
-      "accession": "0001730168-25-000121",
+      "period_end": "2026-08-02",
+      "filed": "2026-09-10",
       "tag": "CashAndCashEquivalentsAtCarryingValue",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     },
     "debt_current": {
-      "value": 3152000000,
+      "value": 2252000000,
       "unit": "USD",
-      "period_start": null,
-      "period_end": "2025-11-02",
-      "filed": "2025-12-18",
-      "accession": "0001730168-25-000121",
+      "period_end": "2026-08-02",
+      "filed": "2026-09-10",
       "tag": "LongTermDebtCurrent",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     },
     "debt_noncurrent": {
-      "value": 39440000000,
+      "value": 57167000000,
       "unit": "USD",
-      "period_start": null,
-      "period_end": "2021-10-31",
-      "filed": "2021-12-17",
-      "accession": "0001730168-21-000153",
+      "period_end": "2026-08-02",
+      "filed": "2026-09-10",
       "tag": "LongTermDebtNoncurrent",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     },
     "shares_outstanding": {
-      "value": 4741000000,
+      "value": 4774000000,
       "unit": "shares",
-      "period_start": null,
-      "period_end": "2025-11-02",
-      "filed": "2025-12-18",
-      "accession": "0001730168-25-000121",
+      "period_end": "2026-08-02",
+      "filed": "2026-09-10",
       "tag": "CommonStockSharesOutstanding",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     }
   },
   "review_required": true,
-  "note": "SEC reported fields. Different tags and fiscal periods require validation. Operating cash flow minus capex is not automatically unlevered FCFF. Not a completed DCF valuation."
+  "warnings": [
+    "Operating cash flow minus CapEx is not unlevered FCFF",
+    "Shares outstanding are not necessarily diluted shares",
+    "Debt and cash require classification and date checks"
+  ]
 }

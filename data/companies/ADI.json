@@ -4,79 +4,82 @@
   "company_name": "ANALOG DEVICES INC",
   "sector": "Information Technology",
   "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000006281.json",
-  "fetched_at_utc": "2026-10-24T01:29:14.359236+00:00",
+  "fetched_at_utc": "2026-10-24T02:08:56.665151+00:00",
   "financials": {
     "revenue": {
-      "value": 11019707000,
+      "value": 13881744000,
       "unit": "USD",
-      "period_start": "2024-11-03",
-      "period_end": "2025-11-01",
-      "filed": "2025-11-25",
-      "accession": "0000006281-25-000153",
+      "period_end": "2026-08-01",
+      "filed": "2026-08-19",
       "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-11-01"
     },
     "operating_cash_flow": {
-      "value": 4812202000,
+      "value": 5545325000,
       "unit": "USD",
-      "period_start": "2024-11-03",
-      "period_end": "2025-11-01",
-      "filed": "2025-11-25",
-      "accession": "0000006281-25-000153",
+      "period_end": "2026-08-01",
+      "filed": "2026-08-19",
       "tag": "NetCashProvidedByUsedInOperatingActivities",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-11-01"
     },
     "capital_expenditure": {
-      "value": 533552000,
+      "value": 607830000,
       "unit": "USD",
-      "period_start": "2024-11-03",
-      "period_end": "2025-11-01",
-      "filed": "2025-11-25",
-      "accession": "0000006281-25-000153",
+      "period_end": "2026-08-01",
+      "filed": "2026-08-19",
       "tag": "PaymentsToAcquirePropertyPlantAndEquipment",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-11-01"
     },
     "cash": {
-      "value": 2499406000,
+      "value": 2165870000,
       "unit": "USD",
-      "period_start": null,
-      "period_end": "2025-11-01",
-      "filed": "2025-11-25",
-      "accession": "0000006281-25-000153",
+      "period_end": "2026-08-01",
+      "filed": "2026-08-19",
       "tag": "CashAndCashEquivalentsAtCarryingValue",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     },
     "debt_current": {
-      "value": 0,
+      "value": 1344855000,
       "unit": "USD",
-      "period_start": null,
-      "period_end": "2025-11-01",
-      "filed": "2025-11-25",
-      "accession": "0000006281-25-000153",
+      "period_end": "2026-08-01",
+      "filed": "2026-08-19",
       "tag": "LongTermDebtCurrent",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     },
     "debt_noncurrent": {
-      "value": 8145066000,
+      "value": 6771624000,
       "unit": "USD",
-      "period_start": null,
-      "period_end": "2025-11-01",
-      "filed": "2025-11-25",
-      "accession": "0000006281-25-000153",
+      "period_end": "2026-08-01",
+      "filed": "2026-08-19",
       "tag": "LongTermDebtNoncurrent",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     },
     "shares_outstanding": {
-      "value": 489654097,
+      "value": 484565465,
       "unit": "shares",
-      "period_start": null,
-      "period_end": "2025-11-01",
-      "filed": "2025-11-25",
-      "accession": "0000006281-25-000153",
+      "period_end": "2026-08-01",
+      "filed": "2026-08-19",
       "tag": "CommonStockSharesOutstanding",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     }
   },
   "review_required": true,
-  "note": "SEC reported fields. Different tags and fiscal periods require validation. Operating cash flow minus capex is not automatically unlevered FCFF. Not a completed DCF valuation."
+  "warnings": [
+    "Operating cash flow minus CapEx is not unlevered FCFF",
+    "Shares outstanding are not necessarily diluted shares",
+    "Debt and cash require classification and date checks"
+  ]
 }

@@ -4,7 +4,7 @@
   "company_name": "Citigroup Inc",
   "sector": "Financials",
   "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000831001.json",
-  "fetched_at_utc": "2026-10-24T01:30:04.389288+00:00",
+  "fetched_at_utc": "2026-10-24T02:09:55.274748+00:00",
   "financials": {
     "revenue": {
       "value": 85225000000,
@@ -12,9 +12,9 @@
       "period_start": "2025-01-01",
       "period_end": "2025-12-31",
       "filed": "2026-02-20",
-      "accession": "0000831001-26-000011",
       "tag": "Revenues",
-      "form": "10-K"
+      "form": "10-K",
+      "method": "annual"
     },
     "operating_cash_flow": {
       "value": -67632000000,
@@ -22,9 +22,9 @@
       "period_start": "2025-01-01",
       "period_end": "2025-12-31",
       "filed": "2026-02-20",
-      "accession": "0000831001-26-000011",
       "tag": "NetCashProvidedByUsedInOperatingActivities",
-      "form": "10-K"
+      "form": "10-K",
+      "method": "annual"
     },
     "capital_expenditure": {
       "value": 6520000000,
@@ -32,24 +32,38 @@
       "period_start": "2025-01-01",
       "period_end": "2025-12-31",
       "filed": "2026-02-20",
-      "accession": "0000831001-26-000011",
       "tag": "PaymentsToAcquirePropertyPlantAndEquipment",
-      "form": "10-K"
+      "form": "10-K",
+      "method": "annual"
     },
     "cash": {
       "value": 188105000000,
       "unit": "USD",
-      "period_start": null,
       "period_end": "2018-12-31",
       "filed": "2019-02-22",
-      "accession": "0000831001-19-000027",
       "tag": "CashAndCashEquivalentsAtCarryingValue",
-      "form": "10-K"
+      "form": "10-K",
+      "method": "latest_reported_balance"
     },
     "debt_current": null,
     "debt_noncurrent": null,
-    "shares_outstanding": null
+    "shares_outstanding": {
+      "value": 29049601000,
+      "unit": "shares",
+      "period_end": "2010-09-30",
+      "filed": "2010-11-05",
+      "tag": "CommonStockSharesOutstanding",
+      "form": "10-Q",
+      "method": "latest_reported_balance"
+    }
   },
   "review_required": true,
-  "note": "SEC reported fields. Different tags and fiscal periods require validation. Operating cash flow minus capex is not automatically unlevered FCFF. Not a completed DCF valuation."
+  "warnings": [
+    "Missing field: debt_current",
+    "Missing field: debt_noncurrent",
+    "Operating cash flow minus CapEx is not unlevered FCFF",
+    "Shares outstanding are not necessarily diluted shares",
+    "Debt and cash require classification and date checks",
+    "Financial company: standard FCFF DCF unsuitable"
+  ]
 }

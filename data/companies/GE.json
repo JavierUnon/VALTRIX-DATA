@@ -4,79 +4,82 @@
   "company_name": "GENERAL ELECTRIC COMPANY",
   "sector": "Industrials",
   "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000040545.json",
-  "fetched_at_utc": "2026-10-24T01:31:34.646614+00:00",
+  "fetched_at_utc": "2026-10-24T02:11:02.493561+00:00",
   "financials": {
     "revenue": {
-      "value": 113543000000,
+      "value": 52576000000,
       "unit": "USD",
-      "period_start": "2018-01-01",
-      "period_end": "2018-12-31",
-      "filed": "2019-02-26",
-      "accession": "0000040545-19-000014",
-      "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
-      "form": "10-K"
+      "period_end": "2026-09-30",
+      "filed": "2026-10-20",
+      "tag": "Revenues",
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
     },
     "operating_cash_flow": {
-      "value": 8537000000,
+      "value": 9451000000,
       "unit": "USD",
-      "period_start": "2025-01-01",
-      "period_end": "2025-12-31",
-      "filed": "2026-01-29",
-      "accession": "0000040545-26-000008",
+      "period_end": "2026-09-30",
+      "filed": "2026-10-20",
       "tag": "NetCashProvidedByUsedInOperatingActivities",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
     },
     "capital_expenditure": {
-      "value": 1371000000,
+      "value": 1411000000,
       "unit": "USD",
-      "period_start": "2022-01-01",
-      "period_end": "2022-12-31",
-      "filed": "2023-02-10",
-      "accession": "0000040545-23-000023",
+      "period_end": "2023-03-31",
+      "filed": "2023-04-25",
       "tag": "PaymentsToAcquirePropertyPlantAndEquipment",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2022-12-31"
     },
     "cash": {
       "value": 43299000000,
       "unit": "USD",
-      "period_start": null,
       "period_end": "2017-12-31",
       "filed": "2018-02-23",
-      "accession": "0000040545-18-000014",
       "tag": "CashAndCashEquivalentsAtCarryingValue",
-      "form": "10-K"
+      "form": "10-K",
+      "method": "latest_reported_balance"
     },
     "debt_current": {
-      "value": 35040000000,
+      "value": 2000000000,
       "unit": "USD",
-      "period_start": null,
-      "period_end": "2011-12-31",
-      "filed": "2012-02-24",
-      "accession": "0000040545-12-000016",
+      "period_end": "2015-10-09",
+      "filed": "2015-11-02",
       "tag": "LongTermDebtAndCapitalLeaseObligationsCurrent",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     },
     "debt_noncurrent": {
-      "value": 18808000000,
+      "value": 16991000000,
       "unit": "USD",
-      "period_start": null,
-      "period_end": "2025-12-31",
-      "filed": "2026-01-29",
-      "accession": "0000040545-26-000008",
+      "period_end": "2026-09-30",
+      "filed": "2026-10-20",
       "tag": "LongTermDebtAndCapitalLeaseObligations",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     },
     "shares_outstanding": {
-      "value": 1048766702,
+      "value": 1033351921,
       "unit": "shares",
-      "period_start": null,
-      "period_end": "2025-12-31",
-      "filed": "2026-01-29",
-      "accession": "0000040545-26-000008",
+      "period_end": "2026-09-30",
+      "filed": "2026-10-20",
       "tag": "CommonStockSharesOutstanding",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     }
   },
   "review_required": true,
-  "note": "SEC reported fields. Different tags and fiscal periods require validation. Operating cash flow minus capex is not automatically unlevered FCFF. Not a completed DCF valuation."
+  "warnings": [
+    "Operating cash flow minus CapEx is not unlevered FCFF",
+    "Shares outstanding are not necessarily diluted shares",
+    "Debt and cash require classification and date checks"
+  ]
 }

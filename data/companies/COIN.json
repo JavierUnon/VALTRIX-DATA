@@ -4,79 +4,83 @@
   "company_name": "Coinbase Global, Inc.",
   "sector": "Financials",
   "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001679788.json",
-  "fetched_at_utc": "2026-10-24T01:30:10.320536+00:00",
+  "fetched_at_utc": "2026-10-24T02:10:00.133021+00:00",
   "financials": {
     "revenue": {
-      "value": 7181325000,
+      "value": 6282872000,
       "unit": "USD",
-      "period_start": "2025-01-01",
-      "period_end": "2025-12-31",
-      "filed": "2026-02-12",
-      "accession": "0001679788-26-000015",
+      "period_end": "2026-06-30",
+      "filed": "2026-07-30",
       "tag": "Revenues",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
     },
     "operating_cash_flow": {
-      "value": 2426383000,
+      "value": 1713665000,
       "unit": "USD",
-      "period_start": "2025-01-01",
-      "period_end": "2025-12-31",
-      "filed": "2026-02-12",
-      "accession": "0001679788-26-000015",
+      "period_end": "2026-06-30",
+      "filed": "2026-07-30",
       "tag": "NetCashProvidedByUsedInOperatingActivities",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
     },
     "capital_expenditure": {
-      "value": 2933000,
+      "value": -281000,
       "unit": "USD",
-      "period_start": "2022-01-01",
-      "period_end": "2022-12-31",
-      "filed": "2023-02-21",
-      "accession": "0001679788-23-000031",
+      "period_end": "2023-09-30",
+      "filed": "2023-11-02",
       "tag": "PaymentsToAcquirePropertyPlantAndEquipment",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2022-12-31"
     },
     "cash": {
-      "value": 11285452000,
+      "value": 8614065000,
       "unit": "USD",
-      "period_start": null,
-      "period_end": "2025-12-31",
-      "filed": "2026-02-12",
-      "accession": "0001679788-26-000015",
+      "period_end": "2026-06-30",
+      "filed": "2026-07-30",
       "tag": "CashAndCashEquivalentsAtCarryingValue",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     },
     "debt_current": {
-      "value": 1269585000,
+      "value": 0,
       "unit": "USD",
-      "period_start": null,
-      "period_end": "2025-12-31",
-      "filed": "2026-02-12",
-      "accession": "0001679788-26-000015",
+      "period_end": "2026-06-30",
+      "filed": "2026-07-30",
       "tag": "LongTermDebtCurrent",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     },
     "debt_noncurrent": {
-      "value": 5937034000,
+      "value": 5944232000,
       "unit": "USD",
-      "period_start": null,
-      "period_end": "2025-12-31",
-      "filed": "2026-02-12",
-      "accession": "0001679788-26-000015",
+      "period_end": "2026-06-30",
+      "filed": "2026-07-30",
       "tag": "LongTermDebtNoncurrent",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     },
     "shares_outstanding": {
-      "value": 267836000,
+      "value": 263782000,
       "unit": "shares",
-      "period_start": null,
-      "period_end": "2025-12-31",
-      "filed": "2026-02-12",
-      "accession": "0001679788-26-000015",
+      "period_end": "2026-06-30",
+      "filed": "2026-07-30",
       "tag": "CommonStockSharesOutstanding",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     }
   },
   "review_required": true,
-  "note": "SEC reported fields. Different tags and fiscal periods require validation. Operating cash flow minus capex is not automatically unlevered FCFF. Not a completed DCF valuation."
+  "warnings": [
+    "Operating cash flow minus CapEx is not unlevered FCFF",
+    "Shares outstanding are not necessarily diluted shares",
+    "Debt and cash require classification and date checks",
+    "Financial company: standard FCFF DCF unsuitable"
+  ]
 }

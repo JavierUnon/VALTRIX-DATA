@@ -4,7 +4,7 @@
   "company_name": "W. R. BERKLEY CORP",
   "sector": "Financials",
   "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000011544.json",
-  "fetched_at_utc": "2026-10-24T01:34:33.460171+00:00",
+  "fetched_at_utc": "2026-10-24T02:13:58.478252+00:00",
   "financials": {
     "revenue": {
       "value": 555763000,
@@ -12,19 +12,21 @@
       "period_start": "2025-01-01",
       "period_end": "2025-12-31",
       "filed": "2026-02-27",
-      "accession": "0000011544-26-000005",
       "tag": "RevenueFromContractWithCustomerIncludingAssessedTax",
-      "form": "10-K"
+      "form": "10-K",
+      "method": "annual_fallback",
+      "warning": "TTM unavailable; annual data used"
     },
     "operating_cash_flow": {
-      "value": 3582616000,
+      "value": 3602896000,
       "unit": "USD",
-      "period_start": "2025-01-01",
-      "period_end": "2025-12-31",
-      "filed": "2026-02-27",
-      "accession": "0000011544-26-000005",
+      "period_end": "2026-06-30",
+      "filed": "2026-07-31",
       "tag": "NetCashProvidedByUsedInOperatingActivities",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
     },
     "capital_expenditure": {
       "value": 60457000,
@@ -32,33 +34,39 @@
       "period_start": "2019-01-01",
       "period_end": "2019-12-31",
       "filed": "2020-02-20",
-      "accession": "0000011544-20-000016",
       "tag": "PaymentsToAcquirePropertyPlantAndEquipment",
-      "form": "10-K"
+      "form": "10-K",
+      "method": "annual"
     },
     "cash": {
-      "value": 2539938000,
+      "value": 2606530000,
       "unit": "USD",
-      "period_start": null,
-      "period_end": "2025-12-31",
-      "filed": "2026-02-27",
-      "accession": "0000011544-26-000005",
+      "period_end": "2026-06-30",
+      "filed": "2026-07-31",
       "tag": "CashAndCashEquivalentsAtCarryingValue",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     },
     "debt_current": null,
     "debt_noncurrent": null,
     "shares_outstanding": {
-      "value": 377155799,
+      "value": 371057782,
       "unit": "shares",
-      "period_start": null,
-      "period_end": "2025-12-31",
-      "filed": "2026-02-27",
-      "accession": "0000011544-26-000005",
+      "period_end": "2026-06-30",
+      "filed": "2026-07-31",
       "tag": "CommonStockSharesOutstanding",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     }
   },
   "review_required": true,
-  "note": "SEC reported fields. Different tags and fiscal periods require validation. Operating cash flow minus capex is not automatically unlevered FCFF. Not a completed DCF valuation."
+  "warnings": [
+    "TTM unavailable: revenue",
+    "Missing field: debt_current",
+    "Missing field: debt_noncurrent",
+    "Operating cash flow minus CapEx is not unlevered FCFF",
+    "Shares outstanding are not necessarily diluted shares",
+    "Debt and cash require classification and date checks",
+    "Financial company: standard FCFF DCF unsuitable"
+  ]
 }

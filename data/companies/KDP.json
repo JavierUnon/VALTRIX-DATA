@@ -4,79 +4,82 @@
   "company_name": "Keurig Dr Pepper Inc.",
   "sector": "Consumer Staples",
   "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001418135.json",
-  "fetched_at_utc": "2026-10-24T01:32:17.409723+00:00",
+  "fetched_at_utc": "2026-10-24T02:11:41.653297+00:00",
   "financials": {
     "revenue": {
-      "value": 16603000000,
+      "value": 20090000000,
       "unit": "USD",
-      "period_start": "2025-01-01",
-      "period_end": "2025-12-31",
-      "filed": "2026-02-24",
-      "accession": "0001418135-26-000016",
+      "period_end": "2026-06-30",
+      "filed": "2026-08-10",
       "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
     },
     "operating_cash_flow": {
-      "value": 1991000000,
+      "value": 2527000000,
       "unit": "USD",
-      "period_start": "2025-01-01",
-      "period_end": "2025-12-31",
-      "filed": "2026-02-24",
-      "accession": "0001418135-26-000016",
+      "period_end": "2026-06-30",
+      "filed": "2026-08-10",
       "tag": "NetCashProvidedByUsedInOperatingActivities",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
     },
     "capital_expenditure": {
-      "value": 486000000,
+      "value": 557000000,
       "unit": "USD",
-      "period_start": "2025-01-01",
-      "period_end": "2025-12-31",
-      "filed": "2026-02-24",
-      "accession": "0001418135-26-000016",
+      "period_end": "2026-06-30",
+      "filed": "2026-08-10",
       "tag": "PaymentsToAcquirePropertyPlantAndEquipment",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
     },
     "cash": {
-      "value": 1026000000,
+      "value": 1517000000,
       "unit": "USD",
-      "period_start": null,
-      "period_end": "2025-12-31",
-      "filed": "2026-02-24",
-      "accession": "0001418135-26-000016",
+      "period_end": "2026-06-30",
+      "filed": "2026-08-10",
       "tag": "CashAndCashEquivalentsAtCarryingValue",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     },
     "debt_current": {
-      "value": 895000000,
+      "value": 3231000000,
       "unit": "USD",
-      "period_start": null,
-      "period_end": "2025-12-31",
-      "filed": "2026-02-24",
-      "accession": "0001418135-26-000016",
+      "period_end": "2026-06-30",
+      "filed": "2026-08-10",
       "tag": "LongTermDebtCurrent",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     },
     "debt_noncurrent": {
-      "value": 13036000000,
+      "value": 21586000000,
       "unit": "USD",
-      "period_start": null,
-      "period_end": "2025-12-31",
-      "filed": "2026-02-24",
-      "accession": "0001418135-26-000016",
+      "period_end": "2026-06-30",
+      "filed": "2026-08-10",
       "tag": "LongTermDebtNoncurrent",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     },
     "shares_outstanding": {
-      "value": 1358663795,
+      "value": 1360776911,
       "unit": "shares",
-      "period_start": null,
-      "period_end": "2025-12-31",
-      "filed": "2026-02-24",
-      "accession": "0001418135-26-000016",
+      "period_end": "2026-06-30",
+      "filed": "2026-08-10",
       "tag": "CommonStockSharesOutstanding",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     }
   },
   "review_required": true,
-  "note": "SEC reported fields. Different tags and fiscal periods require validation. Operating cash flow minus capex is not automatically unlevered FCFF. Not a completed DCF valuation."
+  "warnings": [
+    "Operating cash flow minus CapEx is not unlevered FCFF",
+    "Shares outstanding are not necessarily diluted shares",
+    "Debt and cash require classification and date checks"
+  ]
 }

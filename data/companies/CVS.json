@@ -4,79 +4,82 @@
   "company_name": "CVS HEALTH CORPORATION",
   "sector": "Health Care",
   "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000064803.json",
-  "fetched_at_utc": "2026-10-24T01:30:23.045369+00:00",
+  "fetched_at_utc": "2026-10-24T02:10:13.327559+00:00",
   "financials": {
     "revenue": {
-      "value": 193919000000,
+      "value": 415086000000,
       "unit": "USD",
-      "period_start": "2018-01-01",
-      "period_end": "2018-12-31",
-      "filed": "2019-02-28",
-      "accession": "0000064803-19-000013",
-      "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
-      "form": "10-K"
+      "period_end": "2026-06-30",
+      "filed": "2026-08-05",
+      "tag": "Revenues",
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
     },
     "operating_cash_flow": {
-      "value": 10639000000,
+      "value": 14780000000,
       "unit": "USD",
-      "period_start": "2025-01-01",
-      "period_end": "2025-12-31",
-      "filed": "2026-02-10",
-      "accession": "0000064803-26-000010",
+      "period_end": "2026-06-30",
+      "filed": "2026-08-05",
       "tag": "NetCashProvidedByUsedInOperatingActivities",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
     },
     "capital_expenditure": {
-      "value": 2832000000,
+      "value": 3022000000,
       "unit": "USD",
-      "period_start": "2025-01-01",
-      "period_end": "2025-12-31",
-      "filed": "2026-02-10",
-      "accession": "0000064803-26-000010",
+      "period_end": "2026-06-30",
+      "filed": "2026-08-05",
       "tag": "PaymentsToAcquirePropertyPlantAndEquipment",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
     },
     "cash": {
-      "value": 8453000000,
+      "value": 11329000000,
       "unit": "USD",
-      "period_start": null,
-      "period_end": "2025-12-31",
-      "filed": "2026-02-10",
-      "accession": "0000064803-26-000010",
+      "period_end": "2026-06-30",
+      "filed": "2026-08-05",
       "tag": "CashAndCashEquivalentsAtCarryingValue",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     },
     "debt_current": {
-      "value": 3781000000,
+      "value": 1958000000,
       "unit": "USD",
-      "period_start": null,
-      "period_end": "2019-12-31",
-      "filed": "2020-02-18",
-      "accession": "0000064803-20-000007",
-      "tag": "LongTermDebtCurrent",
-      "form": "10-K"
+      "period_end": "2026-06-30",
+      "filed": "2026-08-05",
+      "tag": "LongTermDebtAndCapitalLeaseObligationsCurrent",
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     },
     "debt_noncurrent": {
-      "value": 71348000000,
+      "value": 59452000000,
       "unit": "USD",
-      "period_start": null,
-      "period_end": "2019-01-01",
-      "filed": "2020-02-18",
-      "accession": "0000064803-20-000007",
-      "tag": "LongTermDebtNoncurrent",
-      "form": "10-K"
+      "period_end": "2026-06-30",
+      "filed": "2026-08-05",
+      "tag": "LongTermDebtAndCapitalLeaseObligations",
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     },
     "shares_outstanding": {
-      "value": 1271000000,
+      "value": 1278000000,
       "unit": "shares",
-      "period_start": null,
-      "period_end": "2025-12-31",
-      "filed": "2026-02-10",
-      "accession": "0000064803-26-000010",
+      "period_end": "2026-06-30",
+      "filed": "2026-08-05",
       "tag": "CommonStockSharesOutstanding",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     }
   },
   "review_required": true,
-  "note": "SEC reported fields. Different tags and fiscal periods require validation. Operating cash flow minus capex is not automatically unlevered FCFF. Not a completed DCF valuation."
+  "warnings": [
+    "Operating cash flow minus CapEx is not unlevered FCFF",
+    "Shares outstanding are not necessarily diluted shares",
+    "Debt and cash require classification and date checks"
+  ]
 }

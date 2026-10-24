@@ -4,52 +4,62 @@
   "company_name": "BERKSHIRE HATHAWAY INC",
   "sector": "Financials",
   "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001067983.json",
-  "fetched_at_utc": "2026-10-24T01:29:32.377310+00:00",
+  "fetched_at_utc": "2026-10-24T02:09:13.927486+00:00",
   "financials": {
     "revenue": {
-      "value": 247244000000,
+      "value": 259733000000,
       "unit": "USD",
-      "period_start": "2025-01-01",
-      "period_end": "2025-12-31",
-      "filed": "2026-03-02",
-      "accession": "0001193125-26-083899",
+      "period_end": "2026-06-30",
+      "filed": "2026-08-10",
       "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
     },
     "operating_cash_flow": {
-      "value": 45969000000,
+      "value": 46634000000,
       "unit": "USD",
-      "period_start": "2025-01-01",
-      "period_end": "2025-12-31",
-      "filed": "2026-03-02",
-      "accession": "0001193125-26-083899",
+      "period_end": "2026-06-30",
+      "filed": "2026-08-10",
       "tag": "NetCashProvidedByUsedInOperatingActivities",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
     },
     "capital_expenditure": {
-      "value": 20927000000,
+      "value": 22419000000,
       "unit": "USD",
-      "period_start": "2025-01-01",
-      "period_end": "2025-12-31",
-      "filed": "2026-03-02",
-      "accession": "0001193125-26-083899",
+      "period_end": "2026-06-30",
+      "filed": "2026-08-10",
       "tag": "PaymentsToAcquirePropertyPlantAndEquipment",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
     },
     "cash": {
       "value": 31583000000,
       "unit": "USD",
-      "period_start": null,
       "period_end": "2017-12-31",
       "filed": "2018-02-26",
-      "accession": "0001193125-18-057033",
       "tag": "CashAndCashEquivalentsAtCarryingValue",
-      "form": "10-K"
+      "form": "10-K",
+      "method": "latest_reported_balance"
     },
     "debt_current": null,
     "debt_noncurrent": null,
     "shares_outstanding": null
   },
   "review_required": true,
-  "note": "SEC reported fields. Different tags and fiscal periods require validation. Operating cash flow minus capex is not automatically unlevered FCFF. Not a completed DCF valuation."
+  "warnings": [
+    "Missing field: debt_current",
+    "Missing field: debt_noncurrent",
+    "Missing field: shares_outstanding",
+    "Operating cash flow minus CapEx is not unlevered FCFF",
+    "Shares outstanding are not necessarily diluted shares",
+    "Debt and cash require classification and date checks",
+    "Financial company: standard FCFF DCF unsuitable"
+  ]
 }

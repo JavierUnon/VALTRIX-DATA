@@ -4,61 +4,66 @@
   "company_name": "Smurfit Westrock plc",
   "sector": "Materials",
   "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0002005951.json",
-  "fetched_at_utc": "2026-10-24T01:33:50.943222+00:00",
+  "fetched_at_utc": "2026-10-24T02:13:14.824514+00:00",
   "financials": {
     "revenue": {
-      "value": 31179000000,
+      "value": 31326000000,
       "unit": "USD",
-      "period_start": "2025-01-01",
-      "period_end": "2025-12-31",
-      "filed": "2026-02-27",
-      "accession": "0001628280-26-012555",
+      "period_end": "2026-06-30",
+      "filed": "2026-07-31",
       "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
     },
     "operating_cash_flow": {
-      "value": 3392000000,
+      "value": 3297000000,
       "unit": "USD",
-      "period_start": "2025-01-01",
-      "period_end": "2025-12-31",
-      "filed": "2026-02-27",
-      "accession": "0001628280-26-012555",
+      "period_end": "2026-06-30",
+      "filed": "2026-07-31",
       "tag": "NetCashProvidedByUsedInOperatingActivities",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
     },
     "capital_expenditure": null,
     "cash": {
-      "value": 892000000,
+      "value": 677000000,
       "unit": "USD",
-      "period_start": null,
-      "period_end": "2025-12-31",
-      "filed": "2026-02-27",
-      "accession": "0001628280-26-012555",
+      "period_end": "2026-06-30",
+      "filed": "2026-07-31",
       "tag": "CashAndCashEquivalentsAtCarryingValue",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     },
     "debt_current": null,
     "debt_noncurrent": {
-      "value": 13427000000,
+      "value": 13233000000,
       "unit": "USD",
-      "period_start": null,
-      "period_end": "2025-12-31",
-      "filed": "2026-02-27",
-      "accession": "0001628280-26-012555",
+      "period_end": "2026-06-30",
+      "filed": "2026-07-31",
       "tag": "LongTermDebtAndCapitalLeaseObligations",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     },
     "shares_outstanding": {
-      "value": 522310486,
+      "value": 524522908,
       "unit": "shares",
-      "period_start": null,
-      "period_end": "2025-12-31",
-      "filed": "2026-02-27",
-      "accession": "0001628280-26-012555",
+      "period_end": "2026-06-30",
+      "filed": "2026-07-31",
       "tag": "CommonStockSharesOutstanding",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     }
   },
   "review_required": true,
-  "note": "SEC reported fields. Different tags and fiscal periods require validation. Operating cash flow minus capex is not automatically unlevered FCFF. Not a completed DCF valuation."
+  "warnings": [
+    "Missing field: capital_expenditure",
+    "Missing field: debt_current",
+    "Operating cash flow minus CapEx is not unlevered FCFF",
+    "Shares outstanding are not necessarily diluted shares",
+    "Debt and cash require classification and date checks"
+  ]
 }

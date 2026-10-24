@@ -4,17 +4,18 @@
   "company_name": "AIR PRODUCTS AND CHEMICALS, INC.",
   "sector": "Materials",
   "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000002969.json",
-  "fetched_at_utc": "2026-10-24T01:28:58.102868+00:00",
+  "fetched_at_utc": "2026-10-24T02:08:40.387599+00:00",
   "financials": {
     "revenue": {
-      "value": 12037300000,
+      "value": 12602200000,
       "unit": "USD",
-      "period_start": "2024-10-01",
-      "period_end": "2025-09-30",
-      "filed": "2025-11-20",
-      "accession": "0000002969-25-000055",
+      "period_end": "2026-06-30",
+      "filed": "2026-07-30",
       "tag": "Revenues",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-09-30"
     },
     "operating_cash_flow": {
       "value": 1753200000,
@@ -22,61 +23,64 @@
       "period_start": "2010-10-01",
       "period_end": "2011-09-30",
       "filed": "2011-11-22",
-      "accession": "0001193125-11-319887",
       "tag": "NetCashProvidedByUsedInOperatingActivities",
-      "form": "10-K"
+      "form": "10-K",
+      "method": "annual_fallback",
+      "warning": "TTM unavailable; annual data used"
     },
     "capital_expenditure": {
-      "value": 7022600000,
+      "value": 4872200000,
       "unit": "USD",
-      "period_start": "2024-10-01",
-      "period_end": "2025-09-30",
-      "filed": "2025-11-20",
-      "accession": "0000002969-25-000055",
+      "period_end": "2026-06-30",
+      "filed": "2026-07-30",
       "tag": "PaymentsToAcquirePropertyPlantAndEquipment",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-09-30"
     },
     "cash": {
-      "value": 1856000000,
+      "value": 980500000,
       "unit": "USD",
-      "period_start": null,
-      "period_end": "2025-09-30",
-      "filed": "2025-11-20",
-      "accession": "0000002969-25-000055",
+      "period_end": "2026-06-30",
+      "filed": "2026-07-30",
       "tag": "CashAndCashEquivalentsAtCarryingValue",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     },
     "debt_current": {
-      "value": 371300000,
+      "value": 769500000,
       "unit": "USD",
-      "period_start": null,
-      "period_end": "2016-09-30",
-      "filed": "2016-11-21",
-      "accession": "0001193125-16-773346",
-      "tag": "LongTermDebtCurrent",
-      "form": "10-K"
+      "period_end": "2026-06-30",
+      "filed": "2026-07-30",
+      "tag": "LongTermDebtAndCapitalLeaseObligationsCurrent",
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     },
     "debt_noncurrent": {
-      "value": 4918100000,
+      "value": 8271900000,
       "unit": "USD",
-      "period_start": null,
-      "period_end": "2016-09-30",
-      "filed": "2016-11-21",
-      "accession": "0001193125-16-773346",
-      "tag": "LongTermDebtNoncurrent",
-      "form": "10-K"
+      "period_end": "2023-03-31",
+      "filed": "2023-05-09",
+      "tag": "LongTermDebtAndCapitalLeaseObligations",
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     },
     "shares_outstanding": {
       "value": 222588256,
       "unit": "shares",
-      "period_start": null,
       "period_end": "2025-09-30",
       "filed": "2025-11-20",
-      "accession": "0000002969-25-000055",
       "tag": "CommonStockSharesOutstanding",
-      "form": "10-K"
+      "form": "10-K",
+      "method": "latest_reported_balance"
     }
   },
   "review_required": true,
-  "note": "SEC reported fields. Different tags and fiscal periods require validation. Operating cash flow minus capex is not automatically unlevered FCFF. Not a completed DCF valuation."
+  "warnings": [
+    "TTM unavailable: operating_cash_flow",
+    "Operating cash flow minus CapEx is not unlevered FCFF",
+    "Shares outstanding are not necessarily diluted shares",
+    "Debt and cash require classification and date checks"
+  ]
 }

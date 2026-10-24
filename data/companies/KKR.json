@@ -4,27 +4,29 @@
   "company_name": "KKR\u00a0&\u00a0CO.\u00a0INC.",
   "sector": "Financials",
   "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001404912.json",
-  "fetched_at_utc": "2026-10-24T01:32:21.712399+00:00",
+  "fetched_at_utc": "2026-10-24T02:11:45.973254+00:00",
   "financials": {
     "revenue": {
-      "value": 2006791000,
+      "value": 21309155000,
       "unit": "USD",
-      "period_start": "2020-01-01",
-      "period_end": "2020-12-31",
-      "filed": "2021-02-19",
-      "accession": "0001404912-21-000008",
-      "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
-      "form": "10-K"
+      "period_end": "2026-06-30",
+      "filed": "2026-08-06",
+      "tag": "Revenues",
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
     },
     "operating_cash_flow": {
-      "value": 477760000,
+      "value": 2488480000,
       "unit": "USD",
-      "period_start": "2025-01-01",
-      "period_end": "2025-12-31",
-      "filed": "2026-02-27",
-      "accession": "0001404912-26-000007",
+      "period_end": "2026-06-30",
+      "filed": "2026-08-06",
       "tag": "NetCashProvidedByUsedInOperatingActivities",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
     },
     "capital_expenditure": {
       "value": 194569000,
@@ -32,33 +34,38 @@
       "period_start": "2019-01-01",
       "period_end": "2019-12-31",
       "filed": "2020-02-18",
-      "accession": "0001404912-20-000006",
       "tag": "PaymentsToAcquirePropertyPlantAndEquipment",
-      "form": "10-K"
+      "form": "10-K",
+      "method": "annual"
     },
     "cash": {
       "value": 5363009000,
       "unit": "USD",
-      "period_start": null,
       "period_end": "2020-12-31",
       "filed": "2021-02-19",
-      "accession": "0001404912-21-000008",
       "tag": "CashAndCashEquivalentsAtCarryingValue",
-      "form": "10-K"
+      "form": "10-K",
+      "method": "latest_reported_balance"
     },
     "debt_current": null,
     "debt_noncurrent": null,
     "shares_outstanding": {
-      "value": 891451844,
+      "value": 897776609,
       "unit": "shares",
-      "period_start": null,
-      "period_end": "2025-12-31",
-      "filed": "2026-02-27",
-      "accession": "0001404912-26-000007",
+      "period_end": "2026-06-30",
+      "filed": "2026-08-06",
       "tag": "CommonStockSharesOutstanding",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     }
   },
   "review_required": true,
-  "note": "SEC reported fields. Different tags and fiscal periods require validation. Operating cash flow minus capex is not automatically unlevered FCFF. Not a completed DCF valuation."
+  "warnings": [
+    "Missing field: debt_current",
+    "Missing field: debt_noncurrent",
+    "Operating cash flow minus CapEx is not unlevered FCFF",
+    "Shares outstanding are not necessarily diluted shares",
+    "Debt and cash require classification and date checks",
+    "Financial company: standard FCFF DCF unsuitable"
+  ]
 }

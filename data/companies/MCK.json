@@ -4,70 +4,75 @@
   "company_name": "McKESSON CORPORATION",
   "sector": "Health Care",
   "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000927653.json",
-  "fetched_at_utc": "2026-10-24T01:32:41.844337+00:00",
+  "fetched_at_utc": "2026-10-24T02:12:04.875416+00:00",
   "financials": {
     "revenue": {
-      "value": 403430000000,
+      "value": 410983000000,
       "unit": "USD",
-      "period_start": "2025-04-01",
-      "period_end": "2026-03-31",
-      "filed": "2026-05-08",
-      "accession": "0000927653-26-000069",
+      "period_end": "2026-06-30",
+      "filed": "2026-08-05",
       "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2026-03-31"
     },
     "operating_cash_flow": {
-      "value": 6155000000,
+      "value": 6853000000,
       "unit": "USD",
-      "period_start": "2025-04-01",
-      "period_end": "2026-03-31",
-      "filed": "2026-05-08",
-      "accession": "0000927653-26-000069",
+      "period_end": "2026-06-30",
+      "filed": "2026-08-05",
       "tag": "NetCashProvidedByUsedInOperatingActivities",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2026-03-31"
     },
     "capital_expenditure": {
-      "value": 436000000,
+      "value": 437000000,
       "unit": "USD",
-      "period_start": "2025-04-01",
-      "period_end": "2026-03-31",
-      "filed": "2026-05-08",
-      "accession": "0000927653-26-000069",
+      "period_end": "2026-06-30",
+      "filed": "2026-08-05",
       "tag": "PaymentsToAcquirePropertyPlantAndEquipment",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2026-03-31"
     },
     "cash": {
-      "value": 3975000000,
+      "value": 5164000000,
       "unit": "USD",
-      "period_start": null,
-      "period_end": "2026-03-31",
-      "filed": "2026-05-08",
-      "accession": "0000927653-26-000069",
+      "period_end": "2026-06-30",
+      "filed": "2026-08-05",
       "tag": "CashAndCashEquivalentsAtCarryingValue",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     },
     "debt_current": {
-      "value": 508000000,
+      "value": 1297000000,
       "unit": "USD",
-      "period_start": null,
-      "period_end": "2012-03-31",
-      "filed": "2012-05-02",
-      "accession": "0001193125-12-204736",
-      "tag": "LongTermDebtCurrent",
-      "form": "10-K"
+      "period_end": "2026-06-30",
+      "filed": "2026-08-05",
+      "tag": "LongTermDebtAndCapitalLeaseObligationsCurrent",
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     },
     "debt_noncurrent": {
-      "value": 3072000000,
+      "value": 8432000000,
       "unit": "USD",
-      "period_start": null,
-      "period_end": "2012-03-31",
-      "filed": "2012-05-02",
-      "accession": "0001193125-12-204736",
-      "tag": "LongTermDebtNoncurrent",
-      "form": "10-K"
+      "period_end": "2026-06-30",
+      "filed": "2026-08-05",
+      "tag": "LongTermDebtAndCapitalLeaseObligations",
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     },
     "shares_outstanding": null
   },
   "review_required": true,
-  "note": "SEC reported fields. Different tags and fiscal periods require validation. Operating cash flow minus capex is not automatically unlevered FCFF. Not a completed DCF valuation."
+  "warnings": [
+    "Missing field: shares_outstanding",
+    "Operating cash flow minus CapEx is not unlevered FCFF",
+    "Shares outstanding are not necessarily diluted shares",
+    "Debt and cash require classification and date checks"
+  ]
 }

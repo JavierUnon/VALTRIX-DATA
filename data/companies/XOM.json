@@ -4,16 +4,48 @@
   "company_name": "ExxonMobil Holdings Corp",
   "sector": "Energy",
   "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0002115436.json",
-  "fetched_at_utc": "2026-10-24T01:30:55.202142+00:00",
+  "fetched_at_utc": "2026-10-24T02:10:46.952689+00:00",
   "financials": {
     "revenue": null,
     "operating_cash_flow": null,
     "capital_expenditure": null,
-    "cash": null,
+    "cash": {
+      "value": 10588000000,
+      "unit": "USD",
+      "period_end": "2026-06-30",
+      "filed": "2026-08-03",
+      "tag": "CashAndCashEquivalentsAtCarryingValue",
+      "form": "10-Q",
+      "method": "latest_reported_balance"
+    },
     "debt_current": null,
-    "debt_noncurrent": null,
-    "shares_outstanding": null
+    "debt_noncurrent": {
+      "value": 32229000000,
+      "unit": "USD",
+      "period_end": "2026-06-30",
+      "filed": "2026-08-03",
+      "tag": "LongTermDebtAndCapitalLeaseObligations",
+      "form": "10-Q",
+      "method": "latest_reported_balance"
+    },
+    "shares_outstanding": {
+      "value": 4112000000,
+      "unit": "shares",
+      "period_end": "2026-06-30",
+      "filed": "2026-08-03",
+      "tag": "CommonStockSharesOutstanding",
+      "form": "10-Q",
+      "method": "latest_reported_balance"
+    }
   },
   "review_required": true,
-  "note": "SEC reported fields. Different tags and fiscal periods require validation. Operating cash flow minus capex is not automatically unlevered FCFF. Not a completed DCF valuation."
+  "warnings": [
+    "Missing field: revenue",
+    "Missing field: operating_cash_flow",
+    "Missing field: capital_expenditure",
+    "Missing field: debt_current",
+    "Operating cash flow minus CapEx is not unlevered FCFF",
+    "Shares outstanding are not necessarily diluted shares",
+    "Debt and cash require classification and date checks"
+  ]
 }

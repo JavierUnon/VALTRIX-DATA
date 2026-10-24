@@ -4,79 +4,82 @@
   "company_name": "BOSTON SCIENTIFIC CORPORATION",
   "sector": "Health Care",
   "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000885725.json",
-  "fetched_at_utc": "2026-10-24T01:29:39.727453+00:00",
+  "fetched_at_utc": "2026-10-24T02:09:25.521098+00:00",
   "financials": {
     "revenue": {
-      "value": 20074000000,
+      "value": 20996000000,
       "unit": "USD",
-      "period_start": "2025-01-01",
-      "period_end": "2025-12-31",
-      "filed": "2026-02-17",
-      "accession": "0000885725-26-000010",
+      "period_end": "2026-06-30",
+      "filed": "2026-08-03",
       "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
     },
     "operating_cash_flow": {
-      "value": 4534000000,
+      "value": 4529000000,
       "unit": "USD",
-      "period_start": "2025-01-01",
-      "period_end": "2025-12-31",
-      "filed": "2026-02-17",
-      "accession": "0000885725-26-000010",
+      "period_end": "2026-06-30",
+      "filed": "2026-08-03",
       "tag": "NetCashProvidedByUsedInOperatingActivities",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
     },
     "capital_expenditure": {
-      "value": 876000000,
+      "value": 904000000,
       "unit": "USD",
-      "period_start": "2025-01-01",
-      "period_end": "2025-12-31",
-      "filed": "2026-02-17",
-      "accession": "0000885725-26-000010",
+      "period_end": "2026-06-30",
+      "filed": "2026-08-03",
       "tag": "PaymentsToAcquirePropertyPlantAndEquipment",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
     },
     "cash": {
-      "value": 1965000000,
+      "value": 539000000,
       "unit": "USD",
-      "period_start": null,
-      "period_end": "2025-12-31",
-      "filed": "2026-02-17",
-      "accession": "0000885725-26-000010",
+      "period_end": "2026-06-30",
+      "filed": "2026-08-03",
       "tag": "CashAndCashEquivalentsAtCarryingValue",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     },
     "debt_current": {
-      "value": 250000000,
+      "value": 0,
       "unit": "USD",
-      "period_start": null,
-      "period_end": "2016-12-31",
-      "filed": "2017-02-23",
-      "accession": "0000885725-17-000006",
+      "period_end": "2017-03-31",
+      "filed": "2017-05-03",
       "tag": "LongTermDebtCurrent",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     },
     "debt_noncurrent": {
-      "value": 11137000000,
+      "value": 10915000000,
       "unit": "USD",
-      "period_start": null,
-      "period_end": "2025-12-31",
-      "filed": "2026-02-17",
-      "accession": "0000885725-26-000010",
+      "period_end": "2026-06-30",
+      "filed": "2026-08-03",
       "tag": "LongTermDebtAndCapitalLeaseObligations",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     },
     "shares_outstanding": {
-      "value": 1394922641,
+      "value": 1399310972,
       "unit": "shares",
-      "period_start": null,
-      "period_end": "2019-12-31",
-      "filed": "2020-02-25",
-      "accession": "0000885725-20-000012",
+      "period_end": "2020-03-31",
+      "filed": "2020-05-06",
       "tag": "CommonStockSharesOutstanding",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     }
   },
   "review_required": true,
-  "note": "SEC reported fields. Different tags and fiscal periods require validation. Operating cash flow minus capex is not automatically unlevered FCFF. Not a completed DCF valuation."
+  "warnings": [
+    "Operating cash flow minus CapEx is not unlevered FCFF",
+    "Shares outstanding are not necessarily diluted shares",
+    "Debt and cash require classification and date checks"
+  ]
 }

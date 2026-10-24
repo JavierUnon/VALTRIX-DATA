@@ -4,70 +4,75 @@
   "company_name": "NIKE, Inc.",
   "sector": "Consumer Discretionary",
   "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000320187.json",
-  "fetched_at_utc": "2026-10-24T01:32:59.916945+00:00",
+  "fetched_at_utc": "2026-10-24T02:12:22.435035+00:00",
   "financials": {
     "revenue": {
-      "value": 46398000000,
+      "value": 45891000000,
       "unit": "USD",
-      "period_start": "2025-06-01",
-      "period_end": "2026-05-31",
-      "filed": "2026-07-15",
-      "accession": "0000320187-26-000088",
+      "period_end": "2026-08-31",
+      "filed": "2026-10-02",
       "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2026-05-31"
     },
     "operating_cash_flow": {
-      "value": 2868000000,
+      "value": 2781000000,
       "unit": "USD",
-      "period_start": "2025-06-01",
-      "period_end": "2026-05-31",
-      "filed": "2026-07-15",
-      "accession": "0000320187-26-000088",
+      "period_end": "2026-08-31",
+      "filed": "2026-10-02",
       "tag": "NetCashProvidedByUsedInOperatingActivities",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2026-05-31"
     },
     "capital_expenditure": {
-      "value": 684000000,
+      "value": 676000000,
       "unit": "USD",
-      "period_start": "2025-06-01",
-      "period_end": "2026-05-31",
-      "filed": "2026-07-15",
-      "accession": "0000320187-26-000088",
+      "period_end": "2026-08-31",
+      "filed": "2026-10-02",
       "tag": "PaymentsToAcquirePropertyPlantAndEquipment",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2026-05-31"
     },
     "cash": {
-      "value": 7563000000,
+      "value": 6903000000,
       "unit": "USD",
-      "period_start": null,
-      "period_end": "2026-05-31",
-      "filed": "2026-07-15",
-      "accession": "0000320187-26-000088",
+      "period_end": "2026-08-31",
+      "filed": "2026-10-02",
       "tag": "CashAndCashEquivalentsAtCarryingValue",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     },
     "debt_current": {
       "value": 2000000000,
       "unit": "USD",
-      "period_start": null,
-      "period_end": "2026-05-31",
-      "filed": "2026-07-15",
-      "accession": "0000320187-26-000088",
+      "period_end": "2026-08-31",
+      "filed": "2026-10-02",
       "tag": "LongTermDebtCurrent",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     },
     "debt_noncurrent": {
-      "value": 5942000000,
+      "value": 5893000000,
       "unit": "USD",
-      "period_start": null,
-      "period_end": "2026-05-31",
-      "filed": "2026-07-15",
-      "accession": "0000320187-26-000088",
+      "period_end": "2026-08-31",
+      "filed": "2026-10-02",
       "tag": "LongTermDebtNoncurrent",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     },
     "shares_outstanding": null
   },
   "review_required": true,
-  "note": "SEC reported fields. Different tags and fiscal periods require validation. Operating cash flow minus capex is not automatically unlevered FCFF. Not a completed DCF valuation."
+  "warnings": [
+    "Missing field: shares_outstanding",
+    "Operating cash flow minus CapEx is not unlevered FCFF",
+    "Shares outstanding are not necessarily diluted shares",
+    "Debt and cash require classification and date checks"
+  ]
 }

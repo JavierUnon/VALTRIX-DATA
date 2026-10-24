@@ -4,70 +4,76 @@
   "company_name": "PayPal Holdings, Inc.",
   "sector": "Financials",
   "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001633917.json",
-  "fetched_at_utc": "2026-10-24T01:33:16.315628+00:00",
+  "fetched_at_utc": "2026-10-24T02:12:39.076502+00:00",
   "financials": {
     "revenue": {
-      "value": 17772000000,
+      "value": 33734000000,
       "unit": "USD",
-      "period_start": "2019-01-01",
-      "period_end": "2019-12-31",
-      "filed": "2020-02-06",
-      "accession": "0001633917-20-000028",
-      "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
-      "form": "10-K"
+      "period_end": "2026-03-31",
+      "filed": "2026-05-05",
+      "tag": "Revenues",
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
     },
     "operating_cash_flow": {
-      "value": 6416000000,
+      "value": 6390000000,
       "unit": "USD",
-      "period_start": "2025-01-01",
-      "period_end": "2025-12-31",
-      "filed": "2026-02-03",
-      "accession": "0001633917-26-000024",
+      "period_end": "2026-03-31",
+      "filed": "2026-05-05",
       "tag": "NetCashProvidedByUsedInOperatingActivities",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
     },
     "capital_expenditure": {
-      "value": 852000000,
+      "value": 887000000,
       "unit": "USD",
-      "period_start": "2025-01-01",
-      "period_end": "2025-12-31",
-      "filed": "2026-02-03",
-      "accession": "0001633917-26-000024",
+      "period_end": "2026-03-31",
+      "filed": "2026-05-05",
       "tag": "PaymentsToAcquirePropertyPlantAndEquipment",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
     },
     "cash": {
-      "value": 8049000000,
+      "value": 6977000000,
       "unit": "USD",
-      "period_start": null,
-      "period_end": "2025-12-31",
-      "filed": "2026-02-03",
-      "accession": "0001633917-26-000024",
+      "period_end": "2026-03-31",
+      "filed": "2026-05-05",
       "tag": "CashAndCashEquivalentsAtCarryingValue",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     },
     "debt_current": null,
     "debt_noncurrent": {
-      "value": 9987000000,
+      "value": 9409000000,
       "unit": "USD",
-      "period_start": null,
-      "period_end": "2025-12-31",
-      "filed": "2026-02-03",
-      "accession": "0001633917-26-000024",
+      "period_end": "2026-03-31",
+      "filed": "2026-05-05",
       "tag": "LongTermDebtNoncurrent",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     },
     "shares_outstanding": {
-      "value": 920000000,
+      "value": 892000000,
       "unit": "shares",
-      "period_start": null,
-      "period_end": "2025-12-31",
-      "filed": "2026-02-03",
-      "accession": "0001633917-26-000024",
+      "period_end": "2026-03-31",
+      "filed": "2026-05-05",
       "tag": "CommonStockSharesOutstanding",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     }
   },
   "review_required": true,
-  "note": "SEC reported fields. Different tags and fiscal periods require validation. Operating cash flow minus capex is not automatically unlevered FCFF. Not a completed DCF valuation."
+  "warnings": [
+    "Missing field: debt_current",
+    "Operating cash flow minus CapEx is not unlevered FCFF",
+    "Shares outstanding are not necessarily diluted shares",
+    "Debt and cash require classification and date checks",
+    "Financial company: standard FCFF DCF unsuitable"
+  ]
 }

@@ -4,7 +4,7 @@
   "company_name": "COSTCO WHOLESALE CORP /NEW",
   "sector": "Consumer Staples",
   "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000909832.json",
-  "fetched_at_utc": "2026-10-24T01:30:19.065511+00:00",
+  "fetched_at_utc": "2026-10-24T02:10:08.995412+00:00",
   "financials": {
     "revenue": {
       "value": 303154000000,
@@ -12,9 +12,9 @@
       "period_start": "2025-09-01",
       "period_end": "2026-08-30",
       "filed": "2026-10-07",
-      "accession": "0000909832-26-000093",
       "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
-      "form": "10-K"
+      "form": "10-K",
+      "method": "annual"
     },
     "operating_cash_flow": {
       "value": 15817000000,
@@ -22,9 +22,9 @@
       "period_start": "2025-09-01",
       "period_end": "2026-08-30",
       "filed": "2026-10-07",
-      "accession": "0000909832-26-000093",
       "tag": "NetCashProvidedByUsedInOperatingActivities",
-      "form": "10-K"
+      "form": "10-K",
+      "method": "annual"
     },
     "capital_expenditure": {
       "value": 6435000000,
@@ -32,51 +32,51 @@
       "period_start": "2025-09-01",
       "period_end": "2026-08-30",
       "filed": "2026-10-07",
-      "accession": "0000909832-26-000093",
       "tag": "PaymentsToAcquirePropertyPlantAndEquipment",
-      "form": "10-K"
+      "form": "10-K",
+      "method": "annual"
     },
     "cash": {
       "value": 20207000000,
       "unit": "USD",
-      "period_start": null,
       "period_end": "2026-08-30",
       "filed": "2026-10-07",
-      "accession": "0000909832-26-000093",
       "tag": "CashAndCashEquivalentsAtCarryingValue",
-      "form": "10-K"
+      "form": "10-K",
+      "method": "latest_reported_balance"
     },
     "debt_current": {
       "value": 2248000000,
       "unit": "USD",
-      "period_start": null,
       "period_end": "2026-08-30",
       "filed": "2026-10-07",
-      "accession": "0000909832-26-000093",
       "tag": "LongTermDebtCurrent",
-      "form": "10-K"
+      "form": "10-K",
+      "method": "latest_reported_balance"
     },
     "debt_noncurrent": {
       "value": 3914000000,
       "unit": "USD",
-      "period_start": null,
       "period_end": "2026-08-30",
       "filed": "2026-10-07",
-      "accession": "0000909832-26-000093",
       "tag": "LongTermDebtNoncurrent",
-      "form": "10-K"
+      "form": "10-K",
+      "method": "latest_reported_balance"
     },
     "shares_outstanding": {
       "value": 443266000,
       "unit": "shares",
-      "period_start": null,
       "period_end": "2026-08-30",
       "filed": "2026-10-07",
-      "accession": "0000909832-26-000093",
       "tag": "CommonStockSharesOutstanding",
-      "form": "10-K"
+      "form": "10-K",
+      "method": "latest_reported_balance"
     }
   },
   "review_required": true,
-  "note": "SEC reported fields. Different tags and fiscal periods require validation. Operating cash flow minus capex is not automatically unlevered FCFF. Not a completed DCF valuation."
+  "warnings": [
+    "Operating cash flow minus CapEx is not unlevered FCFF",
+    "Shares outstanding are not necessarily diluted shares",
+    "Debt and cash require classification and date checks"
+  ]
 }

@@ -4,7 +4,7 @@
   "company_name": "Fox Corporation",
   "sector": "Communication Services",
   "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001754301.json",
-  "fetched_at_utc": "2026-10-24T01:31:08.063488+00:00",
+  "fetched_at_utc": "2026-10-24T02:10:59.174873+00:00",
   "financials": {
     "revenue": {
       "value": 17126000000,
@@ -12,9 +12,9 @@
       "period_start": "2025-07-01",
       "period_end": "2026-06-30",
       "filed": "2026-08-06",
-      "accession": "0001628280-26-053960",
       "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
-      "form": "10-K"
+      "form": "10-K",
+      "method": "annual"
     },
     "operating_cash_flow": {
       "value": 1970000000,
@@ -22,9 +22,9 @@
       "period_start": "2025-07-01",
       "period_end": "2026-06-30",
       "filed": "2026-08-06",
-      "accession": "0001628280-26-053960",
       "tag": "NetCashProvidedByUsedInOperatingActivities",
-      "form": "10-K"
+      "form": "10-K",
+      "method": "annual"
     },
     "capital_expenditure": {
       "value": 502000000,
@@ -32,33 +32,44 @@
       "period_start": "2025-07-01",
       "period_end": "2026-06-30",
       "filed": "2026-08-06",
-      "accession": "0001628280-26-053960",
       "tag": "PaymentsToAcquirePropertyPlantAndEquipment",
-      "form": "10-K"
+      "form": "10-K",
+      "method": "annual"
     },
-    "cash": null,
+    "cash": {
+      "value": 2818000000,
+      "unit": "USD",
+      "period_end": "2019-03-31",
+      "filed": "2019-05-10",
+      "tag": "CashAndCashEquivalentsAtCarryingValue",
+      "form": "10-Q",
+      "method": "latest_reported_balance"
+    },
     "debt_current": {
       "value": 0,
       "unit": "USD",
-      "period_start": null,
       "period_end": "2025-06-30",
       "filed": "2025-08-06",
-      "accession": "0001628280-25-038077",
       "tag": "LongTermDebtCurrent",
-      "form": "10-K"
+      "form": "10-K",
+      "method": "latest_reported_balance"
     },
     "debt_noncurrent": {
       "value": 6606000000,
       "unit": "USD",
-      "period_start": null,
       "period_end": "2026-06-30",
       "filed": "2026-08-06",
-      "accession": "0001628280-26-053960",
       "tag": "LongTermDebtNoncurrent",
-      "form": "10-K"
+      "form": "10-K",
+      "method": "latest_reported_balance"
     },
     "shares_outstanding": null
   },
   "review_required": true,
-  "note": "SEC reported fields. Different tags and fiscal periods require validation. Operating cash flow minus capex is not automatically unlevered FCFF. Not a completed DCF valuation."
+  "warnings": [
+    "Missing field: shares_outstanding",
+    "Operating cash flow minus CapEx is not unlevered FCFF",
+    "Shares outstanding are not necessarily diluted shares",
+    "Debt and cash require classification and date checks"
+  ]
 }

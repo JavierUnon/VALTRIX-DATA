@@ -4,79 +4,83 @@
   "company_name": "BROWN & BROWN, INC.",
   "sector": "Financials",
   "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000079282.json",
-  "fetched_at_utc": "2026-10-24T01:29:42.287773+00:00",
+  "fetched_at_utc": "2026-10-24T02:09:28.613815+00:00",
   "financials": {
     "revenue": {
-      "value": 5902000000,
+      "value": 6790000000,
       "unit": "USD",
-      "period_start": "2025-01-01",
-      "period_end": "2025-12-31",
-      "filed": "2026-02-12",
-      "accession": "0001193125-26-046984",
+      "period_end": "2026-06-30",
+      "filed": "2026-07-27",
       "tag": "Revenues",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
     },
     "operating_cash_flow": {
-      "value": 1450000000,
+      "value": 1520000000,
       "unit": "USD",
-      "period_start": "2025-01-01",
-      "period_end": "2025-12-31",
-      "filed": "2026-02-12",
-      "accession": "0001193125-26-046984",
+      "period_end": "2026-06-30",
+      "filed": "2026-07-27",
       "tag": "NetCashProvidedByUsedInOperatingActivities",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
     },
     "capital_expenditure": {
-      "value": 68000000,
+      "value": 74000000,
       "unit": "USD",
-      "period_start": "2025-01-01",
-      "period_end": "2025-12-31",
-      "filed": "2026-02-12",
-      "accession": "0001193125-26-046984",
+      "period_end": "2026-06-30",
+      "filed": "2026-07-27",
       "tag": "PaymentsToAcquirePropertyPlantAndEquipment",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
     },
     "cash": {
-      "value": 1079000000,
+      "value": 918000000,
       "unit": "USD",
-      "period_start": null,
-      "period_end": "2025-12-31",
-      "filed": "2026-02-12",
-      "accession": "0001193125-26-046984",
+      "period_end": "2026-06-30",
+      "filed": "2026-07-27",
       "tag": "CashAndCashEquivalentsAtCarryingValue",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     },
     "debt_current": {
-      "value": 719000000,
+      "value": 413000000,
       "unit": "USD",
-      "period_start": null,
-      "period_end": "2025-12-31",
-      "filed": "2026-02-12",
-      "accession": "0001193125-26-046984",
+      "period_end": "2026-06-30",
+      "filed": "2026-07-27",
       "tag": "LongTermDebtCurrent",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     },
     "debt_noncurrent": {
-      "value": 6894000000,
+      "value": 7346000000,
       "unit": "USD",
-      "period_start": null,
-      "period_end": "2025-12-31",
-      "filed": "2026-02-12",
-      "accession": "0001193125-26-046984",
+      "period_end": "2026-06-30",
+      "filed": "2026-07-27",
       "tag": "LongTermDebtNoncurrent",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     },
     "shares_outstanding": {
-      "value": 336000000,
+      "value": 330000000,
       "unit": "shares",
-      "period_start": null,
-      "period_end": "2025-12-31",
-      "filed": "2026-02-12",
-      "accession": "0001193125-26-046984",
+      "period_end": "2026-06-30",
+      "filed": "2026-07-27",
       "tag": "CommonStockSharesOutstanding",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     }
   },
   "review_required": true,
-  "note": "SEC reported fields. Different tags and fiscal periods require validation. Operating cash flow minus capex is not automatically unlevered FCFF. Not a completed DCF valuation."
+  "warnings": [
+    "Operating cash flow minus CapEx is not unlevered FCFF",
+    "Shares outstanding are not necessarily diluted shares",
+    "Debt and cash require classification and date checks",
+    "Financial company: standard FCFF DCF unsuitable"
+  ]
 }

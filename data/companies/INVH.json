@@ -4,27 +4,29 @@
   "company_name": "Invitation Homes Inc.",
   "sector": "Real Estate",
   "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001687229.json",
-  "fetched_at_utc": "2026-10-24T01:32:10.046206+00:00",
+  "fetched_at_utc": "2026-10-24T02:11:34.740899+00:00",
   "financials": {
     "revenue": {
-      "value": 44596000,
-      "unit": "USD",
-      "period_start": "2016-01-01",
-      "period_end": "2016-12-31",
-      "filed": "2019-02-28",
-      "accession": "0001687229-19-000014",
-      "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
-      "form": "10-K"
-    },
-    "operating_cash_flow": {
-      "value": 1206230000,
+      "value": 2729296000,
       "unit": "USD",
       "period_start": "2025-01-01",
       "period_end": "2025-12-31",
       "filed": "2026-02-19",
-      "accession": "0001687229-26-000016",
+      "tag": "Revenues",
+      "form": "10-K",
+      "method": "annual_fallback",
+      "warning": "TTM unavailable; annual data used"
+    },
+    "operating_cash_flow": {
+      "value": 1199915000,
+      "unit": "USD",
+      "period_end": "2026-06-30",
+      "filed": "2026-07-30",
       "tag": "NetCashProvidedByUsedInOperatingActivities",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
     },
     "capital_expenditure": {
       "value": 4027000,
@@ -32,33 +34,38 @@
       "period_start": "2018-01-01",
       "period_end": "2018-12-31",
       "filed": "2019-02-28",
-      "accession": "0001687229-19-000014",
       "tag": "PaymentsToAcquirePropertyPlantAndEquipment",
-      "form": "10-K"
+      "form": "10-K",
+      "method": "annual"
     },
     "cash": {
-      "value": 129971000,
+      "value": 75786000,
       "unit": "USD",
-      "period_start": null,
-      "period_end": "2025-12-31",
-      "filed": "2026-02-19",
-      "accession": "0001687229-26-000016",
+      "period_end": "2026-06-30",
+      "filed": "2026-07-30",
       "tag": "CashAndCashEquivalentsAtCarryingValue",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     },
     "debt_current": null,
     "debt_noncurrent": null,
     "shares_outstanding": {
-      "value": 610788732,
+      "value": 590613522,
       "unit": "shares",
-      "period_start": null,
-      "period_end": "2025-12-31",
-      "filed": "2026-02-19",
-      "accession": "0001687229-26-000016",
+      "period_end": "2026-06-30",
+      "filed": "2026-07-30",
       "tag": "CommonStockSharesOutstanding",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     }
   },
   "review_required": true,
-  "note": "SEC reported fields. Different tags and fiscal periods require validation. Operating cash flow minus capex is not automatically unlevered FCFF. Not a completed DCF valuation."
+  "warnings": [
+    "TTM unavailable: revenue",
+    "Missing field: debt_current",
+    "Missing field: debt_noncurrent",
+    "Operating cash flow minus CapEx is not unlevered FCFF",
+    "Shares outstanding are not necessarily diluted shares",
+    "Debt and cash require classification and date checks"
+  ]
 }

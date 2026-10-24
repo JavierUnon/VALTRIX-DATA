@@ -4,61 +4,69 @@
   "company_name": "AMERICAN EXPRESS COMPANY",
   "sector": "Financials",
   "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000004962.json",
-  "fetched_at_utc": "2026-10-24T01:29:09.115390+00:00",
+  "fetched_at_utc": "2026-10-24T02:08:50.941547+00:00",
   "financials": {
     "revenue": {
-      "value": 41304000000,
+      "value": 43904000000,
       "unit": "USD",
-      "period_start": "2025-01-01",
-      "period_end": "2025-12-31",
-      "filed": "2026-02-06",
-      "accession": "0000004962-26-000080",
+      "period_end": "2026-09-30",
+      "filed": "2026-10-23",
       "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
     },
     "operating_cash_flow": {
-      "value": 18428000000,
+      "value": 17626000000,
       "unit": "USD",
-      "period_start": "2025-01-01",
-      "period_end": "2025-12-31",
-      "filed": "2026-02-06",
-      "accession": "0000004962-26-000080",
+      "period_end": "2026-09-30",
+      "filed": "2026-10-23",
       "tag": "NetCashProvidedByUsedInOperatingActivities",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
     },
     "capital_expenditure": {
-      "value": 2425000000,
+      "value": 3716000000,
       "unit": "USD",
-      "period_start": "2025-01-01",
-      "period_end": "2025-12-31",
-      "filed": "2026-02-06",
-      "accession": "0000004962-26-000080",
+      "period_end": "2026-09-30",
+      "filed": "2026-10-23",
       "tag": "PaymentsToAcquirePropertyPlantAndEquipment",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
     },
     "cash": {
-      "value": 654000000,
+      "value": 43440000000,
       "unit": "USD",
-      "period_start": null,
-      "period_end": "2010-12-31",
-      "filed": "2011-02-28",
-      "accession": "0000950123-11-019072",
+      "period_end": "2023-09-30",
+      "filed": "2023-10-20",
       "tag": "CashAndCashEquivalentsAtCarryingValue",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     },
     "debt_current": null,
     "debt_noncurrent": null,
     "shares_outstanding": {
-      "value": 686000000,
+      "value": 671000000,
       "unit": "shares",
-      "period_start": null,
-      "period_end": "2025-12-31",
-      "filed": "2026-02-06",
-      "accession": "0000004962-26-000080",
+      "period_end": "2026-09-30",
+      "filed": "2026-10-23",
       "tag": "CommonStockSharesOutstanding",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     }
   },
   "review_required": true,
-  "note": "SEC reported fields. Different tags and fiscal periods require validation. Operating cash flow minus capex is not automatically unlevered FCFF. Not a completed DCF valuation."
+  "warnings": [
+    "Missing field: debt_current",
+    "Missing field: debt_noncurrent",
+    "Operating cash flow minus CapEx is not unlevered FCFF",
+    "Shares outstanding are not necessarily diluted shares",
+    "Debt and cash require classification and date checks",
+    "Financial company: standard FCFF DCF unsuitable"
+  ]
 }

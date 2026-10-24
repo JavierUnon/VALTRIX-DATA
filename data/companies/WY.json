@@ -4,79 +4,82 @@
   "company_name": "WEYERHAEUSER COMPANY",
   "sector": "Real Estate",
   "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000106535.json",
-  "fetched_at_utc": "2026-10-24T01:34:41.371654+00:00",
+  "fetched_at_utc": "2026-10-24T02:14:06.994753+00:00",
   "financials": {
     "revenue": {
-      "value": 6905000000,
+      "value": 6852000000,
       "unit": "USD",
-      "period_start": "2025-01-01",
-      "period_end": "2025-12-31",
-      "filed": "2026-02-13",
-      "accession": "0001193125-26-051422",
+      "period_end": "2026-06-30",
+      "filed": "2026-07-31",
       "tag": "Revenues",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
     },
     "operating_cash_flow": {
-      "value": 562000000,
+      "value": 547000000,
       "unit": "USD",
-      "period_start": "2025-01-01",
-      "period_end": "2025-12-31",
-      "filed": "2026-02-13",
-      "accession": "0001193125-26-051422",
+      "period_end": "2026-06-30",
+      "filed": "2026-07-31",
       "tag": "NetCashProvidedByUsedInOperatingActivities",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
     },
     "capital_expenditure": {
-      "value": 368000000,
+      "value": 336000000,
       "unit": "USD",
-      "period_start": "2018-01-01",
-      "period_end": "2018-12-31",
-      "filed": "2019-02-15",
-      "accession": "0000106535-19-000014",
+      "period_end": "2019-06-30",
+      "filed": "2019-07-26",
       "tag": "PaymentsToAcquirePropertyPlantAndEquipment",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2018-12-31"
     },
     "cash": {
-      "value": 464000000,
+      "value": 527000000,
       "unit": "USD",
-      "period_start": null,
-      "period_end": "2025-12-31",
-      "filed": "2026-02-13",
-      "accession": "0001193125-26-051422",
+      "period_end": "2026-06-30",
+      "filed": "2026-07-31",
       "tag": "CashAndCashEquivalentsAtCarryingValue",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     },
     "debt_current": {
       "value": 522000000,
       "unit": "USD",
-      "period_start": null,
       "period_end": "2025-12-31",
       "filed": "2026-02-13",
-      "accession": "0001193125-26-051422",
       "tag": "LongTermDebtCurrent",
-      "form": "10-K"
+      "form": "10-K",
+      "method": "latest_reported_balance"
     },
     "debt_noncurrent": {
-      "value": 5050000000,
+      "value": 5303000000,
       "unit": "USD",
-      "period_start": null,
-      "period_end": "2025-12-31",
-      "filed": "2026-02-13",
-      "accession": "0001193125-26-051422",
+      "period_end": "2026-06-30",
+      "filed": "2026-07-31",
       "tag": "LongTermDebtNoncurrent",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     },
     "shares_outstanding": {
-      "value": 720531000,
+      "value": 720692000,
       "unit": "shares",
-      "period_start": null,
-      "period_end": "2025-12-31",
-      "filed": "2026-02-13",
-      "accession": "0001193125-26-051422",
+      "period_end": "2026-06-30",
+      "filed": "2026-07-31",
       "tag": "CommonStockSharesOutstanding",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     }
   },
   "review_required": true,
-  "note": "SEC reported fields. Different tags and fiscal periods require validation. Operating cash flow minus capex is not automatically unlevered FCFF. Not a completed DCF valuation."
+  "warnings": [
+    "Operating cash flow minus CapEx is not unlevered FCFF",
+    "Shares outstanding are not necessarily diluted shares",
+    "Debt and cash require classification and date checks"
+  ]
 }

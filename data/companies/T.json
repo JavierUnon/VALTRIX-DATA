@@ -4,17 +4,18 @@
   "company_name": "AT&T INC.",
   "sector": "Communication Services",
   "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000732717.json",
-  "fetched_at_utc": "2026-10-24T01:29:23.975069+00:00",
+  "fetched_at_utc": "2026-10-24T02:09:05.786020+00:00",
   "financials": {
     "revenue": {
-      "value": 125648000000,
+      "value": 128852000000,
       "unit": "USD",
-      "period_start": "2025-01-01",
-      "period_end": "2025-12-31",
-      "filed": "2026-02-09",
-      "accession": "0000732717-26-000120",
+      "period_end": "2026-09-30",
+      "filed": "2026-10-21",
       "tag": "Revenues",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
     },
     "operating_cash_flow": {
       "value": 40284000000,
@@ -22,9 +23,9 @@
       "period_start": "2025-01-01",
       "period_end": "2025-12-31",
       "filed": "2026-02-09",
-      "accession": "0000732717-26-000120",
       "tag": "NetCashProvidedByUsedInOperatingActivities",
-      "form": "10-K"
+      "form": "10-K",
+      "method": "annual"
     },
     "capital_expenditure": {
       "value": 20647000000,
@@ -32,42 +33,44 @@
       "period_start": "2017-01-01",
       "period_end": "2017-12-31",
       "filed": "2018-02-20",
-      "accession": "0000732717-18-000009",
       "tag": "PaymentsToAcquirePropertyPlantAndEquipment",
-      "form": "10-K"
+      "form": "10-K",
+      "method": "annual"
     },
     "cash": {
-      "value": 18234000000,
+      "value": 10767000000,
       "unit": "USD",
-      "period_start": null,
-      "period_end": "2025-12-31",
-      "filed": "2026-02-09",
-      "accession": "0000732717-26-000120",
+      "period_end": "2026-09-30",
+      "filed": "2026-10-21",
       "tag": "CashAndCashEquivalentsAtCarryingValue",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     },
     "debt_current": {
-      "value": 3453000000,
+      "value": 9011000000,
       "unit": "USD",
-      "period_start": null,
-      "period_end": "2011-12-31",
-      "filed": "2012-02-24",
-      "accession": "0000732717-12-000025",
-      "tag": "LongTermDebtCurrent",
-      "form": "10-K"
+      "period_end": "2025-12-31",
+      "filed": "2026-02-09",
+      "tag": "LongTermDebtAndCapitalLeaseObligationsCurrent",
+      "form": "10-K",
+      "method": "latest_reported_balance"
     },
     "debt_noncurrent": {
-      "value": 61300000000,
+      "value": 150144000000,
       "unit": "USD",
-      "period_start": null,
-      "period_end": "2011-12-31",
-      "filed": "2012-02-24",
-      "accession": "0000732717-12-000025",
-      "tag": "LongTermDebtNoncurrent",
-      "form": "10-K"
+      "period_end": "2026-09-30",
+      "filed": "2026-10-21",
+      "tag": "LongTermDebtAndCapitalLeaseObligations",
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     },
     "shares_outstanding": null
   },
   "review_required": true,
-  "note": "SEC reported fields. Different tags and fiscal periods require validation. Operating cash flow minus capex is not automatically unlevered FCFF. Not a completed DCF valuation."
+  "warnings": [
+    "Missing field: shares_outstanding",
+    "Operating cash flow minus CapEx is not unlevered FCFF",
+    "Shares outstanding are not necessarily diluted shares",
+    "Debt and cash require classification and date checks"
+  ]
 }

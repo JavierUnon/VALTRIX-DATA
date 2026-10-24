@@ -4,7 +4,7 @@
   "company_name": "Palo Alto Networks, Inc",
   "sector": "Information Technology",
   "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001327567.json",
-  "fetched_at_utc": "2026-10-24T01:33:14.443868+00:00",
+  "fetched_at_utc": "2026-10-24T02:12:36.795188+00:00",
   "financials": {
     "revenue": {
       "value": 11480000000,
@@ -12,9 +12,9 @@
       "period_start": "2025-08-01",
       "period_end": "2026-07-31",
       "filed": "2026-09-10",
-      "accession": "0001327567-26-000023",
       "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
-      "form": "10-K"
+      "form": "10-K",
+      "method": "annual"
     },
     "operating_cash_flow": {
       "value": 4553000000,
@@ -22,34 +22,39 @@
       "period_start": "2025-08-01",
       "period_end": "2026-07-31",
       "filed": "2026-09-10",
-      "accession": "0001327567-26-000023",
       "tag": "NetCashProvidedByUsedInOperatingActivities",
-      "form": "10-K"
+      "form": "10-K",
+      "method": "annual"
     },
     "capital_expenditure": null,
     "cash": {
       "value": 2514000000,
       "unit": "USD",
-      "period_start": null,
       "period_end": "2026-07-31",
       "filed": "2026-09-10",
-      "accession": "0001327567-26-000023",
       "tag": "CashAndCashEquivalentsAtCarryingValue",
-      "form": "10-K"
+      "form": "10-K",
+      "method": "latest_reported_balance"
     },
     "debt_current": null,
     "debt_noncurrent": null,
     "shares_outstanding": {
       "value": 815000000,
       "unit": "shares",
-      "period_start": null,
       "period_end": "2026-07-31",
       "filed": "2026-09-10",
-      "accession": "0001327567-26-000023",
       "tag": "CommonStockSharesOutstanding",
-      "form": "10-K"
+      "form": "10-K",
+      "method": "latest_reported_balance"
     }
   },
   "review_required": true,
-  "note": "SEC reported fields. Different tags and fiscal periods require validation. Operating cash flow minus capex is not automatically unlevered FCFF. Not a completed DCF valuation."
+  "warnings": [
+    "Missing field: capital_expenditure",
+    "Missing field: debt_current",
+    "Missing field: debt_noncurrent",
+    "Operating cash flow minus CapEx is not unlevered FCFF",
+    "Shares outstanding are not necessarily diluted shares",
+    "Debt and cash require classification and date checks"
+  ]
 }

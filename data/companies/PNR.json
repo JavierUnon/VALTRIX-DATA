@@ -4,79 +4,82 @@
   "company_name": "Pentair plc",
   "sector": "Industrials",
   "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000077360.json",
-  "fetched_at_utc": "2026-10-24T01:33:17.041585+00:00",
+  "fetched_at_utc": "2026-10-24T02:12:39.627613+00:00",
   "financials": {
     "revenue": {
-      "value": 4176000000,
+      "value": 4202300000,
       "unit": "USD",
-      "period_start": "2025-01-01",
-      "period_end": "2025-12-31",
-      "filed": "2026-02-24",
-      "accession": "0000077360-26-000007",
+      "period_end": "2026-03-31",
+      "filed": "2026-04-28",
       "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
     },
     "operating_cash_flow": {
-      "value": 814800000,
+      "value": 786300000,
       "unit": "USD",
-      "period_start": "2025-01-01",
-      "period_end": "2025-12-31",
-      "filed": "2026-02-24",
-      "accession": "0000077360-26-000007",
+      "period_end": "2026-03-31",
+      "filed": "2026-04-28",
       "tag": "NetCashProvidedByUsedInOperatingActivities",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
     },
     "capital_expenditure": {
-      "value": 68800000,
+      "value": 70500000,
       "unit": "USD",
-      "period_start": "2025-01-01",
-      "period_end": "2025-12-31",
-      "filed": "2026-02-24",
-      "accession": "0000077360-26-000007",
+      "period_end": "2026-03-31",
+      "filed": "2026-04-28",
       "tag": "PaymentsToAcquirePropertyPlantAndEquipment",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
     },
     "cash": {
-      "value": 82500000,
+      "value": 67700000,
       "unit": "USD",
-      "period_start": null,
-      "period_end": "2019-12-31",
-      "filed": "2020-02-25",
-      "accession": "0000077360-20-000006",
+      "period_end": "2026-03-31",
+      "filed": "2026-04-28",
       "tag": "CashAndCashEquivalentsAtCarryingValue",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     },
     "debt_current": {
-      "value": 0,
+      "value": 200000,
       "unit": "USD",
-      "period_start": null,
-      "period_end": "2017-12-31",
-      "filed": "2018-02-27",
-      "accession": "0000077360-18-000007",
+      "period_end": "2018-03-31",
+      "filed": "2018-04-20",
       "tag": "LongTermDebtCurrent",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     },
     "debt_noncurrent": {
-      "value": 1638600000,
+      "value": 1944300000,
       "unit": "USD",
-      "period_start": null,
-      "period_end": "2025-12-31",
-      "filed": "2026-02-24",
-      "accession": "0000077360-26-000007",
+      "period_end": "2026-03-31",
+      "filed": "2026-04-28",
       "tag": "LongTermDebtNoncurrent",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     },
     "shares_outstanding": {
-      "value": 98622564,
+      "value": 99204048,
       "unit": "shares",
-      "period_start": null,
-      "period_end": "2011-12-31",
-      "filed": "2013-02-26",
-      "accession": "0001193125-13-077034",
+      "period_end": "2012-06-30",
+      "filed": "2012-07-24",
       "tag": "CommonStockSharesOutstanding",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     }
   },
   "review_required": true,
-  "note": "SEC reported fields. Different tags and fiscal periods require validation. Operating cash flow minus capex is not automatically unlevered FCFF. Not a completed DCF valuation."
+  "warnings": [
+    "Operating cash flow minus CapEx is not unlevered FCFF",
+    "Shares outstanding are not necessarily diluted shares",
+    "Debt and cash require classification and date checks"
+  ]
 }

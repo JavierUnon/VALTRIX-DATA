@@ -4,79 +4,82 @@
   "company_name": "KINDER MORGAN, INC.",
   "sector": "Energy",
   "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001506307.json",
-  "fetched_at_utc": "2026-10-24T01:32:20.975396+00:00",
+  "fetched_at_utc": "2026-10-24T02:11:45.463622+00:00",
   "financials": {
     "revenue": {
-      "value": 15202000000,
+      "value": 16745000000,
       "unit": "USD",
-      "period_start": "2025-01-01",
-      "period_end": "2025-12-31",
-      "filed": "2026-02-13",
-      "accession": "0001506307-26-000011",
+      "period_end": "2026-09-30",
+      "filed": "2026-10-23",
       "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
     },
     "operating_cash_flow": {
-      "value": 5917000000,
+      "value": 6733000000,
       "unit": "USD",
-      "period_start": "2025-01-01",
-      "period_end": "2025-12-31",
-      "filed": "2026-02-13",
-      "accession": "0001506307-26-000011",
+      "period_end": "2026-09-30",
+      "filed": "2026-10-23",
       "tag": "NetCashProvidedByUsedInOperatingActivities",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
     },
     "capital_expenditure": {
-      "value": 3026000000,
+      "value": 3651000000,
       "unit": "USD",
-      "period_start": "2025-01-01",
-      "period_end": "2025-12-31",
-      "filed": "2026-02-13",
-      "accession": "0001506307-26-000011",
+      "period_end": "2026-09-30",
+      "filed": "2026-10-23",
       "tag": "PaymentsToAcquirePropertyPlantAndEquipment",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
     },
     "cash": {
-      "value": 63000000,
+      "value": 918000000,
       "unit": "USD",
-      "period_start": null,
-      "period_end": "2025-12-31",
-      "filed": "2026-02-13",
-      "accession": "0001506307-26-000011",
+      "period_end": "2026-09-30",
+      "filed": "2026-10-23",
       "tag": "CashAndCashEquivalentsAtCarryingValue",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     },
     "debt_current": {
       "value": 1000000000,
       "unit": "USD",
-      "period_start": null,
       "period_end": "2015-12-31",
       "filed": "2017-02-10",
-      "accession": "0001506307-17-000008",
       "tag": "LongTermDebtCurrent",
-      "form": "10-K"
+      "form": "10-K",
+      "method": "latest_reported_balance"
     },
     "debt_noncurrent": {
-      "value": 30777000000,
+      "value": 31347000000,
       "unit": "USD",
-      "period_start": null,
-      "period_end": "2025-12-31",
-      "filed": "2026-02-13",
-      "accession": "0001506307-26-000011",
+      "period_end": "2026-09-30",
+      "filed": "2026-10-23",
       "tag": "LongTermDebtNoncurrent",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     },
     "shares_outstanding": {
-      "value": 2224777750,
+      "value": 2227712648,
       "unit": "shares",
-      "period_start": null,
-      "period_end": "2025-12-31",
-      "filed": "2026-02-13",
-      "accession": "0001506307-26-000011",
+      "period_end": "2026-09-30",
+      "filed": "2026-10-23",
       "tag": "CommonStockSharesOutstanding",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     }
   },
   "review_required": true,
-  "note": "SEC reported fields. Different tags and fiscal periods require validation. Operating cash flow minus capex is not automatically unlevered FCFF. Not a completed DCF valuation."
+  "warnings": [
+    "Operating cash flow minus CapEx is not unlevered FCFF",
+    "Shares outstanding are not necessarily diluted shares",
+    "Debt and cash require classification and date checks"
+  ]
 }

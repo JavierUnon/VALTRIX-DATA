@@ -4,79 +4,82 @@
   "company_name": "NORTHROP GRUMMAN CORP /DE/",
   "sector": "Industrials",
   "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001133421.json",
-  "fetched_at_utc": "2026-10-24T01:33:02.980117+00:00",
+  "fetched_at_utc": "2026-10-24T02:12:25.593226+00:00",
   "financials": {
     "revenue": {
-      "value": 41954000000,
+      "value": 43591000000,
       "unit": "USD",
-      "period_start": "2025-01-01",
-      "period_end": "2025-12-31",
-      "filed": "2026-01-27",
-      "accession": "0001133421-26-000003",
+      "period_end": "2026-09-30",
+      "filed": "2026-10-20",
       "tag": "Revenues",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
     },
     "operating_cash_flow": {
-      "value": 4757000000,
+      "value": 5266000000,
       "unit": "USD",
-      "period_start": "2025-01-01",
-      "period_end": "2025-12-31",
-      "filed": "2026-01-27",
-      "accession": "0001133421-26-000003",
+      "period_end": "2026-09-30",
+      "filed": "2026-10-20",
       "tag": "NetCashProvidedByUsedInOperatingActivities",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
     },
     "capital_expenditure": {
-      "value": 1450000000,
+      "value": 1437000000,
       "unit": "USD",
-      "period_start": "2025-01-01",
-      "period_end": "2025-12-31",
-      "filed": "2026-01-27",
-      "accession": "0001133421-26-000003",
+      "period_end": "2026-09-30",
+      "filed": "2026-10-20",
       "tag": "PaymentsToAcquirePropertyPlantAndEquipment",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
     },
     "cash": {
-      "value": 4403000000,
+      "value": 3744000000,
       "unit": "USD",
-      "period_start": null,
-      "period_end": "2025-12-31",
-      "filed": "2026-01-27",
-      "accession": "0001133421-26-000003",
+      "period_end": "2026-09-30",
+      "filed": "2026-10-20",
       "tag": "CashAndCashEquivalentsAtCarryingValue",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     },
     "debt_current": {
-      "value": 534000000,
+      "value": 764000000,
       "unit": "USD",
-      "period_start": null,
-      "period_end": "2025-12-31",
-      "filed": "2026-01-27",
-      "accession": "0001133421-26-000003",
+      "period_end": "2026-09-30",
+      "filed": "2026-10-20",
       "tag": "LongTermDebtCurrent",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     },
     "debt_noncurrent": {
-      "value": 15162000000,
+      "value": 14433000000,
       "unit": "USD",
-      "period_start": null,
-      "period_end": "2025-12-31",
-      "filed": "2026-01-27",
-      "accession": "0001133421-26-000003",
+      "period_end": "2026-09-30",
+      "filed": "2026-10-20",
       "tag": "LongTermDebtNoncurrent",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     },
     "shares_outstanding": {
-      "value": 141997194,
+      "value": 142064132,
       "unit": "shares",
-      "period_start": null,
-      "period_end": "2025-12-31",
-      "filed": "2026-01-27",
-      "accession": "0001133421-26-000003",
+      "period_end": "2026-09-30",
+      "filed": "2026-10-20",
       "tag": "CommonStockSharesOutstanding",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     }
   },
   "review_required": true,
-  "note": "SEC reported fields. Different tags and fiscal periods require validation. Operating cash flow minus capex is not automatically unlevered FCFF. Not a completed DCF valuation."
+  "warnings": [
+    "Operating cash flow minus CapEx is not unlevered FCFF",
+    "Shares outstanding are not necessarily diluted shares",
+    "Debt and cash require classification and date checks"
+  ]
 }

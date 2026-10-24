@@ -4,79 +4,82 @@
   "company_name": "Walmart Inc.",
   "sector": "Consumer Staples",
   "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000104169.json",
-  "fetched_at_utc": "2026-10-24T01:34:35.681219+00:00",
+  "fetched_at_utc": "2026-10-24T02:14:00.631801+00:00",
   "financials": {
     "revenue": {
-      "value": 706413000000,
+      "value": 728466000000,
       "unit": "USD",
-      "period_start": "2025-02-01",
-      "period_end": "2026-01-31",
-      "filed": "2026-03-13",
-      "accession": "0000104169-26-000055",
+      "period_end": "2026-07-31",
+      "filed": "2026-08-28",
       "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2026-01-31"
     },
     "operating_cash_flow": {
-      "value": 41565000000,
+      "value": 42923000000,
       "unit": "USD",
-      "period_start": "2025-02-01",
-      "period_end": "2026-01-31",
-      "filed": "2026-03-13",
-      "accession": "0000104169-26-000055",
+      "period_end": "2026-07-31",
+      "filed": "2026-08-28",
       "tag": "NetCashProvidedByUsedInOperatingActivities",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2026-01-31"
     },
     "capital_expenditure": {
-      "value": 26642000000,
+      "value": 29414000000,
       "unit": "USD",
-      "period_start": "2025-02-01",
-      "period_end": "2026-01-31",
-      "filed": "2026-03-13",
-      "accession": "0000104169-26-000055",
+      "period_end": "2026-07-31",
+      "filed": "2026-08-28",
       "tag": "PaymentsToAcquirePropertyPlantAndEquipment",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2026-01-31"
     },
     "cash": {
-      "value": 10727000000,
+      "value": 11529000000,
       "unit": "USD",
-      "period_start": null,
-      "period_end": "2026-01-31",
-      "filed": "2026-03-13",
-      "accession": "0000104169-26-000055",
+      "period_end": "2026-07-31",
+      "filed": "2026-08-28",
       "tag": "CashAndCashEquivalentsAtCarryingValue",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     },
     "debt_current": {
-      "value": 3542000000,
+      "value": 3470000000,
       "unit": "USD",
-      "period_start": null,
-      "period_end": "2026-01-31",
-      "filed": "2026-03-13",
-      "accession": "0000104169-26-000055",
+      "period_end": "2026-07-31",
+      "filed": "2026-08-28",
       "tag": "LongTermDebtCurrent",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     },
     "debt_noncurrent": {
-      "value": 34624000000,
+      "value": 36462000000,
       "unit": "USD",
-      "period_start": null,
-      "period_end": "2026-01-31",
-      "filed": "2026-03-13",
-      "accession": "0000104169-26-000055",
+      "period_end": "2026-07-31",
+      "filed": "2026-08-28",
       "tag": "LongTermDebtNoncurrent",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     },
     "shares_outstanding": {
       "value": 3418000000,
       "unit": "shares",
-      "period_start": null,
       "period_end": "2012-01-31",
       "filed": "2012-03-27",
-      "accession": "0001193125-12-134679",
       "tag": "CommonStockSharesOutstanding",
-      "form": "10-K"
+      "form": "10-K",
+      "method": "latest_reported_balance"
     }
   },
   "review_required": true,
-  "note": "SEC reported fields. Different tags and fiscal periods require validation. Operating cash flow minus capex is not automatically unlevered FCFF. Not a completed DCF valuation."
+  "warnings": [
+    "Operating cash flow minus CapEx is not unlevered FCFF",
+    "Shares outstanding are not necessarily diluted shares",
+    "Debt and cash require classification and date checks"
+  ]
 }

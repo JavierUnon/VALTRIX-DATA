@@ -4,79 +4,83 @@
   "company_name": "FRANKLIN RESOURCES INC",
   "sector": "Financials",
   "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000038777.json",
-  "fetched_at_utc": "2026-10-24T01:31:22.101595+00:00",
+  "fetched_at_utc": "2026-10-24T02:11:00.126175+00:00",
   "financials": {
     "revenue": {
-      "value": 8770700000,
+      "value": 9324100000,
       "unit": "USD",
-      "period_start": "2024-10-01",
-      "period_end": "2025-09-30",
-      "filed": "2025-11-10",
-      "accession": "0000038777-25-000238",
+      "period_end": "2026-06-30",
+      "filed": "2026-07-31",
       "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-09-30"
     },
     "operating_cash_flow": {
-      "value": 1066100000,
+      "value": 277800000,
       "unit": "USD",
-      "period_start": "2024-10-01",
-      "period_end": "2025-09-30",
-      "filed": "2025-11-10",
-      "accession": "0000038777-25-000238",
+      "period_end": "2026-06-30",
+      "filed": "2026-07-31",
       "tag": "NetCashProvidedByUsedInOperatingActivities",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-09-30"
     },
     "capital_expenditure": {
-      "value": 154500000,
+      "value": 46200000,
       "unit": "USD",
-      "period_start": "2024-10-01",
-      "period_end": "2025-09-30",
-      "filed": "2025-11-10",
-      "accession": "0000038777-25-000238",
+      "period_end": "2026-06-30",
+      "filed": "2026-07-31",
       "tag": "PaymentsToAcquirePropertyPlantAndEquipment",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-09-30"
     },
     "cash": {
-      "value": 4647200000,
+      "value": 4544300000,
       "unit": "USD",
-      "period_start": null,
-      "period_end": "2021-09-30",
-      "filed": "2021-11-19",
-      "accession": "0000038777-21-000205",
+      "period_end": "2021-12-31",
+      "filed": "2022-02-01",
       "tag": "CashAndCashEquivalentsAtCarryingValue",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     },
     "debt_current": {
-      "value": 29656000,
+      "value": 320550000,
       "unit": "USD",
-      "period_start": null,
-      "period_end": "2011-09-30",
-      "filed": "2011-11-15",
-      "accession": "0000038777-11-000225",
+      "period_end": "2012-06-30",
+      "filed": "2012-07-30",
       "tag": "LongTermDebtCurrent",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     },
     "debt_noncurrent": {
-      "value": 1850750000,
+      "value": 1494831000,
       "unit": "USD",
-      "period_start": null,
-      "period_end": "2011-09-30",
-      "filed": "2011-11-15",
-      "accession": "0000038777-11-000225",
+      "period_end": "2012-06-30",
+      "filed": "2012-07-30",
       "tag": "LongTermDebtNoncurrent",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     },
     "shares_outstanding": {
-      "value": 520951796,
+      "value": 507507250,
       "unit": "shares",
-      "period_start": null,
-      "period_end": "2025-09-30",
-      "filed": "2025-11-10",
-      "accession": "0000038777-25-000238",
+      "period_end": "2026-06-30",
+      "filed": "2026-07-31",
       "tag": "CommonStockSharesOutstanding",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     }
   },
   "review_required": true,
-  "note": "SEC reported fields. Different tags and fiscal periods require validation. Operating cash flow minus capex is not automatically unlevered FCFF. Not a completed DCF valuation."
+  "warnings": [
+    "Operating cash flow minus CapEx is not unlevered FCFF",
+    "Shares outstanding are not necessarily diluted shares",
+    "Debt and cash require classification and date checks",
+    "Financial company: standard FCFF DCF unsuitable"
+  ]
 }

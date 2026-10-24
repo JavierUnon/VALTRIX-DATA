@@ -4,79 +4,82 @@
   "company_name": "HUNTINGTON INGALLS INDUSTRIES, INC.",
   "sector": "Industrials",
   "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001501585.json",
-  "fetched_at_utc": "2026-10-24T01:31:58.885492+00:00",
+  "fetched_at_utc": "2026-10-24T02:11:23.619048+00:00",
   "financials": {
     "revenue": {
-      "value": 12484000000,
+      "value": 13185000000,
       "unit": "USD",
-      "period_start": "2025-01-01",
-      "period_end": "2025-12-31",
-      "filed": "2026-02-05",
-      "accession": "0001501585-26-000006",
+      "period_end": "2026-06-30",
+      "filed": "2026-07-30",
       "tag": "Revenues",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
     },
     "operating_cash_flow": {
-      "value": 1196000000,
+      "value": 347000000,
       "unit": "USD",
-      "period_start": "2025-01-01",
-      "period_end": "2025-12-31",
-      "filed": "2026-02-05",
-      "accession": "0001501585-26-000006",
+      "period_end": "2026-06-30",
+      "filed": "2026-07-30",
       "tag": "NetCashProvidedByUsedInOperatingActivities",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
     },
     "capital_expenditure": {
-      "value": 402000000,
+      "value": 432000000,
       "unit": "USD",
-      "period_start": "2025-01-01",
-      "period_end": "2025-12-31",
-      "filed": "2026-02-05",
-      "accession": "0001501585-26-000006",
+      "period_end": "2026-06-30",
+      "filed": "2026-07-30",
       "tag": "PaymentsToAcquirePropertyPlantAndEquipment",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
     },
     "cash": {
-      "value": 627000000,
+      "value": 10000000,
       "unit": "USD",
-      "period_start": null,
-      "period_end": "2021-12-31",
-      "filed": "2022-02-10",
-      "accession": "0001501585-22-000007",
+      "period_end": "2024-03-31",
+      "filed": "2024-05-02",
       "tag": "CashAndCashEquivalentsAtCarryingValue",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     },
     "debt_current": {
-      "value": 231000000,
+      "value": 503000000,
       "unit": "USD",
-      "period_start": null,
-      "period_end": "2023-12-31",
-      "filed": "2024-02-01",
-      "accession": "0001501585-24-000007",
-      "tag": "LongTermDebtCurrent",
-      "form": "10-K"
+      "period_end": "2024-12-31",
+      "filed": "2026-02-05",
+      "tag": "LongTermDebtAndCapitalLeaseObligationsCurrent",
+      "form": "10-K",
+      "method": "latest_reported_balance"
     },
     "debt_noncurrent": {
-      "value": 2214000000,
+      "value": 2702000000,
       "unit": "USD",
-      "period_start": null,
-      "period_end": "2023-12-31",
-      "filed": "2024-02-01",
-      "accession": "0001501585-24-000007",
+      "period_end": "2026-06-30",
+      "filed": "2026-07-30",
       "tag": "LongTermDebtNoncurrent",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     },
     "shares_outstanding": {
-      "value": 39241527,
+      "value": 39404203,
       "unit": "shares",
-      "period_start": null,
-      "period_end": "2025-12-31",
-      "filed": "2026-02-05",
-      "accession": "0001501585-26-000006",
+      "period_end": "2026-06-30",
+      "filed": "2026-07-30",
       "tag": "CommonStockSharesOutstanding",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     }
   },
   "review_required": true,
-  "note": "SEC reported fields. Different tags and fiscal periods require validation. Operating cash flow minus capex is not automatically unlevered FCFF. Not a completed DCF valuation."
+  "warnings": [
+    "Operating cash flow minus CapEx is not unlevered FCFF",
+    "Shares outstanding are not necessarily diluted shares",
+    "Debt and cash require classification and date checks"
+  ]
 }

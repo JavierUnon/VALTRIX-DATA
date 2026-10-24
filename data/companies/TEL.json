@@ -4,70 +4,75 @@
   "company_name": "TE CONNECTIVITY\u00a0PLC",
   "sector": "Information Technology",
   "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001385157.json",
-  "fetched_at_utc": "2026-10-24T01:34:04.562435+00:00",
+  "fetched_at_utc": "2026-10-24T02:13:28.314309+00:00",
   "financials": {
     "revenue": {
-      "value": 17262000000,
+      "value": 19322000000,
       "unit": "USD",
-      "period_start": "2024-09-28",
-      "period_end": "2025-09-26",
-      "filed": "2025-11-10",
-      "accession": "0001104659-25-109150",
+      "period_end": "2026-06-26",
+      "filed": "2026-07-24",
       "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-09-26"
     },
     "operating_cash_flow": {
-      "value": 4139000000,
+      "value": 4418000000,
       "unit": "USD",
-      "period_start": "2024-09-28",
-      "period_end": "2025-09-26",
-      "filed": "2025-11-10",
-      "accession": "0001104659-25-109150",
+      "period_end": "2026-06-26",
+      "filed": "2026-07-24",
       "tag": "NetCashProvidedByUsedInOperatingActivities",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-09-26"
     },
     "capital_expenditure": {
-      "value": 936000000,
+      "value": 1103000000,
       "unit": "USD",
-      "period_start": "2024-09-28",
-      "period_end": "2025-09-26",
-      "filed": "2025-11-10",
-      "accession": "0001104659-25-109150",
+      "period_end": "2026-06-26",
+      "filed": "2026-07-24",
       "tag": "PaymentsToAcquirePropertyPlantAndEquipment",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-09-26"
     },
     "cash": {
-      "value": 1255000000,
+      "value": 1239000000,
       "unit": "USD",
-      "period_start": null,
-      "period_end": "2025-09-26",
-      "filed": "2025-11-10",
-      "accession": "0001104659-25-109150",
+      "period_end": "2026-06-26",
+      "filed": "2026-07-24",
       "tag": "CashAndCashEquivalentsAtCarryingValue",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     },
     "debt_current": {
-      "value": 500000000,
+      "value": 302000000,
       "unit": "USD",
-      "period_start": null,
-      "period_end": "2015-09-25",
-      "filed": "2015-11-10",
-      "accession": "0001047469-15-008508",
+      "period_end": "2016-06-24",
+      "filed": "2016-07-22",
       "tag": "LongTermDebtCurrent",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     },
     "debt_noncurrent": {
-      "value": 4842000000,
+      "value": 5530000000,
       "unit": "USD",
-      "period_start": null,
-      "period_end": "2025-09-26",
-      "filed": "2025-11-10",
-      "accession": "0001104659-25-109150",
+      "period_end": "2026-06-26",
+      "filed": "2026-07-24",
       "tag": "LongTermDebtNoncurrent",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     },
     "shares_outstanding": null
   },
   "review_required": true,
-  "note": "SEC reported fields. Different tags and fiscal periods require validation. Operating cash flow minus capex is not automatically unlevered FCFF. Not a completed DCF valuation."
+  "warnings": [
+    "Missing field: shares_outstanding",
+    "Operating cash flow minus CapEx is not unlevered FCFF",
+    "Shares outstanding are not necessarily diluted shares",
+    "Debt and cash require classification and date checks"
+  ]
 }

@@ -4,79 +4,82 @@
   "company_name": "The Cooper Companies, Inc.",
   "sector": "Health Care",
   "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000711404.json",
-  "fetched_at_utc": "2026-10-24T01:30:15.855008+00:00",
+  "fetched_at_utc": "2026-10-24T02:10:05.879515+00:00",
   "financials": {
     "revenue": {
-      "value": 4092400000,
+      "value": 4236900000,
       "unit": "USD",
-      "period_start": "2024-11-01",
-      "period_end": "2025-10-31",
-      "filed": "2025-12-05",
-      "accession": "0001628280-25-055615",
+      "period_end": "2026-07-31",
+      "filed": "2026-09-09",
       "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-10-31"
     },
     "operating_cash_flow": {
-      "value": 796100000,
+      "value": 1033300000,
       "unit": "USD",
-      "period_start": "2024-11-01",
-      "period_end": "2025-10-31",
-      "filed": "2025-12-05",
-      "accession": "0001628280-25-055615",
+      "period_end": "2026-07-31",
+      "filed": "2026-09-09",
       "tag": "NetCashProvidedByUsedInOperatingActivities",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-10-31"
     },
     "capital_expenditure": {
-      "value": 362400000,
+      "value": 355300000,
       "unit": "USD",
-      "period_start": "2024-11-01",
-      "period_end": "2025-10-31",
-      "filed": "2025-12-05",
-      "accession": "0001628280-25-055615",
+      "period_end": "2026-07-31",
+      "filed": "2026-09-09",
       "tag": "PaymentsToAcquirePropertyPlantAndEquipment",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-10-31"
     },
     "cash": {
-      "value": 110600000,
+      "value": 154700000,
       "unit": "USD",
-      "period_start": null,
-      "period_end": "2025-10-31",
-      "filed": "2025-12-05",
-      "accession": "0001628280-25-055615",
+      "period_end": "2026-07-31",
+      "filed": "2026-09-09",
       "tag": "CashAndCashEquivalentsAtCarryingValue",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     },
     "debt_current": {
-      "value": 0,
+      "value": 400000000,
       "unit": "USD",
-      "period_start": null,
-      "period_end": "2017-10-31",
-      "filed": "2017-12-22",
-      "accession": "0000711404-17-000044",
+      "period_end": "2019-04-30",
+      "filed": "2019-05-31",
       "tag": "LongTermDebtCurrent",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     },
     "debt_noncurrent": {
-      "value": 2455700000,
+      "value": 1914500000,
       "unit": "USD",
-      "period_start": null,
-      "period_end": "2025-10-31",
-      "filed": "2025-12-05",
-      "accession": "0001628280-25-055615",
+      "period_end": "2026-07-31",
+      "filed": "2026-09-09",
       "tag": "LongTermDebtNoncurrent",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     },
     "shares_outstanding": {
-      "value": 195900000,
+      "value": 190100000,
       "unit": "shares",
-      "period_start": null,
-      "period_end": "2025-10-31",
-      "filed": "2025-12-05",
-      "accession": "0001628280-25-055615",
+      "period_end": "2026-07-31",
+      "filed": "2026-09-09",
       "tag": "CommonStockSharesOutstanding",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     }
   },
   "review_required": true,
-  "note": "SEC reported fields. Different tags and fiscal periods require validation. Operating cash flow minus capex is not automatically unlevered FCFF. Not a completed DCF valuation."
+  "warnings": [
+    "Operating cash flow minus CapEx is not unlevered FCFF",
+    "Shares outstanding are not necessarily diluted shares",
+    "Debt and cash require classification and date checks"
+  ]
 }

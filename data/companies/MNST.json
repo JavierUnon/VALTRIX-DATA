@@ -4,70 +4,82 @@
   "company_name": "Monster Beverage Corp",
   "sector": "Consumer Staples",
   "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000865752.json",
-  "fetched_at_utc": "2026-10-24T01:32:51.241582+00:00",
+  "fetched_at_utc": "2026-10-24T02:12:13.934554+00:00",
   "financials": {
     "revenue": {
-      "value": 8294343000,
+      "value": 9218957000,
       "unit": "USD",
-      "period_start": "2025-01-01",
-      "period_end": "2025-12-31",
-      "filed": "2026-02-27",
-      "accession": "0001104659-26-020831",
+      "period_end": "2026-06-30",
+      "filed": "2026-08-07",
       "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
     },
     "operating_cash_flow": {
-      "value": 2098177000,
+      "value": 2238762000,
       "unit": "USD",
-      "period_start": "2025-01-01",
-      "period_end": "2025-12-31",
-      "filed": "2026-02-27",
-      "accession": "0001104659-26-020831",
+      "period_end": "2026-06-30",
+      "filed": "2026-08-07",
       "tag": "NetCashProvidedByUsedInOperatingActivities",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
     },
     "capital_expenditure": {
-      "value": 132275000,
+      "value": 140846000,
       "unit": "USD",
-      "period_start": "2025-01-01",
-      "period_end": "2025-12-31",
-      "filed": "2026-02-27",
-      "accession": "0001104659-26-020831",
+      "period_end": "2026-06-30",
+      "filed": "2026-08-07",
       "tag": "PaymentsToAcquirePropertyPlantAndEquipment",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
     },
     "cash": {
-      "value": 2088117000,
+      "value": 2192424000,
       "unit": "USD",
-      "period_start": null,
-      "period_end": "2025-12-31",
-      "filed": "2026-02-27",
-      "accession": "0001104659-26-020831",
+      "period_end": "2026-06-30",
+      "filed": "2026-08-07",
       "tag": "CashAndCashEquivalentsAtCarryingValue",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     },
-    "debt_current": null,
-    "debt_noncurrent": {
-      "value": 373951000,
+    "debt_current": {
+      "value": 0,
       "unit": "USD",
-      "period_start": null,
-      "period_end": "2024-12-31",
-      "filed": "2026-02-27",
-      "accession": "0001104659-26-020831",
+      "period_end": "2025-03-31",
+      "filed": "2025-05-09",
+      "tag": "LongTermDebtCurrent",
+      "form": "10-Q",
+      "method": "latest_reported_balance"
+    },
+    "debt_noncurrent": {
+      "value": 199059000,
+      "unit": "USD",
+      "period_end": "2025-03-31",
+      "filed": "2025-05-09",
       "tag": "LongTermDebtNoncurrent",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     },
     "shares_outstanding": {
-      "value": 978113000,
+      "value": 979490000,
       "unit": "shares",
-      "period_start": null,
-      "period_end": "2025-12-31",
-      "filed": "2026-02-27",
-      "accession": "0001104659-26-020831",
+      "period_end": "2026-06-30",
+      "filed": "2026-08-07",
       "tag": "CommonStockSharesOutstanding",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     }
   },
   "review_required": true,
-  "note": "SEC reported fields. Different tags and fiscal periods require validation. Operating cash flow minus capex is not automatically unlevered FCFF. Not a completed DCF valuation."
+  "warnings": [
+    "Operating cash flow minus CapEx is not unlevered FCFF",
+    "Shares outstanding are not necessarily diluted shares",
+    "Debt and cash require classification and date checks"
+  ]
 }

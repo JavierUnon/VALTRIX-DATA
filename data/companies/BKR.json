@@ -4,61 +4,73 @@
   "company_name": "Baker Hughes Company",
   "sector": "Energy",
   "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001701605.json",
-  "fetched_at_utc": "2026-10-24T01:29:28.768303+00:00",
+  "fetched_at_utc": "2026-10-24T02:09:10.565422+00:00",
   "financials": {
     "revenue": {
-      "value": 27733000000,
+      "value": 27725000000,
       "unit": "USD",
-      "period_start": "2025-01-01",
-      "period_end": "2025-12-31",
-      "filed": "2026-02-05",
-      "accession": "0001701605-26-000007",
+      "period_end": "2026-06-30",
+      "filed": "2026-07-27",
       "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
     },
     "operating_cash_flow": {
-      "value": 3810000000,
+      "value": 4436000000,
       "unit": "USD",
-      "period_start": "2025-01-01",
-      "period_end": "2025-12-31",
-      "filed": "2026-02-05",
-      "accession": "0001701605-26-000007",
+      "period_end": "2026-06-30",
+      "filed": "2026-07-27",
       "tag": "NetCashProvidedByUsedInOperatingActivities",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
     },
     "capital_expenditure": null,
     "cash": {
-      "value": 7023000000,
+      "value": 5631000000,
       "unit": "USD",
-      "period_start": null,
-      "period_end": "2017-12-31",
-      "filed": "2018-02-23",
-      "accession": "0001701605-18-000029",
+      "period_end": "2018-03-31",
+      "filed": "2018-04-27",
       "tag": "CashAndCashEquivalentsAtCarryingValue",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     },
     "debt_current": {
-      "value": 639000000,
+      "value": 0,
       "unit": "USD",
-      "period_start": null,
-      "period_end": "2017-12-31",
-      "filed": "2018-02-23",
-      "accession": "0001701605-18-000029",
+      "period_end": "2018-09-30",
+      "filed": "2018-10-30",
       "tag": "LongTermDebtAndCapitalLeaseObligationsCurrent",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     },
     "debt_noncurrent": {
-      "value": 5398000000,
+      "value": 15479000000,
       "unit": "USD",
-      "period_start": null,
-      "period_end": "2025-12-31",
-      "filed": "2026-02-05",
-      "accession": "0001701605-26-000007",
+      "period_end": "2026-06-30",
+      "filed": "2026-07-27",
       "tag": "LongTermDebtAndCapitalLeaseObligations",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     },
-    "shares_outstanding": null
+    "shares_outstanding": {
+      "value": 100,
+      "unit": "shares",
+      "period_end": "2017-06-30",
+      "filed": "2017-07-28",
+      "tag": "CommonStockSharesOutstanding",
+      "form": "10-Q",
+      "method": "latest_reported_balance"
+    }
   },
   "review_required": true,
-  "note": "SEC reported fields. Different tags and fiscal periods require validation. Operating cash flow minus capex is not automatically unlevered FCFF. Not a completed DCF valuation."
+  "warnings": [
+    "Missing field: capital_expenditure",
+    "Operating cash flow minus CapEx is not unlevered FCFF",
+    "Shares outstanding are not necessarily diluted shares",
+    "Debt and cash require classification and date checks"
+  ]
 }

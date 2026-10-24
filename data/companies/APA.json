@@ -4,61 +4,64 @@
   "company_name": "APA CORPORATION",
   "sector": "Energy",
   "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001841666.json",
-  "fetched_at_utc": "2026-10-24T01:29:15.865313+00:00",
+  "fetched_at_utc": "2026-10-24T02:08:58.216180+00:00",
   "financials": {
     "revenue": null,
     "operating_cash_flow": {
-      "value": 4545000000,
+      "value": 4528000000,
       "unit": "USD",
-      "period_start": "2025-01-01",
-      "period_end": "2025-12-31",
-      "filed": "2026-02-26",
-      "accession": "0001841666-26-000015",
+      "period_end": "2026-06-30",
+      "filed": "2026-08-06",
       "tag": "NetCashProvidedByUsedInOperatingActivities",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
     },
     "capital_expenditure": null,
     "cash": {
-      "value": 516000000,
+      "value": 444000000,
       "unit": "USD",
-      "period_start": null,
-      "period_end": "2025-12-31",
-      "filed": "2026-02-26",
-      "accession": "0001841666-26-000015",
+      "period_end": "2026-06-30",
+      "filed": "2026-08-06",
       "tag": "CashAndCashEquivalentsAtCarryingValue",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     },
     "debt_current": {
-      "value": 213000000,
+      "value": 2000000,
       "unit": "USD",
-      "period_start": null,
-      "period_end": "2025-12-31",
-      "filed": "2026-02-26",
-      "accession": "0001841666-26-000015",
+      "period_end": "2026-06-30",
+      "filed": "2026-08-06",
       "tag": "LongTermDebtAndCapitalLeaseObligationsCurrent",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     },
     "debt_noncurrent": {
-      "value": 4280000000,
+      "value": 3741000000,
       "unit": "USD",
-      "period_start": null,
-      "period_end": "2025-12-31",
-      "filed": "2026-02-26",
-      "accession": "0001841666-26-000015",
+      "period_end": "2026-06-30",
+      "filed": "2026-08-06",
       "tag": "LongTermDebtAndCapitalLeaseObligations",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     },
     "shares_outstanding": {
       "value": 352964646,
       "unit": "shares",
-      "period_start": null,
       "period_end": "2025-12-31",
       "filed": "2026-02-26",
-      "accession": "0001841666-26-000015",
       "tag": "CommonStockSharesOutstanding",
-      "form": "10-K"
+      "form": "10-K",
+      "method": "latest_reported_balance"
     }
   },
   "review_required": true,
-  "note": "SEC reported fields. Different tags and fiscal periods require validation. Operating cash flow minus capex is not automatically unlevered FCFF. Not a completed DCF valuation."
+  "warnings": [
+    "Missing field: revenue",
+    "Missing field: capital_expenditure",
+    "Operating cash flow minus CapEx is not unlevered FCFF",
+    "Shares outstanding are not necessarily diluted shares",
+    "Debt and cash require classification and date checks"
+  ]
 }

@@ -4,61 +4,66 @@
   "company_name": "Snap-on Inc",
   "sector": "Industrials",
   "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000091440.json",
-  "fetched_at_utc": "2026-10-24T01:33:51.695889+00:00",
+  "fetched_at_utc": "2026-10-24T02:13:15.567828+00:00",
   "financials": {
     "revenue": {
-      "value": 4709300000,
+      "value": 4821100000,
       "unit": "USD",
-      "period_start": "2024-12-29",
-      "period_end": "2026-01-03",
-      "filed": "2026-02-12",
-      "accession": "0000091440-26-000045",
+      "period_end": "2026-10-03",
+      "filed": "2026-10-22",
       "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2026-01-03"
     },
     "operating_cash_flow": {
-      "value": 1081700000,
+      "value": 1156000000,
       "unit": "USD",
-      "period_start": "2024-12-29",
-      "period_end": "2026-01-03",
-      "filed": "2026-02-12",
-      "accession": "0000091440-26-000045",
+      "period_end": "2026-10-03",
+      "filed": "2026-10-22",
       "tag": "NetCashProvidedByUsedInOperatingActivities",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2026-01-03"
     },
     "capital_expenditure": null,
     "cash": {
-      "value": 1624500000,
+      "value": 1670000000,
       "unit": "USD",
-      "period_start": null,
-      "period_end": "2026-01-03",
-      "filed": "2026-02-12",
-      "accession": "0000091440-26-000045",
+      "period_end": "2026-10-03",
+      "filed": "2026-10-22",
       "tag": "CashAndCashEquivalentsAtCarryingValue",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     },
     "debt_current": {
-      "value": 0,
+      "value": 299700000,
       "unit": "USD",
-      "period_start": null,
-      "period_end": "2022-01-01",
-      "filed": "2022-02-11",
-      "accession": "0000091440-22-000005",
+      "period_end": "2026-04-04",
+      "filed": "2026-04-23",
       "tag": "LongTermDebtCurrent",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     },
     "debt_noncurrent": {
-      "value": 1186400000,
+      "value": 887200000,
       "unit": "USD",
-      "period_start": null,
-      "period_end": "2026-01-03",
-      "filed": "2026-02-12",
-      "accession": "0000091440-26-000045",
+      "period_end": "2026-10-03",
+      "filed": "2026-10-22",
       "tag": "LongTermDebtNoncurrent",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     },
     "shares_outstanding": null
   },
   "review_required": true,
-  "note": "SEC reported fields. Different tags and fiscal periods require validation. Operating cash flow minus capex is not automatically unlevered FCFF. Not a completed DCF valuation."
+  "warnings": [
+    "Missing field: capital_expenditure",
+    "Missing field: shares_outstanding",
+    "Operating cash flow minus CapEx is not unlevered FCFF",
+    "Shares outstanding are not necessarily diluted shares",
+    "Debt and cash require classification and date checks"
+  ]
 }

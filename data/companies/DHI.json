@@ -4,61 +4,68 @@
   "company_name": "D.R. Horton, Inc.",
   "sector": "Consumer Discretionary",
   "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000882184.json",
-  "fetched_at_utc": "2026-10-24T01:30:35.579848+00:00",
+  "fetched_at_utc": "2026-10-24T02:10:27.631613+00:00",
   "financials": {
     "revenue": {
-      "value": 34250400000,
+      "value": 33350000000,
       "unit": "USD",
-      "period_start": "2024-10-01",
-      "period_end": "2025-09-30",
-      "filed": "2025-11-19",
-      "accession": "0000882184-25-000081",
+      "period_end": "2026-06-30",
+      "filed": "2026-07-23",
       "tag": "Revenues",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-09-30"
     },
     "operating_cash_flow": {
-      "value": 3420900000,
+      "value": 3352600000,
       "unit": "USD",
-      "period_start": "2024-10-01",
-      "period_end": "2025-09-30",
-      "filed": "2025-11-19",
-      "accession": "0000882184-25-000081",
+      "period_end": "2026-06-30",
+      "filed": "2026-07-23",
       "tag": "NetCashProvidedByUsedInOperatingActivities",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-09-30"
     },
     "capital_expenditure": {
-      "value": 137400000,
+      "value": 150400000,
       "unit": "USD",
-      "period_start": "2024-10-01",
-      "period_end": "2025-09-30",
-      "filed": "2025-11-19",
-      "accession": "0000882184-25-000081",
+      "period_end": "2026-06-30",
+      "filed": "2026-07-23",
       "tag": "PaymentsToAcquirePropertyPlantAndEquipment",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-09-30"
     },
     "cash": {
-      "value": 2985400000,
+      "value": 2078700000,
       "unit": "USD",
-      "period_start": null,
-      "period_end": "2025-09-30",
-      "filed": "2025-11-19",
-      "accession": "0000882184-25-000081",
+      "period_end": "2026-06-30",
+      "filed": "2026-07-23",
       "tag": "CashAndCashEquivalentsAtCarryingValue",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     },
     "debt_current": null,
     "debt_noncurrent": null,
     "shares_outstanding": {
-      "value": 294475153,
+      "value": 280730194,
       "unit": "shares",
-      "period_start": null,
-      "period_end": "2025-09-30",
-      "filed": "2025-11-19",
-      "accession": "0000882184-25-000081",
+      "period_end": "2026-06-30",
+      "filed": "2026-07-23",
       "tag": "CommonStockSharesOutstanding",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     }
   },
   "review_required": true,
-  "note": "SEC reported fields. Different tags and fiscal periods require validation. Operating cash flow minus capex is not automatically unlevered FCFF. Not a completed DCF valuation."
+  "warnings": [
+    "Missing field: debt_current",
+    "Missing field: debt_noncurrent",
+    "Operating cash flow minus CapEx is not unlevered FCFF",
+    "Shares outstanding are not necessarily diluted shares",
+    "Debt and cash require classification and date checks"
+  ]
 }

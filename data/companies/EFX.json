@@ -4,61 +4,66 @@
   "company_name": "EQUIFAX INC",
   "sector": "Industrials",
   "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000033185.json",
-  "fetched_at_utc": "2026-10-24T01:30:46.188540+00:00",
+  "fetched_at_utc": "2026-10-24T02:10:37.952305+00:00",
   "financials": {
     "revenue": {
-      "value": 6074500000,
+      "value": 6592100000,
       "unit": "USD",
-      "period_start": "2025-01-01",
-      "period_end": "2025-12-31",
-      "filed": "2026-02-19",
-      "accession": "0000033185-26-000010",
+      "period_end": "2026-09-30",
+      "filed": "2026-10-20",
       "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
     },
     "operating_cash_flow": {
-      "value": 1615700000,
+      "value": 1612900000,
       "unit": "USD",
-      "period_start": "2025-01-01",
-      "period_end": "2025-12-31",
-      "filed": "2026-02-19",
-      "accession": "0000033185-26-000010",
+      "period_end": "2026-09-30",
+      "filed": "2026-10-20",
       "tag": "NetCashProvidedByUsedInOperatingActivities",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
     },
     "capital_expenditure": null,
     "cash": {
-      "value": 180800000,
+      "value": 192900000,
       "unit": "USD",
-      "period_start": null,
-      "period_end": "2025-12-31",
-      "filed": "2026-02-19",
-      "accession": "0000033185-26-000010",
+      "period_end": "2026-09-30",
+      "filed": "2026-10-20",
       "tag": "CashAndCashEquivalentsAtCarryingValue",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     },
     "debt_current": null,
     "debt_noncurrent": {
-      "value": 4055300000,
+      "value": 5049000000,
       "unit": "USD",
-      "period_start": null,
-      "period_end": "2025-12-31",
-      "filed": "2026-02-19",
-      "accession": "0000033185-26-000010",
+      "period_end": "2026-09-30",
+      "filed": "2026-10-20",
       "tag": "LongTermDebtNoncurrent",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     },
     "shares_outstanding": {
-      "value": 120400000,
+      "value": 117100000,
       "unit": "shares",
-      "period_start": null,
-      "period_end": "2025-12-31",
-      "filed": "2026-02-19",
-      "accession": "0000033185-26-000010",
+      "period_end": "2026-09-30",
+      "filed": "2026-10-20",
       "tag": "CommonStockSharesOutstanding",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     }
   },
   "review_required": true,
-  "note": "SEC reported fields. Different tags and fiscal periods require validation. Operating cash flow minus capex is not automatically unlevered FCFF. Not a completed DCF valuation."
+  "warnings": [
+    "Missing field: capital_expenditure",
+    "Missing field: debt_current",
+    "Operating cash flow minus CapEx is not unlevered FCFF",
+    "Shares outstanding are not necessarily diluted shares",
+    "Debt and cash require classification and date checks"
+  ]
 }

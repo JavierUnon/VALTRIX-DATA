@@ -4,70 +4,75 @@
   "company_name": "Netflix, Inc.",
   "sector": "Communication Services",
   "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001065280.json",
-  "fetched_at_utc": "2026-10-24T01:32:56.639740+00:00",
+  "fetched_at_utc": "2026-10-24T02:12:19.134505+00:00",
   "financials": {
     "revenue": {
-      "value": 45183036000,
+      "value": 49734633000,
       "unit": "USD",
-      "period_start": "2025-01-01",
-      "period_end": "2025-12-31",
-      "filed": "2026-01-23",
-      "accession": "0001065280-26-000034",
+      "period_end": "2026-09-30",
+      "filed": "2026-10-21",
       "tag": "Revenues",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
     },
     "operating_cash_flow": {
-      "value": 10149273000,
+      "value": 12307938000,
       "unit": "USD",
-      "period_start": "2025-01-01",
-      "period_end": "2025-12-31",
-      "filed": "2026-01-23",
-      "accession": "0001065280-26-000034",
+      "period_end": "2026-09-30",
+      "filed": "2026-10-21",
       "tag": "NetCashProvidedByUsedInOperatingActivities",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
     },
     "capital_expenditure": {
-      "value": 688220000,
+      "value": 932875000,
       "unit": "USD",
-      "period_start": "2025-01-01",
-      "period_end": "2025-12-31",
-      "filed": "2026-01-23",
-      "accession": "0001065280-26-000034",
+      "period_end": "2026-09-30",
+      "filed": "2026-10-21",
       "tag": "PaymentsToAcquirePropertyPlantAndEquipment",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
     },
     "cash": {
-      "value": 9033681000,
+      "value": 8194275000,
       "unit": "USD",
-      "period_start": null,
-      "period_end": "2025-12-31",
-      "filed": "2026-01-23",
-      "accession": "0001065280-26-000034",
+      "period_end": "2026-09-30",
+      "filed": "2026-10-21",
       "tag": "CashAndCashEquivalentsAtCarryingValue",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     },
     "debt_current": null,
     "debt_noncurrent": {
-      "value": 13463971000,
+      "value": 12657598000,
       "unit": "USD",
-      "period_start": null,
-      "period_end": "2025-12-31",
-      "filed": "2026-01-23",
-      "accession": "0001065280-26-000034",
+      "period_end": "2026-09-30",
+      "filed": "2026-10-21",
       "tag": "LongTermDebtNoncurrent",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     },
     "shares_outstanding": {
-      "value": 4222162150,
+      "value": 4106325903,
       "unit": "shares",
-      "period_start": null,
-      "period_end": "2025-12-31",
-      "filed": "2026-01-23",
-      "accession": "0001065280-26-000034",
+      "period_end": "2026-09-30",
+      "filed": "2026-10-21",
       "tag": "CommonStockSharesOutstanding",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     }
   },
   "review_required": true,
-  "note": "SEC reported fields. Different tags and fiscal periods require validation. Operating cash flow minus capex is not automatically unlevered FCFF. Not a completed DCF valuation."
+  "warnings": [
+    "Missing field: debt_current",
+    "Operating cash flow minus CapEx is not unlevered FCFF",
+    "Shares outstanding are not necessarily diluted shares",
+    "Debt and cash require classification and date checks"
+  ]
 }

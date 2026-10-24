@@ -4,79 +4,82 @@
   "company_name": "VULCAN MATERIALS COMPANY",
   "sector": "Materials",
   "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001396009.json",
-  "fetched_at_utc": "2026-10-24T01:34:32.307947+00:00",
+  "fetched_at_utc": "2026-10-24T02:13:57.365401+00:00",
   "financials": {
     "revenue": {
-      "value": 7941100000,
+      "value": 8062400000,
       "unit": "USD",
-      "period_start": "2025-01-01",
-      "period_end": "2025-12-31",
-      "filed": "2026-02-19",
-      "accession": "0001628280-26-009546",
+      "period_end": "2026-03-31",
+      "filed": "2026-04-29",
       "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
     },
     "operating_cash_flow": {
-      "value": 1813000000,
+      "value": 1802600000,
       "unit": "USD",
-      "period_start": "2025-01-01",
-      "period_end": "2025-12-31",
-      "filed": "2026-02-19",
-      "accession": "0001628280-26-009546",
+      "period_end": "2026-03-31",
+      "filed": "2026-04-29",
       "tag": "NetCashProvidedByUsedInOperatingActivities",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
     },
     "capital_expenditure": {
-      "value": 677700000,
+      "value": 686200000,
       "unit": "USD",
-      "period_start": "2025-01-01",
-      "period_end": "2025-12-31",
-      "filed": "2026-02-19",
-      "accession": "0001628280-26-009546",
+      "period_end": "2026-03-31",
+      "filed": "2026-04-29",
       "tag": "PaymentsToAcquirePropertyPlantAndEquipment",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
     },
     "cash": {
-      "value": 183300000,
+      "value": 140200000,
       "unit": "USD",
-      "period_start": null,
-      "period_end": "2025-12-31",
-      "filed": "2026-02-19",
-      "accession": "0001628280-26-009546",
+      "period_end": "2026-03-31",
+      "filed": "2026-04-29",
       "tag": "CashAndCashEquivalentsAtCarryingValue",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     },
     "debt_current": {
-      "value": 400000,
+      "value": 0,
       "unit": "USD",
-      "period_start": null,
-      "period_end": "2025-12-31",
-      "filed": "2026-02-19",
-      "accession": "0001628280-26-009546",
+      "period_end": "2026-03-31",
+      "filed": "2026-04-29",
       "tag": "LongTermDebtCurrent",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     },
     "debt_noncurrent": {
-      "value": 4361700000,
+      "value": 4363000000,
       "unit": "USD",
-      "period_start": null,
-      "period_end": "2025-12-31",
-      "filed": "2026-02-19",
-      "accession": "0001628280-26-009546",
+      "period_end": "2026-03-31",
+      "filed": "2026-04-29",
       "tag": "LongTermDebtNoncurrent",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     },
     "shares_outstanding": {
-      "value": 130600000,
+      "value": 130300000,
       "unit": "shares",
-      "period_start": null,
-      "period_end": "2025-12-31",
-      "filed": "2026-02-19",
-      "accession": "0001628280-26-009546",
+      "period_end": "2026-03-31",
+      "filed": "2026-04-29",
       "tag": "CommonStockSharesOutstanding",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     }
   },
   "review_required": true,
-  "note": "SEC reported fields. Different tags and fiscal periods require validation. Operating cash flow minus capex is not automatically unlevered FCFF. Not a completed DCF valuation."
+  "warnings": [
+    "Operating cash flow minus CapEx is not unlevered FCFF",
+    "Shares outstanding are not necessarily diluted shares",
+    "Debt and cash require classification and date checks"
+  ]
 }

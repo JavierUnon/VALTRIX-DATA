@@ -4,70 +4,73 @@
   "company_name": "SEMPRA",
   "sector": "Utilities",
   "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001032208.json",
-  "fetched_at_utc": "2026-10-24T01:33:46.677533+00:00",
+  "fetched_at_utc": "2026-10-24T02:13:10.097160+00:00",
   "financials": {
     "revenue": {
-      "value": 12418000000,
+      "value": 12165000000,
       "unit": "USD",
-      "period_start": "2025-01-01",
-      "period_end": "2025-12-31",
-      "filed": "2026-02-26",
-      "accession": "0001032208-26-000010",
+      "period_end": "2026-03-31",
+      "filed": "2026-05-07",
       "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
     },
     "operating_cash_flow": {
-      "value": 4565000000,
+      "value": 4892000000,
       "unit": "USD",
-      "period_start": "2025-01-01",
-      "period_end": "2025-12-31",
-      "filed": "2026-02-26",
-      "accession": "0001032208-26-000010",
+      "period_end": "2026-03-31",
+      "filed": "2026-05-07",
       "tag": "NetCashProvidedByUsedInOperatingActivities",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
     },
     "capital_expenditure": null,
     "cash": {
-      "value": 29000000,
+      "value": 794000000,
       "unit": "USD",
-      "period_start": null,
-      "period_end": "2025-12-31",
-      "filed": "2026-02-26",
-      "accession": "0001032208-26-000010",
+      "period_end": "2026-03-31",
+      "filed": "2026-05-07",
       "tag": "CashAndCashEquivalentsAtCarryingValue",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     },
     "debt_current": {
-      "value": 1876000000,
+      "value": 1878000000,
       "unit": "USD",
-      "period_start": null,
-      "period_end": "2025-12-31",
-      "filed": "2026-02-26",
-      "accession": "0001032208-26-000010",
+      "period_end": "2026-03-31",
+      "filed": "2026-05-07",
       "tag": "LongTermDebtAndCapitalLeaseObligationsCurrent",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     },
     "debt_noncurrent": {
-      "value": 28979000000,
+      "value": 30847000000,
       "unit": "USD",
-      "period_start": null,
-      "period_end": "2025-12-31",
-      "filed": "2026-02-26",
-      "accession": "0001032208-26-000010",
+      "period_end": "2026-03-31",
+      "filed": "2026-05-07",
       "tag": "LongTermDebtAndCapitalLeaseObligations",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     },
     "shares_outstanding": {
-      "value": 652731668,
+      "value": 653344198,
       "unit": "shares",
-      "period_start": null,
-      "period_end": "2025-12-31",
-      "filed": "2026-02-26",
-      "accession": "0001032208-26-000010",
+      "period_end": "2026-03-31",
+      "filed": "2026-05-07",
       "tag": "CommonStockSharesOutstanding",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     }
   },
   "review_required": true,
-  "note": "SEC reported fields. Different tags and fiscal periods require validation. Operating cash flow minus capex is not automatically unlevered FCFF. Not a completed DCF valuation."
+  "warnings": [
+    "Missing field: capital_expenditure",
+    "Operating cash flow minus CapEx is not unlevered FCFF",
+    "Shares outstanding are not necessarily diluted shares",
+    "Debt and cash require classification and date checks"
+  ]
 }

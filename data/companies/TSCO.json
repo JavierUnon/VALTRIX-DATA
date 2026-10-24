@@ -4,70 +4,75 @@
   "company_name": "TRACTOR SUPPLY CO /DE/",
   "sector": "Consumer Discretionary",
   "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000916365.json",
-  "fetched_at_utc": "2026-10-24T01:34:10.822017+00:00",
+  "fetched_at_utc": "2026-10-24T02:13:34.768091+00:00",
   "financials": {
     "revenue": {
-      "value": 15524046000,
+      "value": 15750724000,
       "unit": "USD",
-      "period_start": "2024-12-29",
-      "period_end": "2025-12-27",
-      "filed": "2026-02-19",
-      "accession": "0000916365-26-000014",
+      "period_end": "2026-06-27",
+      "filed": "2026-08-06",
       "tag": "Revenues",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-27"
     },
     "operating_cash_flow": {
-      "value": 1635259000,
+      "value": 1285820000,
       "unit": "USD",
-      "period_start": "2024-12-29",
-      "period_end": "2025-12-27",
-      "filed": "2026-02-19",
-      "accession": "0000916365-26-000014",
+      "period_end": "2026-06-27",
+      "filed": "2026-08-06",
       "tag": "NetCashProvidedByUsedInOperatingActivities",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-27"
     },
     "capital_expenditure": {
-      "value": 894770000,
+      "value": 978839000,
       "unit": "USD",
-      "period_start": "2024-12-29",
-      "period_end": "2025-12-27",
-      "filed": "2026-02-19",
-      "accession": "0000916365-26-000014",
+      "period_end": "2026-06-27",
+      "filed": "2026-08-06",
       "tag": "PaymentsToAcquirePropertyPlantAndEquipment",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-27"
     },
     "cash": {
-      "value": 194109000,
+      "value": 231588000,
       "unit": "USD",
-      "period_start": null,
-      "period_end": "2025-12-27",
-      "filed": "2026-02-19",
-      "accession": "0000916365-26-000014",
+      "period_end": "2026-06-27",
+      "filed": "2026-08-06",
       "tag": "CashAndCashEquivalentsAtCarryingValue",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     },
     "debt_current": null,
     "debt_noncurrent": {
-      "value": 1764974000,
+      "value": 2153826000,
       "unit": "USD",
-      "period_start": null,
-      "period_end": "2025-12-27",
-      "filed": "2026-02-19",
-      "accession": "0000916365-26-000014",
+      "period_end": "2026-06-27",
+      "filed": "2026-08-06",
       "tag": "LongTermDebtNoncurrent",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     },
     "shares_outstanding": {
-      "value": 527017000,
+      "value": 521845000,
       "unit": "shares",
-      "period_start": null,
-      "period_end": "2025-12-27",
-      "filed": "2026-02-19",
-      "accession": "0000916365-26-000014",
+      "period_end": "2026-06-27",
+      "filed": "2026-08-06",
       "tag": "CommonStockSharesOutstanding",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     }
   },
   "review_required": true,
-  "note": "SEC reported fields. Different tags and fiscal periods require validation. Operating cash flow minus capex is not automatically unlevered FCFF. Not a completed DCF valuation."
+  "warnings": [
+    "Missing field: debt_current",
+    "Operating cash flow minus CapEx is not unlevered FCFF",
+    "Shares outstanding are not necessarily diluted shares",
+    "Debt and cash require classification and date checks"
+  ]
 }

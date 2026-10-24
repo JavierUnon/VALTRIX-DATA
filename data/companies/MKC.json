@@ -4,27 +4,29 @@
   "company_name": "McCORMICK\u00a0& COMPANY, INCORPORATED",
   "sector": "Consumer Staples",
   "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000063754.json",
-  "fetched_at_utc": "2026-10-24T01:32:40.583703+00:00",
+  "fetched_at_utc": "2026-10-24T02:12:03.631527+00:00",
   "financials": {
     "revenue": {
-      "value": 6840300000,
+      "value": 7685700000,
       "unit": "USD",
-      "period_start": "2024-12-01",
-      "period_end": "2025-11-30",
-      "filed": "2026-01-22",
-      "accession": "0000063754-26-000037",
+      "period_end": "2026-08-31",
+      "filed": "2026-10-01",
       "tag": "Revenues",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-11-30"
     },
     "operating_cash_flow": {
-      "value": 962200000,
+      "value": 1140800000,
       "unit": "USD",
-      "period_start": "2024-12-01",
-      "period_end": "2025-11-30",
-      "filed": "2026-01-22",
-      "accession": "0000063754-26-000037",
+      "period_end": "2026-08-31",
+      "filed": "2026-10-01",
       "tag": "NetCashProvidedByUsedInOperatingActivities",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-11-30"
     },
     "capital_expenditure": {
       "value": 262000000,
@@ -32,42 +34,46 @@
       "period_start": "2021-12-01",
       "period_end": "2022-11-30",
       "filed": "2023-01-26",
-      "accession": "0000063754-23-000005",
       "tag": "PaymentsToAcquirePropertyPlantAndEquipment",
-      "form": "10-K"
+      "form": "10-K",
+      "method": "annual_fallback",
+      "warning": "TTM unavailable; annual data used"
     },
     "cash": {
-      "value": 95900000,
+      "value": 331100000,
       "unit": "USD",
-      "period_start": null,
-      "period_end": "2025-11-30",
-      "filed": "2026-01-22",
-      "accession": "0000063754-26-000037",
+      "period_end": "2026-08-31",
+      "filed": "2026-10-01",
       "tag": "CashAndCashEquivalentsAtCarryingValue",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     },
     "debt_current": {
-      "value": 509100000,
+      "value": 771900000,
       "unit": "USD",
-      "period_start": null,
-      "period_end": "2025-11-30",
-      "filed": "2026-01-22",
-      "accession": "0000063754-26-000037",
+      "period_end": "2026-08-31",
+      "filed": "2026-10-01",
       "tag": "LongTermDebtCurrent",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     },
     "debt_noncurrent": {
-      "value": 3105800000,
+      "value": 2906100000,
       "unit": "USD",
-      "period_start": null,
-      "period_end": "2025-11-30",
-      "filed": "2026-01-22",
-      "accession": "0000063754-26-000037",
+      "period_end": "2026-08-31",
+      "filed": "2026-10-01",
       "tag": "LongTermDebtNoncurrent",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     },
     "shares_outstanding": null
   },
   "review_required": true,
-  "note": "SEC reported fields. Different tags and fiscal periods require validation. Operating cash flow minus capex is not automatically unlevered FCFF. Not a completed DCF valuation."
+  "warnings": [
+    "TTM unavailable: capital_expenditure",
+    "Missing field: shares_outstanding",
+    "Operating cash flow minus CapEx is not unlevered FCFF",
+    "Shares outstanding are not necessarily diluted shares",
+    "Debt and cash require classification and date checks"
+  ]
 }

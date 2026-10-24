@@ -4,79 +4,82 @@
   "company_name": "Alphabet Inc.",
   "sector": "Communication Services",
   "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001652044.json",
-  "fetched_at_utc": "2026-10-24T01:29:04.519964+00:00",
+  "fetched_at_utc": "2026-10-24T02:08:47.043976+00:00",
   "financials": {
     "revenue": {
-      "value": 350018000000,
+      "value": 445866000000,
       "unit": "USD",
-      "period_start": "2024-01-01",
-      "period_end": "2024-12-31",
-      "filed": "2025-02-05",
-      "accession": "0001652044-25-000014",
-      "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
-      "form": "10-K"
+      "period_end": "2026-06-30",
+      "filed": "2026-07-23",
+      "tag": "Revenues",
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
     },
     "operating_cash_flow": {
-      "value": 164713000000,
+      "value": 185675000000,
       "unit": "USD",
-      "period_start": "2025-01-01",
-      "period_end": "2025-12-31",
-      "filed": "2026-02-05",
-      "accession": "0001652044-26-000018",
+      "period_end": "2026-06-30",
+      "filed": "2026-07-23",
       "tag": "NetCashProvidedByUsedInOperatingActivities",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
     },
     "capital_expenditure": {
-      "value": 91447000000,
+      "value": 132402000000,
       "unit": "USD",
-      "period_start": "2025-01-01",
-      "period_end": "2025-12-31",
-      "filed": "2026-02-05",
-      "accession": "0001652044-26-000018",
+      "period_end": "2026-06-30",
+      "filed": "2026-07-23",
       "tag": "PaymentsToAcquirePropertyPlantAndEquipment",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
     },
     "cash": {
-      "value": 30708000000,
+      "value": 55911000000,
       "unit": "USD",
-      "period_start": null,
-      "period_end": "2025-12-31",
-      "filed": "2026-02-05",
-      "accession": "0001652044-26-000018",
+      "period_end": "2026-06-30",
+      "filed": "2026-07-23",
       "tag": "CashAndCashEquivalentsAtCarryingValue",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     },
     "debt_current": {
-      "value": 1996000000,
+      "value": 1999000000,
       "unit": "USD",
-      "period_start": null,
-      "period_end": "2025-12-31",
-      "filed": "2026-02-05",
-      "accession": "0001652044-26-000018",
+      "period_end": "2026-06-30",
+      "filed": "2026-07-23",
       "tag": "LongTermDebtCurrent",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     },
     "debt_noncurrent": {
-      "value": 46547000000,
+      "value": 98165000000,
       "unit": "USD",
-      "period_start": null,
-      "period_end": "2025-12-31",
-      "filed": "2026-02-05",
-      "accession": "0001652044-26-000018",
+      "period_end": "2026-06-30",
+      "filed": "2026-07-23",
       "tag": "LongTermDebtNoncurrent",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     },
     "shares_outstanding": {
-      "value": 12088000000,
+      "value": 12230000000,
       "unit": "shares",
-      "period_start": null,
-      "period_end": "2025-12-31",
-      "filed": "2026-02-05",
-      "accession": "0001652044-26-000018",
+      "period_end": "2026-06-30",
+      "filed": "2026-07-23",
       "tag": "CommonStockSharesOutstanding",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     }
   },
   "review_required": true,
-  "note": "SEC reported fields. Different tags and fiscal periods require validation. Operating cash flow minus capex is not automatically unlevered FCFF. Not a completed DCF valuation."
+  "warnings": [
+    "Operating cash flow minus CapEx is not unlevered FCFF",
+    "Shares outstanding are not necessarily diluted shares",
+    "Debt and cash require classification and date checks"
+  ]
 }

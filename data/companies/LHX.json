@@ -4,7 +4,7 @@
   "company_name": "L3HARRIS TECHNOLOGIES, INC.",
   "sector": "Industrials",
   "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000202058.json",
-  "fetched_at_utc": "2026-10-24T01:32:24.109485+00:00",
+  "fetched_at_utc": "2026-10-24T02:11:48.306648+00:00",
   "financials": {
     "revenue": {
       "value": 21325000000,
@@ -12,71 +12,75 @@
       "period_start": "2023-12-30",
       "period_end": "2025-01-03",
       "filed": "2026-02-12",
-      "accession": "0000202058-26-000015",
       "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
-      "form": "10-K"
+      "form": "10-K",
+      "method": "annual_fallback",
+      "warning": "TTM unavailable; annual data used"
     },
     "operating_cash_flow": {
-      "value": 3106000000,
+      "value": 3292000000,
       "unit": "USD",
-      "period_start": "2025-01-04",
-      "period_end": "2026-01-02",
-      "filed": "2026-02-12",
-      "accession": "0000202058-26-000015",
+      "period_end": "2026-07-03",
+      "filed": "2026-07-30",
       "tag": "NetCashProvidedByUsedInOperatingActivities",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2026-01-02"
     },
     "capital_expenditure": {
-      "value": 424000000,
+      "value": 484000000,
       "unit": "USD",
-      "period_start": "2025-01-04",
-      "period_end": "2026-01-02",
-      "filed": "2026-02-12",
-      "accession": "0000202058-26-000015",
+      "period_end": "2026-07-03",
+      "filed": "2026-07-30",
       "tag": "PaymentsToAcquirePropertyPlantAndEquipment",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2026-01-02"
     },
     "cash": {
-      "value": 1069000000,
+      "value": 1521000000,
       "unit": "USD",
-      "period_start": null,
-      "period_end": "2026-01-02",
-      "filed": "2026-02-12",
-      "accession": "0000202058-26-000015",
+      "period_end": "2026-07-03",
+      "filed": "2026-07-30",
       "tag": "CashAndCashEquivalentsAtCarryingValue",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     },
     "debt_current": {
-      "value": 554000000,
+      "value": 1815000000,
       "unit": "USD",
-      "period_start": null,
-      "period_end": "2017-06-30",
-      "filed": "2017-08-29",
-      "accession": "0000202058-17-000037",
-      "tag": "LongTermDebtCurrent",
-      "form": "10-K"
+      "period_end": "2026-07-03",
+      "filed": "2026-07-30",
+      "tag": "LongTermDebtAndCapitalLeaseObligationsCurrent",
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     },
     "debt_noncurrent": {
-      "value": 10443000000,
+      "value": 9184000000,
       "unit": "USD",
-      "period_start": null,
-      "period_end": "2026-01-02",
-      "filed": "2026-02-12",
-      "accession": "0000202058-26-000015",
+      "period_end": "2026-07-03",
+      "filed": "2026-07-30",
       "tag": "LongTermDebtNoncurrent",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     },
     "shares_outstanding": {
-      "value": 186844093,
+      "value": 186155804,
       "unit": "shares",
-      "period_start": null,
-      "period_end": "2026-01-02",
-      "filed": "2026-02-12",
-      "accession": "0000202058-26-000015",
+      "period_end": "2026-07-03",
+      "filed": "2026-07-30",
       "tag": "CommonStockSharesOutstanding",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     }
   },
   "review_required": true,
-  "note": "SEC reported fields. Different tags and fiscal periods require validation. Operating cash flow minus capex is not automatically unlevered FCFF. Not a completed DCF valuation."
+  "warnings": [
+    "TTM unavailable: revenue",
+    "Operating cash flow minus CapEx is not unlevered FCFF",
+    "Shares outstanding are not necessarily diluted shares",
+    "Debt and cash require classification and date checks"
+  ]
 }

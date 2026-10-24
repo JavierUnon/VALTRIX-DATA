@@ -4,79 +4,82 @@
   "company_name": "J M SMUCKER Co",
   "sector": "Consumer Staples",
   "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000091419.json",
-  "fetched_at_utc": "2026-10-24T01:33:50.371879+00:00",
+  "fetched_at_utc": "2026-10-24T02:13:14.347117+00:00",
   "financials": {
     "revenue": {
-      "value": 9050900000,
+      "value": 9156900000,
       "unit": "USD",
-      "period_start": "2025-05-01",
-      "period_end": "2026-04-30",
-      "filed": "2026-06-09",
-      "accession": "0000091419-26-000050",
+      "period_end": "2026-07-31",
+      "filed": "2026-08-26",
       "tag": "RevenueFromContractWithCustomerIncludingAssessedTax",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2026-04-30"
     },
     "operating_cash_flow": {
-      "value": 1473600000,
+      "value": 1909900000,
       "unit": "USD",
-      "period_start": "2025-05-01",
-      "period_end": "2026-04-30",
-      "filed": "2026-06-09",
-      "accession": "0000091419-26-000050",
+      "period_end": "2026-07-31",
+      "filed": "2026-08-26",
       "tag": "NetCashProvidedByUsedInOperatingActivities",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2026-04-30"
     },
     "capital_expenditure": {
-      "value": 317400000,
+      "value": 321500000,
       "unit": "USD",
-      "period_start": "2025-05-01",
-      "period_end": "2026-04-30",
-      "filed": "2026-06-09",
-      "accession": "0000091419-26-000050",
+      "period_end": "2026-07-31",
+      "filed": "2026-08-26",
       "tag": "PaymentsToAcquirePropertyPlantAndEquipment",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2026-04-30"
     },
     "cash": {
-      "value": 101300000,
+      "value": 48800000,
       "unit": "USD",
-      "period_start": null,
-      "period_end": "2019-04-30",
-      "filed": "2019-06-17",
-      "accession": "0000091419-19-000005",
+      "period_end": "2019-07-31",
+      "filed": "2019-08-27",
       "tag": "CashAndCashEquivalentsAtCarryingValue",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     },
     "debt_current": {
       "value": 150000000,
       "unit": "USD",
-      "period_start": null,
-      "period_end": "2026-04-30",
-      "filed": "2026-06-09",
-      "accession": "0000091419-26-000050",
+      "period_end": "2026-07-31",
+      "filed": "2026-08-26",
       "tag": "LongTermDebtCurrent",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     },
     "debt_noncurrent": {
-      "value": 6392800000,
+      "value": 6394300000,
       "unit": "USD",
-      "period_start": null,
-      "period_end": "2026-04-30",
-      "filed": "2026-06-09",
-      "accession": "0000091419-26-000050",
+      "period_end": "2026-07-31",
+      "filed": "2026-08-26",
       "tag": "LongTermDebtNoncurrent",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     },
     "shares_outstanding": {
-      "value": 106661858,
+      "value": 106800000,
       "unit": "shares",
-      "period_start": null,
-      "period_end": "2026-04-30",
-      "filed": "2026-06-09",
-      "accession": "0000091419-26-000050",
+      "period_end": "2026-07-31",
+      "filed": "2026-08-26",
       "tag": "CommonStockSharesOutstanding",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     }
   },
   "review_required": true,
-  "note": "SEC reported fields. Different tags and fiscal periods require validation. Operating cash flow minus capex is not automatically unlevered FCFF. Not a completed DCF valuation."
+  "warnings": [
+    "Operating cash flow minus CapEx is not unlevered FCFF",
+    "Shares outstanding are not necessarily diluted shares",
+    "Debt and cash require classification and date checks"
+  ]
 }

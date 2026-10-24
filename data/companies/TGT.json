@@ -4,70 +4,82 @@
   "company_name": "Target Corporation",
   "sector": "Consumer Staples",
   "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000027419.json",
-  "fetched_at_utc": "2026-10-24T01:34:03.663999+00:00",
+  "fetched_at_utc": "2026-10-24T02:13:27.613509+00:00",
   "financials": {
     "revenue": {
-      "value": 104780000000,
+      "value": 107705000000,
       "unit": "USD",
-      "period_start": "2025-02-02",
-      "period_end": "2026-01-31",
-      "filed": "2026-03-11",
-      "accession": "0000027419-26-000016",
+      "period_end": "2026-08-01",
+      "filed": "2026-08-28",
       "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2026-01-31"
     },
     "operating_cash_flow": {
-      "value": 6562000000,
+      "value": 8723000000,
       "unit": "USD",
-      "period_start": "2025-02-02",
-      "period_end": "2026-01-31",
-      "filed": "2026-03-11",
-      "accession": "0000027419-26-000016",
+      "period_end": "2026-08-01",
+      "filed": "2026-08-28",
       "tag": "NetCashProvidedByUsedInOperatingActivities",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2026-01-31"
     },
     "capital_expenditure": {
-      "value": 3727000000,
+      "value": 4267000000,
       "unit": "USD",
-      "period_start": "2025-02-02",
-      "period_end": "2026-01-31",
-      "filed": "2026-03-11",
-      "accession": "0000027419-26-000016",
+      "period_end": "2026-08-01",
+      "filed": "2026-08-28",
       "tag": "PaymentsToAcquirePropertyPlantAndEquipment",
-      "form": "10-K"
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2026-01-31"
     },
-    "cash": null,
-    "debt_current": {
-      "value": 161000000,
+    "cash": {
+      "value": 2680000000,
       "unit": "USD",
-      "period_start": null,
-      "period_end": "2020-02-01",
-      "filed": "2020-03-11",
-      "accession": "0000027419-20-000008",
-      "tag": "LongTermDebtCurrent",
-      "form": "10-K"
+      "period_end": "2017-04-29",
+      "filed": "2017-05-22",
+      "tag": "CashAndCashEquivalentsAtCarryingValue",
+      "form": "10-Q",
+      "method": "latest_reported_balance"
+    },
+    "debt_current": {
+      "value": 1136000000,
+      "unit": "USD",
+      "period_end": "2026-08-01",
+      "filed": "2026-08-28",
+      "tag": "LongTermDebtAndCapitalLeaseObligationsCurrent",
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     },
     "debt_noncurrent": {
-      "value": 14654000000,
+      "value": 14221000000,
       "unit": "USD",
-      "period_start": null,
-      "period_end": "2013-02-02",
-      "filed": "2013-03-20",
-      "accession": "0001047469-13-003100",
-      "tag": "LongTermDebtNoncurrent",
-      "form": "10-K"
+      "period_end": "2026-08-01",
+      "filed": "2026-08-28",
+      "tag": "LongTermDebtAndCapitalLeaseObligations",
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     },
     "shares_outstanding": {
-      "value": 452840187,
+      "value": 454291461,
       "unit": "shares",
-      "period_start": null,
-      "period_end": "2026-01-31",
-      "filed": "2026-03-11",
-      "accession": "0000027419-26-000016",
+      "period_end": "2026-08-01",
+      "filed": "2026-08-28",
       "tag": "CommonStockSharesOutstanding",
-      "form": "10-K"
+      "form": "10-Q",
+      "method": "latest_reported_balance"
     }
   },
   "review_required": true,
-  "note": "SEC reported fields. Different tags and fiscal periods require validation. Operating cash flow minus capex is not automatically unlevered FCFF. Not a completed DCF valuation."
+  "warnings": [
+    "Operating cash flow minus CapEx is not unlevered FCFF",
+    "Shares outstanding are not necessarily diluted shares",
+    "Debt and cash require classification and date checks"
+  ]
 }
