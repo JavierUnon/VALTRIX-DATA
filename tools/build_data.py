@@ -18,6 +18,18 @@ OUT = Path("data/companies")
 
 TAGS = {
     
+    "accounts_receivable": [
+        "AccountsReceivableNetCurrent",
+        "AccountsNotesAndOtherReceivablesNetCurrent",
+    ],
+    "inventory": [
+        "InventoryNet",
+    ],
+    "accounts_payable": [
+        "AccountsPayableCurrent",
+    ],
+
+    
     "operating_income": [
         "OperatingIncomeLoss",
     ],
