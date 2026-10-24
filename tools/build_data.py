@@ -257,6 +257,46 @@ def latest_ttm(facts, tags):
     }
 
 
+
+def diluted_shares(facts):
+    tags = [
+        "WeightedAverageNumberOfDilutedSharesOutstanding",
+    ]
+    candidates = []
+
+    for tag in tags:
+        for row in rows_for_tag(facts, tag, "shares"):
+            days = duration(row)
+            if (
+                row.get("form") == "10-K"
+                and days is not None
+                and 300 <= days <= 400
+                and row.get("filed")
+            ):
+                candidates.append((row, tag))
+
+    if not candidates:
+        return None
+
+    row, tag = max(
+        candidates,
+        key=lambda item: (
+            item[0]["end"],
+            item[0]["filed"],
+        ),
+    )
+
+    return {
+        "value": row["val"],
+        "unit": "shares",
+        "period_end": row["end"],
+        "filed": row["filed"],
+        "tag": tag,
+        "form": "10-K",
+        "method": "annual_diluted_weighted_average",
+        "review_required": True,
+    }
+
 def build_record(company, agent):
     cik = company["cik"]
     url = (
@@ -268,6 +308,7 @@ def build_record(company, agent):
 
     financials = {}
     warnings = []
+    financials["diluted_shares"] = diluted_shares(facts)
 
     for key, tags in TAGS.items():
         if key in FLOW_KEYS:
