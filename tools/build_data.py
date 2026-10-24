@@ -25,7 +25,7 @@ OUT = Path("data/companies")
 def fetch(cik, user_agent):
     req = urllib.request.Request(
         f"https://data.sec.gov/api/xbrl/companyfacts/CIK{cik}.json",
-        headers={"User-Agent": user_agent, "Accept-Encoding": "gzip, deflate", "Host": "data.sec.gov"},
+        headers={"User-Agent": user_agent, "Host": "data.sec.gov"},
     )
     # Avoid compressed transfer encoding to keep urllib handling straightforward.
     req.remove_header("Accept-Encoding")
