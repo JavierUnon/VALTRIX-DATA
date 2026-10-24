@@ -1,0 +1,19 @@
+
+name: Test Alpaca API
+
+on:
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Test Apple market data
+        env:
+          ALPACA_KEY: ${{ secrets.ALPACA_API_KEY }}
+          ALPACA_SECRET: ${{ secrets.ALPACA_SECRET_KEY }}
+        run: |
+          curl --fail-with-body --silent --show-error \
+            -H "APCA-API-KEY-ID: $ALPACA_KEY" \
+            -H "APCA-API-SECRET-KEY: $ALPACA_SECRET" \
+            "https://data.alpaca.markets/v2/stocks/AAPL/bars?timeframe=1Day&start=2026-10-01T00:00:00Z&end=2026-10-20T00:00:00Z&feed=iex&limit=3"
