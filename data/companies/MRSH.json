@@ -4,7 +4,7 @@
   "company_name": "MARSH & MCLENNAN COMPANIES, INC.",
   "sector": "Financials",
   "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000062709.json",
-  "fetched_at_utc": "2026-10-24T02:28:31.721662+00:00",
+  "fetched_at_utc": "2026-10-24T02:42:13.368301+00:00",
   "financials": {
     "diluted_shares": {
       "value": 494000000,
@@ -15,6 +15,39 @@
       "form": "10-K",
       "method": "annual_diluted_weighted_average",
       "review_required": true
+    },
+    "operating_income": {
+      "value": 6087000000,
+      "unit": "USD",
+      "period_end": "2026-09-30",
+      "filed": "2026-10-15",
+      "tag": "OperatingIncomeLoss",
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
+    },
+    "depreciation_amortization": {
+      "value": 359000000,
+      "unit": "USD",
+      "period_end": "2026-09-30",
+      "filed": "2026-10-15",
+      "tag": "DepreciationDepletionAndAmortization",
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
+    },
+    "income_tax_expense": {
+      "value": 1249000000,
+      "unit": "USD",
+      "period_end": "2026-09-30",
+      "filed": "2026-10-15",
+      "tag": "IncomeTaxExpenseBenefit",
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
     },
     "revenue": {
       "value": 28459000000,

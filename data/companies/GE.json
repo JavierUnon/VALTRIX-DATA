@@ -4,7 +4,7 @@
   "company_name": "GENERAL ELECTRIC COMPANY",
   "sector": "Industrials",
   "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000040545.json",
-  "fetched_at_utc": "2026-10-24T02:27:23.453071+00:00",
+  "fetched_at_utc": "2026-10-24T02:41:09.738254+00:00",
   "financials": {
     "diluted_shares": {
       "value": 1068000000,
@@ -15,6 +15,39 @@
       "form": "10-K",
       "method": "annual_diluted_weighted_average",
       "review_required": true
+    },
+    "operating_income": {
+      "value": 22887000000,
+      "unit": "USD",
+      "period_start": "2012-01-01",
+      "period_end": "2012-12-31",
+      "filed": "2013-02-26",
+      "tag": "OperatingIncomeLoss",
+      "form": "10-K",
+      "method": "annual_fallback",
+      "warning": "TTM unavailable; annual data used"
+    },
+    "depreciation_amortization": {
+      "value": 899000000,
+      "unit": "USD",
+      "period_end": "2026-09-30",
+      "filed": "2026-10-20",
+      "tag": "DepreciationAmortizationAndAccretionNet",
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
+    },
+    "income_tax_expense": {
+      "value": 1434000000,
+      "unit": "USD",
+      "period_end": "2026-09-30",
+      "filed": "2026-10-20",
+      "tag": "IncomeTaxExpenseBenefit",
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
     },
     "revenue": {
       "value": 52576000000,
@@ -88,6 +121,7 @@
   },
   "review_required": true,
   "warnings": [
+    "TTM unavailable: operating_income",
     "Operating cash flow minus CapEx is not unlevered FCFF",
     "Shares outstanding are not necessarily diluted shares",
     "Debt and cash require classification and date checks"

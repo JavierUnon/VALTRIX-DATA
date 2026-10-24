@@ -4,7 +4,7 @@
   "company_name": "WELLTOWER INC.",
   "sector": "Real Estate",
   "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000766704.json",
-  "fetched_at_utc": "2026-10-24T02:30:42.550470+00:00",
+  "fetched_at_utc": "2026-10-24T02:45:26.331274+00:00",
   "financials": {
     "diluted_shares": {
       "value": 679521000,
@@ -15,6 +15,28 @@
       "form": "10-K",
       "method": "annual_diluted_weighted_average",
       "review_required": true
+    },
+    "operating_income": null,
+    "depreciation_amortization": {
+      "value": 1027073000,
+      "unit": "USD",
+      "period_start": "2019-01-01",
+      "period_end": "2019-12-31",
+      "filed": "2020-02-14",
+      "tag": "DepreciationDepletionAndAmortization",
+      "form": "10-K",
+      "method": "annual"
+    },
+    "income_tax_expense": {
+      "value": 10036000,
+      "unit": "USD",
+      "period_end": "2026-03-31",
+      "filed": "2026-04-29",
+      "tag": "IncomeTaxExpenseBenefit",
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
     },
     "revenue": {
       "value": 9369397000,
@@ -62,6 +84,7 @@
   },
   "review_required": true,
   "warnings": [
+    "Missing field: operating_income",
     "Missing field: capital_expenditure",
     "Missing field: debt_current",
     "Missing field: debt_noncurrent",

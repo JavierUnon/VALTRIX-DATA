@@ -4,7 +4,7 @@
   "company_name": "Travelers Companies,\u00a0Inc.",
   "sector": "Financials",
   "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000086312.json",
-  "fetched_at_utc": "2026-10-24T02:30:12.914703+00:00",
+  "fetched_at_utc": "2026-10-24T02:44:50.947686+00:00",
   "financials": {
     "diluted_shares": {
       "value": 227600000,
@@ -15,6 +15,39 @@
       "form": "10-K",
       "method": "annual_diluted_weighted_average",
       "review_required": true
+    },
+    "operating_income": {
+      "value": 3574000000,
+      "unit": "USD",
+      "period_end": "2015-09-30",
+      "filed": "2015-10-20",
+      "tag": "OperatingIncomeLoss",
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2014-12-31"
+    },
+    "depreciation_amortization": {
+      "value": 699000000,
+      "unit": "USD",
+      "period_end": "2026-09-30",
+      "filed": "2026-10-16",
+      "tag": "DepreciationDepletionAndAmortization",
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
+    },
+    "income_tax_expense": {
+      "value": 2026000000,
+      "unit": "USD",
+      "period_end": "2026-09-30",
+      "filed": "2026-10-16",
+      "tag": "IncomeTaxExpenseBenefit",
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
     },
     "revenue": {
       "value": 48921000000,

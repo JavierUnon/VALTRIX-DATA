@@ -4,7 +4,7 @@
   "company_name": "KLA Corporation",
   "sector": "Information Technology",
   "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000319201.json",
-  "fetched_at_utc": "2026-10-24T02:28:14.240748+00:00",
+  "fetched_at_utc": "2026-10-24T02:41:57.320573+00:00",
   "financials": {
     "diluted_shares": {
       "value": 1319633000,
@@ -15,6 +15,37 @@
       "form": "10-K",
       "method": "annual_diluted_weighted_average",
       "review_required": true
+    },
+    "operating_income": {
+      "value": 631867000,
+      "unit": "USD",
+      "period_end": "2015-03-31",
+      "filed": "2015-04-24",
+      "tag": "OperatingIncomeLoss",
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2014-06-30"
+    },
+    "depreciation_amortization": {
+      "value": 393978000,
+      "unit": "USD",
+      "period_start": "2025-07-01",
+      "period_end": "2026-06-30",
+      "filed": "2026-08-06",
+      "tag": "DepreciationDepletionAndAmortization",
+      "form": "10-K",
+      "method": "annual"
+    },
+    "income_tax_expense": {
+      "value": 775154000,
+      "unit": "USD",
+      "period_start": "2025-07-01",
+      "period_end": "2026-06-30",
+      "filed": "2026-08-06",
+      "tag": "IncomeTaxExpenseBenefit",
+      "form": "10-K",
+      "method": "annual"
     },
     "revenue": {
       "value": 13579476000,

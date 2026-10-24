@@ -4,7 +4,7 @@
   "company_name": "WILLIS TOWERS WATSON PLC",
   "sector": "Financials",
   "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001140536.json",
-  "fetched_at_utc": "2026-10-24T02:30:46.385743+00:00",
+  "fetched_at_utc": "2026-10-24T02:45:31.781547+00:00",
   "financials": {
     "diluted_shares": {
       "value": 99000000,
@@ -15,6 +15,38 @@
       "form": "10-K",
       "method": "annual_diluted_weighted_average",
       "review_required": true
+    },
+    "operating_income": {
+      "value": 2246000000,
+      "unit": "USD",
+      "period_end": "2026-06-30",
+      "filed": "2026-07-30",
+      "tag": "OperatingIncomeLoss",
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
+    },
+    "depreciation_amortization": {
+      "value": -79000000,
+      "unit": "USD",
+      "period_start": "2012-01-01",
+      "period_end": "2012-12-31",
+      "filed": "2013-02-28",
+      "tag": "DepreciationDepletionAndAmortization",
+      "form": "10-K",
+      "method": "annual"
+    },
+    "income_tax_expense": {
+      "value": 401000000,
+      "unit": "USD",
+      "period_end": "2026-06-30",
+      "filed": "2026-07-30",
+      "tag": "IncomeTaxExpenseBenefit",
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
     },
     "revenue": {
       "value": 9912000000,

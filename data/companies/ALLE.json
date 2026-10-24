@@ -4,7 +4,7 @@
   "company_name": "Allegion plc",
   "sector": "Industrials",
   "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001579241.json",
-  "fetched_at_utc": "2026-10-24T02:24:34.428841+00:00",
+  "fetched_at_utc": "2026-10-24T02:38:24.824430+00:00",
   "financials": {
     "diluted_shares": {
       "value": 86600000,
@@ -15,6 +15,39 @@
       "form": "10-K",
       "method": "annual_diluted_weighted_average",
       "review_required": true
+    },
+    "operating_income": {
+      "value": 944200000,
+      "unit": "USD",
+      "period_end": "2026-09-30",
+      "filed": "2026-10-22",
+      "tag": "OperatingIncomeLoss",
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
+    },
+    "depreciation_amortization": {
+      "value": 129700000,
+      "unit": "USD",
+      "period_start": "2025-01-01",
+      "period_end": "2025-12-31",
+      "filed": "2026-02-17",
+      "tag": "DepreciationDepletionAndAmortization",
+      "form": "10-K",
+      "method": "annual_fallback",
+      "warning": "TTM unavailable; annual data used"
+    },
+    "income_tax_expense": {
+      "value": 160000000,
+      "unit": "USD",
+      "period_end": "2026-09-30",
+      "filed": "2026-10-22",
+      "tag": "IncomeTaxExpenseBenefit",
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
     },
     "revenue": {
       "value": 4390900000,
@@ -87,6 +120,7 @@
   },
   "review_required": true,
   "warnings": [
+    "TTM unavailable: depreciation_amortization",
     "Operating cash flow minus CapEx is not unlevered FCFF",
     "Shares outstanding are not necessarily diluted shares",
     "Debt and cash require classification and date checks"

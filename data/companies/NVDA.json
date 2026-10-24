@@ -4,7 +4,7 @@
   "company_name": "NVIDIA CORP",
   "sector": "Information Technology",
   "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001045810.json",
-  "fetched_at_utc": "2026-10-24T02:29:01.951018+00:00",
+  "fetched_at_utc": "2026-10-24T02:42:46.865983+00:00",
   "financials": {
     "diluted_shares": {
       "value": 24514000000,
@@ -15,6 +15,39 @@
       "form": "10-K",
       "method": "annual_diluted_weighted_average",
       "review_required": true
+    },
+    "operating_income": {
+      "value": 197579000000,
+      "unit": "USD",
+      "period_end": "2026-07-26",
+      "filed": "2026-08-26",
+      "tag": "OperatingIncomeLoss",
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2026-01-25"
+    },
+    "depreciation_amortization": {
+      "value": 3687000000,
+      "unit": "USD",
+      "period_end": "2026-07-26",
+      "filed": "2026-08-26",
+      "tag": "DepreciationDepletionAndAmortization",
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2026-01-25"
+    },
+    "income_tax_expense": {
+      "value": 36863000000,
+      "unit": "USD",
+      "period_end": "2026-07-26",
+      "filed": "2026-08-26",
+      "tag": "IncomeTaxExpenseBenefit",
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2026-01-25"
     },
     "revenue": {
       "value": 302970000000,

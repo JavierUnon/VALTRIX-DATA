@@ -4,7 +4,7 @@
   "company_name": "LYONDELLBASELL INDUSTRIES N.V.",
   "sector": "Materials",
   "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001489393.json",
-  "fetched_at_utc": "2026-10-24T02:28:28.809325+00:00",
+  "fetched_at_utc": "2026-10-24T02:42:09.598282+00:00",
   "financials": {
     "diluted_shares": {
       "value": 572000000,
@@ -15,6 +15,39 @@
       "form": "10-K",
       "method": "annual_diluted_weighted_average",
       "review_required": true
+    },
+    "operating_income": {
+      "value": 963000000,
+      "unit": "USD",
+      "period_end": "2026-06-30",
+      "filed": "2026-07-31",
+      "tag": "OperatingIncomeLoss",
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
+    },
+    "depreciation_amortization": {
+      "value": 1424000000,
+      "unit": "USD",
+      "period_end": "2026-06-30",
+      "filed": "2026-07-31",
+      "tag": "DepreciationDepletionAndAmortization",
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
+    },
+    "income_tax_expense": {
+      "value": 199000000,
+      "unit": "USD",
+      "period_end": "2026-06-30",
+      "filed": "2026-07-31",
+      "tag": "IncomeTaxExpenseBenefit",
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
     },
     "revenue": {
       "value": 31192000000,

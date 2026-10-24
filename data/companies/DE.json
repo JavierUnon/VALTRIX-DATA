@@ -4,7 +4,7 @@
   "company_name": "DEERE & CO",
   "sector": "Industrials",
   "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000315189.json",
-  "fetched_at_utc": "2026-10-24T02:26:32.854035+00:00",
+  "fetched_at_utc": "2026-10-24T02:40:10.554051+00:00",
   "financials": {
     "diluted_shares": {
       "value": 271700000,
@@ -15,6 +15,38 @@
       "form": "10-K",
       "method": "annual_diluted_weighted_average",
       "review_required": true
+    },
+    "operating_income": {
+      "value": 9039000000,
+      "unit": "USD",
+      "period_start": "2023-10-30",
+      "period_end": "2024-10-27",
+      "filed": "2024-12-12",
+      "tag": "OperatingIncomeLoss",
+      "form": "10-K",
+      "method": "annual"
+    },
+    "depreciation_amortization": {
+      "value": 2348000000,
+      "unit": "USD",
+      "period_end": "2026-08-02",
+      "filed": "2026-08-27",
+      "tag": "DepreciationDepletionAndAmortization",
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-11-02"
+    },
+    "income_tax_expense": {
+      "value": 1597000000,
+      "unit": "USD",
+      "period_end": "2026-08-02",
+      "filed": "2026-08-27",
+      "tag": "IncomeTaxExpenseBenefit",
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-11-02"
     },
     "revenue": {
       "value": 47983000000,

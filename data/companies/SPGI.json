@@ -4,7 +4,7 @@
   "company_name": "S&P Global Inc.",
   "sector": "Financials",
   "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000064040.json",
-  "fetched_at_utc": "2026-10-24T02:29:41.973653+00:00",
+  "fetched_at_utc": "2026-10-24T02:43:42.151391+00:00",
   "financials": {
     "diluted_shares": {
       "value": 305100000,
@@ -15,6 +15,38 @@
       "form": "10-K",
       "method": "annual_diluted_weighted_average",
       "review_required": true
+    },
+    "operating_income": {
+      "value": 6902000000,
+      "unit": "USD",
+      "period_end": "2026-03-31",
+      "filed": "2026-04-28",
+      "tag": "OperatingIncomeLoss",
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
+    },
+    "depreciation_amortization": {
+      "value": 1179000000,
+      "unit": "USD",
+      "period_start": "2025-01-01",
+      "period_end": "2025-12-31",
+      "filed": "2026-02-11",
+      "tag": "DepreciationDepletionAndAmortization",
+      "form": "10-K",
+      "method": "annual"
+    },
+    "income_tax_expense": {
+      "value": 1486000000,
+      "unit": "USD",
+      "period_end": "2026-03-31",
+      "filed": "2026-04-28",
+      "tag": "IncomeTaxExpenseBenefit",
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
     },
     "revenue": {
       "value": 15730000000,

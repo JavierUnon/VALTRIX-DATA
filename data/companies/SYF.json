@@ -4,7 +4,7 @@
   "company_name": "SYNCHRONY FINANCIAL",
   "sector": "Financials",
   "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001601712.json",
-  "fetched_at_utc": "2026-10-24T02:29:58.212353+00:00",
+  "fetched_at_utc": "2026-10-24T02:44:18.018278+00:00",
   "financials": {
     "diluted_shares": {
       "value": 373900000,
@@ -15,6 +15,29 @@
       "form": "10-K",
       "method": "annual_diluted_weighted_average",
       "review_required": true
+    },
+    "operating_income": null,
+    "depreciation_amortization": {
+      "value": 577000000,
+      "unit": "USD",
+      "period_end": "2026-09-30",
+      "filed": "2026-10-22",
+      "tag": "DepreciationDepletionAndAmortization",
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
+    },
+    "income_tax_expense": {
+      "value": 1033000000,
+      "unit": "USD",
+      "period_end": "2026-09-30",
+      "filed": "2026-10-22",
+      "tag": "IncomeTaxExpenseBenefit",
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
     },
     "revenue": null,
     "operating_cash_flow": {
@@ -52,6 +75,7 @@
   },
   "review_required": true,
   "warnings": [
+    "Missing field: operating_income",
     "Missing field: revenue",
     "Missing field: capital_expenditure",
     "Missing field: debt_current",

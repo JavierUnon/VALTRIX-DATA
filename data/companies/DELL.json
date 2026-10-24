@@ -4,7 +4,7 @@
   "company_name": "Dell Technologies Inc.",
   "sector": "Information Technology",
   "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001571996.json",
-  "fetched_at_utc": "2026-10-24T02:26:33.417717+00:00",
+  "fetched_at_utc": "2026-10-24T02:40:11.586743+00:00",
   "financials": {
     "diluted_shares": {
       "value": 684000000,
@@ -15,6 +15,39 @@
       "form": "10-K",
       "method": "annual_diluted_weighted_average",
       "review_required": true
+    },
+    "operating_income": {
+      "value": 14252000000,
+      "unit": "USD",
+      "period_end": "2026-07-31",
+      "filed": "2026-09-08",
+      "tag": "OperatingIncomeLoss",
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2026-01-30"
+    },
+    "depreciation_amortization": {
+      "value": 3041000000,
+      "unit": "USD",
+      "period_end": "2026-07-31",
+      "filed": "2026-09-08",
+      "tag": "DepreciationDepletionAndAmortization",
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2026-01-30"
+    },
+    "income_tax_expense": {
+      "value": 2441000000,
+      "unit": "USD",
+      "period_end": "2026-07-31",
+      "filed": "2026-09-08",
+      "tag": "IncomeTaxExpenseBenefit",
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2026-01-30"
     },
     "revenue": {
       "value": 151197000000,

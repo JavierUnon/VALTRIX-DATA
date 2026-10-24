@@ -4,7 +4,7 @@
   "company_name": "Norwegian Cruise Line Holdings Ltd.",
   "sector": "Consumer Discretionary",
   "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001513761.json",
-  "fetched_at_utc": "2026-10-24T02:28:59.875293+00:00",
+  "fetched_at_utc": "2026-10-24T02:42:44.032840+00:00",
   "financials": {
     "diluted_shares": {
       "value": 477742311,
@@ -15,6 +15,39 @@
       "form": "10-K",
       "method": "annual_diluted_weighted_average",
       "review_required": true
+    },
+    "operating_income": {
+      "value": 1532360000,
+      "unit": "USD",
+      "period_end": "2026-06-30",
+      "filed": "2026-08-03",
+      "tag": "OperatingIncomeLoss",
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
+    },
+    "depreciation_amortization": {
+      "value": 1222571000,
+      "unit": "USD",
+      "period_end": "2026-06-30",
+      "filed": "2026-08-03",
+      "tag": "DepreciationDepletionAndAmortization",
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
+    },
+    "income_tax_expense": {
+      "value": 12375000,
+      "unit": "USD",
+      "period_end": "2026-06-30",
+      "filed": "2026-08-03",
+      "tag": "IncomeTaxExpenseBenefit",
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
     },
     "revenue": {
       "value": 10154307000,

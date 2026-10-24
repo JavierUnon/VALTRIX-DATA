@@ -4,7 +4,7 @@
   "company_name": "PACCAR Inc",
   "sector": "Industrials",
   "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
-  "fetched_at_utc": "2026-10-24T02:29:08.860059+00:00",
+  "fetched_at_utc": "2026-10-24T02:42:55.182615+00:00",
   "financials": {
     "diluted_shares": {
       "value": 526800000,
@@ -15,6 +15,29 @@
       "form": "10-K",
       "method": "annual_diluted_weighted_average",
       "review_required": true
+    },
+    "operating_income": null,
+    "depreciation_amortization": {
+      "value": 409300000,
+      "unit": "USD",
+      "period_end": "2026-06-30",
+      "filed": "2026-07-29",
+      "tag": "DepreciationDepletionAndAmortization",
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
+    },
+    "income_tax_expense": {
+      "value": 702100000,
+      "unit": "USD",
+      "period_end": "2026-06-30",
+      "filed": "2026-07-29",
+      "tag": "IncomeTaxExpenseBenefit",
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
     },
     "revenue": {
       "value": 27815800000,
@@ -64,6 +87,7 @@
   },
   "review_required": true,
   "warnings": [
+    "Missing field: operating_income",
     "Missing field: debt_current",
     "Missing field: debt_noncurrent",
     "Missing field: shares_outstanding",

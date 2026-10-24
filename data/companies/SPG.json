@@ -4,7 +4,7 @@
   "company_name": "SIMON PROPERTY GROUP, INC.",
   "sector": "Real Estate",
   "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001063761.json",
-  "fetched_at_utc": "2026-10-24T02:29:47.552499+00:00",
+  "fetched_at_utc": "2026-10-24T02:44:06.016929+00:00",
   "financials": {
     "diluted_shares": {
       "value": 326366632,
@@ -15,6 +15,28 @@
       "form": "10-K",
       "method": "annual_diluted_weighted_average",
       "review_required": true
+    },
+    "operating_income": {
+      "value": 3289842000,
+      "unit": "USD",
+      "period_end": "2026-06-30",
+      "filed": "2026-08-10",
+      "tag": "OperatingIncomeLoss",
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
+    },
+    "depreciation_amortization": null,
+    "income_tax_expense": {
+      "value": 20279000,
+      "unit": "USD",
+      "period_start": "2025-01-01",
+      "period_end": "2025-12-31",
+      "filed": "2026-02-25",
+      "tag": "IncomeTaxExpenseBenefit",
+      "form": "10-K",
+      "method": "annual"
     },
     "revenue": {
       "value": 6940724000,
@@ -62,6 +84,7 @@
   },
   "review_required": true,
   "warnings": [
+    "Missing field: depreciation_amortization",
     "Missing field: capital_expenditure",
     "Missing field: debt_current",
     "Missing field: debt_noncurrent",

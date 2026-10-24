@@ -4,7 +4,7 @@
   "company_name": "VERIZON COMMUNICATIONS INC",
   "sector": "Communication Services",
   "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000732712.json",
-  "fetched_at_utc": "2026-10-24T02:30:29.281583+00:00",
+  "fetched_at_utc": "2026-10-24T02:45:12.050185+00:00",
   "financials": {
     "diluted_shares": {
       "value": 4231000000,
@@ -15,6 +15,29 @@
       "form": "10-K",
       "method": "annual_diluted_weighted_average",
       "review_required": true
+    },
+    "operating_income": {
+      "value": 28530000000,
+      "unit": "USD",
+      "period_end": "2026-06-30",
+      "filed": "2026-07-31",
+      "tag": "OperatingIncomeLoss",
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
+    },
+    "depreciation_amortization": null,
+    "income_tax_expense": {
+      "value": 5049000000,
+      "unit": "USD",
+      "period_end": "2026-06-30",
+      "filed": "2026-07-31",
+      "tag": "IncomeTaxExpenseBenefit",
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
     },
     "revenue": {
       "value": 138895000000,
@@ -70,6 +93,7 @@
   },
   "review_required": true,
   "warnings": [
+    "Missing field: depreciation_amortization",
     "Missing field: capital_expenditure",
     "Missing field: shares_outstanding",
     "Operating cash flow minus CapEx is not unlevered FCFF",

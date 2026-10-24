@@ -4,7 +4,7 @@
   "company_name": "Prologis, Inc.",
   "sector": "Real Estate",
   "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001045609.json",
-  "fetched_at_utc": "2026-10-24T02:29:22.804753+00:00",
+  "fetched_at_utc": "2026-10-24T02:43:17.271741+00:00",
   "financials": {
     "diluted_shares": {
       "value": 956832000,
@@ -15,6 +15,38 @@
       "form": "10-K",
       "method": "annual_diluted_weighted_average",
       "review_required": true
+    },
+    "operating_income": {
+      "value": 4690506000,
+      "unit": "USD",
+      "period_end": "2026-03-31",
+      "filed": "2026-04-30",
+      "tag": "OperatingIncomeLoss",
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
+    },
+    "depreciation_amortization": {
+      "value": 880373000,
+      "unit": "USD",
+      "period_start": "2015-01-01",
+      "period_end": "2015-12-31",
+      "filed": "2016-02-19",
+      "tag": "DepreciationDepletionAndAmortization",
+      "form": "10-K",
+      "method": "annual"
+    },
+    "income_tax_expense": {
+      "value": 208605000,
+      "unit": "USD",
+      "period_end": "2026-03-31",
+      "filed": "2026-04-30",
+      "tag": "IncomeTaxExpenseBenefit",
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
     },
     "revenue": {
       "value": 8948185000,

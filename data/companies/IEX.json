@@ -4,7 +4,7 @@
   "company_name": "IDEX CORP",
   "sector": "Industrials",
   "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000832101.json",
-  "fetched_at_utc": "2026-10-24T02:27:49.561408+00:00",
+  "fetched_at_utc": "2026-10-24T02:41:34.822578+00:00",
   "financials": {
     "diluted_shares": {
       "value": 75300000,
@@ -15,6 +15,39 @@
       "form": "10-K",
       "method": "annual_diluted_weighted_average",
       "review_required": true
+    },
+    "operating_income": {
+      "value": 741700000,
+      "unit": "USD",
+      "period_end": "2026-06-30",
+      "filed": "2026-07-29",
+      "tag": "OperatingIncomeLoss",
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
+    },
+    "depreciation_amortization": {
+      "value": 164500000,
+      "unit": "USD",
+      "period_end": "2024-09-30",
+      "filed": "2024-10-30",
+      "tag": "DepreciationDepletionAndAmortization",
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2023-12-31"
+    },
+    "income_tax_expense": {
+      "value": 162000000,
+      "unit": "USD",
+      "period_end": "2026-06-30",
+      "filed": "2026-07-29",
+      "tag": "IncomeTaxExpenseBenefit",
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
     },
     "revenue": {
       "value": 3585300000,

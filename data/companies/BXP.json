@@ -4,7 +4,7 @@
   "company_name": "BXP, INC.",
   "sector": "Real Estate",
   "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001037540.json",
-  "fetched_at_utc": "2026-10-24T02:25:35.905284+00:00",
+  "fetched_at_utc": "2026-10-24T02:39:16.183083+00:00",
   "financials": {
     "diluted_shares": {
       "value": 158869000,
@@ -16,6 +16,29 @@
       "method": "annual_diluted_weighted_average",
       "review_required": true
     },
+    "operating_income": {
+      "value": 906606000,
+      "unit": "USD",
+      "period_end": "2018-09-30",
+      "filed": "2018-11-07",
+      "tag": "OperatingIncomeLoss",
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2017-12-31"
+    },
+    "depreciation_amortization": {
+      "value": 933106000,
+      "unit": "USD",
+      "period_end": "2026-06-30",
+      "filed": "2026-08-06",
+      "tag": "DepreciationDepletionAndAmortization",
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
+    },
+    "income_tax_expense": null,
     "revenue": {
       "value": 3516454000,
       "unit": "USD",
@@ -62,6 +85,7 @@
   },
   "review_required": true,
   "warnings": [
+    "Missing field: income_tax_expense",
     "Missing field: capital_expenditure",
     "Missing field: debt_current",
     "Missing field: debt_noncurrent",

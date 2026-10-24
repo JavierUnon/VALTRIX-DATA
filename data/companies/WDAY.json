@@ -4,7 +4,7 @@
   "company_name": "Workday, Inc.",
   "sector": "Information Technology",
   "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001327811.json",
-  "fetched_at_utc": "2026-10-24T02:30:47.121008+00:00",
+  "fetched_at_utc": "2026-10-24T02:45:32.504559+00:00",
   "financials": {
     "diluted_shares": {
       "value": 268117000,
@@ -15,6 +15,39 @@
       "form": "10-K",
       "method": "annual_diluted_weighted_average",
       "review_required": true
+    },
+    "operating_income": {
+      "value": 1085000000,
+      "unit": "USD",
+      "period_end": "2026-07-31",
+      "filed": "2026-08-27",
+      "tag": "OperatingIncomeLoss",
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2026-01-31"
+    },
+    "depreciation_amortization": {
+      "value": 29765000,
+      "unit": "USD",
+      "period_end": "2013-10-31",
+      "filed": "2013-12-02",
+      "tag": "DepreciationDepletionAndAmortization",
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2013-01-31"
+    },
+    "income_tax_expense": {
+      "value": 33000000,
+      "unit": "USD",
+      "period_end": "2026-07-31",
+      "filed": "2026-08-27",
+      "tag": "IncomeTaxExpenseBenefit",
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2026-01-31"
     },
     "revenue": {
       "value": 10155000000,

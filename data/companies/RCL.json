@@ -4,7 +4,7 @@
   "company_name": "ROYAL CARIBBEAN CRUISES LTD",
   "sector": "Consumer Discretionary",
   "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000884887.json",
-  "fetched_at_utc": "2026-10-24T02:29:41.358746+00:00",
+  "fetched_at_utc": "2026-10-24T02:43:39.409159+00:00",
   "financials": {
     "diluted_shares": {
       "value": 274000000,
@@ -15,6 +15,29 @@
       "form": "10-K",
       "method": "annual_diluted_weighted_average",
       "review_required": true
+    },
+    "operating_income": {
+      "value": 5104000000,
+      "unit": "USD",
+      "period_end": "2026-06-30",
+      "filed": "2026-07-28",
+      "tag": "OperatingIncomeLoss",
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
+    },
+    "depreciation_amortization": null,
+    "income_tax_expense": {
+      "value": 88000000,
+      "unit": "USD",
+      "period_end": "2026-06-30",
+      "filed": "2026-07-28",
+      "tag": "IncomeTaxExpenseBenefit",
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
     },
     "revenue": {
       "value": 18682000000,
@@ -80,6 +103,7 @@
   },
   "review_required": true,
   "warnings": [
+    "Missing field: depreciation_amortization",
     "Missing field: shares_outstanding",
     "Operating cash flow minus CapEx is not unlevered FCFF",
     "Shares outstanding are not necessarily diluted shares",

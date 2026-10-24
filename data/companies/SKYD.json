@@ -4,7 +4,7 @@
   "company_name": "Skydance Corp",
   "sector": "Communication Services",
   "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0002041610.json",
-  "fetched_at_utc": "2026-10-24T02:29:48.076435+00:00",
+  "fetched_at_utc": "2026-10-24T02:44:06.584009+00:00",
   "financials": {
     "diluted_shares": {
       "value": 664000000,
@@ -15,6 +15,29 @@
       "form": "10-K",
       "method": "annual_diluted_weighted_average",
       "review_required": true
+    },
+    "operating_income": {
+      "value": -5269000000,
+      "unit": "USD",
+      "period_start": "2024-01-01",
+      "period_end": "2024-12-31",
+      "filed": "2026-02-25",
+      "tag": "OperatingIncomeLoss",
+      "form": "10-K",
+      "method": "annual_fallback",
+      "warning": "TTM unavailable; annual data used"
+    },
+    "depreciation_amortization": null,
+    "income_tax_expense": {
+      "value": -305000000,
+      "unit": "USD",
+      "period_start": "2024-01-01",
+      "period_end": "2024-12-31",
+      "filed": "2026-02-25",
+      "tag": "IncomeTaxExpenseBenefit",
+      "form": "10-K",
+      "method": "annual_fallback",
+      "warning": "TTM unavailable; annual data used"
     },
     "revenue": {
       "value": 29213000000,
@@ -88,6 +111,9 @@
   },
   "review_required": true,
   "warnings": [
+    "TTM unavailable: operating_income",
+    "Missing field: depreciation_amortization",
+    "TTM unavailable: income_tax_expense",
     "TTM unavailable: revenue",
     "TTM unavailable: operating_cash_flow",
     "TTM unavailable: capital_expenditure",

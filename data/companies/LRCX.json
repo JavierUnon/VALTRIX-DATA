@@ -4,7 +4,7 @@
   "company_name": "LAM RESEARCH CORPORATION",
   "sector": "Information Technology",
   "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000707549.json",
-  "fetched_at_utc": "2026-10-24T02:28:18.435103+00:00",
+  "fetched_at_utc": "2026-10-24T02:42:00.647997+00:00",
   "financials": {
     "diluted_shares": {
       "value": 1261102000,
@@ -15,6 +15,29 @@
       "form": "10-K",
       "method": "annual_diluted_weighted_average",
       "review_required": true
+    },
+    "operating_income": {
+      "value": 9654434000,
+      "unit": "USD",
+      "period_end": "2026-09-27",
+      "filed": "2026-10-22",
+      "tag": "OperatingIncomeLoss",
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2026-06-28"
+    },
+    "depreciation_amortization": null,
+    "income_tax_expense": {
+      "value": 1265657000,
+      "unit": "USD",
+      "period_end": "2026-09-27",
+      "filed": "2026-10-22",
+      "tag": "IncomeTaxExpenseBenefit",
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2026-06-28"
     },
     "revenue": {
       "value": 26127935000,
@@ -78,6 +101,7 @@
   },
   "review_required": true,
   "warnings": [
+    "Missing field: depreciation_amortization",
     "Missing field: capital_expenditure",
     "Operating cash flow minus CapEx is not unlevered FCFF",
     "Shares outstanding are not necessarily diluted shares",

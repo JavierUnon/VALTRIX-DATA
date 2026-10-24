@@ -4,7 +4,7 @@
   "company_name": "GLOBE LIFE INC.",
   "sector": "Financials",
   "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000320335.json",
-  "fetched_at_utc": "2026-10-24T02:27:30.770010+00:00",
+  "fetched_at_utc": "2026-10-24T02:41:17.597539+00:00",
   "financials": {
     "diluted_shares": {
       "value": 82524992,
@@ -15,6 +15,29 @@
       "form": "10-K",
       "method": "annual_diluted_weighted_average",
       "review_required": true
+    },
+    "operating_income": {
+      "value": 1376509000,
+      "unit": "USD",
+      "period_end": "2024-09-30",
+      "filed": "2024-11-06",
+      "tag": "OperatingIncomeLoss",
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2023-12-31"
+    },
+    "depreciation_amortization": null,
+    "income_tax_expense": {
+      "value": 283415000,
+      "unit": "USD",
+      "period_end": "2026-06-30",
+      "filed": "2026-08-05",
+      "tag": "IncomeTaxExpenseBenefit",
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
     },
     "revenue": {
       "value": 6191958000,
@@ -88,6 +111,7 @@
   },
   "review_required": true,
   "warnings": [
+    "Missing field: depreciation_amortization",
     "Operating cash flow minus CapEx is not unlevered FCFF",
     "Shares outstanding are not necessarily diluted shares",
     "Debt and cash require classification and date checks",

@@ -4,7 +4,7 @@
   "company_name": "TEXAS INSTRUMENTS INCORPORATED",
   "sector": "Information Technology",
   "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000097476.json",
-  "fetched_at_utc": "2026-10-24T02:30:06.477864+00:00",
+  "fetched_at_utc": "2026-10-24T02:44:44.098295+00:00",
   "financials": {
     "diluted_shares": {
       "value": 913000000,
@@ -15,6 +15,29 @@
       "form": "10-K",
       "method": "annual_diluted_weighted_average",
       "review_required": true
+    },
+    "operating_income": {
+      "value": 8465000000,
+      "unit": "USD",
+      "period_end": "2026-09-30",
+      "filed": "2026-10-23",
+      "tag": "OperatingIncomeLoss",
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
+    },
+    "depreciation_amortization": null,
+    "income_tax_expense": {
+      "value": 1016000000,
+      "unit": "USD",
+      "period_end": "2026-09-30",
+      "filed": "2026-10-23",
+      "tag": "IncomeTaxExpenseBenefit",
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
     },
     "revenue": {
       "value": 20766000000,
@@ -80,6 +103,7 @@
   },
   "review_required": true,
   "warnings": [
+    "Missing field: depreciation_amortization",
     "Missing field: shares_outstanding",
     "Operating cash flow minus CapEx is not unlevered FCFF",
     "Shares outstanding are not necessarily diluted shares",

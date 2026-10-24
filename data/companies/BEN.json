@@ -4,7 +4,7 @@
   "company_name": "FRANKLIN RESOURCES INC",
   "sector": "Financials",
   "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000038777.json",
-  "fetched_at_utc": "2026-10-24T02:27:20.917170+00:00",
+  "fetched_at_utc": "2026-10-24T02:41:06.929455+00:00",
   "financials": {
     "diluted_shares": {
       "value": 517400000,
@@ -15,6 +15,39 @@
       "form": "10-K",
       "method": "annual_diluted_weighted_average",
       "review_required": true
+    },
+    "operating_income": {
+      "value": 905500000,
+      "unit": "USD",
+      "period_end": "2026-06-30",
+      "filed": "2026-07-31",
+      "tag": "OperatingIncomeLoss",
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-09-30"
+    },
+    "depreciation_amortization": {
+      "value": 121400000,
+      "unit": "USD",
+      "period_end": "2026-06-30",
+      "filed": "2026-07-31",
+      "tag": "DepreciationDepletionAndAmortization",
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-09-30"
+    },
+    "income_tax_expense": {
+      "value": 385500000,
+      "unit": "USD",
+      "period_end": "2026-06-30",
+      "filed": "2026-07-31",
+      "tag": "IncomeTaxExpenseBenefit",
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-09-30"
     },
     "revenue": {
       "value": 9324100000,

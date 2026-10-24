@@ -4,7 +4,7 @@
   "company_name": "Aon plc",
   "sector": "Financials",
   "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000315293.json",
-  "fetched_at_utc": "2026-10-24T02:24:54.537245+00:00",
+  "fetched_at_utc": "2026-10-24T02:38:40.528834+00:00",
   "financials": {
     "diluted_shares": {
       "value": 217100000,
@@ -15,6 +15,38 @@
       "form": "10-K",
       "method": "annual_diluted_weighted_average",
       "review_required": true
+    },
+    "operating_income": {
+      "value": 4654000000,
+      "unit": "USD",
+      "period_end": "2026-06-30",
+      "filed": "2026-07-29",
+      "tag": "OperatingIncomeLoss",
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
+    },
+    "depreciation_amortization": {
+      "value": 176000000,
+      "unit": "USD",
+      "period_start": "2018-01-01",
+      "period_end": "2018-12-31",
+      "filed": "2019-02-19",
+      "tag": "DepreciationDepletionAndAmortization",
+      "form": "10-K",
+      "method": "annual"
+    },
+    "income_tax_expense": {
+      "value": 1105000000,
+      "unit": "USD",
+      "period_end": "2026-06-30",
+      "filed": "2026-07-29",
+      "tag": "IncomeTaxExpenseBenefit",
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
     },
     "revenue": {
       "value": 17577000000,

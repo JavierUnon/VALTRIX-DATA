@@ -4,7 +4,7 @@
   "company_name": "Starbucks Corporation",
   "sector": "Consumer Discretionary",
   "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000829224.json",
-  "fetched_at_utc": "2026-10-24T02:29:54.286389+00:00",
+  "fetched_at_utc": "2026-10-24T02:44:13.514069+00:00",
   "financials": {
     "diluted_shares": {
       "value": 1139800000,
@@ -15,6 +15,39 @@
       "form": "10-K",
       "method": "annual_diluted_weighted_average",
       "review_required": true
+    },
+    "operating_income": {
+      "value": 2977500000,
+      "unit": "USD",
+      "period_end": "2026-06-28",
+      "filed": "2026-07-29",
+      "tag": "OperatingIncomeLoss",
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-09-28"
+    },
+    "depreciation_amortization": {
+      "value": 1666800000,
+      "unit": "USD",
+      "period_end": "2026-06-28",
+      "filed": "2026-07-29",
+      "tag": "DepreciationDepletionAndAmortization",
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-09-28"
+    },
+    "income_tax_expense": {
+      "value": 1094000000,
+      "unit": "USD",
+      "period_end": "2026-06-28",
+      "filed": "2026-07-29",
+      "tag": "IncomeTaxExpenseBenefit",
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-09-28"
     },
     "revenue": {
       "value": 38338300000,

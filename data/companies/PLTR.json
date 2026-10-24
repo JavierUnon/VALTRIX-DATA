@@ -4,7 +4,7 @@
   "company_name": "Palantir Technologies Inc.",
   "sector": "Information Technology",
   "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001321655.json",
-  "fetched_at_utc": "2026-10-24T02:29:10.163961+00:00",
+  "fetched_at_utc": "2026-10-24T02:42:56.882838+00:00",
   "financials": {
     "diluted_shares": {
       "value": 2565197000,
@@ -15,6 +15,39 @@
       "form": "10-K",
       "method": "annual_diluted_weighted_average",
       "review_required": true
+    },
+    "operating_income": {
+      "value": 2634652000,
+      "unit": "USD",
+      "period_end": "2026-06-30",
+      "filed": "2026-08-04",
+      "tag": "OperatingIncomeLoss",
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
+    },
+    "depreciation_amortization": {
+      "value": 27978000,
+      "unit": "USD",
+      "period_end": "2026-06-30",
+      "filed": "2026-08-04",
+      "tag": "DepreciationDepletionAndAmortization",
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
+    },
+    "income_tax_expense": {
+      "value": 41111000,
+      "unit": "USD",
+      "period_end": "2026-06-30",
+      "filed": "2026-08-04",
+      "tag": "IncomeTaxExpenseBenefit",
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
     },
     "revenue": {
       "value": 6155941000,

@@ -4,7 +4,7 @@
   "company_name": "APOLLO GLOBAL MANAGEMENT, INC.",
   "sector": "Financials",
   "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001858681.json",
-  "fetched_at_utc": "2026-10-24T02:24:56.144523+00:00",
+  "fetched_at_utc": "2026-10-24T02:38:42.026270+00:00",
   "financials": {
     "diluted_shares": {
       "value": 593657223,
@@ -15,6 +15,29 @@
       "form": "10-K",
       "method": "annual_diluted_weighted_average",
       "review_required": true
+    },
+    "operating_income": null,
+    "depreciation_amortization": {
+      "value": 1602000000,
+      "unit": "USD",
+      "period_end": "2026-06-30",
+      "filed": "2026-08-10",
+      "tag": "DepreciationDepletionAndAmortization",
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
+    },
+    "income_tax_expense": {
+      "value": 3120000000,
+      "unit": "USD",
+      "period_end": "2026-06-30",
+      "filed": "2026-08-10",
+      "tag": "IncomeTaxExpenseBenefit",
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
     },
     "revenue": {
       "value": 35899000000,
@@ -62,6 +85,7 @@
   },
   "review_required": true,
   "warnings": [
+    "Missing field: operating_income",
     "Missing field: capital_expenditure",
     "Missing field: debt_current",
     "Missing field: debt_noncurrent",

@@ -4,7 +4,7 @@
   "company_name": "ADVANCED MICRO DEVICES INC",
   "sector": "Information Technology",
   "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000002488.json",
-  "fetched_at_utc": "2026-10-24T02:24:22.147573+00:00",
+  "fetched_at_utc": "2026-10-24T02:38:15.489000+00:00",
   "financials": {
     "diluted_shares": {
       "value": 1636000000,
@@ -15,6 +15,39 @@
       "form": "10-K",
       "method": "annual_diluted_weighted_average",
       "review_required": true
+    },
+    "operating_income": {
+      "value": 6488000000,
+      "unit": "USD",
+      "period_end": "2026-06-27",
+      "filed": "2026-08-05",
+      "tag": "OperatingIncomeLoss",
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-27"
+    },
+    "depreciation_amortization": {
+      "value": 222000000,
+      "unit": "USD",
+      "period_start": "2018-12-30",
+      "period_end": "2019-12-28",
+      "filed": "2020-02-04",
+      "tag": "DepreciationDepletionAndAmortization",
+      "form": "10-K",
+      "method": "annual_fallback",
+      "warning": "TTM unavailable; annual data used"
+    },
+    "income_tax_expense": {
+      "value": 1098000000,
+      "unit": "USD",
+      "period_end": "2026-06-27",
+      "filed": "2026-08-05",
+      "tag": "IncomeTaxExpenseBenefit",
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-27"
     },
     "revenue": {
       "value": 41305000000,
@@ -88,6 +121,7 @@
   },
   "review_required": true,
   "warnings": [
+    "TTM unavailable: depreciation_amortization",
     "Operating cash flow minus CapEx is not unlevered FCFF",
     "Shares outstanding are not necessarily diluted shares",
     "Debt and cash require classification and date checks"

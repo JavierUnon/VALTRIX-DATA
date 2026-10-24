@@ -4,7 +4,7 @@
   "company_name": "DOLLAR GENERAL CORP",
   "sector": "Consumer Staples",
   "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000029534.json",
-  "fetched_at_utc": "2026-10-24T02:26:37.862753+00:00",
+  "fetched_at_utc": "2026-10-24T02:40:16.634221+00:00",
   "financials": {
     "diluted_shares": {
       "value": 220814000,
@@ -15,6 +15,39 @@
       "form": "10-K",
       "method": "annual_diluted_weighted_average",
       "review_required": true
+    },
+    "operating_income": {
+      "value": 2439807000,
+      "unit": "USD",
+      "period_end": "2026-07-31",
+      "filed": "2026-08-27",
+      "tag": "OperatingIncomeLoss",
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2026-01-30"
+    },
+    "depreciation_amortization": {
+      "value": 1085019000,
+      "unit": "USD",
+      "period_end": "2026-07-31",
+      "filed": "2026-08-27",
+      "tag": "DepreciationDepletionAndAmortization",
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2026-01-30"
+    },
+    "income_tax_expense": {
+      "value": 529542000,
+      "unit": "USD",
+      "period_end": "2026-07-31",
+      "filed": "2026-08-27",
+      "tag": "IncomeTaxExpenseBenefit",
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2026-01-30"
     },
     "revenue": {
       "value": 43637998000,

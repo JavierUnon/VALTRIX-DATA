@@ -4,7 +4,7 @@
   "company_name": "PROCTER & GAMBLE CO",
   "sector": "Consumer Staples",
   "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000080424.json",
-  "fetched_at_utc": "2026-10-24T02:29:21.191205+00:00",
+  "fetched_at_utc": "2026-10-24T02:43:15.817819+00:00",
   "financials": {
     "diluted_shares": {
       "value": 2422500000,
@@ -15,6 +15,39 @@
       "form": "10-K",
       "method": "annual_diluted_weighted_average",
       "review_required": true
+    },
+    "operating_income": {
+      "value": 19829000000,
+      "unit": "USD",
+      "period_end": "2026-09-30",
+      "filed": "2026-10-22",
+      "tag": "OperatingIncomeLoss",
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2026-06-30"
+    },
+    "depreciation_amortization": {
+      "value": 3209000000,
+      "unit": "USD",
+      "period_end": "2026-09-30",
+      "filed": "2026-10-22",
+      "tag": "DepreciationDepletionAndAmortization",
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2026-06-30"
+    },
+    "income_tax_expense": {
+      "value": 4247000000,
+      "unit": "USD",
+      "period_end": "2026-09-30",
+      "filed": "2026-10-22",
+      "tag": "IncomeTaxExpenseBenefit",
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2026-06-30"
     },
     "revenue": {
       "value": 87922000000,

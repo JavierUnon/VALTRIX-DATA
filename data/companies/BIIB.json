@@ -4,7 +4,7 @@
   "company_name": "BIOGEN INC.",
   "sector": "Health Care",
   "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000875045.json",
-  "fetched_at_utc": "2026-10-24T02:25:21.823388+00:00",
+  "fetched_at_utc": "2026-10-24T02:39:03.498592+00:00",
   "financials": {
     "diluted_shares": {
       "value": 147100000,
@@ -15,6 +15,39 @@
       "form": "10-K",
       "method": "annual_diluted_weighted_average",
       "review_required": true
+    },
+    "operating_income": {
+      "value": 2477500000,
+      "unit": "USD",
+      "period_end": "2022-03-31",
+      "filed": "2022-05-03",
+      "tag": "OperatingIncomeLoss",
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2021-12-31"
+    },
+    "depreciation_amortization": {
+      "value": 801100000,
+      "unit": "USD",
+      "period_end": "2026-03-31",
+      "filed": "2026-04-29",
+      "tag": "DepreciationDepletionAndAmortization",
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
+    },
+    "income_tax_expense": {
+      "value": 251100000,
+      "unit": "USD",
+      "period_end": "2026-03-31",
+      "filed": "2026-04-29",
+      "tag": "IncomeTaxExpenseBenefit",
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
     },
     "revenue": {
       "value": 9937400000,

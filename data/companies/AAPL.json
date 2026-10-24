@@ -4,7 +4,7 @@
   "company_name": "Apple Inc.",
   "sector": "Information Technology",
   "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000320193.json",
-  "fetched_at_utc": "2026-10-24T02:24:57.013482+00:00",
+  "fetched_at_utc": "2026-10-24T02:38:42.771719+00:00",
   "financials": {
     "diluted_shares": {
       "value": 15004697000,
@@ -15,6 +15,39 @@
       "form": "10-K",
       "method": "annual_diluted_weighted_average",
       "review_required": true
+    },
+    "operating_income": {
+      "value": 154859000000,
+      "unit": "USD",
+      "period_end": "2026-06-27",
+      "filed": "2026-07-31",
+      "tag": "OperatingIncomeLoss",
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-09-27"
+    },
+    "depreciation_amortization": {
+      "value": 13100000000,
+      "unit": "USD",
+      "period_end": "2026-06-27",
+      "filed": "2026-07-31",
+      "tag": "DepreciationDepletionAndAmortization",
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-09-27"
+    },
+    "income_tax_expense": {
+      "value": 26976000000,
+      "unit": "USD",
+      "period_end": "2026-06-27",
+      "filed": "2026-07-31",
+      "tag": "IncomeTaxExpenseBenefit",
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-09-27"
     },
     "revenue": {
       "value": 466823000000,

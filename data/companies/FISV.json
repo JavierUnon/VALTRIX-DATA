@@ -4,7 +4,7 @@
   "company_name": "FISERV, INC.",
   "sector": "Financials",
   "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000798354.json",
-  "fetched_at_utc": "2026-10-24T02:27:16.194269+00:00",
+  "fetched_at_utc": "2026-10-24T02:41:02.366831+00:00",
   "financials": {
     "diluted_shares": {
       "value": 549000000,
@@ -15,6 +15,38 @@
       "form": "10-K",
       "method": "annual_diluted_weighted_average",
       "review_required": true
+    },
+    "operating_income": {
+      "value": 4660000000,
+      "unit": "USD",
+      "period_end": "2026-06-30",
+      "filed": "2026-08-07",
+      "tag": "OperatingIncomeLoss",
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
+    },
+    "depreciation_amortization": {
+      "value": 3162000000,
+      "unit": "USD",
+      "period_start": "2023-01-01",
+      "period_end": "2023-12-31",
+      "filed": "2024-02-22",
+      "tag": "DepreciationDepletionAndAmortization",
+      "form": "10-K",
+      "method": "annual"
+    },
+    "income_tax_expense": {
+      "value": 555000000,
+      "unit": "USD",
+      "period_end": "2026-06-30",
+      "filed": "2026-08-07",
+      "tag": "IncomeTaxExpenseBenefit",
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
     },
     "revenue": {
       "value": 21193000000,

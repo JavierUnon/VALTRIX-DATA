@@ -4,7 +4,7 @@
   "company_name": "Dow Inc.",
   "sector": "Materials",
   "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001751788.json",
-  "fetched_at_utc": "2026-10-24T02:26:42.733401+00:00",
+  "fetched_at_utc": "2026-10-24T02:40:21.175280+00:00",
   "financials": {
     "diluted_shares": {
       "value": 711600000,
@@ -15,6 +15,29 @@
       "form": "10-K",
       "method": "annual_diluted_weighted_average",
       "review_required": true
+    },
+    "operating_income": null,
+    "depreciation_amortization": {
+      "value": 2757000000,
+      "unit": "USD",
+      "period_end": "2026-09-30",
+      "filed": "2026-10-23",
+      "tag": "DepreciationDepletionAndAmortization",
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
+    },
+    "income_tax_expense": {
+      "value": 170000000,
+      "unit": "USD",
+      "period_end": "2026-09-30",
+      "filed": "2026-10-23",
+      "tag": "IncomeTaxExpenseBenefit",
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
     },
     "revenue": {
       "value": 42613000000,
@@ -70,6 +93,7 @@
   },
   "review_required": true,
   "warnings": [
+    "Missing field: operating_income",
     "Missing field: capital_expenditure",
     "Missing field: shares_outstanding",
     "Operating cash flow minus CapEx is not unlevered FCFF",

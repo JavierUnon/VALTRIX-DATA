@@ -4,7 +4,7 @@
   "company_name": "AMAZON COM INC",
   "sector": "Consumer Discretionary",
   "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001018724.json",
-  "fetched_at_utc": "2026-10-24T02:24:41.076542+00:00",
+  "fetched_at_utc": "2026-10-24T02:38:29.286123+00:00",
   "financials": {
     "diluted_shares": {
       "value": 10827000000,
@@ -15,6 +15,39 @@
       "form": "10-K",
       "method": "annual_diluted_weighted_average",
       "review_required": true
+    },
+    "operating_income": {
+      "value": 93712000000,
+      "unit": "USD",
+      "period_end": "2026-06-30",
+      "filed": "2026-07-31",
+      "tag": "OperatingIncomeLoss",
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
+    },
+    "depreciation_amortization": {
+      "value": 75200000000,
+      "unit": "USD",
+      "period_end": "2026-06-30",
+      "filed": "2026-07-31",
+      "tag": "DepreciationDepletionAndAmortization",
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
+    },
+    "income_tax_expense": {
+      "value": 39615000000,
+      "unit": "USD",
+      "period_end": "2026-06-30",
+      "filed": "2026-07-31",
+      "tag": "IncomeTaxExpenseBenefit",
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
     },
     "revenue": {
       "value": 775680000000,

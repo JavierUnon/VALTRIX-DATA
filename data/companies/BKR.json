@@ -4,9 +4,41 @@
   "company_name": "Baker Hughes Company",
   "sector": "Energy",
   "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001701605.json",
-  "fetched_at_utc": "2026-10-24T02:25:13.952522+00:00",
+  "fetched_at_utc": "2026-10-24T02:38:56.901261+00:00",
   "financials": {
     "diluted_shares": null,
+    "operating_income": {
+      "value": 3081000000,
+      "unit": "USD",
+      "period_start": "2024-01-01",
+      "period_end": "2024-12-31",
+      "filed": "2025-02-04",
+      "tag": "OperatingIncomeLoss",
+      "form": "10-K",
+      "method": "annual"
+    },
+    "depreciation_amortization": {
+      "value": 1296000000,
+      "unit": "USD",
+      "period_end": "2026-06-30",
+      "filed": "2026-07-27",
+      "tag": "DepreciationDepletionAndAmortization",
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
+    },
+    "income_tax_expense": {
+      "value": 390000000,
+      "unit": "USD",
+      "period_end": "2026-06-30",
+      "filed": "2026-07-27",
+      "tag": "IncomeTaxExpenseBenefit",
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
+    },
     "revenue": {
       "value": 27725000000,
       "unit": "USD",

@@ -4,7 +4,7 @@
   "company_name": "Monster Beverage Corp",
   "sector": "Consumer Staples",
   "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000865752.json",
-  "fetched_at_utc": "2026-10-24T02:28:47.231899+00:00",
+  "fetched_at_utc": "2026-10-24T02:42:28.652035+00:00",
   "financials": {
     "diluted_shares": {
       "value": 984451000,
@@ -15,6 +15,39 @@
       "form": "10-K",
       "method": "annual_diluted_weighted_average",
       "review_required": true
+    },
+    "operating_income": {
+      "value": 2688388000,
+      "unit": "USD",
+      "period_end": "2026-06-30",
+      "filed": "2026-08-07",
+      "tag": "OperatingIncomeLoss",
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
+    },
+    "depreciation_amortization": {
+      "value": 120220000,
+      "unit": "USD",
+      "period_end": "2026-06-30",
+      "filed": "2026-08-07",
+      "tag": "DepreciationDepletionAndAmortization",
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
+    },
+    "income_tax_expense": {
+      "value": 648553000,
+      "unit": "USD",
+      "period_end": "2026-06-30",
+      "filed": "2026-08-07",
+      "tag": "IncomeTaxExpenseBenefit",
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
     },
     "revenue": {
       "value": 9218957000,

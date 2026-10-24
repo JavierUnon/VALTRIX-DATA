@@ -4,7 +4,7 @@
   "company_name": "Chevron Corp",
   "sector": "Energy",
   "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000093410.json",
-  "fetched_at_utc": "2026-10-24T02:25:56.913680+00:00",
+  "fetched_at_utc": "2026-10-24T02:39:34.945701+00:00",
   "financials": {
     "diluted_shares": {
       "value": 1856000000,
@@ -15,6 +15,29 @@
       "form": "10-K",
       "method": "annual_diluted_weighted_average",
       "review_required": true
+    },
+    "operating_income": null,
+    "depreciation_amortization": {
+      "value": 23555000000,
+      "unit": "USD",
+      "period_end": "2026-06-30",
+      "filed": "2026-08-06",
+      "tag": "DepreciationDepletionAndAmortization",
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
+    },
+    "income_tax_expense": {
+      "value": 9678000000,
+      "unit": "USD",
+      "period_end": "2026-06-30",
+      "filed": "2026-08-06",
+      "tag": "IncomeTaxExpenseBenefit",
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
     },
     "revenue": {
       "value": 208711000000,
@@ -70,6 +93,7 @@
   },
   "review_required": true,
   "warnings": [
+    "Missing field: operating_income",
     "Missing field: capital_expenditure",
     "Missing field: shares_outstanding",
     "Operating cash flow minus CapEx is not unlevered FCFF",

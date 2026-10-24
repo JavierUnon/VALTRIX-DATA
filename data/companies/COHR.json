@@ -4,7 +4,7 @@
   "company_name": "COHERENT CORP.",
   "sector": "Information Technology",
   "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000820318.json",
-  "fetched_at_utc": "2026-10-24T02:26:13.463080+00:00",
+  "fetched_at_utc": "2026-10-24T02:39:49.179274+00:00",
   "financials": {
     "diluted_shares": {
       "value": 195387000,
@@ -15,6 +15,27 @@
       "form": "10-K",
       "method": "annual_diluted_weighted_average",
       "review_required": true
+    },
+    "operating_income": {
+      "value": 96121000,
+      "unit": "USD",
+      "period_start": "2023-07-01",
+      "period_end": "2024-06-30",
+      "filed": "2024-08-16",
+      "tag": "OperatingIncomeLoss",
+      "form": "10-K",
+      "method": "annual"
+    },
+    "depreciation_amortization": null,
+    "income_tax_expense": {
+      "value": 60849000,
+      "unit": "USD",
+      "period_start": "2025-07-01",
+      "period_end": "2026-06-30",
+      "filed": "2026-08-14",
+      "tag": "IncomeTaxExpenseBenefit",
+      "form": "10-K",
+      "method": "annual"
     },
     "revenue": {
       "value": 7118181000,
@@ -77,6 +98,7 @@
   },
   "review_required": true,
   "warnings": [
+    "Missing field: depreciation_amortization",
     "Missing field: shares_outstanding",
     "Operating cash flow minus CapEx is not unlevered FCFF",
     "Shares outstanding are not necessarily diluted shares",

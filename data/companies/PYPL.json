@@ -4,7 +4,7 @@
   "company_name": "PayPal Holdings, Inc.",
   "sector": "Financials",
   "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001633917.json",
-  "fetched_at_utc": "2026-10-24T02:29:12.512494+00:00",
+  "fetched_at_utc": "2026-10-24T02:43:02.601144+00:00",
   "financials": {
     "diluted_shares": {
       "value": 968000000,
@@ -15,6 +15,39 @@
       "form": "10-K",
       "method": "annual_diluted_weighted_average",
       "review_required": true
+    },
+    "operating_income": {
+      "value": 6023000000,
+      "unit": "USD",
+      "period_end": "2026-03-31",
+      "filed": "2026-05-05",
+      "tag": "OperatingIncomeLoss",
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
+    },
+    "depreciation_amortization": {
+      "value": 956000000,
+      "unit": "USD",
+      "period_end": "2026-03-31",
+      "filed": "2026-05-05",
+      "tag": "DepreciationDepletionAndAmortization",
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
+    },
+    "income_tax_expense": {
+      "value": 1023000000,
+      "unit": "USD",
+      "period_end": "2026-03-31",
+      "filed": "2026-05-05",
+      "tag": "IncomeTaxExpenseBenefit",
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
     },
     "revenue": {
       "value": 33734000000,

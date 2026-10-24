@@ -4,7 +4,7 @@
   "company_name": "ALEXANDRIA REAL ESTATE EQUITIES, INC.",
   "sector": "Real Estate",
   "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001035443.json",
-  "fetched_at_utc": "2026-10-24T02:24:32.394508+00:00",
+  "fetched_at_utc": "2026-10-24T02:38:23.363810+00:00",
   "financials": {
     "diluted_shares": {
       "value": 170307000,
@@ -16,6 +16,18 @@
       "method": "annual_diluted_weighted_average",
       "review_required": true
     },
+    "operating_income": null,
+    "depreciation_amortization": {
+      "value": 261289000,
+      "unit": "USD",
+      "period_start": "2015-01-01",
+      "period_end": "2015-12-31",
+      "filed": "2016-02-03",
+      "tag": "DepreciationDepletionAndAmortization",
+      "form": "10-K",
+      "method": "annual"
+    },
+    "income_tax_expense": null,
     "revenue": {
       "value": 2840164000,
       "unit": "USD",
@@ -62,6 +74,8 @@
   },
   "review_required": true,
   "warnings": [
+    "Missing field: operating_income",
+    "Missing field: income_tax_expense",
     "Missing field: capital_expenditure",
     "Missing field: debt_current",
     "Missing field: debt_noncurrent",

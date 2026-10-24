@@ -4,7 +4,7 @@
   "company_name": "Snap-on Inc",
   "sector": "Industrials",
   "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000091440.json",
-  "fetched_at_utc": "2026-10-24T02:29:50.863338+00:00",
+  "fetched_at_utc": "2026-10-24T02:44:09.437168+00:00",
   "financials": {
     "diluted_shares": {
       "value": 53000000,
@@ -15,6 +15,38 @@
       "form": "10-K",
       "method": "annual_diluted_weighted_average",
       "review_required": true
+    },
+    "operating_income": {
+      "value": 1311200000,
+      "unit": "USD",
+      "period_end": "2026-10-03",
+      "filed": "2026-10-22",
+      "tag": "OperatingIncomeLoss",
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2026-01-03"
+    },
+    "depreciation_amortization": {
+      "value": 98500000,
+      "unit": "USD",
+      "period_start": "2024-12-29",
+      "period_end": "2026-01-03",
+      "filed": "2026-02-12",
+      "tag": "DepreciationDepletionAndAmortization",
+      "form": "10-K",
+      "method": "annual"
+    },
+    "income_tax_expense": {
+      "value": 287300000,
+      "unit": "USD",
+      "period_end": "2026-10-03",
+      "filed": "2026-10-22",
+      "tag": "IncomeTaxExpenseBenefit",
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2026-01-03"
     },
     "revenue": {
       "value": 4821100000,

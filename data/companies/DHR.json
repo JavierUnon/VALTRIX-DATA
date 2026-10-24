@@ -4,7 +4,7 @@
   "company_name": "DANAHER CORPORATION",
   "sector": "Health Care",
   "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000313616.json",
-  "fetched_at_utc": "2026-10-24T02:26:29.419754+00:00",
+  "fetched_at_utc": "2026-10-24T02:40:06.626990+00:00",
   "financials": {
     "diluted_shares": {
       "value": 716100000,
@@ -15,6 +15,38 @@
       "form": "10-K",
       "method": "annual_diluted_weighted_average",
       "review_required": true
+    },
+    "operating_income": {
+      "value": 5218000000,
+      "unit": "USD",
+      "period_end": "2026-09-25",
+      "filed": "2026-10-21",
+      "tag": "OperatingIncomeLoss",
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
+    },
+    "depreciation_amortization": {
+      "value": 2166000000,
+      "unit": "USD",
+      "period_start": "2023-01-01",
+      "period_end": "2023-12-31",
+      "filed": "2024-02-21",
+      "tag": "DepreciationDepletionAndAmortization",
+      "form": "10-K",
+      "method": "annual"
+    },
+    "income_tax_expense": {
+      "value": 529000000,
+      "unit": "USD",
+      "period_end": "2026-09-25",
+      "filed": "2026-10-21",
+      "tag": "IncomeTaxExpenseBenefit",
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
     },
     "revenue": {
       "value": 25608000000,

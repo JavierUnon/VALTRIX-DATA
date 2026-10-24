@@ -4,7 +4,7 @@
   "company_name": "Microsoft Corporation",
   "sector": "Information Technology",
   "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000789019.json",
-  "fetched_at_utc": "2026-10-24T02:28:43.879519+00:00",
+  "fetched_at_utc": "2026-10-24T02:42:25.329723+00:00",
   "financials": {
     "diluted_shares": {
       "value": 7453000000,
@@ -15,6 +15,27 @@
       "form": "10-K",
       "method": "annual_diluted_weighted_average",
       "review_required": true
+    },
+    "operating_income": {
+      "value": 155237000000,
+      "unit": "USD",
+      "period_start": "2025-07-01",
+      "period_end": "2026-06-30",
+      "filed": "2026-07-29",
+      "tag": "OperatingIncomeLoss",
+      "form": "10-K",
+      "method": "annual"
+    },
+    "depreciation_amortization": null,
+    "income_tax_expense": {
+      "value": 32185000000,
+      "unit": "USD",
+      "period_start": "2025-07-01",
+      "period_end": "2026-06-30",
+      "filed": "2026-07-29",
+      "tag": "IncomeTaxExpenseBenefit",
+      "form": "10-K",
+      "method": "annual"
     },
     "revenue": {
       "value": 331839000000,
@@ -85,6 +106,7 @@
   },
   "review_required": true,
   "warnings": [
+    "Missing field: depreciation_amortization",
     "Operating cash flow minus CapEx is not unlevered FCFF",
     "Shares outstanding are not necessarily diluted shares",
     "Debt and cash require classification and date checks"

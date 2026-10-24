@@ -4,7 +4,7 @@
   "company_name": "Targa Resources Corp.",
   "sector": "Energy",
   "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001389170.json",
-  "fetched_at_utc": "2026-10-24T02:30:02.738025+00:00",
+  "fetched_at_utc": "2026-10-24T02:44:23.798917+00:00",
   "financials": {
     "diluted_shares": {
       "value": 216900000,
@@ -15,6 +15,39 @@
       "form": "10-K",
       "method": "annual_diluted_weighted_average",
       "review_required": true
+    },
+    "operating_income": {
+      "value": 3835700000,
+      "unit": "USD",
+      "period_end": "2026-06-30",
+      "filed": "2026-08-06",
+      "tag": "OperatingIncomeLoss",
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
+    },
+    "depreciation_amortization": {
+      "value": 1653100000,
+      "unit": "USD",
+      "period_end": "2026-06-30",
+      "filed": "2026-08-06",
+      "tag": "DepreciationDepletionAndAmortization",
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
+    },
+    "income_tax_expense": {
+      "value": 624500000,
+      "unit": "USD",
+      "period_end": "2026-06-30",
+      "filed": "2026-08-06",
+      "tag": "IncomeTaxExpenseBenefit",
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
     },
     "revenue": {
       "value": 16741500000,

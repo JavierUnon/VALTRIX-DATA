@@ -4,7 +4,7 @@
   "company_name": "Medtronic plc",
   "sector": "Health Care",
   "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001613103.json",
-  "fetched_at_utc": "2026-10-24T02:28:37.791118+00:00",
+  "fetched_at_utc": "2026-10-24T02:42:19.793735+00:00",
   "financials": {
     "diluted_shares": {
       "value": 1288100000,
@@ -15,6 +15,39 @@
       "form": "10-K",
       "method": "annual_diluted_weighted_average",
       "review_required": true
+    },
+    "operating_income": {
+      "value": 6786000000,
+      "unit": "USD",
+      "period_end": "2026-07-31",
+      "filed": "2026-09-03",
+      "tag": "OperatingIncomeLoss",
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2026-04-24"
+    },
+    "depreciation_amortization": {
+      "value": 2939000000,
+      "unit": "USD",
+      "period_end": "2026-07-31",
+      "filed": "2026-09-03",
+      "tag": "DepreciationDepletionAndAmortization",
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2026-04-24"
+    },
+    "income_tax_expense": {
+      "value": 1333000000,
+      "unit": "USD",
+      "period_end": "2026-07-31",
+      "filed": "2026-09-03",
+      "tag": "IncomeTaxExpenseBenefit",
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2026-04-24"
     },
     "revenue": {
       "value": 37542000000,

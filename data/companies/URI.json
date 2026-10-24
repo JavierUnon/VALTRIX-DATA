@@ -4,7 +4,7 @@
   "company_name": "United Rentals, Inc.",
   "sector": "Industrials",
   "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001067701.json",
-  "fetched_at_utc": "2026-10-24T02:30:22.936551+00:00",
+  "fetched_at_utc": "2026-10-24T02:45:01.015826+00:00",
   "financials": {
     "diluted_shares": {
       "value": 64604000,
@@ -15,6 +15,39 @@
       "form": "10-K",
       "method": "annual_diluted_weighted_average",
       "review_required": true
+    },
+    "operating_income": {
+      "value": 4468000000,
+      "unit": "USD",
+      "period_end": "2026-09-30",
+      "filed": "2026-10-21",
+      "tag": "OperatingIncomeLoss",
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
+    },
+    "depreciation_amortization": {
+      "value": 1269000000,
+      "unit": "USD",
+      "period_end": "2017-06-30",
+      "filed": "2017-07-19",
+      "tag": "DepreciationDepletionAndAmortization",
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2016-12-31"
+    },
+    "income_tax_expense": {
+      "value": 956000000,
+      "unit": "USD",
+      "period_end": "2026-09-30",
+      "filed": "2026-10-21",
+      "tag": "IncomeTaxExpenseBenefit",
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
     },
     "revenue": {
       "value": 3983000000,

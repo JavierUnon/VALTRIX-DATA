@@ -4,7 +4,7 @@
   "company_name": "Cintas Corporation",
   "sector": "Industrials",
   "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000723254.json",
-  "fetched_at_utc": "2026-10-24T02:26:04.767811+00:00",
+  "fetched_at_utc": "2026-10-24T02:39:41.732208+00:00",
   "financials": {
     "diluted_shares": {
       "value": 406197000,
@@ -15,6 +15,39 @@
       "form": "10-K",
       "method": "annual_diluted_weighted_average",
       "review_required": true
+    },
+    "operating_income": {
+      "value": 2700540000,
+      "unit": "USD",
+      "period_end": "2026-08-31",
+      "filed": "2026-10-07",
+      "tag": "OperatingIncomeLoss",
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2026-05-31"
+    },
+    "depreciation_amortization": {
+      "value": 514235000,
+      "unit": "USD",
+      "period_end": "2026-08-31",
+      "filed": "2026-10-07",
+      "tag": "DepreciationDepletionAndAmortization",
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2026-05-31"
+    },
+    "income_tax_expense": {
+      "value": 538718000,
+      "unit": "USD",
+      "period_end": "2026-08-31",
+      "filed": "2026-10-07",
+      "tag": "IncomeTaxExpenseBenefit",
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2026-05-31"
     },
     "revenue": {
       "value": 11560620000,

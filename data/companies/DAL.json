@@ -4,7 +4,7 @@
   "company_name": "DELTA AIR LINES, INC.",
   "sector": "Industrials",
   "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000027904.json",
-  "fetched_at_utc": "2026-10-24T02:26:34.178111+00:00",
+  "fetched_at_utc": "2026-10-24T02:40:12.323540+00:00",
   "financials": {
     "diluted_shares": {
       "value": 654000000,
@@ -15,6 +15,39 @@
       "form": "10-K",
       "method": "annual_diluted_weighted_average",
       "review_required": true
+    },
+    "operating_income": {
+      "value": 5286000000,
+      "unit": "USD",
+      "period_end": "2026-09-30",
+      "filed": "2026-10-09",
+      "tag": "OperatingIncomeLoss",
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
+    },
+    "depreciation_amortization": {
+      "value": 2584000000,
+      "unit": "USD",
+      "period_end": "2026-09-30",
+      "filed": "2026-10-09",
+      "tag": "DepreciationDepletionAndAmortization",
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
+    },
+    "income_tax_expense": {
+      "value": 1092000000,
+      "unit": "USD",
+      "period_end": "2026-09-30",
+      "filed": "2026-10-09",
+      "tag": "IncomeTaxExpenseBenefit",
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
     },
     "revenue": {
       "value": 71800000000,

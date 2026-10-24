@@ -4,7 +4,7 @@
   "company_name": "ILLUMINA, INC.",
   "sector": "Health Care",
   "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001110803.json",
-  "fetched_at_utc": "2026-10-24T02:27:52.104172+00:00",
+  "fetched_at_utc": "2026-10-24T02:41:36.921060+00:00",
   "financials": {
     "diluted_shares": {
       "value": 156000000,
@@ -15,6 +15,38 @@
       "form": "10-K",
       "method": "annual_diluted_weighted_average",
       "review_required": true
+    },
+    "operating_income": {
+      "value": 883000000,
+      "unit": "USD",
+      "period_end": "2026-06-28",
+      "filed": "2026-07-31",
+      "tag": "OperatingIncomeLoss",
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-28"
+    },
+    "depreciation_amortization": {
+      "value": 270000000,
+      "unit": "USD",
+      "period_start": "2024-12-30",
+      "period_end": "2025-12-28",
+      "filed": "2026-02-12",
+      "tag": "DepreciationDepletionAndAmortization",
+      "form": "10-K",
+      "method": "annual"
+    },
+    "income_tax_expense": {
+      "value": 191000000,
+      "unit": "USD",
+      "period_end": "2026-06-28",
+      "filed": "2026-07-31",
+      "tag": "IncomeTaxExpenseBenefit",
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-28"
     },
     "revenue": {
       "value": 4494000000,

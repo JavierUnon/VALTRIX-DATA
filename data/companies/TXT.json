@@ -4,7 +4,7 @@
   "company_name": "Textron Inc.",
   "sector": "Industrials",
   "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000217346.json",
-  "fetched_at_utc": "2026-10-24T02:30:07.528385+00:00",
+  "fetched_at_utc": "2026-10-24T02:44:45.389149+00:00",
   "financials": {
     "diluted_shares": {
       "value": 180258000,
@@ -15,6 +15,29 @@
       "form": "10-K",
       "method": "annual_diluted_weighted_average",
       "review_required": true
+    },
+    "operating_income": null,
+    "depreciation_amortization": {
+      "value": 399000000,
+      "unit": "USD",
+      "period_end": "2026-07-04",
+      "filed": "2026-07-28",
+      "tag": "DepreciationDepletionAndAmortization",
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2026-01-03"
+    },
+    "income_tax_expense": {
+      "value": 227000000,
+      "unit": "USD",
+      "period_end": "2026-07-04",
+      "filed": "2026-07-28",
+      "tag": "IncomeTaxExpenseBenefit",
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2026-01-03"
     },
     "revenue": {
       "value": 15299000000,
@@ -62,6 +85,7 @@
   },
   "review_required": true,
   "warnings": [
+    "Missing field: operating_income",
     "Missing field: capital_expenditure",
     "Missing field: debt_current",
     "Missing field: debt_noncurrent",

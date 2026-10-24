@@ -4,7 +4,7 @@
   "company_name": "HALLIBURTON COMPANY",
   "sector": "Energy",
   "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000045012.json",
-  "fetched_at_utc": "2026-10-24T02:27:33.445445+00:00",
+  "fetched_at_utc": "2026-10-24T02:41:19.815284+00:00",
   "financials": {
     "diluted_shares": {
       "value": 853000000,
@@ -15,6 +15,39 @@
       "form": "10-K",
       "method": "annual_diluted_weighted_average",
       "review_required": true
+    },
+    "operating_income": {
+      "value": 2827000000,
+      "unit": "USD",
+      "period_end": "2026-09-30",
+      "filed": "2026-10-23",
+      "tag": "OperatingIncomeLoss",
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
+    },
+    "depreciation_amortization": {
+      "value": 1177000000,
+      "unit": "USD",
+      "period_end": "2026-09-30",
+      "filed": "2026-10-23",
+      "tag": "DepreciationDepletionAndAmortization",
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
+    },
+    "income_tax_expense": {
+      "value": 371000000,
+      "unit": "USD",
+      "period_end": "2026-09-30",
+      "filed": "2026-10-23",
+      "tag": "IncomeTaxExpenseBenefit",
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
     },
     "revenue": {
       "value": 22476000000,

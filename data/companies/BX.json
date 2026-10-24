@@ -4,7 +4,7 @@
   "company_name": "Blackstone Inc.",
   "sector": "Financials",
   "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001393818.json",
-  "fetched_at_utc": "2026-10-24T02:25:23.416953+00:00",
+  "fetched_at_utc": "2026-10-24T02:39:04.997051+00:00",
   "financials": {
     "diluted_shares": {
       "value": 780215856,
@@ -15,6 +15,19 @@
       "form": "10-K",
       "method": "annual_diluted_weighted_average",
       "review_required": true
+    },
+    "operating_income": null,
+    "depreciation_amortization": null,
+    "income_tax_expense": {
+      "value": 1241238000,
+      "unit": "USD",
+      "period_end": "2026-06-30",
+      "filed": "2026-08-07",
+      "tag": "IncomeTaxExpenseBenefit",
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
     },
     "revenue": {
       "value": 16110480000,
@@ -72,6 +85,8 @@
   },
   "review_required": true,
   "warnings": [
+    "Missing field: operating_income",
+    "Missing field: depreciation_amortization",
     "Missing field: debt_current",
     "Missing field: debt_noncurrent",
     "Operating cash flow minus CapEx is not unlevered FCFF",

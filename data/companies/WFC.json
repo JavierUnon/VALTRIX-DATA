@@ -4,7 +4,7 @@
   "company_name": "WELLS        FARGO & COMPANY/MN",
   "sector": "Financials",
   "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000072971.json",
-  "fetched_at_utc": "2026-10-24T02:30:41.615257+00:00",
+  "fetched_at_utc": "2026-10-24T02:45:25.437443+00:00",
   "financials": {
     "diluted_shares": {
       "value": 3242300000,
@@ -15,6 +15,29 @@
       "form": "10-K",
       "method": "annual_diluted_weighted_average",
       "review_required": true
+    },
+    "operating_income": null,
+    "depreciation_amortization": {
+      "value": 7675000000,
+      "unit": "USD",
+      "period_end": "2026-06-30",
+      "filed": "2026-07-28",
+      "tag": "DepreciationAmortizationAndAccretionNet",
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
+    },
+    "income_tax_expense": {
+      "value": 4496000000,
+      "unit": "USD",
+      "period_end": "2026-06-30",
+      "filed": "2026-07-28",
+      "tag": "IncomeTaxExpenseBenefit",
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
     },
     "revenue": {
       "value": 74275000000,
@@ -54,6 +77,7 @@
   },
   "review_required": true,
   "warnings": [
+    "Missing field: operating_income",
     "Missing field: capital_expenditure",
     "Missing field: cash",
     "Missing field: debt_current",

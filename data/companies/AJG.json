@@ -4,9 +4,32 @@
   "company_name": "ARTHUR J. GALLAGHER & CO.",
   "sector": "Financials",
   "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000354190.json",
-  "fetched_at_utc": "2026-10-24T02:25:05.216208+00:00",
+  "fetched_at_utc": "2026-10-24T02:38:49.249582+00:00",
   "financials": {
     "diluted_shares": null,
+    "operating_income": null,
+    "depreciation_amortization": {
+      "value": 1334000000,
+      "unit": "USD",
+      "period_end": "2026-06-30",
+      "filed": "2026-08-05",
+      "tag": "DepreciationAmortizationAndAccretionNet",
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
+    },
+    "income_tax_expense": {
+      "value": 409000000,
+      "unit": "USD",
+      "period_end": "2026-06-30",
+      "filed": "2026-08-05",
+      "tag": "IncomeTaxExpenseBenefit",
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
+    },
     "revenue": {
       "value": 15754000000,
       "unit": "USD",
@@ -71,6 +94,7 @@
   },
   "review_required": true,
   "warnings": [
+    "Missing field: operating_income",
     "Missing field: debt_current",
     "Operating cash flow minus CapEx is not unlevered FCFF",
     "Shares outstanding are not necessarily diluted shares",

@@ -4,7 +4,7 @@
   "company_name": "McDONALD\u2019S CORPORATION",
   "sector": "Consumer Discretionary",
   "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000063908.json",
-  "fetched_at_utc": "2026-10-24T02:28:36.238107+00:00",
+  "fetched_at_utc": "2026-10-24T02:42:18.227080+00:00",
   "financials": {
     "diluted_shares": {
       "value": 716.4,
@@ -15,6 +15,39 @@
       "form": "10-K",
       "method": "annual_diluted_weighted_average",
       "review_required": true
+    },
+    "operating_income": {
+      "value": 12805000000,
+      "unit": "USD",
+      "period_end": "2026-06-30",
+      "filed": "2026-08-07",
+      "tag": "OperatingIncomeLoss",
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
+    },
+    "depreciation_amortization": {
+      "value": 466000000,
+      "unit": "USD",
+      "period_end": "2026-06-30",
+      "filed": "2026-08-07",
+      "tag": "DepreciationDepletionAndAmortization",
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
+    },
+    "income_tax_expense": {
+      "value": 2398000000,
+      "unit": "USD",
+      "period_end": "2026-06-30",
+      "filed": "2026-08-07",
+      "tag": "IncomeTaxExpenseBenefit",
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
     },
     "revenue": {
       "value": 27702000000,

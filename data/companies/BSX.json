@@ -4,7 +4,7 @@
   "company_name": "BOSTON SCIENTIFIC CORPORATION",
   "sector": "Health Care",
   "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000885725.json",
-  "fetched_at_utc": "2026-10-24T02:25:29.485156+00:00",
+  "fetched_at_utc": "2026-10-24T02:39:10.223386+00:00",
   "financials": {
     "diluted_shares": {
       "value": 1494500000,
@@ -15,6 +15,39 @@
       "form": "10-K",
       "method": "annual_diluted_weighted_average",
       "review_required": true
+    },
+    "operating_income": {
+      "value": 4152000000,
+      "unit": "USD",
+      "period_end": "2026-06-30",
+      "filed": "2026-08-03",
+      "tag": "OperatingIncomeLoss",
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
+    },
+    "depreciation_amortization": {
+      "value": 1413000000,
+      "unit": "USD",
+      "period_end": "2026-06-30",
+      "filed": "2026-08-03",
+      "tag": "DepreciationDepletionAndAmortization",
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
+    },
+    "income_tax_expense": {
+      "value": 193000000,
+      "unit": "USD",
+      "period_end": "2026-06-30",
+      "filed": "2026-08-03",
+      "tag": "IncomeTaxExpenseBenefit",
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
     },
     "revenue": {
       "value": 20996000000,

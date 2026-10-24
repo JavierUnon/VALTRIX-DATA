@@ -4,7 +4,7 @@
   "company_name": "EATON CORPORATION plc",
   "sector": "Industrials",
   "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001551182.json",
-  "fetched_at_utc": "2026-10-24T02:26:46.713663+00:00",
+  "fetched_at_utc": "2026-10-24T02:40:25.908413+00:00",
   "financials": {
     "diluted_shares": {
       "value": 391200000,
@@ -15,6 +15,38 @@
       "form": "10-K",
       "method": "annual_diluted_weighted_average",
       "review_required": true
+    },
+    "operating_income": {
+      "value": 3675000000,
+      "unit": "USD",
+      "period_start": "2019-01-01",
+      "period_end": "2019-12-31",
+      "filed": "2020-02-26",
+      "tag": "OperatingIncomeLoss",
+      "form": "10-K",
+      "method": "annual"
+    },
+    "depreciation_amortization": {
+      "value": 1184000000,
+      "unit": "USD",
+      "period_end": "2026-06-30",
+      "filed": "2026-07-31",
+      "tag": "DepreciationDepletionAndAmortization",
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
+    },
+    "income_tax_expense": {
+      "value": 987000000,
+      "unit": "USD",
+      "period_end": "2026-06-30",
+      "filed": "2026-07-31",
+      "tag": "IncomeTaxExpenseBenefit",
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
     },
     "revenue": {
       "value": 30026000000,

@@ -4,7 +4,7 @@
   "company_name": "HASBRO, INC.",
   "sector": "Consumer Discretionary",
   "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000046080.json",
-  "fetched_at_utc": "2026-10-24T02:27:35.251420+00:00",
+  "fetched_at_utc": "2026-10-24T02:41:21.348018+00:00",
   "financials": {
     "diluted_shares": {
       "value": 140200000,
@@ -15,6 +15,39 @@
       "form": "10-K",
       "method": "annual_diluted_weighted_average",
       "review_required": true
+    },
+    "operating_income": {
+      "value": 1161400000,
+      "unit": "USD",
+      "period_end": "2026-06-28",
+      "filed": "2026-07-30",
+      "tag": "OperatingIncomeLoss",
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-28"
+    },
+    "depreciation_amortization": {
+      "value": 127100000,
+      "unit": "USD",
+      "period_end": "2026-06-28",
+      "filed": "2026-07-30",
+      "tag": "DepreciationDepletionAndAmortization",
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-28"
+    },
+    "income_tax_expense": {
+      "value": 231100000,
+      "unit": "USD",
+      "period_end": "2026-06-28",
+      "filed": "2026-07-30",
+      "tag": "IncomeTaxExpenseBenefit",
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-28"
     },
     "revenue": {
       "value": 4973200000,

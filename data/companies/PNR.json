@@ -4,7 +4,7 @@
   "company_name": "Pentair plc",
   "sector": "Industrials",
   "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000077360.json",
-  "fetched_at_utc": "2026-10-24T02:29:13.356078+00:00",
+  "fetched_at_utc": "2026-10-24T02:43:03.753017+00:00",
   "financials": {
     "diluted_shares": {
       "value": 165500000,
@@ -15,6 +15,29 @@
       "form": "10-K",
       "method": "annual_diluted_weighted_average",
       "review_required": true
+    },
+    "operating_income": {
+      "value": 864400000,
+      "unit": "USD",
+      "period_end": "2026-03-31",
+      "filed": "2026-04-28",
+      "tag": "OperatingIncomeLoss",
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
+    },
+    "depreciation_amortization": null,
+    "income_tax_expense": {
+      "value": 107600000,
+      "unit": "USD",
+      "period_end": "2026-03-31",
+      "filed": "2026-04-28",
+      "tag": "IncomeTaxExpenseBenefit",
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
     },
     "revenue": {
       "value": 4202300000,
@@ -88,6 +111,7 @@
   },
   "review_required": true,
   "warnings": [
+    "Missing field: depreciation_amortization",
     "Operating cash flow minus CapEx is not unlevered FCFF",
     "Shares outstanding are not necessarily diluted shares",
     "Debt and cash require classification and date checks"

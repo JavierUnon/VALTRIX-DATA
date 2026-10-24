@@ -4,7 +4,7 @@
   "company_name": "AMERICAN EXPRESS COMPANY",
   "sector": "Financials",
   "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000004962.json",
-  "fetched_at_utc": "2026-10-24T02:24:45.377465+00:00",
+  "fetched_at_utc": "2026-10-24T02:38:32.999517+00:00",
   "financials": {
     "diluted_shares": {
       "value": 696000000,
@@ -15,6 +15,39 @@
       "form": "10-K",
       "method": "annual_diluted_weighted_average",
       "review_required": true
+    },
+    "operating_income": {
+      "value": 5448000000,
+      "unit": "USD",
+      "period_end": "2010-09-30",
+      "filed": "2010-11-03",
+      "tag": "OperatingIncomeLoss",
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2009-12-31"
+    },
+    "depreciation_amortization": {
+      "value": 1912000000,
+      "unit": "USD",
+      "period_end": "2026-09-30",
+      "filed": "2026-10-23",
+      "tag": "DepreciationAmortizationAndAccretionNet",
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
+    },
+    "income_tax_expense": {
+      "value": 3214000000,
+      "unit": "USD",
+      "period_end": "2026-09-30",
+      "filed": "2026-10-23",
+      "tag": "IncomeTaxExpenseBenefit",
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
     },
     "revenue": {
       "value": 43904000000,

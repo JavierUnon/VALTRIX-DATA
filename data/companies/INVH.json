@@ -4,7 +4,7 @@
   "company_name": "Invitation Homes Inc.",
   "sector": "Real Estate",
   "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001687229.json",
-  "fetched_at_utc": "2026-10-24T02:28:01.265713+00:00",
+  "fetched_at_utc": "2026-10-24T02:41:44.888101+00:00",
   "financials": {
     "diluted_shares": {
       "value": 613177806,
@@ -15,6 +15,28 @@
       "form": "10-K",
       "method": "annual_diluted_weighted_average",
       "review_required": true
+    },
+    "operating_income": {
+      "value": 251320000,
+      "unit": "USD",
+      "period_end": "2018-09-30",
+      "filed": "2018-11-05",
+      "tag": "OperatingIncomeLoss",
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2017-12-31"
+    },
+    "depreciation_amortization": null,
+    "income_tax_expense": {
+      "value": 253000,
+      "unit": "USD",
+      "period_start": "2023-01-01",
+      "period_end": "2023-12-31",
+      "filed": "2024-02-21",
+      "tag": "IncomeTaxExpenseBenefit",
+      "form": "10-K",
+      "method": "annual"
     },
     "revenue": {
       "value": 2729296000,
@@ -71,6 +93,7 @@
   },
   "review_required": true,
   "warnings": [
+    "Missing field: depreciation_amortization",
     "TTM unavailable: revenue",
     "Missing field: debt_current",
     "Missing field: debt_noncurrent",

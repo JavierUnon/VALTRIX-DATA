@@ -4,7 +4,7 @@
   "company_name": "THERMO FISHER SCIENTIFIC INC.",
   "sector": "Health Care",
   "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000097745.json",
-  "fetched_at_utc": "2026-10-24T02:30:08.425505+00:00",
+  "fetched_at_utc": "2026-10-24T02:44:46.064384+00:00",
   "financials": {
     "diluted_shares": {
       "value": 378000000,
@@ -15,6 +15,38 @@
       "form": "10-K",
       "method": "annual_diluted_weighted_average",
       "review_required": true
+    },
+    "operating_income": {
+      "value": 8145000000,
+      "unit": "USD",
+      "period_end": "2026-06-27",
+      "filed": "2026-07-31",
+      "tag": "OperatingIncomeLoss",
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
+    },
+    "depreciation_amortization": {
+      "value": 2267000000,
+      "unit": "USD",
+      "period_start": "2018-01-01",
+      "period_end": "2018-12-31",
+      "filed": "2019-02-27",
+      "tag": "DepreciationDepletionAndAmortization",
+      "form": "10-K",
+      "method": "annual"
+    },
+    "income_tax_expense": {
+      "value": 598000000,
+      "unit": "USD",
+      "period_end": "2026-06-27",
+      "filed": "2026-07-31",
+      "tag": "IncomeTaxExpenseBenefit",
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
     },
     "revenue": {
       "value": 46336000000,

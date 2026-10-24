@@ -4,7 +4,7 @@
   "company_name": "Charter Communications, Inc.",
   "sector": "Communication Services",
   "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001091667.json",
-  "fetched_at_utc": "2026-10-24T02:25:55.967334+00:00",
+  "fetched_at_utc": "2026-10-24T02:39:34.343367+00:00",
   "financials": {
     "diluted_shares": {
       "value": 137743676,
@@ -15,6 +15,39 @@
       "form": "10-K",
       "method": "annual_diluted_weighted_average",
       "review_required": true
+    },
+    "operating_income": {
+      "value": 12663000000,
+      "unit": "USD",
+      "period_end": "2026-06-30",
+      "filed": "2026-07-24",
+      "tag": "OperatingIncomeLoss",
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
+    },
+    "depreciation_amortization": {
+      "value": 8762000000,
+      "unit": "USD",
+      "period_end": "2026-06-30",
+      "filed": "2026-07-24",
+      "tag": "DepreciationAmortizationAndAccretionNet",
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
+    },
+    "income_tax_expense": {
+      "value": 1773000000,
+      "unit": "USD",
+      "period_end": "2026-06-30",
+      "filed": "2026-07-24",
+      "tag": "IncomeTaxExpenseBenefit",
+      "form": "10-K + 10-Q",
+      "method": "TTM",
+      "formula": "FY + current YTD - prior-year YTD",
+      "annual_fy_end": "2025-12-31"
     },
     "revenue": {
       "value": 889000000,
