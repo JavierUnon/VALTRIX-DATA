@@ -1,0 +1,55 @@
+{
+  "ticker": "F",
+  "cik": "0000037996",
+  "company_name": "Ford Motor Co",
+  "sector": "Consumer Discretionary",
+  "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000037996.json",
+  "fetched_at_utc": "2026-10-24T01:31:05.419697+00:00",
+  "financials": {
+    "revenue": {
+      "value": 187267000000,
+      "unit": "USD",
+      "period_start": "2025-01-01",
+      "period_end": "2025-12-31",
+      "filed": "2026-02-11",
+      "accession": "0000037996-26-000015",
+      "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+      "form": "10-K"
+    },
+    "operating_cash_flow": {
+      "value": 21282000000,
+      "unit": "USD",
+      "period_start": "2025-01-01",
+      "period_end": "2025-12-31",
+      "filed": "2026-02-11",
+      "accession": "0000037996-26-000015",
+      "tag": "NetCashProvidedByUsedInOperatingActivities",
+      "form": "10-K"
+    },
+    "capital_expenditure": null,
+    "cash": {
+      "value": 23356000000,
+      "unit": "USD",
+      "period_start": null,
+      "period_end": "2025-12-31",
+      "filed": "2026-02-11",
+      "accession": "0000037996-26-000015",
+      "tag": "CashAndCashEquivalentsAtCarryingValue",
+      "form": "10-K"
+    },
+    "debt_current": null,
+    "debt_noncurrent": {
+      "value": 291000000,
+      "unit": "USD",
+      "period_start": null,
+      "period_end": "2020-12-31",
+      "filed": "2021-02-05",
+      "accession": "0000037996-21-000012",
+      "tag": "LongTermDebtNoncurrent",
+      "form": "10-K"
+    },
+    "shares_outstanding": null
+  },
+  "review_required": true,
+  "note": "SEC reported fields. Different tags and fiscal periods require validation. Operating cash flow minus capex is not automatically unlevered FCFF. Not a completed DCF valuation."
+}

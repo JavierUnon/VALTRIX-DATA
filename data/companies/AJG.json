@@ -1,0 +1,73 @@
+{
+  "ticker": "AJG",
+  "cik": "0000354190",
+  "company_name": "ARTHUR J. GALLAGHER & CO.",
+  "sector": "Financials",
+  "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000354190.json",
+  "fetched_at_utc": "2026-10-24T01:29:22.360292+00:00",
+  "financials": {
+    "revenue": {
+      "value": 13942000000,
+      "unit": "USD",
+      "period_start": "2025-01-01",
+      "period_end": "2025-12-31",
+      "filed": "2026-02-17",
+      "accession": "0001628280-26-008662",
+      "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+      "form": "10-K"
+    },
+    "operating_cash_flow": {
+      "value": 1930000000,
+      "unit": "USD",
+      "period_start": "2025-01-01",
+      "period_end": "2025-12-31",
+      "filed": "2026-02-17",
+      "accession": "0001628280-26-008662",
+      "tag": "NetCashProvidedByUsedInOperatingActivities",
+      "form": "10-K"
+    },
+    "capital_expenditure": {
+      "value": 217800000,
+      "unit": "USD",
+      "period_start": "2016-01-01",
+      "period_end": "2016-12-31",
+      "filed": "2017-02-13",
+      "accession": "0001193125-17-038619",
+      "tag": "PaymentsToAcquirePropertyPlantAndEquipment",
+      "form": "10-K"
+    },
+    "cash": {
+      "value": 738400000,
+      "unit": "USD",
+      "period_start": null,
+      "period_end": "2022-12-31",
+      "filed": "2024-02-09",
+      "accession": "0000950170-24-013370",
+      "tag": "CashAndCashEquivalentsAtCarryingValue",
+      "form": "10-K"
+    },
+    "debt_current": null,
+    "debt_noncurrent": {
+      "value": 12104000000,
+      "unit": "USD",
+      "period_start": null,
+      "period_end": "2025-12-31",
+      "filed": "2026-02-17",
+      "accession": "0001628280-26-008662",
+      "tag": "LongTermDebtNoncurrent",
+      "form": "10-K"
+    },
+    "shares_outstanding": {
+      "value": 257000000,
+      "unit": "shares",
+      "period_start": null,
+      "period_end": "2025-12-31",
+      "filed": "2026-02-17",
+      "accession": "0001628280-26-008662",
+      "tag": "CommonStockSharesOutstanding",
+      "form": "10-K"
+    }
+  },
+  "review_required": true,
+  "note": "SEC reported fields. Different tags and fiscal periods require validation. Operating cash flow minus capex is not automatically unlevered FCFF. Not a completed DCF valuation."
+}

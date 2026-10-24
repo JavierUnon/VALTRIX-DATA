@@ -1,0 +1,55 @@
+{
+  "ticker": "ALL",
+  "cik": "0000899051",
+  "company_name": "ALLSTATE CORP",
+  "sector": "Financials",
+  "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000899051.json",
+  "fetched_at_utc": "2026-10-24T01:29:03.288791+00:00",
+  "financials": {
+    "revenue": {
+      "value": 67685000000,
+      "unit": "USD",
+      "period_start": "2025-01-01",
+      "period_end": "2025-12-31",
+      "filed": "2026-02-20",
+      "accession": "0000899051-26-000031",
+      "tag": "Revenues",
+      "form": "10-K"
+    },
+    "operating_cash_flow": {
+      "value": 10110000000,
+      "unit": "USD",
+      "period_start": "2025-01-01",
+      "period_end": "2025-12-31",
+      "filed": "2026-02-20",
+      "accession": "0000899051-26-000031",
+      "tag": "NetCashProvidedByUsedInOperatingActivities",
+      "form": "10-K"
+    },
+    "capital_expenditure": {
+      "value": 228000000,
+      "unit": "USD",
+      "period_start": "2025-01-01",
+      "period_end": "2025-12-31",
+      "filed": "2026-02-20",
+      "accession": "0000899051-26-000031",
+      "tag": "PaymentsToAcquirePropertyPlantAndEquipment",
+      "form": "10-K"
+    },
+    "cash": null,
+    "debt_current": null,
+    "debt_noncurrent": null,
+    "shares_outstanding": {
+      "value": 260000000,
+      "unit": "shares",
+      "period_start": null,
+      "period_end": "2025-12-31",
+      "filed": "2026-02-20",
+      "accession": "0000899051-26-000031",
+      "tag": "CommonStockSharesOutstanding",
+      "form": "10-K"
+    }
+  },
+  "review_required": true,
+  "note": "SEC reported fields. Different tags and fiscal periods require validation. Operating cash flow minus capex is not automatically unlevered FCFF. Not a completed DCF valuation."
+}

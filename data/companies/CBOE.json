@@ -1,0 +1,82 @@
+{
+  "ticker": "CBOE",
+  "cik": "0001374310",
+  "company_name": "Cboe Global Markets, Inc.",
+  "sector": "Financials",
+  "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001374310.json",
+  "fetched_at_utc": "2026-10-24T01:29:51.293115+00:00",
+  "financials": {
+    "revenue": {
+      "value": 4714200000,
+      "unit": "USD",
+      "period_start": "2025-01-01",
+      "period_end": "2025-12-31",
+      "filed": "2026-02-20",
+      "accession": "0001628280-26-010013",
+      "tag": "RevenueFromContractWithCustomerIncludingAssessedTax",
+      "form": "10-K"
+    },
+    "operating_cash_flow": {
+      "value": 1752600000,
+      "unit": "USD",
+      "period_start": "2025-01-01",
+      "period_end": "2025-12-31",
+      "filed": "2026-02-20",
+      "accession": "0001628280-26-010013",
+      "tag": "NetCashProvidedByUsedInOperatingActivities",
+      "form": "10-K"
+    },
+    "capital_expenditure": {
+      "value": 71000000,
+      "unit": "USD",
+      "period_start": "2025-01-01",
+      "period_end": "2025-12-31",
+      "filed": "2026-02-20",
+      "accession": "0001628280-26-010013",
+      "tag": "PaymentsToAcquirePropertyPlantAndEquipment",
+      "form": "10-K"
+    },
+    "cash": {
+      "value": 2216500000,
+      "unit": "USD",
+      "period_start": null,
+      "period_end": "2025-12-31",
+      "filed": "2026-02-20",
+      "accession": "0001628280-26-010013",
+      "tag": "CashAndCashEquivalentsAtCarryingValue",
+      "form": "10-K"
+    },
+    "debt_current": {
+      "value": 304700000,
+      "unit": "USD",
+      "period_start": null,
+      "period_end": "2022-12-31",
+      "filed": "2024-02-16",
+      "accession": "0001558370-24-001277",
+      "tag": "LongTermDebtCurrent",
+      "form": "10-K"
+    },
+    "debt_noncurrent": {
+      "value": 1442900000,
+      "unit": "USD",
+      "period_start": null,
+      "period_end": "2025-12-31",
+      "filed": "2026-02-20",
+      "accession": "0001628280-26-010013",
+      "tag": "LongTermDebtNoncurrent",
+      "form": "10-K"
+    },
+    "shares_outstanding": {
+      "value": 104647739,
+      "unit": "shares",
+      "period_start": null,
+      "period_end": "2025-12-31",
+      "filed": "2026-02-20",
+      "accession": "0001628280-26-010013",
+      "tag": "CommonStockSharesOutstanding",
+      "form": "10-K"
+    }
+  },
+  "review_required": true,
+  "note": "SEC reported fields. Different tags and fiscal periods require validation. Operating cash flow minus capex is not automatically unlevered FCFF. Not a completed DCF valuation."
+}

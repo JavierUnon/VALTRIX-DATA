@@ -1,0 +1,46 @@
+{
+  "ticker": "WFC",
+  "cik": "0000072971",
+  "company_name": "WELLS        FARGO & COMPANY/MN",
+  "sector": "Financials",
+  "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000072971.json",
+  "fetched_at_utc": "2026-10-24T01:34:38.782371+00:00",
+  "financials": {
+    "revenue": {
+      "value": 85063000000,
+      "unit": "USD",
+      "period_start": "2019-01-01",
+      "period_end": "2019-12-31",
+      "filed": "2020-02-27",
+      "accession": "0000072971-20-000217",
+      "tag": "Revenues",
+      "form": "10-K"
+    },
+    "operating_cash_flow": {
+      "value": -19001000000,
+      "unit": "USD",
+      "period_start": "2025-01-01",
+      "period_end": "2025-12-31",
+      "filed": "2026-02-24",
+      "accession": "0000072971-26-000133",
+      "tag": "NetCashProvidedByUsedInOperatingActivities",
+      "form": "10-K"
+    },
+    "capital_expenditure": null,
+    "cash": null,
+    "debt_current": null,
+    "debt_noncurrent": null,
+    "shares_outstanding": {
+      "value": 3092600000,
+      "unit": "shares",
+      "period_start": null,
+      "period_end": "2025-12-31",
+      "filed": "2026-02-24",
+      "accession": "0000072971-26-000133",
+      "tag": "CommonStockSharesOutstanding",
+      "form": "10-K"
+    }
+  },
+  "review_required": true,
+  "note": "SEC reported fields. Different tags and fiscal periods require validation. Operating cash flow minus capex is not automatically unlevered FCFF. Not a completed DCF valuation."
+}

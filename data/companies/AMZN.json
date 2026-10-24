@@ -2,12 +2,14 @@
   "ticker": "AMZN",
   "cik": "0001018724",
   "company_name": "AMAZON COM INC",
+  "sector": "Consumer Discretionary",
   "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001018724.json",
-  "fetched_at_utc": "2026-10-24T01:21:14.423288+00:00",
+  "fetched_at_utc": "2026-10-24T01:29:05.798804+00:00",
   "financials": {
     "revenue": {
       "value": 716924000000,
       "unit": "USD",
+      "period_start": "2025-01-01",
       "period_end": "2025-12-31",
       "filed": "2026-02-06",
       "accession": "0001018724-26-000004",
@@ -17,6 +19,7 @@
     "operating_cash_flow": {
       "value": 139514000000,
       "unit": "USD",
+      "period_start": "2025-01-01",
       "period_end": "2025-12-31",
       "filed": "2026-02-06",
       "accession": "0001018724-26-000004",
@@ -26,6 +29,7 @@
     "capital_expenditure": {
       "value": 6737000000,
       "unit": "USD",
+      "period_start": "2016-01-01",
       "period_end": "2016-12-31",
       "filed": "2017-02-10",
       "accession": "0001018724-17-000011",
@@ -35,6 +39,7 @@
     "cash": {
       "value": 86810000000,
       "unit": "USD",
+      "period_start": null,
       "period_end": "2025-12-31",
       "filed": "2026-02-06",
       "accession": "0001018724-26-000004",
@@ -44,6 +49,7 @@
     "debt_current": {
       "value": 2748000000,
       "unit": "USD",
+      "period_start": null,
       "period_end": "2025-12-31",
       "filed": "2026-02-06",
       "accession": "0001018724-26-000004",
@@ -53,6 +59,7 @@
     "debt_noncurrent": {
       "value": 65648000000,
       "unit": "USD",
+      "period_start": null,
       "period_end": "2025-12-31",
       "filed": "2026-02-06",
       "accession": "0001018724-26-000004",
@@ -62,6 +69,7 @@
     "shares_outstanding": {
       "value": 10731000000,
       "unit": "shares",
+      "period_start": null,
       "period_end": "2025-12-31",
       "filed": "2026-02-06",
       "accession": "0001018724-26-000004",
@@ -70,5 +78,5 @@
     }
   },
   "review_required": true,
-  "note": "Raw SEC fields only. Do not treat operating cash flow minus capex as unlevered FCFF. Debt tags and periods need review."
+  "note": "SEC reported fields. Different tags and fiscal periods require validation. Operating cash flow minus capex is not automatically unlevered FCFF. Not a completed DCF valuation."
 }

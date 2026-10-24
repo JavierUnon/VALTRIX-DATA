@@ -1,0 +1,64 @@
+{
+  "ticker": "STT",
+  "cik": "0000093751",
+  "company_name": "STATE STREET CORP",
+  "sector": "Financials",
+  "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000093751.json",
+  "fetched_at_utc": "2026-10-24T01:33:55.276515+00:00",
+  "financials": {
+    "revenue": {
+      "value": 13944000000,
+      "unit": "USD",
+      "period_start": "2025-01-01",
+      "period_end": "2025-12-31",
+      "filed": "2026-02-19",
+      "accession": "0000093751-26-000124",
+      "tag": "Revenues",
+      "form": "10-K"
+    },
+    "operating_cash_flow": {
+      "value": 11898000000,
+      "unit": "USD",
+      "period_start": "2025-01-01",
+      "period_end": "2025-12-31",
+      "filed": "2026-02-19",
+      "accession": "0000093751-26-000124",
+      "tag": "NetCashProvidedByUsedInOperatingActivities",
+      "form": "10-K"
+    },
+    "capital_expenditure": {
+      "value": 1055000000,
+      "unit": "USD",
+      "period_start": "2025-01-01",
+      "period_end": "2025-12-31",
+      "filed": "2026-02-19",
+      "accession": "0000093751-26-000124",
+      "tag": "PaymentsToAcquirePropertyPlantAndEquipment",
+      "form": "10-K"
+    },
+    "cash": null,
+    "debt_current": null,
+    "debt_noncurrent": {
+      "value": 769000000,
+      "unit": "USD",
+      "period_start": null,
+      "period_end": "2014-12-31",
+      "filed": "2015-02-20",
+      "accession": "0000093751-15-000042",
+      "tag": "LongTermDebtAndCapitalLeaseObligations",
+      "form": "10-K"
+    },
+    "shares_outstanding": {
+      "value": 279077907,
+      "unit": "shares",
+      "period_start": null,
+      "period_end": "2025-12-31",
+      "filed": "2026-02-19",
+      "accession": "0000093751-26-000124",
+      "tag": "CommonStockSharesOutstanding",
+      "form": "10-K"
+    }
+  },
+  "review_required": true,
+  "note": "SEC reported fields. Different tags and fiscal periods require validation. Operating cash flow minus capex is not automatically unlevered FCFF. Not a completed DCF valuation."
+}

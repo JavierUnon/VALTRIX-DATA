@@ -1,0 +1,73 @@
+{
+  "ticker": "FE",
+  "cik": "0001031296",
+  "company_name": "FIRSTENERGY CORP",
+  "sector": "Utilities",
+  "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001031296.json",
+  "fetched_at_utc": "2026-10-24T01:31:03.056463+00:00",
+  "financials": {
+    "revenue": {
+      "value": 11112000000,
+      "unit": "USD",
+      "period_start": "2021-01-01",
+      "period_end": "2021-12-31",
+      "filed": "2022-02-16",
+      "accession": "0001031296-22-000013",
+      "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+      "form": "10-K"
+    },
+    "operating_cash_flow": {
+      "value": 3700000000,
+      "unit": "USD",
+      "period_start": "2025-01-01",
+      "period_end": "2025-12-31",
+      "filed": "2026-02-18",
+      "accession": "0001031296-26-000046",
+      "tag": "NetCashProvidedByUsedInOperatingActivities",
+      "form": "10-K"
+    },
+    "capital_expenditure": null,
+    "cash": {
+      "value": 57000000,
+      "unit": "USD",
+      "period_start": null,
+      "period_end": "2025-12-31",
+      "filed": "2026-02-18",
+      "accession": "0001031296-26-000046",
+      "tag": "CashAndCashEquivalentsAtCarryingValue",
+      "form": "10-K"
+    },
+    "debt_current": {
+      "value": 723000000,
+      "unit": "USD",
+      "period_start": null,
+      "period_end": "2025-12-31",
+      "filed": "2026-02-18",
+      "accession": "0001031296-26-000046",
+      "tag": "LongTermDebtCurrent",
+      "form": "10-K"
+    },
+    "debt_noncurrent": {
+      "value": 25508000000,
+      "unit": "USD",
+      "period_start": null,
+      "period_end": "2025-12-31",
+      "filed": "2026-02-18",
+      "accession": "0001031296-26-000046",
+      "tag": "LongTermDebtAndCapitalLeaseObligations",
+      "form": "10-K"
+    },
+    "shares_outstanding": {
+      "value": 577851052,
+      "unit": "shares",
+      "period_start": null,
+      "period_end": "2025-12-31",
+      "filed": "2026-02-18",
+      "accession": "0001031296-26-000046",
+      "tag": "CommonStockSharesOutstanding",
+      "form": "10-K"
+    }
+  },
+  "review_required": true,
+  "note": "SEC reported fields. Different tags and fiscal periods require validation. Operating cash flow minus capex is not automatically unlevered FCFF. Not a completed DCF valuation."
+}

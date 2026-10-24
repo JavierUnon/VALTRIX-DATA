@@ -1,0 +1,64 @@
+{
+  "ticker": "TROW",
+  "cik": "0001113169",
+  "company_name": "PRICE T ROWE GROUP INC",
+  "sector": "Financials",
+  "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001113169.json",
+  "fetched_at_utc": "2026-10-24T01:34:01.369281+00:00",
+  "financials": {
+    "revenue": {
+      "value": 7314800000,
+      "unit": "USD",
+      "period_start": "2025-01-01",
+      "period_end": "2025-12-31",
+      "filed": "2026-02-13",
+      "accession": "0001628280-26-008002",
+      "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+      "form": "10-K"
+    },
+    "operating_cash_flow": {
+      "value": 1753400000,
+      "unit": "USD",
+      "period_start": "2025-01-01",
+      "period_end": "2025-12-31",
+      "filed": "2026-02-13",
+      "accession": "0001628280-26-008002",
+      "tag": "NetCashProvidedByUsedInOperatingActivities",
+      "form": "10-K"
+    },
+    "capital_expenditure": {
+      "value": 274200000,
+      "unit": "USD",
+      "period_start": "2025-01-01",
+      "period_end": "2025-12-31",
+      "filed": "2026-02-13",
+      "accession": "0001628280-26-008002",
+      "tag": "PaymentsToAcquirePropertyPlantAndEquipment",
+      "form": "10-K"
+    },
+    "cash": {
+      "value": 3378200000,
+      "unit": "USD",
+      "period_start": null,
+      "period_end": "2025-12-31",
+      "filed": "2026-02-13",
+      "accession": "0001628280-26-008002",
+      "tag": "CashAndCashEquivalentsAtCarryingValue",
+      "form": "10-K"
+    },
+    "debt_current": null,
+    "debt_noncurrent": null,
+    "shares_outstanding": {
+      "value": 218565000,
+      "unit": "shares",
+      "period_start": null,
+      "period_end": "2025-12-31",
+      "filed": "2026-02-13",
+      "accession": "0001628280-26-008002",
+      "tag": "CommonStockSharesOutstanding",
+      "form": "10-K"
+    }
+  },
+  "review_required": true,
+  "note": "SEC reported fields. Different tags and fiscal periods require validation. Operating cash flow minus capex is not automatically unlevered FCFF. Not a completed DCF valuation."
+}

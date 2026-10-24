@@ -1,0 +1,46 @@
+{
+  "ticker": "KEY",
+  "cik": "0000091576",
+  "company_name": "KeyCorp",
+  "sector": "Financials",
+  "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000091576.json",
+  "fetched_at_utc": "2026-10-24T01:32:18.329335+00:00",
+  "financials": {
+    "revenue": {
+      "value": 1749000000,
+      "unit": "USD",
+      "period_start": "2025-01-01",
+      "period_end": "2025-12-31",
+      "filed": "2026-02-23",
+      "accession": "0001628280-26-010546",
+      "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+      "form": "10-K"
+    },
+    "operating_cash_flow": {
+      "value": 2208000000,
+      "unit": "USD",
+      "period_start": "2025-01-01",
+      "period_end": "2025-12-31",
+      "filed": "2026-02-23",
+      "accession": "0001628280-26-010546",
+      "tag": "NetCashProvidedByUsedInOperatingActivities",
+      "form": "10-K"
+    },
+    "capital_expenditure": {
+      "value": 152000000,
+      "unit": "USD",
+      "period_start": "2012-01-01",
+      "period_end": "2012-12-31",
+      "filed": "2013-02-26",
+      "accession": "0001193125-13-076993",
+      "tag": "PaymentsToAcquirePropertyPlantAndEquipment",
+      "form": "10-K"
+    },
+    "cash": null,
+    "debt_current": null,
+    "debt_noncurrent": null,
+    "shares_outstanding": null
+  },
+  "review_required": true,
+  "note": "SEC reported fields. Different tags and fiscal periods require validation. Operating cash flow minus capex is not automatically unlevered FCFF. Not a completed DCF valuation."
+}

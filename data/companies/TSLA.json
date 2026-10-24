@@ -1,0 +1,82 @@
+{
+  "ticker": "TSLA",
+  "cik": "0001318605",
+  "company_name": "Tesla, Inc.",
+  "sector": "Consumer Discretionary",
+  "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001318605.json",
+  "fetched_at_utc": "2026-10-24T01:34:06.460288+00:00",
+  "financials": {
+    "revenue": {
+      "value": 94827000000,
+      "unit": "USD",
+      "period_start": "2025-01-01",
+      "period_end": "2025-12-31",
+      "filed": "2026-01-29",
+      "accession": "0001628280-26-003952",
+      "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+      "form": "10-K"
+    },
+    "operating_cash_flow": {
+      "value": 14747000000,
+      "unit": "USD",
+      "period_start": "2025-01-01",
+      "period_end": "2025-12-31",
+      "filed": "2026-01-29",
+      "accession": "0001628280-26-003952",
+      "tag": "NetCashProvidedByUsedInOperatingActivities",
+      "form": "10-K"
+    },
+    "capital_expenditure": {
+      "value": 8527000000,
+      "unit": "USD",
+      "period_start": "2025-01-01",
+      "period_end": "2025-12-31",
+      "filed": "2026-01-29",
+      "accession": "0001628280-26-003952",
+      "tag": "PaymentsToAcquirePropertyPlantAndEquipment",
+      "form": "10-K"
+    },
+    "cash": {
+      "value": 16513000000,
+      "unit": "USD",
+      "period_start": null,
+      "period_end": "2025-12-31",
+      "filed": "2026-01-29",
+      "accession": "0001628280-26-003952",
+      "tag": "CashAndCashEquivalentsAtCarryingValue",
+      "form": "10-K"
+    },
+    "debt_current": {
+      "value": 50841000,
+      "unit": "USD",
+      "period_start": null,
+      "period_end": "2012-12-31",
+      "filed": "2014-02-26",
+      "accession": "0001193125-14-069681",
+      "tag": "LongTermDebtCurrent",
+      "form": "10-K"
+    },
+    "debt_noncurrent": {
+      "value": 0,
+      "unit": "USD",
+      "period_start": null,
+      "period_end": "2013-12-31",
+      "filed": "2014-02-26",
+      "accession": "0001193125-14-069681",
+      "tag": "LongTermDebtNoncurrent",
+      "form": "10-K"
+    },
+    "shares_outstanding": {
+      "value": 3751000000,
+      "unit": "shares",
+      "period_start": null,
+      "period_end": "2025-12-31",
+      "filed": "2026-01-29",
+      "accession": "0001628280-26-003952",
+      "tag": "CommonStockSharesOutstanding",
+      "form": "10-K"
+    }
+  },
+  "review_required": true,
+  "note": "SEC reported fields. Different tags and fiscal periods require validation. Operating cash flow minus capex is not automatically unlevered FCFF. Not a completed DCF valuation."
+}

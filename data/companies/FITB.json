@@ -1,0 +1,55 @@
+{
+  "ticker": "FITB",
+  "cik": "0000035527",
+  "company_name": "FIFTH THIRD BANCORP",
+  "sector": "Financials",
+  "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000035527.json",
+  "fetched_at_utc": "2026-10-24T01:31:01.572114+00:00",
+  "financials": {
+    "revenue": {
+      "value": 577000000,
+      "unit": "USD",
+      "period_start": "2023-01-01",
+      "period_end": "2023-12-31",
+      "filed": "2024-02-27",
+      "accession": "0000035527-24-000088",
+      "tag": "RevenueFromContractWithCustomerIncludingAssessedTax",
+      "form": "10-K"
+    },
+    "operating_cash_flow": {
+      "value": 4514000000,
+      "unit": "USD",
+      "period_start": "2025-01-01",
+      "period_end": "2025-12-31",
+      "filed": "2026-02-24",
+      "accession": "0000035527-26-000124",
+      "tag": "NetCashProvidedByUsedInOperatingActivities",
+      "form": "10-K"
+    },
+    "capital_expenditure": {
+      "value": 584000000,
+      "unit": "USD",
+      "period_start": "2025-01-01",
+      "period_end": "2025-12-31",
+      "filed": "2026-02-24",
+      "accession": "0000035527-26-000124",
+      "tag": "PaymentsToAcquirePropertyPlantAndEquipment",
+      "form": "10-K"
+    },
+    "cash": null,
+    "debt_current": null,
+    "debt_noncurrent": null,
+    "shares_outstanding": {
+      "value": 661197787,
+      "unit": "shares",
+      "period_start": null,
+      "period_end": "2025-12-31",
+      "filed": "2026-02-24",
+      "accession": "0000035527-26-000124",
+      "tag": "CommonStockSharesOutstanding",
+      "form": "10-K"
+    }
+  },
+  "review_required": true,
+  "note": "SEC reported fields. Different tags and fiscal periods require validation. Operating cash flow minus capex is not automatically unlevered FCFF. Not a completed DCF valuation."
+}

@@ -1,0 +1,55 @@
+{
+  "ticker": "HOOD",
+  "cik": "0001783879",
+  "company_name": "Robinhood Markets, Inc.",
+  "sector": "Financials",
+  "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001783879.json",
+  "fetched_at_utc": "2026-10-24T01:33:39.051846+00:00",
+  "financials": {
+    "revenue": {
+      "value": 4473000000,
+      "unit": "USD",
+      "period_start": "2025-01-01",
+      "period_end": "2025-12-31",
+      "filed": "2026-02-18",
+      "accession": "0001783879-26-000023",
+      "tag": "Revenues",
+      "form": "10-K"
+    },
+    "operating_cash_flow": {
+      "value": 1638000000,
+      "unit": "USD",
+      "period_start": "2025-01-01",
+      "period_end": "2025-12-31",
+      "filed": "2026-02-18",
+      "accession": "0001783879-26-000023",
+      "tag": "NetCashProvidedByUsedInOperatingActivities",
+      "form": "10-K"
+    },
+    "capital_expenditure": null,
+    "cash": {
+      "value": 4261000000,
+      "unit": "USD",
+      "period_start": null,
+      "period_end": "2025-12-31",
+      "filed": "2026-02-18",
+      "accession": "0001783879-26-000023",
+      "tag": "CashAndCashEquivalentsAtCarryingValue",
+      "form": "10-K"
+    },
+    "debt_current": null,
+    "debt_noncurrent": null,
+    "shares_outstanding": {
+      "value": 0,
+      "unit": "shares",
+      "period_start": null,
+      "period_end": "2021-12-31",
+      "filed": "2022-02-24",
+      "accession": "0001783879-22-000044",
+      "tag": "CommonStockSharesOutstanding",
+      "form": "10-K"
+    }
+  },
+  "review_required": true,
+  "note": "SEC reported fields. Different tags and fiscal periods require validation. Operating cash flow minus capex is not automatically unlevered FCFF. Not a completed DCF valuation."
+}

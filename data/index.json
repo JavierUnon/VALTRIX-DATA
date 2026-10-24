@@ -1,17 +1,3523 @@
 [
   {
-    "ticker": "AAPL",
-    "company_name": "Apple Inc.",
-    "path": "data/companies/AAPL.json"
+    "ticker": "MMM",
+    "company_name": "3M COMPANY",
+    "sector": "Industrials",
+    "path": "data/companies/MMM.json",
+    "review_required": true
   },
   {
-    "ticker": "MSFT",
-    "company_name": "Microsoft Corporation",
-    "path": "data/companies/MSFT.json"
+    "ticker": "AOS",
+    "company_name": "A. O. Smith Corporation",
+    "sector": "Industrials",
+    "path": "data/companies/AOS.json",
+    "review_required": true
+  },
+  {
+    "ticker": "ABT",
+    "company_name": "ABBOTT LABORATORIES",
+    "sector": "Health Care",
+    "path": "data/companies/ABT.json",
+    "review_required": true
+  },
+  {
+    "ticker": "ABBV",
+    "company_name": "AbbVie Inc.",
+    "sector": "Health Care",
+    "path": "data/companies/ABBV.json",
+    "review_required": true
+  },
+  {
+    "ticker": "ACN",
+    "company_name": "Accenture plc",
+    "sector": "Information Technology",
+    "path": "data/companies/ACN.json",
+    "review_required": true
+  },
+  {
+    "ticker": "ADBE",
+    "company_name": "ADOBE INC.",
+    "sector": "Information Technology",
+    "path": "data/companies/ADBE.json",
+    "review_required": true
+  },
+  {
+    "ticker": "AMD",
+    "company_name": "ADVANCED MICRO DEVICES INC",
+    "sector": "Information Technology",
+    "path": "data/companies/AMD.json",
+    "review_required": true
+  },
+  {
+    "ticker": "AES",
+    "company_name": "THE AES CORPORATION",
+    "sector": "Utilities",
+    "path": "data/companies/AES.json",
+    "review_required": true
+  },
+  {
+    "ticker": "AFL",
+    "company_name": "Aflac Incorporated",
+    "sector": "Financials",
+    "path": "data/companies/AFL.json",
+    "review_required": true
+  },
+  {
+    "ticker": "A",
+    "company_name": "AGILENT TECHNOLOGIES, INC.",
+    "sector": "Health Care",
+    "path": "data/companies/A.json",
+    "review_required": true
+  },
+  {
+    "ticker": "APD",
+    "company_name": "AIR PRODUCTS AND CHEMICALS, INC.",
+    "sector": "Materials",
+    "path": "data/companies/APD.json",
+    "review_required": true
+  },
+  {
+    "ticker": "ABNB",
+    "company_name": "Airbnb, Inc.",
+    "sector": "Consumer Discretionary",
+    "path": "data/companies/ABNB.json",
+    "review_required": true
+  },
+  {
+    "ticker": "AKAM",
+    "company_name": "Akamai Technologies, Inc",
+    "sector": "Information Technology",
+    "path": "data/companies/AKAM.json",
+    "review_required": true
+  },
+  {
+    "ticker": "ALB",
+    "company_name": "ALBEMARLE CORPORATION",
+    "sector": "Materials",
+    "path": "data/companies/ALB.json",
+    "review_required": true
+  },
+  {
+    "ticker": "ARE",
+    "company_name": "ALEXANDRIA REAL ESTATE EQUITIES, INC.",
+    "sector": "Real Estate",
+    "path": "data/companies/ARE.json",
+    "review_required": true
+  },
+  {
+    "ticker": "ALGN",
+    "company_name": "ALIGN TECHNOLOGY,\u00a0INC.",
+    "sector": "Health Care",
+    "path": "data/companies/ALGN.json",
+    "review_required": true
+  },
+  {
+    "ticker": "ALLE",
+    "company_name": "Allegion plc",
+    "sector": "Industrials",
+    "path": "data/companies/ALLE.json",
+    "review_required": true
+  },
+  {
+    "ticker": "LNT",
+    "company_name": "ALLIANT ENERGY CORP",
+    "sector": "Utilities",
+    "path": "data/companies/LNT.json",
+    "review_required": true
+  },
+  {
+    "ticker": "ALL",
+    "company_name": "ALLSTATE CORP",
+    "sector": "Financials",
+    "path": "data/companies/ALL.json",
+    "review_required": true
+  },
+  {
+    "ticker": "GOOGL",
+    "company_name": "Alphabet Inc.",
+    "sector": "Communication Services",
+    "path": "data/companies/GOOGL.json",
+    "review_required": true
+  },
+  {
+    "ticker": "GOOG",
+    "company_name": "Alphabet Inc.",
+    "sector": "Communication Services",
+    "path": "data/companies/GOOG.json",
+    "review_required": true
+  },
+  {
+    "ticker": "MO",
+    "company_name": "Altria Group, Inc.",
+    "sector": "Consumer Staples",
+    "path": "data/companies/MO.json",
+    "review_required": true
   },
   {
     "ticker": "AMZN",
     "company_name": "AMAZON COM INC",
-    "path": "data/companies/AMZN.json"
+    "sector": "Consumer Discretionary",
+    "path": "data/companies/AMZN.json",
+    "review_required": true
+  },
+  {
+    "ticker": "AMCR",
+    "company_name": "AMCOR PLC",
+    "sector": "Materials",
+    "path": "data/companies/AMCR.json",
+    "review_required": true
+  },
+  {
+    "ticker": "AEE",
+    "company_name": "AMEREN CORP",
+    "sector": "Utilities",
+    "path": "data/companies/AEE.json",
+    "review_required": true
+  },
+  {
+    "ticker": "AEP",
+    "company_name": "American Electric Power Company, Inc.",
+    "sector": "Utilities",
+    "path": "data/companies/AEP.json",
+    "review_required": true
+  },
+  {
+    "ticker": "AXP",
+    "company_name": "AMERICAN EXPRESS COMPANY",
+    "sector": "Financials",
+    "path": "data/companies/AXP.json",
+    "review_required": true
+  },
+  {
+    "ticker": "AIG",
+    "company_name": "AMERICAN INTERNATIONAL GROUP, INC.",
+    "sector": "Financials",
+    "path": "data/companies/AIG.json",
+    "review_required": true
+  },
+  {
+    "ticker": "AMT",
+    "company_name": "AMERICAN TOWER CORP /MA/",
+    "sector": "Real Estate",
+    "path": "data/companies/AMT.json",
+    "review_required": true
+  },
+  {
+    "ticker": "AWK",
+    "company_name": "AMERICAN WATER WORKS COMPANY, INC.",
+    "sector": "Utilities",
+    "path": "data/companies/AWK.json",
+    "review_required": true
+  },
+  {
+    "ticker": "AMP",
+    "company_name": "AMERIPRISE FINANCIAL, INC.",
+    "sector": "Financials",
+    "path": "data/companies/AMP.json",
+    "review_required": true
+  },
+  {
+    "ticker": "AME",
+    "company_name": "AMETEK, Inc.",
+    "sector": "Industrials",
+    "path": "data/companies/AME.json",
+    "review_required": true
+  },
+  {
+    "ticker": "AMGN",
+    "company_name": "Amgen Inc.",
+    "sector": "Health Care",
+    "path": "data/companies/AMGN.json",
+    "review_required": true
+  },
+  {
+    "ticker": "APH",
+    "company_name": "AMPHENOL CORPORATION",
+    "sector": "Information Technology",
+    "path": "data/companies/APH.json",
+    "review_required": true
+  },
+  {
+    "ticker": "ADI",
+    "company_name": "ANALOG DEVICES INC",
+    "sector": "Information Technology",
+    "path": "data/companies/ADI.json",
+    "review_required": true
+  },
+  {
+    "ticker": "AON",
+    "company_name": "Aon plc",
+    "sector": "Financials",
+    "path": "data/companies/AON.json",
+    "review_required": true
+  },
+  {
+    "ticker": "APA",
+    "company_name": "APA CORPORATION",
+    "sector": "Energy",
+    "path": "data/companies/APA.json",
+    "review_required": true
+  },
+  {
+    "ticker": "APO",
+    "company_name": "APOLLO GLOBAL MANAGEMENT, INC.",
+    "sector": "Financials",
+    "path": "data/companies/APO.json",
+    "review_required": true
+  },
+  {
+    "ticker": "AAPL",
+    "company_name": "Apple Inc.",
+    "sector": "Information Technology",
+    "path": "data/companies/AAPL.json",
+    "review_required": true
+  },
+  {
+    "ticker": "AMAT",
+    "company_name": "APPLIED MATERIALS INC /DE",
+    "sector": "Information Technology",
+    "path": "data/companies/AMAT.json",
+    "review_required": true
+  },
+  {
+    "ticker": "APP",
+    "company_name": "AppLovin Corporation",
+    "sector": "Communication Services",
+    "path": "data/companies/APP.json",
+    "review_required": true
+  },
+  {
+    "ticker": "APTV",
+    "company_name": "APTIV PLC",
+    "sector": "Consumer Discretionary",
+    "path": "data/companies/APTV.json",
+    "review_required": true
+  },
+  {
+    "ticker": "ACGL",
+    "company_name": "ARCH CAPITAL GROUP LTD.",
+    "sector": "Financials",
+    "path": "data/companies/ACGL.json",
+    "review_required": true
+  },
+  {
+    "ticker": "ADM",
+    "company_name": "Archer-Daniels-Midland Co",
+    "sector": "Consumer Staples",
+    "path": "data/companies/ADM.json",
+    "review_required": true
+  },
+  {
+    "ticker": "ARES",
+    "company_name": "ARES MANAGEMENT CORPORATION",
+    "sector": "Financials",
+    "path": "data/companies/ARES.json",
+    "review_required": true
+  },
+  {
+    "ticker": "ANET",
+    "company_name": "Arista Networks,\u00a0Inc.",
+    "sector": "Information Technology",
+    "path": "data/companies/ANET.json",
+    "review_required": true
+  },
+  {
+    "ticker": "AJG",
+    "company_name": "ARTHUR J. GALLAGHER & CO.",
+    "sector": "Financials",
+    "path": "data/companies/AJG.json",
+    "review_required": true
+  },
+  {
+    "ticker": "AIZ",
+    "company_name": "Assurant, Inc.",
+    "sector": "Financials",
+    "path": "data/companies/AIZ.json",
+    "review_required": true
+  },
+  {
+    "ticker": "T",
+    "company_name": "AT&T INC.",
+    "sector": "Communication Services",
+    "path": "data/companies/T.json",
+    "review_required": true
+  },
+  {
+    "ticker": "ATO",
+    "company_name": "ATMOS ENERGY CORP",
+    "sector": "Utilities",
+    "path": "data/companies/ATO.json",
+    "review_required": true
+  },
+  {
+    "ticker": "ADSK",
+    "company_name": "Autodesk, Inc.",
+    "sector": "Information Technology",
+    "path": "data/companies/ADSK.json",
+    "review_required": true
+  },
+  {
+    "ticker": "ADP",
+    "company_name": "Automatic Data Processing, Inc.",
+    "sector": "Industrials",
+    "path": "data/companies/ADP.json",
+    "review_required": true
+  },
+  {
+    "ticker": "AZO",
+    "company_name": "AUTOZONE INC",
+    "sector": "Consumer Discretionary",
+    "path": "data/companies/AZO.json",
+    "review_required": true
+  },
+  {
+    "ticker": "AVY",
+    "company_name": "AVERY DENNISON CORPORATION",
+    "sector": "Materials",
+    "path": "data/companies/AVY.json",
+    "review_required": true
+  },
+  {
+    "ticker": "AXON",
+    "company_name": "AXON ENTERPRISE, INC.",
+    "sector": "Industrials",
+    "path": "data/companies/AXON.json",
+    "review_required": true
+  },
+  {
+    "ticker": "BKR",
+    "company_name": "Baker Hughes Company",
+    "sector": "Energy",
+    "path": "data/companies/BKR.json",
+    "review_required": true
+  },
+  {
+    "ticker": "BALL",
+    "company_name": "BALL CORPORATION",
+    "sector": "Materials",
+    "path": "data/companies/BALL.json",
+    "review_required": true
+  },
+  {
+    "ticker": "BAC",
+    "company_name": "BofA Finance LLC",
+    "sector": "Financials",
+    "path": "data/companies/BAC.json",
+    "review_required": true
+  },
+  {
+    "ticker": "BAX",
+    "company_name": "BAXTER INTERNATIONAL INC.",
+    "sector": "Health Care",
+    "path": "data/companies/BAX.json",
+    "review_required": true
+  },
+  {
+    "ticker": "BDX",
+    "company_name": "BECTON, DICKINSON AND COMPANY",
+    "sector": "Health Care",
+    "path": "data/companies/BDX.json",
+    "review_required": true
+  },
+  {
+    "ticker": "BRK.B",
+    "company_name": "BERKSHIRE HATHAWAY INC",
+    "sector": "Financials",
+    "path": "data/companies/BRK.B.json",
+    "review_required": true
+  },
+  {
+    "ticker": "BBY",
+    "company_name": "Best Buy Co., Inc.",
+    "sector": "Consumer Discretionary",
+    "path": "data/companies/BBY.json",
+    "review_required": true
+  },
+  {
+    "ticker": "TECH",
+    "company_name": "BIO-TECHNE Corp",
+    "sector": "Health Care",
+    "path": "data/companies/TECH.json",
+    "review_required": true
+  },
+  {
+    "ticker": "BIIB",
+    "company_name": "BIOGEN INC.",
+    "sector": "Health Care",
+    "path": "data/companies/BIIB.json",
+    "review_required": true
+  },
+  {
+    "ticker": "BLK",
+    "company_name": "BlackRock, Inc.",
+    "sector": "Financials",
+    "path": "data/companies/BLK.json",
+    "review_required": true
+  },
+  {
+    "ticker": "BX",
+    "company_name": "Blackstone Inc.",
+    "sector": "Financials",
+    "path": "data/companies/BX.json",
+    "review_required": true
+  },
+  {
+    "ticker": "XYZ",
+    "company_name": "Block, Inc.",
+    "sector": "Financials",
+    "path": "data/companies/XYZ.json",
+    "review_required": true
+  },
+  {
+    "ticker": "BE",
+    "company_name": "BLOOM ENERGY CORPORATION",
+    "sector": "Industrials",
+    "path": "data/companies/BE.json",
+    "review_required": true
+  },
+  {
+    "ticker": "BNY",
+    "company_name": "Bank of New York Mellon Corp",
+    "sector": "Financials",
+    "path": "data/companies/BNY.json",
+    "review_required": true
+  },
+  {
+    "ticker": "BA",
+    "company_name": "THE BOEING COMPANY",
+    "sector": "Industrials",
+    "path": "data/companies/BA.json",
+    "review_required": true
+  },
+  {
+    "ticker": "BKNG",
+    "company_name": "Booking Holdings Inc.",
+    "sector": "Consumer Discretionary",
+    "path": "data/companies/BKNG.json",
+    "review_required": true
+  },
+  {
+    "ticker": "BSX",
+    "company_name": "BOSTON SCIENTIFIC CORPORATION",
+    "sector": "Health Care",
+    "path": "data/companies/BSX.json",
+    "review_required": true
+  },
+  {
+    "ticker": "BMY",
+    "company_name": "BRISTOL-MYERS SQUIBB COMPANY",
+    "sector": "Health Care",
+    "path": "data/companies/BMY.json",
+    "review_required": true
+  },
+  {
+    "ticker": "AVGO",
+    "company_name": "Broadcom Inc.",
+    "sector": "Information Technology",
+    "path": "data/companies/AVGO.json",
+    "review_required": true
+  },
+  {
+    "ticker": "BR",
+    "company_name": "BROADRIDGE FINANCIAL SOLUTIONS, INC.",
+    "sector": "Industrials",
+    "path": "data/companies/BR.json",
+    "review_required": true
+  },
+  {
+    "ticker": "BRO",
+    "company_name": "BROWN & BROWN, INC.",
+    "sector": "Financials",
+    "path": "data/companies/BRO.json",
+    "review_required": true
+  },
+  {
+    "ticker": "BF.B",
+    "company_name": "BROWN FORMAN CORP",
+    "sector": "Consumer Staples",
+    "path": "data/companies/BF.B.json",
+    "review_required": true
+  },
+  {
+    "ticker": "BG",
+    "company_name": "BUNGE GLOBAL SA",
+    "sector": "Consumer Staples",
+    "path": "data/companies/BG.json",
+    "review_required": true
+  },
+  {
+    "ticker": "BXP",
+    "company_name": "BXP, INC.",
+    "sector": "Real Estate",
+    "path": "data/companies/BXP.json",
+    "review_required": true
+  },
+  {
+    "ticker": "CHRW",
+    "company_name": "C. H. ROBINSON WORLDWIDE, INC.",
+    "sector": "Industrials",
+    "path": "data/companies/CHRW.json",
+    "review_required": true
+  },
+  {
+    "ticker": "CDNS",
+    "company_name": "CADENCE DESIGN SYSTEMS, INC.",
+    "sector": "Information Technology",
+    "path": "data/companies/CDNS.json",
+    "review_required": true
+  },
+  {
+    "ticker": "CPT",
+    "company_name": "CAMDEN PROPERTY TRUST",
+    "sector": "Real Estate",
+    "path": "data/companies/CPT.json",
+    "review_required": true
+  },
+  {
+    "ticker": "COF",
+    "company_name": "CAPITAL ONE FINANCIAL CORP",
+    "sector": "Financials",
+    "path": "data/companies/COF.json",
+    "review_required": true
+  },
+  {
+    "ticker": "CAH",
+    "company_name": "Cardinal Health, Inc.",
+    "sector": "Health Care",
+    "path": "data/companies/CAH.json",
+    "review_required": true
+  },
+  {
+    "ticker": "CCL",
+    "company_name": "Carnival Corp Ltd.",
+    "sector": "Consumer Discretionary",
+    "path": "data/companies/CCL.json",
+    "review_required": true
+  },
+  {
+    "ticker": "CARR",
+    "company_name": "CARRIER GLOBAL CORPORATION",
+    "sector": "Industrials",
+    "path": "data/companies/CARR.json",
+    "review_required": true
+  },
+  {
+    "ticker": "CVNA",
+    "company_name": "CARVANA CO.",
+    "sector": "Consumer Discretionary",
+    "path": "data/companies/CVNA.json",
+    "review_required": true
+  },
+  {
+    "ticker": "CASY",
+    "company_name": "CASEY\u2019S GENERAL STORES, INC.",
+    "sector": "Consumer Staples",
+    "path": "data/companies/CASY.json",
+    "review_required": true
+  },
+  {
+    "ticker": "CAT",
+    "company_name": "CATERPILLAR INC",
+    "sector": "Industrials",
+    "path": "data/companies/CAT.json",
+    "review_required": true
+  },
+  {
+    "ticker": "CBOE",
+    "company_name": "Cboe Global Markets, Inc.",
+    "sector": "Financials",
+    "path": "data/companies/CBOE.json",
+    "review_required": true
+  },
+  {
+    "ticker": "CBRE",
+    "company_name": "CBRE GROUP, INC.",
+    "sector": "Real Estate",
+    "path": "data/companies/CBRE.json",
+    "review_required": true
+  },
+  {
+    "ticker": "CDW",
+    "company_name": "CDW CORP",
+    "sector": "Information Technology",
+    "path": "data/companies/CDW.json",
+    "review_required": true
+  },
+  {
+    "ticker": "COR",
+    "company_name": "CENCORA, INC.",
+    "sector": "Health Care",
+    "path": "data/companies/COR.json",
+    "review_required": true
+  },
+  {
+    "ticker": "CNC",
+    "company_name": "CENTENE CORPORATION",
+    "sector": "Health Care",
+    "path": "data/companies/CNC.json",
+    "review_required": true
+  },
+  {
+    "ticker": "CNP",
+    "company_name": "CENTERPOINT ENERGY INC",
+    "sector": "Utilities",
+    "path": "data/companies/CNP.json",
+    "review_required": true
+  },
+  {
+    "ticker": "CF",
+    "company_name": "CF INDUSTRIES HOLDINGS,\u00a0INC.",
+    "sector": "Materials",
+    "path": "data/companies/CF.json",
+    "review_required": true
+  },
+  {
+    "ticker": "CRL",
+    "company_name": "CHARLES RIVER LABORATORIES INTERNATIONAL,\u00a0INC.",
+    "sector": "Health Care",
+    "path": "data/companies/CRL.json",
+    "review_required": true
+  },
+  {
+    "ticker": "SCHW",
+    "company_name": "SCHWAB CHARLES CORP",
+    "sector": "Financials",
+    "path": "data/companies/SCHW.json",
+    "review_required": true
+  },
+  {
+    "ticker": "CHTR",
+    "company_name": "Charter Communications, Inc.",
+    "sector": "Communication Services",
+    "path": "data/companies/CHTR.json",
+    "review_required": true
+  },
+  {
+    "ticker": "CVX",
+    "company_name": "Chevron Corp",
+    "sector": "Energy",
+    "path": "data/companies/CVX.json",
+    "review_required": true
+  },
+  {
+    "ticker": "CMG",
+    "company_name": "CHIPOTLE MEXICAN GRILL, INC.",
+    "sector": "Consumer Discretionary",
+    "path": "data/companies/CMG.json",
+    "review_required": true
+  },
+  {
+    "ticker": "CB",
+    "company_name": "CHUBB LIMITED",
+    "sector": "Financials",
+    "path": "data/companies/CB.json",
+    "review_required": true
+  },
+  {
+    "ticker": "CHD",
+    "company_name": "CHURCH & DWIGHT CO., INC.",
+    "sector": "Consumer Staples",
+    "path": "data/companies/CHD.json",
+    "review_required": true
+  },
+  {
+    "ticker": "CIEN",
+    "company_name": "Ciena Corp",
+    "sector": "Information Technology",
+    "path": "data/companies/CIEN.json",
+    "review_required": true
+  },
+  {
+    "ticker": "CI",
+    "company_name": "The Cigna Group",
+    "sector": "Health Care",
+    "path": "data/companies/CI.json",
+    "review_required": true
+  },
+  {
+    "ticker": "CINF",
+    "company_name": "CINCINNATI FINANCIAL CORPORATION",
+    "sector": "Financials",
+    "path": "data/companies/CINF.json",
+    "review_required": true
+  },
+  {
+    "ticker": "CTAS",
+    "company_name": "Cintas Corporation",
+    "sector": "Industrials",
+    "path": "data/companies/CTAS.json",
+    "review_required": true
+  },
+  {
+    "ticker": "CSCO",
+    "company_name": "CISCO SYSTEMS, INC.",
+    "sector": "Information Technology",
+    "path": "data/companies/CSCO.json",
+    "review_required": true
+  },
+  {
+    "ticker": "C",
+    "company_name": "Citigroup Inc",
+    "sector": "Financials",
+    "path": "data/companies/C.json",
+    "review_required": true
+  },
+  {
+    "ticker": "CFG",
+    "company_name": "CITIZENS FINANCIAL GROUP INC/RI",
+    "sector": "Financials",
+    "path": "data/companies/CFG.json",
+    "review_required": true
+  },
+  {
+    "ticker": "CLX",
+    "company_name": "The Clorox Company",
+    "sector": "Consumer Staples",
+    "path": "data/companies/CLX.json",
+    "review_required": true
+  },
+  {
+    "ticker": "CME",
+    "company_name": "CME GROUP INC.",
+    "sector": "Financials",
+    "path": "data/companies/CME.json",
+    "review_required": true
+  },
+  {
+    "ticker": "CMS",
+    "company_name": "CMS ENERGY CORP",
+    "sector": "Utilities",
+    "path": "data/companies/CMS.json",
+    "review_required": true
+  },
+  {
+    "ticker": "KO",
+    "company_name": "COCA COLA CO",
+    "sector": "Consumer Staples",
+    "path": "data/companies/KO.json",
+    "review_required": true
+  },
+  {
+    "ticker": "CTSH",
+    "company_name": "COGNIZANT TECHNOLOGY SOLUTIONS CORPORATION",
+    "sector": "Information Technology",
+    "path": "data/companies/CTSH.json",
+    "review_required": true
+  },
+  {
+    "ticker": "COHR",
+    "company_name": "COHERENT CORP.",
+    "sector": "Information Technology",
+    "path": "data/companies/COHR.json",
+    "review_required": true
+  },
+  {
+    "ticker": "COIN",
+    "company_name": "Coinbase Global, Inc.",
+    "sector": "Financials",
+    "path": "data/companies/COIN.json",
+    "review_required": true
+  },
+  {
+    "ticker": "CL",
+    "company_name": "COLGATE-PALMOLIVE COMPANY",
+    "sector": "Consumer Staples",
+    "path": "data/companies/CL.json",
+    "review_required": true
+  },
+  {
+    "ticker": "CMCSA",
+    "company_name": "COMCAST\u00a0CORPORATION",
+    "sector": "Communication Services",
+    "path": "data/companies/CMCSA.json",
+    "review_required": true
+  },
+  {
+    "ticker": "FIX",
+    "company_name": "COMFORT SYSTEMS USA,\u00a0INC.",
+    "sector": "Industrials",
+    "path": "data/companies/FIX.json",
+    "review_required": true
+  },
+  {
+    "ticker": "COP",
+    "company_name": "ConocoPhillips",
+    "sector": "Energy",
+    "path": "data/companies/COP.json",
+    "review_required": true
+  },
+  {
+    "ticker": "ED",
+    "company_name": "CONSOLIDATED EDISON INC",
+    "sector": "Utilities",
+    "path": "data/companies/ED.json",
+    "review_required": true
+  },
+  {
+    "ticker": "STZ",
+    "company_name": "CONSTELLATION BRANDS, INC.",
+    "sector": "Consumer Staples",
+    "path": "data/companies/STZ.json",
+    "review_required": true
+  },
+  {
+    "ticker": "CEG",
+    "company_name": "CONSTELLATION ENERGY CORPORATION",
+    "sector": "Utilities",
+    "path": "data/companies/CEG.json",
+    "review_required": true
+  },
+  {
+    "ticker": "COO",
+    "company_name": "The Cooper Companies, Inc.",
+    "sector": "Health Care",
+    "path": "data/companies/COO.json",
+    "review_required": true
+  },
+  {
+    "ticker": "CPRT",
+    "company_name": "COPART, INC.",
+    "sector": "Industrials",
+    "path": "data/companies/CPRT.json",
+    "review_required": true
+  },
+  {
+    "ticker": "GLW",
+    "company_name": "CORNING INC /NY",
+    "sector": "Information Technology",
+    "path": "data/companies/GLW.json",
+    "review_required": true
+  },
+  {
+    "ticker": "CPAY",
+    "company_name": "Corpay, Inc",
+    "sector": "Financials",
+    "path": "data/companies/CPAY.json",
+    "review_required": true
+  },
+  {
+    "ticker": "CSGP",
+    "company_name": "COSTAR GROUP, INC.",
+    "sector": "Real Estate",
+    "path": "data/companies/CSGP.json",
+    "review_required": true
+  },
+  {
+    "ticker": "COST",
+    "company_name": "COSTCO WHOLESALE CORP /NEW",
+    "sector": "Consumer Staples",
+    "path": "data/companies/COST.json",
+    "review_required": true
+  },
+  {
+    "ticker": "CRH",
+    "company_name": "CRH public limited company",
+    "sector": "Materials",
+    "path": "data/companies/CRH.json",
+    "review_required": true
+  },
+  {
+    "ticker": "CRWD",
+    "company_name": "CrowdStrike Holdings, Inc.",
+    "sector": "Information Technology",
+    "path": "data/companies/CRWD.json",
+    "review_required": true
+  },
+  {
+    "ticker": "CCI",
+    "company_name": "CROWN CASTLE INC.",
+    "sector": "Real Estate",
+    "path": "data/companies/CCI.json",
+    "review_required": true
+  },
+  {
+    "ticker": "CSX",
+    "company_name": "CSX CORPORATION",
+    "sector": "Industrials",
+    "path": "data/companies/CSX.json",
+    "review_required": true
+  },
+  {
+    "ticker": "CMI",
+    "company_name": "CUMMINS INC.",
+    "sector": "Industrials",
+    "path": "data/companies/CMI.json",
+    "review_required": true
+  },
+  {
+    "ticker": "CVS",
+    "company_name": "CVS HEALTH CORPORATION",
+    "sector": "Health Care",
+    "path": "data/companies/CVS.json",
+    "review_required": true
+  },
+  {
+    "ticker": "DHR",
+    "company_name": "DANAHER CORPORATION",
+    "sector": "Health Care",
+    "path": "data/companies/DHR.json",
+    "review_required": true
+  },
+  {
+    "ticker": "DRI",
+    "company_name": "DARDEN RESTAURANTS, INC.",
+    "sector": "Consumer Discretionary",
+    "path": "data/companies/DRI.json",
+    "review_required": true
+  },
+  {
+    "ticker": "DDOG",
+    "company_name": "Datadog, Inc.",
+    "sector": "Information Technology",
+    "path": "data/companies/DDOG.json",
+    "review_required": true
+  },
+  {
+    "ticker": "DVA",
+    "company_name": "DAVITA INC.",
+    "sector": "Health Care",
+    "path": "data/companies/DVA.json",
+    "review_required": true
+  },
+  {
+    "ticker": "DECK",
+    "company_name": "DECKERS OUTDOOR CORP",
+    "sector": "Consumer Discretionary",
+    "path": "data/companies/DECK.json",
+    "review_required": true
+  },
+  {
+    "ticker": "DE",
+    "company_name": "DEERE & CO",
+    "sector": "Industrials",
+    "path": "data/companies/DE.json",
+    "review_required": true
+  },
+  {
+    "ticker": "DELL",
+    "company_name": "Dell Technologies Inc.",
+    "sector": "Information Technology",
+    "path": "data/companies/DELL.json",
+    "review_required": true
+  },
+  {
+    "ticker": "DAL",
+    "company_name": "DELTA AIR LINES, INC.",
+    "sector": "Industrials",
+    "path": "data/companies/DAL.json",
+    "review_required": true
+  },
+  {
+    "ticker": "DVN",
+    "company_name": "DEVON ENERGY CORP/DE",
+    "sector": "Energy",
+    "path": "data/companies/DVN.json",
+    "review_required": true
+  },
+  {
+    "ticker": "DXCM",
+    "company_name": "DEXCOM, INC.",
+    "sector": "Health Care",
+    "path": "data/companies/DXCM.json",
+    "review_required": true
+  },
+  {
+    "ticker": "FANG",
+    "company_name": "Diamondback Energy, Inc.",
+    "sector": "Energy",
+    "path": "data/companies/FANG.json",
+    "review_required": true
+  },
+  {
+    "ticker": "DLR",
+    "company_name": "DIGITAL REALTY TRUST, INC.",
+    "sector": "Real Estate",
+    "path": "data/companies/DLR.json",
+    "review_required": true
+  },
+  {
+    "ticker": "DG",
+    "company_name": "DOLLAR GENERAL CORP",
+    "sector": "Consumer Staples",
+    "path": "data/companies/DG.json",
+    "review_required": true
+  },
+  {
+    "ticker": "DLTR",
+    "company_name": "DOLLAR TREE, INC.",
+    "sector": "Consumer Staples",
+    "path": "data/companies/DLTR.json",
+    "review_required": true
+  },
+  {
+    "ticker": "D",
+    "company_name": "DOMINION ENERGY, INC",
+    "sector": "Utilities",
+    "path": "data/companies/D.json",
+    "review_required": true
+  },
+  {
+    "ticker": "DPZ",
+    "company_name": "Domino\u2019s Pizza, Inc.",
+    "sector": "Consumer Discretionary",
+    "path": "data/companies/DPZ.json",
+    "review_required": true
+  },
+  {
+    "ticker": "DASH",
+    "company_name": "DOORDASH, INC.",
+    "sector": "Consumer Discretionary",
+    "path": "data/companies/DASH.json",
+    "review_required": true
+  },
+  {
+    "ticker": "DOV",
+    "company_name": "DOVER Corp",
+    "sector": "Industrials",
+    "path": "data/companies/DOV.json",
+    "review_required": true
+  },
+  {
+    "ticker": "DOW",
+    "company_name": "Dow Inc.",
+    "sector": "Materials",
+    "path": "data/companies/DOW.json",
+    "review_required": true
+  },
+  {
+    "ticker": "DHI",
+    "company_name": "D.R. Horton, Inc.",
+    "sector": "Consumer Discretionary",
+    "path": "data/companies/DHI.json",
+    "review_required": true
+  },
+  {
+    "ticker": "DTE",
+    "company_name": "DTE ENERGY CO",
+    "sector": "Utilities",
+    "path": "data/companies/DTE.json",
+    "review_required": true
+  },
+  {
+    "ticker": "DUK",
+    "company_name": "Duke Energy CORP",
+    "sector": "Utilities",
+    "path": "data/companies/DUK.json",
+    "review_required": true
+  },
+  {
+    "ticker": "DD",
+    "company_name": "DUPONT DE NEMOURS, INC.",
+    "sector": "Industrials",
+    "path": "data/companies/DD.json",
+    "review_required": true
+  },
+  {
+    "ticker": "ETN",
+    "company_name": "EATON CORPORATION plc",
+    "sector": "Industrials",
+    "path": "data/companies/ETN.json",
+    "review_required": true
+  },
+  {
+    "ticker": "EBAY",
+    "company_name": "eBay Inc.",
+    "sector": "Consumer Discretionary",
+    "path": "data/companies/EBAY.json",
+    "review_required": true
+  },
+  {
+    "ticker": "ECHO",
+    "company_name": "EchoStar Corporation",
+    "sector": "Communication Services",
+    "path": "data/companies/ECHO.json",
+    "review_required": true
+  },
+  {
+    "ticker": "ECL",
+    "company_name": "ECOLAB INC.",
+    "sector": "Materials",
+    "path": "data/companies/ECL.json",
+    "review_required": true
+  },
+  {
+    "ticker": "EIX",
+    "company_name": "EDISON INTERNATIONAL",
+    "sector": "Utilities",
+    "path": "data/companies/EIX.json",
+    "review_required": true
+  },
+  {
+    "ticker": "EW",
+    "company_name": "Edwards Lifesciences Corporation",
+    "sector": "Health Care",
+    "path": "data/companies/EW.json",
+    "review_required": true
+  },
+  {
+    "ticker": "ELV",
+    "company_name": "ELEVANCE HEALTH, INC.",
+    "sector": "Health Care",
+    "path": "data/companies/ELV.json",
+    "review_required": true
+  },
+  {
+    "ticker": "EME",
+    "company_name": "EMCOR Group, Inc.",
+    "sector": "Industrials",
+    "path": "data/companies/EME.json",
+    "review_required": true
+  },
+  {
+    "ticker": "EMR",
+    "company_name": "EMERSON ELECTRIC CO.",
+    "sector": "Industrials",
+    "path": "data/companies/EMR.json",
+    "review_required": true
+  },
+  {
+    "ticker": "ETR",
+    "company_name": "ENTERGY CORP /DE/",
+    "sector": "Utilities",
+    "path": "data/companies/ETR.json",
+    "review_required": true
+  },
+  {
+    "ticker": "EOG",
+    "company_name": "EOG RESOURCES, INC.",
+    "sector": "Energy",
+    "path": "data/companies/EOG.json",
+    "review_required": true
+  },
+  {
+    "ticker": "EQT",
+    "company_name": "EQT CORPORATION",
+    "sector": "Energy",
+    "path": "data/companies/EQT.json",
+    "review_required": true
+  },
+  {
+    "ticker": "EFX",
+    "company_name": "EQUIFAX INC",
+    "sector": "Industrials",
+    "path": "data/companies/EFX.json",
+    "review_required": true
+  },
+  {
+    "ticker": "EQIX",
+    "company_name": "EQUINIX, INC.",
+    "sector": "Real Estate",
+    "path": "data/companies/EQIX.json",
+    "review_required": true
+  },
+  {
+    "ticker": "ERIE",
+    "company_name": "ERIE INDEMNITY COMPANY",
+    "sector": "Financials",
+    "path": "data/companies/ERIE.json",
+    "review_required": true
+  },
+  {
+    "ticker": "ESS",
+    "company_name": "ESSEX PROPERTY TRUST, INC.",
+    "sector": "Real Estate",
+    "path": "data/companies/ESS.json",
+    "review_required": true
+  },
+  {
+    "ticker": "EL",
+    "company_name": "THE ESTEE LAUDER COMPANIES INC.",
+    "sector": "Consumer Staples",
+    "path": "data/companies/EL.json",
+    "review_required": true
+  },
+  {
+    "ticker": "EG",
+    "company_name": "EVEREST GROUP, LTD.",
+    "sector": "Financials",
+    "path": "data/companies/EG.json",
+    "review_required": true
+  },
+  {
+    "ticker": "EVRG",
+    "company_name": "Evergy, Inc.",
+    "sector": "Utilities",
+    "path": "data/companies/EVRG.json",
+    "review_required": true
+  },
+  {
+    "ticker": "P",
+    "company_name": "Everpure, Inc.",
+    "sector": "Information Technology",
+    "path": "data/companies/P.json",
+    "review_required": true
+  },
+  {
+    "ticker": "ES",
+    "company_name": "EVERSOURCE ENERGY",
+    "sector": "Utilities",
+    "path": "data/companies/ES.json",
+    "review_required": true
+  },
+  {
+    "ticker": "EXC",
+    "company_name": "EXELON CORPORATION",
+    "sector": "Utilities",
+    "path": "data/companies/EXC.json",
+    "review_required": true
+  },
+  {
+    "ticker": "EXE",
+    "company_name": "EXPAND ENERGY Corp",
+    "sector": "Energy",
+    "path": "data/companies/EXE.json",
+    "review_required": true
+  },
+  {
+    "ticker": "EXPE",
+    "company_name": "EXPEDIA GROUP, INC.",
+    "sector": "Consumer Discretionary",
+    "path": "data/companies/EXPE.json",
+    "review_required": true
+  },
+  {
+    "ticker": "EXPD",
+    "company_name": "EXPEDITORS INTERNATIONAL OF WASHINGTON, INC.",
+    "sector": "Industrials",
+    "path": "data/companies/EXPD.json",
+    "review_required": true
+  },
+  {
+    "ticker": "EXR",
+    "company_name": "EXTRA SPACE STORAGE INC.",
+    "sector": "Real Estate",
+    "path": "data/companies/EXR.json",
+    "review_required": true
+  },
+  {
+    "ticker": "XOM",
+    "company_name": "ExxonMobil Holdings Corp",
+    "sector": "Energy",
+    "path": "data/companies/XOM.json",
+    "review_required": true
+  },
+  {
+    "ticker": "FFIV",
+    "company_name": "F5, INC.",
+    "sector": "Information Technology",
+    "path": "data/companies/FFIV.json",
+    "review_required": true
+  },
+  {
+    "ticker": "FDS",
+    "company_name": "FACTSET RESEARCH SYSTEMS INC.",
+    "sector": "Financials",
+    "path": "data/companies/FDS.json",
+    "review_required": true
+  },
+  {
+    "ticker": "FICO",
+    "company_name": "FAIR ISAAC CORP",
+    "sector": "Information Technology",
+    "path": "data/companies/FICO.json",
+    "review_required": true
+  },
+  {
+    "ticker": "FAST",
+    "company_name": "FASTENAL CO",
+    "sector": "Industrials",
+    "path": "data/companies/FAST.json",
+    "review_required": true
+  },
+  {
+    "ticker": "FRT",
+    "company_name": "FEDERAL REALTY INVESTMENT TRUST",
+    "sector": "Real Estate",
+    "path": "data/companies/FRT.json",
+    "review_required": true
+  },
+  {
+    "ticker": "FDX",
+    "company_name": "FEDEX CORP",
+    "sector": "Industrials",
+    "path": "data/companies/FDX.json",
+    "review_required": true
+  },
+  {
+    "ticker": "FDXF",
+    "company_name": "FedEx Freight Holding Company, Inc.",
+    "sector": "Industrials",
+    "path": "data/companies/FDXF.json",
+    "review_required": true
+  },
+  {
+    "ticker": "FERG",
+    "company_name": "Ferguson Enterprises Inc. /DE/",
+    "sector": "Industrials",
+    "path": "data/companies/FERG.json",
+    "review_required": true
+  },
+  {
+    "ticker": "FIS",
+    "company_name": "Fidelity National Information Services, Inc.",
+    "sector": "Financials",
+    "path": "data/companies/FIS.json",
+    "review_required": true
+  },
+  {
+    "ticker": "FITB",
+    "company_name": "FIFTH THIRD BANCORP",
+    "sector": "Financials",
+    "path": "data/companies/FITB.json",
+    "review_required": true
+  },
+  {
+    "ticker": "FSLR",
+    "company_name": "First Solar, Inc.",
+    "sector": "Information Technology",
+    "path": "data/companies/FSLR.json",
+    "review_required": true
+  },
+  {
+    "ticker": "FE",
+    "company_name": "FIRSTENERGY CORP",
+    "sector": "Utilities",
+    "path": "data/companies/FE.json",
+    "review_required": true
+  },
+  {
+    "ticker": "FISV",
+    "company_name": "FISERV, INC.",
+    "sector": "Financials",
+    "path": "data/companies/FISV.json",
+    "review_required": true
+  },
+  {
+    "ticker": "FLEX",
+    "company_name": "FLEX LTD.",
+    "sector": "Information Technology",
+    "path": "data/companies/FLEX.json",
+    "review_required": true
+  },
+  {
+    "ticker": "F",
+    "company_name": "Ford Motor Co",
+    "sector": "Consumer Discretionary",
+    "path": "data/companies/F.json",
+    "review_required": true
+  },
+  {
+    "ticker": "FTNT",
+    "company_name": "FORTINET, INC.",
+    "sector": "Information Technology",
+    "path": "data/companies/FTNT.json",
+    "review_required": true
+  },
+  {
+    "ticker": "FTV",
+    "company_name": "Fortive Corporation",
+    "sector": "Industrials",
+    "path": "data/companies/FTV.json",
+    "review_required": true
+  },
+  {
+    "ticker": "FOXA",
+    "company_name": "Fox Corporation",
+    "sector": "Communication Services",
+    "path": "data/companies/FOXA.json",
+    "review_required": true
+  },
+  {
+    "ticker": "FOX",
+    "company_name": "Fox Corporation",
+    "sector": "Communication Services",
+    "path": "data/companies/FOX.json",
+    "review_required": true
+  },
+  {
+    "ticker": "BEN",
+    "company_name": "FRANKLIN RESOURCES INC",
+    "sector": "Financials",
+    "path": "data/companies/BEN.json",
+    "review_required": true
+  },
+  {
+    "ticker": "FCX",
+    "company_name": "Freeport-McMoRan Inc.",
+    "sector": "Materials",
+    "path": "data/companies/FCX.json",
+    "review_required": true
+  },
+  {
+    "ticker": "GRMN",
+    "company_name": "GARMIN LTD",
+    "sector": "Consumer Discretionary",
+    "path": "data/companies/GRMN.json",
+    "review_required": true
+  },
+  {
+    "ticker": "IT",
+    "company_name": "Gartner, Inc.",
+    "sector": "Information Technology",
+    "path": "data/companies/IT.json",
+    "review_required": true
+  },
+  {
+    "ticker": "GE",
+    "company_name": "GENERAL ELECTRIC COMPANY",
+    "sector": "Industrials",
+    "path": "data/companies/GE.json",
+    "review_required": true
+  },
+  {
+    "ticker": "GEHC",
+    "company_name": "GE HEALTHCARE TECHNOLOGIES INC.",
+    "sector": "Health Care",
+    "path": "data/companies/GEHC.json",
+    "review_required": true
+  },
+  {
+    "ticker": "GEV",
+    "company_name": "GE Vernova Inc.",
+    "sector": "Industrials",
+    "path": "data/companies/GEV.json",
+    "review_required": true
+  },
+  {
+    "ticker": "GEN",
+    "company_name": "Gen Digital Inc.",
+    "sector": "Information Technology",
+    "path": "data/companies/GEN.json",
+    "review_required": true
+  },
+  {
+    "ticker": "GNRC",
+    "company_name": "GENERAC HOLDINGS INC.",
+    "sector": "Industrials",
+    "path": "data/companies/GNRC.json",
+    "review_required": true
+  },
+  {
+    "ticker": "GD",
+    "company_name": "GENERAL DYNAMICS CORPORATION",
+    "sector": "Industrials",
+    "path": "data/companies/GD.json",
+    "review_required": true
+  },
+  {
+    "ticker": "GIS",
+    "company_name": "GENERAL MILLS, INC.",
+    "sector": "Consumer Staples",
+    "path": "data/companies/GIS.json",
+    "review_required": true
+  },
+  {
+    "ticker": "GM",
+    "company_name": "GENERAL MOTORS COMPANY",
+    "sector": "Consumer Discretionary",
+    "path": "data/companies/GM.json",
+    "review_required": true
+  },
+  {
+    "ticker": "GPC",
+    "company_name": "GENUINE PARTS CO",
+    "sector": "Consumer Discretionary",
+    "path": "data/companies/GPC.json",
+    "review_required": true
+  },
+  {
+    "ticker": "GILD",
+    "company_name": "GILEAD SCIENCES, INC.",
+    "sector": "Health Care",
+    "path": "data/companies/GILD.json",
+    "review_required": true
+  },
+  {
+    "ticker": "GPN",
+    "company_name": "GLOBAL PAYMENTS INC.",
+    "sector": "Financials",
+    "path": "data/companies/GPN.json",
+    "review_required": true
+  },
+  {
+    "ticker": "GL",
+    "company_name": "GLOBE LIFE INC.",
+    "sector": "Financials",
+    "path": "data/companies/GL.json",
+    "review_required": true
+  },
+  {
+    "ticker": "GDDY",
+    "company_name": "GoDaddy Inc.",
+    "sector": "Information Technology",
+    "path": "data/companies/GDDY.json",
+    "review_required": true
+  },
+  {
+    "ticker": "GS",
+    "company_name": "The Goldman Sachs Group, Inc.",
+    "sector": "Financials",
+    "path": "data/companies/GS.json",
+    "review_required": true
+  },
+  {
+    "ticker": "HAL",
+    "company_name": "HALLIBURTON COMPANY",
+    "sector": "Energy",
+    "path": "data/companies/HAL.json",
+    "review_required": true
+  },
+  {
+    "ticker": "HIG",
+    "company_name": "The Hartford Insurance Group, Inc.",
+    "sector": "Financials",
+    "path": "data/companies/HIG.json",
+    "review_required": true
+  },
+  {
+    "ticker": "HAS",
+    "company_name": "HASBRO, INC.",
+    "sector": "Consumer Discretionary",
+    "path": "data/companies/HAS.json",
+    "review_required": true
+  },
+  {
+    "ticker": "HCA",
+    "company_name": "HCA Healthcare, Inc.",
+    "sector": "Health Care",
+    "path": "data/companies/HCA.json",
+    "review_required": true
+  },
+  {
+    "ticker": "DOC",
+    "company_name": "Healthpeak Properties, Inc.",
+    "sector": "Real Estate",
+    "path": "data/companies/DOC.json",
+    "review_required": true
+  },
+  {
+    "ticker": "HSIC",
+    "company_name": "HENRY SCHEIN, INC.",
+    "sector": "Health Care",
+    "path": "data/companies/HSIC.json",
+    "review_required": true
+  },
+  {
+    "ticker": "HSY",
+    "company_name": "HERSHEY CO",
+    "sector": "Consumer Staples",
+    "path": "data/companies/HSY.json",
+    "review_required": true
+  },
+  {
+    "ticker": "HPE",
+    "company_name": "HEWLETT PACKARD ENTERPRISE COMPANY",
+    "sector": "Information Technology",
+    "path": "data/companies/HPE.json",
+    "review_required": true
+  },
+  {
+    "ticker": "HLT",
+    "company_name": "Hilton Worldwide Holdings Inc.",
+    "sector": "Consumer Discretionary",
+    "path": "data/companies/HLT.json",
+    "review_required": true
+  },
+  {
+    "ticker": "HD",
+    "company_name": "The Home Depot, Inc.",
+    "sector": "Consumer Discretionary",
+    "path": "data/companies/HD.json",
+    "review_required": true
+  },
+  {
+    "ticker": "HONA",
+    "company_name": "Honeywell Aerospace Inc",
+    "sector": "Industrials",
+    "path": "data/companies/HONA.json",
+    "review_required": true
+  },
+  {
+    "ticker": "HON",
+    "company_name": "Honeywell International Inc",
+    "sector": "Industrials",
+    "path": "data/companies/HON.json",
+    "review_required": true
+  },
+  {
+    "ticker": "HRL",
+    "company_name": "HORMEL FOODS CORPORATION",
+    "sector": "Consumer Staples",
+    "path": "data/companies/HRL.json",
+    "review_required": true
+  },
+  {
+    "ticker": "HST",
+    "company_name": "HOST HOTELS & RESORTS, INC.",
+    "sector": "Real Estate",
+    "path": "data/companies/HST.json",
+    "review_required": true
+  },
+  {
+    "ticker": "HWM",
+    "company_name": "HOWMET AEROSPACE INC.",
+    "sector": "Industrials",
+    "path": "data/companies/HWM.json",
+    "review_required": true
+  },
+  {
+    "ticker": "HPQ",
+    "company_name": "HP INC.",
+    "sector": "Information Technology",
+    "path": "data/companies/HPQ.json",
+    "review_required": true
+  },
+  {
+    "ticker": "HUBB",
+    "company_name": "HUBBELL INC",
+    "sector": "Industrials",
+    "path": "data/companies/HUBB.json",
+    "review_required": true
+  },
+  {
+    "ticker": "HUM",
+    "company_name": "HUMANA INC",
+    "sector": "Health Care",
+    "path": "data/companies/HUM.json",
+    "review_required": true
+  },
+  {
+    "ticker": "HBAN",
+    "company_name": "Huntington Bancshares Incorporated",
+    "sector": "Financials",
+    "path": "data/companies/HBAN.json",
+    "review_required": true
+  },
+  {
+    "ticker": "HII",
+    "company_name": "HUNTINGTON INGALLS INDUSTRIES, INC.",
+    "sector": "Industrials",
+    "path": "data/companies/HII.json",
+    "review_required": true
+  },
+  {
+    "ticker": "IBM",
+    "company_name": "INTERNATIONAL BUSINESS MACHINES CORPORATION",
+    "sector": "Information Technology",
+    "path": "data/companies/IBM.json",
+    "review_required": true
+  },
+  {
+    "ticker": "IEX",
+    "company_name": "IDEX CORP",
+    "sector": "Industrials",
+    "path": "data/companies/IEX.json",
+    "review_required": true
+  },
+  {
+    "ticker": "IDXX",
+    "company_name": "IDEXX LABORATORIES INC /DE",
+    "sector": "Health Care",
+    "path": "data/companies/IDXX.json",
+    "review_required": true
+  },
+  {
+    "ticker": "ITW",
+    "company_name": "ILLINOIS TOOL WORKS INC",
+    "sector": "Industrials",
+    "path": "data/companies/ITW.json",
+    "review_required": true
+  },
+  {
+    "ticker": "ILMN",
+    "company_name": "ILLUMINA, INC.",
+    "sector": "Health Care",
+    "path": "data/companies/ILMN.json",
+    "review_required": true
+  },
+  {
+    "ticker": "INCY",
+    "company_name": "INCYTE CORPORATION",
+    "sector": "Health Care",
+    "path": "data/companies/INCY.json",
+    "review_required": true
+  },
+  {
+    "ticker": "IR",
+    "company_name": "Ingersoll Rand Inc.",
+    "sector": "Industrials",
+    "path": "data/companies/IR.json",
+    "review_required": true
+  },
+  {
+    "ticker": "PODD",
+    "company_name": "INSULET CORPORATION",
+    "sector": "Health Care",
+    "path": "data/companies/PODD.json",
+    "review_required": true
+  },
+  {
+    "ticker": "INTC",
+    "company_name": "INTEL CORP",
+    "sector": "Information Technology",
+    "path": "data/companies/INTC.json",
+    "review_required": true
+  },
+  {
+    "ticker": "IBKR",
+    "company_name": "INTERACTIVE BROKERS GROUP, INC.",
+    "sector": "Financials",
+    "path": "data/companies/IBKR.json",
+    "review_required": true
+  },
+  {
+    "ticker": "ICE",
+    "company_name": "Intercontinental Exchange, Inc.",
+    "sector": "Financials",
+    "path": "data/companies/ICE.json",
+    "review_required": true
+  },
+  {
+    "ticker": "IFF",
+    "company_name": "INTERNATIONAL FLAVORS\u00a0& FRAGRANCES INC",
+    "sector": "Materials",
+    "path": "data/companies/IFF.json",
+    "review_required": true
+  },
+  {
+    "ticker": "IP",
+    "company_name": "INTERNATIONAL PAPER COMPANY",
+    "sector": "Materials",
+    "path": "data/companies/IP.json",
+    "review_required": true
+  },
+  {
+    "ticker": "INTU",
+    "company_name": "INTUIT INC.",
+    "sector": "Information Technology",
+    "path": "data/companies/INTU.json",
+    "review_required": true
+  },
+  {
+    "ticker": "ISRG",
+    "company_name": "Intuitive Surgical, Inc.",
+    "sector": "Health Care",
+    "path": "data/companies/ISRG.json",
+    "review_required": true
+  },
+  {
+    "ticker": "IVZ",
+    "company_name": "Invesco Ltd.",
+    "sector": "Financials",
+    "path": "data/companies/IVZ.json",
+    "review_required": true
+  },
+  {
+    "ticker": "INVH",
+    "company_name": "Invitation Homes Inc.",
+    "sector": "Real Estate",
+    "path": "data/companies/INVH.json",
+    "review_required": true
+  },
+  {
+    "ticker": "IQV",
+    "company_name": "IQVIA HOLDINGS INC.",
+    "sector": "Health Care",
+    "path": "data/companies/IQV.json",
+    "review_required": true
+  },
+  {
+    "ticker": "IRM",
+    "company_name": "IRON MOUNTAIN INC",
+    "sector": "Real Estate",
+    "path": "data/companies/IRM.json",
+    "review_required": true
+  },
+  {
+    "ticker": "JBHT",
+    "company_name": "J.B. HUNT TRANSPORT SERVICES, INC.",
+    "sector": "Industrials",
+    "path": "data/companies/JBHT.json",
+    "review_required": true
+  },
+  {
+    "ticker": "JBL",
+    "company_name": "JABIL INC",
+    "sector": "Information Technology",
+    "path": "data/companies/JBL.json",
+    "review_required": true
+  },
+  {
+    "ticker": "JKHY",
+    "company_name": "JACK HENRY & ASSOCIATES, INC.",
+    "sector": "Financials",
+    "path": "data/companies/JKHY.json",
+    "review_required": true
+  },
+  {
+    "ticker": "J",
+    "company_name": "JACOBS SOLUTIONS INC.",
+    "sector": "Industrials",
+    "path": "data/companies/J.json",
+    "review_required": true
+  },
+  {
+    "ticker": "JNJ",
+    "company_name": "Johnson & Johnson",
+    "sector": "Health Care",
+    "path": "data/companies/JNJ.json",
+    "review_required": true
+  },
+  {
+    "ticker": "JCI",
+    "company_name": "JOHNSON CONTROLS INTERNATIONAL PLC",
+    "sector": "Industrials",
+    "path": "data/companies/JCI.json",
+    "review_required": true
+  },
+  {
+    "ticker": "JPM",
+    "company_name": "JPMORGAN CHASE & CO",
+    "sector": "Financials",
+    "path": "data/companies/JPM.json",
+    "review_required": true
+  },
+  {
+    "ticker": "KVUE",
+    "company_name": "Kenvue Inc.",
+    "sector": "Consumer Staples",
+    "path": "data/companies/KVUE.json",
+    "review_required": true
+  },
+  {
+    "ticker": "KDP",
+    "company_name": "Keurig Dr Pepper Inc.",
+    "sector": "Consumer Staples",
+    "path": "data/companies/KDP.json",
+    "review_required": true
+  },
+  {
+    "ticker": "KEY",
+    "company_name": "KeyCorp",
+    "sector": "Financials",
+    "path": "data/companies/KEY.json",
+    "review_required": true
+  },
+  {
+    "ticker": "KEYS",
+    "company_name": "KEYSIGHT TECHNOLOGIES,\u00a0INC.",
+    "sector": "Information Technology",
+    "path": "data/companies/KEYS.json",
+    "review_required": true
+  },
+  {
+    "ticker": "KMB",
+    "company_name": "KIMBERLY-CLARK CORPORATION",
+    "sector": "Consumer Staples",
+    "path": "data/companies/KMB.json",
+    "review_required": true
+  },
+  {
+    "ticker": "KIM",
+    "company_name": "KIMCO REALTY CORPORATION",
+    "sector": "Real Estate",
+    "path": "data/companies/KIM.json",
+    "review_required": true
+  },
+  {
+    "ticker": "KMI",
+    "company_name": "KINDER MORGAN, INC.",
+    "sector": "Energy",
+    "path": "data/companies/KMI.json",
+    "review_required": true
+  },
+  {
+    "ticker": "KKR",
+    "company_name": "KKR\u00a0&\u00a0CO.\u00a0INC.",
+    "sector": "Financials",
+    "path": "data/companies/KKR.json",
+    "review_required": true
+  },
+  {
+    "ticker": "KLAC",
+    "company_name": "KLA Corporation",
+    "sector": "Information Technology",
+    "path": "data/companies/KLAC.json",
+    "review_required": true
+  },
+  {
+    "ticker": "KHC",
+    "company_name": "Kraft Heinz Co",
+    "sector": "Consumer Staples",
+    "path": "data/companies/KHC.json",
+    "review_required": true
+  },
+  {
+    "ticker": "KR",
+    "company_name": "KROGER CO",
+    "sector": "Consumer Staples",
+    "path": "data/companies/KR.json",
+    "review_required": true
+  },
+  {
+    "ticker": "LHX",
+    "company_name": "L3HARRIS TECHNOLOGIES, INC.",
+    "sector": "Industrials",
+    "path": "data/companies/LHX.json",
+    "review_required": true
+  },
+  {
+    "ticker": "LH",
+    "company_name": "LABCORP HOLDINGS INC.",
+    "sector": "Health Care",
+    "path": "data/companies/LH.json",
+    "review_required": true
+  },
+  {
+    "ticker": "LRCX",
+    "company_name": "LAM RESEARCH CORPORATION",
+    "sector": "Information Technology",
+    "path": "data/companies/LRCX.json",
+    "review_required": true
+  },
+  {
+    "ticker": "LVS",
+    "company_name": "LAS VEGAS SANDS CORP.",
+    "sector": "Consumer Discretionary",
+    "path": "data/companies/LVS.json",
+    "review_required": true
+  },
+  {
+    "ticker": "LDOS",
+    "company_name": "Leidos Holdings, Inc.",
+    "sector": "Industrials",
+    "path": "data/companies/LDOS.json",
+    "review_required": true
+  },
+  {
+    "ticker": "LEN",
+    "company_name": "LENNAR CORP /NEW/",
+    "sector": "Consumer Discretionary",
+    "path": "data/companies/LEN.json",
+    "review_required": true
+  },
+  {
+    "ticker": "LII",
+    "company_name": "LENNOX INTERNATIONAL INC",
+    "sector": "Industrials",
+    "path": "data/companies/LII.json",
+    "review_required": true
+  },
+  {
+    "ticker": "LLY",
+    "company_name": "ELI LILLY AND COMPANY",
+    "sector": "Health Care",
+    "path": "data/companies/LLY.json",
+    "review_required": true
+  },
+  {
+    "ticker": "LIN",
+    "company_name": "Linde plc",
+    "sector": "Materials",
+    "path": "data/companies/LIN.json",
+    "review_required": true
+  },
+  {
+    "ticker": "LYV",
+    "company_name": "LIVE NATION ENTERTAINMENT, INC.",
+    "sector": "Communication Services",
+    "path": "data/companies/LYV.json",
+    "review_required": true
+  },
+  {
+    "ticker": "LMT",
+    "company_name": "LOCKHEED MARTIN CORPORATION",
+    "sector": "Industrials",
+    "path": "data/companies/LMT.json",
+    "review_required": true
+  },
+  {
+    "ticker": "L",
+    "company_name": "LOEWS CORP",
+    "sector": "Financials",
+    "path": "data/companies/L.json",
+    "review_required": true
+  },
+  {
+    "ticker": "LOW",
+    "company_name": "LOWES COMPANIES INC",
+    "sector": "Consumer Discretionary",
+    "path": "data/companies/LOW.json",
+    "review_required": true
+  },
+  {
+    "ticker": "LULU",
+    "company_name": "lululemon athletica inc.",
+    "sector": "Consumer Discretionary",
+    "path": "data/companies/LULU.json",
+    "review_required": true
+  },
+  {
+    "ticker": "LITE",
+    "company_name": "Lumentum Holdings Inc.",
+    "sector": "Information Technology",
+    "path": "data/companies/LITE.json",
+    "review_required": true
+  },
+  {
+    "ticker": "LYB",
+    "company_name": "LYONDELLBASELL INDUSTRIES N.V.",
+    "sector": "Materials",
+    "path": "data/companies/LYB.json",
+    "review_required": true
+  },
+  {
+    "ticker": "MTB",
+    "company_name": "M&T BANK CORP",
+    "sector": "Financials",
+    "path": "data/companies/MTB.json",
+    "review_required": true
+  },
+  {
+    "ticker": "MPC",
+    "company_name": "Marathon Petroleum Corporation",
+    "sector": "Energy",
+    "path": "data/companies/MPC.json",
+    "review_required": true
+  },
+  {
+    "ticker": "MAR",
+    "company_name": "MARRIOTT INTERNATIONAL INC /MD/",
+    "sector": "Consumer Discretionary",
+    "path": "data/companies/MAR.json",
+    "review_required": true
+  },
+  {
+    "ticker": "MRSH",
+    "company_name": "MARSH & MCLENNAN COMPANIES, INC.",
+    "sector": "Financials",
+    "path": "data/companies/MRSH.json",
+    "review_required": true
+  },
+  {
+    "ticker": "MLM",
+    "company_name": "MARTIN MARIETTA MATERIALS INC",
+    "sector": "Materials",
+    "path": "data/companies/MLM.json",
+    "review_required": true
+  },
+  {
+    "ticker": "MRVL",
+    "company_name": "MARVELL TECHNOLOGY, INC",
+    "sector": "Information Technology",
+    "path": "data/companies/MRVL.json",
+    "review_required": true
+  },
+  {
+    "ticker": "MAS",
+    "company_name": "Masco Corporation",
+    "sector": "Industrials",
+    "path": "data/companies/MAS.json",
+    "review_required": true
+  },
+  {
+    "ticker": "MA",
+    "company_name": "Mastercard Incorporated",
+    "sector": "Financials",
+    "path": "data/companies/MA.json",
+    "review_required": true
+  },
+  {
+    "ticker": "MKC",
+    "company_name": "McCORMICK\u00a0& COMPANY, INCORPORATED",
+    "sector": "Consumer Staples",
+    "path": "data/companies/MKC.json",
+    "review_required": true
+  },
+  {
+    "ticker": "MCD",
+    "company_name": "McDONALD\u2019S CORPORATION",
+    "sector": "Consumer Discretionary",
+    "path": "data/companies/MCD.json",
+    "review_required": true
+  },
+  {
+    "ticker": "MCK",
+    "company_name": "McKESSON CORPORATION",
+    "sector": "Health Care",
+    "path": "data/companies/MCK.json",
+    "review_required": true
+  },
+  {
+    "ticker": "MDT",
+    "company_name": "Medtronic plc",
+    "sector": "Health Care",
+    "path": "data/companies/MDT.json",
+    "review_required": true
+  },
+  {
+    "ticker": "MRK",
+    "company_name": "Merck\u00a0& Co., Inc.",
+    "sector": "Health Care",
+    "path": "data/companies/MRK.json",
+    "review_required": true
+  },
+  {
+    "ticker": "META",
+    "company_name": "Meta Platforms, Inc.",
+    "sector": "Communication Services",
+    "path": "data/companies/META.json",
+    "review_required": true
+  },
+  {
+    "ticker": "MET",
+    "company_name": "MetLife, Inc.",
+    "sector": "Financials",
+    "path": "data/companies/MET.json",
+    "review_required": true
+  },
+  {
+    "ticker": "MTD",
+    "company_name": "Mettler-Toledo International Inc.",
+    "sector": "Health Care",
+    "path": "data/companies/MTD.json",
+    "review_required": true
+  },
+  {
+    "ticker": "MGM",
+    "company_name": "MGM Resorts International",
+    "sector": "Consumer Discretionary",
+    "path": "data/companies/MGM.json",
+    "review_required": true
+  },
+  {
+    "ticker": "MCHP",
+    "company_name": "MICROCHIP TECHNOLOGY INCORPORATED",
+    "sector": "Information Technology",
+    "path": "data/companies/MCHP.json",
+    "review_required": true
+  },
+  {
+    "ticker": "MU",
+    "company_name": "Micron Technology, Inc.",
+    "sector": "Information Technology",
+    "path": "data/companies/MU.json",
+    "review_required": true
+  },
+  {
+    "ticker": "MSFT",
+    "company_name": "Microsoft Corporation",
+    "sector": "Information Technology",
+    "path": "data/companies/MSFT.json",
+    "review_required": true
+  },
+  {
+    "ticker": "MAA",
+    "company_name": "MID-AMERICA APARTMENT COMMUNITIES, INC.",
+    "sector": "Real Estate",
+    "path": "data/companies/MAA.json",
+    "review_required": true
+  },
+  {
+    "ticker": "MRNA",
+    "company_name": "Moderna, Inc.",
+    "sector": "Health Care",
+    "path": "data/companies/MRNA.json",
+    "review_required": true
+  },
+  {
+    "ticker": "MDLZ",
+    "company_name": "Mondelez International, Inc.",
+    "sector": "Consumer Staples",
+    "path": "data/companies/MDLZ.json",
+    "review_required": true
+  },
+  {
+    "ticker": "MPWR",
+    "company_name": "Monolithic Power Systems, Inc.",
+    "sector": "Information Technology",
+    "path": "data/companies/MPWR.json",
+    "review_required": true
+  },
+  {
+    "ticker": "MNST",
+    "company_name": "Monster Beverage Corp",
+    "sector": "Consumer Staples",
+    "path": "data/companies/MNST.json",
+    "review_required": true
+  },
+  {
+    "ticker": "MCO",
+    "company_name": "Moody\u2019s Corporation",
+    "sector": "Financials",
+    "path": "data/companies/MCO.json",
+    "review_required": true
+  },
+  {
+    "ticker": "MS",
+    "company_name": "MORGAN STANLEY",
+    "sector": "Financials",
+    "path": "data/companies/MS.json",
+    "review_required": true
+  },
+  {
+    "ticker": "MOS",
+    "company_name": "MOSAIC CO",
+    "sector": "Materials",
+    "path": "data/companies/MOS.json",
+    "review_required": true
+  },
+  {
+    "ticker": "MSI",
+    "company_name": "Motorola Solutions, Inc.",
+    "sector": "Information Technology",
+    "path": "data/companies/MSI.json",
+    "review_required": true
+  },
+  {
+    "ticker": "MSCI",
+    "company_name": "MSCI INC.",
+    "sector": "Financials",
+    "path": "data/companies/MSCI.json",
+    "review_required": true
+  },
+  {
+    "ticker": "NDAQ",
+    "company_name": "Nasdaq, Inc.",
+    "sector": "Financials",
+    "path": "data/companies/NDAQ.json",
+    "review_required": true
+  },
+  {
+    "ticker": "NTAP",
+    "company_name": "NetApp, Inc.",
+    "sector": "Information Technology",
+    "path": "data/companies/NTAP.json",
+    "review_required": true
+  },
+  {
+    "ticker": "NFLX",
+    "company_name": "Netflix, Inc.",
+    "sector": "Communication Services",
+    "path": "data/companies/NFLX.json",
+    "review_required": true
+  },
+  {
+    "ticker": "NEM",
+    "company_name": "NEWMONT CORPORATION",
+    "sector": "Materials",
+    "path": "data/companies/NEM.json",
+    "review_required": true
+  },
+  {
+    "ticker": "NWSA",
+    "company_name": "NEWS CORPORATION",
+    "sector": "Communication Services",
+    "path": "data/companies/NWSA.json",
+    "review_required": true
+  },
+  {
+    "ticker": "NWS",
+    "company_name": "NEWS CORPORATION",
+    "sector": "Communication Services",
+    "path": "data/companies/NWS.json",
+    "review_required": true
+  },
+  {
+    "ticker": "NEE",
+    "company_name": "NEXTERA ENERGY INC",
+    "sector": "Utilities",
+    "path": "data/companies/NEE.json",
+    "review_required": true
+  },
+  {
+    "ticker": "NKE",
+    "company_name": "NIKE, Inc.",
+    "sector": "Consumer Discretionary",
+    "path": "data/companies/NKE.json",
+    "review_required": true
+  },
+  {
+    "ticker": "NI",
+    "company_name": "NISOURCE INC.",
+    "sector": "Utilities",
+    "path": "data/companies/NI.json",
+    "review_required": true
+  },
+  {
+    "ticker": "NDSN",
+    "company_name": "NORDSON CORPORATION",
+    "sector": "Industrials",
+    "path": "data/companies/NDSN.json",
+    "review_required": true
+  },
+  {
+    "ticker": "NSC",
+    "company_name": "NORFOLK SOUTHERN CORP",
+    "sector": "Industrials",
+    "path": "data/companies/NSC.json",
+    "review_required": true
+  },
+  {
+    "ticker": "NTRS",
+    "company_name": "NORTHERN TRUST CORP",
+    "sector": "Financials",
+    "path": "data/companies/NTRS.json",
+    "review_required": true
+  },
+  {
+    "ticker": "NOC",
+    "company_name": "NORTHROP GRUMMAN CORP /DE/",
+    "sector": "Industrials",
+    "path": "data/companies/NOC.json",
+    "review_required": true
+  },
+  {
+    "ticker": "NCLH",
+    "company_name": "Norwegian Cruise Line Holdings Ltd.",
+    "sector": "Consumer Discretionary",
+    "path": "data/companies/NCLH.json",
+    "review_required": true
+  },
+  {
+    "ticker": "NRG",
+    "company_name": "NRG Energy, Inc",
+    "sector": "Utilities",
+    "path": "data/companies/NRG.json",
+    "review_required": true
+  },
+  {
+    "ticker": "NUE",
+    "company_name": "NUCOR CORP",
+    "sector": "Materials",
+    "path": "data/companies/NUE.json",
+    "review_required": true
+  },
+  {
+    "ticker": "NVDA",
+    "company_name": "NVIDIA CORP",
+    "sector": "Information Technology",
+    "path": "data/companies/NVDA.json",
+    "review_required": true
+  },
+  {
+    "ticker": "NVR",
+    "company_name": "NVR, Inc.",
+    "sector": "Consumer Discretionary",
+    "path": "data/companies/NVR.json",
+    "review_required": true
+  },
+  {
+    "ticker": "NXPI",
+    "company_name": "NXP Semiconductors N.V.",
+    "sector": "Information Technology",
+    "path": "data/companies/NXPI.json",
+    "review_required": true
+  },
+  {
+    "ticker": "ORLY",
+    "company_name": "O REILLY AUTOMOTIVE INC",
+    "sector": "Consumer Discretionary",
+    "path": "data/companies/ORLY.json",
+    "review_required": true
+  },
+  {
+    "ticker": "OXY",
+    "company_name": "OCCIDENTAL PETROLEUM CORPORATION",
+    "sector": "Energy",
+    "path": "data/companies/OXY.json",
+    "review_required": true
+  },
+  {
+    "ticker": "ODFL",
+    "company_name": "OLD DOMINION FREIGHT LINE, INC.",
+    "sector": "Industrials",
+    "path": "data/companies/ODFL.json",
+    "review_required": true
+  },
+  {
+    "ticker": "OMC",
+    "company_name": "OMNICOM GROUP INC.",
+    "sector": "Communication Services",
+    "path": "data/companies/OMC.json",
+    "review_required": true
+  },
+  {
+    "ticker": "ON",
+    "company_name": "ON SEMICONDUCTOR CORPORATION",
+    "sector": "Information Technology",
+    "path": "data/companies/ON.json",
+    "review_required": true
+  },
+  {
+    "ticker": "OKE",
+    "company_name": "ONEOK INC /NEW/",
+    "sector": "Energy",
+    "path": "data/companies/OKE.json",
+    "review_required": true
+  },
+  {
+    "ticker": "ORCL",
+    "company_name": "Oracle Corporation",
+    "sector": "Information Technology",
+    "path": "data/companies/ORCL.json",
+    "review_required": true
+  },
+  {
+    "ticker": "OTIS",
+    "company_name": "OTIS WORLDWIDE CORPORATION",
+    "sector": "Industrials",
+    "path": "data/companies/OTIS.json",
+    "review_required": true
+  },
+  {
+    "ticker": "PCAR",
+    "company_name": "PACCAR Inc",
+    "sector": "Industrials",
+    "path": "data/companies/PCAR.json",
+    "review_required": true
+  },
+  {
+    "ticker": "PKG",
+    "company_name": "PACKAGING CORP OF AMERICA",
+    "sector": "Materials",
+    "path": "data/companies/PKG.json",
+    "review_required": true
+  },
+  {
+    "ticker": "PLTR",
+    "company_name": "Palantir Technologies Inc.",
+    "sector": "Information Technology",
+    "path": "data/companies/PLTR.json",
+    "review_required": true
+  },
+  {
+    "ticker": "PANW",
+    "company_name": "Palo Alto Networks, Inc",
+    "sector": "Information Technology",
+    "path": "data/companies/PANW.json",
+    "review_required": true
+  },
+  {
+    "ticker": "PH",
+    "company_name": "PARKER-HANNIFIN CORPORATION",
+    "sector": "Industrials",
+    "path": "data/companies/PH.json",
+    "review_required": true
+  },
+  {
+    "ticker": "PAYX",
+    "company_name": "Paychex, Inc.",
+    "sector": "Industrials",
+    "path": "data/companies/PAYX.json",
+    "review_required": true
+  },
+  {
+    "ticker": "PYPL",
+    "company_name": "PayPal Holdings, Inc.",
+    "sector": "Financials",
+    "path": "data/companies/PYPL.json",
+    "review_required": true
+  },
+  {
+    "ticker": "PNR",
+    "company_name": "Pentair plc",
+    "sector": "Industrials",
+    "path": "data/companies/PNR.json",
+    "review_required": true
+  },
+  {
+    "ticker": "PEP",
+    "company_name": "PEPSICO INC",
+    "sector": "Consumer Staples",
+    "path": "data/companies/PEP.json",
+    "review_required": true
+  },
+  {
+    "ticker": "PFE",
+    "company_name": "PFIZER INC",
+    "sector": "Health Care",
+    "path": "data/companies/PFE.json",
+    "review_required": true
+  },
+  {
+    "ticker": "PCG",
+    "company_name": "PG&E CORP",
+    "sector": "Utilities",
+    "path": "data/companies/PCG.json",
+    "review_required": true
+  },
+  {
+    "ticker": "PM",
+    "company_name": "Philip Morris International Inc.",
+    "sector": "Consumer Staples",
+    "path": "data/companies/PM.json",
+    "review_required": true
+  },
+  {
+    "ticker": "PSX",
+    "company_name": "Phillips 66",
+    "sector": "Energy",
+    "path": "data/companies/PSX.json",
+    "review_required": true
+  },
+  {
+    "ticker": "PNW",
+    "company_name": "PINNACLE WEST CAPITAL CORP",
+    "sector": "Utilities",
+    "path": "data/companies/PNW.json",
+    "review_required": true
+  },
+  {
+    "ticker": "PNC",
+    "company_name": "PNC FINANCIAL SERVICES GROUP, INC.",
+    "sector": "Financials",
+    "path": "data/companies/PNC.json",
+    "review_required": true
+  },
+  {
+    "ticker": "PPG",
+    "company_name": "PPG INDUSTRIES INC",
+    "sector": "Materials",
+    "path": "data/companies/PPG.json",
+    "review_required": true
+  },
+  {
+    "ticker": "PPL",
+    "company_name": "PPL Corp",
+    "sector": "Utilities",
+    "path": "data/companies/PPL.json",
+    "review_required": true
+  },
+  {
+    "ticker": "PFG",
+    "company_name": "PRINCIPAL FINANCIAL GROUP,\u00a0INC",
+    "sector": "Financials",
+    "path": "data/companies/PFG.json",
+    "review_required": true
+  },
+  {
+    "ticker": "PG",
+    "company_name": "PROCTER & GAMBLE CO",
+    "sector": "Consumer Staples",
+    "path": "data/companies/PG.json",
+    "review_required": true
+  },
+  {
+    "ticker": "PGR",
+    "company_name": "PROGRESSIVE CORP/OH/",
+    "sector": "Financials",
+    "path": "data/companies/PGR.json",
+    "review_required": true
+  },
+  {
+    "ticker": "PLD",
+    "company_name": "Prologis, Inc.",
+    "sector": "Real Estate",
+    "path": "data/companies/PLD.json",
+    "review_required": true
+  },
+  {
+    "ticker": "PRU",
+    "company_name": "PRUDENTIAL FINANCIAL INC",
+    "sector": "Financials",
+    "path": "data/companies/PRU.json",
+    "review_required": true
+  },
+  {
+    "ticker": "PEG",
+    "company_name": "Public Service Enterprise Group Incorporated",
+    "sector": "Utilities",
+    "path": "data/companies/PEG.json",
+    "review_required": true
+  },
+  {
+    "ticker": "PTC",
+    "company_name": "PTC Inc.",
+    "sector": "Information Technology",
+    "path": "data/companies/PTC.json",
+    "review_required": true
+  },
+  {
+    "ticker": "PSA",
+    "company_name": "Public Storage",
+    "sector": "Real Estate",
+    "path": "data/companies/PSA.json",
+    "review_required": true
+  },
+  {
+    "ticker": "PHM",
+    "company_name": "PULTEGROUP, INC.",
+    "sector": "Consumer Discretionary",
+    "path": "data/companies/PHM.json",
+    "review_required": true
+  },
+  {
+    "ticker": "PWR",
+    "company_name": "QUANTA SERVICES, INC.",
+    "sector": "Industrials",
+    "path": "data/companies/PWR.json",
+    "review_required": true
+  },
+  {
+    "ticker": "QCOM",
+    "company_name": "QUALCOMM INC/DE",
+    "sector": "Information Technology",
+    "path": "data/companies/QCOM.json",
+    "review_required": true
+  },
+  {
+    "ticker": "DGX",
+    "company_name": "Quest Diagnostics Inc",
+    "sector": "Health Care",
+    "path": "data/companies/DGX.json",
+    "review_required": true
+  },
+  {
+    "ticker": "Q",
+    "company_name": "QNITY ELECTRONICS, INC.",
+    "sector": "Information Technology",
+    "path": "data/companies/Q.json",
+    "review_required": true
+  },
+  {
+    "ticker": "RL",
+    "company_name": "Ralph Lauren Corporation",
+    "sector": "Consumer Discretionary",
+    "path": "data/companies/RL.json",
+    "review_required": true
+  },
+  {
+    "ticker": "RJF",
+    "company_name": "RAYMOND JAMES FINANCIAL, INC.",
+    "sector": "Financials",
+    "path": "data/companies/RJF.json",
+    "review_required": true
+  },
+  {
+    "ticker": "RDDT",
+    "company_name": "Reddit, Inc.",
+    "sector": "Communication Services",
+    "path": "data/companies/RDDT.json",
+    "review_required": true
+  },
+  {
+    "ticker": "RTX",
+    "company_name": "RTX CORPORATION",
+    "sector": "Industrials",
+    "path": "data/companies/RTX.json",
+    "review_required": true
+  },
+  {
+    "ticker": "O",
+    "company_name": "REALTY INCOME CORPORATION",
+    "sector": "Real Estate",
+    "path": "data/companies/O.json",
+    "review_required": true
+  },
+  {
+    "ticker": "REG",
+    "company_name": "REGENCY CENTERS CORPORATION",
+    "sector": "Real Estate",
+    "path": "data/companies/REG.json",
+    "review_required": true
+  },
+  {
+    "ticker": "REGN",
+    "company_name": "REGENERON PHARMACEUTICALS, INC.",
+    "sector": "Health Care",
+    "path": "data/companies/REGN.json",
+    "review_required": true
+  },
+  {
+    "ticker": "RF",
+    "company_name": "Regions Financial Corporation",
+    "sector": "Financials",
+    "path": "data/companies/RF.json",
+    "review_required": true
+  },
+  {
+    "ticker": "RSG",
+    "company_name": "REPUBLIC SERVICES, INC.",
+    "sector": "Industrials",
+    "path": "data/companies/RSG.json",
+    "review_required": true
+  },
+  {
+    "ticker": "RMD",
+    "company_name": "ResMed Inc.",
+    "sector": "Health Care",
+    "path": "data/companies/RMD.json",
+    "review_required": true
+  },
+  {
+    "ticker": "RVTY",
+    "company_name": "REVVITY, INC",
+    "sector": "Health Care",
+    "path": "data/companies/RVTY.json",
+    "review_required": true
+  },
+  {
+    "ticker": "HOOD",
+    "company_name": "Robinhood Markets, Inc.",
+    "sector": "Financials",
+    "path": "data/companies/HOOD.json",
+    "review_required": true
+  },
+  {
+    "ticker": "ROK",
+    "company_name": "Rockwell Automation, Inc.",
+    "sector": "Industrials",
+    "path": "data/companies/ROK.json",
+    "review_required": true
+  },
+  {
+    "ticker": "ROL",
+    "company_name": "ROLLINS, INC.",
+    "sector": "Industrials",
+    "path": "data/companies/ROL.json",
+    "review_required": true
+  },
+  {
+    "ticker": "ROP",
+    "company_name": "ROPER TECHNOLOGIES, INC.",
+    "sector": "Information Technology",
+    "path": "data/companies/ROP.json",
+    "review_required": true
+  },
+  {
+    "ticker": "ROST",
+    "company_name": "Ross Stores, Inc.",
+    "sector": "Consumer Discretionary",
+    "path": "data/companies/ROST.json",
+    "review_required": true
+  },
+  {
+    "ticker": "RCL",
+    "company_name": "ROYAL CARIBBEAN CRUISES LTD",
+    "sector": "Consumer Discretionary",
+    "path": "data/companies/RCL.json",
+    "review_required": true
+  },
+  {
+    "ticker": "SPGI",
+    "company_name": "S&P Global Inc.",
+    "sector": "Financials",
+    "path": "data/companies/SPGI.json",
+    "review_required": true
+  },
+  {
+    "ticker": "CRM",
+    "company_name": "Salesforce, Inc.",
+    "sector": "Information Technology",
+    "path": "data/companies/CRM.json",
+    "review_required": true
+  },
+  {
+    "ticker": "SNDK",
+    "company_name": "Sandisk Corporation",
+    "sector": "Information Technology",
+    "path": "data/companies/SNDK.json",
+    "review_required": true
+  },
+  {
+    "ticker": "SBAC",
+    "company_name": "SBA COMMUNICATIONS CORPORATION",
+    "sector": "Real Estate",
+    "path": "data/companies/SBAC.json",
+    "review_required": true
+  },
+  {
+    "ticker": "SLB",
+    "company_name": "SLB LIMITED/NV",
+    "sector": "Energy",
+    "path": "data/companies/SLB.json",
+    "review_required": true
+  },
+  {
+    "ticker": "STX",
+    "company_name": "Seagate Technology Holdings plc",
+    "sector": "Information Technology",
+    "path": "data/companies/STX.json",
+    "review_required": true
+  },
+  {
+    "ticker": "SRE",
+    "company_name": "SEMPRA",
+    "sector": "Utilities",
+    "path": "data/companies/SRE.json",
+    "review_required": true
+  },
+  {
+    "ticker": "NOW",
+    "company_name": "ServiceNow, Inc.",
+    "sector": "Information Technology",
+    "path": "data/companies/NOW.json",
+    "review_required": true
+  },
+  {
+    "ticker": "SHW",
+    "company_name": "THE SHERWIN-WILLIAMS COMPANY",
+    "sector": "Materials",
+    "path": "data/companies/SHW.json",
+    "review_required": true
+  },
+  {
+    "ticker": "SPG",
+    "company_name": "SIMON PROPERTY GROUP, INC.",
+    "sector": "Real Estate",
+    "path": "data/companies/SPG.json",
+    "review_required": true
+  },
+  {
+    "ticker": "SKYD",
+    "company_name": "Skydance Corp",
+    "sector": "Communication Services",
+    "path": "data/companies/SKYD.json",
+    "review_required": true
+  },
+  {
+    "ticker": "SWKS",
+    "company_name": "SKYWORKS SOLUTIONS, INC.",
+    "sector": "Information Technology",
+    "path": "data/companies/SWKS.json",
+    "review_required": true
+  },
+  {
+    "ticker": "SJM",
+    "company_name": "J M SMUCKER Co",
+    "sector": "Consumer Staples",
+    "path": "data/companies/SJM.json",
+    "review_required": true
+  },
+  {
+    "ticker": "SW",
+    "company_name": "Smurfit Westrock plc",
+    "sector": "Materials",
+    "path": "data/companies/SW.json",
+    "review_required": true
+  },
+  {
+    "ticker": "SNA",
+    "company_name": "Snap-on Inc",
+    "sector": "Industrials",
+    "path": "data/companies/SNA.json",
+    "review_required": true
+  },
+  {
+    "ticker": "SOLV",
+    "company_name": "SOLVENTUM CORPORATION",
+    "sector": "Health Care",
+    "path": "data/companies/SOLV.json",
+    "review_required": true
+  },
+  {
+    "ticker": "SO",
+    "company_name": "SOUTHERN CO",
+    "sector": "Utilities",
+    "path": "data/companies/SO.json",
+    "review_required": true
+  },
+  {
+    "ticker": "LUV",
+    "company_name": "SOUTHWEST AIRLINES CO.",
+    "sector": "Industrials",
+    "path": "data/companies/LUV.json",
+    "review_required": true
+  },
+  {
+    "ticker": "SWK",
+    "company_name": "STANLEY BLACK\u00a0& DECKER, INC.",
+    "sector": "Industrials",
+    "path": "data/companies/SWK.json",
+    "review_required": true
+  },
+  {
+    "ticker": "SBUX",
+    "company_name": "Starbucks Corporation",
+    "sector": "Consumer Discretionary",
+    "path": "data/companies/SBUX.json",
+    "review_required": true
+  },
+  {
+    "ticker": "STT",
+    "company_name": "STATE STREET CORP",
+    "sector": "Financials",
+    "path": "data/companies/STT.json",
+    "review_required": true
+  },
+  {
+    "ticker": "STLD",
+    "company_name": "Steel Dynamics, Inc.",
+    "sector": "Materials",
+    "path": "data/companies/STLD.json",
+    "review_required": true
+  },
+  {
+    "ticker": "STE",
+    "company_name": "STERIS plc",
+    "sector": "Health Care",
+    "path": "data/companies/STE.json",
+    "review_required": true
+  },
+  {
+    "ticker": "SYK",
+    "company_name": "STRYKER CORP",
+    "sector": "Health Care",
+    "path": "data/companies/SYK.json",
+    "review_required": true
+  },
+  {
+    "ticker": "SMCI",
+    "company_name": "Super Micro Computer, Inc.",
+    "sector": "Information Technology",
+    "path": "data/companies/SMCI.json",
+    "review_required": true
+  },
+  {
+    "ticker": "SYF",
+    "company_name": "SYNCHRONY FINANCIAL",
+    "sector": "Financials",
+    "path": "data/companies/SYF.json",
+    "review_required": true
+  },
+  {
+    "ticker": "SNPS",
+    "company_name": "SYNOPSYS INC",
+    "sector": "Information Technology",
+    "path": "data/companies/SNPS.json",
+    "review_required": true
+  },
+  {
+    "ticker": "SYY",
+    "company_name": "Sysco Corporation",
+    "sector": "Consumer Staples",
+    "path": "data/companies/SYY.json",
+    "review_required": true
+  },
+  {
+    "ticker": "TMUS",
+    "company_name": "T-MOBILE US, INC.",
+    "sector": "Communication Services",
+    "path": "data/companies/TMUS.json",
+    "review_required": true
+  },
+  {
+    "ticker": "TROW",
+    "company_name": "PRICE T ROWE GROUP INC",
+    "sector": "Financials",
+    "path": "data/companies/TROW.json",
+    "review_required": true
+  },
+  {
+    "ticker": "TTWO",
+    "company_name": "TAKE-TWO INTERACTIVE SOFTWARE,\u00a0INC.",
+    "sector": "Communication Services",
+    "path": "data/companies/TTWO.json",
+    "review_required": true
+  },
+  {
+    "ticker": "TPR",
+    "company_name": "Tapestry, Inc.",
+    "sector": "Consumer Discretionary",
+    "path": "data/companies/TPR.json",
+    "review_required": true
+  },
+  {
+    "ticker": "TRGP",
+    "company_name": "Targa Resources Corp.",
+    "sector": "Energy",
+    "path": "data/companies/TRGP.json",
+    "review_required": true
+  },
+  {
+    "ticker": "TGT",
+    "company_name": "Target Corporation",
+    "sector": "Consumer Staples",
+    "path": "data/companies/TGT.json",
+    "review_required": true
+  },
+  {
+    "ticker": "TEL",
+    "company_name": "TE CONNECTIVITY\u00a0PLC",
+    "sector": "Information Technology",
+    "path": "data/companies/TEL.json",
+    "review_required": true
+  },
+  {
+    "ticker": "TDY",
+    "company_name": "TELEDYNE TECHNOLOGIES INC",
+    "sector": "Information Technology",
+    "path": "data/companies/TDY.json",
+    "review_required": true
+  },
+  {
+    "ticker": "TER",
+    "company_name": "TERADYNE, INC.",
+    "sector": "Information Technology",
+    "path": "data/companies/TER.json",
+    "review_required": true
+  },
+  {
+    "ticker": "TSLA",
+    "company_name": "Tesla, Inc.",
+    "sector": "Consumer Discretionary",
+    "path": "data/companies/TSLA.json",
+    "review_required": true
+  },
+  {
+    "ticker": "TXN",
+    "company_name": "TEXAS INSTRUMENTS INCORPORATED",
+    "sector": "Information Technology",
+    "path": "data/companies/TXN.json",
+    "review_required": true
+  },
+  {
+    "ticker": "TPL",
+    "company_name": "TEXAS PACIFIC LAND CORPORATION",
+    "sector": "Energy",
+    "path": "data/companies/TPL.json",
+    "review_required": true
+  },
+  {
+    "ticker": "TXT",
+    "company_name": "Textron Inc.",
+    "sector": "Industrials",
+    "path": "data/companies/TXT.json",
+    "review_required": true
+  },
+  {
+    "ticker": "TMO",
+    "company_name": "THERMO FISHER SCIENTIFIC INC.",
+    "sector": "Health Care",
+    "path": "data/companies/TMO.json",
+    "review_required": true
+  },
+  {
+    "ticker": "TJX",
+    "company_name": "The TJX Companies, Inc.",
+    "sector": "Consumer Discretionary",
+    "path": "data/companies/TJX.json",
+    "review_required": true
+  },
+  {
+    "ticker": "TKO",
+    "company_name": "TKO GROUP HOLDINGS, INC.",
+    "sector": "Communication Services",
+    "path": "data/companies/TKO.json",
+    "review_required": true
+  },
+  {
+    "ticker": "TSCO",
+    "company_name": "TRACTOR SUPPLY CO /DE/",
+    "sector": "Consumer Discretionary",
+    "path": "data/companies/TSCO.json",
+    "review_required": true
+  },
+  {
+    "ticker": "TT",
+    "company_name": "TRANE TECHNOLOGIES PLC",
+    "sector": "Industrials",
+    "path": "data/companies/TT.json",
+    "review_required": true
+  },
+  {
+    "ticker": "TDG",
+    "company_name": "TransDigm Group Incorporated",
+    "sector": "Industrials",
+    "path": "data/companies/TDG.json",
+    "review_required": true
+  },
+  {
+    "ticker": "TRV",
+    "company_name": "Travelers Companies,\u00a0Inc.",
+    "sector": "Financials",
+    "path": "data/companies/TRV.json",
+    "review_required": true
+  },
+  {
+    "ticker": "TRMB",
+    "company_name": "TRIMBLE INC.",
+    "sector": "Information Technology",
+    "path": "data/companies/TRMB.json",
+    "review_required": true
+  },
+  {
+    "ticker": "TFC",
+    "company_name": "TRUIST FINANCIAL CORPORATION",
+    "sector": "Financials",
+    "path": "data/companies/TFC.json",
+    "review_required": true
+  },
+  {
+    "ticker": "TWLO",
+    "company_name": "TWILIO INC.",
+    "sector": "Information Technology",
+    "path": "data/companies/TWLO.json",
+    "review_required": true
+  },
+  {
+    "ticker": "TYL",
+    "company_name": "TYLER TECHNOLOGIES, INC.",
+    "sector": "Information Technology",
+    "path": "data/companies/TYL.json",
+    "review_required": true
+  },
+  {
+    "ticker": "TSN",
+    "company_name": "TYSON FOODS, INC.",
+    "sector": "Consumer Staples",
+    "path": "data/companies/TSN.json",
+    "review_required": true
+  },
+  {
+    "ticker": "USB",
+    "company_name": "US BANCORP \\DE\\",
+    "sector": "Financials",
+    "path": "data/companies/USB.json",
+    "review_required": true
+  },
+  {
+    "ticker": "UBER",
+    "company_name": "Uber Technologies, Inc",
+    "sector": "Industrials",
+    "path": "data/companies/UBER.json",
+    "review_required": true
+  },
+  {
+    "ticker": "UDR",
+    "company_name": "UDR, Inc.",
+    "sector": "Real Estate",
+    "path": "data/companies/UDR.json",
+    "review_required": true
+  },
+  {
+    "ticker": "ULTA",
+    "company_name": "ULTA BEAUTY, INC.",
+    "sector": "Consumer Discretionary",
+    "path": "data/companies/ULTA.json",
+    "review_required": true
+  },
+  {
+    "ticker": "UNP",
+    "company_name": "UNION PACIFIC CORP",
+    "sector": "Industrials",
+    "path": "data/companies/UNP.json",
+    "review_required": true
+  },
+  {
+    "ticker": "UAL",
+    "company_name": "United Airlines Holdings, Inc.",
+    "sector": "Industrials",
+    "path": "data/companies/UAL.json",
+    "review_required": true
+  },
+  {
+    "ticker": "UPS",
+    "company_name": "UNITED PARCEL SERVICE INC",
+    "sector": "Industrials",
+    "path": "data/companies/UPS.json",
+    "review_required": true
+  },
+  {
+    "ticker": "URI",
+    "company_name": "United Rentals, Inc.",
+    "sector": "Industrials",
+    "path": "data/companies/URI.json",
+    "review_required": true
+  },
+  {
+    "ticker": "UNH",
+    "company_name": "UnitedHealth Group Incorporated",
+    "sector": "Health Care",
+    "path": "data/companies/UNH.json",
+    "review_required": true
+  },
+  {
+    "ticker": "UHS",
+    "company_name": "UNIVERSAL HEALTH SERVICES INC",
+    "sector": "Health Care",
+    "path": "data/companies/UHS.json",
+    "review_required": true
+  },
+  {
+    "ticker": "VLO",
+    "company_name": "VALERO ENERGY CORP/TX",
+    "sector": "Energy",
+    "path": "data/companies/VLO.json",
+    "review_required": true
+  },
+  {
+    "ticker": "VEEV",
+    "company_name": "Veeva Systems Inc.",
+    "sector": "Health Care",
+    "path": "data/companies/VEEV.json",
+    "review_required": true
+  },
+  {
+    "ticker": "VTR",
+    "company_name": "Ventas,\u00a0Inc.",
+    "sector": "Real Estate",
+    "path": "data/companies/VTR.json",
+    "review_required": true
+  },
+  {
+    "ticker": "VLTO",
+    "company_name": "VERALTO CORPORATION",
+    "sector": "Industrials",
+    "path": "data/companies/VLTO.json",
+    "review_required": true
+  },
+  {
+    "ticker": "VRSN",
+    "company_name": "VERISIGN INC/CA",
+    "sector": "Information Technology",
+    "path": "data/companies/VRSN.json",
+    "review_required": true
+  },
+  {
+    "ticker": "VRSK",
+    "company_name": "Verisk Analytics, Inc.",
+    "sector": "Industrials",
+    "path": "data/companies/VRSK.json",
+    "review_required": true
+  },
+  {
+    "ticker": "VZ",
+    "company_name": "VERIZON COMMUNICATIONS INC",
+    "sector": "Communication Services",
+    "path": "data/companies/VZ.json",
+    "review_required": true
+  },
+  {
+    "ticker": "VRTX",
+    "company_name": "VERTEX PHARMACEUTICALS INC / MA",
+    "sector": "Health Care",
+    "path": "data/companies/VRTX.json",
+    "review_required": true
+  },
+  {
+    "ticker": "VRT",
+    "company_name": "Vertiv Holdings Co",
+    "sector": "Industrials",
+    "path": "data/companies/VRT.json",
+    "review_required": true
+  },
+  {
+    "ticker": "VTRS",
+    "company_name": "VIATRIS INC.",
+    "sector": "Health Care",
+    "path": "data/companies/VTRS.json",
+    "review_required": true
+  },
+  {
+    "ticker": "VICI",
+    "company_name": "VICI Properties Inc.",
+    "sector": "Real Estate",
+    "path": "data/companies/VICI.json",
+    "review_required": true
+  },
+  {
+    "ticker": "V",
+    "company_name": "VISA INC.",
+    "sector": "Financials",
+    "path": "data/companies/V.json",
+    "review_required": true
+  },
+  {
+    "ticker": "VST",
+    "company_name": "Vistra Operations Company LLC",
+    "sector": "Utilities",
+    "path": "data/companies/VST.json",
+    "review_required": true
+  },
+  {
+    "ticker": "VMRK",
+    "company_name": "Vivmark Residential",
+    "sector": "Real Estate",
+    "path": "data/companies/VMRK.json",
+    "review_required": true
+  },
+  {
+    "ticker": "VMC",
+    "company_name": "VULCAN MATERIALS COMPANY",
+    "sector": "Materials",
+    "path": "data/companies/VMC.json",
+    "review_required": true
+  },
+  {
+    "ticker": "VYLR",
+    "company_name": "Vylor Inc.",
+    "sector": "Consumer Staples",
+    "path": "data/companies/VYLR.json",
+    "review_required": true
+  },
+  {
+    "ticker": "WRB",
+    "company_name": "W. R. BERKLEY CORP",
+    "sector": "Financials",
+    "path": "data/companies/WRB.json",
+    "review_required": true
+  },
+  {
+    "ticker": "GWW",
+    "company_name": "W.W. Grainger, Inc.",
+    "sector": "Industrials",
+    "path": "data/companies/GWW.json",
+    "review_required": true
+  },
+  {
+    "ticker": "WAB",
+    "company_name": "WESTINGHOUSE AIR BRAKE TECHNOLOGIES CORPORATION",
+    "sector": "Industrials",
+    "path": "data/companies/WAB.json",
+    "review_required": true
+  },
+  {
+    "ticker": "WMT",
+    "company_name": "Walmart Inc.",
+    "sector": "Consumer Staples",
+    "path": "data/companies/WMT.json",
+    "review_required": true
+  },
+  {
+    "ticker": "DIS",
+    "company_name": "WALT DISNEY CO/",
+    "sector": "Communication Services",
+    "path": "data/companies/DIS.json",
+    "review_required": true
+  },
+  {
+    "ticker": "WM",
+    "company_name": "WASTE MANAGEMENT INC",
+    "sector": "Industrials",
+    "path": "data/companies/WM.json",
+    "review_required": true
+  },
+  {
+    "ticker": "WAT",
+    "company_name": "Waters Corporation",
+    "sector": "Health Care",
+    "path": "data/companies/WAT.json",
+    "review_required": true
+  },
+  {
+    "ticker": "WEC",
+    "company_name": "WEC ENERGY GROUP, INC.",
+    "sector": "Utilities",
+    "path": "data/companies/WEC.json",
+    "review_required": true
+  },
+  {
+    "ticker": "WFC",
+    "company_name": "WELLS        FARGO & COMPANY/MN",
+    "sector": "Financials",
+    "path": "data/companies/WFC.json",
+    "review_required": true
+  },
+  {
+    "ticker": "WELL",
+    "company_name": "WELLTOWER INC.",
+    "sector": "Real Estate",
+    "path": "data/companies/WELL.json",
+    "review_required": true
+  },
+  {
+    "ticker": "WST",
+    "company_name": "WEST PHARMACEUTICAL SERVICES, INC.",
+    "sector": "Health Care",
+    "path": "data/companies/WST.json",
+    "review_required": true
+  },
+  {
+    "ticker": "WDC",
+    "company_name": "WESTERN DIGITAL CORPORATION",
+    "sector": "Information Technology",
+    "path": "data/companies/WDC.json",
+    "review_required": true
+  },
+  {
+    "ticker": "WY",
+    "company_name": "WEYERHAEUSER COMPANY",
+    "sector": "Real Estate",
+    "path": "data/companies/WY.json",
+    "review_required": true
+  },
+  {
+    "ticker": "WSM",
+    "company_name": "WILLIAMS-SONOMA, INC.",
+    "sector": "Consumer Discretionary",
+    "path": "data/companies/WSM.json",
+    "review_required": true
+  },
+  {
+    "ticker": "WMB",
+    "company_name": "WILLIAMS COMPANIES, INC.",
+    "sector": "Energy",
+    "path": "data/companies/WMB.json",
+    "review_required": true
+  },
+  {
+    "ticker": "WTW",
+    "company_name": "WILLIS TOWERS WATSON PLC",
+    "sector": "Financials",
+    "path": "data/companies/WTW.json",
+    "review_required": true
+  },
+  {
+    "ticker": "WDAY",
+    "company_name": "Workday, Inc.",
+    "sector": "Information Technology",
+    "path": "data/companies/WDAY.json",
+    "review_required": true
+  },
+  {
+    "ticker": "WYNN",
+    "company_name": "WYNN RESORTS, LIMITED",
+    "sector": "Consumer Discretionary",
+    "path": "data/companies/WYNN.json",
+    "review_required": true
+  },
+  {
+    "ticker": "XEL",
+    "company_name": "Xcel Energy Inc.",
+    "sector": "Utilities",
+    "path": "data/companies/XEL.json",
+    "review_required": true
+  },
+  {
+    "ticker": "XYL",
+    "company_name": "Xylem Inc.",
+    "sector": "Industrials",
+    "path": "data/companies/XYL.json",
+    "review_required": true
+  },
+  {
+    "ticker": "YUM",
+    "company_name": "YUM! BRANDS, INC.",
+    "sector": "Consumer Discretionary",
+    "path": "data/companies/YUM.json",
+    "review_required": true
+  },
+  {
+    "ticker": "ZBRA",
+    "company_name": "Zebra Technologies Corporation",
+    "sector": "Information Technology",
+    "path": "data/companies/ZBRA.json",
+    "review_required": true
+  },
+  {
+    "ticker": "ZBH",
+    "company_name": "ZIMMER BIOMET HOLDINGS, INC.",
+    "sector": "Health Care",
+    "path": "data/companies/ZBH.json",
+    "review_required": true
+  },
+  {
+    "ticker": "ZTS",
+    "company_name": "Zoetis Inc.",
+    "sector": "Health Care",
+    "path": "data/companies/ZTS.json",
+    "review_required": true
   }
 ]

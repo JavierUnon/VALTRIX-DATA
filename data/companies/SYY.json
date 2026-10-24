@@ -1,0 +1,64 @@
+{
+  "ticker": "SYY",
+  "cik": "0000096021",
+  "company_name": "Sysco Corporation",
+  "sector": "Consumer Staples",
+  "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000096021.json",
+  "fetched_at_utc": "2026-10-24T01:34:00.071734+00:00",
+  "financials": {
+    "revenue": {
+      "value": 84553000000,
+      "unit": "USD",
+      "period_start": "2025-06-29",
+      "period_end": "2026-06-27",
+      "filed": "2026-08-21",
+      "accession": "0000096021-26-000033",
+      "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+      "form": "10-K"
+    },
+    "operating_cash_flow": {
+      "value": 2638000000,
+      "unit": "USD",
+      "period_start": "2025-06-29",
+      "period_end": "2026-06-27",
+      "filed": "2026-08-21",
+      "accession": "0000096021-26-000033",
+      "tag": "NetCashProvidedByUsedInOperatingActivities",
+      "form": "10-K"
+    },
+    "capital_expenditure": null,
+    "cash": {
+      "value": 1786000000,
+      "unit": "USD",
+      "period_start": null,
+      "period_end": "2026-06-27",
+      "filed": "2026-08-21",
+      "accession": "0000096021-26-000033",
+      "tag": "CashAndCashEquivalentsAtCarryingValue",
+      "form": "10-K"
+    },
+    "debt_current": {
+      "value": 486141000,
+      "unit": "USD",
+      "period_start": null,
+      "period_end": "2021-07-03",
+      "filed": "2021-08-30",
+      "accession": "0000096021-21-000093",
+      "tag": "LongTermDebtCurrent",
+      "form": "10-K"
+    },
+    "debt_noncurrent": {
+      "value": 12315000000,
+      "unit": "USD",
+      "period_start": null,
+      "period_end": "2026-06-27",
+      "filed": "2026-08-21",
+      "accession": "0000096021-26-000033",
+      "tag": "LongTermDebtAndCapitalLeaseObligations",
+      "form": "10-K"
+    },
+    "shares_outstanding": null
+  },
+  "review_required": true,
+  "note": "SEC reported fields. Different tags and fiscal periods require validation. Operating cash flow minus capex is not automatically unlevered FCFF. Not a completed DCF valuation."
+}

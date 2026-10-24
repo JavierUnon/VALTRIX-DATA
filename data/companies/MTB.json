@@ -1,0 +1,46 @@
+{
+  "ticker": "MTB",
+  "cik": "0000036270",
+  "company_name": "M&T BANK CORP",
+  "sector": "Financials",
+  "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000036270.json",
+  "fetched_at_utc": "2026-10-24T01:32:35.170674+00:00",
+  "financials": {
+    "revenue": {
+      "value": 1657000000,
+      "unit": "USD",
+      "period_start": "2025-01-01",
+      "period_end": "2025-12-31",
+      "filed": "2026-02-18",
+      "accession": "0000036270-26-000010",
+      "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+      "form": "10-K"
+    },
+    "operating_cash_flow": {
+      "value": 3003000000,
+      "unit": "USD",
+      "period_start": "2025-01-01",
+      "period_end": "2025-12-31",
+      "filed": "2026-02-18",
+      "accession": "0000036270-26-000010",
+      "tag": "NetCashProvidedByUsedInOperatingActivities",
+      "form": "10-K"
+    },
+    "capital_expenditure": null,
+    "cash": {
+      "value": 1420888000,
+      "unit": "USD",
+      "period_start": null,
+      "period_end": "2017-12-31",
+      "filed": "2018-02-22",
+      "accession": "0001564590-18-002855",
+      "tag": "CashAndCashEquivalentsAtCarryingValue",
+      "form": "10-K"
+    },
+    "debt_current": null,
+    "debt_noncurrent": null,
+    "shares_outstanding": null
+  },
+  "review_required": true,
+  "note": "SEC reported fields. Different tags and fiscal periods require validation. Operating cash flow minus capex is not automatically unlevered FCFF. Not a completed DCF valuation."
+}

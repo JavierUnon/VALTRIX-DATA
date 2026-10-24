@@ -1,0 +1,46 @@
+{
+  "ticker": "PNC",
+  "cik": "0000713676",
+  "company_name": "PNC FINANCIAL SERVICES GROUP, INC.",
+  "sector": "Financials",
+  "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000713676.json",
+  "fetched_at_utc": "2026-10-24T01:33:21.626554+00:00",
+  "financials": {
+    "revenue": {
+      "value": 19211000000,
+      "unit": "USD",
+      "period_start": "2021-01-01",
+      "period_end": "2021-12-31",
+      "filed": "2022-02-25",
+      "accession": "0000713676-22-000019",
+      "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+      "form": "10-K"
+    },
+    "operating_cash_flow": {
+      "value": 4384000000,
+      "unit": "USD",
+      "period_start": "2025-01-01",
+      "period_end": "2025-12-31",
+      "filed": "2026-02-20",
+      "accession": "0000713676-26-000020",
+      "tag": "NetCashProvidedByUsedInOperatingActivities",
+      "form": "10-K"
+    },
+    "capital_expenditure": null,
+    "cash": null,
+    "debt_current": null,
+    "debt_noncurrent": null,
+    "shares_outstanding": {
+      "value": 523000000,
+      "unit": "shares",
+      "period_start": null,
+      "period_end": "2014-12-31",
+      "filed": "2015-03-02",
+      "accession": "0001193125-15-070443",
+      "tag": "CommonStockSharesOutstanding",
+      "form": "10-K"
+    }
+  },
+  "review_required": true,
+  "note": "SEC reported fields. Different tags and fiscal periods require validation. Operating cash flow minus capex is not automatically unlevered FCFF. Not a completed DCF valuation."
+}

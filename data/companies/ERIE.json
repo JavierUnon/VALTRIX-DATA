@@ -1,0 +1,64 @@
+{
+  "ticker": "ERIE",
+  "cik": "0000922621",
+  "company_name": "ERIE INDEMNITY COMPANY",
+  "sector": "Financials",
+  "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000922621.json",
+  "fetched_at_utc": "2026-10-24T01:30:47.646311+00:00",
+  "financials": {
+    "revenue": {
+      "value": 4067258000,
+      "unit": "USD",
+      "period_start": "2025-01-01",
+      "period_end": "2025-12-31",
+      "filed": "2026-02-23",
+      "accession": "0001628280-26-010666",
+      "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+      "form": "10-K"
+    },
+    "operating_cash_flow": {
+      "value": 686657000,
+      "unit": "USD",
+      "period_start": "2025-01-01",
+      "period_end": "2025-12-31",
+      "filed": "2026-02-23",
+      "accession": "0001628280-26-010666",
+      "tag": "NetCashProvidedByUsedInOperatingActivities",
+      "form": "10-K"
+    },
+    "capital_expenditure": null,
+    "cash": {
+      "value": 266417000,
+      "unit": "USD",
+      "period_start": null,
+      "period_end": "2018-12-31",
+      "filed": "2019-02-21",
+      "accession": "0000922621-19-000008",
+      "tag": "CashAndCashEquivalentsAtCarryingValue",
+      "form": "10-K"
+    },
+    "debt_current": {
+      "value": 0,
+      "unit": "USD",
+      "period_start": null,
+      "period_end": "2022-12-31",
+      "filed": "2023-03-01",
+      "accession": "0000922621-23-000007",
+      "tag": "LongTermDebtCurrent",
+      "form": "10-K"
+    },
+    "debt_noncurrent": {
+      "value": 0,
+      "unit": "USD",
+      "period_start": null,
+      "period_end": "2022-12-31",
+      "filed": "2023-03-01",
+      "accession": "0000922621-23-000007",
+      "tag": "LongTermDebtNoncurrent",
+      "form": "10-K"
+    },
+    "shares_outstanding": null
+  },
+  "review_required": true,
+  "note": "SEC reported fields. Different tags and fiscal periods require validation. Operating cash flow minus capex is not automatically unlevered FCFF. Not a completed DCF valuation."
+}

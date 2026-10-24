@@ -1,0 +1,73 @@
+{
+  "ticker": "FANG",
+  "cik": "0001539838",
+  "company_name": "Diamondback Energy, Inc.",
+  "sector": "Energy",
+  "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001539838.json",
+  "fetched_at_utc": "2026-10-24T01:30:30.048736+00:00",
+  "financials": {
+    "revenue": {
+      "value": 9566000000,
+      "unit": "USD",
+      "period_start": "2022-01-01",
+      "period_end": "2022-12-31",
+      "filed": "2023-02-23",
+      "accession": "0001539838-23-000022",
+      "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+      "form": "10-K"
+    },
+    "operating_cash_flow": {
+      "value": 8758000000,
+      "unit": "USD",
+      "period_start": "2025-01-01",
+      "period_end": "2025-12-31",
+      "filed": "2026-02-25",
+      "accession": "0001539838-26-000010",
+      "tag": "NetCashProvidedByUsedInOperatingActivities",
+      "form": "10-K"
+    },
+    "capital_expenditure": null,
+    "cash": {
+      "value": 104000000,
+      "unit": "USD",
+      "period_start": null,
+      "period_end": "2025-12-31",
+      "filed": "2026-02-25",
+      "accession": "0001539838-26-000010",
+      "tag": "CashAndCashEquivalentsAtCarryingValue",
+      "form": "10-K"
+    },
+    "debt_current": {
+      "value": 763000000,
+      "unit": "USD",
+      "period_start": null,
+      "period_end": "2025-12-31",
+      "filed": "2026-02-25",
+      "accession": "0001539838-26-000010",
+      "tag": "LongTermDebtCurrent",
+      "form": "10-K"
+    },
+    "debt_noncurrent": {
+      "value": 13726000000,
+      "unit": "USD",
+      "period_start": null,
+      "period_end": "2025-12-31",
+      "filed": "2026-02-25",
+      "accession": "0001539838-26-000010",
+      "tag": "LongTermDebtNoncurrent",
+      "form": "10-K"
+    },
+    "shares_outstanding": {
+      "value": 284594908,
+      "unit": "shares",
+      "period_start": null,
+      "period_end": "2025-12-31",
+      "filed": "2026-02-25",
+      "accession": "0001539838-26-000010",
+      "tag": "CommonStockSharesOutstanding",
+      "form": "10-K"
+    }
+  },
+  "review_required": true,
+  "note": "SEC reported fields. Different tags and fiscal periods require validation. Operating cash flow minus capex is not automatically unlevered FCFF. Not a completed DCF valuation."
+}
