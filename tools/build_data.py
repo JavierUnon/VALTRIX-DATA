@@ -17,6 +17,19 @@ LIST_URL = (
 OUT = Path("data/companies")
 
 TAGS = {
+    
+    "operating_income": [
+        "OperatingIncomeLoss",
+    ],
+    "depreciation_amortization": [
+        "DepreciationDepletionAndAmortization",
+        "DepreciationDepletionAndAmortizationPropertyPlantAndEquipment",
+        "DepreciationAmortizationAndAccretionNet",
+    ],
+    "income_tax_expense": [
+        "IncomeTaxExpenseBenefit",
+    ],
+
     "revenue": [
         "RevenueFromContractWithCustomerExcludingAssessedTax",
         "RevenueFromContractWithCustomerIncludingAssessedTax",
@@ -49,6 +62,9 @@ FLOW_KEYS = (
     "revenue",
     "operating_cash_flow",
     "capital_expenditure",
+    "operating_income",
+    "depreciation_amortization",
+    "income_tax_expense",
 )
 
 
