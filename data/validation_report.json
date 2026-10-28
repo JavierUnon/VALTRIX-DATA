@@ -13,8 +13,8 @@
     "Unlevered FCFF not yet calculated or verified": 503,
     "Missing capital_expenditure": 115,
     "Missing shares_outstanding": 109,
-    "Flow reporting periods do not match": 72,
-    "Not all flow figures use TTM": 76,
+    "Flow reporting periods do not match": 73,
+    "Not all flow figures use TTM": 77,
     "Missing debt_current": 130,
     "Stale data: debt_noncurrent": 33,
     "Missing debt_noncurrent": 100,
@@ -22,7 +22,7 @@
     "Stale data: operating_cash_flow": 10,
     "Stale data: capital_expenditure": 57,
     "Missing cash": 16,
-    "Stale data: shares_outstanding": 50,
+    "Stale data: shares_outstanding": 49,
     "Stale data: debt_current": 81,
     "Missing revenue": 7,
     "Non-positive value: shares_outstanding": 5,
@@ -724,14 +724,14 @@
     },
     {
       "ticker": "AZO",
-      "company_name": "AUTOZONE INC",
+      "company_name": "AUTOZONE, INC.",
       "sector": "Consumer Discretionary",
       "status": "REVIEW_REQUIRED",
       "issues": [
         "Cash and debt reporting dates differ",
         "Diluted share count not yet verified",
+        "Not all flow figures use TTM",
         "Stale data: debt_current",
-        "Stale data: shares_outstanding",
         "TTM source periods require verification",
         "Unlevered FCFF not yet calculated or verified"
       ]
@@ -2484,7 +2484,7 @@
     },
     {
       "ticker": "FDS",
-      "company_name": "FACTSET RESEARCH SYSTEMS INC.",
+      "company_name": "FACTSET RESEARCH SYSTEMS INC",
       "sector": "Financials",
       "status": "REVIEW_REQUIRED",
       "issues": [
@@ -2977,6 +2977,7 @@
       "status": "REVIEW_REQUIRED",
       "issues": [
         "Diluted share count not yet verified",
+        "Flow reporting periods do not match",
         "Missing cash",
         "Missing shares_outstanding",
         "Stale data: debt_current",
@@ -4961,13 +4962,15 @@
       ]
     },
     {
-      "ticker": "PWR",
-      "company_name": "QUANTA SERVICES, INC.",
-      "sector": "Industrials",
+      "ticker": "Q",
+      "company_name": "QNITY ELECTRONICS, INC.",
+      "sector": "Information Technology",
       "status": "REVIEW_REQUIRED",
       "issues": [
+        "Cash and debt reporting dates differ",
         "Diluted share count not yet verified",
-        "TTM source periods require verification",
+        "Missing capital_expenditure",
+        "Missing shares_outstanding",
         "Unlevered FCFF not yet calculated or verified"
       ]
     },
@@ -4984,6 +4987,17 @@
       ]
     },
     {
+      "ticker": "PWR",
+      "company_name": "QUANTA SERVICES, INC.",
+      "sector": "Industrials",
+      "status": "REVIEW_REQUIRED",
+      "issues": [
+        "Diluted share count not yet verified",
+        "TTM source periods require verification",
+        "Unlevered FCFF not yet calculated or verified"
+      ]
+    },
+    {
       "ticker": "DGX",
       "company_name": "Quest Diagnostics Inc",
       "sector": "Health Care",
@@ -4992,19 +5006,6 @@
         "Diluted share count not yet verified",
         "Missing shares_outstanding",
         "TTM source periods require verification",
-        "Unlevered FCFF not yet calculated or verified"
-      ]
-    },
-    {
-      "ticker": "Q",
-      "company_name": "QNITY ELECTRONICS, INC.",
-      "sector": "Information Technology",
-      "status": "REVIEW_REQUIRED",
-      "issues": [
-        "Cash and debt reporting dates differ",
-        "Diluted share count not yet verified",
-        "Missing capital_expenditure",
-        "Missing shares_outstanding",
         "Unlevered FCFF not yet calculated or verified"
       ]
     },
@@ -5045,18 +5046,6 @@
         "Missing debt_current",
         "Missing debt_noncurrent",
         "Missing shares_outstanding",
-        "TTM source periods require verification",
-        "Unlevered FCFF not yet calculated or verified"
-      ]
-    },
-    {
-      "ticker": "RTX",
-      "company_name": "RTX CORPORATION",
-      "sector": "Industrials",
-      "status": "REVIEW_REQUIRED",
-      "issues": [
-        "Diluted share count not yet verified",
-        "Stale data: shares_outstanding",
         "TTM source periods require verification",
         "Unlevered FCFF not yet calculated or verified"
       ]
@@ -5229,6 +5218,18 @@
       "issues": [
         "Diluted share count not yet verified",
         "Missing shares_outstanding",
+        "TTM source periods require verification",
+        "Unlevered FCFF not yet calculated or verified"
+      ]
+    },
+    {
+      "ticker": "RTX",
+      "company_name": "RTX CORPORATION",
+      "sector": "Industrials",
+      "status": "REVIEW_REQUIRED",
+      "issues": [
+        "Diluted share count not yet verified",
+        "Stale data: shares_outstanding",
         "TTM source periods require verification",
         "Unlevered FCFF not yet calculated or verified"
       ]
