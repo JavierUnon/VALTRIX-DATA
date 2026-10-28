@@ -4,7 +4,7 @@
   "company_name": "WELLTOWER INC.",
   "sector": "Real Estate",
   "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000766704.json",
-  "fetched_at_utc": "2026-10-27T05:58:33.238051+00:00",
+  "fetched_at_utc": "2026-10-28T06:03:45.472296+00:00",
   "financials": {
     "diluted_shares": {
       "value": 679521000,
@@ -28,13 +28,14 @@
       "filed": "2020-02-14",
       "tag": "DepreciationDepletionAndAmortization",
       "form": "10-K",
-      "method": "annual"
+      "method": "annual_fallback",
+      "warning": "TTM unavailable; annual data used"
     },
     "income_tax_expense": {
-      "value": 10036000,
+      "value": -48215000,
       "unit": "USD",
-      "period_end": "2026-03-31",
-      "filed": "2026-04-29",
+      "period_end": "2026-09-30",
+      "filed": "2026-10-27",
       "tag": "IncomeTaxExpenseBenefit",
       "form": "10-K + 10-Q",
       "method": "TTM",
@@ -42,10 +43,10 @@
       "annual_fy_end": "2025-12-31"
     },
     "revenue": {
-      "value": 9369397000,
+      "value": 11443015000,
       "unit": "USD",
-      "period_end": "2026-03-31",
-      "filed": "2026-04-29",
+      "period_end": "2026-09-30",
+      "filed": "2026-10-27",
       "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
       "form": "10-K + 10-Q",
       "method": "TTM",
@@ -53,10 +54,10 @@
       "annual_fy_end": "2025-12-31"
     },
     "operating_cash_flow": {
-      "value": 2952730000,
+      "value": 3331017000,
       "unit": "USD",
-      "period_end": "2026-03-31",
-      "filed": "2026-04-29",
+      "period_end": "2026-09-30",
+      "filed": "2026-10-27",
       "tag": "NetCashProvidedByUsedInOperatingActivities",
       "form": "10-K + 10-Q",
       "method": "TTM",
@@ -65,10 +66,10 @@
     },
     "capital_expenditure": null,
     "cash": {
-      "value": 4703775000,
+      "value": 2274910000,
       "unit": "USD",
-      "period_end": "2026-03-31",
-      "filed": "2026-04-29",
+      "period_end": "2026-09-30",
+      "filed": "2026-10-27",
       "tag": "CashAndCashEquivalentsAtCarryingValue",
       "form": "10-Q",
       "method": "latest_reported_balance"
@@ -76,10 +77,10 @@
     "debt_current": null,
     "debt_noncurrent": null,
     "shares_outstanding": {
-      "value": 704686814,
+      "value": 731995408,
       "unit": "shares",
-      "period_end": "2026-03-31",
-      "filed": "2026-04-29",
+      "period_end": "2026-09-30",
+      "filed": "2026-10-27",
       "tag": "CommonStockSharesOutstanding",
       "form": "10-Q",
       "method": "latest_reported_balance"
@@ -91,6 +92,7 @@
     "Missing field: inventory",
     "Missing field: accounts_payable",
     "Missing field: operating_income",
+    "TTM unavailable: depreciation_amortization",
     "Missing field: capital_expenditure",
     "Missing field: debt_current",
     "Missing field: debt_noncurrent",
