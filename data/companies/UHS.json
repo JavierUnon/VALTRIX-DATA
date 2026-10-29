@@ -4,138 +4,385 @@
   "company_name": "UNIVERSAL HEALTH SERVICES INC",
   "sector": "Health Care",
   "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000352915.json",
-  "fetched_at_utc": "2026-10-28T06:03:29.578812+00:00",
+  "fetched_at_utc": "2026-10-29T03:34:12.700172+00:00",
   "financials": {
+    "revenue": {
+      "value": 18114487000,
+      "unit": "USD",
+      "period_start": "2026-01-01",
+      "period_end": "2026-06-30",
+      "filed": "2026-08-07",
+      "form": "10-Q",
+      "accession": "0001193125-26-340278",
+      "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+      "method": "TTM",
+      "formula": "annual + current_ytd - prior_ytd",
+      "sources": {
+        "annual": {
+          "value": 17364829000,
+          "unit": "USD",
+          "period_start": "2025-01-01",
+          "period_end": "2025-12-31",
+          "filed": "2026-02-25",
+          "form": "10-K",
+          "accession": "0001193125-26-071676",
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax"
+        },
+        "current_ytd": {
+          "value": 9133194000,
+          "unit": "USD",
+          "period_start": "2026-01-01",
+          "period_end": "2026-06-30",
+          "filed": "2026-08-07",
+          "form": "10-Q",
+          "accession": "0001193125-26-340278",
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax"
+        },
+        "prior_ytd": {
+          "value": 8383536000,
+          "unit": "USD",
+          "period_start": "2025-01-01",
+          "period_end": "2025-06-30",
+          "filed": "2026-08-07",
+          "form": "10-Q",
+          "accession": "0001193125-26-340278",
+          "tag": "RevenueFromContractWithCustomerExcludingAssessedTax"
+        }
+      }
+    },
+    "operating_cash_flow": {
+      "value": 1800302000,
+      "unit": "USD",
+      "period_start": "2026-01-01",
+      "period_end": "2026-06-30",
+      "filed": "2026-08-07",
+      "form": "10-Q",
+      "accession": "0001193125-26-340278",
+      "tag": "NetCashProvidedByUsedInOperatingActivities",
+      "method": "TTM",
+      "formula": "annual + current_ytd - prior_ytd",
+      "sources": {
+        "annual": {
+          "value": 1864397000,
+          "unit": "USD",
+          "period_start": "2025-01-01",
+          "period_end": "2025-12-31",
+          "filed": "2026-02-25",
+          "form": "10-K",
+          "accession": "0001193125-26-071676",
+          "tag": "NetCashProvidedByUsedInOperatingActivities"
+        },
+        "current_ytd": {
+          "value": 844931000,
+          "unit": "USD",
+          "period_start": "2026-01-01",
+          "period_end": "2026-06-30",
+          "filed": "2026-08-07",
+          "form": "10-Q",
+          "accession": "0001193125-26-340278",
+          "tag": "NetCashProvidedByUsedInOperatingActivities"
+        },
+        "prior_ytd": {
+          "value": 909026000,
+          "unit": "USD",
+          "period_start": "2025-01-01",
+          "period_end": "2025-06-30",
+          "filed": "2026-08-07",
+          "form": "10-Q",
+          "accession": "0001193125-26-340278",
+          "tag": "NetCashProvidedByUsedInOperatingActivities"
+        }
+      }
+    },
+    "capital_expenditure": {
+      "value": 954902000,
+      "unit": "USD",
+      "period_start": "2026-01-01",
+      "period_end": "2026-06-30",
+      "filed": "2026-08-07",
+      "form": "10-Q",
+      "accession": "0001193125-26-340278",
+      "tag": "PaymentsToAcquirePropertyPlantAndEquipment",
+      "method": "TTM",
+      "formula": "annual + current_ytd - prior_ytd",
+      "sources": {
+        "annual": {
+          "value": 1015152000,
+          "unit": "USD",
+          "period_start": "2025-01-01",
+          "period_end": "2025-12-31",
+          "filed": "2026-02-25",
+          "form": "10-K",
+          "accession": "0001193125-26-071676",
+          "tag": "PaymentsToAcquirePropertyPlantAndEquipment"
+        },
+        "current_ytd": {
+          "value": 444790000,
+          "unit": "USD",
+          "period_start": "2026-01-01",
+          "period_end": "2026-06-30",
+          "filed": "2026-08-07",
+          "form": "10-Q",
+          "accession": "0001193125-26-340278",
+          "tag": "PaymentsToAcquirePropertyPlantAndEquipment"
+        },
+        "prior_ytd": {
+          "value": 505040000,
+          "unit": "USD",
+          "period_start": "2025-01-01",
+          "period_end": "2025-06-30",
+          "filed": "2026-08-07",
+          "form": "10-Q",
+          "accession": "0001193125-26-340278",
+          "tag": "PaymentsToAcquirePropertyPlantAndEquipment"
+        }
+      }
+    },
+    "operating_income": {
+      "value": 2058455000,
+      "unit": "USD",
+      "period_start": "2026-01-01",
+      "period_end": "2026-06-30",
+      "filed": "2026-08-07",
+      "form": "10-Q",
+      "accession": "0001193125-26-340278",
+      "tag": "OperatingIncomeLoss",
+      "method": "TTM",
+      "formula": "annual + current_ytd - prior_ytd",
+      "sources": {
+        "annual": {
+          "value": 1994015000,
+          "unit": "USD",
+          "period_start": "2025-01-01",
+          "period_end": "2025-12-31",
+          "filed": "2026-02-25",
+          "form": "10-K",
+          "accession": "0001193125-26-071676",
+          "tag": "OperatingIncomeLoss"
+        },
+        "current_ytd": {
+          "value": 1019535000,
+          "unit": "USD",
+          "period_start": "2026-01-01",
+          "period_end": "2026-06-30",
+          "filed": "2026-08-07",
+          "form": "10-Q",
+          "accession": "0001193125-26-340278",
+          "tag": "OperatingIncomeLoss"
+        },
+        "prior_ytd": {
+          "value": 955095000,
+          "unit": "USD",
+          "period_start": "2025-01-01",
+          "period_end": "2025-06-30",
+          "filed": "2026-08-07",
+          "form": "10-Q",
+          "accession": "0001193125-26-340278",
+          "tag": "OperatingIncomeLoss"
+        }
+      }
+    },
+    "depreciation_amortization": {
+      "value": 412093000,
+      "unit": "USD",
+      "period_start": "2016-01-01",
+      "period_end": "2016-09-30",
+      "filed": "2016-11-08",
+      "form": "10-Q",
+      "accession": "0001564590-16-028360",
+      "tag": "DepreciationDepletionAndAmortization",
+      "method": "TTM",
+      "formula": "annual + current_ytd - prior_ytd",
+      "sources": {
+        "annual": {
+          "value": 398618000,
+          "unit": "USD",
+          "period_start": "2015-01-01",
+          "period_end": "2015-12-31",
+          "filed": "2016-02-25",
+          "form": "10-K",
+          "accession": "0001564590-16-013375",
+          "tag": "DepreciationDepletionAndAmortization"
+        },
+        "current_ytd": {
+          "value": 309172000,
+          "unit": "USD",
+          "period_start": "2016-01-01",
+          "period_end": "2016-09-30",
+          "filed": "2016-11-08",
+          "form": "10-Q",
+          "accession": "0001564590-16-028360",
+          "tag": "DepreciationDepletionAndAmortization"
+        },
+        "prior_ytd": {
+          "value": 295697000,
+          "unit": "USD",
+          "period_start": "2015-01-01",
+          "period_end": "2015-09-30",
+          "filed": "2016-11-08",
+          "form": "10-Q",
+          "accession": "0001564590-16-028360",
+          "tag": "DepreciationDepletionAndAmortization"
+        }
+      }
+    },
+    "income_tax_expense": {
+      "value": 476360000,
+      "unit": "USD",
+      "period_start": "2026-01-01",
+      "period_end": "2026-06-30",
+      "filed": "2026-08-07",
+      "form": "10-Q",
+      "accession": "0001193125-26-340278",
+      "tag": "IncomeTaxExpenseBenefit",
+      "method": "TTM",
+      "formula": "annual + current_ytd - prior_ytd",
+      "sources": {
+        "annual": {
+          "value": 460959000,
+          "unit": "USD",
+          "period_start": "2025-01-01",
+          "period_end": "2025-12-31",
+          "filed": "2026-02-25",
+          "form": "10-K",
+          "accession": "0001193125-26-071676",
+          "tag": "IncomeTaxExpenseBenefit"
+        },
+        "current_ytd": {
+          "value": 224974000,
+          "unit": "USD",
+          "period_start": "2026-01-01",
+          "period_end": "2026-06-30",
+          "filed": "2026-08-07",
+          "form": "10-Q",
+          "accession": "0001193125-26-340278",
+          "tag": "IncomeTaxExpenseBenefit"
+        },
+        "prior_ytd": {
+          "value": 209573000,
+          "unit": "USD",
+          "period_start": "2025-01-01",
+          "period_end": "2025-06-30",
+          "filed": "2026-08-07",
+          "form": "10-Q",
+          "accession": "0001193125-26-340278",
+          "tag": "IncomeTaxExpenseBenefit"
+        }
+      }
+    },
+    "cash": {
+      "value": 138800000,
+      "unit": "USD",
+      "period_start": null,
+      "period_end": "2026-06-30",
+      "filed": "2026-08-07",
+      "form": "10-Q",
+      "accession": "0001193125-26-340278",
+      "tag": "CashAndCashEquivalentsAtCarryingValue",
+      "method": "latest_balance"
+    },
+    "debt_current": {
+      "value": 771910000,
+      "unit": "USD",
+      "period_start": null,
+      "period_end": "2026-06-30",
+      "filed": "2026-08-07",
+      "form": "10-Q",
+      "accession": "0001193125-26-340278",
+      "tag": "LongTermDebtCurrent",
+      "method": "latest_balance"
+    },
+    "debt_noncurrent": {
+      "value": 4079937000,
+      "unit": "USD",
+      "period_start": null,
+      "period_end": "2026-06-30",
+      "filed": "2026-08-07",
+      "form": "10-Q",
+      "accession": "0001193125-26-340278",
+      "tag": "LongTermDebtNoncurrent",
+      "method": "latest_balance"
+    },
+    "shares_outstanding": null,
     "diluted_shares": {
-      "value": 64462000,
+      "value": 59737000,
       "unit": "shares",
-      "period_end": "2025-12-31",
-      "filed": "2026-02-25",
+      "period_start": "2026-01-01",
+      "period_end": "2026-06-30",
+      "filed": "2026-08-07",
+      "form": "10-Q",
+      "accession": "0001193125-26-340278",
       "tag": "WeightedAverageNumberOfDilutedSharesOutstanding",
-      "form": "10-K",
-      "method": "annual_diluted_weighted_average",
-      "review_required": true
+      "method": "TTM",
+      "formula": "annual + current_ytd - prior_ytd",
+      "sources": {
+        "annual": {
+          "value": 64462000,
+          "unit": "shares",
+          "period_start": "2025-01-01",
+          "period_end": "2025-12-31",
+          "filed": "2026-02-25",
+          "form": "10-K",
+          "accession": "0001193125-26-071676",
+          "tag": "WeightedAverageNumberOfDilutedSharesOutstanding"
+        },
+        "current_ytd": {
+          "value": 60789000,
+          "unit": "shares",
+          "period_start": "2026-01-01",
+          "period_end": "2026-06-30",
+          "filed": "2026-08-07",
+          "form": "10-Q",
+          "accession": "0001193125-26-340278",
+          "tag": "WeightedAverageNumberOfDilutedSharesOutstanding"
+        },
+        "prior_ytd": {
+          "value": 65514000,
+          "unit": "shares",
+          "period_start": "2025-01-01",
+          "period_end": "2025-06-30",
+          "filed": "2026-08-07",
+          "form": "10-Q",
+          "accession": "0001193125-26-340278",
+          "tag": "WeightedAverageNumberOfDilutedSharesOutstanding"
+        }
+      }
     },
     "accounts_receivable": {
       "value": 2801108000,
       "unit": "USD",
+      "period_start": null,
       "period_end": "2026-06-30",
       "filed": "2026-08-07",
-      "tag": "AccountsReceivableNetCurrent",
       "form": "10-Q",
-      "method": "latest_reported_balance"
+      "accession": "0001193125-26-340278",
+      "tag": "AccountsReceivableNetCurrent",
+      "method": "latest_balance"
     },
     "inventory": null,
     "accounts_payable": {
       "value": 750134000,
       "unit": "USD",
+      "period_start": null,
       "period_end": "2025-12-31",
       "filed": "2026-02-25",
-      "tag": "AccountsPayableCurrent",
       "form": "10-K",
-      "method": "latest_reported_balance"
-    },
-    "operating_income": {
-      "value": 2058455000,
-      "unit": "USD",
-      "period_end": "2026-06-30",
-      "filed": "2026-08-07",
-      "tag": "OperatingIncomeLoss",
-      "form": "10-K + 10-Q",
-      "method": "TTM",
-      "formula": "FY + current YTD - prior-year YTD",
-      "annual_fy_end": "2025-12-31"
-    },
-    "depreciation_amortization": {
-      "value": 412093000,
-      "unit": "USD",
-      "period_end": "2016-09-30",
-      "filed": "2016-11-08",
-      "tag": "DepreciationDepletionAndAmortization",
-      "form": "10-K + 10-Q",
-      "method": "TTM",
-      "formula": "FY + current YTD - prior-year YTD",
-      "annual_fy_end": "2015-12-31"
-    },
-    "income_tax_expense": {
-      "value": 476360000,
-      "unit": "USD",
-      "period_end": "2026-06-30",
-      "filed": "2026-08-07",
-      "tag": "IncomeTaxExpenseBenefit",
-      "form": "10-K + 10-Q",
-      "method": "TTM",
-      "formula": "FY + current YTD - prior-year YTD",
-      "annual_fy_end": "2025-12-31"
-    },
-    "revenue": {
-      "value": 18114487000,
-      "unit": "USD",
-      "period_end": "2026-06-30",
-      "filed": "2026-08-07",
-      "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
-      "form": "10-K + 10-Q",
-      "method": "TTM",
-      "formula": "FY + current YTD - prior-year YTD",
-      "annual_fy_end": "2025-12-31"
-    },
-    "operating_cash_flow": {
-      "value": 1800302000,
-      "unit": "USD",
-      "period_end": "2026-06-30",
-      "filed": "2026-08-07",
-      "tag": "NetCashProvidedByUsedInOperatingActivities",
-      "form": "10-K + 10-Q",
-      "method": "TTM",
-      "formula": "FY + current YTD - prior-year YTD",
-      "annual_fy_end": "2025-12-31"
-    },
-    "capital_expenditure": {
-      "value": 954902000,
-      "unit": "USD",
-      "period_end": "2026-06-30",
-      "filed": "2026-08-07",
-      "tag": "PaymentsToAcquirePropertyPlantAndEquipment",
-      "form": "10-K + 10-Q",
-      "method": "TTM",
-      "formula": "FY + current YTD - prior-year YTD",
-      "annual_fy_end": "2025-12-31"
-    },
-    "cash": {
-      "value": 138800000,
-      "unit": "USD",
-      "period_end": "2026-06-30",
-      "filed": "2026-08-07",
-      "tag": "CashAndCashEquivalentsAtCarryingValue",
-      "form": "10-Q",
-      "method": "latest_reported_balance"
-    },
-    "debt_current": {
-      "value": 771910000,
-      "unit": "USD",
-      "period_end": "2026-06-30",
-      "filed": "2026-08-07",
-      "tag": "LongTermDebtCurrent",
-      "form": "10-Q",
-      "method": "latest_reported_balance"
-    },
-    "debt_noncurrent": {
-      "value": 4079937000,
-      "unit": "USD",
-      "period_end": "2026-06-30",
-      "filed": "2026-08-07",
-      "tag": "LongTermDebtNoncurrent",
-      "form": "10-Q",
-      "method": "latest_reported_balance"
-    },
-    "shares_outstanding": null
+      "accession": "0001193125-26-071676",
+      "tag": "AccountsPayableCurrent",
+      "method": "latest_balance"
+    }
   },
-  "review_required": true,
+  "missing_core_fields": [
+    "shares_outstanding"
+  ],
+  "import_status": "REVIEW_REQUIRED",
+  "auto_dcf_ready": false,
   "warnings": [
-    "Missing field: inventory",
-    "Missing field: shares_outstanding",
-    "Operating cash flow minus CapEx is not unlevered FCFF",
-    "Shares outstanding are not necessarily diluted shares",
-    "Debt and cash require classification and date checks"
+    "Out-of-range or stale period: depreciation_amortization",
+    "Missing: shares_outstanding",
+    "Missing: inventory",
+    "FCFF not calculated or validated",
+    "Debt, leases and diluted shares require review",
+    "Working-capital change requires validation"
   ]
 }

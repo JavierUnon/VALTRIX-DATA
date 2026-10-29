@@ -4,36 +4,43 @@
   "company_name": "JACK HENRY & ASSOCIATES, INC.",
   "sector": "Financials",
   "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000779152.json",
-  "fetched_at_utc": "2026-10-28T06:01:31.338757+00:00",
+  "fetched_at_utc": "2026-10-29T03:32:28.471709+00:00",
   "financials": {
-    "diluted_shares": {
-      "value": 72043000,
-      "unit": "shares",
-      "period_end": "2026-06-30",
-      "filed": "2026-08-28",
-      "tag": "WeightedAverageNumberOfDilutedSharesOutstanding",
-      "form": "10-K",
-      "method": "annual_diluted_weighted_average",
-      "review_required": true
-    },
-    "accounts_receivable": {
-      "value": 349111000,
+    "revenue": {
+      "value": 2544339000,
       "unit": "USD",
+      "period_start": "2025-07-01",
       "period_end": "2026-06-30",
       "filed": "2026-08-28",
-      "tag": "AccountsReceivableNetCurrent",
       "form": "10-K",
-      "method": "latest_reported_balance"
+      "accession": "0000779152-26-000067",
+      "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+      "method": "annual_fallback",
+      "warning": "TTM not verifiable from comparable periods"
     },
-    "inventory": null,
-    "accounts_payable": {
-      "value": 34935000,
+    "operating_cash_flow": {
+      "value": 761960000,
       "unit": "USD",
+      "period_start": "2025-07-01",
       "period_end": "2026-06-30",
       "filed": "2026-08-28",
-      "tag": "AccountsPayableCurrent",
       "form": "10-K",
-      "method": "latest_reported_balance"
+      "accession": "0000779152-26-000067",
+      "tag": "NetCashProvidedByUsedInOperatingActivities",
+      "method": "annual_fallback",
+      "warning": "TTM not verifiable from comparable periods"
+    },
+    "capital_expenditure": {
+      "value": 67103000,
+      "unit": "USD",
+      "period_start": "2025-07-01",
+      "period_end": "2026-06-30",
+      "filed": "2026-08-28",
+      "form": "10-K",
+      "accession": "0000779152-26-000067",
+      "tag": "PaymentsToAcquirePropertyPlantAndEquipment",
+      "method": "annual_fallback",
+      "warning": "TTM not verifiable from comparable periods"
     },
     "operating_income": {
       "value": 635033000,
@@ -41,9 +48,11 @@
       "period_start": "2025-07-01",
       "period_end": "2026-06-30",
       "filed": "2026-08-28",
-      "tag": "OperatingIncomeLoss",
       "form": "10-K",
-      "method": "annual"
+      "accession": "0000779152-26-000067",
+      "tag": "OperatingIncomeLoss",
+      "method": "annual_fallback",
+      "warning": "TTM not verifiable from comparable periods"
     },
     "depreciation_amortization": null,
     "income_tax_expense": {
@@ -52,77 +61,101 @@
       "period_start": "2025-07-01",
       "period_end": "2026-06-30",
       "filed": "2026-08-28",
+      "form": "10-K",
+      "accession": "0000779152-26-000067",
       "tag": "IncomeTaxExpenseBenefit",
-      "form": "10-K",
-      "method": "annual"
-    },
-    "revenue": {
-      "value": 2544339000,
-      "unit": "USD",
-      "period_start": "2025-07-01",
-      "period_end": "2026-06-30",
-      "filed": "2026-08-28",
-      "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
-      "form": "10-K",
-      "method": "annual"
-    },
-    "operating_cash_flow": {
-      "value": 761960000,
-      "unit": "USD",
-      "period_start": "2025-07-01",
-      "period_end": "2026-06-30",
-      "filed": "2026-08-28",
-      "tag": "NetCashProvidedByUsedInOperatingActivities",
-      "form": "10-K",
-      "method": "annual"
-    },
-    "capital_expenditure": {
-      "value": 67103000,
-      "unit": "USD",
-      "period_start": "2025-07-01",
-      "period_end": "2026-06-30",
-      "filed": "2026-08-28",
-      "tag": "PaymentsToAcquirePropertyPlantAndEquipment",
-      "form": "10-K",
-      "method": "annual"
+      "method": "annual_fallback",
+      "warning": "TTM not verifiable from comparable periods"
     },
     "cash": {
       "value": 20573000,
       "unit": "USD",
+      "period_start": null,
       "period_end": "2026-03-31",
       "filed": "2026-05-07",
-      "tag": "CashAndCashEquivalentsAtCarryingValue",
       "form": "10-Q",
-      "method": "latest_reported_balance"
+      "accession": "0000779152-26-000025",
+      "tag": "CashAndCashEquivalentsAtCarryingValue",
+      "method": "latest_balance"
     },
     "debt_current": {
       "value": 0,
       "unit": "USD",
+      "period_start": null,
       "period_end": "2025-06-30",
       "filed": "2025-08-25",
-      "tag": "LongTermDebtCurrent",
       "form": "10-K",
-      "method": "latest_reported_balance"
+      "accession": "0000779152-25-000055",
+      "tag": "LongTermDebtCurrent",
+      "method": "latest_balance"
     },
     "debt_noncurrent": {
       "value": 90000000,
       "unit": "USD",
+      "period_start": null,
       "period_end": "2026-03-31",
       "filed": "2026-05-07",
-      "tag": "LongTermDebtNoncurrent",
       "form": "10-Q",
-      "method": "latest_reported_balance"
+      "accession": "0000779152-26-000025",
+      "tag": "LongTermDebtNoncurrent",
+      "method": "latest_balance"
     },
-    "shares_outstanding": null
+    "shares_outstanding": null,
+    "diluted_shares": {
+      "value": 72043000,
+      "unit": "shares",
+      "period_start": "2025-07-01",
+      "period_end": "2026-06-30",
+      "filed": "2026-08-28",
+      "form": "10-K",
+      "accession": "0000779152-26-000067",
+      "tag": "WeightedAverageNumberOfDilutedSharesOutstanding",
+      "method": "annual_fallback",
+      "warning": "TTM not verifiable from comparable periods"
+    },
+    "accounts_receivable": {
+      "value": 349111000,
+      "unit": "USD",
+      "period_start": null,
+      "period_end": "2026-06-30",
+      "filed": "2026-08-28",
+      "form": "10-K",
+      "accession": "0000779152-26-000067",
+      "tag": "AccountsReceivableNetCurrent",
+      "method": "latest_balance"
+    },
+    "inventory": null,
+    "accounts_payable": {
+      "value": 34935000,
+      "unit": "USD",
+      "period_start": null,
+      "period_end": "2026-06-30",
+      "filed": "2026-08-28",
+      "form": "10-K",
+      "accession": "0000779152-26-000067",
+      "tag": "AccountsPayableCurrent",
+      "method": "latest_balance"
+    }
   },
-  "review_required": true,
+  "missing_core_fields": [
+    "shares_outstanding"
+  ],
+  "import_status": "REVIEW_REQUIRED",
+  "auto_dcf_ready": false,
   "warnings": [
-    "Missing field: inventory",
-    "Missing field: depreciation_amortization",
-    "Missing field: shares_outstanding",
-    "Operating cash flow minus CapEx is not unlevered FCFF",
-    "Shares outstanding are not necessarily diluted shares",
-    "Debt and cash require classification and date checks",
-    "Financial company: standard FCFF DCF unsuitable"
+    "Annual fallback: revenue",
+    "Annual fallback: operating_cash_flow",
+    "Annual fallback: capital_expenditure",
+    "Annual fallback: operating_income",
+    "Missing: depreciation_amortization",
+    "Annual fallback: income_tax_expense",
+    "Out-of-range or stale period: debt_current",
+    "Missing: shares_outstanding",
+    "Annual fallback: diluted_shares",
+    "Missing: inventory",
+    "Financial sector: standard FCFF DCF unsuitable",
+    "FCFF not calculated or validated",
+    "Debt, leases and diluted shares require review",
+    "Working-capital change requires validation"
   ]
 }

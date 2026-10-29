@@ -4,76 +4,19 @@
   "company_name": "AutoZone,\u00a0Inc.",
   "sector": "Consumer Discretionary",
   "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000866787.json",
-  "fetched_at_utc": "2026-10-28T05:59:07.895120+00:00",
+  "fetched_at_utc": "2026-10-29T03:30:38.063379+00:00",
   "financials": {
-    "diluted_shares": {
-      "value": 16865000,
-      "unit": "shares",
-      "period_end": "2026-08-29",
-      "filed": "2026-10-26",
-      "tag": "WeightedAverageNumberOfDilutedSharesOutstanding",
-      "form": "10-K",
-      "method": "annual_diluted_weighted_average",
-      "review_required": true
-    },
-    "accounts_receivable": {
-      "value": 755026000,
-      "unit": "USD",
-      "period_end": "2026-08-29",
-      "filed": "2026-10-26",
-      "tag": "AccountsReceivableNetCurrent",
-      "form": "10-K",
-      "method": "latest_reported_balance"
-    },
-    "inventory": null,
-    "accounts_payable": {
-      "value": 8596585000,
-      "unit": "USD",
-      "period_end": "2026-08-29",
-      "filed": "2026-10-26",
-      "tag": "AccountsPayableCurrent",
-      "form": "10-K",
-      "method": "latest_reported_balance"
-    },
-    "operating_income": {
-      "value": 3723314000,
-      "unit": "USD",
-      "period_start": "2025-08-31",
-      "period_end": "2026-08-29",
-      "filed": "2026-10-26",
-      "tag": "OperatingIncomeLoss",
-      "form": "10-K",
-      "method": "annual"
-    },
-    "depreciation_amortization": {
-      "value": 684265000,
-      "unit": "USD",
-      "period_start": "2025-08-31",
-      "period_end": "2026-08-29",
-      "filed": "2026-10-26",
-      "tag": "DepreciationDepletionAndAmortization",
-      "form": "10-K",
-      "method": "annual"
-    },
-    "income_tax_expense": {
-      "value": 677923000,
-      "unit": "USD",
-      "period_start": "2025-08-31",
-      "period_end": "2026-08-29",
-      "filed": "2026-10-26",
-      "tag": "IncomeTaxExpenseBenefit",
-      "form": "10-K",
-      "method": "annual"
-    },
     "revenue": {
       "value": 20338555000,
       "unit": "USD",
       "period_start": "2025-08-31",
       "period_end": "2026-08-29",
       "filed": "2026-10-26",
-      "tag": "Revenues",
       "form": "10-K",
-      "method": "annual"
+      "accession": "0001104659-26-118791",
+      "tag": "Revenues",
+      "method": "annual_fallback",
+      "warning": "TTM not verifiable from comparable periods"
     },
     "operating_cash_flow": {
       "value": 3249117000,
@@ -81,9 +24,11 @@
       "period_start": "2025-08-31",
       "period_end": "2026-08-29",
       "filed": "2026-10-26",
-      "tag": "NetCashProvidedByUsedInOperatingActivities",
       "form": "10-K",
-      "method": "annual"
+      "accession": "0001104659-26-118791",
+      "tag": "NetCashProvidedByUsedInOperatingActivities",
+      "method": "annual_fallback",
+      "warning": "TTM not verifiable from comparable periods"
     },
     "capital_expenditure": {
       "value": 1433587000,
@@ -91,52 +36,143 @@
       "period_start": "2025-08-31",
       "period_end": "2026-08-29",
       "filed": "2026-10-26",
-      "tag": "PaymentsToAcquirePropertyPlantAndEquipment",
       "form": "10-K",
-      "method": "annual"
+      "accession": "0001104659-26-118791",
+      "tag": "PaymentsToAcquirePropertyPlantAndEquipment",
+      "method": "annual_fallback",
+      "warning": "TTM not verifiable from comparable periods"
+    },
+    "operating_income": {
+      "value": 3723314000,
+      "unit": "USD",
+      "period_start": "2025-08-31",
+      "period_end": "2026-08-29",
+      "filed": "2026-10-26",
+      "form": "10-K",
+      "accession": "0001104659-26-118791",
+      "tag": "OperatingIncomeLoss",
+      "method": "annual_fallback",
+      "warning": "TTM not verifiable from comparable periods"
+    },
+    "depreciation_amortization": {
+      "value": 684265000,
+      "unit": "USD",
+      "period_start": "2025-08-31",
+      "period_end": "2026-08-29",
+      "filed": "2026-10-26",
+      "form": "10-K",
+      "accession": "0001104659-26-118791",
+      "tag": "DepreciationDepletionAndAmortization",
+      "method": "annual_fallback",
+      "warning": "TTM not verifiable from comparable periods"
+    },
+    "income_tax_expense": {
+      "value": 677923000,
+      "unit": "USD",
+      "period_start": "2025-08-31",
+      "period_end": "2026-08-29",
+      "filed": "2026-10-26",
+      "form": "10-K",
+      "accession": "0001104659-26-118791",
+      "tag": "IncomeTaxExpenseBenefit",
+      "method": "annual_fallback",
+      "warning": "TTM not verifiable from comparable periods"
     },
     "cash": {
       "value": 326115000,
       "unit": "USD",
+      "period_start": null,
       "period_end": "2026-08-29",
       "filed": "2026-10-26",
-      "tag": "CashAndCashEquivalentsAtCarryingValue",
       "form": "10-K",
-      "method": "latest_reported_balance"
+      "accession": "0001104659-26-118791",
+      "tag": "CashAndCashEquivalentsAtCarryingValue",
+      "method": "latest_balance"
     },
     "debt_current": {
       "value": 500000000,
       "unit": "USD",
+      "period_start": null,
       "period_end": "2024-05-04",
       "filed": "2024-06-07",
-      "tag": "LongTermDebtCurrent",
       "form": "10-Q",
-      "method": "latest_reported_balance"
+      "accession": "0001558370-24-009005",
+      "tag": "LongTermDebtCurrent",
+      "method": "latest_balance"
     },
     "debt_noncurrent": {
       "value": 9078320000,
       "unit": "USD",
+      "period_start": null,
       "period_end": "2026-08-29",
       "filed": "2026-10-26",
-      "tag": "LongTermDebtNoncurrent",
       "form": "10-K",
-      "method": "latest_reported_balance"
+      "accession": "0001104659-26-118791",
+      "tag": "LongTermDebtNoncurrent",
+      "method": "latest_balance"
     },
     "shares_outstanding": {
       "value": 16173000,
       "unit": "shares",
+      "period_start": null,
       "period_end": "2026-08-29",
       "filed": "2026-10-26",
-      "tag": "CommonStockSharesOutstanding",
       "form": "10-K",
-      "method": "latest_reported_balance"
+      "accession": "0001104659-26-118791",
+      "tag": "CommonStockSharesOutstanding",
+      "method": "latest_balance"
+    },
+    "diluted_shares": {
+      "value": 16865000,
+      "unit": "shares",
+      "period_start": "2025-08-31",
+      "period_end": "2026-08-29",
+      "filed": "2026-10-26",
+      "form": "10-K",
+      "accession": "0001104659-26-118791",
+      "tag": "WeightedAverageNumberOfDilutedSharesOutstanding",
+      "method": "annual_fallback",
+      "warning": "TTM not verifiable from comparable periods"
+    },
+    "accounts_receivable": {
+      "value": 755026000,
+      "unit": "USD",
+      "period_start": null,
+      "period_end": "2026-08-29",
+      "filed": "2026-10-26",
+      "form": "10-K",
+      "accession": "0001104659-26-118791",
+      "tag": "AccountsReceivableNetCurrent",
+      "method": "latest_balance"
+    },
+    "inventory": null,
+    "accounts_payable": {
+      "value": 8596585000,
+      "unit": "USD",
+      "period_start": null,
+      "period_end": "2026-08-29",
+      "filed": "2026-10-26",
+      "form": "10-K",
+      "accession": "0001104659-26-118791",
+      "tag": "AccountsPayableCurrent",
+      "method": "latest_balance"
     }
   },
-  "review_required": true,
+  "missing_core_fields": [],
+  "import_status": "REVIEW_REQUIRED",
+  "auto_dcf_ready": false,
   "warnings": [
-    "Missing field: inventory",
-    "Operating cash flow minus CapEx is not unlevered FCFF",
-    "Shares outstanding are not necessarily diluted shares",
-    "Debt and cash require classification and date checks"
+    "Annual fallback: revenue",
+    "Annual fallback: operating_cash_flow",
+    "Annual fallback: capital_expenditure",
+    "Annual fallback: operating_income",
+    "Annual fallback: depreciation_amortization",
+    "Annual fallback: income_tax_expense",
+    "Out-of-range or stale period: debt_current",
+    "Annual fallback: diluted_shares",
+    "Missing: inventory",
+    "FCFF not calculated or validated",
+    "Debt, leases and diluted shares require review",
+    "Working-capital change requires validation"
   ]
 }

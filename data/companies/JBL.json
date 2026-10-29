@@ -4,84 +4,19 @@
   "company_name": "JABIL INC",
   "sector": "Information Technology",
   "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000898293.json",
-  "fetched_at_utc": "2026-10-28T06:01:30.824204+00:00",
+  "fetched_at_utc": "2026-10-29T03:32:27.949288+00:00",
   "financials": {
-    "diluted_shares": {
-      "value": 106900000,
-      "unit": "shares",
-      "period_end": "2026-08-31",
-      "filed": "2026-10-23",
-      "tag": "WeightedAverageNumberOfDilutedSharesOutstanding",
-      "form": "10-K",
-      "method": "annual_diluted_weighted_average",
-      "review_required": true
-    },
-    "accounts_receivable": {
-      "value": 3647000000,
-      "unit": "USD",
-      "period_end": "2023-08-31",
-      "filed": "2023-10-20",
-      "tag": "AccountsReceivableNetCurrent",
-      "form": "10-K",
-      "method": "latest_reported_balance"
-    },
-    "inventory": {
-      "value": 7413000000,
-      "unit": "USD",
-      "period_end": "2026-08-31",
-      "filed": "2026-10-23",
-      "tag": "InventoryNet",
-      "form": "10-K",
-      "method": "latest_reported_balance"
-    },
-    "accounts_payable": {
-      "value": 14444000000,
-      "unit": "USD",
-      "period_end": "2026-08-31",
-      "filed": "2026-10-23",
-      "tag": "AccountsPayableCurrent",
-      "form": "10-K",
-      "method": "latest_reported_balance"
-    },
-    "operating_income": {
-      "value": 1704000000,
-      "unit": "USD",
-      "period_start": "2025-09-01",
-      "period_end": "2026-08-31",
-      "filed": "2026-10-23",
-      "tag": "OperatingIncomeLoss",
-      "form": "10-K",
-      "method": "annual"
-    },
-    "depreciation_amortization": {
-      "value": 681000000,
-      "unit": "USD",
-      "period_start": "2025-09-01",
-      "period_end": "2026-08-31",
-      "filed": "2026-10-23",
-      "tag": "DepreciationDepletionAndAmortization",
-      "form": "10-K",
-      "method": "annual"
-    },
-    "income_tax_expense": {
-      "value": 368000000,
-      "unit": "USD",
-      "period_start": "2025-09-01",
-      "period_end": "2026-08-31",
-      "filed": "2026-10-23",
-      "tag": "IncomeTaxExpenseBenefit",
-      "form": "10-K",
-      "method": "annual"
-    },
     "revenue": {
       "value": 35954000000,
       "unit": "USD",
       "period_start": "2025-09-01",
       "period_end": "2026-08-31",
       "filed": "2026-10-23",
-      "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
       "form": "10-K",
-      "method": "annual"
+      "accession": "0001628280-26-067038",
+      "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+      "method": "annual_fallback",
+      "warning": "TTM not verifiable from comparable periods"
     },
     "operating_cash_flow": {
       "value": 2002000000,
@@ -89,9 +24,11 @@
       "period_start": "2025-09-01",
       "period_end": "2026-08-31",
       "filed": "2026-10-23",
-      "tag": "NetCashProvidedByUsedInOperatingActivities",
       "form": "10-K",
-      "method": "annual"
+      "accession": "0001628280-26-067038",
+      "tag": "NetCashProvidedByUsedInOperatingActivities",
+      "method": "annual_fallback",
+      "warning": "TTM not verifiable from comparable periods"
     },
     "capital_expenditure": {
       "value": 628000000,
@@ -99,51 +36,152 @@
       "period_start": "2025-09-01",
       "period_end": "2026-08-31",
       "filed": "2026-10-23",
-      "tag": "PaymentsToAcquirePropertyPlantAndEquipment",
       "form": "10-K",
-      "method": "annual"
+      "accession": "0001628280-26-067038",
+      "tag": "PaymentsToAcquirePropertyPlantAndEquipment",
+      "method": "annual_fallback",
+      "warning": "TTM not verifiable from comparable periods"
+    },
+    "operating_income": {
+      "value": 1704000000,
+      "unit": "USD",
+      "period_start": "2025-09-01",
+      "period_end": "2026-08-31",
+      "filed": "2026-10-23",
+      "form": "10-K",
+      "accession": "0001628280-26-067038",
+      "tag": "OperatingIncomeLoss",
+      "method": "annual_fallback",
+      "warning": "TTM not verifiable from comparable periods"
+    },
+    "depreciation_amortization": {
+      "value": 681000000,
+      "unit": "USD",
+      "period_start": "2025-09-01",
+      "period_end": "2026-08-31",
+      "filed": "2026-10-23",
+      "form": "10-K",
+      "accession": "0001628280-26-067038",
+      "tag": "DepreciationDepletionAndAmortization",
+      "method": "annual_fallback",
+      "warning": "TTM not verifiable from comparable periods"
+    },
+    "income_tax_expense": {
+      "value": 368000000,
+      "unit": "USD",
+      "period_start": "2025-09-01",
+      "period_end": "2026-08-31",
+      "filed": "2026-10-23",
+      "form": "10-K",
+      "accession": "0001628280-26-067038",
+      "tag": "IncomeTaxExpenseBenefit",
+      "method": "annual_fallback",
+      "warning": "TTM not verifiable from comparable periods"
     },
     "cash": {
       "value": 1739000000,
       "unit": "USD",
+      "period_start": null,
       "period_end": "2026-08-31",
       "filed": "2026-10-23",
-      "tag": "CashAndCashEquivalentsAtCarryingValue",
       "form": "10-K",
-      "method": "latest_reported_balance"
+      "accession": "0001628280-26-067038",
+      "tag": "CashAndCashEquivalentsAtCarryingValue",
+      "method": "latest_balance"
     },
     "debt_current": {
       "value": 499000000,
       "unit": "USD",
+      "period_start": null,
       "period_end": "2026-08-31",
       "filed": "2026-10-23",
-      "tag": "LongTermDebtCurrent",
       "form": "10-K",
-      "method": "latest_reported_balance"
+      "accession": "0001628280-26-067038",
+      "tag": "LongTermDebtCurrent",
+      "method": "latest_balance"
     },
     "debt_noncurrent": {
       "value": 2880000000,
       "unit": "USD",
+      "period_start": null,
       "period_end": "2026-08-31",
       "filed": "2026-10-23",
-      "tag": "LongTermDebtNoncurrent",
       "form": "10-K",
-      "method": "latest_reported_balance"
+      "accession": "0001628280-26-067038",
+      "tag": "LongTermDebtNoncurrent",
+      "method": "latest_balance"
     },
     "shares_outstanding": {
       "value": 104475785,
       "unit": "shares",
+      "period_start": null,
       "period_end": "2026-08-31",
       "filed": "2026-10-23",
-      "tag": "CommonStockSharesOutstanding",
       "form": "10-K",
-      "method": "latest_reported_balance"
+      "accession": "0001628280-26-067038",
+      "tag": "CommonStockSharesOutstanding",
+      "method": "latest_balance"
+    },
+    "diluted_shares": {
+      "value": 106900000,
+      "unit": "shares",
+      "period_start": "2025-09-01",
+      "period_end": "2026-08-31",
+      "filed": "2026-10-23",
+      "form": "10-K",
+      "accession": "0001628280-26-067038",
+      "tag": "WeightedAverageNumberOfDilutedSharesOutstanding",
+      "method": "annual_fallback",
+      "warning": "TTM not verifiable from comparable periods"
+    },
+    "accounts_receivable": {
+      "value": 3647000000,
+      "unit": "USD",
+      "period_start": null,
+      "period_end": "2023-08-31",
+      "filed": "2023-10-20",
+      "form": "10-K",
+      "accession": "0001193125-23-259599",
+      "tag": "AccountsReceivableNetCurrent",
+      "method": "latest_balance"
+    },
+    "inventory": {
+      "value": 7413000000,
+      "unit": "USD",
+      "period_start": null,
+      "period_end": "2026-08-31",
+      "filed": "2026-10-23",
+      "form": "10-K",
+      "accession": "0001628280-26-067038",
+      "tag": "InventoryNet",
+      "method": "latest_balance"
+    },
+    "accounts_payable": {
+      "value": 14444000000,
+      "unit": "USD",
+      "period_start": null,
+      "period_end": "2026-08-31",
+      "filed": "2026-10-23",
+      "form": "10-K",
+      "accession": "0001628280-26-067038",
+      "tag": "AccountsPayableCurrent",
+      "method": "latest_balance"
     }
   },
-  "review_required": true,
+  "missing_core_fields": [],
+  "import_status": "REVIEW_REQUIRED",
+  "auto_dcf_ready": false,
   "warnings": [
-    "Operating cash flow minus CapEx is not unlevered FCFF",
-    "Shares outstanding are not necessarily diluted shares",
-    "Debt and cash require classification and date checks"
+    "Annual fallback: revenue",
+    "Annual fallback: operating_cash_flow",
+    "Annual fallback: capital_expenditure",
+    "Annual fallback: operating_income",
+    "Annual fallback: depreciation_amortization",
+    "Annual fallback: income_tax_expense",
+    "Annual fallback: diluted_shares",
+    "Out-of-range or stale period: accounts_receivable",
+    "FCFF not calculated or validated",
+    "Debt, leases and diluted shares require review",
+    "Working-capital change requires validation"
   ]
 }
