@@ -1,0 +1,201 @@
+{
+  "ticker": "XOM",
+  "company_name": "ExxonMobil Holdings Corp",
+  "sector": "Energy",
+  "currency": "USD",
+  "market": {
+    "available": true,
+    "price": 182.08,
+    "currency": "USD",
+    "timestamp": "2026-10-28T04:00:00Z",
+    "retrieved_at": "2026-10-28T23:59:39.716730+00:00",
+    "source": "Alpaca",
+    "feed": "iex",
+    "price_type": "IEX daily bar close",
+    "status": "REVIEW_REQUIRED",
+    "warnings": []
+  },
+  "financials": {
+    "revenue": {
+      "key": "revenue",
+      "label": "Revenue",
+      "available": false,
+      "value_millions": null,
+      "status": "MISSING",
+      "editable": true
+    },
+    "operating_income": {
+      "key": "operating_income",
+      "label": "Operating income",
+      "available": false,
+      "value_millions": null,
+      "status": "MISSING",
+      "editable": true
+    },
+    "operating_cash_flow": {
+      "key": "operating_cash_flow",
+      "label": "Operating cash flow",
+      "available": false,
+      "value_millions": null,
+      "status": "MISSING",
+      "editable": true
+    },
+    "capital_expenditure": {
+      "key": "capital_expenditure",
+      "label": "Capital expenditure",
+      "available": false,
+      "value_millions": null,
+      "status": "MISSING",
+      "editable": true
+    },
+    "depreciation_amortization": {
+      "key": "depreciation_amortization",
+      "label": "Depreciation and amortization",
+      "available": false,
+      "value_millions": null,
+      "status": "MISSING",
+      "editable": true
+    },
+    "income_tax_expense": {
+      "key": "income_tax_expense",
+      "label": "Income tax expense",
+      "available": false,
+      "value_millions": null,
+      "status": "MISSING",
+      "editable": true
+    },
+    "cash": {
+      "key": "cash",
+      "label": "Cash and cash equivalents",
+      "available": true,
+      "value_millions": 10588.0,
+      "original_unit": "USD",
+      "display_unit": "USD millions",
+      "period_start": null,
+      "period_end": "2026-06-30",
+      "filed": "2026-08-03",
+      "method": "latest_balance",
+      "tag": "CashAndCashEquivalentsAtCarryingValue",
+      "accession": "0000034088-26-000093",
+      "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0002115436.json",
+      "ttm_sources": null,
+      "status": "REVIEW_REQUIRED",
+      "warnings": [],
+      "editable": true
+    },
+    "debt_current": {
+      "key": "debt_current",
+      "label": "Current debt",
+      "available": false,
+      "value_millions": null,
+      "status": "MISSING",
+      "editable": true
+    },
+    "debt_noncurrent": {
+      "key": "debt_noncurrent",
+      "label": "Noncurrent debt",
+      "available": true,
+      "value_millions": 32229.0,
+      "original_unit": "USD",
+      "display_unit": "USD millions",
+      "period_start": null,
+      "period_end": "2026-06-30",
+      "filed": "2026-08-03",
+      "method": "latest_balance",
+      "tag": "LongTermDebtAndCapitalLeaseObligations",
+      "accession": "0000034088-26-000093",
+      "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0002115436.json",
+      "ttm_sources": null,
+      "status": "REVIEW_REQUIRED",
+      "warnings": [],
+      "editable": true
+    },
+    "shares_outstanding": {
+      "key": "shares_outstanding",
+      "label": "Shares outstanding",
+      "available": true,
+      "value_millions": 4112.0,
+      "original_unit": "shares",
+      "display_unit": "million shares",
+      "period_start": null,
+      "period_end": "2026-06-30",
+      "filed": "2026-08-03",
+      "method": "latest_balance",
+      "tag": "CommonStockSharesOutstanding",
+      "accession": "0000034088-26-000093",
+      "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0002115436.json",
+      "ttm_sources": null,
+      "status": "REVIEW_REQUIRED",
+      "warnings": [],
+      "editable": true
+    },
+    "diluted_shares": {
+      "key": "diluted_shares",
+      "label": "Diluted weighted-average shares",
+      "available": false,
+      "value_millions": null,
+      "status": "MISSING",
+      "editable": true
+    },
+    "accounts_receivable": {
+      "key": "accounts_receivable",
+      "label": "Accounts receivable",
+      "available": false,
+      "value_millions": null,
+      "status": "MISSING",
+      "editable": true
+    },
+    "inventory": {
+      "key": "inventory",
+      "label": "Inventory",
+      "available": false,
+      "value_millions": null,
+      "status": "MISSING",
+      "editable": true
+    },
+    "accounts_payable": {
+      "key": "accounts_payable",
+      "label": "Accounts payable",
+      "available": false,
+      "value_millions": null,
+      "status": "MISSING",
+      "editable": true
+    }
+  },
+  "missing_fields": [
+    "revenue",
+    "operating_income",
+    "operating_cash_flow",
+    "capital_expenditure",
+    "depreciation_amortization",
+    "income_tax_expense",
+    "debt_current",
+    "diluted_shares",
+    "accounts_receivable",
+    "inventory",
+    "accounts_payable"
+  ],
+  "status": "MANUAL_REVIEW_REQUIRED",
+  "automatic_dcf_enabled": false,
+  "manual_mode_enabled": true,
+  "fcff_available": false,
+  "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0002115436.json",
+  "fetched_at_utc": "2026-10-29T03:31:45.529196+00:00",
+  "warnings": [
+    "Missing: revenue",
+    "Missing: operating_cash_flow",
+    "Missing: capital_expenditure",
+    "Missing: operating_income",
+    "Missing: depreciation_amortization",
+    "Missing: income_tax_expense",
+    "Missing: debt_current",
+    "Missing: diluted_shares",
+    "Missing: accounts_receivable",
+    "Missing: inventory",
+    "Missing: accounts_payable",
+    "FCFF not calculated or validated",
+    "Debt, leases and diluted shares require review",
+    "Working-capital change requires validation",
+    "FCFF is not verified. User must supply and review the DCF cash-flow input."
+  ]
+}

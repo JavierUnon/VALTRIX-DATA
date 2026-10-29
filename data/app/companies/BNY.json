@@ -1,0 +1,410 @@
+{
+  "ticker": "BNY",
+  "company_name": "Bank of New York Mellon Corp",
+  "sector": "Financials",
+  "currency": "USD",
+  "market": {
+    "available": true,
+    "price": 148.64,
+    "currency": "USD",
+    "timestamp": "2026-10-28T04:00:00Z",
+    "retrieved_at": "2026-10-28T23:59:39.716730+00:00",
+    "source": "Alpaca",
+    "feed": "iex",
+    "price_type": "IEX daily bar close",
+    "status": "REVIEW_REQUIRED",
+    "warnings": []
+  },
+  "financials": {
+    "revenue": {
+      "key": "revenue",
+      "label": "Revenue",
+      "available": true,
+      "value_millions": 20080.0,
+      "original_unit": "USD",
+      "display_unit": "USD millions",
+      "period_start": "2025-01-01",
+      "period_end": "2025-12-31",
+      "filed": "2026-02-25",
+      "method": "annual_fallback",
+      "tag": "Revenues",
+      "accession": "0001390777-26-000033",
+      "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001390777.json",
+      "ttm_sources": null,
+      "status": "REVIEW_REQUIRED",
+      "warnings": [
+        "Annual figure, not verified TTM"
+      ],
+      "editable": true
+    },
+    "operating_income": {
+      "key": "operating_income",
+      "label": "Operating income",
+      "available": false,
+      "value_millions": null,
+      "status": "MISSING",
+      "editable": true
+    },
+    "operating_cash_flow": {
+      "key": "operating_cash_flow",
+      "label": "Operating cash flow",
+      "available": true,
+      "value_millions": 3570.0,
+      "original_unit": "USD",
+      "display_unit": "USD millions",
+      "period_start": "2026-01-01",
+      "period_end": "2026-06-30",
+      "filed": "2026-07-31",
+      "method": "TTM",
+      "tag": "NetCashProvidedByUsedInOperatingActivities",
+      "accession": "0001390777-26-000086",
+      "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001390777.json",
+      "ttm_sources": {
+        "annual": {
+          "value": 6730000000,
+          "unit": "USD",
+          "period_start": "2025-01-01",
+          "period_end": "2025-12-31",
+          "filed": "2026-02-25",
+          "form": "10-K",
+          "accession": "0001390777-26-000033",
+          "tag": "NetCashProvidedByUsedInOperatingActivities"
+        },
+        "current_ytd": {
+          "value": -551000000,
+          "unit": "USD",
+          "period_start": "2026-01-01",
+          "period_end": "2026-06-30",
+          "filed": "2026-07-31",
+          "form": "10-Q",
+          "accession": "0001390777-26-000086",
+          "tag": "NetCashProvidedByUsedInOperatingActivities"
+        },
+        "prior_ytd": {
+          "value": 2609000000,
+          "unit": "USD",
+          "period_start": "2025-01-01",
+          "period_end": "2025-06-30",
+          "filed": "2026-07-31",
+          "form": "10-Q",
+          "accession": "0001390777-26-000086",
+          "tag": "NetCashProvidedByUsedInOperatingActivities"
+        }
+      },
+      "status": "REVIEW_REQUIRED",
+      "warnings": [],
+      "editable": true
+    },
+    "capital_expenditure": {
+      "key": "capital_expenditure",
+      "label": "Capital expenditure",
+      "available": true,
+      "value_millions": 1978.0,
+      "original_unit": "USD",
+      "display_unit": "USD millions",
+      "period_start": "2026-01-01",
+      "period_end": "2026-06-30",
+      "filed": "2026-07-31",
+      "method": "TTM",
+      "tag": "PaymentsToAcquirePropertyPlantAndEquipment",
+      "accession": "0001390777-26-000086",
+      "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001390777.json",
+      "ttm_sources": {
+        "annual": {
+          "value": 1553000000,
+          "unit": "USD",
+          "period_start": "2025-01-01",
+          "period_end": "2025-12-31",
+          "filed": "2026-02-25",
+          "form": "10-K",
+          "accession": "0001390777-26-000033",
+          "tag": "PaymentsToAcquirePropertyPlantAndEquipment"
+        },
+        "current_ytd": {
+          "value": 1104000000,
+          "unit": "USD",
+          "period_start": "2026-01-01",
+          "period_end": "2026-06-30",
+          "filed": "2026-07-31",
+          "form": "10-Q",
+          "accession": "0001390777-26-000086",
+          "tag": "PaymentsToAcquirePropertyPlantAndEquipment"
+        },
+        "prior_ytd": {
+          "value": 679000000,
+          "unit": "USD",
+          "period_start": "2025-01-01",
+          "period_end": "2025-06-30",
+          "filed": "2026-07-31",
+          "form": "10-Q",
+          "accession": "0001390777-26-000086",
+          "tag": "PaymentsToAcquirePropertyPlantAndEquipment"
+        }
+      },
+      "status": "REVIEW_REQUIRED",
+      "warnings": [],
+      "editable": true
+    },
+    "depreciation_amortization": {
+      "key": "depreciation_amortization",
+      "label": "Depreciation and amortization",
+      "available": true,
+      "value_millions": 1793.0,
+      "original_unit": "USD",
+      "display_unit": "USD millions",
+      "period_start": "2026-01-01",
+      "period_end": "2026-06-30",
+      "filed": "2026-07-31",
+      "method": "TTM",
+      "tag": "DepreciationAmortizationAndAccretionNet",
+      "accession": "0001390777-26-000086",
+      "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001390777.json",
+      "ttm_sources": {
+        "annual": {
+          "value": 1852000000,
+          "unit": "USD",
+          "period_start": "2025-01-01",
+          "period_end": "2025-12-31",
+          "filed": "2026-02-25",
+          "form": "10-K",
+          "accession": "0001390777-26-000033",
+          "tag": "DepreciationAmortizationAndAccretionNet"
+        },
+        "current_ytd": {
+          "value": 813000000,
+          "unit": "USD",
+          "period_start": "2026-01-01",
+          "period_end": "2026-06-30",
+          "filed": "2026-07-31",
+          "form": "10-Q",
+          "accession": "0001390777-26-000086",
+          "tag": "DepreciationAmortizationAndAccretionNet"
+        },
+        "prior_ytd": {
+          "value": 872000000,
+          "unit": "USD",
+          "period_start": "2025-01-01",
+          "period_end": "2025-06-30",
+          "filed": "2026-07-31",
+          "form": "10-Q",
+          "accession": "0001390777-26-000086",
+          "tag": "DepreciationAmortizationAndAccretionNet"
+        }
+      },
+      "status": "REVIEW_REQUIRED",
+      "warnings": [],
+      "editable": true
+    },
+    "income_tax_expense": {
+      "key": "income_tax_expense",
+      "label": "Income tax expense",
+      "available": true,
+      "value_millions": 1632.0,
+      "original_unit": "USD",
+      "display_unit": "USD millions",
+      "period_start": "2026-01-01",
+      "period_end": "2026-06-30",
+      "filed": "2026-07-31",
+      "method": "TTM",
+      "tag": "IncomeTaxExpenseBenefit",
+      "accession": "0001390777-26-000086",
+      "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001390777.json",
+      "ttm_sources": {
+        "annual": {
+          "value": 1475000000,
+          "unit": "USD",
+          "period_start": "2025-01-01",
+          "period_end": "2025-12-31",
+          "filed": "2026-02-25",
+          "form": "10-K",
+          "accession": "0001390777-26-000033",
+          "tag": "IncomeTaxExpenseBenefit"
+        },
+        "current_ytd": {
+          "value": 861000000,
+          "unit": "USD",
+          "period_start": "2026-01-01",
+          "period_end": "2026-06-30",
+          "filed": "2026-07-31",
+          "form": "10-Q",
+          "accession": "0001390777-26-000086",
+          "tag": "IncomeTaxExpenseBenefit"
+        },
+        "prior_ytd": {
+          "value": 704000000,
+          "unit": "USD",
+          "period_start": "2025-01-01",
+          "period_end": "2025-06-30",
+          "filed": "2026-07-31",
+          "form": "10-Q",
+          "accession": "0001390777-26-000086",
+          "tag": "IncomeTaxExpenseBenefit"
+        }
+      },
+      "status": "REVIEW_REQUIRED",
+      "warnings": [],
+      "editable": true
+    },
+    "cash": {
+      "key": "cash",
+      "label": "Cash and cash equivalents",
+      "available": true,
+      "value_millions": 7483.0,
+      "original_unit": "USD",
+      "display_unit": "USD millions",
+      "period_start": null,
+      "period_end": "2026-06-30",
+      "filed": "2026-07-31",
+      "method": "latest_balance",
+      "tag": "CashAndCashEquivalentsAtCarryingValue",
+      "accession": "0001390777-26-000086",
+      "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001390777.json",
+      "ttm_sources": null,
+      "status": "REVIEW_REQUIRED",
+      "warnings": [],
+      "editable": true
+    },
+    "debt_current": {
+      "key": "debt_current",
+      "label": "Current debt",
+      "available": false,
+      "value_millions": null,
+      "status": "MISSING",
+      "editable": true
+    },
+    "debt_noncurrent": {
+      "key": "debt_noncurrent",
+      "label": "Noncurrent debt",
+      "available": false,
+      "value_millions": null,
+      "status": "MISSING",
+      "editable": true
+    },
+    "shares_outstanding": {
+      "key": "shares_outstanding",
+      "label": "Shares outstanding",
+      "available": true,
+      "value_millions": 688.236337,
+      "original_unit": "shares",
+      "display_unit": "million shares",
+      "period_start": null,
+      "period_end": "2025-12-31",
+      "filed": "2026-02-25",
+      "method": "latest_balance",
+      "tag": "CommonStockSharesOutstanding",
+      "accession": "0001390777-26-000033",
+      "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001390777.json",
+      "ttm_sources": null,
+      "status": "REVIEW_REQUIRED",
+      "warnings": [
+        "Reporting period may be stale"
+      ],
+      "editable": true
+    },
+    "diluted_shares": {
+      "key": "diluted_shares",
+      "label": "Diluted weighted-average shares",
+      "available": true,
+      "value_millions": 688.406,
+      "original_unit": "shares",
+      "display_unit": "million shares",
+      "period_start": "2026-01-01",
+      "period_end": "2026-06-30",
+      "filed": "2026-07-31",
+      "method": "TTM",
+      "tag": "WeightedAverageNumberOfDilutedSharesOutstanding",
+      "accession": "0001390777-26-000086",
+      "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001390777.json",
+      "ttm_sources": {
+        "annual": {
+          "value": 716718000,
+          "unit": "shares",
+          "period_start": "2025-01-01",
+          "period_end": "2025-12-31",
+          "filed": "2026-02-25",
+          "form": "10-K",
+          "accession": "0001390777-26-000033",
+          "tag": "WeightedAverageNumberOfDilutedSharesOutstanding"
+        },
+        "current_ytd": {
+          "value": 695514000,
+          "unit": "shares",
+          "period_start": "2026-01-01",
+          "period_end": "2026-06-30",
+          "filed": "2026-07-31",
+          "form": "10-Q",
+          "accession": "0001390777-26-000086",
+          "tag": "WeightedAverageNumberOfDilutedSharesOutstanding"
+        },
+        "prior_ytd": {
+          "value": 723826000,
+          "unit": "shares",
+          "period_start": "2025-01-01",
+          "period_end": "2025-06-30",
+          "filed": "2026-07-31",
+          "form": "10-Q",
+          "accession": "0001390777-26-000086",
+          "tag": "WeightedAverageNumberOfDilutedSharesOutstanding"
+        }
+      },
+      "status": "REVIEW_REQUIRED",
+      "warnings": [
+        "Weighted-average diluted shares need review"
+      ],
+      "editable": true
+    },
+    "accounts_receivable": {
+      "key": "accounts_receivable",
+      "label": "Accounts receivable",
+      "available": false,
+      "value_millions": null,
+      "status": "MISSING",
+      "editable": true
+    },
+    "inventory": {
+      "key": "inventory",
+      "label": "Inventory",
+      "available": false,
+      "value_millions": null,
+      "status": "MISSING",
+      "editable": true
+    },
+    "accounts_payable": {
+      "key": "accounts_payable",
+      "label": "Accounts payable",
+      "available": false,
+      "value_millions": null,
+      "status": "MISSING",
+      "editable": true
+    }
+  },
+  "missing_fields": [
+    "operating_income",
+    "debt_current",
+    "debt_noncurrent",
+    "accounts_receivable",
+    "inventory",
+    "accounts_payable"
+  ],
+  "status": "MANUAL_REVIEW_REQUIRED",
+  "automatic_dcf_enabled": false,
+  "manual_mode_enabled": true,
+  "fcff_available": false,
+  "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001390777.json",
+  "fetched_at_utc": "2026-10-29T03:30:47.334816+00:00",
+  "warnings": [
+    "Annual fallback: revenue",
+    "Missing: operating_income",
+    "Missing: debt_current",
+    "Missing: debt_noncurrent",
+    "Missing: accounts_receivable",
+    "Missing: inventory",
+    "Missing: accounts_payable",
+    "Financial sector: standard FCFF DCF unsuitable",
+    "FCFF not calculated or validated",
+    "Debt, leases and diluted shares require review",
+    "Working-capital change requires validation",
+    "Standard enterprise FCFF DCF is not appropriate without a sector-specific methodology",
+    "FCFF is not verified. User must supply and review the DCF cash-flow input."
+  ]
+}
