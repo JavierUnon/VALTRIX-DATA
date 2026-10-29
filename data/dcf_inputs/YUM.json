@@ -1,0 +1,51 @@
+{
+  "ticker": "YUM",
+  "company_name": "YUM! BRANDS, INC.",
+  "current": {
+    "accounts_receivable": null,
+    "inventory": {
+      "value": 15000000,
+      "unit": "USD",
+      "period_end": "2017-09-30",
+      "filed": "2017-11-08",
+      "tag": "InventoryNet",
+      "form": "10-Q",
+      "method": "latest_reported_balance"
+    },
+    "accounts_payable": {
+      "value": 173000000,
+      "unit": "USD",
+      "period_end": "2019-12-31",
+      "filed": "2020-02-20",
+      "tag": "AccountsPayableCurrent",
+      "form": "10-K",
+      "method": "latest_reported_balance"
+    }
+  },
+  "previous": {
+    "accounts_receivable": null,
+    "inventory": null,
+    "accounts_payable": {
+      "value": 202000000,
+      "period_end": "2018-12-31",
+      "filed": "2020-02-20",
+      "tag": "AccountsPayableCurrent",
+      "unit": "USD"
+    }
+  },
+  "simplified_change_in_nwc": null,
+  "currency": "USD",
+  "status": "REVIEW_REQUIRED",
+  "issues": [
+    "Missing current accounts_receivable",
+    "Missing previous-year inventory",
+    "Current balance dates do not match",
+    "Previous balance dates do not match"
+  ],
+  "warnings": [
+    "Simplified NWC uses receivables + inventory - payables.",
+    "Other operating assets and liabilities are excluded.",
+    "Not a verified FCFF calculation.",
+    "Not automatically suitable for the DCF engine."
+  ]
+}

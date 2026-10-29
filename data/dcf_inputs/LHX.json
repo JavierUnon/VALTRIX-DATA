@@ -1,0 +1,66 @@
+{
+  "ticker": "LHX",
+  "company_name": "L3HARRIS TECHNOLOGIES, INC.",
+  "current": {
+    "accounts_receivable": {
+      "value": 1950000000,
+      "unit": "USD",
+      "period_end": "2026-07-03",
+      "filed": "2026-07-30",
+      "tag": "AccountsReceivableNetCurrent",
+      "form": "10-Q",
+      "method": "latest_reported_balance"
+    },
+    "inventory": {
+      "value": 1272000000,
+      "unit": "USD",
+      "period_end": "2026-07-03",
+      "filed": "2026-07-30",
+      "tag": "InventoryNet",
+      "form": "10-Q",
+      "method": "latest_reported_balance"
+    },
+    "accounts_payable": {
+      "value": 2085000000,
+      "unit": "USD",
+      "period_end": "2026-07-03",
+      "filed": "2026-07-30",
+      "tag": "AccountsPayableCurrent",
+      "form": "10-Q",
+      "method": "latest_reported_balance"
+    }
+  },
+  "previous": {
+    "accounts_receivable": {
+      "value": 1437000000,
+      "period_end": "2025-06-27",
+      "filed": "2025-07-24",
+      "tag": "AccountsReceivableNetCurrent",
+      "unit": "USD"
+    },
+    "inventory": {
+      "value": 1258000000,
+      "period_end": "2025-06-27",
+      "filed": "2025-07-24",
+      "tag": "InventoryNet",
+      "unit": "USD"
+    },
+    "accounts_payable": {
+      "value": 2033000000,
+      "period_end": "2025-06-27",
+      "filed": "2025-07-24",
+      "tag": "AccountsPayableCurrent",
+      "unit": "USD"
+    }
+  },
+  "simplified_change_in_nwc": 475000000,
+  "currency": "USD",
+  "status": "PRELIMINARY",
+  "issues": [],
+  "warnings": [
+    "Simplified NWC uses receivables + inventory - payables.",
+    "Other operating assets and liabilities are excluded.",
+    "Not a verified FCFF calculation.",
+    "Not automatically suitable for the DCF engine."
+  ]
+}

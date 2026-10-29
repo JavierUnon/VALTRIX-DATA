@@ -1,0 +1,30 @@
+{
+  "ticker": "CPT",
+  "company_name": "CAMDEN PROPERTY TRUST",
+  "current": {
+    "accounts_receivable": null,
+    "inventory": null,
+    "accounts_payable": null
+  },
+  "previous": {
+    "accounts_receivable": null,
+    "inventory": null,
+    "accounts_payable": null
+  },
+  "simplified_change_in_nwc": null,
+  "currency": "USD",
+  "status": "REVIEW_REQUIRED",
+  "issues": [
+    "Missing current accounts_receivable",
+    "Missing current inventory",
+    "Missing current accounts_payable",
+    "Current balance dates do not match",
+    "Previous balance dates do not match"
+  ],
+  "warnings": [
+    "Simplified NWC uses receivables + inventory - payables.",
+    "Other operating assets and liabilities are excluded.",
+    "Not a verified FCFF calculation.",
+    "Not automatically suitable for the DCF engine."
+  ]
+}

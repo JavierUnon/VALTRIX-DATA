@@ -1,0 +1,69 @@
+{
+  "ticker": "HRL",
+  "company_name": "HORMEL FOODS CORPORATION",
+  "current": {
+    "accounts_receivable": {
+      "value": 696252000,
+      "unit": "USD",
+      "period_end": "2026-01-25",
+      "filed": "2026-02-26",
+      "tag": "AccountsReceivableNetCurrent",
+      "form": "10-Q",
+      "method": "latest_reported_balance"
+    },
+    "inventory": {
+      "value": 1801567000,
+      "unit": "USD",
+      "period_end": "2026-07-26",
+      "filed": "2026-08-27",
+      "tag": "InventoryNet",
+      "form": "10-Q",
+      "method": "latest_reported_balance"
+    },
+    "accounts_payable": {
+      "value": 677999000,
+      "unit": "USD",
+      "period_end": "2026-07-26",
+      "filed": "2026-08-27",
+      "tag": "AccountsPayableCurrent",
+      "form": "10-Q",
+      "method": "latest_reported_balance"
+    }
+  },
+  "previous": {
+    "accounts_receivable": {
+      "value": 767804000,
+      "period_end": "2025-01-26",
+      "filed": "2025-02-27",
+      "tag": "AccountsReceivableNetCurrent",
+      "unit": "USD"
+    },
+    "inventory": {
+      "value": 1821860000,
+      "period_end": "2025-07-27",
+      "filed": "2025-08-28",
+      "tag": "InventoryNet",
+      "unit": "USD"
+    },
+    "accounts_payable": {
+      "value": 707753000,
+      "period_end": "2025-07-27",
+      "filed": "2025-08-28",
+      "tag": "AccountsPayableCurrent",
+      "unit": "USD"
+    }
+  },
+  "simplified_change_in_nwc": null,
+  "currency": "USD",
+  "status": "REVIEW_REQUIRED",
+  "issues": [
+    "Current balance dates do not match",
+    "Previous balance dates do not match"
+  ],
+  "warnings": [
+    "Simplified NWC uses receivables + inventory - payables.",
+    "Other operating assets and liabilities are excluded.",
+    "Not a verified FCFF calculation.",
+    "Not automatically suitable for the DCF engine."
+  ]
+}

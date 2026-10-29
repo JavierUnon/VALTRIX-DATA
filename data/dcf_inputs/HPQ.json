@@ -1,0 +1,66 @@
+{
+  "ticker": "HPQ",
+  "company_name": "HP INC.",
+  "current": {
+    "accounts_receivable": {
+      "value": 7168000000,
+      "unit": "USD",
+      "period_end": "2026-07-31",
+      "filed": "2026-08-27",
+      "tag": "AccountsReceivableNetCurrent",
+      "form": "10-Q",
+      "method": "latest_reported_balance"
+    },
+    "inventory": {
+      "value": 10322000000,
+      "unit": "USD",
+      "period_end": "2026-07-31",
+      "filed": "2026-08-27",
+      "tag": "InventoryNet",
+      "form": "10-Q",
+      "method": "latest_reported_balance"
+    },
+    "accounts_payable": {
+      "value": 21383000000,
+      "unit": "USD",
+      "period_end": "2026-07-31",
+      "filed": "2026-08-27",
+      "tag": "AccountsPayableCurrent",
+      "form": "10-Q",
+      "method": "latest_reported_balance"
+    }
+  },
+  "previous": {
+    "accounts_receivable": {
+      "value": 5123000000,
+      "period_end": "2025-07-31",
+      "filed": "2025-08-28",
+      "tag": "AccountsReceivableNetCurrent",
+      "unit": "USD"
+    },
+    "inventory": {
+      "value": 8356000000,
+      "period_end": "2025-07-31",
+      "filed": "2025-08-28",
+      "tag": "InventoryNet",
+      "unit": "USD"
+    },
+    "accounts_payable": {
+      "value": 16985000000,
+      "period_end": "2025-07-31",
+      "filed": "2025-08-28",
+      "tag": "AccountsPayableCurrent",
+      "unit": "USD"
+    }
+  },
+  "simplified_change_in_nwc": -387000000,
+  "currency": "USD",
+  "status": "PRELIMINARY",
+  "issues": [],
+  "warnings": [
+    "Simplified NWC uses receivables + inventory - payables.",
+    "Other operating assets and liabilities are excluded.",
+    "Not a verified FCFF calculation.",
+    "Not automatically suitable for the DCF engine."
+  ]
+}

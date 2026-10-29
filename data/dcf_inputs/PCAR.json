@@ -1,0 +1,38 @@
+{
+  "ticker": "PCAR",
+  "company_name": "PACCAR Inc",
+  "current": {
+    "accounts_receivable": null,
+    "inventory": {
+      "value": 1976000000,
+      "unit": "USD",
+      "period_end": "2021-12-31",
+      "filed": "2022-10-28",
+      "tag": "InventoryNet",
+      "form": "10-Q",
+      "method": "latest_reported_balance"
+    },
+    "accounts_payable": null
+  },
+  "previous": {
+    "accounts_receivable": null,
+    "inventory": null,
+    "accounts_payable": null
+  },
+  "simplified_change_in_nwc": null,
+  "currency": "USD",
+  "status": "REVIEW_REQUIRED",
+  "issues": [
+    "Missing current accounts_receivable",
+    "Missing previous-year inventory",
+    "Missing current accounts_payable",
+    "Current balance dates do not match",
+    "Previous balance dates do not match"
+  ],
+  "warnings": [
+    "Simplified NWC uses receivables + inventory - payables.",
+    "Other operating assets and liabilities are excluded.",
+    "Not a verified FCFF calculation.",
+    "Not automatically suitable for the DCF engine."
+  ]
+}

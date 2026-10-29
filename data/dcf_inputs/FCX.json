@@ -1,0 +1,64 @@
+{
+  "ticker": "FCX",
+  "company_name": "Freeport-McMoRan Inc.",
+  "current": {
+    "accounts_receivable": {
+      "value": 716000000,
+      "unit": "USD",
+      "period_end": "2026-06-30",
+      "filed": "2026-08-06",
+      "tag": "AccountsReceivableNetCurrent",
+      "form": "10-Q",
+      "method": "latest_reported_balance"
+    },
+    "inventory": {
+      "value": 5018000000,
+      "unit": "USD",
+      "period_end": "2013-12-31",
+      "filed": "2014-02-27",
+      "tag": "InventoryNet",
+      "form": "10-K",
+      "method": "latest_reported_balance"
+    },
+    "accounts_payable": {
+      "value": 2948000000,
+      "unit": "USD",
+      "period_end": "2025-12-31",
+      "filed": "2026-02-13",
+      "tag": "AccountsPayableCurrent",
+      "form": "10-K",
+      "method": "latest_reported_balance"
+    }
+  },
+  "previous": {
+    "accounts_receivable": {
+      "value": 941000000,
+      "period_end": "2025-06-30",
+      "filed": "2025-08-08",
+      "tag": "AccountsReceivableNetCurrent",
+      "unit": "USD"
+    },
+    "inventory": null,
+    "accounts_payable": {
+      "value": 2789000000,
+      "period_end": "2024-12-31",
+      "filed": "2026-02-13",
+      "tag": "AccountsPayableCurrent",
+      "unit": "USD"
+    }
+  },
+  "simplified_change_in_nwc": null,
+  "currency": "USD",
+  "status": "REVIEW_REQUIRED",
+  "issues": [
+    "Missing previous-year inventory",
+    "Current balance dates do not match",
+    "Previous balance dates do not match"
+  ],
+  "warnings": [
+    "Simplified NWC uses receivables + inventory - payables.",
+    "Other operating assets and liabilities are excluded.",
+    "Not a verified FCFF calculation.",
+    "Not automatically suitable for the DCF engine."
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "ticker": "SBUX",
+  "company_name": "Starbucks Corporation",
+  "current": {
+    "accounts_receivable": {
+      "value": 1304200000,
+      "unit": "USD",
+      "period_end": "2026-06-28",
+      "filed": "2026-07-29",
+      "tag": "AccountsReceivableNetCurrent",
+      "form": "10-Q",
+      "method": "latest_reported_balance"
+    },
+    "inventory": {
+      "value": 2208900000,
+      "unit": "USD",
+      "period_end": "2026-06-28",
+      "filed": "2026-07-29",
+      "tag": "InventoryNet",
+      "form": "10-Q",
+      "method": "latest_reported_balance"
+    },
+    "accounts_payable": {
+      "value": 1777200000,
+      "unit": "USD",
+      "period_end": "2026-06-28",
+      "filed": "2026-07-29",
+      "tag": "AccountsPayableCurrent",
+      "form": "10-Q",
+      "method": "latest_reported_balance"
+    }
+  },
+  "previous": {
+    "accounts_receivable": {
+      "value": 1242600000,
+      "period_end": "2025-06-29",
+      "filed": "2025-07-29",
+      "tag": "AccountsReceivableNetCurrent",
+      "unit": "USD"
+    },
+    "inventory": {
+      "value": 2259200000,
+      "period_end": "2025-06-29",
+      "filed": "2025-07-29",
+      "tag": "InventoryNet",
+      "unit": "USD"
+    },
+    "accounts_payable": {
+      "value": 1888200000,
+      "period_end": "2025-06-29",
+      "filed": "2025-07-29",
+      "tag": "AccountsPayableCurrent",
+      "unit": "USD"
+    }
+  },
+  "simplified_change_in_nwc": 122300000,
+  "currency": "USD",
+  "status": "PRELIMINARY",
+  "issues": [],
+  "warnings": [
+    "Simplified NWC uses receivables + inventory - payables.",
+    "Other operating assets and liabilities are excluded.",
+    "Not a verified FCFF calculation.",
+    "Not automatically suitable for the DCF engine."
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "ticker": "TSN",
+  "company_name": "TYSON FOODS, INC.",
+  "current": {
+    "accounts_receivable": {
+      "value": 2457000000,
+      "unit": "USD",
+      "period_end": "2026-06-27",
+      "filed": "2026-08-03",
+      "tag": "AccountsReceivableNetCurrent",
+      "form": "10-Q",
+      "method": "latest_reported_balance"
+    },
+    "inventory": {
+      "value": 5840000000,
+      "unit": "USD",
+      "period_end": "2026-06-27",
+      "filed": "2026-08-03",
+      "tag": "InventoryNet",
+      "form": "10-Q",
+      "method": "latest_reported_balance"
+    },
+    "accounts_payable": {
+      "value": 2761000000,
+      "unit": "USD",
+      "period_end": "2026-06-27",
+      "filed": "2026-08-03",
+      "tag": "AccountsPayableCurrent",
+      "form": "10-Q",
+      "method": "latest_reported_balance"
+    }
+  },
+  "previous": {
+    "accounts_receivable": {
+      "value": 2454000000,
+      "period_end": "2025-06-28",
+      "filed": "2025-08-04",
+      "tag": "AccountsReceivableNetCurrent",
+      "unit": "USD"
+    },
+    "inventory": {
+      "value": 5436000000,
+      "period_end": "2025-06-28",
+      "filed": "2025-08-04",
+      "tag": "InventoryNet",
+      "unit": "USD"
+    },
+    "accounts_payable": {
+      "value": 2373000000,
+      "period_end": "2025-06-28",
+      "filed": "2025-08-04",
+      "tag": "AccountsPayableCurrent",
+      "unit": "USD"
+    }
+  },
+  "simplified_change_in_nwc": 19000000,
+  "currency": "USD",
+  "status": "PRELIMINARY",
+  "issues": [],
+  "warnings": [
+    "Simplified NWC uses receivables + inventory - payables.",
+    "Other operating assets and liabilities are excluded.",
+    "Not a verified FCFF calculation.",
+    "Not automatically suitable for the DCF engine."
+  ]
+}

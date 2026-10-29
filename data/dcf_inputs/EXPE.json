@@ -1,0 +1,56 @@
+{
+  "ticker": "EXPE",
+  "company_name": "EXPEDIA GROUP, INC.",
+  "current": {
+    "accounts_receivable": {
+      "value": 5780000000,
+      "unit": "USD",
+      "period_end": "2026-06-30",
+      "filed": "2026-08-06",
+      "tag": "AccountsReceivableNetCurrent",
+      "form": "10-Q",
+      "method": "latest_reported_balance"
+    },
+    "inventory": null,
+    "accounts_payable": {
+      "value": 414508000,
+      "unit": "USD",
+      "period_end": "2013-06-30",
+      "filed": "2013-07-26",
+      "tag": "AccountsPayableCurrent",
+      "form": "10-Q",
+      "method": "latest_reported_balance"
+    }
+  },
+  "previous": {
+    "accounts_receivable": {
+      "value": 4949000000,
+      "period_end": "2025-06-30",
+      "filed": "2025-08-08",
+      "tag": "AccountsReceivableNetCurrent",
+      "unit": "USD"
+    },
+    "inventory": null,
+    "accounts_payable": {
+      "value": 277042000,
+      "period_end": "2012-06-30",
+      "filed": "2012-07-27",
+      "tag": "AccountsPayableCurrent",
+      "unit": "USD"
+    }
+  },
+  "simplified_change_in_nwc": null,
+  "currency": "USD",
+  "status": "REVIEW_REQUIRED",
+  "issues": [
+    "Missing current inventory",
+    "Current balance dates do not match",
+    "Previous balance dates do not match"
+  ],
+  "warnings": [
+    "Simplified NWC uses receivables + inventory - payables.",
+    "Other operating assets and liabilities are excluded.",
+    "Not a verified FCFF calculation.",
+    "Not automatically suitable for the DCF engine."
+  ]
+}

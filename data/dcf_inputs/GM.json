@@ -1,0 +1,66 @@
+{
+  "ticker": "GM",
+  "company_name": "GENERAL MOTORS COMPANY",
+  "current": {
+    "accounts_receivable": {
+      "value": 17138000000,
+      "unit": "USD",
+      "period_end": "2026-09-30",
+      "filed": "2026-10-20",
+      "tag": "AccountsReceivableNetCurrent",
+      "form": "10-Q",
+      "method": "latest_reported_balance"
+    },
+    "inventory": {
+      "value": 15640000000,
+      "unit": "USD",
+      "period_end": "2026-09-30",
+      "filed": "2026-10-20",
+      "tag": "InventoryNet",
+      "form": "10-Q",
+      "method": "latest_reported_balance"
+    },
+    "accounts_payable": {
+      "value": 29764000000,
+      "unit": "USD",
+      "period_end": "2026-09-30",
+      "filed": "2026-10-20",
+      "tag": "AccountsPayableCurrent",
+      "form": "10-Q",
+      "method": "latest_reported_balance"
+    }
+  },
+  "previous": {
+    "accounts_receivable": {
+      "value": 17125000000,
+      "period_end": "2025-09-30",
+      "filed": "2025-10-21",
+      "tag": "AccountsReceivableNetCurrent",
+      "unit": "USD"
+    },
+    "inventory": {
+      "value": 15318000000,
+      "period_end": "2025-09-30",
+      "filed": "2025-10-21",
+      "tag": "InventoryNet",
+      "unit": "USD"
+    },
+    "accounts_payable": {
+      "value": 27317000000,
+      "period_end": "2025-09-30",
+      "filed": "2025-10-21",
+      "tag": "AccountsPayableCurrent",
+      "unit": "USD"
+    }
+  },
+  "simplified_change_in_nwc": -2112000000,
+  "currency": "USD",
+  "status": "PRELIMINARY",
+  "issues": [],
+  "warnings": [
+    "Simplified NWC uses receivables + inventory - payables.",
+    "Other operating assets and liabilities are excluded.",
+    "Not a verified FCFF calculation.",
+    "Not automatically suitable for the DCF engine."
+  ]
+}

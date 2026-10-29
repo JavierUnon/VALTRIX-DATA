@@ -1,0 +1,43 @@
+{
+  "ticker": "FIS",
+  "company_name": "Fidelity National Information Services, Inc.",
+  "current": {
+    "accounts_receivable": {
+      "value": 1738000000,
+      "unit": "USD",
+      "period_end": "2023-12-31",
+      "filed": "2025-02-13",
+      "tag": "AccountsReceivableNetCurrent",
+      "form": "10-K",
+      "method": "latest_reported_balance"
+    },
+    "inventory": null,
+    "accounts_payable": null
+  },
+  "previous": {
+    "accounts_receivable": {
+      "value": 1834000000,
+      "period_end": "2022-12-31",
+      "filed": "2024-02-26",
+      "tag": "AccountsReceivableNetCurrent",
+      "unit": "USD"
+    },
+    "inventory": null,
+    "accounts_payable": null
+  },
+  "simplified_change_in_nwc": null,
+  "currency": "USD",
+  "status": "REVIEW_REQUIRED",
+  "issues": [
+    "Missing current inventory",
+    "Missing current accounts_payable",
+    "Current balance dates do not match",
+    "Previous balance dates do not match"
+  ],
+  "warnings": [
+    "Simplified NWC uses receivables + inventory - payables.",
+    "Other operating assets and liabilities are excluded.",
+    "Not a verified FCFF calculation.",
+    "Not automatically suitable for the DCF engine."
+  ]
+}

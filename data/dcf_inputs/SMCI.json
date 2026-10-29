@@ -1,0 +1,66 @@
+{
+  "ticker": "SMCI",
+  "company_name": "Super Micro Computer, Inc.",
+  "current": {
+    "accounts_receivable": {
+      "value": 6125414000,
+      "unit": "USD",
+      "period_end": "2026-06-30",
+      "filed": "2026-08-31",
+      "tag": "AccountsReceivableNetCurrent",
+      "form": "10-K",
+      "method": "latest_reported_balance"
+    },
+    "inventory": {
+      "value": 12895949000,
+      "unit": "USD",
+      "period_end": "2026-06-30",
+      "filed": "2026-08-31",
+      "tag": "InventoryNet",
+      "form": "10-K",
+      "method": "latest_reported_balance"
+    },
+    "accounts_payable": {
+      "value": 2247003000,
+      "unit": "USD",
+      "period_end": "2026-06-30",
+      "filed": "2026-08-31",
+      "tag": "AccountsPayableCurrent",
+      "form": "10-K",
+      "method": "latest_reported_balance"
+    }
+  },
+  "previous": {
+    "accounts_receivable": {
+      "value": 2203942000,
+      "period_end": "2025-06-30",
+      "filed": "2026-08-31",
+      "tag": "AccountsReceivableNetCurrent",
+      "unit": "USD"
+    },
+    "inventory": {
+      "value": 4680375000,
+      "period_end": "2025-06-30",
+      "filed": "2026-08-31",
+      "tag": "InventoryNet",
+      "unit": "USD"
+    },
+    "accounts_payable": {
+      "value": 1281977000,
+      "period_end": "2025-06-30",
+      "filed": "2026-08-31",
+      "tag": "AccountsPayableCurrent",
+      "unit": "USD"
+    }
+  },
+  "simplified_change_in_nwc": 11172020000,
+  "currency": "USD",
+  "status": "PRELIMINARY",
+  "issues": [],
+  "warnings": [
+    "Simplified NWC uses receivables + inventory - payables.",
+    "Other operating assets and liabilities are excluded.",
+    "Not a verified FCFF calculation.",
+    "Not automatically suitable for the DCF engine."
+  ]
+}

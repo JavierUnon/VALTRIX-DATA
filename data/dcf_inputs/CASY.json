@@ -1,0 +1,56 @@
+{
+  "ticker": "CASY",
+  "company_name": "CASEY\u2019S GENERAL STORES, INC.",
+  "current": {
+    "accounts_receivable": null,
+    "inventory": {
+      "value": 557968000,
+      "unit": "USD",
+      "period_end": "2026-07-31",
+      "filed": "2026-09-08",
+      "tag": "InventoryNet",
+      "form": "10-Q",
+      "method": "latest_reported_balance"
+    },
+    "accounts_payable": {
+      "value": 853659000,
+      "unit": "USD",
+      "period_end": "2026-07-31",
+      "filed": "2026-09-08",
+      "tag": "AccountsPayableCurrent",
+      "form": "10-Q",
+      "method": "latest_reported_balance"
+    }
+  },
+  "previous": {
+    "accounts_receivable": null,
+    "inventory": {
+      "value": 478880000,
+      "period_end": "2025-07-31",
+      "filed": "2025-09-08",
+      "tag": "InventoryNet",
+      "unit": "USD"
+    },
+    "accounts_payable": {
+      "value": 673944000,
+      "period_end": "2025-07-31",
+      "filed": "2025-09-08",
+      "tag": "AccountsPayableCurrent",
+      "unit": "USD"
+    }
+  },
+  "simplified_change_in_nwc": null,
+  "currency": "USD",
+  "status": "REVIEW_REQUIRED",
+  "issues": [
+    "Missing current accounts_receivable",
+    "Current balance dates do not match",
+    "Previous balance dates do not match"
+  ],
+  "warnings": [
+    "Simplified NWC uses receivables + inventory - payables.",
+    "Other operating assets and liabilities are excluded.",
+    "Not a verified FCFF calculation.",
+    "Not automatically suitable for the DCF engine."
+  ]
+}

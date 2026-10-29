@@ -1,0 +1,51 @@
+{
+  "ticker": "WTW",
+  "company_name": "WILLIS TOWERS WATSON PLC",
+  "current": {
+    "accounts_receivable": {
+      "value": 2603000000,
+      "unit": "USD",
+      "period_end": "2026-06-30",
+      "filed": "2026-07-30",
+      "tag": "AccountsReceivableNetCurrent",
+      "form": "10-Q",
+      "method": "latest_reported_balance"
+    },
+    "inventory": null,
+    "accounts_payable": {
+      "value": 145000000,
+      "unit": "USD",
+      "period_end": "2019-09-30",
+      "filed": "2019-11-01",
+      "tag": "AccountsPayableCurrent",
+      "form": "10-Q",
+      "method": "latest_reported_balance"
+    }
+  },
+  "previous": {
+    "accounts_receivable": {
+      "value": 2364000000,
+      "period_end": "2025-06-30",
+      "filed": "2025-08-01",
+      "tag": "AccountsReceivableNetCurrent",
+      "unit": "USD"
+    },
+    "inventory": null,
+    "accounts_payable": null
+  },
+  "simplified_change_in_nwc": null,
+  "currency": "USD",
+  "status": "REVIEW_REQUIRED",
+  "issues": [
+    "Missing current inventory",
+    "Missing previous-year accounts_payable",
+    "Current balance dates do not match",
+    "Previous balance dates do not match"
+  ],
+  "warnings": [
+    "Simplified NWC uses receivables + inventory - payables.",
+    "Other operating assets and liabilities are excluded.",
+    "Not a verified FCFF calculation.",
+    "Not automatically suitable for the DCF engine."
+  ]
+}

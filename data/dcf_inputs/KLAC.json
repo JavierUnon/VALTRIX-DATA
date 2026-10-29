@@ -1,0 +1,66 @@
+{
+  "ticker": "KLAC",
+  "company_name": "KLA Corporation",
+  "current": {
+    "accounts_receivable": {
+      "value": 2889208000,
+      "unit": "USD",
+      "period_end": "2026-06-30",
+      "filed": "2026-08-06",
+      "tag": "AccountsReceivableNetCurrent",
+      "form": "10-K",
+      "method": "latest_reported_balance"
+    },
+    "inventory": {
+      "value": 3648538000,
+      "unit": "USD",
+      "period_end": "2026-06-30",
+      "filed": "2026-08-06",
+      "tag": "InventoryNet",
+      "form": "10-K",
+      "method": "latest_reported_balance"
+    },
+    "accounts_payable": {
+      "value": 623668000,
+      "unit": "USD",
+      "period_end": "2026-06-30",
+      "filed": "2026-08-06",
+      "tag": "AccountsPayableCurrent",
+      "form": "10-K",
+      "method": "latest_reported_balance"
+    }
+  },
+  "previous": {
+    "accounts_receivable": {
+      "value": 2263915000,
+      "period_end": "2025-06-30",
+      "filed": "2026-08-06",
+      "tag": "AccountsReceivableNetCurrent",
+      "unit": "USD"
+    },
+    "inventory": {
+      "value": 3212149000,
+      "period_end": "2025-06-30",
+      "filed": "2026-08-06",
+      "tag": "InventoryNet",
+      "unit": "USD"
+    },
+    "accounts_payable": {
+      "value": 458509000,
+      "period_end": "2025-06-30",
+      "filed": "2026-08-06",
+      "tag": "AccountsPayableCurrent",
+      "unit": "USD"
+    }
+  },
+  "simplified_change_in_nwc": 896523000,
+  "currency": "USD",
+  "status": "PRELIMINARY",
+  "issues": [],
+  "warnings": [
+    "Simplified NWC uses receivables + inventory - payables.",
+    "Other operating assets and liabilities are excluded.",
+    "Not a verified FCFF calculation.",
+    "Not automatically suitable for the DCF engine."
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "ticker": "CME",
+  "company_name": "CME GROUP INC.",
+  "current": {
+    "accounts_receivable": {
+      "value": 788100000,
+      "unit": "USD",
+      "period_end": "2026-09-30",
+      "filed": "2026-10-23",
+      "tag": "AccountsReceivableNetCurrent",
+      "form": "10-Q",
+      "method": "latest_reported_balance"
+    },
+    "inventory": null,
+    "accounts_payable": {
+      "value": 67700000,
+      "unit": "USD",
+      "period_end": "2026-09-30",
+      "filed": "2026-10-23",
+      "tag": "AccountsPayableCurrent",
+      "form": "10-Q",
+      "method": "latest_reported_balance"
+    }
+  },
+  "previous": {
+    "accounts_receivable": {
+      "value": 642900000,
+      "period_end": "2025-09-30",
+      "filed": "2025-10-24",
+      "tag": "AccountsReceivableNetCurrent",
+      "unit": "USD"
+    },
+    "inventory": null,
+    "accounts_payable": {
+      "value": 74900000,
+      "period_end": "2025-09-30",
+      "filed": "2025-10-24",
+      "tag": "AccountsPayableCurrent",
+      "unit": "USD"
+    }
+  },
+  "simplified_change_in_nwc": null,
+  "currency": "USD",
+  "status": "REVIEW_REQUIRED",
+  "issues": [
+    "Missing current inventory",
+    "Current balance dates do not match",
+    "Previous balance dates do not match"
+  ],
+  "warnings": [
+    "Simplified NWC uses receivables + inventory - payables.",
+    "Other operating assets and liabilities are excluded.",
+    "Not a verified FCFF calculation.",
+    "Not automatically suitable for the DCF engine."
+  ]
+}

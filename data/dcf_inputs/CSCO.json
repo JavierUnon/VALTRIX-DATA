@@ -1,0 +1,66 @@
+{
+  "ticker": "CSCO",
+  "company_name": "CISCO SYSTEMS, INC.",
+  "current": {
+    "accounts_receivable": {
+      "value": 7470000000,
+      "unit": "USD",
+      "period_end": "2026-07-25",
+      "filed": "2026-09-02",
+      "tag": "AccountsReceivableNetCurrent",
+      "form": "10-K",
+      "method": "latest_reported_balance"
+    },
+    "inventory": {
+      "value": 5694000000,
+      "unit": "USD",
+      "period_end": "2026-07-25",
+      "filed": "2026-09-02",
+      "tag": "InventoryNet",
+      "form": "10-K",
+      "method": "latest_reported_balance"
+    },
+    "accounts_payable": {
+      "value": 3366000000,
+      "unit": "USD",
+      "period_end": "2026-07-25",
+      "filed": "2026-09-02",
+      "tag": "AccountsPayableCurrent",
+      "form": "10-K",
+      "method": "latest_reported_balance"
+    }
+  },
+  "previous": {
+    "accounts_receivable": {
+      "value": 6701000000,
+      "period_end": "2025-07-26",
+      "filed": "2026-09-02",
+      "tag": "AccountsReceivableNetCurrent",
+      "unit": "USD"
+    },
+    "inventory": {
+      "value": 3164000000,
+      "period_end": "2025-07-26",
+      "filed": "2026-09-02",
+      "tag": "InventoryNet",
+      "unit": "USD"
+    },
+    "accounts_payable": {
+      "value": 2528000000,
+      "period_end": "2025-07-26",
+      "filed": "2026-09-02",
+      "tag": "AccountsPayableCurrent",
+      "unit": "USD"
+    }
+  },
+  "simplified_change_in_nwc": 2461000000,
+  "currency": "USD",
+  "status": "PRELIMINARY",
+  "issues": [],
+  "warnings": [
+    "Simplified NWC uses receivables + inventory - payables.",
+    "Other operating assets and liabilities are excluded.",
+    "Not a verified FCFF calculation.",
+    "Not automatically suitable for the DCF engine."
+  ]
+}

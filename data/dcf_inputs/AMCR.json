@@ -1,0 +1,69 @@
+{
+  "ticker": "AMCR",
+  "company_name": "AMCOR PLC",
+  "current": {
+    "accounts_receivable": {
+      "value": 3639000000,
+      "unit": "USD",
+      "period_end": "2026-06-30",
+      "filed": "2026-08-14",
+      "tag": "AccountsReceivableNetCurrent",
+      "form": "10-K",
+      "method": "latest_reported_balance"
+    },
+    "inventory": {
+      "value": 2439000000,
+      "unit": "USD",
+      "period_end": "2022-06-30",
+      "filed": "2022-08-18",
+      "tag": "InventoryNet",
+      "form": "10-K",
+      "method": "latest_reported_balance"
+    },
+    "accounts_payable": {
+      "value": 4021000000,
+      "unit": "USD",
+      "period_end": "2026-06-30",
+      "filed": "2026-08-14",
+      "tag": "AccountsPayableCurrent",
+      "form": "10-K",
+      "method": "latest_reported_balance"
+    }
+  },
+  "previous": {
+    "accounts_receivable": {
+      "value": 3426000000,
+      "period_end": "2025-06-30",
+      "filed": "2026-08-14",
+      "tag": "AccountsReceivableNetCurrent",
+      "unit": "USD"
+    },
+    "inventory": {
+      "value": 1991000000,
+      "period_end": "2021-06-30",
+      "filed": "2022-08-18",
+      "tag": "InventoryNet",
+      "unit": "USD"
+    },
+    "accounts_payable": {
+      "value": 3490000000,
+      "period_end": "2025-06-30",
+      "filed": "2026-08-14",
+      "tag": "AccountsPayableCurrent",
+      "unit": "USD"
+    }
+  },
+  "simplified_change_in_nwc": null,
+  "currency": "USD",
+  "status": "REVIEW_REQUIRED",
+  "issues": [
+    "Current balance dates do not match",
+    "Previous balance dates do not match"
+  ],
+  "warnings": [
+    "Simplified NWC uses receivables + inventory - payables.",
+    "Other operating assets and liabilities are excluded.",
+    "Not a verified FCFF calculation.",
+    "Not automatically suitable for the DCF engine."
+  ]
+}

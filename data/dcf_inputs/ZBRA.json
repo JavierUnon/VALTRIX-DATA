@@ -1,0 +1,66 @@
+{
+  "ticker": "ZBRA",
+  "company_name": "Zebra Technologies Corporation",
+  "current": {
+    "accounts_receivable": {
+      "value": 990000000,
+      "unit": "USD",
+      "period_end": "2026-07-04",
+      "filed": "2026-08-04",
+      "tag": "AccountsReceivableNetCurrent",
+      "form": "10-Q",
+      "method": "latest_reported_balance"
+    },
+    "inventory": {
+      "value": 733000000,
+      "unit": "USD",
+      "period_end": "2026-07-04",
+      "filed": "2026-08-04",
+      "tag": "InventoryNet",
+      "form": "10-Q",
+      "method": "latest_reported_balance"
+    },
+    "accounts_payable": {
+      "value": 738000000,
+      "unit": "USD",
+      "period_end": "2026-07-04",
+      "filed": "2026-08-04",
+      "tag": "AccountsPayableCurrent",
+      "form": "10-Q",
+      "method": "latest_reported_balance"
+    }
+  },
+  "previous": {
+    "accounts_receivable": {
+      "value": 634000000,
+      "period_end": "2025-06-28",
+      "filed": "2025-08-05",
+      "tag": "AccountsReceivableNetCurrent",
+      "unit": "USD"
+    },
+    "inventory": {
+      "value": 686000000,
+      "period_end": "2025-06-28",
+      "filed": "2025-08-05",
+      "tag": "InventoryNet",
+      "unit": "USD"
+    },
+    "accounts_payable": {
+      "value": 569000000,
+      "period_end": "2025-06-28",
+      "filed": "2025-08-05",
+      "tag": "AccountsPayableCurrent",
+      "unit": "USD"
+    }
+  },
+  "simplified_change_in_nwc": 234000000,
+  "currency": "USD",
+  "status": "PRELIMINARY",
+  "issues": [],
+  "warnings": [
+    "Simplified NWC uses receivables + inventory - payables.",
+    "Other operating assets and liabilities are excluded.",
+    "Not a verified FCFF calculation.",
+    "Not automatically suitable for the DCF engine."
+  ]
+}

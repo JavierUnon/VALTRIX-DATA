@@ -1,0 +1,56 @@
+{
+  "ticker": "SWK",
+  "company_name": "STANLEY BLACK\u00a0& DECKER, INC.",
+  "current": {
+    "accounts_receivable": null,
+    "inventory": {
+      "value": 3896500000,
+      "unit": "USD",
+      "period_end": "2026-07-04",
+      "filed": "2026-07-29",
+      "tag": "InventoryNet",
+      "form": "10-Q",
+      "method": "latest_reported_balance"
+    },
+    "accounts_payable": {
+      "value": 2422300000,
+      "unit": "USD",
+      "period_end": "2026-07-04",
+      "filed": "2026-07-29",
+      "tag": "AccountsPayableCurrent",
+      "form": "10-Q",
+      "method": "latest_reported_balance"
+    }
+  },
+  "previous": {
+    "accounts_receivable": null,
+    "inventory": {
+      "value": 4639000000,
+      "period_end": "2025-06-28",
+      "filed": "2025-07-29",
+      "tag": "InventoryNet",
+      "unit": "USD"
+    },
+    "accounts_payable": {
+      "value": 2495400000,
+      "period_end": "2025-06-28",
+      "filed": "2025-07-29",
+      "tag": "AccountsPayableCurrent",
+      "unit": "USD"
+    }
+  },
+  "simplified_change_in_nwc": null,
+  "currency": "USD",
+  "status": "REVIEW_REQUIRED",
+  "issues": [
+    "Missing current accounts_receivable",
+    "Current balance dates do not match",
+    "Previous balance dates do not match"
+  ],
+  "warnings": [
+    "Simplified NWC uses receivables + inventory - payables.",
+    "Other operating assets and liabilities are excluded.",
+    "Not a verified FCFF calculation.",
+    "Not automatically suitable for the DCF engine."
+  ]
+}

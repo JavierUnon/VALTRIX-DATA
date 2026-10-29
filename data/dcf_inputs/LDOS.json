@@ -1,0 +1,69 @@
+{
+  "ticker": "LDOS",
+  "company_name": "Leidos Holdings, Inc.",
+  "current": {
+    "accounts_receivable": {
+      "value": 2708000000,
+      "unit": "USD",
+      "period_end": "2026-01-02",
+      "filed": "2026-02-17",
+      "tag": "AccountsReceivableNetCurrent",
+      "form": "10-K",
+      "method": "latest_reported_balance"
+    },
+    "inventory": {
+      "value": 94000000,
+      "unit": "USD",
+      "period_end": "2026-07-03",
+      "filed": "2026-08-04",
+      "tag": "InventoryNet",
+      "form": "10-Q",
+      "method": "latest_reported_balance"
+    },
+    "accounts_payable": {
+      "value": 627000000,
+      "unit": "USD",
+      "period_end": "2026-01-02",
+      "filed": "2026-02-17",
+      "tag": "AccountsPayableCurrent",
+      "form": "10-K",
+      "method": "latest_reported_balance"
+    }
+  },
+  "previous": {
+    "accounts_receivable": {
+      "value": 2645000000,
+      "period_end": "2025-01-03",
+      "filed": "2026-02-17",
+      "tag": "AccountsReceivableNetCurrent",
+      "unit": "USD"
+    },
+    "inventory": {
+      "value": 364000000,
+      "period_end": "2025-07-04",
+      "filed": "2025-08-05",
+      "tag": "InventoryNet",
+      "unit": "USD"
+    },
+    "accounts_payable": {
+      "value": 611000000,
+      "period_end": "2025-01-03",
+      "filed": "2026-02-17",
+      "tag": "AccountsPayableCurrent",
+      "unit": "USD"
+    }
+  },
+  "simplified_change_in_nwc": null,
+  "currency": "USD",
+  "status": "REVIEW_REQUIRED",
+  "issues": [
+    "Current balance dates do not match",
+    "Previous balance dates do not match"
+  ],
+  "warnings": [
+    "Simplified NWC uses receivables + inventory - payables.",
+    "Other operating assets and liabilities are excluded.",
+    "Not a verified FCFF calculation.",
+    "Not automatically suitable for the DCF engine."
+  ]
+}

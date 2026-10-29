@@ -1,0 +1,66 @@
+{
+  "ticker": "INTC",
+  "company_name": "INTEL CORP",
+  "current": {
+    "accounts_receivable": {
+      "value": 4033000000,
+      "unit": "USD",
+      "period_end": "2026-06-27",
+      "filed": "2026-07-24",
+      "tag": "AccountsReceivableNetCurrent",
+      "form": "10-Q",
+      "method": "latest_reported_balance"
+    },
+    "inventory": {
+      "value": 12492000000,
+      "unit": "USD",
+      "period_end": "2026-06-27",
+      "filed": "2026-07-24",
+      "tag": "InventoryNet",
+      "form": "10-Q",
+      "method": "latest_reported_balance"
+    },
+    "accounts_payable": {
+      "value": 8756000000,
+      "unit": "USD",
+      "period_end": "2026-06-27",
+      "filed": "2026-07-24",
+      "tag": "AccountsPayableCurrent",
+      "form": "10-Q",
+      "method": "latest_reported_balance"
+    }
+  },
+  "previous": {
+    "accounts_receivable": {
+      "value": 2360000000,
+      "period_end": "2025-06-28",
+      "filed": "2025-07-24",
+      "tag": "AccountsReceivableNetCurrent",
+      "unit": "USD"
+    },
+    "inventory": {
+      "value": 11377000000,
+      "period_end": "2025-06-28",
+      "filed": "2025-07-24",
+      "tag": "InventoryNet",
+      "unit": "USD"
+    },
+    "accounts_payable": {
+      "value": 10666000000,
+      "period_end": "2025-06-28",
+      "filed": "2025-07-24",
+      "tag": "AccountsPayableCurrent",
+      "unit": "USD"
+    }
+  },
+  "simplified_change_in_nwc": 4698000000,
+  "currency": "USD",
+  "status": "PRELIMINARY",
+  "issues": [],
+  "warnings": [
+    "Simplified NWC uses receivables + inventory - payables.",
+    "Other operating assets and liabilities are excluded.",
+    "Not a verified FCFF calculation.",
+    "Not automatically suitable for the DCF engine."
+  ]
+}

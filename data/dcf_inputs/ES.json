@@ -1,0 +1,56 @@
+{
+  "ticker": "ES",
+  "company_name": "EVERSOURCE ENERGY",
+  "current": {
+    "accounts_receivable": {
+      "value": 1723357000,
+      "unit": "USD",
+      "period_end": "2026-06-30",
+      "filed": "2026-08-03",
+      "tag": "AccountsReceivableNetCurrent",
+      "form": "10-Q",
+      "method": "latest_reported_balance"
+    },
+    "inventory": null,
+    "accounts_payable": {
+      "value": 1605121000,
+      "unit": "USD",
+      "period_end": "2026-06-30",
+      "filed": "2026-08-03",
+      "tag": "AccountsPayableCurrent",
+      "form": "10-Q",
+      "method": "latest_reported_balance"
+    }
+  },
+  "previous": {
+    "accounts_receivable": {
+      "value": 1711940000,
+      "period_end": "2025-06-30",
+      "filed": "2025-08-04",
+      "tag": "AccountsReceivableNetCurrent",
+      "unit": "USD"
+    },
+    "inventory": null,
+    "accounts_payable": {
+      "value": 1512911000,
+      "period_end": "2025-06-30",
+      "filed": "2025-08-04",
+      "tag": "AccountsPayableCurrent",
+      "unit": "USD"
+    }
+  },
+  "simplified_change_in_nwc": null,
+  "currency": "USD",
+  "status": "REVIEW_REQUIRED",
+  "issues": [
+    "Missing current inventory",
+    "Current balance dates do not match",
+    "Previous balance dates do not match"
+  ],
+  "warnings": [
+    "Simplified NWC uses receivables + inventory - payables.",
+    "Other operating assets and liabilities are excluded.",
+    "Not a verified FCFF calculation.",
+    "Not automatically suitable for the DCF engine."
+  ]
+}

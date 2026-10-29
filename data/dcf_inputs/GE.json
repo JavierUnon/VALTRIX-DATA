@@ -1,0 +1,69 @@
+{
+  "ticker": "GE",
+  "company_name": "GENERAL ELECTRIC COMPANY",
+  "current": {
+    "accounts_receivable": {
+      "value": 14874000000,
+      "unit": "USD",
+      "period_end": "2021-09-30",
+      "filed": "2021-10-26",
+      "tag": "AccountsReceivableNetCurrent",
+      "form": "10-Q",
+      "method": "latest_reported_balance"
+    },
+    "inventory": {
+      "value": 12743000000,
+      "unit": "USD",
+      "period_end": "2026-09-30",
+      "filed": "2026-10-20",
+      "tag": "InventoryNet",
+      "form": "10-Q",
+      "method": "latest_reported_balance"
+    },
+    "accounts_payable": {
+      "value": 10983000000,
+      "unit": "USD",
+      "period_end": "2026-09-30",
+      "filed": "2026-10-20",
+      "tag": "AccountsPayableCurrent",
+      "form": "10-Q",
+      "method": "latest_reported_balance"
+    }
+  },
+  "previous": {
+    "accounts_receivable": {
+      "value": 17302000000,
+      "period_end": "2020-09-30",
+      "filed": "2020-10-28",
+      "tag": "AccountsReceivableNetCurrent",
+      "unit": "USD"
+    },
+    "inventory": {
+      "value": 11667000000,
+      "period_end": "2025-09-30",
+      "filed": "2025-10-21",
+      "tag": "InventoryNet",
+      "unit": "USD"
+    },
+    "accounts_payable": {
+      "value": 9485000000,
+      "period_end": "2025-09-30",
+      "filed": "2025-10-21",
+      "tag": "AccountsPayableCurrent",
+      "unit": "USD"
+    }
+  },
+  "simplified_change_in_nwc": null,
+  "currency": "USD",
+  "status": "REVIEW_REQUIRED",
+  "issues": [
+    "Current balance dates do not match",
+    "Previous balance dates do not match"
+  ],
+  "warnings": [
+    "Simplified NWC uses receivables + inventory - payables.",
+    "Other operating assets and liabilities are excluded.",
+    "Not a verified FCFF calculation.",
+    "Not automatically suitable for the DCF engine."
+  ]
+}

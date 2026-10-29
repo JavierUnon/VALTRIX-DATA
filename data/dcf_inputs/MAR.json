@@ -1,0 +1,56 @@
+{
+  "ticker": "MAR",
+  "company_name": "MARRIOTT INTERNATIONAL INC /MD/",
+  "current": {
+    "accounts_receivable": null,
+    "inventory": {
+      "value": 11000000,
+      "unit": "USD",
+      "period_end": "2013-03-31",
+      "filed": "2013-05-02",
+      "tag": "InventoryNet",
+      "form": "10-Q",
+      "method": "latest_reported_balance"
+    },
+    "accounts_payable": {
+      "value": 607000000,
+      "unit": "USD",
+      "period_end": "2011-06-17",
+      "filed": "2011-07-15",
+      "tag": "AccountsPayableCurrent",
+      "form": "10-Q",
+      "method": "latest_reported_balance"
+    }
+  },
+  "previous": {
+    "accounts_receivable": null,
+    "inventory": {
+      "value": 12000000,
+      "period_end": "2012-03-23",
+      "filed": "2012-04-19",
+      "tag": "InventoryNet",
+      "unit": "USD"
+    },
+    "accounts_payable": {
+      "value": 475000000,
+      "period_end": "2010-06-18",
+      "filed": "2010-07-16",
+      "tag": "AccountsPayableCurrent",
+      "unit": "USD"
+    }
+  },
+  "simplified_change_in_nwc": null,
+  "currency": "USD",
+  "status": "REVIEW_REQUIRED",
+  "issues": [
+    "Missing current accounts_receivable",
+    "Current balance dates do not match",
+    "Previous balance dates do not match"
+  ],
+  "warnings": [
+    "Simplified NWC uses receivables + inventory - payables.",
+    "Other operating assets and liabilities are excluded.",
+    "Not a verified FCFF calculation.",
+    "Not automatically suitable for the DCF engine."
+  ]
+}

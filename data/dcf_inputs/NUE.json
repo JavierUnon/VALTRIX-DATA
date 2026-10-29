@@ -1,0 +1,66 @@
+{
+  "ticker": "NUE",
+  "company_name": "NUCOR CORP",
+  "current": {
+    "accounts_receivable": {
+      "value": 4045000000,
+      "unit": "USD",
+      "period_end": "2026-07-04",
+      "filed": "2026-08-12",
+      "tag": "AccountsReceivableNetCurrent",
+      "form": "10-Q",
+      "method": "latest_reported_balance"
+    },
+    "inventory": {
+      "value": 6020000000,
+      "unit": "USD",
+      "period_end": "2026-07-04",
+      "filed": "2026-08-12",
+      "tag": "InventoryNet",
+      "form": "10-Q",
+      "method": "latest_reported_balance"
+    },
+    "accounts_payable": {
+      "value": 2357000000,
+      "unit": "USD",
+      "period_end": "2026-07-04",
+      "filed": "2026-08-12",
+      "tag": "AccountsPayableCurrent",
+      "form": "10-Q",
+      "method": "latest_reported_balance"
+    }
+  },
+  "previous": {
+    "accounts_receivable": {
+      "value": 3388000000,
+      "period_end": "2025-07-05",
+      "filed": "2025-08-13",
+      "tag": "AccountsReceivableNetCurrent",
+      "unit": "USD"
+    },
+    "inventory": {
+      "value": 5462000000,
+      "period_end": "2025-07-05",
+      "filed": "2025-08-13",
+      "tag": "InventoryNet",
+      "unit": "USD"
+    },
+    "accounts_payable": {
+      "value": 2183000000,
+      "period_end": "2025-07-05",
+      "filed": "2025-08-13",
+      "tag": "AccountsPayableCurrent",
+      "unit": "USD"
+    }
+  },
+  "simplified_change_in_nwc": 1041000000,
+  "currency": "USD",
+  "status": "PRELIMINARY",
+  "issues": [],
+  "warnings": [
+    "Simplified NWC uses receivables + inventory - payables.",
+    "Other operating assets and liabilities are excluded.",
+    "Not a verified FCFF calculation.",
+    "Not automatically suitable for the DCF engine."
+  ]
+}

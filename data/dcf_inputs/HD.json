@@ -1,0 +1,66 @@
+{
+  "ticker": "HD",
+  "company_name": "The Home Depot, Inc.",
+  "current": {
+    "accounts_receivable": {
+      "value": 6963000000,
+      "unit": "USD",
+      "period_end": "2026-08-02",
+      "filed": "2026-08-25",
+      "tag": "AccountsReceivableNetCurrent",
+      "form": "10-Q",
+      "method": "latest_reported_balance"
+    },
+    "inventory": {
+      "value": 26847000000,
+      "unit": "USD",
+      "period_end": "2026-08-02",
+      "filed": "2026-08-25",
+      "tag": "InventoryNet",
+      "form": "10-Q",
+      "method": "latest_reported_balance"
+    },
+    "accounts_payable": {
+      "value": 13585000000,
+      "unit": "USD",
+      "period_end": "2026-08-02",
+      "filed": "2026-08-25",
+      "tag": "AccountsPayableCurrent",
+      "form": "10-Q",
+      "method": "latest_reported_balance"
+    }
+  },
+  "previous": {
+    "accounts_receivable": {
+      "value": 5878000000,
+      "period_end": "2025-08-03",
+      "filed": "2025-08-26",
+      "tag": "AccountsReceivableNetCurrent",
+      "unit": "USD"
+    },
+    "inventory": {
+      "value": 24843000000,
+      "period_end": "2025-08-03",
+      "filed": "2025-08-26",
+      "tag": "InventoryNet",
+      "unit": "USD"
+    },
+    "accounts_payable": {
+      "value": 13086000000,
+      "period_end": "2025-08-03",
+      "filed": "2025-08-26",
+      "tag": "AccountsPayableCurrent",
+      "unit": "USD"
+    }
+  },
+  "simplified_change_in_nwc": 2590000000,
+  "currency": "USD",
+  "status": "PRELIMINARY",
+  "issues": [],
+  "warnings": [
+    "Simplified NWC uses receivables + inventory - payables.",
+    "Other operating assets and liabilities are excluded.",
+    "Not a verified FCFF calculation.",
+    "Not automatically suitable for the DCF engine."
+  ]
+}

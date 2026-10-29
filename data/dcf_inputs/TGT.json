@@ -1,0 +1,56 @@
+{
+  "ticker": "TGT",
+  "company_name": "Target Corporation",
+  "current": {
+    "accounts_receivable": null,
+    "inventory": {
+      "value": 13249000000,
+      "unit": "USD",
+      "period_end": "2026-08-01",
+      "filed": "2026-08-28",
+      "tag": "InventoryNet",
+      "form": "10-Q",
+      "method": "latest_reported_balance"
+    },
+    "accounts_payable": {
+      "value": 13306000000,
+      "unit": "USD",
+      "period_end": "2026-08-01",
+      "filed": "2026-08-28",
+      "tag": "AccountsPayableCurrent",
+      "form": "10-Q",
+      "method": "latest_reported_balance"
+    }
+  },
+  "previous": {
+    "accounts_receivable": null,
+    "inventory": {
+      "value": 12881000000,
+      "period_end": "2025-08-02",
+      "filed": "2026-08-28",
+      "tag": "InventoryNet",
+      "unit": "USD"
+    },
+    "accounts_payable": {
+      "value": 12019000000,
+      "period_end": "2025-08-02",
+      "filed": "2026-08-28",
+      "tag": "AccountsPayableCurrent",
+      "unit": "USD"
+    }
+  },
+  "simplified_change_in_nwc": null,
+  "currency": "USD",
+  "status": "REVIEW_REQUIRED",
+  "issues": [
+    "Missing current accounts_receivable",
+    "Current balance dates do not match",
+    "Previous balance dates do not match"
+  ],
+  "warnings": [
+    "Simplified NWC uses receivables + inventory - payables.",
+    "Other operating assets and liabilities are excluded.",
+    "Not a verified FCFF calculation.",
+    "Not automatically suitable for the DCF engine."
+  ]
+}

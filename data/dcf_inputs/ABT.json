@@ -1,0 +1,56 @@
+{
+  "ticker": "ABT",
+  "company_name": "ABBOTT LABORATORIES",
+  "current": {
+    "accounts_receivable": {
+      "value": 8210000000,
+      "unit": "USD",
+      "period_end": "2026-03-31",
+      "filed": "2026-04-29",
+      "tag": "AccountsReceivableNetCurrent",
+      "form": "10-Q",
+      "method": "latest_reported_balance"
+    },
+    "inventory": {
+      "value": 6989000000,
+      "unit": "USD",
+      "period_end": "2026-03-31",
+      "filed": "2026-04-29",
+      "tag": "InventoryNet",
+      "form": "10-Q",
+      "method": "latest_reported_balance"
+    },
+    "accounts_payable": null
+  },
+  "previous": {
+    "accounts_receivable": {
+      "value": 7327000000,
+      "period_end": "2025-03-31",
+      "filed": "2025-04-30",
+      "tag": "AccountsReceivableNetCurrent",
+      "unit": "USD"
+    },
+    "inventory": {
+      "value": 6639000000,
+      "period_end": "2025-03-31",
+      "filed": "2025-04-30",
+      "tag": "InventoryNet",
+      "unit": "USD"
+    },
+    "accounts_payable": null
+  },
+  "simplified_change_in_nwc": null,
+  "currency": "USD",
+  "status": "REVIEW_REQUIRED",
+  "issues": [
+    "Missing current accounts_payable",
+    "Current balance dates do not match",
+    "Previous balance dates do not match"
+  ],
+  "warnings": [
+    "Simplified NWC uses receivables + inventory - payables.",
+    "Other operating assets and liabilities are excluded.",
+    "Not a verified FCFF calculation.",
+    "Not automatically suitable for the DCF engine."
+  ]
+}

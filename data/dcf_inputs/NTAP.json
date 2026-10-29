@@ -1,0 +1,66 @@
+{
+  "ticker": "NTAP",
+  "company_name": "NetApp, Inc.",
+  "current": {
+    "accounts_receivable": {
+      "value": 966000000,
+      "unit": "USD",
+      "period_end": "2026-07-31",
+      "filed": "2026-09-02",
+      "tag": "AccountsReceivableNetCurrent",
+      "form": "10-Q",
+      "method": "latest_reported_balance"
+    },
+    "inventory": {
+      "value": 375000000,
+      "unit": "USD",
+      "period_end": "2026-07-31",
+      "filed": "2026-09-02",
+      "tag": "InventoryNet",
+      "form": "10-Q",
+      "method": "latest_reported_balance"
+    },
+    "accounts_payable": {
+      "value": 566000000,
+      "unit": "USD",
+      "period_end": "2026-07-31",
+      "filed": "2026-09-02",
+      "tag": "AccountsPayableCurrent",
+      "form": "10-Q",
+      "method": "latest_reported_balance"
+    }
+  },
+  "previous": {
+    "accounts_receivable": {
+      "value": 787000000,
+      "period_end": "2025-07-25",
+      "filed": "2025-08-27",
+      "tag": "AccountsReceivableNetCurrent",
+      "unit": "USD"
+    },
+    "inventory": {
+      "value": 133000000,
+      "period_end": "2025-07-25",
+      "filed": "2025-08-27",
+      "tag": "InventoryNet",
+      "unit": "USD"
+    },
+    "accounts_payable": {
+      "value": 404000000,
+      "period_end": "2025-07-25",
+      "filed": "2025-08-27",
+      "tag": "AccountsPayableCurrent",
+      "unit": "USD"
+    }
+  },
+  "simplified_change_in_nwc": 259000000,
+  "currency": "USD",
+  "status": "PRELIMINARY",
+  "issues": [],
+  "warnings": [
+    "Simplified NWC uses receivables + inventory - payables.",
+    "Other operating assets and liabilities are excluded.",
+    "Not a verified FCFF calculation.",
+    "Not automatically suitable for the DCF engine."
+  ]
+}

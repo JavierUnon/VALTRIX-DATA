@@ -1,0 +1,56 @@
+{
+  "ticker": "GPC",
+  "company_name": "GENUINE PARTS CO",
+  "current": {
+    "accounts_receivable": null,
+    "inventory": {
+      "value": 6435802000,
+      "unit": "USD",
+      "period_end": "2026-09-30",
+      "filed": "2026-10-20",
+      "tag": "InventoryNet",
+      "form": "10-Q",
+      "method": "latest_reported_balance"
+    },
+    "accounts_payable": {
+      "value": 2554759000,
+      "unit": "USD",
+      "period_end": "2014-12-31",
+      "filed": "2015-02-26",
+      "tag": "AccountsPayableCurrent",
+      "form": "10-K",
+      "method": "latest_reported_balance"
+    }
+  },
+  "previous": {
+    "accounts_receivable": null,
+    "inventory": {
+      "value": 5873796000,
+      "period_end": "2025-09-30",
+      "filed": "2025-10-21",
+      "tag": "InventoryNet",
+      "unit": "USD"
+    },
+    "accounts_payable": {
+      "value": 2269671000,
+      "period_end": "2013-12-31",
+      "filed": "2015-02-26",
+      "tag": "AccountsPayableCurrent",
+      "unit": "USD"
+    }
+  },
+  "simplified_change_in_nwc": null,
+  "currency": "USD",
+  "status": "REVIEW_REQUIRED",
+  "issues": [
+    "Missing current accounts_receivable",
+    "Current balance dates do not match",
+    "Previous balance dates do not match"
+  ],
+  "warnings": [
+    "Simplified NWC uses receivables + inventory - payables.",
+    "Other operating assets and liabilities are excluded.",
+    "Not a verified FCFF calculation.",
+    "Not automatically suitable for the DCF engine."
+  ]
+}

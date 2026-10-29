@@ -1,0 +1,69 @@
+{
+  "ticker": "EL",
+  "company_name": "THE ESTEE LAUDER COMPANIES INC.",
+  "current": {
+    "accounts_receivable": {
+      "value": 1518000000,
+      "unit": "USD",
+      "period_end": "2026-06-30",
+      "filed": "2026-08-19",
+      "tag": "AccountsReceivableNetCurrent",
+      "form": "10-K",
+      "method": "latest_reported_balance"
+    },
+    "inventory": {
+      "value": 1999000000,
+      "unit": "USD",
+      "period_end": "2026-06-30",
+      "filed": "2026-08-19",
+      "tag": "InventoryNet",
+      "form": "10-K",
+      "method": "latest_reported_balance"
+    },
+    "accounts_payable": {
+      "value": 493800000,
+      "unit": "USD",
+      "period_end": "2012-06-30",
+      "filed": "2012-08-17",
+      "tag": "AccountsPayableCurrent",
+      "form": "10-K",
+      "method": "latest_reported_balance"
+    }
+  },
+  "previous": {
+    "accounts_receivable": {
+      "value": 1530000000,
+      "period_end": "2025-06-30",
+      "filed": "2026-08-19",
+      "tag": "AccountsReceivableNetCurrent",
+      "unit": "USD"
+    },
+    "inventory": {
+      "value": 2074000000,
+      "period_end": "2025-06-30",
+      "filed": "2026-08-19",
+      "tag": "InventoryNet",
+      "unit": "USD"
+    },
+    "accounts_payable": {
+      "value": 446700000,
+      "period_end": "2011-06-30",
+      "filed": "2012-08-17",
+      "tag": "AccountsPayableCurrent",
+      "unit": "USD"
+    }
+  },
+  "simplified_change_in_nwc": null,
+  "currency": "USD",
+  "status": "REVIEW_REQUIRED",
+  "issues": [
+    "Current balance dates do not match",
+    "Previous balance dates do not match"
+  ],
+  "warnings": [
+    "Simplified NWC uses receivables + inventory - payables.",
+    "Other operating assets and liabilities are excluded.",
+    "Not a verified FCFF calculation.",
+    "Not automatically suitable for the DCF engine."
+  ]
+}

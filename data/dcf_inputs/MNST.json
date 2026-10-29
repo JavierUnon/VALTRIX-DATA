@@ -1,0 +1,66 @@
+{
+  "ticker": "MNST",
+  "company_name": "Monster Beverage Corp",
+  "current": {
+    "accounts_receivable": {
+      "value": 1902421000,
+      "unit": "USD",
+      "period_end": "2026-06-30",
+      "filed": "2026-08-07",
+      "tag": "AccountsReceivableNetCurrent",
+      "form": "10-Q",
+      "method": "latest_reported_balance"
+    },
+    "inventory": {
+      "value": 867674000,
+      "unit": "USD",
+      "period_end": "2026-06-30",
+      "filed": "2026-08-07",
+      "tag": "InventoryNet",
+      "form": "10-Q",
+      "method": "latest_reported_balance"
+    },
+    "accounts_payable": {
+      "value": 753751000,
+      "unit": "USD",
+      "period_end": "2026-06-30",
+      "filed": "2026-08-07",
+      "tag": "AccountsPayableCurrent",
+      "form": "10-Q",
+      "method": "latest_reported_balance"
+    }
+  },
+  "previous": {
+    "accounts_receivable": {
+      "value": 1522702000,
+      "period_end": "2025-06-30",
+      "filed": "2025-08-08",
+      "tag": "AccountsReceivableNetCurrent",
+      "unit": "USD"
+    },
+    "inventory": {
+      "value": 658167000,
+      "period_end": "2025-06-30",
+      "filed": "2025-08-08",
+      "tag": "InventoryNet",
+      "unit": "USD"
+    },
+    "accounts_payable": {
+      "value": 489037000,
+      "period_end": "2025-06-30",
+      "filed": "2025-08-08",
+      "tag": "AccountsPayableCurrent",
+      "unit": "USD"
+    }
+  },
+  "simplified_change_in_nwc": 324512000,
+  "currency": "USD",
+  "status": "PRELIMINARY",
+  "issues": [],
+  "warnings": [
+    "Simplified NWC uses receivables + inventory - payables.",
+    "Other operating assets and liabilities are excluded.",
+    "Not a verified FCFF calculation.",
+    "Not automatically suitable for the DCF engine."
+  ]
+}

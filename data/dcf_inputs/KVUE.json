@@ -1,0 +1,66 @@
+{
+  "ticker": "KVUE",
+  "company_name": "Kenvue Inc.",
+  "current": {
+    "accounts_receivable": {
+      "value": 2476000000,
+      "unit": "USD",
+      "period_end": "2026-06-28",
+      "filed": "2026-08-06",
+      "tag": "AccountsReceivableNetCurrent",
+      "form": "10-Q",
+      "method": "latest_reported_balance"
+    },
+    "inventory": {
+      "value": 1722000000,
+      "unit": "USD",
+      "period_end": "2026-06-28",
+      "filed": "2026-08-06",
+      "tag": "InventoryNet",
+      "form": "10-Q",
+      "method": "latest_reported_balance"
+    },
+    "accounts_payable": {
+      "value": 2577000000,
+      "unit": "USD",
+      "period_end": "2026-06-28",
+      "filed": "2026-08-06",
+      "tag": "AccountsPayableCurrent",
+      "form": "10-Q",
+      "method": "latest_reported_balance"
+    }
+  },
+  "previous": {
+    "accounts_receivable": {
+      "value": 2331000000,
+      "period_end": "2025-06-29",
+      "filed": "2025-08-07",
+      "tag": "AccountsReceivableNetCurrent",
+      "unit": "USD"
+    },
+    "inventory": {
+      "value": 1776000000,
+      "period_end": "2025-06-29",
+      "filed": "2025-08-07",
+      "tag": "InventoryNet",
+      "unit": "USD"
+    },
+    "accounts_payable": {
+      "value": 2568000000,
+      "period_end": "2025-06-29",
+      "filed": "2025-08-07",
+      "tag": "AccountsPayableCurrent",
+      "unit": "USD"
+    }
+  },
+  "simplified_change_in_nwc": 82000000,
+  "currency": "USD",
+  "status": "PRELIMINARY",
+  "issues": [],
+  "warnings": [
+    "Simplified NWC uses receivables + inventory - payables.",
+    "Other operating assets and liabilities are excluded.",
+    "Not a verified FCFF calculation.",
+    "Not automatically suitable for the DCF engine."
+  ]
+}

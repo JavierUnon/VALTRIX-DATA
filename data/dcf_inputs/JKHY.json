@@ -1,0 +1,56 @@
+{
+  "ticker": "JKHY",
+  "company_name": "JACK HENRY & ASSOCIATES, INC.",
+  "current": {
+    "accounts_receivable": {
+      "value": 349111000,
+      "unit": "USD",
+      "period_end": "2026-06-30",
+      "filed": "2026-08-28",
+      "tag": "AccountsReceivableNetCurrent",
+      "form": "10-K",
+      "method": "latest_reported_balance"
+    },
+    "inventory": null,
+    "accounts_payable": {
+      "value": 34935000,
+      "unit": "USD",
+      "period_end": "2026-06-30",
+      "filed": "2026-08-28",
+      "tag": "AccountsPayableCurrent",
+      "form": "10-K",
+      "method": "latest_reported_balance"
+    }
+  },
+  "previous": {
+    "accounts_receivable": {
+      "value": 317977000,
+      "period_end": "2025-06-30",
+      "filed": "2026-08-28",
+      "tag": "AccountsReceivableNetCurrent",
+      "unit": "USD"
+    },
+    "inventory": null,
+    "accounts_payable": {
+      "value": 28186000,
+      "period_end": "2025-06-30",
+      "filed": "2026-08-28",
+      "tag": "AccountsPayableCurrent",
+      "unit": "USD"
+    }
+  },
+  "simplified_change_in_nwc": null,
+  "currency": "USD",
+  "status": "REVIEW_REQUIRED",
+  "issues": [
+    "Missing current inventory",
+    "Current balance dates do not match",
+    "Previous balance dates do not match"
+  ],
+  "warnings": [
+    "Simplified NWC uses receivables + inventory - payables.",
+    "Other operating assets and liabilities are excluded.",
+    "Not a verified FCFF calculation.",
+    "Not automatically suitable for the DCF engine."
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "ticker": "CPAY",
+  "company_name": "Corpay, Inc",
+  "current": {
+    "accounts_receivable": {
+      "value": 2656036000,
+      "unit": "USD",
+      "period_end": "2026-06-30",
+      "filed": "2026-08-10",
+      "tag": "AccountsReceivableNetCurrent",
+      "form": "10-Q",
+      "method": "latest_reported_balance"
+    },
+    "inventory": null,
+    "accounts_payable": {
+      "value": 2275799000,
+      "unit": "USD",
+      "period_end": "2026-06-30",
+      "filed": "2026-08-10",
+      "tag": "AccountsPayableCurrent",
+      "form": "10-Q",
+      "method": "latest_reported_balance"
+    }
+  },
+  "previous": {
+    "accounts_receivable": {
+      "value": 2601292000,
+      "period_end": "2025-06-30",
+      "filed": "2025-08-07",
+      "tag": "AccountsReceivableNetCurrent",
+      "unit": "USD"
+    },
+    "inventory": null,
+    "accounts_payable": {
+      "value": 1974528000,
+      "period_end": "2025-06-30",
+      "filed": "2025-08-07",
+      "tag": "AccountsPayableCurrent",
+      "unit": "USD"
+    }
+  },
+  "simplified_change_in_nwc": null,
+  "currency": "USD",
+  "status": "REVIEW_REQUIRED",
+  "issues": [
+    "Missing current inventory",
+    "Current balance dates do not match",
+    "Previous balance dates do not match"
+  ],
+  "warnings": [
+    "Simplified NWC uses receivables + inventory - payables.",
+    "Other operating assets and liabilities are excluded.",
+    "Not a verified FCFF calculation.",
+    "Not automatically suitable for the DCF engine."
+  ]
+}

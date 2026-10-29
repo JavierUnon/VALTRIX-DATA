@@ -1,0 +1,51 @@
+{
+  "ticker": "KR",
+  "company_name": "KROGER CO",
+  "current": {
+    "accounts_receivable": null,
+    "inventory": {
+      "value": 5256000000,
+      "unit": "USD",
+      "period_end": "2010-11-06",
+      "filed": "2010-12-13",
+      "tag": "InventoryNet",
+      "form": "10-Q",
+      "method": "latest_reported_balance"
+    },
+    "accounts_payable": {
+      "value": 10775000000,
+      "unit": "USD",
+      "period_end": "2026-08-15",
+      "filed": "2026-09-18",
+      "tag": "AccountsPayableCurrent",
+      "form": "10-Q",
+      "method": "latest_reported_balance"
+    }
+  },
+  "previous": {
+    "accounts_receivable": null,
+    "inventory": null,
+    "accounts_payable": {
+      "value": 10183000000,
+      "period_end": "2025-08-16",
+      "filed": "2025-09-19",
+      "tag": "AccountsPayableCurrent",
+      "unit": "USD"
+    }
+  },
+  "simplified_change_in_nwc": null,
+  "currency": "USD",
+  "status": "REVIEW_REQUIRED",
+  "issues": [
+    "Missing current accounts_receivable",
+    "Missing previous-year inventory",
+    "Current balance dates do not match",
+    "Previous balance dates do not match"
+  ],
+  "warnings": [
+    "Simplified NWC uses receivables + inventory - payables.",
+    "Other operating assets and liabilities are excluded.",
+    "Not a verified FCFF calculation.",
+    "Not automatically suitable for the DCF engine."
+  ]
+}

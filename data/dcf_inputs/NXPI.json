@@ -1,0 +1,66 @@
+{
+  "ticker": "NXPI",
+  "company_name": "NXP Semiconductors N.V.",
+  "current": {
+    "accounts_receivable": {
+      "value": 1260000000,
+      "unit": "USD",
+      "period_end": "2026-09-27",
+      "filed": "2026-10-27",
+      "tag": "AccountsReceivableNetCurrent",
+      "form": "10-Q",
+      "method": "latest_reported_balance"
+    },
+    "inventory": {
+      "value": 2596000000,
+      "unit": "USD",
+      "period_end": "2026-09-27",
+      "filed": "2026-10-27",
+      "tag": "InventoryNet",
+      "form": "10-Q",
+      "method": "latest_reported_balance"
+    },
+    "accounts_payable": {
+      "value": 1089000000,
+      "unit": "USD",
+      "period_end": "2026-09-27",
+      "filed": "2026-10-27",
+      "tag": "AccountsPayableCurrent",
+      "form": "10-Q",
+      "method": "latest_reported_balance"
+    }
+  },
+  "previous": {
+    "accounts_receivable": {
+      "value": 1095000000,
+      "period_end": "2025-09-28",
+      "filed": "2025-10-28",
+      "tag": "AccountsReceivableNetCurrent",
+      "unit": "USD"
+    },
+    "inventory": {
+      "value": 2452000000,
+      "period_end": "2025-09-28",
+      "filed": "2025-10-28",
+      "tag": "InventoryNet",
+      "unit": "USD"
+    },
+    "accounts_payable": {
+      "value": 886000000,
+      "period_end": "2025-09-28",
+      "filed": "2025-10-28",
+      "tag": "AccountsPayableCurrent",
+      "unit": "USD"
+    }
+  },
+  "simplified_change_in_nwc": 106000000,
+  "currency": "USD",
+  "status": "PRELIMINARY",
+  "issues": [],
+  "warnings": [
+    "Simplified NWC uses receivables + inventory - payables.",
+    "Other operating assets and liabilities are excluded.",
+    "Not a verified FCFF calculation.",
+    "Not automatically suitable for the DCF engine."
+  ]
+}

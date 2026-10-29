@@ -1,0 +1,56 @@
+{
+  "ticker": "EXC",
+  "company_name": "EXELON CORPORATION",
+  "current": {
+    "accounts_receivable": {
+      "value": 3114000000,
+      "unit": "USD",
+      "period_end": "2026-03-31",
+      "filed": "2026-05-06",
+      "tag": "AccountsReceivableNetCurrent",
+      "form": "10-Q",
+      "method": "latest_reported_balance"
+    },
+    "inventory": null,
+    "accounts_payable": {
+      "value": 2762000000,
+      "unit": "USD",
+      "period_end": "2023-03-31",
+      "filed": "2023-05-03",
+      "tag": "AccountsPayableCurrent",
+      "form": "10-Q",
+      "method": "latest_reported_balance"
+    }
+  },
+  "previous": {
+    "accounts_receivable": {
+      "value": 3002000000,
+      "period_end": "2025-03-31",
+      "filed": "2025-05-01",
+      "tag": "AccountsReceivableNetCurrent",
+      "unit": "USD"
+    },
+    "inventory": null,
+    "accounts_payable": {
+      "value": 2175000000,
+      "period_end": "2022-03-31",
+      "filed": "2022-05-09",
+      "tag": "AccountsPayableCurrent",
+      "unit": "USD"
+    }
+  },
+  "simplified_change_in_nwc": null,
+  "currency": "USD",
+  "status": "REVIEW_REQUIRED",
+  "issues": [
+    "Missing current inventory",
+    "Current balance dates do not match",
+    "Previous balance dates do not match"
+  ],
+  "warnings": [
+    "Simplified NWC uses receivables + inventory - payables.",
+    "Other operating assets and liabilities are excluded.",
+    "Not a verified FCFF calculation.",
+    "Not automatically suitable for the DCF engine."
+  ]
+}

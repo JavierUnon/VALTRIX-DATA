@@ -1,0 +1,66 @@
+{
+  "ticker": "RMD",
+  "company_name": "ResMed Inc.",
+  "current": {
+    "accounts_receivable": {
+      "value": 1036233000,
+      "unit": "USD",
+      "period_end": "2026-06-30",
+      "filed": "2026-08-13",
+      "tag": "AccountsReceivableNetCurrent",
+      "form": "10-K",
+      "method": "latest_reported_balance"
+    },
+    "inventory": {
+      "value": 945805000,
+      "unit": "USD",
+      "period_end": "2026-06-30",
+      "filed": "2026-08-13",
+      "tag": "InventoryNet",
+      "form": "10-K",
+      "method": "latest_reported_balance"
+    },
+    "accounts_payable": {
+      "value": 308923000,
+      "unit": "USD",
+      "period_end": "2026-06-30",
+      "filed": "2026-08-13",
+      "tag": "AccountsPayableCurrent",
+      "form": "10-K",
+      "method": "latest_reported_balance"
+    }
+  },
+  "previous": {
+    "accounts_receivable": {
+      "value": 939492000,
+      "period_end": "2025-06-30",
+      "filed": "2026-08-13",
+      "tag": "AccountsReceivableNetCurrent",
+      "unit": "USD"
+    },
+    "inventory": {
+      "value": 927711000,
+      "period_end": "2025-06-30",
+      "filed": "2026-08-13",
+      "tag": "InventoryNet",
+      "unit": "USD"
+    },
+    "accounts_payable": {
+      "value": 278157000,
+      "period_end": "2025-06-30",
+      "filed": "2026-08-13",
+      "tag": "AccountsPayableCurrent",
+      "unit": "USD"
+    }
+  },
+  "simplified_change_in_nwc": 84069000,
+  "currency": "USD",
+  "status": "PRELIMINARY",
+  "issues": [],
+  "warnings": [
+    "Simplified NWC uses receivables + inventory - payables.",
+    "Other operating assets and liabilities are excluded.",
+    "Not a verified FCFF calculation.",
+    "Not automatically suitable for the DCF engine."
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "ticker": "HPE",
+  "company_name": "HEWLETT PACKARD ENTERPRISE COMPANY",
+  "current": {
+    "accounts_receivable": {
+      "value": 6185000000,
+      "unit": "USD",
+      "period_end": "2026-07-31",
+      "filed": "2026-09-03",
+      "tag": "AccountsReceivableNetCurrent",
+      "form": "10-Q",
+      "method": "latest_reported_balance"
+    },
+    "inventory": {
+      "value": 11823000000,
+      "unit": "USD",
+      "period_end": "2026-07-31",
+      "filed": "2026-09-03",
+      "tag": "InventoryNet",
+      "form": "10-Q",
+      "method": "latest_reported_balance"
+    },
+    "accounts_payable": {
+      "value": 13734000000,
+      "unit": "USD",
+      "period_end": "2026-07-31",
+      "filed": "2026-09-03",
+      "tag": "AccountsPayableCurrent",
+      "form": "10-Q",
+      "method": "latest_reported_balance"
+    }
+  },
+  "previous": {
+    "accounts_receivable": {
+      "value": 5656000000,
+      "period_end": "2025-07-31",
+      "filed": "2025-09-04",
+      "tag": "AccountsReceivableNetCurrent",
+      "unit": "USD"
+    },
+    "inventory": {
+      "value": 7163000000,
+      "period_end": "2025-07-31",
+      "filed": "2025-09-04",
+      "tag": "InventoryNet",
+      "unit": "USD"
+    },
+    "accounts_payable": {
+      "value": 8662000000,
+      "period_end": "2025-07-31",
+      "filed": "2025-09-04",
+      "tag": "AccountsPayableCurrent",
+      "unit": "USD"
+    }
+  },
+  "simplified_change_in_nwc": 117000000,
+  "currency": "USD",
+  "status": "PRELIMINARY",
+  "issues": [],
+  "warnings": [
+    "Simplified NWC uses receivables + inventory - payables.",
+    "Other operating assets and liabilities are excluded.",
+    "Not a verified FCFF calculation.",
+    "Not automatically suitable for the DCF engine."
+  ]
+}

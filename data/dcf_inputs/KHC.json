@@ -1,0 +1,56 @@
+{
+  "ticker": "KHC",
+  "company_name": "Kraft Heinz Co",
+  "current": {
+    "accounts_receivable": {
+      "value": 2286000000,
+      "unit": "USD",
+      "period_end": "2026-06-27",
+      "filed": "2026-08-05",
+      "tag": "AccountsReceivableNetCurrent",
+      "form": "10-Q",
+      "method": "latest_reported_balance"
+    },
+    "inventory": {
+      "value": 3308000000,
+      "unit": "USD",
+      "period_end": "2026-06-27",
+      "filed": "2026-08-05",
+      "tag": "InventoryNet",
+      "form": "10-Q",
+      "method": "latest_reported_balance"
+    },
+    "accounts_payable": null
+  },
+  "previous": {
+    "accounts_receivable": {
+      "value": 2344000000,
+      "period_end": "2025-06-28",
+      "filed": "2025-07-30",
+      "tag": "AccountsReceivableNetCurrent",
+      "unit": "USD"
+    },
+    "inventory": {
+      "value": 3567000000,
+      "period_end": "2025-06-28",
+      "filed": "2025-07-30",
+      "tag": "InventoryNet",
+      "unit": "USD"
+    },
+    "accounts_payable": null
+  },
+  "simplified_change_in_nwc": null,
+  "currency": "USD",
+  "status": "REVIEW_REQUIRED",
+  "issues": [
+    "Missing current accounts_payable",
+    "Current balance dates do not match",
+    "Previous balance dates do not match"
+  ],
+  "warnings": [
+    "Simplified NWC uses receivables + inventory - payables.",
+    "Other operating assets and liabilities are excluded.",
+    "Not a verified FCFF calculation.",
+    "Not automatically suitable for the DCF engine."
+  ]
+}

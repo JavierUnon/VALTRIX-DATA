@@ -1,0 +1,66 @@
+{
+  "ticker": "OTIS",
+  "company_name": "OTIS WORLDWIDE CORPORATION",
+  "current": {
+    "accounts_receivable": {
+      "value": 3985000000,
+      "unit": "USD",
+      "period_end": "2026-06-30",
+      "filed": "2026-07-23",
+      "tag": "AccountsReceivableNetCurrent",
+      "form": "10-Q",
+      "method": "latest_reported_balance"
+    },
+    "inventory": {
+      "value": 686000000,
+      "unit": "USD",
+      "period_end": "2026-06-30",
+      "filed": "2026-07-23",
+      "tag": "InventoryNet",
+      "form": "10-Q",
+      "method": "latest_reported_balance"
+    },
+    "accounts_payable": {
+      "value": 2099000000,
+      "unit": "USD",
+      "period_end": "2026-06-30",
+      "filed": "2026-07-23",
+      "tag": "AccountsPayableCurrent",
+      "form": "10-Q",
+      "method": "latest_reported_balance"
+    }
+  },
+  "previous": {
+    "accounts_receivable": {
+      "value": 3696000000,
+      "period_end": "2025-06-30",
+      "filed": "2025-07-24",
+      "tag": "AccountsReceivableNetCurrent",
+      "unit": "USD"
+    },
+    "inventory": {
+      "value": 602000000,
+      "period_end": "2025-06-30",
+      "filed": "2025-07-24",
+      "tag": "InventoryNet",
+      "unit": "USD"
+    },
+    "accounts_payable": {
+      "value": 1739000000,
+      "period_end": "2025-06-30",
+      "filed": "2025-07-24",
+      "tag": "AccountsPayableCurrent",
+      "unit": "USD"
+    }
+  },
+  "simplified_change_in_nwc": 13000000,
+  "currency": "USD",
+  "status": "PRELIMINARY",
+  "issues": [],
+  "warnings": [
+    "Simplified NWC uses receivables + inventory - payables.",
+    "Other operating assets and liabilities are excluded.",
+    "Not a verified FCFF calculation.",
+    "Not automatically suitable for the DCF engine."
+  ]
+}
