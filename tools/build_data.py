@@ -1,5 +1,10 @@
 
-"""VALTRIX - SEC fundamentals with TTM and latest balance sheet data."""
+"""VALTRIX - SEC financial data importer.
+
+Uses verified TTM periods where available.
+Keeps financial sources and review warnings.
+Does not calculate or certify FCFF.
+"""
 
 import csv
 import io
@@ -10,26 +15,26 @@ import urllib.request
 from datetime import date, datetime, timezone
 from pathlib import Path
 
-LIST_URL = (
+INDEX_URL = (
     "https://raw.githubusercontent.com/datasets/"
     "s-and-p-500-companies/main/data/constituents.csv"
 )
+
 OUT = Path("data/companies")
 
 TAGS = {
-    
-    "accounts_receivable": [
-        "AccountsReceivableNetCurrent",
-        "AccountsNotesAndOtherReceivablesNetCurrent",
+    "revenue": [
+        "RevenueFromContractWithCustomerExcludingAssessedTax",
+        "RevenueFromContractWithCustomerIncludingAssessedTax",
+        "Revenues",
+        "SalesRevenueNet",
     ],
-    "inventory": [
-        "InventoryNet",
+    "operating_cash_flow": [
+        "NetCashProvidedByUsedInOperatingActivities",
     ],
-    "accounts_payable": [
-        "AccountsPayableCurrent",
+    "capital_expenditure": [
+        "PaymentsToAcquirePropertyPlantAndEquipment",
     ],
-
-    
     "operating_income": [
         "OperatingIncomeLoss",
     ],
@@ -41,84 +46,101 @@ TAGS = {
     "income_tax_expense": [
         "IncomeTaxExpenseBenefit",
     ],
-
-    "revenue": [
-        "RevenueFromContractWithCustomerExcludingAssessedTax",
-        "RevenueFromContractWithCustomerIncludingAssessedTax",
-        "Revenues",
-        "SalesRevenueNet",
-    ],
-    "operating_cash_flow": [
-        "NetCashProvidedByUsedInOperatingActivities"
-    ],
-    "capital_expenditure": [
-        "PaymentsToAcquirePropertyPlantAndEquipment"
-    ],
     "cash": [
-        "CashAndCashEquivalentsAtCarryingValue"
+        "CashAndCashEquivalentsAtCarryingValue",
     ],
     "debt_current": [
         "LongTermDebtCurrent",
-        "LongTermDebtAndCapitalLeaseObligationsCurrent"
+        "LongTermDebtAndCapitalLeaseObligationsCurrent",
     ],
     "debt_noncurrent": [
         "LongTermDebtNoncurrent",
-        "LongTermDebtAndCapitalLeaseObligations"
+        "LongTermDebtAndCapitalLeaseObligations",
     ],
     "shares_outstanding": [
-        "CommonStockSharesOutstanding"
+        "CommonStockSharesOutstanding",
+    ],
+    "diluted_shares": [
+        "WeightedAverageNumberOfDilutedSharesOutstanding",
+    ],
+    "accounts_receivable": [
+        "AccountsReceivableNetCurrent",
+        "AccountsNotesAndOtherReceivablesNetCurrent",
+    ],
+    "inventory": [
+        "InventoryNet",
+    ],
+    "accounts_payable": [
+        "AccountsPayableCurrent",
     ],
 }
 
-FLOW_KEYS = (
+FLOWS = {
     "revenue",
     "operating_cash_flow",
     "capital_expenditure",
     "operating_income",
     "depreciation_amortization",
     "income_tax_expense",
-)
+    "diluted_shares",
+}
+
+CORE = {
+    "operating_cash_flow",
+    "capital_expenditure",
+    "operating_income",
+    "cash",
+    "shares_outstanding",
+}
 
 
 def get_bytes(url, agent):
-    req = urllib.request.Request(
+    request = urllib.request.Request(
         url,
         headers={
             "User-Agent": agent,
-            "Accept": "application/json, text/csv",
             "Accept-Encoding": "identity",
         },
     )
+
     for attempt in range(3):
         try:
-            with urllib.request.urlopen(req, timeout=60) as response:
+            with urllib.request.urlopen(
+                request, timeout=60
+            ) as response:
                 return response.read()
         except Exception:
             if attempt == 2:
                 raise
-            time.sleep(3 * (attempt + 1))
+            time.sleep(2 * (attempt + 1))
 
 
-def get_companies(agent):
-    data = get_bytes(LIST_URL, agent)
-    rows = csv.DictReader(
+def companies(agent):
+    data = get_bytes(INDEX_URL, agent)
+    reader = csv.DictReader(
         io.StringIO(data.decode("utf-8-sig"))
     )
-    companies = []
-    for row in rows:
-        if row.get("Symbol") and row.get("CIK"):
-            companies.append({
-                "ticker": row["Symbol"].strip(),
-                "cik": str(int(row["CIK"])).zfill(10),
-                "name": row["Security"],
-                "sector": row.get("GICS Sector", ""),
-            })
-    if len(companies) < 450:
-        raise RuntimeError("Incomplete S&P 500 list")
-    return companies
+
+    items = []
+
+    for row in reader:
+        if not row.get("Symbol") or not row.get("CIK"):
+            continue
+
+        items.append({
+            "ticker": row["Symbol"].strip(),
+            "cik": str(int(row["CIK"])).zfill(10),
+            "name": row["Security"],
+            "sector": row.get("GICS Sector", ""),
+        })
+
+    if len(items) < 450:
+        raise ValueError("Incomplete constituents list")
+
+    return items
 
 
-def duration(row):
+def days(row):
     try:
         return (
             date.fromisoformat(row["end"])
@@ -128,248 +150,249 @@ def duration(row):
         return None
 
 
-def rows_for_tag(facts, tag, unit):
-    return facts.get("us-gaap", {}).get(
-        tag, {}
-    ).get("units", {}).get(unit, [])
-
-
-def point_in_time(facts, tags, unit):
-    candidates = []
-    for tag in tags:
-        for row in rows_for_tag(facts, tag, unit):
-            if (
-                row.get("form") in ("10-K", "10-Q")
-                and row.get("end")
-                and row.get("filed")
-                and not row.get("start")
-            ):
-                candidates.append((row, tag))
-
-    if not candidates:
-        return None
-
-    row, tag = max(
-        candidates,
-        key=lambda item: (
-            item[0]["end"],
-            item[0]["filed"],
-        ),
+def entries(facts, tag, unit):
+    return (
+        facts.get("us-gaap", {})
+        .get(tag, {})
+        .get("units", {})
+        .get(unit, [])
     )
+
+
+def ref(row, tag, unit):
     return {
         "value": row["val"],
         "unit": unit,
+        "period_start": row.get("start"),
         "period_end": row["end"],
         "filed": row["filed"],
-        "tag": tag,
         "form": row["form"],
-        "method": "latest_reported_balance",
+        "accession": row.get("accn"),
+        "tag": tag,
     }
 
 
-def latest_annual(facts, tags):
-    candidates = []
-    for tag in tags:
-        for row in rows_for_tag(facts, tag, "USD"):
-            days = duration(row)
-            if (
-                row.get("form") == "10-K"
-                and days is not None
-                and 300 <= days <= 400
-                and row.get("filed")
-            ):
-                candidates.append((row, tag))
+def choose_balance(facts, tags, unit):
+    found = []
 
-    if not candidates:
+    for tag in tags:
+        for row in entries(facts, tag, unit):
+            if (
+                row.get("form") in ("10-K", "10-Q")
+                and row.get("filed")
+                and row.get("end")
+                and not row.get("start")
+            ):
+                found.append((row, tag))
+
+    if not found:
         return None
 
     row, tag = max(
-        candidates,
+        found,
         key=lambda item: (
             item[0]["end"],
             item[0]["filed"],
         ),
     )
+
     return {
-        "value": row["val"],
-        "unit": "USD",
-        "period_start": row["start"],
-        "period_end": row["end"],
-        "filed": row["filed"],
-        "tag": tag,
-        "form": row["form"],
-        "method": "annual",
+        **ref(row, tag, unit),
+        "method": "latest_balance",
     }
 
 
-def latest_ttm(facts, tags):
-    annual = latest_annual(facts, tags)
-    if annual is None:
-        return None
+def choose_flow(facts, tags, unit):
+    """Calculate TTM only with comparable fiscal periods."""
+    candidates = []
 
-    quarterly = []
     for tag in tags:
-        for row in rows_for_tag(facts, tag, "USD"):
-            days = duration(row)
+        raw = [
+            row for row in entries(facts, tag, unit)
             if (
-                row.get("form") == "10-Q"
-                and days is not None
-                and 60 <= days <= 310
+                row.get("form") in ("10-K", "10-Q")
                 and row.get("filed")
-            ):
-                quarterly.append((row, tag, days))
+                and row.get("end")
+                and row.get("start")
+            )
+        ]
 
-    recent = [
-        item for item in quarterly
-        if item[0]["end"] > annual["period_end"]
-    ]
+        annual_rows = [
+            row for row in raw
+            if (
+                row["form"] == "10-K"
+                and days(row) is not None
+                and 330 <= days(row) <= 380
+            )
+        ]
 
-    if not recent:
-        return annual
+        if not annual_rows:
+            continue
 
-    # Prefer the latest quarter's longest YTD period.
-    latest_end = max(item[0]["end"] for item in recent)
-    candidates = [
-        item for item in recent
-        if item[0]["end"] == latest_end
-    ]
-    current, current_tag, current_days = max(
-        candidates,
-        key=lambda item: (item[2], item[0]["filed"]),
-    )
-
-    # Comparable YTD period from the preceding fiscal year.
-    previous = [
-        item for item in quarterly
-        if (
-            item[1] == current_tag
-            and item[0]["end"] <= annual["period_end"]
-            and abs(item[2] - current_days) <= 10
-            and 330 <= (
-                date.fromisoformat(current["end"])
-                - date.fromisoformat(item[0]["end"])
-            ).days <= 400
+        annual = max(
+            annual_rows,
+            key=lambda row: (
+                row["end"],
+                row["filed"],
+            ),
         )
-    ]
 
-    # The annual and quarterly data must use the same tag.
-    if not previous or annual["tag"] != current_tag:
-        result = annual.copy()
-        result["method"] = "annual_fallback"
-        result["warning"] = "TTM unavailable; annual data used"
-        return result
+        annual_end = date.fromisoformat(annual["end"])
 
-    previous_row = max(
-        previous,
-        key=lambda item: (
-            item[0]["end"], item[0]["filed"]
-        ),
-    )[0]
-
-    ttm_value = (
-        annual["value"]
-        + current["val"]
-        - previous_row["val"]
-    )
-
-    return {
-        "value": ttm_value,
-        "unit": "USD",
-        "period_end": current["end"],
-        "filed": current["filed"],
-        "tag": current_tag,
-        "form": "10-K + 10-Q",
-        "method": "TTM",
-        "formula": "FY + current YTD - prior-year YTD",
-        "annual_fy_end": annual["period_end"],
-    }
-
-
-
-def diluted_shares(facts):
-    tags = [
-        "WeightedAverageNumberOfDilutedSharesOutstanding",
-    ]
-    candidates = []
-
-    for tag in tags:
-        for row in rows_for_tag(facts, tag, "shares"):
-            days = duration(row)
+        current_rows = [
+            row for row in raw
             if (
-                row.get("form") == "10-K"
-                and days is not None
-                and 300 <= days <= 400
-                and row.get("filed")
-            ):
-                candidates.append((row, tag))
+                row["form"] == "10-Q"
+                and days(row) is not None
+                and 60 <= days(row) <= 310
+                and date.fromisoformat(row["end"]) > annual_end
+                and 0 < (
+                    date.fromisoformat(row["end"]) - annual_end
+                ).days <= 310
+            )
+        ]
+
+        if current_rows:
+            current = max(
+                current_rows,
+                key=lambda row: (
+                    row["end"],
+                    days(row),
+                    row["filed"],
+                ),
+            )
+
+            current_start = date.fromisoformat(
+                current["start"]
+            )
+
+            if abs((current_start - annual_end).days) <= 10:
+                prior_rows = [
+                    row for row in raw
+                    if (
+                        row["form"] in ("10-K", "10-Q")
+                        and days(row) is not None
+                        and abs(days(row) - days(current)) <= 10
+                        and 350 <= (
+                            date.fromisoformat(current["end"])
+                            - date.fromisoformat(row["end"])
+                        ).days <= 380
+                        and abs((
+                            date.fromisoformat(row["start"])
+                            - date.fromisoformat(annual["start"])
+                        ).days) <= 10
+                    )
+                ]
+
+                if prior_rows:
+                    prior = max(
+                        prior_rows,
+                        key=lambda row: (
+                            row["end"],
+                            row["filed"],
+                        ),
+                    )
+
+                    ttm = (
+                        annual["val"]
+                        + current["val"]
+                        - prior["val"]
+                    )
+
+                    candidates.append({
+                        **ref(current, tag, unit),
+                        "value": ttm,
+                        "method": "TTM",
+                        "formula": (
+                            "annual + current_ytd - prior_ytd"
+                        ),
+                        "sources": {
+                            "annual": ref(annual, tag, unit),
+                            "current_ytd": ref(current, tag, unit),
+                            "prior_ytd": ref(prior, tag, unit),
+                        },
+                    })
+                    continue
+
+        candidates.append({
+            **ref(annual, tag, unit),
+            "method": "annual_fallback",
+            "warning": (
+                "TTM not verifiable from comparable periods"
+            ),
+        })
 
     if not candidates:
         return None
 
-    row, tag = max(
+    return max(
         candidates,
         key=lambda item: (
-            item[0]["end"],
-            item[0]["filed"],
+            item["period_end"],
+            item["method"] == "TTM",
+            item["filed"],
         ),
     )
 
-    return {
-        "value": row["val"],
-        "unit": "shares",
-        "period_end": row["end"],
-        "filed": row["filed"],
-        "tag": tag,
-        "form": "10-K",
-        "method": "annual_diluted_weighted_average",
-        "review_required": True,
-    }
 
-def build_record(company, agent):
+def build(company, agent):
     cik = company["cik"]
+
     url = (
         "https://data.sec.gov/api/xbrl/companyfacts/"
         f"CIK{cik}.json"
     )
+
     payload = json.loads(get_bytes(url, agent))
     facts = payload.get("facts", {})
 
     financials = {}
     warnings = []
-    financials["diluted_shares"] = diluted_shares(facts)
+    today = date.today()
 
     for key, tags in TAGS.items():
-        if key in FLOW_KEYS:
-            value = latest_ttm(facts, tags)
+        unit = (
+            "shares"
+            if key in ("shares_outstanding", "diluted_shares")
+            else "USD"
+        )
+
+        if key in FLOWS:
+            value = choose_flow(facts, tags, unit)
         else:
-            unit = (
-                "shares" if key == "shares_outstanding"
-                else "USD"
-            )
-            value = point_in_time(facts, tags, unit)
+            value = choose_balance(facts, tags, unit)
 
         financials[key] = value
 
         if value is None:
-            warnings.append(f"Missing field: {key}")
-        elif value.get("method") == "annual_fallback":
-            warnings.append(f"TTM unavailable: {key}")
+            warnings.append(f"Missing: {key}")
+            continue
 
-    # These reported fields are not automatically DCF-ready.
-    warnings.append(
-        "Operating cash flow minus CapEx is not unlevered FCFF"
-    )
-    warnings.append(
-        "Shares outstanding are not necessarily diluted shares"
-    )
-    warnings.append(
-        "Debt and cash require classification and date checks"
-    )
+        if value["method"] == "annual_fallback":
+            warnings.append(f"Annual fallback: {key}")
+
+        age = (
+            today - date.fromisoformat(value["period_end"])
+        ).days
+
+        if age < 0 or age > 450:
+            warnings.append(
+                f"Out-of-range or stale period: {key}"
+            )
+
+        if date.fromisoformat(value["filed"]) > today:
+            warnings.append(f"Future filing date: {key}")
 
     if company["sector"] == "Financials":
         warnings.append(
-            "Financial company: standard FCFF DCF unsuitable"
+            "Financial sector: standard FCFF DCF unsuitable"
         )
+
+    warnings.extend([
+        "FCFF not calculated or validated",
+        "Debt, leases and diluted shares require review",
+        "Working-capital change requires validation",
+    ])
 
     return {
         "ticker": company["ticker"],
@@ -383,74 +406,104 @@ def build_record(company, agent):
             timezone.utc
         ).isoformat(),
         "financials": financials,
-        "review_required": True,
+        "missing_core_fields": sorted(
+            key for key in CORE
+            if financials[key] is None
+        ),
+        "import_status": "REVIEW_REQUIRED",
+        "auto_dcf_ready": False,
         "warnings": warnings,
     }
 
 
 def main():
-    agent = os.getenv("SEC_USER_AGENT", "").strip()
+    agent = os.environ.get(
+        "SEC_USER_AGENT", ""
+    ).strip()
+
     if "@" not in agent:
-        raise SystemExit("Missing SEC_USER_AGENT")
+        raise SystemExit("SEC_USER_AGENT missing")
 
-    companies = get_companies(agent)
+    items = companies(agent)
     OUT.mkdir(parents=True, exist_ok=True)
-    index = []
-    failures = []
-    ttm_counts = {}
 
-    for number, company in enumerate(companies, 1):
-        ticker = company["ticker"]
+    index = []
+    failed = []
+    ttm_counts = {
+        key: 0 for key in FLOWS
+    }
+
+    for position, company in enumerate(items, 1):
         try:
-            record = build_record(company, agent)
+            record = build(company, agent)
+            ticker = company["ticker"]
+
             (OUT / f"{ticker}.json").write_text(
                 json.dumps(record, indent=2),
                 encoding="utf-8",
             )
+
+            for key in FLOWS:
+                fact = record["financials"][key]
+                if (
+                    fact is not None
+                    and fact["method"] == "TTM"
+                ):
+                    ttm_counts[key] += 1
+
             index.append({
                 "ticker": ticker,
                 "company_name": record["company_name"],
                 "sector": record["sector"],
                 "path": f"data/companies/{ticker}.json",
-                "review_required": True,
+                "import_status": record["import_status"],
+                "missing_core_fields": (
+                    record["missing_core_fields"]
+                ),
             })
-            ttm_counts[ticker] = sum(
-                record["financials"].get(key) is not None
-                and record["financials"][key].get("method") == "TTM"
-                for key in FLOW_KEYS
+
+            print(
+                f"{position}/{len(items)} OK {ticker}"
             )
-            print(f"[{number}/{len(companies)}] OK {ticker}")
-        except Exception as exc:
-            failures.append({
-                "ticker": ticker,
-                "error": str(exc),
+
+        except Exception as error:
+            failed.append({
+                "ticker": company["ticker"],
+                "error": str(error),
             })
-            print(f"ERROR {ticker}: {exc}")
+            print(
+                f"FAILED {company['ticker']}: {error}"
+            )
+
         time.sleep(0.35)
 
     Path("data/index.json").write_text(
         json.dumps(index, indent=2),
         encoding="utf-8",
     )
+
+    report = {
+        "total": len(items),
+        "downloaded": len(index),
+        "failures": failed,
+        "ttm_coverage": ttm_counts,
+        "dcf_automatically_validated": 0,
+        "generated_at_utc": datetime.now(
+            timezone.utc
+        ).isoformat(),
+    }
+
     Path("data/import_report.json").write_text(
-        json.dumps({
-            "total": len(companies),
-            "downloaded": len(index),
-            "failures": failures,
-            "companies_with_all_three_ttm_flows": sum(
-                count == 3 for count in ttm_counts.values()
-            ),
-            "finished_at_utc": datetime.now(
-                timezone.utc
-            ).isoformat(),
-        }, indent=2),
+        json.dumps(report, indent=2),
         encoding="utf-8",
     )
 
-    print(f"Finished: {len(index)}/{len(companies)}")
     if len(index) < 450:
-        raise SystemExit("Too many SEC download failures")
+        raise SystemExit(
+            "Too many failed company downloads"
+        )
 
 
 if __name__ == "__main__":
     main()
+
