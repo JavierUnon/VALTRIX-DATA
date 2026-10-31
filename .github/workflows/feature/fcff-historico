@@ -1,1 +1,34 @@
 
+name: VALTRIX FCFF Pilot
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  fcff-pilot:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Check existing financial scripts
+        run: |
+          python -m py_compile \
+            tools/build_data.py \
+            tools/build_dcf_inputs.py \
+            tools/build_app_data.py
+
+      - name: Confirm safe pilot setup
+        run: |
+          echo "VALTRIX FCFF pilot environment ready."
+          echo "No financial data was modified."
+          echo "FCFF calculation will be added next."
