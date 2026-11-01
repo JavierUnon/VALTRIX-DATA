@@ -1,0 +1,39 @@
+
+name: VALTRIX - Historical FCFF Coverage
+
+on:
+  push:
+    branches:
+      - feature/fcff-historico
+    paths:
+      - "tools/build_historical_fcff.py"
+      - ".github/workflows/run-historical-fcff.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  historical-fcff:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout feature branch
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Validate Python syntax
+        run: python -m py_compile tools/build_historical_fcff.py
+
+      - name: Analyze all companies
+        run: python tools/build_historical_fcff.py
+
+      - name: Upload FCFF coverage report
+        uses: actions/upload-artifact@v4
+        with:
+          name: valtrix-historical-fcff-report
+          path: data/historical_fcff_report.json
+          if-no-files-found: error
