@@ -1,4 +1,3 @@
-
 """VALTRIX - Pilot XBRL financial component recovery.
 
 Research only: MSFT, NVDA and AMZN.
