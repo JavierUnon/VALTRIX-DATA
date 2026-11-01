@@ -9,6 +9,7 @@ on:
     paths:
       - tools/fcff_coverage.py
       - tools/audit_xbrl_tags.py
+      - tools/pilot_xbrl_recovery.py
       - .github/workflows/pilot-fcff.yml
 
 permissions:
@@ -35,7 +36,8 @@ jobs:
             tools/build_dcf_inputs.py \
             tools/build_app_data.py \
             tools/fcff_coverage.py \
-            tools/audit_xbrl_tags.py
+            tools/audit_xbrl_tags.py \
+            tools/pilot_xbrl_recovery.py
 
       - name: Analyze FCFF data coverage
         run: python tools/fcff_coverage.py
@@ -61,10 +63,24 @@ jobs:
           if-no-files-found: error
           retention-days: 30
 
+      - name: Pilot XBRL recovery for three companies
+        env:
+          SEC_USER_AGENT: ${{ secrets.SEC_USER_AGENT }}
+        run: python -u tools/pilot_xbrl_recovery.py
+
+      - name: Upload XBRL recovery pilot report
+        uses: actions/upload-artifact@v4
+        with:
+          name: valtrix-xbrl-recovery-pilot
+          path: data/pilot_xbrl_recovery_report.json
+          if-no-files-found: error
+          retention-days: 30
+
       - name: Confirm safe pilot
         run: |
           echo "FCFF coverage audit completed."
           echo "SEC XBRL tag audit completed."
+          echo "MSFT NVDA AMZN recovery pilot completed."
           echo "No FCFF valuations were generated."
           echo "No production data was changed."
           echo "Automatic DCF remains disabled."
