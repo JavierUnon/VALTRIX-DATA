@@ -1,3 +1,4 @@
+
 name: VALTRIX FCFF Pilot
 
 on:
@@ -7,6 +8,7 @@ on:
       - feature/fcff-historico
     paths:
       - tools/fcff_coverage.py
+      - tools/audit_xbrl_tags.py
       - .github/workflows/pilot-fcff.yml
 
 permissions:
@@ -15,6 +17,7 @@ permissions:
 jobs:
   fcff-pilot:
     runs-on: ubuntu-latest
+    timeout-minutes: 20
 
     steps:
       - name: Checkout repository
@@ -31,12 +34,13 @@ jobs:
             tools/build_data.py \
             tools/build_dcf_inputs.py \
             tools/build_app_data.py \
-            tools/fcff_coverage.py
+            tools/fcff_coverage.py \
+            tools/audit_xbrl_tags.py
 
       - name: Analyze FCFF data coverage
         run: python tools/fcff_coverage.py
 
-      - name: Upload coverage report
+      - name: Upload FCFF coverage report
         uses: actions/upload-artifact@v4
         with:
           name: valtrix-fcff-coverage
@@ -44,8 +48,23 @@ jobs:
           if-no-files-found: error
           retention-days: 30
 
+      - name: Audit additional SEC XBRL tags
+        env:
+          SEC_USER_AGENT: ${{ secrets.SEC_USER_AGENT }}
+        run: python -u tools/audit_xbrl_tags.py
+
+      - name: Upload XBRL tag audit report
+        uses: actions/upload-artifact@v4
+        with:
+          name: valtrix-xbrl-tag-audit
+          path: data/xbrl_tag_audit_report.json
+          if-no-files-found: error
+          retention-days: 30
+
       - name: Confirm safe pilot
         run: |
           echo "FCFF coverage audit completed."
+          echo "SEC XBRL tag audit completed."
           echo "No FCFF valuations were generated."
           echo "No production data was changed."
+          echo "Automatic DCF remains disabled."
