@@ -3,6 +3,12 @@ name: VALTRIX FCFF Pilot
 
 on:
   workflow_dispatch:
+  push:
+    branches:
+      - feature/fcff-historico
+    paths:
+      - tools/fcff_coverage.py
+      - .github/workflows/pilot-fcff.yml
 
 permissions:
   contents: read
@@ -20,15 +26,27 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Check existing financial scripts
+      - name: Check Python syntax
         run: |
           python -m py_compile \
             tools/build_data.py \
             tools/build_dcf_inputs.py \
-            tools/build_app_data.py
+            tools/build_app_data.py \
+            tools/fcff_coverage.py
 
-      - name: Confirm safe pilot setup
+      - name: Analyze FCFF data coverage
+        run: python tools/fcff_coverage.py
+
+      - name: Upload coverage report
+        uses: actions/upload-artifact@v4
+        with:
+          name: valtrix-fcff-coverage
+          path: data/fcff_coverage_report.json
+          if-no-files-found: error
+          retention-days: 30
+
+      - name: Confirm safe pilot
         run: |
-          echo "VALTRIX FCFF pilot environment ready."
-          echo "No financial data was modified."
-          echo "FCFF calculation will be added next."
+          echo "FCFF coverage audit completed."
+          echo "No FCFF valuations were generated."
+          echo "No production data was changed."
