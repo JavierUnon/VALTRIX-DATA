@@ -13,15 +13,15 @@
     "Unlevered FCFF not yet calculated or verified": 503,
     "Missing capital_expenditure": 115,
     "Missing shares_outstanding": 109,
-    "Missing debt_current": 128,
-    "Not all flow figures use TTM": 48,
+    "Missing debt_current": 127,
+    "Not all flow figures use TTM": 50,
     "Stale data: debt_noncurrent": 33,
     "Missing debt_noncurrent": 97,
     "Standard FCFF DCF unsuitable for financial sector": 76,
-    "Flow reporting periods do not match": 73,
+    "Flow reporting periods do not match": 72,
     "Stale data: operating_cash_flow": 11,
-    "Stale data: capital_expenditure": 55,
-    "Missing cash": 16,
+    "Stale data: capital_expenditure": 54,
+    "Missing cash": 15,
     "Stale data: shares_outstanding": 49,
     "Stale data: debt_current": 78,
     "Missing revenue": 7,
@@ -327,7 +327,7 @@
     },
     {
       "ticker": "AMCR",
-      "company_name": "AMCOR PLC",
+      "company_name": "Amcor plc",
       "sector": "Materials",
       "status": "REVIEW_REQUIRED",
       "issues": [
@@ -5128,13 +5128,12 @@
     },
     {
       "ticker": "ROK",
-      "company_name": "Rockwell Automation, Inc.",
+      "company_name": "Rockwell Automation, Inc",
       "sector": "Industrials",
       "status": "REVIEW_REQUIRED",
       "issues": [
         "Diluted share count not yet verified",
-        "Flow reporting periods do not match",
-        "Stale data: capital_expenditure",
+        "Not all flow figures use TTM",
         "TTM source periods require verification",
         "Unlevered FCFF not yet calculated or verified"
       ]
@@ -5451,6 +5450,7 @@
       "issues": [
         "Cash and debt reporting dates differ",
         "Diluted share count not yet verified",
+        "Not all flow figures use TTM",
         "Stale data: cash",
         "TTM source periods require verification",
         "Unlevered FCFF not yet calculated or verified"
@@ -6226,8 +6226,6 @@
       "issues": [
         "Diluted share count not yet verified",
         "Missing capital_expenditure",
-        "Missing cash",
-        "Missing debt_current",
         "Missing debt_noncurrent",
         "Missing operating_cash_flow",
         "Missing revenue",
